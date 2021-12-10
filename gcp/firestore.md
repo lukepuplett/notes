@@ -12,9 +12,9 @@ Collections hold documents and each are created implicitly, no need to pre-creat
 
 Each document is identified by a name you provide or let Firestore make random IDs. They're not JSON but similar and support similar nested arrays and objects (called maps).
 
-- Warning - Documents are limited to 1MB.
-- Warning - Only the first 1,500 bytes of UTF-8 are considered in queries, maybe len(750).
-- Warning - Arrays cannot nest arrays.
+- **Warning** - Documents are limited to 1MB.
+- **Warning** - Only the first 1,500 bytes of UTF-8 are considered in queries, maybe len(750).
+- **Warning** - Arrays cannot nest arrays.
 
 Every document is uniquely identified by its location. Create a reference like this.
 
@@ -28,7 +28,7 @@ Bizarrely, you can create collections within a document, affording hierarchical 
 
     var r = db.Collection("top").Document("a").Collection("sub").Document("b");
 
-Warning - Deleting a document does not delete its sub-collections!
+**Warning** - Deleting a document does **not** delete its sub-collections!
 
 ### Indexes
 
@@ -42,9 +42,9 @@ Use the exemption settings to control indexing; forcing on and turning off it se
 
 Google says you can rely on automatic indexing and errors to manage indexes, for most apps, but consider exempting large string fields, high write rates to a collection containing documents with sequential values, large array or map fields.
 
-Note - if an indexed field's value is sequential as inserted, e.g. a timestamp and IoT data, then max writes is 500/second. Exempt this field if possible.
+**Note** - if an indexed field's value is sequential as inserted, e.g. a timestamp and IoT data, then max writes is 500/second. Exempt this field if possible.
 
-Note - exemptions only impact auto indexes and don't impact manual composite settings.
+**Note** - exemptions only impact auto indexes and don't impact manual composite settings.
 
 You have to manually configure composite indexes and they can only contain one array field. Firestore helps you identify candidate composite indexes. You'll get errors for queries that need a CFI and a link to help make it. You can also make indexes in the console or via the Firebase CLI.
 
@@ -122,7 +122,7 @@ Firestore uses serializable isolation by commit time. It assigns each transactio
 
 Queries and reads inside a transaction do not see the results of previous writes inside that transaction. Even if you modify or delete a document within a transaction, all document reads in that transaction return the version of the document at commit time, before the transaction's write operations. Read operations return nothing if the document did not exist then.
 
-Note - Reads must come before writes.
+**Note** - Reads must come before writes.
 
 To be honest, I don't fully understand this. There are no tangible examples using a query language or code.
 
@@ -168,7 +168,7 @@ The code in the transaction is normal C# within an async anonymous function bloc
 
 Transactions are designed to fail and automatically retry if the documents involved are changed during the transaction execution.
 
-Note - transactions have a max size of 10MiB based on documents and indexes changed.
+**Note** - transactions have a max size of 10MiB based on documents and indexes changed.
 
 Incrementing a counter is a good example of something to wrap in a transaction because it involves a read, increment and write.
 
@@ -185,7 +185,7 @@ Android and Apple native app client libraries automatically enable offline data.
 
 For Web libraries, offline is disabled by default so to enable it requires calling enablePersistence. If you app handles sensitive information then ask the user if they're on a trusted device before enabling the feature.
 
-Note - In the sample JavaScript the method called is enableIndexedDbPersistence.
+**Note** - In the sample JavaScript the method called is enableIndexedDbPersistence.
 
 The cache sized can be configured during initialization. Firestore caches every document received.
 
@@ -213,7 +213,7 @@ You can either get the data directly via collections, documents or queries, or s
         City city = snapshot.ConvertTo<City>();
     }
 
-Note - The City type is a POCO with its properties decorated with Google's own serializable sort of attribute.
+**Note** - The City type is a POCO with its properties decorated with Google's own serializable sort of attribute.
 
 Getting many documents is similar. Here, using Dictionary<string, object>
 
@@ -261,11 +261,11 @@ You can listen for changes using this code, if you have a long-running server-si
         }
     });
 
-Note - when you app process write changes, listeners will be notified before the writes are sent and committed to the Firestore service. Retrieved documents have a `metadata.HasPendingWrites` property but this is not available in the C# library yet.
+**Note** - when you app process write changes, listeners will be notified before the writes are sent and committed to the Firestore service. Retrieved documents have a `metadata.HasPendingWrites` property but this is not available in the C# library yet.
 
 You can control the granularity of change events. For example, by default you will not get notified of changes to metadata because you'll end up two notifications, one within process locally and another once it's written and the metadata changes. You can opt-in but it's not supported in C#.
 
-Note - You pay for all the data you're sent.
+**Note** - You pay for all the data you're sent.
 
 Here's how to listen to the results of a query.
 
@@ -315,19 +315,19 @@ As seen before, called ToDictionary to get the document content.
 
 You can use `<. <=, >, >=, !=, array-contains, array-contains-any, in` and `not-in` operators.
 
-Note - In C# it looks as if these operators are method names on the collection reference.
+**Note** - In C# it looks as if these operators are method names on the collection reference.
 
-Note - For != and not-in queries, documents with null or missing properties are not returned.
+**Note** - For != and not-in queries, documents with null or missing properties are not returned.
 
-Note - In a compound query, range <. <=, >, >= and not equals or not-in must all filter on the same field.
+**Note** - In a compound query, range <. <=, >, >= and not equals or not-in must all filter on the same field.
 
-Note - Limited to one array-contains clause per query and you cannot combine it with array-contains-any.
+**Note** - Limited to one array-contains clause per query and you cannot combine it with array-contains-any.
 
 Use the in operator, WhereIn in C#, to combine up to 10 == clauses on the same field with a logical OR like this.
 
     Query query = citiesRef.WhereIn("Country", new[] { "USA", "Japan" });
 
-Note - The not-in version excludes documents where the field does not exist.
+**Note** - The not-in version excludes documents where the field does not exist.
 
 And use array-contains-any to combine up to 10 array-contains clauses on the same field with a logical OR.
 
@@ -340,11 +340,11 @@ For `WhereIn`, you can pass in an array but it will look for an exact match.
     Query query = citiesRef.WhereIn("Regions",
         new[] { new[] { "west_coast" }, new[] { "east_coast" } });
 
-Note - Limited to one in, not-in or array-contains-any clause per query and you cannot combine these operators in the same query.
+**Note** - Limited to one in, not-in or array-contains-any clause per query and you cannot combine these operators in the same query.
 
-Note - You can't combine not-in with !=.
+**Note** - You can't combine not-in with !=.
 
-Note - You can't order by a field included in an equality == or in clause.
+**Note** - You can't order by a field included in an equality == or in clause.
 
 ### Compound queries
 
@@ -396,7 +396,7 @@ Mind you, you'd have to have created the appropriate index first.
 
 Unless specified, documents are ordered by document ID.
 
-Note - The inclusion of an order by clause will omit the document if the field does not exist.
+**Note** - The inclusion of an order by clause will omit the document if the field does not exist.
 
     Query query = citiesRef.OrderBy("Name").Limit(3);
 
@@ -447,7 +447,7 @@ See this strange code.
     Query query1 = db.Collection("cities").OrderBy("Name").OrderBy("State").StartAt("Springfield");
     Query query2 = db.Collection("cities").OrderBy("Name").OrderBy("State").StartAt("Springfield", "Missouri");
 
-Note - It's odd because two arguments are sent to the StartAt method, the first is Name and the second is for State but that's not explicit.
+**Note** - It's odd because two arguments are sent to the StartAt method, the first is Name and the second is for State but that's not explicit.
 
 
 ## Cloud Firestore API Client Library for .NET
