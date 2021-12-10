@@ -140,9 +140,9 @@ Important - On Windows and Linux, the user running Docker needs to be added to t
 
 - Create a Docker repo to store the sample for this quickstart.
 
-	gcloud artifacts repositories create quickstart-docker-repo \ 
-	  --repository-format=docker \
-	  --location=us-central1 --description="Docker repository"
+		gcloud artifacts repositories create quickstart-docker-repo \ 
+	  		--repository-format=docker \
+	  		--location=us-central1 --description="Docker repository"
 
 ### Check it worked.
 
