@@ -130,7 +130,7 @@ See docs for permissions to deploy.
     - Images from other GCP projects.
     - Seems "unsupported" container registries can be used but you have to `docker push` the image to Artifact Registry first.
 
-Note - Container Registry is free except for storage bytes and network egress. It's also retired.
+**Note** - Container Registry is free except for storage bytes and network egress. It's also retired.
 
 Can deploy by tag or exact sha256 digest.
 
@@ -150,11 +150,11 @@ Using this service.yaml
 	      containers:
 	      - image: IMAGE
 
-You can deploy with `gcloud run services replace service.yaml --allow-unauthenticated`
+You can deploy with `gcloud run services replace service.yaml`. The service gets a unique immutable URL.
 
-The service gets a unique immutable URL.
+**Note** - In my trials, the `replace` verb required the **Cloud Resource Manager API** to be enabled.
 
-Deploying a new version
+### Deploying a new version
 
 This creates a new service, where none existed. Use `--revision-suffix` to override default rev.
 
