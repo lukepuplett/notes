@@ -154,6 +154,8 @@ You can deploy with `gcloud run services replace service.yaml`. The service gets
 
 **Note** - In my trials, the `replace` verb required the **Cloud Resource Manager API** to be enabled.
 
+**Note** - Also in my trials, this fails because the YAML contains spec.template.metadata.name with the existing identifier that causes deployment to fail because that identifier is in use.
+
 ### Deploying a new version
 
 This creates a new service, where none existed. Use `--revision-suffix` to override default rev.
