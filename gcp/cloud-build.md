@@ -184,3 +184,21 @@ Run this from the directory with your Dockerfile:
 	gcloud builds submit --tag us-central1-docker.pkg.dev/project-id/quickstart-docker-repo/quickstart-image:tag1
 
 That's it.
+
+### Build an image using a build config file
+
+Alongside your Dockerfile, add `cloudbuild.yaml` and stick this in:
+
+	steps:
+	- name: 'gcr.io/cloud-builders/docker'
+	  args: [ 'build', '-t', 'us-central1-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1', '.' ]
+	images:
+	- 'us-central1-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1'
+
+Then kick it off:
+
+	gcloud builds submit --config cloudbuild.yaml
+
+And stand well back. You can see the build details in the Console.
+
+**Remember** - Open the Artifact Registry in the Console and delete any test repos to save $$$.
