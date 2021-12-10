@@ -251,3 +251,4 @@ And deploy it with this:
 
 	gcloud builds submit --config cloudbuild.yaml
 
+**Note** - Cloud Build also supports JSON for the config file.
