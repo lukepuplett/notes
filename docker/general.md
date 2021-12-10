@@ -23,11 +23,11 @@ https://docs.docker.com/develop/develop-images/multistage-build/
 |`COPY . /code`|Copy all files in . to /code folder.|
 |`CMD ["node", "src/server.js"]`|Optional command to run for executing containers, here in exec form.|
 
-RUN executes command(s) in a new layer and creates a new image. E.g., it is often used for installing software packages.
+`RUN` executes command(s) in a new layer and creates a new image. E.g., it is often used for installing software packages.
 
-CMD sets default command and/or parameters, which can be overwritten from command line when docker container runs.
+`CMD` sets default command and/or parameters, which can be overwritten from command line when docker container runs.
 
-ENTRYPOINT configures a container that will run as an executable
+`ENTRYPOINT` configures a container that will run as an executable
 
 
 
@@ -71,51 +71,51 @@ Use docker attach to reattach.
 
 Docker attaches the console to the container's standard I/O. It can even pretend to be a TTY and pass signals.
 
-Without -a Docker attaches just STDOUT and STDERR.
+Without `-a` Docker attaches just `STDOUT` and `STDERR`.
 
-For interactive processes like a shell you must use -i -t in order to allocate a TTY.
+For interactive processes like a shell you must use `-i -t` in order to allocate a TTY.
 
 ### Container identification
 
-Use --name to assign a name to a running container. Identifiers can be the full UUID or its short UUID (like Git) or its name.
+Use `--name` to assign a name to a running container. Identifiers can be the full UUID or its short UUID (like Git) or its name.
 
-Use --cidfile="" to have Docker write the process ID to the file, which is used for automation.
+Use `--cidfile=""` to have Docker write the process ID to the file, which is used for automation.
 
-You can use image:tag to specify the version to run, or image@sha256:91a2… etc.
+You can use `image:tag` to specify the version to run, or `image@sha256:91a2...` etc.
 
 ### PID settings
 
-Use --pid="" to set the process namespace mode. Use "container:<name|id>" to join another container's PID namespace and "host" to use the host's.
+Use `--pid=""` to set the process namespace mode. Use `"container:<name|id>"` to join another container's PID namespace and `"host"` to use the host's.
 
 PID namespace provides separation of processes, so PIDs can be reused at 1.
 
 ### UTS settings
 
-Namespace for setting the hostname and domain that's visible to processes. Defaults to each container having their own, even those with --network="host".
+Namespace for setting the hostname and domain that's visible to processes. Defaults to each container having their own, even those with `--network="host"`.
 
 ### IPC settings
 
-Use --ipc="mode" where mode is:
+Use `--ipc="mode"` where mode is:
 
-""	Daemon's default
-"none"	Own IPC namespace with /dev/shm not mounted
-"private"	Own IPC namespace.
-"shareable"	Own with possibility to share with other containers.
-"container:<name_or_id>"	Join another container.
-"host"	Use host's.
+- `""`	Daemon's default
+- `"none"`	Own IPC namespace with /dev/shm not mounted
+- `"private"`	Own IPC namespace.
+- `"shareable"`	Own with possibility to share with other containers.
+- `"container:<name_or_id>"`	Join another container.
+- `"host"`	Use host's.
 	
 ### Network settings
 
---dns=[]	Set custom DNS servers
---network="bridge"	Use bridge, none, container:<name|id>, host or <network-name>|<network-id>
---network-alias=[]	Network-scoped alias for the container.
---add-hosts=""	Add line to /etc/hosts in form host:IP
---mac-address=""	Container's NIC MAC.
---ip=""	Container's NIC IPv4.
---ip6=""	Container's NIC IPv6.
---link-local-ip=[]	Set 1+ container's NIC's link local IPv4/6 addresses.
+- `--dns=[]`	Set custom DNS servers
+- `--network="bridge"`	Use bridge, none, container:<name|id>, host or <network-name>|<network-id>
+- `--network-alias=[]`	Network-scoped alias for the container.
+- `--add-hosts=""`	Add line to /etc/hosts in form host:IP
+- `--mac-address=""`	Container's NIC MAC.
+- `--ip=""`	Container's NIC IPv4.
+- `--ip6=""`	Container's NIC IPv6.
+- `--link-local-ip=[]`	Set 1+ container's NIC's link local IPv4/6 addresses.
 	
-Default to network enabled and outbound allowed. If disabled then use STDIN and STDOUT.
+Default to network enabled and outbound allowed. If disabled then use `STDIN` and `STDOUT`.
 
 Publishing ports and linking to other containers only works with the default bridge. Prefer using Docker network drivers over linking. Defaults to host's DNS servers.
 
@@ -129,7 +129,7 @@ See doc above.
 
 ### Restart policies
 
-This seems useful for process crash restarts. Can have a on-failure[:max-retries] setting.
+This seems useful for process crash restarts. Can have a `on-failure[:max-retries] `setting.
 
 Exponential delay is used to prevent floods. Max delay is 1 minute. Delay is reset on 10 seconds without crash.
 
@@ -143,7 +143,7 @@ See doc: https://docs.docker.com/engine/reference/run/#exit-status
 
 ### Clean up
 
-By default a container's file system persists after container exit to make debugging easier. These retained file systems can pile-up so add --rm to clear down.
+By default a container's file system persists after container exit to make debugging easier. These retained file systems can pile-up so add `--rm` to clear down.
 
 ### Security configuration
 
@@ -151,7 +151,7 @@ See doc: https://docs.docker.com/engine/reference/run/#security-configuration
 
 ### Specify an init process
 
-Use --init to use an init process as PID 1. Bunch of stuff I don't understand.
+Use `--init` to use an init process as PID 1. Bunch of stuff I don't understand.
 
 See doc: https://docs.docker.com/engine/reference/run/#specify-an-init-process
 
@@ -183,13 +183,13 @@ The URL can be a Git repo, tarball or plain text file. Git repos are first pulle
 
 ### Common CLI options
 
---file, -f	Path to the Dockerfile
---force-rm	Remove intermediate containers.
---label	Set metadata on the image using KEY=VALUE.
---output	Destination in format: type=local,dest=path)
---platform	Set platform if server is multi-platform capable.
---progress	Default auto. Type of progress, auto, plain, tty; use plain to show container output.
---pull	Always attempt to pull a newer version of the (base?) image.
---rm	Default true. Remove intermediate containers on success.
---tag, -t	Name and optionally tag in name:tag format.
---target	Choose stage to build.
+- `--file, -f`	Path to the Dockerfile
+- `--force-rm`	Remove intermediate containers.
+- `--label`	Set metadata on the image using KEY=VALUE.
+- `--output`	Destination in format: type=local,dest=path)
+- `--platform`	Set platform if server is multi-platform capable.
+- `--progress`	Default auto. Type of progress, auto, plain, tty; use plain to show container output.
+- `--pull`	Always attempt to pull a newer version of the (base?) image.
+- `--rm`	Default true. Remove intermediate containers on success.
+- `--tag, -t`	Name and optionally tag in name:tag format.
+- `--target`	Choose stage to build.
