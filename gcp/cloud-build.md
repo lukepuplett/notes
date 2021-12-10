@@ -64,14 +64,14 @@
 - Each step's container is attached to a network called cloudbuild which hosts Application Default Credentials to Google Cloud services can automatically find your credentials.
 - If you're running nested containers and want to expose ADC to an underlying container, or using gsutil or gcloud in a docker step, use the --network flag in your docker build step, JSON like:
 
-    {
-        "steps": [
             {
-                "name": "gcr.io/cloud-builders/docker",
-                "args": [ "build", "--network=cloudbuild", "." ]
+                "steps": [
+                    {
+                        "name": "gcr.io/cloud-builders/docker",
+                        "args": [ "build", "--network=cloudbuild", "." ]
+                    }
+                ]
             }
-        ]
-    }
 
 
 ## Cloud builders
