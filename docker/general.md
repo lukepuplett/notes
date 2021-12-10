@@ -15,13 +15,13 @@ https://docs.docker.com/develop/develop-images/multistage-build/
 
 |Line|Explainer|
 |-|-|
-|FROM node:12.16.3|Base our container image on the 'node' image, with '12.16.3' tag (assumes 'latest'). Can have many FROM commands in a Dockerfile to make multi-stage builds.|
-|WORKDIR /code||
-|ENV PORT 80|Set environment PORT variable to 80 so it can be referenced in the Dockerfile, and in the final container process.|
-|COPY package.json /code/package.json|Copy file|
-|RUN npm install|Execute a command in a new shell. The other syntax looks like the CMD example and does not run in a shell.|
-|COPY . /code|Copy all files in . to /code folder.|
-|CMD ["node", "src/server.js"]|Optional command to run for executing containers, here in exec form.|
+|`FROM node:12.16.3`|Base our container image on the 'node' image, with '12.16.3' tag (assumes 'latest'). Can have many FROM commands in a Dockerfile to make multi-stage builds.|
+|`WORKDIR /code`||
+|`ENV PORT 80`|Set environment PORT variable to 80 so it can be referenced in the Dockerfile, and in the final container process.|
+|`COPY package.json /code/package.json`|Copy file|
+|`RUN npm install`|Execute a command in a new shell. The other syntax looks like the CMD example and does not run in a shell.|
+|`COPY . /code`|Copy all files in . to /code folder.|
+|`CMD ["node", "src/server.js"]`|Optional command to run for executing containers, here in exec form.|
 
 RUN executes command(s) in a new layer and creates a new image. E.g., it is often used for installing software packages.
 
