@@ -159,7 +159,7 @@ You can create a VPC peering connection between your VPC network and the pool's 
 
 ## Quickstart: Build a Docker image
 
-Create a Docker repository in Artifact Registry
+### Create a Docker repository in Artifact Registry
 
 Run this:
 
@@ -171,7 +171,7 @@ Check it exists:
 	gcloud artifacts repositories list
 
 
-Build an image using Dockerfile
+### Build an image using Dockerfile
 
 You can build an image without needing a Cloud Build config file.
 
