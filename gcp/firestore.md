@@ -1,5 +1,9 @@
 # Cloud Firestore
 
+## Important limitation
+
+When hosting via Firebase, all cookies are stripped from requests.
+
 ## Concepts
 
 Notes taken 8h November, 2021.
