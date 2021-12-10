@@ -163,14 +163,14 @@ This updates Docker's config JSON.
 - cd into the directory you want to save the image in.
 - Pull the same from Docker.
 
-	docker pull us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0
+		docker pull us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0
 	
 ### Add the image to the repo
 
 - First, tag it with the target repo name. This configures docker push to push to a specific location.
 
-	docker tag us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0 \
-	    us-central1-docker.pkg.dev/PROJECT-ID/quickstart-docker-repo/quickstart-image:tag1
+		docker tag us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0 \
+		    us-central1-docker.pkg.dev/PROJECT-ID/quickstart-docker-repo/quickstart-image:tag1
 
 - `PROJECT` is your Google Cloud project ID. If your project ID contains a colon (:), see Domain-scoped projects.
 - `us-central1` is the repository location.
@@ -183,13 +183,13 @@ This updates Docker's config JSON.
 
 - Then push it with:
 
-	docker push us-central1-docker.pkg.dev/PROJECT-ID/quickstart-docker-repo/quickstart-image:tag1
+		docker push us-central1-docker.pkg.dev/PROJECT-ID/quickstart-docker-repo/quickstart-image:tag1
 	
 - You can pull it with:
 
-	docker pull us-central1-docker.pkg.dev/PROJECT-ID/quickstart-docker-repo/quickstart-image:tag1
+		docker pull us-central1-docker.pkg.dev/PROJECT-ID/quickstart-docker-repo/quickstart-image:tag1
 	
 - You can delete any test stuff by deleting the rep:
 
-	gcloud artifacts repositories delete quickstart-docker-repo --location=us-central1
+		gcloud artifacts repositories delete quickstart-docker-repo --location=us-central1
 	
