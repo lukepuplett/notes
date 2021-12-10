@@ -14,11 +14,11 @@ Where replication-policy is **automatic** or **user-managed**.
 
 Read a version:
 
-	gcloud secrets versions access 1--secret="my-secret"
+	gcloud secrets versions access 1 --secret="my-secret"
 
 Read latest:
 
-	gcloud secrets versions access latest--secret="my-secret"
+	gcloud secrets versions access latest --secret="my-secret"
 
 **Important** - don't use latest in production; pin the secret version to the deployed code version.
 
