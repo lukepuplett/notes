@@ -15,7 +15,7 @@
 
 ## Build configuration file schema
 
-- YAML or JSON, e.g. cloudbuild.yaml
+- YAML or JSON, e.g. `cloudbuild.yaml`
 - No config file is needed to just build a Docker image.
 - VSCode Cloud Code extension help.
 - If you can containerise it, Cloud Build can run it.
@@ -25,29 +25,29 @@
 - `step.name` = specifies cloud builder, which is a container containing common tools; example is gcr.io/cloud-builders/mvn
 - `step.args` = passed to the builder, passed to the running tool; if the builder has an ENTRYPOINT then the args are sent to that, else the first arg becomes the entrypoint.
 - Max 100 arguments.
-- `step.env` = array of environment variables in form "KEY=VALUE"
-- `step.dir` = changes the working directory to /workspace/<dir> unless an absolute path, in which case writes may not be persisted between step executions.
-- `step.timeout` = in seconds like 60.01s, defaults to forever (total build timeout)
+- `step.env` = array of environment variables in form `"KEY=VALUE"`
+- `step.dir` = changes the working directory to `/workspace/<dir>` unless an absolute path, in which case writes may not be persisted between step executions.
+- `step.timeout` = in seconds like `60.01s`, defaults to forever (total build timeout)
 - `step.id` = unique for a step, used with waitFor.
 - `step.waitFor` = specifies step(s) which must run before; if no value, waits for all.
 - `step.entrypoint` = overrides default of the builder.
 - `step.secretEnv` = array of variables that must be specified in the build's secrets.
-- `step.volumes` = array of Docker container volumes to mount for persisting files between steps (name must be the same), in addition to /workspace.
+- `step.volumes` = array of Docker container volumes to mount for persisting files between steps (name must be the same), in addition to `/workspace`.
 - `root.timeout` = in seconds as before, defaults to 10 minutes.
 - `root.queueTtl` = expires build if queued and not run within seconds.
-- `root.logsBucket` = override default bucket for logs, e.g. gs://mybucket.
+- `root.logsBucket` = override default bucket for logs, e.g. `gs://mybucket`.
 - `root.options.env` = global environment variables for all steps.
 - `root.options.secretEnv` = as before but global.
 - `root.options.volumes` = global and must not conflict with step volumes.
-- `root.options.sourceProvenanceHash` = array of algorithm(s) for source provenance, like "SHA256"
+- `root.options.sourceProvenanceHash` = array of algorithm(s) for source provenance, like `"SHA256"`
 - `root.options.machineType` = override default single CPU build VM.
-- `root.options.diskSizeGb` = max 1000GB, e.g. "200" (doc shows string type)
-- `root.options.logStreamingOption` = stream logs rather than capture all at end, "STREAM_ON".
-- `root.options.logging` = choose to store in Cloud Logging or Cloud Storage, "GCS_ONLY".
-- `root.options.dynamic_substitutions` = enable.disable bash parameter expansion; when build is run by trigger then this is true; default false.
+- `root.options.diskSizeGb` = max 1000GB, e.g. `"200"` (doc shows string type)
+- `root.options.logStreamingOption` = stream logs rather than capture all at end, `"STREAM_ON"`.
+- `root.options.logging` = choose to store in Cloud Logging or Cloud Storage, `"GCS_ONLY"`.
+- `root.options.dynamic_substitutions` = enable disable bash parameter expansion; when build is run by trigger then this is true; default false.
 - `root.options.substitutionOption` = set along with root.substitutions dictionary to specify the behaviour when there is an error in the substitution checks (wtf?!)
 - `root.options.pool` = specify the resource name if running on a private pool.
-- `root.substitutions` = substitute specific variables when values are not known until build time; errors on missing variable or missing substitution; use ALLOW_LOOSE option to skip check, though this is the default when run by trigger.
+- `root.substitutions` = substitute specific variables when values are not known until build time; errors on missing variable or missing substitution; use `ALLOW_LOOSE` option to skip check, though this is the default when run by trigger.
 - `root.tags` = for organization.
 - `root.availableSecrets` = see Using secrets: https://cloud.google.com/build/docs/securing-builds/use-secrets
 - `root.secrets` = doc says to use availableSecrets.
