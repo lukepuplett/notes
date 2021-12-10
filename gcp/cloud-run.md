@@ -12,7 +12,7 @@ If you "bring your own binaries" make sure they are configured for Linux ABI x86
 
 ## Concepts
 
-Resource model
+### Resource model
 
 - GCP project > Service > Revision > Instance
 - Services are zone redundant.
@@ -20,14 +20,14 @@ Resource model
 - Traffic auto routed to latest revision ASAP.
 - Auto scaled by default.
 
-Concurrency
+### Concurrency
 
 - Default 80 concurrent requests, max 1,000.
 - High CPU instances may not be routed to.
 - Set to 1 if requests eat big CPU or code is single-threaded.
 - Lower threshold to throttle access to resources beyond, e.g. DB.
 
-Autoscaling
+### Autoscaling
 
 - Default 0.
 - Scaling is impacted by rate of incoming requests, and…
@@ -41,7 +41,7 @@ Autoscaling
 - Idle timer can be up to 15 mins.
 - Use min-instance setting but incurs continual cost.
 
-Execution environments
+### Execution environments
 
 - Gen-1 by default.
 - Gen-2 environment is full Linux compatibility, rather than system call emulation.
@@ -423,7 +423,7 @@ https://cloud.google.com/run/docs/managing/revisions
 
 ## Configure
 
-Memory
+### Memory
 
 - Instances exceeding memory limits are terminated.
 - .exe size, process allocation, files (since are in mem) all count.
@@ -433,7 +433,7 @@ Memory
 - Concurrency requires memory.
 - Memory costs money.
 
-CPU
+### CPU
 
 - Default 1.
 - Can set per instance lifetime or per request.
@@ -443,7 +443,7 @@ CPU
 - Unless minimum instances >1 instance is still terminated on 15 mins idle.
 - You pay for always on and minimum instance.
 
-Environment variables
+### Environment variables
 
 - Injected into container.
 - PORT is reserved.
@@ -451,7 +451,7 @@ Environment variables
 - CLI samples, see https://cloud.google.com/run/docs/configuring/environment-variables
 - Else use ENV in Dockerfile but service set ones will override.
 
-Secrets
+### Secrets
 
 - Use GCP's Secret Manager product.
 - Mount as a volume so secrets are files.
@@ -464,7 +464,7 @@ Secrets
 - Can reference a secret in another project.
 - See doc: https://cloud.google.com/run/docs/configuring/secrets#mounting-secrets
 	
-Request timeout
+### Request timeout
 
 - Default 5 minutes.
 - Max 60.
@@ -473,13 +473,13 @@ Request timeout
 - Set via Console, CLI and YAML.
 - See doc: https://cloud.google.com/run/docs/configuring/request-timeout#setting
 
-Concurrency
+### Concurrency
 
 - Console, CLI, YAML.
 - Remember to increase memory.
 - See doc: https://cloud.google.com/run/docs/configuring/concurrency
 
-Max instances
+### Max instances
 
 - Limit scaling out.
 - Can be exceeded for short period during big spikes.
@@ -487,7 +487,7 @@ Max instances
 - Console, CLI, YAML.
 - See doc: https://cloud.google.com/run/docs/configuring/max-instances
 
-Min instances
+### Min instances
 
 - Default 0.
 - Limit cold starts.
@@ -497,7 +497,7 @@ Min instances
 - Console, CLI, YAML.
 - See doc: https://cloud.google.com/run/docs/configuring/min-instances
 
-Containers
+### Containers
 
 - Can override port, entrypoint command and arguments.
 - Use --port to change that.
@@ -505,12 +505,12 @@ Containers
 - Console, CLI, YAML.
 - See docs: https://cloud.google.com/run/docs/configuring/containers
 
-Execution environment (preview)
+### Execution environment (preview)
 
 - Defaults to "first generation" environment.
 - See doc: https://cloud.google.com/run/docs/configuring/execution-environments
 
-Labels
+### Labels
 
 - Key-value pairs applied to service and revisions.
 - Use for cost allocation and billing, teams, staging etc., owners, state, etc.
@@ -518,7 +518,7 @@ Labels
 - Console, CLI, YAML.
 - See doc: https://cloud.google.com/run/docs/configuring/labels
 
-HTTP/2 requests
+### HTTP/2 requests
 
 - Defaults to HTTP/2 to 1 downgrade.
 - Must use HTTP/2 cleartext (h2c) because TLS terminates at Cloud Run.
@@ -526,7 +526,7 @@ HTTP/2 requests
 - Console, CLI, YAML.
 - See doc: https://cloud.google.com/run/docs/configuring/http2
 
-Connecting to Cloud SQL
+### Connecting to Cloud SQL
 
 - For SQL Server, must setup private IP within GCP, i.e. VPC.
 - Use Cloud SQL Auth proxy locally.
@@ -534,7 +534,7 @@ Connecting to Cloud SQL
 - See PostgreSQL doc: https://cloud.google.com/sql/docs/postgres/connect-run
 - See MySQL doc: https://cloud.google.com/sql/docs/mysql/connect-run
 
-Connecting to a VPC network
+C### onnecting to a VPC network
 
 - Serverless VPC Access connectors are paid expenses.
 - Each VPC connector requires its own /28 subnet for its connectors.
@@ -544,28 +544,28 @@ Connecting to a VPC network
 - Can route outbound all requests from Cloud Run service to VPC.
 - See doc: https://cloud.google.com/run/docs/configuring/connecting-vpc
 
-Connecting to a Shared VPC network
+### Connecting to a Shared VPC network
 
 - I using a Shared VPC, you can set up Serverless VPC Access connectors in either the service project or the (VPC?) host project.
 - Advantages: dedicated bandwidth, charges by connectors are linked to service project enabling easier "chargebacks", principal of least privilege; connectors need access grants to resources in Shared VPC, reduces dependency on host project administrator because teams manage connectors linked to their service project.
 - To implement see doc: https://cloud.google.com/run/docs/configuring/connecting-shared-vpc
 
-Static outbound IP address
+### Static outbound IP address
 
 - Outbound connections made from dynamic pool.
 - Can assign static IP in case of IP whitelisting by external service.
 - See doc: https://cloud.google.com/run/docs/configuring/static-outbound-ip
 
-Service accounts
+### Service accounts
 
 - Default run as Compute Engine service account.
 - Not actually recommended; best use a dedicated least privilege account.
 - See doc: https://cloud.google.com/run/docs/securing/service-identity
 
 
-Secure
+## Secure
 
-Access control with IAM
+### Access control with IAM
 
 - Default only project owners can manage and even invoke services.
 - Only project owners and Cloud Run Admins can edit IAM policies e.g. make service public.
@@ -574,7 +574,7 @@ Access control with IAM
 - But when creating the service, saying yes will set the permission and make it public.
 - See docs for editing permissions from Console or CLI: https://cloud.google.com/run/docs/securing/managing-access
 
-Understanding service identity
+### Understanding service identity
 
 - Default instances run as Compute Engine service account which has Project Editor role.
 - Recommended to create own service account with least privilege for each service.
@@ -583,11 +583,11 @@ Understanding service identity
 - In code if not using a library, use Google's "metadata server" to fetch tokens.
 - See docs on that: https://cloud.google.com/run/docs/securing/service-identity#fetching_identity_and_access_tokens_using_the_metadata_server
 	
-Optimizing service accounts with Recommender
+### Optimizing service accounts with Recommender
 
-	- Tool that nags at you.
+- Tool that nags at you.
 
-Restricting ingress
+### Restricting ingress
 
 - You can stop internet traffic from reaching your URL.
 - Settings are, All, Internal and Internal and Cloud Load Balancing.
@@ -595,37 +595,37 @@ Restricting ingress
 - Lots to know about VPC requests, see doc: https://cloud.google.com/run/docs/securing/ingress
 - Cloud Scheduler and Cloud Tasks cannot call internal services (on a VPC? I assume okay via load balancer)
 
-Using VPC Service Controls
+### Using VPC Service Controls
 
 - It's a GCP feature that guards against data exfiltration.
 - See doc: https://cloud.google.com/run/docs/securing/using-vpc-service-controls
 
-Using Binary Authorization
+### Using Binary Authorization
 
 - Something to do with Anthos.
 - See doc: https://cloud.google.com/binary-authorization/docs/run/enabling-binauthz-cloud-run
 
-Using customer managed encryption keys (CMEK)
+### Using customer managed encryption keys (CMEK)
 
 - Protect deployed images with Cloud KMS CMEK.
 - See docs: https://cloud.google.com/run/docs/securing/using-cmek
 
-Protect services with Cloud Armour
+### Protect services with Cloud Armour
 
 - DDoS protection.
 - Used with a serverless NEG backend pointing to Cloud Run et al.
 - See doc: https://cloud.google.com/armor/docs/integrating-cloud-armor#serverless
 
 
-Log and monitor
+## Log and monitor
 
-Monitoring health and performance
+### Monitoring health and performance
 
 - Google Cloud Monitoring provide performance monitoring, metrics, uptime, alerts on thresholds.
 - GCP's operation suite pricing applies, which means fully managed Cloud Run is free.
 - Automatically setup, nothing to do.
 
-Logging and viewing logs
+### Logging and viewing logs
 
 - Sent to Cloud Logging.
 - Request logs, done automatically.
@@ -647,7 +647,7 @@ Logging and viewing logs
 - Can use logs exclusion feature from Cloud Logging to reduce request logs.
 - See also Log Entry reference: https://cloud.google.com/logging/docs/reference/v2/rest/v2/LogEntry
 
-Audit logging
+### Audit logging
 
 - GCP services write logs for "Who did what, where and when?"
 - Cloud Run keeps data access logs and admin activity logs.
@@ -657,10 +657,12 @@ Audit logging
 - View logs via Console, CLI and the Logging API.
 - Lots more at: https://cloud.google.com/run/docs/audit-logging#gcloud
 
-Error reporting
+### Error reporting
 
 - No setup needed.
 - All exceptions that include a stack trace in supported languages, and that are sent to stdout, stderr or to other logs.
 - "Memory limit exceeded" and "No instances available" service errors.
 - View via Metrics tab of the service detail page, included a top errors table.
 - Can view in Error Reporting page once they have been aggregated.
+
+
