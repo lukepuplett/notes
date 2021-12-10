@@ -150,17 +150,17 @@ Using this service.yaml
 	      containers:
 	      - image: IMAGE
 
-You can deploy with gcloud run services replace service.yaml --allow-unauthenticated
+You can deploy with `gcloud run services replace service.yaml --allow-unauthenticated`
 
 The service gets a unique immutable URL.
 
 Deploying a new version
 
-This creates a new service, where none existed. Use --revision-suffix to override default rev.
+This creates a new service, where none existed. Use `--revision-suffix` to override default rev.
 
 	gcloud run deploy SERVICE --image IMAGE_URL
 
-Caution: The following instructions replaces your existing service configuration with the one specified in the YAML file. So if you use YAML to make revision changes, you should avoid also using the Cloud Console or gcloud tool to make configuration changes because those can be overwritten when you use YAML.
+**Caution** - The following instructions replaces your existing service configuration with the one specified in the YAML file. So if you use YAML to make revision changes, you should avoid also using the Cloud Console or gcloud tool to make configuration changes because those can be overwritten when you use YAML.
 
 This is the same problem as Azure; the Console is not locked when code is used to define services, unlike on Windows using policy files locks the GUI in Windows.
 
