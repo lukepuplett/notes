@@ -10,6 +10,22 @@ Code requirements
 If you "bring your own binaries" make sure they are configured for Linux ABI x86_64.
 
 
+## Container runtime contract
+
+- Docker Image Manifest V2, Schema 1 and 2 images.
+- Executables compiled for Linux 64-bit; x86_64 ABI format.
+- Listen on `0.0.0.0:8080` but must honor the `PORT` environment variable.
+- No TLS as this is terminated at Cloud Run endpoints.
+- Respond within the timeout setting, including cold start time.
+- These environment variables are always set: https://cloud.google.com/run/docs/reference/container-contract#env-vars
+- Header names are non-whitespace ASCII and cannot contain colons; values are RFC7230.
+- Filesystem is volatile, RAM-disk.
+- Shutdown expectations, see doc: https://cloud.google.com/run/docs/reference/container-contract#instance-shutdown
+
+Container instances expose a metadata server that you can use to get details on your instance and generate tokens for the runtime service account. The service URL is http://metadata.google.internal with `Metadata-Flavor: Google` header. See https://cloud.google.com/compute/docs/metadata/overview#querying
+
+**Important** - The service is terminated if it emits 20 sequential `5xx` HTTP responses.
+
 ## Concepts
 
 ### Resource model
