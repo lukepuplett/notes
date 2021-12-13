@@ -177,11 +177,11 @@ You can build an image without needing a Cloud Build config file.
 
 Get your Cloud project ID:
 
-	gcloud config get-value project
+        gcloud config get-value project
 
 Run this from the directory with your Dockerfile:
 
-	gcloud builds submit --tag us-central1-docker.pkg.dev/project-id/quickstart-docker-repo/quickstart-image:tag1
+        gcloud builds submit --tag us-central1-docker.pkg.dev/project-id/quickstart-docker-repo/quickstart-image:tag1
 
 That's it. It will zip-up the directory and upload it to Cloud Build where the image will be built and stored in Artifact Registry.
 
