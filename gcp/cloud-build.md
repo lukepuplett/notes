@@ -183,7 +183,13 @@ Run this from the directory with your Dockerfile:
 
 	gcloud builds submit --tag us-central1-docker.pkg.dev/project-id/quickstart-docker-repo/quickstart-image:tag1
 
-That's it.
+That's it. It will zip-up the directory and upload it to Cloud Build where the image will be built and stored in Artifact Registry.
+
+You can then deploy it by updating your Cloud Run `service.yaml` to point to the new tag and then running this:
+
+        gcloud run services replace service.yaml
+
+**Note** - In my experiments, the `:tag` must be changed in order for Cloud Run to see a new version.
 
 ### Build an image using a build config file
 
