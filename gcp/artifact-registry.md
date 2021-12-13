@@ -131,7 +131,7 @@ Within a registry, images with common layers share them.
 
 ### Choose a shell
 
-- Cloud Shell is hosted in the Control and has Docker and the gcloud SDK.
+- Cloud Shell is hosted in the Console and has Docker and the gcloud SDK.
 - Local; install all the bits.
 
 **Important** - On Windows and Linux, the user running Docker needs to be added to the Docker security group to interact with registries.
@@ -158,7 +158,7 @@ Must configure Docker to use gcloud to authenticate requests to GCP.
 
 This updates Docker's config JSON.
 
-### Obtain and image to push
+### Obtain an image to push
 
 - cd into the directory you want to save the image in.
 - Pull the same from Docker.
