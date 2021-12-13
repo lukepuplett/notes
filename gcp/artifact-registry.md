@@ -111,7 +111,7 @@ Within a registry, images with common layers share them.
 - Specify version on push and pull.
 - Can have >0 tags.
 	
-Important - When a tag is supplied, latest is not applied so pulling latest may pull some old version.
+**Important** - On push, when a tag is supplied, latest is not applied (as it may have been before when not supplying a tag) so pulling `latest` may pull some old version that was previously pushed without a tag.
 
 ### Manifests
 
@@ -134,7 +134,7 @@ Important - When a tag is supplied, latest is not applied so pulling latest may 
 - Cloud Shell is hosted in the Control and has Docker and the gcloud SDK.
 - Local; install all the bits.
 
-Important - On Windows and Linux, the user running Docker needs to be added to the Docker security group to interact with registries.
+**Important** - On Windows and Linux, the user running Docker needs to be added to the Docker security group to interact with registries.
 
 ### Create a Docker repository
 
@@ -154,7 +154,7 @@ Must configure Docker to use gcloud to authenticate requests to GCP.
 
 	gcloud auth configure-docker us-central1-docker.pkg.dev
 
-Note - the region name is a DNS name prefix; you can ping it to check it's real.
+**Note** - the region name is a DNS name prefix; you can ping it to check it's real.
 
 This updates Docker's config JSON.
 
