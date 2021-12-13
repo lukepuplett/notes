@@ -552,7 +552,7 @@ https://cloud.google.com/run/docs/managing/revisions
 - See PostgreSQL doc: https://cloud.google.com/sql/docs/postgres/connect-run
 - See MySQL doc: https://cloud.google.com/sql/docs/mysql/connect-run
 
-C### onnecting to a VPC network
+### Connecting to a VPC network
 
 - Serverless VPC Access connectors are paid expenses.
 - Each VPC connector requires its own /28 subnet for its connectors.
