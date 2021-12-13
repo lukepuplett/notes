@@ -29,7 +29,13 @@ https://docs.docker.com/develop/develop-images/multistage-build/
 
 `ENTRYPOINT` configures a container that will run as an executable
 
+## Environment variables
 
+These are declared with `ENV` and can be used in some instructions. Reference them within the Dockerfile using `$var_name` or `${var_name}`.
+
+The syntax also supports a kind of null coalescing with `${variable:-fallbackOnNull}` and a strange one `${variable:+value}` where value is used if the variable is set, else empty string. The values can be additional variables, too.
+
+Escaping is also support. Read more here: https://docs.docker.com/engine/reference/builder/#environment-replacement
 
 ## Docker `run`
 
