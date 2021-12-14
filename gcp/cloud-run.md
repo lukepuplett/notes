@@ -6,6 +6,7 @@ Code requirements
 - Listen on PORT environment variable.
 - It must not run background work (I bet it can).
 - It can have a web server.
+- Run `gcloud services list` to see its public URL.
 	
 If you "bring your own binaries" make sure they are configured for Linux ABI x86_64.
 
