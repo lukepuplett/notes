@@ -7,10 +7,10 @@ Prerequisites are needed before doing this. See *Configuring secret manager*, be
 Create a secret via CLI:
 
 	echo -n "my super secret data" | gcloud secrets create my-secret \
-        --replication-policy="replication-policy" \
+        --replication-policy="POLICY" \
         --data-file=-
 
-Where replication-policy is **automatic** or **user-managed**.
+Where `POLICY` is **automatic** or **user-managed**.
 
 Read a version:
 
