@@ -13,7 +13,9 @@ Collections hold documents and each are created implicitly, no need to pre-creat
 Each document is identified by a name you provide or let Firestore make random IDs. They're not JSON but similar and support similar nested arrays and objects (called maps).
 
 **Warning** - Documents are limited to 1MB.
+
 **Warning** - Only the first 1,500 bytes of UTF-8 are considered in queries, maybe len(750).
+
 **Warning** - Arrays cannot nest arrays.
 
 Every document is uniquely identified by its location. Create a reference like this.
