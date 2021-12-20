@@ -18,15 +18,15 @@ Each document is identified by a name you provide or let Firestore make random I
 
 Every document is uniquely identified by its location. Create a reference like this.
 
-  DocumentReference r = db.Collection("users").Document("test");
-  // or
-  DocumentReference r = db.Document("users/test");
+    DocumentReference r = db.Collection("users").Document("test");
+    // or
+    DocumentReference r = db.Document("users/test");
 
 You can also make a reference to a collection, alone, and get access to a different bunch of functionality.
 
 Bizarrely, you can create collections within a document, affording hierarchical organisation up to 100 levels deep.
 
-  var r = db.Collection("top").Document("a").Collection("sub").Document("b");
+    var r = db.Collection("top").Document("a").Collection("sub").Document("b");
 
 **Warning** - Deleting a document does not delete its sub-collections!
 
@@ -62,35 +62,35 @@ Though SFIs are auto or controlled via exemptions and CFIs are controlled explic
 
 Single-field indexes allow for the following kind of code.
 
-  citiesRef.where('country', 'in', ["USA", "Japan", "China"])
+    citiesRef.where('country', 'in', ["USA", "Japan", "China"])
 
-  // Compound equality queries
-  citiesRef.where("state", "==", "CO").where("name", "==", "Denver")
-  citiesRef.where("country", "==", "USA")
-           .where("capital", "==", false)
-           .where("state", "==", "CA")
-           .where("population", "==", 860000)
-  citiesRef.where("regions", "array-contains", "west_coast")
-  // array-contains-any and array-contains use the same indexes
-  citiesRef.where("regions", "array-contains-any", ["west_coast", "east_coast"])
+    // Compound equality queries
+    citiesRef.where("state", "==", "CO").where("name", "==", "Denver")
+    citiesRef.where("country", "==", "USA")
+             .where("capital", "==", false)
+             .where("state", "==", "CA")
+             .where("population", "==", 860000)
+    citiesRef.where("regions", "array-contains", "west_coast")
+    // array-contains-any and array-contains use the same indexes
+    citiesRef.where("regions", "array-contains-any", ["west_coast", "east_coast"])
 
 Whereas composite indexes are needed for queries that mix operators.
 
-  citiesRef.where("country", "==", "USA").orderBy("population", "asc")
-  citiesRef.where("country", "==", "USA").where("population", "<", 3800000)
-  citiesRef.where("country", "==", "USA").where("population", ">", 690000)
-  // in and == clauses use the same index
-  citiesRef.where("country", "in", ["USA", "Japan", "China"])
-           .where("population", ">", 690000)
+    citiesRef.where("country", "==", "USA").orderBy("population", "asc")
+    citiesRef.where("country", "==", "USA").where("population", "<", 3800000)
+    citiesRef.where("country", "==", "USA").where("population", ">", 690000)
+    // in and == clauses use the same index
+    citiesRef.where("country", "in", ["USA", "Japan", "China"])
+             .where("population", ">", 690000)
 
 And of course, using orderBy() would need a corresponding directional index.
 
 This is what a collection group scope query looks like where landmarks :
 
-  var landmarksGroupRef = db.collectionGroup("landmarks");
+    var landmarksGroupRef = db.collectionGroup("landmarks");
 
-  landmarksGroupRef.where("category", "==", "park")
-  landmarksGroupRef.where("category", "in", ["park", "museum"])
+    landmarksGroupRef.where("category", "==", "park")
+    landmarksGroupRef.where("category", "in", ["park", "museum"])
 
 Firestore can use more than one index in a query. Several good indexes can be combined to cover many queries.
 
@@ -198,60 +198,60 @@ Exports are made to Google Cloud Storage into a bucket. For more information, se
 
 You can either get the data directly via collections, documents or queries, or setup a listener and get data-change events. I think this is done via a Snapshot type object.
 
-  DocumentReference docRef = db.Collection("cities").Document("BJ");
-  DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
-  if (snapshot.Exists)
-  {
-      City city = snapshot.ConvertTo<City>();
-  }
+    DocumentReference docRef = db.Collection("cities").Document("BJ");
+    DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
+    if (snapshot.Exists)
+    {
+        City city = snapshot.ConvertTo<City>();
+    }
 
 **Note** - The City type is a POCO with its properties decorated with Google's own serializable sort of attribute.
 
 Getting many documents is similar. Here, using Dictionary<string, object>
 
-  Query capitalQuery = db.Collection("cities").WhereEqualTo("Capital", true);
-  QuerySnapshot capitalQuerySnapshot = await capitalQuery.GetSnapshotAsync();
-  foreach (DocumentSnapshot documentSnapshot in capitalQuerySnapshot.Documents)
-  {
-      Console.WriteLine("Document data for {0} document:", documentSnapshot.Id);
-      Dictionary<string, object> city = documentSnapshot.ToDictionary();
-      foreach (KeyValuePair<string, object> pair in city)
-      {
-          Console.WriteLine("{0}: {1}", pair.Key, pair.Value);
-      }
-      Console.WriteLine("");
-  }
+    Query capitalQuery = db.Collection("cities").WhereEqualTo("Capital", true);
+    QuerySnapshot capitalQuerySnapshot = await capitalQuery.GetSnapshotAsync();
+    foreach (DocumentSnapshot documentSnapshot in capitalQuerySnapshot.Documents)
+    {
+        Console.WriteLine("Document data for {0} document:", documentSnapshot.Id);
+        Dictionary<string, object> city = documentSnapshot.ToDictionary();
+        foreach (KeyValuePair<string, object> pair in city)
+        {
+            Console.WriteLine("{0}: {1}", pair.Key, pair.Value);
+        }
+        Console.WriteLine("");
+    }
 
 You can see the subcollections for a document using this code which uses an async enumerator.
 
-  DocumentReference cityRef = db.Collection("cities").Document("SF");
-  IAsyncEnumerable<CollectionReference> subcollections = cityRef.ListCollectionsAsync();
-  IAsyncEnumerator<CollectionReference> subcollectionsEnumerator = subcollections.GetAsyncEnumerator(default);
-  while (await subcollectionsEnumerator.MoveNextAsync())
-  {
-      CollectionReference subcollectionRef = subcollectionsEnumerator.Current;
-      Console.WriteLine("Found subcollection with ID: {0}", subcollectionRef.Id);
-  }
+    DocumentReference cityRef = db.Collection("cities").Document("SF");
+    IAsyncEnumerable<CollectionReference> subcollections = cityRef.ListCollectionsAsync();
+    IAsyncEnumerator<CollectionReference> subcollectionsEnumerator = subcollections.GetAsyncEnumerator(default);
+    while (await subcollectionsEnumerator.MoveNextAsync())
+    {
+        CollectionReference subcollectionRef = subcollectionsEnumerator.Current;
+        Console.WriteLine("Found subcollection with ID: {0}", subcollectionRef.Id);
+    }
 
 ### Realtime updates
 
 You can listen for changes using this code, if you have a long-running server-side application.
 
-  DocumentReference docRef = db.Collection("cities").Document("SF");
-  FirestoreChangeListener listener = docRef.Listen(snapshot =>
-  {
-      Console.WriteLine("Callback received document snapshot.");
-      Console.WriteLine("Document exists? {0}", snapshot.Exists);
-      if (snapshot.Exists)
-      {
-          Console.WriteLine("Document data for {0} document:", snapshot.Id);
-          Dictionary<string, object> city = snapshot.ToDictionary();
-          foreach (KeyValuePair<string, object> pair in city)
-          {
-              Console.WriteLine("{0}: {1}", pair.Key, pair.Value);
-          }
-      }
-  });
+    DocumentReference docRef = db.Collection("cities").Document("SF");
+    FirestoreChangeListener listener = docRef.Listen(snapshot =>
+    {
+        Console.WriteLine("Callback received document snapshot.");
+        Console.WriteLine("Document exists? {0}", snapshot.Exists);
+        if (snapshot.Exists)
+        {
+            Console.WriteLine("Document data for {0} document:", snapshot.Id);
+            Dictionary<string, object> city = snapshot.ToDictionary();
+            foreach (KeyValuePair<string, object> pair in city)
+            {
+                Console.WriteLine("{0}: {1}", pair.Key, pair.Value);
+            }
+        }
+    });
 
 **Note** - when you app process write changes, listeners will be notified before the writes are sent and committed to the Firestore service. Retrieved documents have a `metadata.HasPendingWrites` property but this is not available in the C# library yet.
 
@@ -261,49 +261,49 @@ You can control the granularity of change events. For example, by default you wi
 
 Here's how to listen to the results of a query.
 
-  CollectionReference citiesRef = db.Collection("cities");
-  Query query = db.Collection("cities").WhereEqualTo("State", "CA");
+    CollectionReference citiesRef = db.Collection("cities");
+    Query query = db.Collection("cities").WhereEqualTo("State", "CA");
 
-  FirestoreChangeListener listener = query.Listen(snapshot =>
-  {
-      Console.WriteLine("Callback received query snapshot.");
-      Console.WriteLine("Current cities in California:");
-      foreach (DocumentSnapshot documentSnapshot in snapshot.Documents)
-      {
-          Console.WriteLine(documentSnapshot.Id);
-      }
-  });
+    FirestoreChangeListener listener = query.Listen(snapshot =>
+    {
+        Console.WriteLine("Callback received query snapshot.");
+        Console.WriteLine("Current cities in California:");
+        foreach (DocumentSnapshot documentSnapshot in snapshot.Documents)
+        {
+            Console.WriteLine(documentSnapshot.Id);
+        }
+    });
 
 And you stop listening like this.
 
-  await listener.StopAsync();
+    await listener.StopAsync();
 
 ### Simple queries
 
 Here's a simple query.
 
-  CollectionReference citiesRef = db.Collection("cities");
-  Query query = citiesRef.WhereEqualTo("State", "CA");
-  QuerySnapshot querySnapshot = await query.GetSnapshotAsync();
-  foreach (DocumentSnapshot documentSnapshot in querySnapshot.Documents)
-  {
-      Console.WriteLine("Document {0} returned by query State=CA", documentSnapshot.Id);
-  }
+    CollectionReference citiesRef = db.Collection("cities");
+    Query query = citiesRef.WhereEqualTo("State", "CA");
+    QuerySnapshot querySnapshot = await query.GetSnapshotAsync();
+    foreach (DocumentSnapshot documentSnapshot in querySnapshot.Documents)
+    {
+        Console.WriteLine("Document {0} returned by query State=CA", documentSnapshot.Id);
+    }
 
 As seen before, called ToDictionary to get the document content.
 
-  Query capitalQuery = db.Collection("cities").WhereEqualTo("Capital", true);
-  QuerySnapshot capitalQuerySnapshot = await capitalQuery.GetSnapshotAsync();
-  foreach (DocumentSnapshot documentSnapshot in capitalQuerySnapshot.Documents)
-  {
-      Console.WriteLine("Document data for {0} document:", documentSnapshot.Id);
-      Dictionary<string, object> city = documentSnapshot.ToDictionary();
-      foreach (KeyValuePair<string, object> pair in city)
-      {
-          Console.WriteLine("{0}: {1}", pair.Key, pair.Value);
-      }
-      Console.WriteLine("");
-  }
+    Query capitalQuery = db.Collection("cities").WhereEqualTo("Capital", true);
+    QuerySnapshot capitalQuerySnapshot = await capitalQuery.GetSnapshotAsync();
+    foreach (DocumentSnapshot documentSnapshot in capitalQuerySnapshot.Documents)
+    {
+        Console.WriteLine("Document data for {0} document:", documentSnapshot.Id);
+        Dictionary<string, object> city = documentSnapshot.ToDictionary();
+        foreach (KeyValuePair<string, object> pair in city)
+        {
+            Console.WriteLine("{0}: {1}", pair.Key, pair.Value);
+        }
+        Console.WriteLine("");
+    }
 
 You can use `<. <=, >, >=, !=, array-contains, array-contains-any, in` and `not-in` operators.
 
@@ -317,20 +317,20 @@ You can use `<. <=, >, >=, !=, array-contains, array-contains-any, in` and `not-
 
 Use the in operator, WhereIn in C#, to combine up to 10 == clauses on the same field with a logical OR like this.
 
-  Query query = citiesRef.WhereIn("Country", new[] { "USA", "Japan" });
+    Query query = citiesRef.WhereIn("Country", new[] { "USA", "Japan" });
 
 **Note** - The not-in version excludes documents where the field does not exist.
 
 And use array-contains-any to combine up to 10 array-contains clauses on the same field with a logical OR.
 
-  Query query = citiesRef.WhereArrayContainsAny("Regions", new[] { "west_coast", "east_coast" });
+    Query query = citiesRef.WhereArrayContainsAny("Regions", new[] { "west_coast", "east_coast" });
 
 Naturally, the documents are de-duped in case of many matches. Also, when the field contains a string, as opposed to an array, there is no match made just on that string.
 
 For `WhereIn`, you can pass in an array but it will look for an exact match.
 
-  Query query = citiesRef.WhereIn("Regions",
-      new[] { new[] { "west_coast" }, new[] { "east_coast" } });
+    Query query = citiesRef.WhereIn("Regions",
+        new[] { new[] { "west_coast" }, new[] { "east_coast" } });
 
 **Note** - Limited to one in, not-in or array-contains-any clause per query and you cannot combine these operators in the same query.
 
@@ -342,23 +342,23 @@ For `WhereIn`, you can pass in an array but it will look for an exact match.
 
 You can chain operators to build logical AND queries, but before combining equality operators with inequality and range operators, you must create a composite index.
 
-  Query chainedQuery = citiesRef
-      .WhereEqualTo("State", "CA")
-      .WhereEqualTo("Name", "San Francisco");
+    Query chainedQuery = citiesRef
+        .WhereEqualTo("State", "CA")
+        .WhereEqualTo("Name", "San Francisco");
 
 You can perform range queries only on a single field and you can include max one array clause per compound query.
 
 This is okay.
 
-  Query rangeQuery = citiesRef
-      .WhereGreaterThanOrEqualTo("State", "CA")
-      .WhereLessThanOrEqualTo("State", "IN");
+    Query rangeQuery = citiesRef
+        .WhereGreaterThanOrEqualTo("State", "CA")
+        .WhereLessThanOrEqualTo("State", "IN");
 
 But this is all kinds of wrong.
 
-  Query invalidRangeQuery = citiesRef
-      .WhereGreaterThanOrEqualTo("State", "CA")
-      .WhereGreaterThan("Population", 1000000);
+    Query invalidRangeQuery = citiesRef
+        .WhereGreaterThanOrEqualTo("State", "CA")
+        .WhereGreaterThan("Population", 1000000);
 
 ### Collection group queries
 
@@ -366,12 +366,12 @@ A collection group consists of collections with the same ID. Normally, queries w
 
 This queries within all landmarks subcollections in all documents, no less.
 
-  Query museums = db.CollectionGroup("landmarks").WhereEqualTo("Type", "museum");
-  QuerySnapshot querySnapshot = await museums.GetSnapshotAsync();
-  foreach (DocumentSnapshot document in querySnapshot.Documents)
-  {
-      Console.WriteLine($"{document.Reference.Path}: {document.GetValue<string>("Name")}");
-  }
+    Query museums = db.CollectionGroup("landmarks").WhereEqualTo("Type", "museum");
+    QuerySnapshot querySnapshot = await museums.GetSnapshotAsync();
+    foreach (DocumentSnapshot document in querySnapshot.Documents)
+    {
+        Console.WriteLine($"{document.Reference.Path}: {document.GetValue<string>("Name")}");
+    }
 
 Mind you, you'd have to have created the appropriate index first.
 
@@ -390,7 +390,7 @@ Unless specified, documents are ordered by document ID.
 
 **Note** - The inclusion of an order by clause will omit the document if the field does not exist.
 
-  Query query = citiesRef.OrderBy("Name").Limit(3);
+    Query query = citiesRef.OrderBy("Name").Limit(3);
 
 ### Ordering limitations
 
@@ -398,9 +398,9 @@ If you include a filter with a range comparison (`<, <=, >, >=`), your first ord
 
 This code won't work.
 
-  Query query = citiesRef
-      .WhereGreaterThan("Population", 2500000)
-      .OrderBy("Country");
+    Query query = citiesRef
+        .WhereGreaterThan("Population", 2500000)
+        .OrderBy("Country");
 
 And you can't order by a field in an equality or in clause.
 
@@ -408,36 +408,36 @@ And you can't order by a field in an equality or in clause.
 
 You use this to return a subset or paginate, but often you should just use a normal range query. Use `startAt` (inclusive) and `startAfter` (exclusive) and optionally `endAt` and `endAfter`.
 
-  Query query = citiesRef.OrderBy("Population").StartAt(1000000);
+    Query query = citiesRef.OrderBy("Population").StartAt(1000000);
 
 You can use a document snapshot to define a query cursor.
 
-  CollectionReference citiesRef = db.Collection("cities");
-  DocumentReference docRef = citiesRef.Document("SF");
-  DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
-  Query query = citiesRef.OrderBy("Population").StartAt(snapshot);
+    CollectionReference citiesRef = db.Collection("cities");
+    DocumentReference docRef = citiesRef.Document("SF");
+    DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
+    Query query = citiesRef.OrderBy("Population").StartAt(snapshot);
 
 Then combine this with the limit method to paginate a query.
 
-  CollectionReference citiesRef = db.Collection("cities");
-  Query firstQuery = citiesRef.OrderBy("Population").Limit(3);
+    CollectionReference citiesRef = db.Collection("cities");
+    Query firstQuery = citiesRef.OrderBy("Population").Limit(3);
 
-  QuerySnapshot querySnapshot = await firstQuery.GetSnapshotAsync();
-  long lastPopulation = 0;
-  foreach (DocumentSnapshot documentSnapshot in querySnapshot.Documents)
-  {
-      lastPopulation = documentSnapshot.GetValue<long>("Population");
-  }
+    QuerySnapshot querySnapshot = await firstQuery.GetSnapshotAsync();
+    long lastPopulation = 0;
+    foreach (DocumentSnapshot documentSnapshot in querySnapshot.Documents)
+    {
+        lastPopulation = documentSnapshot.GetValue<long>("Population");
+    }
 
-  Query secondQuery = citiesRef.OrderBy("Population").StartAfter(lastPopulation);
-  QuerySnapshot secondQuerySnapshot = await secondQuery.GetSnapshotAsync();
+    Query secondQuery = citiesRef.OrderBy("Population").StartAfter(lastPopulation);
+    QuerySnapshot secondQuerySnapshot = await secondQuery.GetSnapshotAsync();
 
 When using a cursor based on a field like this, you can make it more precise by adding another field value. Above, if two cities have the same lastPopulation, then the start is ambiguous.
 
 See this strange code.
 
-  Query query1 = db.Collection("cities").OrderBy("Name").OrderBy("State").StartAt("Springfield");
-  Query query2 = db.Collection("cities").OrderBy("Name").OrderBy("State").StartAt("Springfield", "Missouri");
+    Query query1 = db.Collection("cities").OrderBy("Name").OrderBy("State").StartAt("Springfield");
+    Query query2 = db.Collection("cities").OrderBy("Name").OrderBy("State").StartAt("Springfield", "Missouri");
 
 **Note** - It's odd because two arguments are sent to the StartAt method, the first is Name and the second is for State but that's not explicit.
 
