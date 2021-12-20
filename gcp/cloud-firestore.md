@@ -446,4 +446,3 @@ See this strange code.
 
 It seems that there are two SDKs, the normal Google Cloud client libraries for Firestore, and the Firebase Admin SDKs which bundle the former along with some other Firebase features, though there's more limited language support for the latter.
 
-![image](https://user-images.githubusercontent.com/5802524/146822298-179c2b79-1a39-4bf7-8fb3-e35911e58eb8.png)
