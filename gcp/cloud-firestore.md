@@ -162,6 +162,8 @@ The code in the transaction is normal C# within an async anonymous function bloc
 
 Transactions are designed to fail and automatically retry if the documents involved are changed during the transaction execution.
 
+**Author's Note** - On the surface this is a strange design as my intuition is not to overwrite "their" changes that could influence whether or not to make "our" changes, which could be true, but I guess this design is to support atomic updates such as incrementing a counter; the transaction body would reread the latest changed data and update. To prevent whacking other's changes, I guess the command needs configuring with zero retries somehow.
+
 **Note** - transactions have a max size of 10MiB based on documents and indexes changed.
 
 Incrementing a counter is a good example of something to wrap in a transaction because it involves a read, increment and write.
