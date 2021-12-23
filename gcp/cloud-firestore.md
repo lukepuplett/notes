@@ -450,3 +450,8 @@ See this strange code.
 
 It seems that there are two SDKs, the normal Google Cloud client libraries for Firestore, and the Firebase Admin SDKs which bundle the former along with some other Firebase features, though there's more limited language support for the latter.
 
+### Getting started
+
+Google's documentation for the C# library provides a great jumping off point, here:
+
+https://cloud.google.com/dotnet/docs/reference/Google.Cloud.Firestore/latest/index
