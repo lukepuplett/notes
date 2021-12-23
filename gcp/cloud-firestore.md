@@ -455,3 +455,7 @@ It seems that there are two SDKs, the normal Google Cloud client libraries for F
 Google's documentation for the C# library provides a great jumping off point, here:
 
 https://cloud.google.com/dotnet/docs/reference/Google.Cloud.Firestore/latest/index
+
+and here:
+
+https://firebase.google.com/docs/firestore/data-model
