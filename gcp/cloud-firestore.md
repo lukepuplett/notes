@@ -460,6 +460,8 @@ and here:
 
 https://firebase.google.com/docs/firestore/data-model
 
+### Sample code
+
 Here's some useful sample code:
 
     FirestoreDb db = FirestoreDb.Create(projectId);
@@ -495,3 +497,21 @@ Here's some useful sample code:
         int born = queryResult.GetValue<int>("Born");
         Console.WriteLine($"{firstName} {lastName}; born {born}");
     }
+
+### Connecting to the emulator
+
+ - Connect to the emulator endpoint
+ - Use `ChannelCredentials.Insecure` as the credentials
+ - Specify `Authorization: Bearer <owner>` header on each request.
+
+This code only uses the emulator when the following environment variable is set.
+
+    // variable FIRESTORE_EMULATOR_HOST="localhost:8080"
+
+    FirestoreDb db = new FirestoreDbBuilder
+    {
+        ProjectId = projectId,
+        EmulatorDetection = EmulatorDetection.EmulatorOrProduction
+    }.Build();
+    // Use db as normal
+
