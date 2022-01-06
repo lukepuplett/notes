@@ -446,11 +446,11 @@ See this strange code.
 **Note** - It's odd because two arguments are sent to the StartAt method, the first is Name and the second is for State but that's not explicit.
 
 
-## Cloud Firestore API Client Library for .NET
+# Cloud Firestore API Client Library for .NET
 
 It seems that there are two SDKs, the normal Google Cloud client libraries for Firestore, and the Firebase Admin SDKs which bundle the former along with some other Firebase features, though there's more limited language support for the latter.
 
-### Getting started
+## Getting started
 
 Google's documentation for the C# library provides a great jumping off point, here:
 
@@ -514,4 +514,280 @@ This code only uses the emulator when the following environment variable is set.
         EmulatorDetection = EmulatorDetection.EmulatorOrProduction
     }.Build();
     // Use db as normal
+
+## Data model
+
+Notes taken from https://cloud.google.com/dotnet/docs/reference/Google.Cloud.Firestore/latest/datamodel
+
+Based around collections and documents, which can contain more collections though the document data itself does not contain subcollections. Documents can contain nested data via maps. I can't remember if you can further nest complex objects in map properties or if they're limited to simple key-value pairs.
+
+The C#.NET types used for the supported Firestore data model are obvious except for some specialised Google ones.
+
+#### Byte arrays
+
+Can use `Google.Cloud.Firestore.Blob`, or `byte[]`, or `Google.Protobuf.ByteString` to store 1,048,487 bytes with first 1,500 indexed.
+
+#### Date-times
+
+Can use `Google.Cloud.Firestore.Timestamp`, or `DateTime`, or `DateTimeOffset`, or `Google.Protobuf.WellKnownTypes.Timestamp`. Precise only to microseconds (rounded down). `DateTime` values must be `Utc` to be converted; For `DateTimeOffset` values,  **UTC-offset information is discarded.**
+
+#### Geographical point
+
+Can use `Google.Cloud.Firestore.GeoPoint` or `Google.Type.LatLng`.
+
+#### Reference
+
+Must use `Google.Cloud.Firestore.DocumentReference`.
+
+### Mapping with attributed classes
+
+Can serialize to and from a POCO with Google's attributes.
+
+    [FirestoreData]
+    public class City
+    {
+        [FirestoreProperty]
+        public string Name { get; set; }
+
+        [FirestoreProperty]
+        public string State { get; set; }
+
+        [FirestoreProperty]
+        public string Country { get; set; }
+
+        [FirestoreProperty("Capital")]
+        public bool IsCapital { get; set;  }
+
+        [FirestoreProperty]
+        public long Population { get; set; }
+    }
+
+Use it like this:
+
+FirestoreDb db = FirestoreDb.Create(projectId);
+
+    // Create a document with a random ID in the "cities" collection.
+    CollectionReference collection = db.Collection("cities");
+    City city = new City
+    {
+        Name = "Los Angeles",
+        Country = "USA",
+        State = "CA",
+        IsCapital = false,
+        Population = 3900000L
+    };
+    DocumentReference document = await collection.AddAsync(city);
+
+    // Fetch the data back from the server and deserialize it.
+    DocumentSnapshot snapshot = await document.GetSnapshotAsync();
+    City citySnapshot = snapshot.ConvertTo<City>();
+    Console.WriteLine(citySnapshot.Name); // Los Angeles
+
+There are also several special attributes which appear to be used to get at some document metadata, e.g.:
+
+    [FirestoreData]
+    public class ChatRoom
+    {
+        [FirestoreDocumentId]
+        public DocumentReference Reference { get; set; }
+
+        [FirestoreDocumentCreateTimestamp]
+        public Timestamp CreateTime { get; set; }
+
+        [FirestoreDocumentUpdateTimestamp]
+        public Timestamp UpdateTime { get; set; }
+
+        [FirestoreDocumentReadTimestamp]
+        public Timestamp ReadTime { get; set; }
+
+        [FirestoreProperty]
+        public string Name { get; set; }
+
+        [FirestoreProperty]
+        public bool Public { get; set; }
+    }
+
+Where `FirestoreDocumentId` must be a `string` or `DocumentReference` for a complete and useable reference object. The timestamps must be a `DateTime`, `DateTimeOffset`, `Google.Cloud.Firestore.Timestamp` or `Google.Protobuf.WellKnownTypes.Timestamp` type and can be nullable.
+
+### Mapping with dictionaries
+
+Use `Dictionary<string, object>` or replace `object` with a type if the document has uniform values. Use `DocumentSnapshot.ToDictionary` to deserialize, e.g.:
+
+    FirestoreDb db = FirestoreDb.Create(projectId);
+
+    // Create a document with a random ID in the "cities" collection.
+    CollectionReference collection = db.Collection("cities");
+    Dictionary<string, object> city = new Dictionary<string, object>
+    {
+        { "Name", "Los Angeles" },
+        { "Country", "USA" },
+        { "State", "CA" },
+        { "Capital", false },
+        { "Population", 3900000L }
+    };
+    DocumentReference document = await collection.AddAsync(city);
+
+    // Fetch the data back from the server and deserialize it.
+    DocumentSnapshot snapshot = await document.GetSnapshotAsync();
+    Dictionary<string, object> cityData = snapshot.ToDictionary();
+    Console.WriteLine(cityData["Name"]); // Los Angeles
+
+### Mapping with anonymous types
+
+These can be used for serialization but not deserialization, for obvious reason. They're great for _partial_ updates.
+
+    FirestoreDb db = FirestoreDb.Create(projectId);
+
+    // Create a document with a random ID in the "cities" collection.
+    CollectionReference collection = db.Collection("cities");
+    var city = new
+    {
+        Name = "Los Angeles",
+        Country = "USA",
+        State = "CA",
+        Capital = false,
+        Population = 3900000L
+    };
+    DocumentReference document = await collection.AddAsync(city);
+
+    // Update just the population using another anonymous type
+    await document.SetAsync(new { Population = 3900005L }, SetOptions.MergeAll);
+
+    // Fetch the latest document and print the population
+    DocumentSnapshot snapshot = await document.GetSnapshotAsync();
+    Console.WriteLine(snapshot.GetValue<long>("Population")); // 3900005
+
+### Custom converters
+
+Create a custom converter by implementing the following interface. This might be useful for dealing with `DateTimeOffset` and lost UTC information, but care is needed to ensure it is still correctly indexable, sortable and queryable when in it's in its storage presentation. Perhaps an alternative is to store `DateTimeOffset` in it's ISO format but it would be useless in queries, so additionally store a `DateTime` version in UTC.
+
+    public interface IFirestoreConverter<T>
+    {
+        object ToFirestore(T value);    // convert to storage version
+        T FromFirestore(object value);  // convert to application code version
+    }
+
+Can apply `[FirestoreDeserializationConfigurationAttribute]` to `FromFirestore` for added functionality, see documentation below:
+
+https://cloud.google.com/dotnet/docs/reference/Google.Cloud.Firestore/latest/datamodel#custom-converters
+
+To apply the converter see sample below:
+
+    [FirestoreData(ConverterType = typeof(PlayerIdConverter))]
+    public class PlayerId
+    {
+        public string Id { get; }
+
+        public PlayerId(string id)
+        {
+            Id = id;
+        }
+    }
+
+    public class PlayerIdConverter : IFirestoreConverter<PlayerId>
+    {
+        // A PlayerId should be represented in storage as just the string value.
+        public object ToFirestore(PlayerId value) => value.Id;
+
+        public PlayerId FromFirestore(object value)
+        {
+            switch (value)
+            {
+                // This is the expected path: 
+                case string id:
+                    return new PlayerId(id);
+                // The converter will never be called with a null value from Google.Cloud.Firestore,
+                // but throw an appropriate exception anyway.
+                case null:
+                    throw new ArgumentNullException(nameof(value));
+                // The converter may be called with unexpected data if (say) there's a document stored
+                // with a field of the wrong type.
+                default:
+                    throw new ArgumentException($"Invalid type to convert to PlayerId: {value.GetType()}");
+            }
+        }
+    }
+
+Then I guess the `PlayerId` class is used as a property type in the POCO. You can also selectively apply it, like so:
+
+    [FirestoreData]
+    public class PlayerWithGuidId
+    {
+        [FirestoreProperty(ConverterType = typeof(GuidConverter))]
+        public Guid Id { get; set; }
+
+        [FirestoreProperty]
+        public DateTime LastPlayed { get; set; }
+
+        [FirestoreProperty]
+        public int HighScore { get; set; }
+    }
+
+    public class GuidConverter : IFirestoreConverter<Guid>
+    {
+        public object ToFirestore(Guid value) => value.ToString("N");
+
+        public Guid FromFirestore(object value)
+        {
+            switch (value)
+            {
+                case string guid: return Guid.ParseExact(guid, "N");
+                case null: throw new ArgumentNullException(nameof(value));
+                default: throw new ArgumentException($"Unexpected data: {value.GetType()}");
+            }
+        }
+    }
+
+Or you can register the converter with the `FirestoreDb` instance via the `FirestoreDbBuilder.ConverterRegistry` property.
+
+    FirestoreDb db = new FirestoreDbBuilder
+    {
+        ProjectId = projectId,
+        ConverterRegistry = new ConverterRegistry
+        {
+            new GuidConverter()
+        }
+    }.Build();
+    // Documents serialized and deserialized via db will now use the
+    // custom Guid converter.
+
+With a **document converter** you can even convert between a custom type and a Firestore map value. This requires that the `ToFirestore` method return a dictionary or anonymous object, and the `FromFirestore` method should expect an `IDictionary<string, object>` and marshall the values back into the custom type.
+
+    [FirestoreData(ConverterType = typeof(CustomCityConverter))]
+    public class CustomCity
+    {
+        // Note: no [FirestoreProperty] attributes. The converter
+        // is doing all the work.
+        public string Name { get; }
+        public string Country { get; }
+        public long Population { get; }
+
+        public CustomCity(string name, string country, long population)
+        {
+            Name = name;
+            Country = country;
+            Population = population;
+        }
+    }
+
+    public class CustomCityConverter : IFirestoreConverter<CustomCity>
+    {
+        // An anonymous type is a convenient way of serializing a map value.
+        // You could create a Dictionary<string, object> instead; they're stored the
+        // same way.
+        public object ToFirestore(CustomCity value) =>
+            new { value.Name, value.Country, value.Population };
+
+        public CustomCity FromFirestore(object value)
+        {
+            if (value is IDictionary<string, object> map)
+            {
+                // Any exceptions thrown here will be propagated directly. You may wish to be more
+                // careful, if you need to control the exact exception thrown used when the
+                // data is incomplete or has the wrong type.
+                return new CustomCity((string) map["Name"], (string) map["Country"], (long) map["Population"]);
+            }
+            throw new ArgumentException($"Unexpected data: {value.GetType()}");
+        }
+    }
 
