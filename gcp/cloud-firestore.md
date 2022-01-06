@@ -564,8 +564,8 @@ Can serialize to and from a POCO with Google's attributes.
 
 Use it like this:
 
-FirestoreDb db = FirestoreDb.Create(projectId);
-
+    FirestoreDb db = FirestoreDb.Create(projectId);
+    
     // Create a document with a random ID in the "cities" collection.
     CollectionReference collection = db.Collection("cities");
     City city = new City
