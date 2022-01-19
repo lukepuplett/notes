@@ -50,6 +50,15 @@ And reference it like so:
     
 Learn about Human-Readable ABIs in Ethers.js here: https://blog.ricmoo.com/human-readable-contract-abis-in-ethers-js-141902f4d917
 
+**Aside** - the following is an ERC-20 token ABI:
+
+    // The ERC-20 ABI
+    var abi = [
+      "function balanceOf(address owner) view returns (uint)",
+      "function transfer(address to, uint amount)",
+      "event Transfer(address indexed from, address indexed to, uint amount)"
+    ];
+
 Hardhat has a built-in EVM node emulator. Run `npx hardhat node` and it'll spew 20 test account addresses and private keys onto the console, each with 10,000 fake ETH.
 
 Rename `sample-script.js` to `deploy.js` and run it:
