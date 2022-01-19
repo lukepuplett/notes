@@ -117,13 +117,17 @@ Set `GOOGLE_APPLICATION_CREDENTIALS="KEY_FILE_PATH"` variable. Configure it in `
 
     // Some APIs, like Storage, accept a credential in their Create()
     // method.
+    
     public object AuthExplicit(string projectId, string jsonPath)
     {
         // Explicitly use service account credentials by specifying 
         // the private key file.
+        
         var credential = GoogleCredential.FromFile(jsonPath);
         var storage = StorageClient.Create(credential);
+        
         // Make an authenticated API request.
+        
         var buckets = storage.ListBuckets(projectId);
         foreach (var bucket in buckets)
         {
@@ -131,8 +135,10 @@ Set `GOOGLE_APPLICATION_CREDENTIALS="KEY_FILE_PATH"` variable. Configure it in `
         }
         return null;
     }
+    
     // Other APIs, like Language, accept a channel in their Create()
     // method.
+    
     public object AuthExplicit(string projectId, string jsonPath)
     {
         LanguageServiceClientBuilder builder = new LanguageServiceClientBuilder
