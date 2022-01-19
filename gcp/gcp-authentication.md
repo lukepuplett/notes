@@ -44,3 +44,8 @@ GCP APIs support multiple authentication flows for different runtime environment
 
 See ADC, here: https://cloud.google.com/docs/authentication/production#automatically
 
+| Requirement                                                       | Recommendation      | Comment                                                                                                                                                        |   |   |
+|-------------------------------------------------------------------|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|
+| Accessing public data anonymously                                 | API key             | Only identifies the app.                                                                                                                                       |   |   |
+| Accessing private data on behalf of an end user                   | OAuth 2.0 client    | Lets end users authenticate your app with Google and allows your app to access GCP APIs on behalf of the user.                                                 |   |   |
+| Accessing private data on behalf of a service account outside GCP | Service account key | Create a service account and download its private key as JSON, then pass it to the client library via the GOOGLE_APPLICATION_CREDENTIALS environment variable. |   |   |
