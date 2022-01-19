@@ -101,13 +101,51 @@ Grant permissions to the account:
 
     gcloud projects add-iam-policy-binding PROJECT_ID --member="serviceAccount:MY_NAME@PROJECT_ID.iam.gserviceaccount.com" --role="roles/owner"
 
-**Note** - the `--role` flag affects which resources your service account can access in your project and can be changed later. **Don't** grant _Owner_, _Editor_ or _Viewer_ roles when in production, instead grant a predefined role or custom role that meets your needs.
+**Note** - The `--role` flag affects which resources your service account can access in your project and can be changed later. **Don't** grant _Owner_, _Editor_ or _Viewer_ roles when in production, instead grant a predefined role or custom role that meets your needs.
 
 Generate the key file:
 
     gcloud iam service-accounts keys create FILE_NAME.json --iam-account=MY_NAME@PROJECT_ID.iam.gserviceaccount.com
 
-Note
+**Note** - You'll need to download the service account key and use the environment variable or manually code passing it to the library.
+
+#### Passing credentials via environment variable
+
+Set `GOOGLE_APPLICATION_CREDENTIALS="KEY_FILE_PATH"` variable. Configure it in `~/.zshrc` or `~/.bashrc` or `~/.profile` file.
+
+#### Passing credentials via code
+
+    // Some APIs, like Storage, accept a credential in their Create()
+    // method.
+    public object AuthExplicit(string projectId, string jsonPath)
+    {
+        // Explicitly use service account credentials by specifying 
+        // the private key file.
+        var credential = GoogleCredential.FromFile(jsonPath);
+        var storage = StorageClient.Create(credential);
+        // Make an authenticated API request.
+        var buckets = storage.ListBuckets(projectId);
+        foreach (var bucket in buckets)
+        {
+            Console.WriteLine(bucket.Name);
+        }
+        return null;
+    }
+    // Other APIs, like Language, accept a channel in their Create()
+    // method.
+    public object AuthExplicit(string projectId, string jsonPath)
+    {
+        LanguageServiceClientBuilder builder = new LanguageServiceClientBuilder
+        {
+            CredentialsPath = jsonPath
+        };
+
+        LanguageServiceClient client = builder.Build();
+        AnalyzeSentiment(client);
+        return 0;
+    }
+
+
 
 ## Getting started
 
