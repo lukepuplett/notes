@@ -500,9 +500,11 @@ Here's some useful sample code:
 
 ### Connecting to the emulator
 
- - Connect to the emulator endpoint
- - Use `ChannelCredentials.Insecure` as the credentials
+ - Connect to the emulator endpoint.
+ - Use `ChannelCredentials.Insecure` as the credentials.
  - Specify `Authorization: Bearer <owner>` header on each request.
+
+ProjectId may be null, in which case the project will be automatically detected if possible.
 
 This code only uses the emulator when the following environment variable is set.
 
