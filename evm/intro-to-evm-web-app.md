@@ -59,3 +59,7 @@ Rename `sample-script.js` to `deploy.js` and run it:
 
 **Note** - this runs as the first (of 20) test account.
 
+Keep a note of the contract address.
+
+MetaMask needs to be configured with one of the 20 test accounts. Open MetaMask and enable **Show test networks**, then update the network to **localhost 8545**. Then import the private key of a test user.
+
