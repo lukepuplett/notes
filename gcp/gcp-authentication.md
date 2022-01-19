@@ -151,7 +151,14 @@ Set `GOOGLE_APPLICATION_CREDENTIALS="KEY_FILE_PATH"` variable. Configure it in `
         return 0;
     }
 
+### Attaching a service account to a resource
 
+Some GCP resources can have a user-managed service account as its default identity. This is known as _attaching_ or _associating_ the account with the resource.
 
-## Getting started
+When a resource (or code running on a resource) accesses other GCP stuff, it impersonates the account attached to itself.
 
+Usually you attach a service account when you create the resource. After creation, you **cannot** change the attached account, except for Compute Engine instances.
+
+Because you must attach on create, and cannot change it, you must preconfigure the service account before creating the resource.
+
+More here, https://cloud.google.com/iam/docs/impersonating-service-accounts#attaching-to-resources.
