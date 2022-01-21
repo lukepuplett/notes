@@ -34,7 +34,9 @@ Bizarrely, you can create collections within a document, affording hierarchical 
 
 ### Indexes
 
-Firestore has single-field and composite indexes. It uses indexes for all queries. Most indexes are auto-created as you test your app. I think this happens locally in emulators and then you use the config file to setup the cloud.
+Firestore has single-field and composite indexes. It uses indexes for all queries. Most indexes can be auto-created as you test your app. I think this happens via error messages from testing during development that contain links through which you can create the missing index.
+
+See https://cloud.google.com/firestore/docs/query-data/indexing?hl=en-AU&_ga=2.186531241.-147496122.1638202233#error-links
 
 Single-field indexes are managed by configuring the auto-indexing and exemptions. By default an SFI is made for each field in a document and each sub-field in a document map value. For normal fields, it makes an ascending index and a descending one at collection-scope. It does this also for each map field. Arrays get a collect-scope "array-contains" index.
 
