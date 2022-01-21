@@ -45,11 +45,13 @@ New indexes are backfilled using _long-running operations_ and take at least a f
 
 Single-field indexes are managed by configuring the auto-indexing and exemptions. By default an SFI is made for each field in a document and each sub-field in a document map value. For normal fields, it makes an ascending index and a descending one at collection-scope. It does this also for each map field. Arrays get a collect-scope "array-contains" index.
 
-SFIs with collection-group scope are not maintained by default, whatever that means.
+SFIs with collection-group scope (see below) are not maintained by default.
 
 Use the exemption settings to control indexing; forcing on and turning off it seems. Obviously a map's fields inherit it's parent's setting, but you can define a SFI for a map field.
 
 Google says you can rely on automatic indexing and errors to manage indexes, for most apps, but consider exempting large string fields, high write rates to a collection containing documents with sequential values, large array or map fields.
+
+See https://cloud.google.com/firestore/docs/concepts/index-overview#automatic_indexing
 
 **Note** - if an indexed field's value is sequential as inserted, e.g. a timestamp and IoT data, then max writes is 500/second. Exempt this field if possible.
 
