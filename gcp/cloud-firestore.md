@@ -38,6 +38,11 @@ Firestore has single-field and composite indexes. It uses indexes for all querie
 
 See https://cloud.google.com/firestore/docs/query-data/indexing?hl=en-AU&_ga=2.186531241.-147496122.1638202233#error-links
 
+New indexes are backfilled using _long-running operations_ and take at least a few minutes even for an empty database. View the operation with:
+
+    gcloud firestore operations list
+    gcloud firestore operations describe OP-ID
+
 Single-field indexes are managed by configuring the auto-indexing and exemptions. By default an SFI is made for each field in a document and each sub-field in a document map value. For normal fields, it makes an ascending index and a descending one at collection-scope. It does this also for each map field. Arrays get a collect-scope "array-contains" index.
 
 SFIs with collection-group scope are not maintained by default, whatever that means.
