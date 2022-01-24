@@ -128,3 +128,16 @@ This Python CLI uses the JSON API, but can be reconfigured by setting `prefer_ap
 - You can map a _bucket-bound hostname_ with either an `A` or `CNAME`.
 - See https://cloud.google.com/storage/docs/request-endpoints#custom-domains.
 
+#### Authenticated browser downloads
+
+- Redirects to Google login and then drops a cookie.
+- Requires `storage.objects.viewer` permission to download.
+- Best use **Storage Object Viewer** role.
+- To download an object in your browser, visit:
+
+    https://storage.cloud.google.com/BUCKET_NAME/OBJECT_NAME
+
+- All requests to `storage.cloud.google.com` require authentication, even when `allUsers` have permission.
+- Use `storage.googleapis.com` for public anonymous access.
+- See Accessing Public Data at: https://cloud.google.com/storage/docs/access-public-data
+
