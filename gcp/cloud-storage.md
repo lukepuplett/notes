@@ -141,3 +141,31 @@ This Python CLI uses the JSON API, but can be reconfigured by setting `prefer_ap
 - Use `storage.googleapis.com` for public anonymous access.
 - See Accessing Public Data at: https://cloud.google.com/storage/docs/access-public-data
 
+### Request preconditions
+
+- Only perform the request if the generation or metageneration number meets criteria.
+- Read-modify-write semantics to solve lost update problem.
+- With a `Match` precondition, the object must have the same generation/metagen number, else you'll get a big fat `HTTP 412`.
+- When `Match=0`, the request succeeds only if there are no live objects of that name.
+- With a `NotMatch`, you get a `HTTP 304` if the gen/metagen matches (assume this is for a GET).
+- Can also use ETags.
+- XML API ETags for non-composite objects change only when content changes.
+- ETags for composite objects and JSON API resources change whenever the content or metadata changes.
+
+#### Cost of preconditions
+
+- You have to pay for them; a GET for the metadata.
+- Avoid cost by caching or maintaining state etc.
+
+#### Preconditions in the JSON API
+
+- A response containing an object or bucket resource carry `generation` and `metageneration` properties.
+- It seems that the JSON API uses bizarre `ifGenerationMatch`, `ifGenerationNotMatch`, `ifMetagenerationMatch` and `ifMetagenerationNotMatch` query parameters for compose, insert or rewrite operations.
+- For examples, see https://cloud.google.com/storage/docs/request-preconditions#_JSONAPI
+
+##### Limitations
+
+
+
+**Note** - Preconditions in the XML API are done using custom headers. See https://cloud.google.com/storage/docs/request-preconditions#_XMLAPI
+
