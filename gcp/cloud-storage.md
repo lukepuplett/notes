@@ -36,3 +36,95 @@ All data belongs in a project.
 - A _generation number_ for an object changes with with replacement.
 
 **Note** - Replacement of an object is limited to once-per-second; expect `HTTP 429`.
+
+#### Resources
+
+##### Resource names
+
+- Each object has a resource name like this:
+
+    projects/_/buckets/BUCKET_NAME/objects/OBJECT_NAME
+
+- A `#NUMBER` appended to the end of the resource name points to a specific generation.
+- `#0` is special and means the most recent.
+- Add `#0` when the object name has and ending that can be misinterpreted as a generation number.
+
+#### Geo-redundancy
+
+- Geo-redundant data is stored in at least two places with 100 miles between.
+- Multi-region and dual-region objects are redundant, regardless of storage class.
+- Replication is asynchronous but instantly zone-redundant.
+- Some objects can take a while to replicate.
+- It seems like failover is automatic with no change to the resource name.
+
+##### Turbo replication
+
+- Premium feature for certain dual-region buckets.
+- Predictable _Recovery Point Objective_ or 15 minutes for _any_ new object.
+
+### Request endpoints
+
+- Supports HTTP/1.1, HTTP/2 and HTTP/3 protocols.
+
+#### Typical API requests
+
+- For general JSON API requests, excluding object uploads, use this:
+
+    https://storage.googleapis.com/storage/v1/PATH_TO_RESOURCE
+
+- For uploads:
+
+    https://storage.googleapis.com/upload/storage/v1/b/BUCKET_NAME/o
+
+    (the `o` isn't a typo)
+
+- For batched requests:
+
+    https://storage.googleapis.com/batch/storage/v1/PATH_TO_RESOURCE
+
+- Optionally, for downloads:
+
+    https://storage.googleapis.com/download/storage/v1/b/BUCKET_NAME/o/OBJECT_NAME?alt=media
+
+**Note** - There's also an XML API, see https://cloud.google.com/storage/docs/request-endpoints#typical
+
+##### Encoding URI path parts
+
+- Percent-encode these characters in the object name or query string of a request URI:
+
+```
+  !#$&'()*+,/:;=?@[ ]
+```
+
+#### Cloud Console endpoints
+
+When using the Cloud Console, use the following URLs:
+
+##### Bucket list for a project
+
+    https://console.cloud.google.com/storage/browser?project=PROJECT_ID
+
+##### Object list for a bucket
+
+    https://console.cloud.google.com/storage/browser/BUCKET_NAME
+   
+##### Details for an object
+
+    https://console.cloud.google.com/storage/browser/_details/BUCKET_NAME/OBJECT_NAME
+
+#### gsutil endpoints
+
+This Python CLI uses the JSON API, but can be reconfigured by setting `prefer_api=xml` in the `.boto` config file.
+
+##### Performance and cost considerations
+
+- The XML API uses the boto framework and so re-reads downloaded files to compute an MD5 if not present.
+- For objects that do not include an MD5 in metadata, such as _composite objects_, this double the bandwidth and time.
+- If working with composite objects, avoid `prefer_api=xml`.
+- The XML API is shit in other ways, too.
+
+#### Custom domains
+
+- You can map a _bucket-bound hostname_ with either an `A` or `CNAME`.
+- See https://cloud.google.com/storage/docs/request-endpoints#custom-domains.
+
