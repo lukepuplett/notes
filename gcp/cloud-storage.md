@@ -1,12 +1,10 @@
-# Cloud Storage
+# Cloud Storage - Concepts
 
-## Concepts
-
-### Key terms
+## Key terms
 
 All data belongs in a project.
 
-#### Buckets
+### Buckets
 
 - Everything must be in a bucket.
 - Data access based on buckets.
@@ -14,22 +12,22 @@ All data belongs in a project.
 - There are limits to the rate you can create or delete buckets.
 - Buckets need a _globally_ unique name and location at creation, which are immutable.
 
-##### Bucket labels
+#### Bucket labels
 
 - These are key-value metadata that allow grouping with other GCP resources.
 - Max 64 labels per bucket, more limitations: https://cloud.google.com/storage/docs/key-terms#bucket-labels
 
-#### Objects
+### Objects
 
 - No limit on objects in a bucket.
 - They have object data and object metadata; key-value pairs.
 
-##### Object names
+#### Object names
 
 - Name is metadata of less than 1024 bytes of UTF-8, and bucket-unique.
 - Storage is flat but tools often break by `/` to present a false heirarchy.
 
-##### Object immutability
+#### Object immutability
 
 - Objects are immutable; i.e. they cannot be appended to (or truncated).
 - Wholesale replacement of an object is atomic; the old version is served until write completes.
@@ -37,9 +35,9 @@ All data belongs in a project.
 
 **Note** - Replacement of an object is limited to once-per-second; expect `HTTP 429`.
 
-#### Resources
+### Resources
 
-##### Resource names
+#### Resource names
 
 - Each object has a resource name like this:
 
@@ -49,7 +47,7 @@ All data belongs in a project.
 - `#0` is special and means the most recent.
 - Add `#0` when the object name has and ending that can be misinterpreted as a generation number.
 
-#### Geo-redundancy
+### Geo-redundancy
 
 - Geo-redundant data is stored in at least two places with 100 miles between.
 - Multi-region and dual-region objects are redundant, regardless of storage class.
@@ -57,16 +55,16 @@ All data belongs in a project.
 - Some objects can take a while to replicate.
 - It seems like failover is automatic with no change to the resource name.
 
-##### Turbo replication
+#### Turbo replication
 
 - Premium feature for certain dual-region buckets.
 - Predictable _Recovery Point Objective_ or 15 minutes for _any_ new object.
 
-### Request endpoints
+## Request endpoints
 
 - Supports HTTP/1.1, HTTP/2 and HTTP/3 protocols.
 
-#### Typical API requests
+### Typical API requests
 
 - For general JSON API requests, excluding object uploads, use this:
 
@@ -88,7 +86,7 @@ All data belongs in a project.
 
 **Note** - There's also an XML API, see https://cloud.google.com/storage/docs/request-endpoints#typical
 
-##### Encoding URI path parts
+#### Encoding URI path parts
 
 - Percent-encode these characters in the object name or query string of a request URI:
 
@@ -96,39 +94,39 @@ All data belongs in a project.
   !#$&'()*+,/:;=?@[ ]
 ```
 
-#### Cloud Console endpoints
+### Cloud Console endpoints
 
 When using the Cloud Console, use the following URLs:
 
-##### Bucket list for a project
+#### Bucket list for a project
 
     https://console.cloud.google.com/storage/browser?project=PROJECT_ID
 
-##### Object list for a bucket
+#### Object list for a bucket
 
     https://console.cloud.google.com/storage/browser/BUCKET_NAME
    
-##### Details for an object
+#### Details for an object
 
     https://console.cloud.google.com/storage/browser/_details/BUCKET_NAME/OBJECT_NAME
 
-#### gsutil endpoints
+### gsutil endpoints
 
 This Python CLI uses the JSON API, but can be reconfigured by setting `prefer_api=xml` in the `.boto` config file.
 
-##### Performance and cost considerations
+#### Performance and cost considerations
 
 - The XML API uses the boto framework and so re-reads downloaded files to compute an MD5 if not present.
 - For objects that do not include an MD5 in metadata, such as _composite objects_, this double the bandwidth and time.
 - If working with composite objects, avoid `prefer_api=xml`.
 - The XML API is shit in other ways, too.
 
-#### Custom domains
+### Custom domains
 
 - You can map a _bucket-bound hostname_ with either an `A` or `CNAME`.
 - See https://cloud.google.com/storage/docs/request-endpoints#custom-domains.
 
-#### Authenticated browser downloads
+### Authenticated browser downloads
 
 - Redirects to Google login and then drops a cookie.
 - Requires `storage.objects.viewer` permission to download.
@@ -141,7 +139,7 @@ This Python CLI uses the JSON API, but can be reconfigured by setting `prefer_ap
 - Use `storage.googleapis.com` for public anonymous access.
 - See Accessing Public Data at: https://cloud.google.com/storage/docs/access-public-data
 
-### Request preconditions
+## Request preconditions
 
 - Only perform the request if the generation or metageneration number meets criteria.
 - Read-modify-write semantics to solve lost update problem.
@@ -153,12 +151,12 @@ This Python CLI uses the JSON API, but can be reconfigured by setting `prefer_ap
 - ETags for composite objects and JSON API resources change whenever the content or metadata changes.
 - Supports proper HTTP 1.1 ETags and HTTP conditional headers.
 
-#### Cost of preconditions
+### Cost of preconditions
 
 - You have to pay for them; a GET for the metadata.
 - Avoid cost by caching or maintaining state etc.
 
-#### Preconditions in the JSON API
+### Preconditions in the JSON API
 
 - A response containing an object or bucket resource carry `generation` and `metageneration` properties.
 - It seems that the JSON API uses bizarre `ifGenerationMatch`, `ifGenerationNotMatch`, `ifMetagenerationMatch` and `ifMetagenerationNotMatch` query parameters for compose, insert or rewrite operations.
@@ -168,17 +166,17 @@ This Python CLI uses the JSON API, but can be reconfigured by setting `prefer_ap
 
 **Note** - Preconditions in the XML API are done using custom headers. See https://cloud.google.com/storage/docs/request-preconditions#_XMLAPI
 
-##### HTTP 1.1 ETags
+#### HTTP 1.1 ETags
 
 The JSON API supports HTTP 1.1 ETags and the corresponding `If-Match` and `If-None-Match` headers for all resources, buckets, objects, and ACLs. An ETag is returned in the headers and in the content.
 
-#### Examples of race conditions and data corruption
+### Examples of race conditions and data corruption
 
-##### Simultaneous read-modify-write
+#### Simultaneous read-modify-write
 
 - Read-modify-write is well known so I won't repeat it here.
 
-##### Multiple request retries
+#### Multiple request retries
 
 - Exponential backoff retry is recommended but can cause a problem on simple deletes.
 - If network infra fails the delete 1.txt is retried and succeeds, then you create a new 1.txt.
@@ -189,15 +187,15 @@ The JSON API supports HTTP 1.1 ETags and the corresponding `If-Match` and `If-No
 
 **Note** - `if-generation-match:0` cannot prevent double creation if the object is deleted and there's an upload pending in offline network equipment.
 
-### Retry strategy
+## Retry strategy
 
 Tools, the Cloud Console and most client libraries automatically use retries. If implementing your own retries, consider whether it's safe to retry. See https://cloud.google.com/storage/docs/retry-strategy#build-your-own.
 
-### Request rate and access distribution guidelines
+## Request rate and access distribution guidelines
 
 Uses auto-scaling. Here's how to optimise for the way it's designed.
 
-#### Auto-scaling
+### Auto-scaling
 
 Buckets have an intial IO capacity of (not sure what it means by _initial_):
 
@@ -206,11 +204,11 @@ Buckets have an intial IO capacity of (not sure what it means by _initial_):
 
 As the request rate grows for a bucket, it's spreads out over >1 servers. This can take minutes so without ramping, can see errors.
 
-##### Object key indexing
+#### Object key indexing
 
 Supports consistent object listing (see Consistency, below), allowing data processing workflows to run. An object key index is maintained in lexicographic order, so objects with similar keys increases the chance of contention. The indexing is also auto-scaled and also needs ramping up when objects have similar prefixes.
 
-#### Best practices
+### Best practices
 
 - Ramp up, doubling every 20 minutes and pausing on errors.
 - Exponential backoff for `HTTP 408` and `HTTP 429` and `HTTP 5xx`.
@@ -221,7 +219,7 @@ Supports consistent object listing (see Consistency, below), allowing data proce
 - Randomness after a sequential prefix is not good.
 - Randomize the order of items in bulk uploads.
 
-### Sending batch requests
+## Sending batch requests
 
 The JSON API supports batching to put several API calls in the same HTTP request which is good for:
 
@@ -236,5 +234,5 @@ Max 100 calls per request and less than 10MB payload.
 
 More details, here: https://cloud.google.com/storage/docs/batch#details
 
-### Caching
+## Caching
 
