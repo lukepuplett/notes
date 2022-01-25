@@ -266,3 +266,31 @@ When cached, an object is copied to Google and/or internet CDNs. This poses a pr
 - To prevent decompression, include `Accept-Encoding: gzip` or `Cache-Control: no-transform` which forces it, regardless of accepts.
 - Useful to reduce egress costs or for validating integrity.
 
+### Content-Type vs. Content-Encoding
+
+- These are object metadata and effect behaviours worth noting.
+- `Content-Type` should be included in all uploads.
+- There is no check, obviously.
+- `Content-Encoding` is optional and can be included for compressed uploads.
+- Also no check.
+- It's recommended to specify both when the object is gzipped.
+- Including `-z/-Z` with gsutil will gzip and upload with `Content-Encoding: gzip` and `Cache-Control: no-transform`.
+- Alternatively, `Content-Type: application/gzip` and no `Content-Encoding` set, but hides what's in the content.
+- Also becomes ineligible for transcoding.
+- Avoid uploading compressed objects and not setting `Content-Encoding`.
+- Avoid uploading with just `Content-Encoding`, requests can be rejected.
+- Never use `Content-Type: application/gzip` and `Content-Encoding: gzip` as it implies double compression.
+- Never set `Content-Encoding: gzip` on non-compressed data.
+
+**Note** - If actually double-compressing, see this: https://cloud.google.com/storage/docs/transcoding#gzip-gzip
+
+### Using the Range header
+
+- When transcoding, the `Range` header is ignored and the whole object is streamed.
+- This is because it's impossible, obviously (and presumably Google don't have a streaming decompressor).
+- But `Range` requests _do work_ for objects with `Content-Type: application/gzip` and no `Content-Encoding`.
+- This is because the object is not transcoded so the request is getting a section of zipped bytes.
+- I guess this might be useful for parallel range gets, then assemble and decompress?!
+
+## Hashes and ETags: best practices
+
