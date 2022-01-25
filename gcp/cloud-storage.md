@@ -294,3 +294,25 @@ When cached, an object is copied to Google and/or internet CDNs. This poses a pr
 
 ## Hashes and ETags: best practices
 
+- You should validate downloaded bytes using CRC32C or MD5.
+- Data can be corrupted by noisy network links, memory errors along the way, bugs, changes to source over a while.
+- CRC32C is recommended for integrity since that's supported for composite blobs and XML multipart.
+- Returned checksums are for the complete object, not a range.
+- ETags are the MD5 when via XML API, and using Google-managed encryption keys, and not composite/not XML multipart uploaded.
+- Otherwise, assume nothing about the ETag.
+- Same object may have different ETags between JSON and XML.
+- Cloud Storage validates when you copy or rewrite within Cloud Storage, or when MD5 or CRC32C is supplied in an upload.
+- Can also just get metadata after upload and check.
+- Object composition offer no server-side MD5 validation, so DIY.
+- The gsutil `cp` and `rsync` operations validate and delete as needed.
+
+For reading XML API hashes, see: https://cloud.google.com/storage/docs/hashes-etags#xml-api
+
+### JSON API
+
+- The `md5Hash` and `crc32c` properties contain base64-encoded hashes.
+- Providing either metadata is optional. 
+- Providing either as part of a resumable or JSON API multipart upload triggers server-side validation.
+- Object will not be created on fail.
+- When not provided, no validation happens but Cloud Storage computes them and puts them in metadata.
+
