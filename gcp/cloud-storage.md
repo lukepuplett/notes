@@ -358,4 +358,17 @@ Obviously, cachable objects will be out in the wild unti their lifetime is up. U
 ### Buckets
 
 - Names are limited to 63 characters, or 222 if the name contains a dot `.`.
-- Per project, bucket creation and deletion is limited to 1 every 2 seconds.
+- Per project, bucket creation and deletion is limited to 1 every 2 seconds; bucket-per-user designs suffer surge in sign-ups.
+- Highly-available apps should not depend on bucket creation/deletion in critical path; precreate everything for HA.
+- The bucket registry is a globally-contended central resource and a single point of failure.
+- One update/second on a single bucket configuration.
+- Max 100 principals holding _legacy_ IAM roles and 1500 for all IAM roles per bucket.
+
+For buckets with Pub/Sub notifications:
+
+- Max 100 notification configurations.
+- Max 10 notification configurations set to trigger for a specific event.
+- Each notification configuration can have max 10 custom attributes.
+
+### Objects
+
