@@ -151,6 +151,7 @@ This Python CLI uses the JSON API, but can be reconfigured by setting `prefer_ap
 - Can also use ETags.
 - XML API ETags for non-composite objects change only when content changes.
 - ETags for composite objects and JSON API resources change whenever the content or metadata changes.
+- Supports proper HTTP 1.1 ETags and HTTP conditional headers.
 
 #### Cost of preconditions
 
@@ -163,9 +164,11 @@ This Python CLI uses the JSON API, but can be reconfigured by setting `prefer_ap
 - It seems that the JSON API uses bizarre `ifGenerationMatch`, `ifGenerationNotMatch`, `ifMetagenerationMatch` and `ifMetagenerationNotMatch` query parameters for compose, insert or rewrite operations.
 - For examples, see https://cloud.google.com/storage/docs/request-preconditions#_JSONAPI
 
-##### Limitations
-
-
+**Note** - Generation and metagen preconditions are not accepted for ACL operations; use the access-control ETag entry resource instead.
 
 **Note** - Preconditions in the XML API are done using custom headers. See https://cloud.google.com/storage/docs/request-preconditions#_XMLAPI
+
+##### HTTP 1.1 ETags
+
+The JSON API supports HTTP 1.1 ETags and the corresponding `If-Match` and `If-None-Match` headers for all resources, buckets, objects, and ACLs. An ETag is returned in the headers and in the content.
 
