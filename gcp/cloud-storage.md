@@ -236,3 +236,33 @@ More details, here: https://cloud.google.com/storage/docs/batch#details
 
 ## Caching
 
+When cached, an object is copied to Google and/or internet CDNs. This poses a problem for stale responses.
+
+### Built-in caching for Cloud Storage
+
+- Cloud Storage behaves like a CDN by default.
+- The `Cache-Control` metadata for a _publicly-accessible_ object determines web caching with `max-age` defaulting to 3600s.
+- For public objects that are consumed by apps, consider `max-age` of 15-60s.
+- Use `Cache-Control: no-store` as needed.
+
+### Cloud Storage with Cloud CDN
+
+- Best performance for public objects.
+- To use it, must use external HTTP(S) Load Balancing with buckets as a backend.
+- For help setting up, see: https://cloud.google.com/storage/docs/hosting-static-website
+- Cloud CDN cache modes allow unified caching config, see: https://cloud.google.com/cdn/docs/caching#cache-modes
+- Uses the same `Cache-Control` metadata unless overridden with a cache mode or TTL limit.
+- For choosing between the built-in and Cloud CDN, see feature table, here: https://cloud.google.com/storage/docs/caching#with
+
+## Object transcoding
+
+- Transcoding is the automatic changing of a file's compression before being served; compressive or decompressive.
+- Uses gzip.
+- Supports decompressive.
+- The stored hash is for the compressed bytes, so decompression invalidates integrity checking.
+- Can store compressed to save cost and serve decompressed.
+- Must be gzipped when stored and metadata `Content-Encoding: gzip`.
+- When this is the case, it's decompressed on serve and `Content-Encoding` and `Content-Length` headers are removed.
+- To prevent decompression, include `Accept-Encoding: gzip` or `Cache-Control: no-transform` which forces it, regardless of accepts.
+- Useful to reduce egress costs or for validating integrity.
+
