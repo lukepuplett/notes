@@ -338,3 +338,24 @@ Bucket configuration changes may take time–Google says 30s–to propagate, lik
 
 Obviously, cachable objects will be out in the wild unti their lifetime is up. Use the `Cache-Control` header as appropriate. The default is 60 minutes.
 
+## Best practices for Cloud Storage
+
+### Naming
+
+- For naming buckets, see: https://cloud.google.com/storage/docs/naming-buckets
+- For naming objects, see: https://cloud.google.com/storage/docs/naming-objects
+
+### Traffic
+
+- When estimating traffic, think about operations per second, bandwidth and data over time, and cache control.
+- Design to minimize spikes.
+- Proxy data transfers of public objects through an App Engine node in the same location as the bucket.
+- For best performance at the highest rates, follow https://cloud.google.com/storage/docs/request-rate.
+
+
+## Quotas and limits
+
+### Buckets
+
+- Names are limited to 63 characters, or 222 if the name contains a dot `.`.
+- Per project, bucket creation and deletion is limited to 1 every 2 seconds.
