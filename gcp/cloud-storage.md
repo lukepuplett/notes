@@ -316,3 +316,29 @@ For reading XML API hashes, see: https://cloud.google.com/storage/docs/hashes-et
 - Object will not be created on fail.
 - When not provided, no validation happens but Cloud Storage computes them and puts them in metadata.
 
+## Consistency
+
+For cacheable, public objects, the consistency can be controlled. Object data and metadata is strongly consistent for these operations:
+
+- Read-after-write
+- Read-after-metadata-update
+- Read-after-delete
+- Bucket-listing
+- Object-listing
+
+Uploads, changes and deletes are immediately available for download from any Google location.
+
+Bucket listing is the same. Create, update and delete to objects and metadata is immediately correct everywhere.
+
+Cached-objects may not be, however, depending on configuration.
+
+Bucket configuration changes may take time–Google says 30s–to propagate, like enabling object versioning.
+
+Similarly, HMAC key changes can take 3 minutes, so wait before doing anything with it.
+
+**Note** - Access changes are eventually consistent and take about 1 minute or more.
+
+### Cache control and consistency
+
+Obviously, cachable objects will be out in the wild unti their lifetime is up. Use the `Cache-Control` header as appropriate. The default is 60 minutes.
+
