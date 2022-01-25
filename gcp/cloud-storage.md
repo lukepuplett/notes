@@ -328,13 +328,9 @@ For cacheable, public objects, the consistency can be controlled. Object data an
 
 Uploads, changes and deletes are immediately available for download from any Google location.
 
-Bucket listing is the same. Create, update and delete to objects and metadata is immediately correct everywhere.
+Bucket listing is the same. Create, update and delete to objects and metadata is immediately correct everywhere. Cached-objects may not be, however, depending on configuration.
 
-Cached-objects may not be, however, depending on configuration.
-
-Bucket configuration changes may take time–Google says 30s–to propagate, like enabling object versioning.
-
-Similarly, HMAC key changes can take 3 minutes, so wait before doing anything with it.
+Bucket configuration changes may take time–Google says 30s–to propagate, like enabling object versioning. Similarly, HMAC key changes can take 3 minutes, so wait before doing anything with it.
 
 **Note** - Access changes are eventually consistent and take about 1 minute or more.
 
