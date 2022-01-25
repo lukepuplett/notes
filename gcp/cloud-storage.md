@@ -172,3 +172,69 @@ This Python CLI uses the JSON API, but can be reconfigured by setting `prefer_ap
 
 The JSON API supports HTTP 1.1 ETags and the corresponding `If-Match` and `If-None-Match` headers for all resources, buckets, objects, and ACLs. An ETag is returned in the headers and in the content.
 
+#### Examples of race conditions and data corruption
+
+##### Simultaneous read-modify-write
+
+- Read-modify-write is well known so I won't repeat it here.
+
+##### Multiple request retries
+
+- Exponential backoff retry is recommended but can cause a problem on simple deletes.
+- If network infra fails the delete 1.txt is retried and succeeds, then you create a new 1.txt.
+- The infra comes back online and deletes 1.txt. **This is bad**.
+- Avoid the above by issuing an `if-generation-match` precondition to ensure the back online request fails.
+- Same goes for uploads; request should have `if-generation-match:0` to ensure no file exists (and no overwrites).
+- Parallel uploads and large, composed objects are prone to corruption like this if chunk names are no gauranteed unique.
+
+**Note** - `if-generation-match:0` cannot prevent double creation if the object is deleted and there's an upload pending in offline network equipment.
+
+### Retry strategy
+
+Tools, the Cloud Console and most client libraries automatically use retries. If implementing your own retries, consider whether it's safe to retry. See https://cloud.google.com/storage/docs/retry-strategy#build-your-own.
+
+### Request rate and access distribution guidelines
+
+Uses auto-scaling. Here's how to optimise for the way it's designed.
+
+#### Auto-scaling
+
+Buckets have an intial IO capacity of (not sure what it means by _initial_):
+
+- 1000 object writes per second, with a 1 write/sec for the same object.
+- 5000 object reads per second.
+
+As the request rate grows for a bucket, it's spreads out over >1 servers. This can take minutes so without ramping, can see errors.
+
+##### Object key indexing
+
+Supports consistent object listing (see Consistency, below), allowing data processing workflows to run. An object key index is maintained in lexicographic order, so objects with similar keys increases the chance of contention. The indexing is also auto-scaled and also needs ramping up when objects have similar prefixes.
+
+#### Best practices
+
+- Ramp up, doubling every 20 minutes and pausing on errors.
+- Exponential backoff for `HTTP 408` and `HTTP 429` and `HTTP 5xx`.
+- Name things with wide key distribution.
+- Avoid sequential names.
+- It's very common for prefixes to be identical, e.g. `/folder1/folder2/1ni23rbo2389bo.txt`
+- Random endings with identical prefixes are good but efficient scaling is reduced to it's prefix namespace.
+- Randomness after a sequential prefix is not good.
+- Randomize the order of items in bulk uploads.
+
+### Sending batch requests
+
+The JSON API supports batching to put several API calls in the same HTTP request which is good for:
+
+- Updating metadata on many objects.
+- Deleting many objects (see race conditions above).
+
+Max 100 calls per request and less than 10MB payload.
+
+**Note** - Same syntax as OData batch processing but **semantics differ**.
+
+**Note** - No support for batched uploads or downloads.
+
+More details, here: https://cloud.google.com/storage/docs/batch#details
+
+### Caching
+
