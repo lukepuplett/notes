@@ -372,3 +372,32 @@ For buckets with Pub/Sub notifications:
 
 ### Objects
 
+- Max 5TiB object length and also upload request length; info on resumable uploads, here: https://cloud.google.com/storage/docs/resumable-uploads
+- Max custom metadata keys and values of 8 KiB per object.
+- Max object name length of 1024 bytes (not to be confused with bucket name length).
+- Max 1 write/second to same object.
+- No limit to bucket writes across objects; 5000 reads/second initially but scales.
+- No limit to bucket reads across objects, metadata etc.; 1000 reads/second initially but scales. **Note** there are bandwidth limits.
+- Max 100 ACL entries per object.
+- Max 32 objects in a single composition request.
+- Max 2,147,483,647 composite chunks due to limit of `componentCount` property type.
+- Max 5TiB composite as per object limit.
+
+### JSON API requests
+
+- Batch request payload less than 10MB.
+- Batch request max calls 100.
+
+See XML API limits, here: https://cloud.google.com/storage/quotas#requests
+
+### HMAC keys for service accounts
+
+- Max 5 HMAC keys per service account. Deleted keys do not count towards limit.
+
+### Bandwidth
+
+- Max 200 Gbps per project egress from Cloud Storage to Google services. Egress to Cloud CDN is exempt.
+- You can request a quota increase for regions on a per project basis.
+- Max 50 Gbps per project, per region for Google services accessing data from buckets in a given _multi-region_. Cloud CDN is exempt.
+- Stuff I don't really understand, here: https://cloud.google.com/storage/quotas#bandwidth
+- Expect `HTTP 429` or throttling when over quota.
