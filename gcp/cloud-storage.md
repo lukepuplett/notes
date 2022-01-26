@@ -447,3 +447,6 @@ See XML API limits, here: https://cloud.google.com/storage/quotas#requests
 - Max 50 Gbps per project, per region for Google services accessing data from buckets in a given _multi-region_. Cloud CDN is exempt.
 - Stuff I don't really understand, here: https://cloud.google.com/storage/quotas#bandwidth
 - Expect `HTTP 429` or throttling when over quota.
+
+## How-to guides
+
