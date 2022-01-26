@@ -351,7 +351,35 @@ Obviously, cachable objects will be out in the wild unti their lifetime is up. U
 - Design to minimize spikes.
 - Proxy data transfers of public objects through an App Engine node in the same location as the bucket.
 - For best performance at the highest rates, follow https://cloud.google.com/storage/docs/request-rate.
+- Be aware of limits.
+- Use exponential backoff.
+- Retry on a new connection and try to re-resolve the domain name.
+- For latency sensitive apps, use "hedged requests", see https://research.google/pubs/pub40801/
 
+### Regions & data storage options
+
+- Use Standard Storage for high-rate, high-availability.
+- Store data close to users.
+- Remember compliance requirements.
+
+### Security, ACLs and access control
+
+- Never share credentials.
+- Each user should have distinct credentials.
+- Don't log or trace HTTP message details or post them to help forums without removing auth tokens.
+- Use TLS and an HTTPS client that validates server certs (Python <3.2 beware).
+- Revoke rights for retired use-cases.
+- Securely store credentials.
+- Choose bucket and object names that are hard to guess.
+- Don't put sensitive information in names, don't include it in errors.
+- Favour groups over user lists.
+- Check default ACLs before adding bucket objects.
+- Bucket and object ACLs are independent; users can access an object even when they have no bucket rights.
+- Use signed URLs to make content accessible to non-Google account holders.
+
+### Data uploads
+
+- 
 
 ## Quotas and limits
 
