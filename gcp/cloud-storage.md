@@ -197,12 +197,12 @@ Uses auto-scaling. Here's how to optimise for the way it's designed.
 
 ### Auto-scaling
 
-Buckets have an intial IO capacity of (not sure what it means by _initial_):
+Buckets have an initial IO capacity of (before scaling up):
 
 - 1000 object writes per second, with a 1 write/sec for the same object.
 - 5000 object reads per second.
 
-As the request rate grows for a bucket, it's spreads out over >1 servers. This can take minutes so without ramping, can see errors.
+As the request rate grows for a bucket, it's spreads out over >1 servers. This can take minutes so without ramping, can see errors. Scaling has no limit.
 
 #### Object key indexing
 
