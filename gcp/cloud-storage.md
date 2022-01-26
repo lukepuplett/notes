@@ -379,7 +379,25 @@ Obviously, cachable objects will be out in the wild unti their lifetime is up. U
 
 ### Data uploads
 
-- 
+- Don't close/reopen XMLHttpRequest connections if you detect stalled progress. Detail, here: https://cloud.google.com/storage/docs/best-practices#uploading
+- Set long timeouts for uploads. For JS, see: https://cloud.google.com/storage/docs/best-practices#uploading
+- When using `POST` to create a resumable upload, use compute in the same region.
+- Upload in a single chunk is better.
+- Reduce bandwidth with gzip; trade-off with compute is less than bandwidth saving.
+
+### Deletion of data
+
+- If concerned about accidental changes or deletes, use retention periods to ensure data is kept until expiry.
+- Use object holds.
+- Use object versioning; also works for backups.
+- Configure Object Lifecycle Management to auto purge old versions.
+- Cloud Console bulk delete is best for massive deletes, and supports common prefix (folders).
+- Trick to use Object Lifecycle Management with age zero to bulk delete.
+
+### Website hosting
+
+- For CORS, see: https://cloud.google.com/storage/docs/best-practices#hosting
+- Dedicate a bucket for hosting, scripts etc. to avoid over sharing.
 
 ## Quotas and limits
 
