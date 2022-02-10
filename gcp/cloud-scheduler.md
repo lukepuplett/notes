@@ -62,4 +62,14 @@ You can select the timezone it should be evaluated under via the drop-down box o
 
 Examples:
 
-Every
+`* * * * *` = every min (strange?)
+`45 23 * * 6` = every Saturday at 23:45
+`0 9 * * 1` = Every Monday at 09:00
+
+**Note** - If you disable the Cloud Scheduler API, then all the jobs that were supposed to run will all run immediately upon re-enable.
+
+### Daylight Savings Time
+
+In places with DST, jobs can start running an hour late or whatever. When the clocks go back, the job may run again.
+
+The only way to avoid this is to use the UTC timezone.
