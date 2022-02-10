@@ -68,8 +68,14 @@ Examples:
 
 **Note** - If you disable the Cloud Scheduler API, then all the jobs that were supposed to run will all run immediately upon re-enable.
 
-### Daylight Savings Time
+#### Daylight Savings Time
 
 In places with DST, jobs can start running an hour late or whatever. When the clocks go back, the job may run again.
 
 The only way to avoid this is to use the UTC timezone.
+
+### Viewing logs
+
+The start and end of execution is logged. In the Console, find the job and the Log column and click view.
+
+That's about it, really.
