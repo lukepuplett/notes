@@ -44,3 +44,22 @@ Delete with:
 
 Visit the Cloud Scheduler console page and click **Create a job** and follow the UI.
 
+### Configuring cron job schedules
+
+Here's how to use the **unix-cron** format, which is described in detail here: http://man7.org/linux/man-pages/man5/crontab.5.html
+
+The format is a string of five values like `* * * * *` indicating the interval, where the values are like so:
+
+    min hour day-of-month month day-of-week
+
+Each value has the following format and range:
+
+    0-59 0-23 1-31 1-12 0-6
+    
+Where that last one, day-of-week is Sunday to Saturday.
+
+You can select the timezone it should be evaluated under via the drop-down box or via the `gcloud` `--time-zone` flag upon creation. The default is `Etc/UTC`.
+
+Examples:
+
+Every
