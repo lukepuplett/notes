@@ -1,5 +1,7 @@
 # Cloud Storage - Concepts
 
+[Multi-region Replication - 2018](https://cloud.google.com/blog/products/storage-data-transfer/store-it-analyze-it-back-it-up-cloud-storage-updates-bring-new-replication-options)
+
 ## Key terms
 
 All data belongs in a project.
