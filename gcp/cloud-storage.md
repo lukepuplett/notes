@@ -1,6 +1,6 @@
 # Cloud Storage - Concepts
 
-[Multi-region Replication - 2018](https://cloud.google.com/blog/products/storage-data-transfer/store-it-analyze-it-back-it-up-cloud-storage-updates-bring-new-replication-options)
+A blog post from 20218 about the new [multi-region replication.](https://cloud.google.com/blog/products/storage-data-transfer/store-it-analyze-it-back-it-up-cloud-storage-updates-bring-new-replication-options)
 
 ## Key terms
 
