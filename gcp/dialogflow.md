@@ -4,6 +4,15 @@ Lifelike conversational AI with virtual agents.
 
 **Note** - Google also have Contact Center AI, but I'm not sure how exactly it relates yet.
 
+### Key features
+
+- Visual flow builder - as it implies.
+- Omnichannel implementation - does _not_ mention Slack or Teams.
+- Advanced AI - uses BERT NLU.
+- State-based data models - deviate from topic and return.
+- End-to-end management - CI/CD, analytics, experiments and bot evaluation.
+- For more, see Editions, below.
+
 ## Editions
 
 ### Dialogflow CX
@@ -30,11 +39,4 @@ Standard agents for small to medium complexity.
 - **No** experiments or traffic splitting support.
 - **No** user voice ID.
 
-### Key features
-
-- Visual flow builder - as it implies.
-- Omnichannel implementation - does _not_ mention Slack or Teams.
-- Advanced AI - uses BERT NLU.
-- State-based data models - deviate from topic and return.
-- End-to-end management - CI/CD, analytics, experiments and bot evaluation.
-
+## 
