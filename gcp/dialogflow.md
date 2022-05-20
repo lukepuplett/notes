@@ -91,12 +91,22 @@ Create a Knowledge Connector on the left, name it, choose FAQ, select `text/html
 
 #### Understanding Entities in Dialogflow
 
-- System Entities e.g. @sys.date, time, number, unit-currency, percentage, address, phone-number and email
-- Developer Entities e.g.
-- Session Entities e.g.
+##### System Entities
+These are the built-in ones which are sometimes automatically recognised, e.g. @sys.date, time, number, unit-currency, percentage, address, phone-number and email.
 
-You can add your own entities; e.g. add _AppointmentType_ and then add examples of the types with some synonyms like _Drivers License_ as a canonical example and then _license_ and _licence_ and test
+##### Developer Entities
 
+You can add your own entities; e.g. add _AppointmentType_ and then add examples of the types with some synonyms like _Drivers License_ as a canonical example and then _license_ and _licence_ and _driving test_. Then _Vehicle Registration_ with like _transfer car_ and _VIN document_ etc. You can have Google automatically append to the list as it figure shit out, and you can upload raw text instead of entering them by hand.
+
+Now when the phrase "Set an appointment for a drivers license at 3pm tomorrow" the term "drivers license" is resolved as the _AppointmentType_ entity. You can now check it as required and it'll be hooked into the slotting filling system.
+
+Remember to add some good prompt examples, and update your response to confirm the type of appointment they made.
+
+##### Session Entities
+
+These are defined at Session ID level, tied to a user and their session with the bot. The presenter oddly glosses over it all and maybe hints that it's done in the API?!
+
+#### 1
 
 ### Build and deploy advanced virtual agents as speed with Dialogflow CX Prebuilt Agents
 
