@@ -91,6 +91,8 @@ Create a Knowledge Connector on the left, name it, choose FAQ, select `text/html
 
 #### Understanding Entities in Dialogflow
 
+https://www.youtube.com/watch?v=UmMRW3kG738
+
 ##### System Entities
 These are the built-in ones which are sometimes automatically recognised, e.g. @sys.date, time, number, unit-currency, percentage, address, phone-number and email.
 
@@ -106,7 +108,30 @@ Remember to add some good prompt examples, and update your response to confirm t
 
 These are defined at Session ID level, tied to a user and their session with the bot. The presenter oddly glosses over it all and maybe hints that it's done in the API?!
 
-#### 1
+#### Integrating Diialogflow with Actions on Google
+
+https://www.youtube.com/watch?v=z5f52sMgJLQ
+
+One-click integration with Google Assistant, Slack, Facebook Messenger, and Actions on Google which is a platform to extend Google Assistant to smart devices.
+
+Integrations > Explicit invocation (when the "app" is requested by name): Default Welcome Intent.
+Integrations > Implicit invocation (when intents trigger "deep link" actions in your app like "OK Google, ask Zipwire to send my timesheet".
+
+**Note** - I'm not sure whether deep linking is to installed phone apps, or is into a bot. Or to a website? 
+
+Manage Assistant App => console.actions.google.com page where you can decide the official public invocation name for your action and how it appears in the Actions Directory, as well as its voice style.
+
+The action/bot needs a description, some sample invocations, branding images (I guess for devices with screens), contact details and privacy and consent.
+
+You can also prepare for deployment in hundres of countries and on phone and speaker "surfaces". There's beta (200 users) and alpha (20 users without Google approval).
+
+#### What is Dialogflow CX?
+
+https://www.youtube.com/watch?v=6_Gilug2QYw
+
+Designed for developers, conversational designers and contact center managers. Visual flow builder for large, complex experiences. Supports multiple flows down authentication, payment processing or orders. Can "call into" different flows. Different organisational departments might control their own flows, handling deviations and transitions. There's environmenting and versioning, too. Many agents under one project.
+
+Native IVR (phone system?) integration. Advanced analytics. Flow design canvas like Visio.
 
 ### Build and deploy advanced virtual agents as speed with Dialogflow CX Prebuilt Agents
 
