@@ -133,6 +133,20 @@ Designed for developers, conversational designers and contact center managers. V
 
 Native IVR (phone system?) integration. Advanced analytics. Flow design canvas like Visio.
 
-### Build and deploy advanced virtual agents as speed with Dialogflow CX Prebuilt Agents
+## Notes from Documentation
 
-Stopped watching because it dealt with CX, which I'm expecting not to need.
+### Fulfillment
+
+#### Webhook for slot filling
+
+Intents can have required parameters of entities, in which case Dialogflow will keep prompting the user to get information. This is called **slot filling**.
+
+When _webhook for slot filling_ is enabled, a fulfillment webhook request is posted for each conversational turn during slot filling. This lets you further customize the logic during parameter collection. You can customize follow-up questions or set parameter slots from a database.
+
+The webhook payload has `queryResult.parameters` which contains the currently collection ones and those that are unknown are empty strings.
+
+You can set parameters in your response JSON by updating the contexts that are active.
+
+More super useful response JSON examples can be found at the link below, including Slack and Facebook specializations.
+
+https://cloud.google.com/dialogflow/es/docs/fulfillment-webhook#webhook_response
