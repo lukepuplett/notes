@@ -176,3 +176,4 @@ Example shows partitioning by transaction date and clustering on customer ID.
 - Connected Sheets and also be launched from the console. This runs queries on request or on schedule and saved in the sheet.
 - Looker is a BI platform.
 
+
