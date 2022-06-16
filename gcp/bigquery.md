@@ -17,7 +17,7 @@
 - Presents as tables, rows and columns.
 - ACID.
 - Auto replication for HA.
-- Stream load and batch load via Avro, Parquet, ORC, CSV, JSON, Datastore and Firestore formats.
+- Stream load and batch load via Avro, Parquet, ORC, CSV, JSON Lines, Datastore and Firestore formats.
 - BigQuery Data Transfer Service automates ingestion.
 - Can use BigQuery federated query engine to query against Cloud Storage, Bigtable, Spanner or even Google Sheets in Google Drive, and "external tables".
 - Connect with BI Engine, Data Studio, Looker, Google Sheets, Tableau, Power BI.
