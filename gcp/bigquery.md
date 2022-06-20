@@ -89,6 +89,8 @@ Example shows partitioning by transaction date and clustering on customer ID.
 - Stream smaller batches so that data is available in almost real-time.
 - Use SQL to insert and append or output results to a table.
 
+Can load from Firestore exports made using [Firestore managed export and import service](https://cloud.google.com/firestore/docs/manage-data/export-import).
+
 ### Reading data from BigQuery storage
 
 - `tabledata.list` REST API pages through data but it's single concurrent reader and low throughput.
