@@ -34,3 +34,37 @@ This uses row and columns numbers. Useful when referencing cells relative to a g
 
 Can also name ranges and protect them from changes.
 
+## Create access credentials
+
+Credentials are needed to get an access token to call **Google Workspace** APIs.
+
+### Credential types
+
+- API key - use this to access publicly-available data anonymously in your app.
+- OAuth client ID - use this to authenticate as an end user and access their data.
+- Service account - use this to authenticate as a service account, or to access resources on behalf of Google Workspace or Cloud Identity users through domain-wide delegation.
+
+#### API key credentials
+
+This a pseudo-random string used to access documents shared using "Anyone on the Internet with this link". You must create an API key:
+
+- In the GCP console, click **Menu** > **APIs & Services** > **Credentials**
+- Choose **Create credentials** > **API key**
+- Copy it.
+
+#### OAuth client ID credentials
+
+Your app will need a client ID before you can authenticate as a user. It'll need different client IDs for each platform (web, Android et al).
+
+#### Service account credentials
+
+Once you've created a service account in the GCP console, you'll need to obtain the public/private key pair. You can create these via the console, too, and download them as JSON.
+
+## .NET. quickstart
+
+### Prerequisites
+
+- GCP project with Google Sheets API enabled.
+- Authorization credentials for a desktop application.
+- A Google account.
+
