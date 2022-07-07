@@ -92,6 +92,113 @@ Once you've created a service account in the GCP console, you'll need to obtain 
     ValueRange response = request.Execute();
     IList<IList<Object>> values = response.Values;
 ```
-##### OAuth 2.0 .NET client library guide
+### OAuth 2.0 .NET client library guide
 
 https://developers.google.com/api-client-library/dotnet/guide/aaa_oauth#web-applications-aspnet-mvc  
+
+#### User credentials
+
+`UserCredential` is a thread-safe helper for using an access token. `AuthorizationCodeFlow` takes care of auto-refreshing the token using the refresh token you get when using `access_type=offline` during thr auth flow.
+
+You may wish to persist the access and refresh tokens to avoid redirecting to the Google auth page every hour. Implement `IDataStore` to do this.
+
+#### Installed apps
+
+```
+    var credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
+        new ClientSecrets
+        {
+            ClientId = "PUT_CLIENT_ID_HERE",
+            ClientSecret = "PUT_CLIENT_SECRETS_HERE"
+        },
+        new[] { BooksService.Scope.Books },
+        "user",
+        CancellationToken.None, new MyDataStore("location"));
+```
+
+Notice the user and the scope above.
+
+The credential is used like so:
+
+```
+    // Create the service.
+    var service = new BooksService(new BaseClientService.Initializer()
+        {
+            HttpClientInitializer = credential,
+            ApplicationName = "Books API Sample",
+        });
+
+    var bookshelves = await service.Mylibrary.Bookshelves.List().ExecuteAsync();
+```
+
+It's not clear how the web browser redirecting to Google auth comes into play.
+
+#### ASP.NET Core apps
+
+**Google.Apis.Auth.AspNetCore3** is he recommended library to use. It implements a Google-specific `OpenIdConnect` auth handler.
+
+This sample uses the Google Drive API and its NuGet package. Download your `client_secrets.json` from the GCP console and note:
+
+- The credential type must be _Web application_.
+- To run this sample, the only redirect URI needed is `https://localhost:5001/signin-oidc`.
+
+```
+    public void ConfigureServices(IServiceCollection services)
+    {
+        ...
+
+        // This configures Google.Apis.Auth.AspNetCore3 for use in this app.
+        services
+            .AddAuthentication(o =>
+            {
+                // This forces challenge results to be handled by Google OpenID Handler, so there's no
+                // need to add an AccountController that emits challenges for Login.
+                o.DefaultChallengeScheme = GoogleOpenIdConnectDefaults.AuthenticationScheme;
+                // This forces forbid results to be handled by Google OpenID Handler, which checks if
+                // extra scopes are required and does automatic incremental auth.
+                o.DefaultForbidScheme = GoogleOpenIdConnectDefaults.AuthenticationScheme;
+                // Default scheme that will handle everything else.
+                // Once a user is authenticated, the OAuth2 token info is stored in cookies.
+                o.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            })
+            .AddCookie()
+            .AddGoogleOpenIdConnect(options =>
+            {
+                options.ClientId = {YOUR_CLIENT_ID};
+                options.ClientSecret = {YOUR_CLIENT_SECRET};
+            });
+    }
+```
+This looks troubling because an existing web app would have all this configured already for its own uses.
+
+For an existing application it may be that setting `SaveTokens = true` in the middleware options will keep the access token in the cookie. I think this makes it available in subsequent requests via `AuthenticationProperties`.
+
+The following code is from a user on StackOverflow and appears to show him successfully calling Gmail.
+
+```
+    var authResult = await HttpContext.AuthenticateAsync();
+    string accessToken = authResult.Properties.GetTokenValue(OpenIdConnectParameterNames.AccessToken);
+    string refreshToken = authResult.Properties.GetTokenValue(OpenIdConnectParameterNames.RefreshToken);
+
+    var secrets = GoogleClientSecrets.FromFile("google_client_secret.json").Secrets;
+    string googleAuthTokenPath = "GoogleAuthToken";
+
+    var token = new TokenResponse { AccessToken = accessToken, RefreshToken = refreshToken };
+    
+    var credentials = new UserCredential(new GoogleAuthorizationCodeFlow(
+        new GoogleAuthorizationCodeFlow.Initializer
+            {
+                ClientSecrets = secrets,
+                DataStore = new FileDataStore(googleAuthTokenPath, true),
+            }),
+            "user",
+            token
+        );
+
+    var service = new GmailService(new BaseClientService.Initializer()
+    {
+        HttpClientInitializer = credentials,
+        ApplicationName = "Some app",
+    });
+```
+
