@@ -62,9 +62,35 @@ Once you've created a service account in the GCP console, you'll need to obtain 
 
 ## .NET. quickstart
 
-### Prerequisites
-
-- GCP project with Google Sheets API enabled.
+- Needs a GCP project with Google Sheets API enabled.
 - Authorization credentials for a desktop application.
 - A Google account.
+- `Install-Package Google.Apis.Sheets.v4`
+- Unfortunately the sample uses the JSON public/private key.
 
+    UserCredential credential;
+    
+    // Sample uses JSON credential. We need to know how to begin an OAuth flow to
+    // get the user's access token.
+
+    // Create Google Sheets API service.
+    var service = new SheetsService(new BaseClientService.Initializer
+    {
+        HttpClientInitializer = credential,
+        ApplicationName = ApplicationName
+    });
+
+    // Define request parameters.
+    String spreadsheetId = "1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms";
+    String range = "Class Data!A2:E";
+    SpreadsheetsResource.ValuesResource.GetRequest request =
+        service.Spreadsheets.Values.Get(spreadsheetId, range);
+
+    // Prints the names and majors of students in a sample spreadsheet:
+    // https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
+    ValueRange response = request.Execute();
+    IList<IList<Object>> values = response.Values;
+    
+##### OAuth 2.0 .NET client library guide
+
+https://developers.google.com/api-client-library/dotnet/guide/aaa_oauth#web-applications-aspnet-mvc  
