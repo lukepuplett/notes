@@ -264,3 +264,41 @@ let result = await Eta.renderAsync(
   { name: "Ada Lovelace", asyncFunc }
 )
 ```
+
+## Examples
+
+```
+<ul>
+<% it.users.forEach(function(user){ %>
+  <li><%= user %></li>
+<% }) %>
+</ul>
+```
+
+```
+<%= await getSomeValue() %>
+    
+<% /* Eta supports multiline comments,
+which is really useful */ %>
+<%= "<%" %>
+```
+
+```
+<% /* Embedded JS templates mean that you can
+write any valid JS expression inside interpolate tags: */ %>
+<%= 2 + 4 %>
+```
+
+```
+<%~ include("mypartial") %>
+<%~ includeFile('./navbar', { pages: [
+  'home',
+  'about',
+  'users'
+] }) %>
+```
+
+```
+<% layout("layouts/basic") %>
+<p>This will be rendered into a layout</p>
+```
