@@ -1,5 +1,9 @@
 # Eta
 
+Getting started with template engine: a little tutorial by Mayank Choubey
+
+https://medium.com/deno-the-complete-reference/getting-started-with-template-engine-e69553307566
+
 ## Intro
 
 ```
