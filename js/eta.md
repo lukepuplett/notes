@@ -267,6 +267,8 @@ let result = await Eta.renderAsync(
 
 ## Examples
 
+#### 1
+
 ```
 <ul>
 <% it.users.forEach(function(user){ %>
@@ -274,6 +276,8 @@ let result = await Eta.renderAsync(
 <% }) %>
 </ul>
 ```
+
+#### 2
 
 ```
 <%= await getSomeValue() %>
@@ -283,11 +287,15 @@ which is really useful */ %>
 <%= "<%" %>
 ```
 
+#### 3
+
 ```
 <% /* Embedded JS templates mean that you can
 write any valid JS expression inside interpolate tags: */ %>
 <%= 2 + 4 %>
 ```
+
+#### Partials
 
 ```
 <%~ include("mypartial") %>
@@ -297,6 +305,8 @@ write any valid JS expression inside interpolate tags: */ %>
   'users'
 ] }) %>
 ```
+
+#### Layouts
 
 ```
 <% layout("layouts/basic") %>
