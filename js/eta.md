@@ -213,4 +213,15 @@ var config: EtaConfig = {
 
 ## Plugins
 
-![image](https://user-images.githubusercontent.com/5802524/204826421-2c00fb1c-ddf2-44cd-b421-fc3409ab57db.png)
+ - You can create plugins: https://eta.js.org/docs/learn/plugins
+
+## How does Eta resolve template files?
+
+What happens when you call `renderFile(path, ...)` or `<%~ includeFile(path, ...)%>`?
+
+ - If it's absolute, first looks in `config.views` and if that's a path to a directory, looks in there, but if it's an array of directory paths then it looks in each. If not found, looks in `config.root` (by default `/`, the file system base).
+ - If it's relative, then if `includeFile()` was called from another template file, tries to resolve the new template based on that template's path. If not found, falls back using `config.views`.
+
+
+
+ - See: https://eta.js.org/docs/learn/file-handling
