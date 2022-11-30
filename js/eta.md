@@ -2,28 +2,35 @@
 
 ## Intro
 
-    import * as eta from "https://deno.land/x/eta@v1.6.0/mod.ts"
+```
+import * as eta from "https://deno.land/x/eta@v1.6.0/mod.ts"
+```
 
  - Replace with pinned version.
  - Move to deps.
  - Remember XSS: https://eta.js.org/docs/syntax/auto-escaping
-	
-    Eta.render('The answer to everything is <%= it.answer %>', { answer: 42 })
+
+```
+Eta.render('The answer to everything is <%= it.answer %>', { answer: 42 })
+```
 
 ## Partials
 
 ### Named partials
 
  - Defined as template functions.
-	
-    Eta.templates.define("mypartial", Eta.compile("PARTIAL SPEAKING"))
-    Eta.render('This is a partial: <%~ include("mypartial") %>', { name: "Person" })
+
+```
+Eta.templates.define("mypartial", Eta.compile("PARTIAL SPEAKING"))
+Eta.render('This is a partial: <%~ include("mypartial") %>', { name: "Person" })
+```
 
 ### File partials
 
  - Looks in config.views for the templates.
  - Actually more nuanced, see: https://eta.js.org/docs/learn/file-handling
 
+```
 	Eta.configure({
 	  views: path.join(__dirname, views)
 	})
@@ -31,13 +38,16 @@
 	let template = "<%~ includeFile('./footer.eta', data) %>"
 	
 	Eta.render(template, data)
+```
 
 ## Layouts
 
  - Different type of "part".
  - Call this from inside your template:
 
-    <% layout(filepath, options) %>
+```
+<% layout(filepath, options) %>
+```
 
  - Your current template will become the `it.body` for the layout.
  - Options is optional and overrides the inherited template body (model?) stored in `it.body`.
@@ -45,6 +55,7 @@
 
 ### Examples
 
+```
 	// layout.eta
 	//
 	<!DOCTYPE html>
@@ -57,9 +68,11 @@
 	    <footer>Copyright SomeCo, Inc.</footer>
 	  </body>
 	</html>
+```
 
 Which is called from the index template, presumably making the body in the above be the div and p below.
 
+```
 	// index.eta
 	//
 	<% layout('./layout') %>
@@ -67,9 +80,11 @@ Which is called from the index template, presumably making the body in the above
 	<div id="content">
 	  <p><%= it.message %></p>
 	</div>
+```
 
 #### Conditional layouts
 
+```
 	<% if (user.type === 'admin') { %>
 	  <% layout('./admin') %>
 	<% } else { %>
@@ -77,9 +92,11 @@ Which is called from the index template, presumably making the body in the above
 	<% } %>
 	
 	This is the template content
+```
 
 Can also be laid out as JS within a single set of tags as:
 
+```
 	<% if (user.type === "admin") {
 	  layout("./admin")
 	} else {
@@ -87,23 +104,29 @@ Can also be laid out as JS within a single set of tags as:
 	} %>
 	
 	This is the template content
+```
 
 ## Configuring Eta
 
  - Merges current configuration with that sent in:
 
+```
 	Eta.configure({
 	  cache: true // Make Eta cache templates
 	})
-
+```
+ 
  - Current configuration is in `config` variable:
 
-	Eta.config.tags // ["<%", "%>"]
+```
+Eta.config.tags // ["<%", "%>"]
+```
 
 ### Big list of configuration options
 
  - Here's the TS interface for the config (taken from source code):
 
+```
 	interface EtaConfig {
 	  /** Whether or not to automatically XML-escape interpolations. Default true */
 	  autoEscape: boolean
@@ -161,9 +184,11 @@ Can also be laid out as JS within a single set of tags as:
 	  /** The config object can also have other properties, potentially added by plugins */
 	  [index: string]: any
 	}
+```
 
 ### Default configuration
 
+```
 	var config: EtaConfig = {
 	  async: false,
 	  autoEscape: true,
@@ -184,6 +209,7 @@ Can also be laid out as JS within a single set of tags as:
 	  useWith: false,
 	  varName: "it"
 	}
+```
 
 ## Plugins
 
