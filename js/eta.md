@@ -4,9 +4,9 @@
 
     import * as eta from "https://deno.land/x/eta@v1.6.0/mod.ts"
 
-	- Replace with pinned version.
-	- Move to deps.
-	- Remember XSS: https://eta.js.org/docs/syntax/auto-escaping
+ - Replace with pinned version.
+ - Move to deps.
+ - Remember XSS: https://eta.js.org/docs/syntax/auto-escaping
 	
     Eta.render('The answer to everything is <%= it.answer %>', { answer: 42 })
 
@@ -14,15 +14,15 @@
 
 ### Named partials
 
-	- Defined as template functions.
+ - Defined as template functions.
 	
     Eta.templates.define("mypartial", Eta.compile("PARTIAL SPEAKING"))
     Eta.render('This is a partial: <%~ include("mypartial") %>', { name: "Person" })
 
 ### File partials
 
-	- Looks in config.views for the templates.
-	- Actually more nuanced, see: https://eta.js.org/docs/learn/file-handling
+ - Looks in config.views for the templates.
+ - Actually more nuanced, see: https://eta.js.org/docs/learn/file-handling
 
 	Eta.configure({
 	  views: path.join(__dirname, views)
@@ -34,14 +34,14 @@
 
 ## Layouts
 
-	- Different type of "part".
-	- Call this from inside your template:
+ - Different type of "part".
+ - Call this from inside your template:
 
     <% layout(filepath, options) %>
 
-	- Your current template will become the `it.body` for the layout.
-	- Options is optional and overrides the inherited template body (model?) stored in `it.body`.
-	- More advanced explainer I don't really understand: https://eta.js.org/docs/learn/layouts
+ - Your current template will become the `it.body` for the layout.
+ - Options is optional and overrides the inherited template body (model?) stored in `it.body`.
+ - More advanced explainer I don't really understand: https://eta.js.org/docs/learn/layouts
 
 ### Examples
 
@@ -90,19 +90,19 @@ Can also be laid out as JS within a single set of tags as:
 
 ## Configuring Eta
 
-	- Merges current configuration with that sent in:
+ - Merges current configuration with that sent in:
 
 	Eta.configure({
 	  cache: true // Make Eta cache templates
 	})
 
-	- Current configuration is in `config` variable:
+ - Current configuration is in `config` variable:
 
 	Eta.config.tags // ["<%", "%>"]
 
 ### Big list of configuration options
 
-	- Here's the TS interface for the config (taken from source code):
+ - Here's the TS interface for the config (taken from source code):
 
 	interface EtaConfig {
 	  /** Whether or not to automatically XML-escape interpolations. Default true */
