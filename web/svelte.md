@@ -86,4 +86,10 @@ https://svelte.dev/docs#component-format-script-4-prefix-stores-with-$-to-access
 - A store can have a `.set(...)` method taking a new value and calls all the subscription functions synchronously.
 - For RxJS compat, the `.subscribe(...)` method is also allowed to return an object with an `.unsubscribe(...)` method.
   
-  
+### <script context="module">
+
+- A `<script>` with `context="module"` runs once when the module first evaluates, rather than for each component instance.
+- Values declared in this block are accessible from a regular `<script>` (and the component markup) but not vice versa.
+- Any `exports` in this block will become exports of the compiled module.
+- No `export default`.
+	
