@@ -195,3 +195,24 @@ https://svelte.dev/docs#template-syntax-attributes-and-props
 
 - Can use spreading syntax `<Widget {...things} />`
 - `$$props` references all props passed to a component, including ones not declared with `export`. Not recommended, but rare usage.
+- `$$restProps` contains just those _not_ declared. Also not recommended.
+
+**Note** - Caveats and warnings at the bottom of the docs on this section.
+
+> SKIPPED THE DOCS UNTIL THE NEXT SECTION
+
+## RUN TIME
+
+https://svelte.dev/docs#run-time
+
+### svelte
+
+- The `svelte` package exposes:
+- Lifecycle functions: https://svelte.dev/tutorial/onmount
+- And the context API: https://svelte.dev/tutorial/context-api
+
+> SKIPPED / STOPPED
+  
+> Working through the online tutorial because the docs don't cover the files or how it works.
+  
+  
