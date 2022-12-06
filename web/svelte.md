@@ -149,3 +149,49 @@ p:global(.red) {
 
 ### Template Syntax
 
+#### Tags
+	
+https://svelte.dev/docs#template-syntax-tags
+	
+- Lowercase tag `<div>` denotes a regular HTML element but `<Widget>` or `<Namespace.Widget>` denotes a _component_.
+
+```html
+<script>
+  import Widget from './Widget.svelte';
+</script>
+
+<div>
+  <Widget/>
+</div>
+```
+
+#### Attributes and props
+	
+https://svelte.dev/docs#template-syntax-attributes-and-props
+
+- By default attributes work just like their HTML counterparts.
+- Can contain JavaScript.
+- Or be JS expressions: `<a href="page/{p}">page {p}</a>`
+- Boolean attributes are excluded if it's `falsy`, else included.
+- Other attributes excluded when `nullish`.
+
+```html
+<input required={false} placeholder="This input field is not required">
+<div title={null}>This div has no title attribute</div>
+```
+
+- If an expression causes syntax errors for HTML editors, quoting the value is okay and don't affect parsing.
+
+```html
+<button disabled="{number !== 42}">...</button>
+```
+
+- When the attribute name and value match like `name={name}` just use `{name}`.
+- Values passed to components are called _properties_ or _props_ rather than attributes (which are a DOM thing).
+
+```html
+<Widget foo={bar} answer={42} text="hello"/>
+```
+
+- Can use spreading syntax `<Widget {...things} />`
+- `$$props` references all props passed to a component, including ones not declared with `export`. Not recommended, but rare usage.
