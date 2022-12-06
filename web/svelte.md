@@ -87,9 +87,65 @@ https://svelte.dev/docs#component-format-script-4-prefix-stores-with-$-to-access
 - For RxJS compat, the `.subscribe(...)` method is also allowed to return an object with an `.unsubscribe(...)` method.
   
 ### <script context="module">
-
+	
+https://svelte.dev/docs#component-format-script-context-module
+	
 - A `<script>` with `context="module"` runs once when the module first evaluates, rather than for each component instance.
 - Values declared in this block are accessible from a regular `<script>` (and the component markup) but not vice versa.
 - Any `exports` in this block will become exports of the compiled module.
 - No `export default`.
 	
+### <style>
+	
+https://svelte.dev/docs#component-format-style
+	
+- CSS is scoped to that component (Svelte prepends a class).
+- Wrap like this `:global(body)` to apply globally.
+- Note the `keyframes` syntax, too.
+	
+```CSS
+<style>
+:global(body) {
+	/* this will apply to <body> */
+	margin: 0;
+}
+
+div :global(strong) {
+	/* this will apply to all <strong> elements, in any
+		 component, that are inside <div> elements belonging
+		 to this component */
+	color: goldenrod;
+}
+
+p:global(.red) {
+	/* this will apply to all <p> elements belonging to this 
+		 component with a class of red, even if class="red" does
+		 not initially appear in the markup, and is instead 
+		 added at runtime. This is useful when the class 
+		 of the element is dynamically applied, for instance 
+		 when updating the element's classList property directly. */
+}
+	
+@keyframes -global-my-animation-name {...}
+</style>
+```
+
+- Only one `<style>` top level per component.
+- Can nest like so:
+	
+```html
+<div>
+<style>
+	/* this style tag will be inserted as-is */
+	div {
+		/* this will apply to all `<div>` elements in the DOM */
+		color: red;
+	}
+</style>
+</div>
+```
+
+**Note** - nested styles are inserted verbatim.
+
+### Template Syntax
+
