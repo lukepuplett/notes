@@ -24,21 +24,28 @@
 - BigQuery ML.
 - Jobs let you run actions to load, export, query or copy data.
 
-## Pricing
+## Query Pricing
 
 - First 1TB/month is free! Then it's $5/TB/month.
-
 - Considering the minimum 10MB query size, that would be 100,000 free queries a month.
-
 - Errors are free and so are cached responses.
-
 - Charges are rounded up to the nearest MB, with a minimum 10 MB data processed per table referenced by the query, and with a minimum 10 MB data processed per query.
-
 - Partitioning and clustering can help reduce cost, pruning and reducing scanning.
-
 - Querying external data is charged by bytes read, plus any costs for the host service.
-
 - Flat-rate bulk pricing is done by buying reserved _slots_. This dedicated capacity will be queued if exceeded, so you never get charged extra.
+
+## Storage Pricing
+
+- First 10GB/month is free!
+- Pay for **active** (partitions modified within 90 days) and **long-term** storage, dormant for 90 days, drops 50% cost.
+- Active logical: $0.02/GB/month, long-term logical: $0.01/GB/month, active physical $0.04/GB/month, long-term physical: $0.02/GB/month.
+- The pricing docs do not explain logical and physical.
+
+## Ingestion Pricing
+
+- Batch loading is free when using shared slot pool.
+- Streaming inserts $0.05/GB/month.
+- BigQuery Storage Write API $0.025/GB/month with 2TB/month free!
 
 ##### More information
 
