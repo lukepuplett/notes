@@ -24,6 +24,18 @@
 - BigQuery ML.
 - Jobs let you run actions to load, export, query or copy data.
 
+## Pricing
+
+- First 1TB/month is free! Then it's $5/TB/month.
+
+- Errors are free and so are cached responses.
+
+- Charges are rounded up to the nearest MB, with a minimum 10 MB data processed per table referenced by the query, and with a minimum 10 MB data processed per query.
+
+- Partitioning and clustering can help reduce cost, pruning and reducing scanning.
+
+- Querying external data is charged by bytes read, plus any costs for the host service.
+
 ##### More information
 
 [The Definitive Guide](https://www.google.com/books/edition/Google_BigQuery_The_Definitive_Guide/-Jq4DwAAQBAJ)
