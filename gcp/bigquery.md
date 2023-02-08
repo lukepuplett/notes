@@ -28,6 +28,8 @@
 
 - First 1TB/month is free! Then it's $5/TB/month.
 
+- Considering the minimum 10MB query size, that would be 100,000 free queries a month.
+
 - Errors are free and so are cached responses.
 
 - Charges are rounded up to the nearest MB, with a minimum 10 MB data processed per table referenced by the query, and with a minimum 10 MB data processed per query.
