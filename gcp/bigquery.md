@@ -38,6 +38,8 @@
 
 - Querying external data is charged by bytes read, plus any costs for the host service.
 
+- Flat-rate bulk pricing is done by buying reserved _slots_. This dedicated capacity will be queued if exceeded, so you never get charged extra.
+
 ##### More information
 
 [The Definitive Guide](https://www.google.com/books/edition/Google_BigQuery_The_Definitive_Guide/-Jq4DwAAQBAJ)
