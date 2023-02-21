@@ -201,4 +201,29 @@ Can load from Firestore exports made using [Firestore managed export and import 
 - Connected Sheets and also be launched from the console. This runs queries on request or on schedule and saved in the sheet.
 - Looker is a BI platform.
 
+...
 
+### Using cached query results
+
+- All results are written to either an explicitly identified destination table or an implicit, temporary, cached results table.
+- Temporary, cached results tables are maintained per-user, per-project and have no cost, for 24-hours.
+
+#### Limitations
+
+- When you run a duplicate query, based on identical query text, it uses the cached table.
+- Must be smaller than max response size.
+- Cannot target cached tables with DML.
+- Don't use cached tables as source input for dependent jobs.
+
+#### Exceptions to query caching
+
+Not cached when:
+
+- Destination table is specified.
+- Any referenced table or logical view has changed; what constitutes a change is not mentioned.
+- When any referenced tables have recently received streaming inserts (table has data in the "write-optimized storage") even if no new rows have arrived.
+- If the query uses non-deterministic functions like `CURRENT_TIMESTAMP()`.
+- If querying >1 table using a wildcard.
+- Past 24 hours.
+- If query runs against an external data source.
+- If querying a table protected by column-level or row-level security.
