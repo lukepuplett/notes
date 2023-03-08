@@ -48,6 +48,9 @@ and demographics.
 nor the behaviour of the masses to understand the decision-making that's driving prices up. They instead
 are reading history books and studying and discussing the inflation of the 70s and 80s which had nothing
 to do with a global pandemic in the modern era of globalised markets.
+- The US Federal Reserve seem to think the high job openings is a sign of a hot labour market which is
+causing wage inflation which is causing all inflation. All other financial market pundits accept this at
+face value and are carrying on their discouse as if this is fact.
 
 ## Artificial Intelligence and AGI
 
