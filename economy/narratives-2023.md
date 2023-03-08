@@ -63,6 +63,8 @@ See above. USA has clamped down on the very leading edge technology being export
 that China have been stealing all their technological advancement from Western companies by mass producing
 it in China.
 
+News headline: _ASML chief warns of IP theft risks amid chip sanctions_
+
 ## Reshoring and Friendshoring
 
 See above. Companies are moving production from China and either back in domestic territory or to
