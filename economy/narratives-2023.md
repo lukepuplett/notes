@@ -55,7 +55,7 @@ this but it'll be like an alien lifeform landed.
 The thinking is that whoever has this AGI, country or company or group, can weild enormous power. This
 has led to a Chip War.
 
-## Chip War
+## Chip War and China was bad Afterall
 
 See above. USA has clamped down on the very leading edge technology being exported to China. The view is
 that China have been stealing all their technological advancement from Western companies by mass producing
