@@ -9,6 +9,8 @@ This is also coming from some prominent investors and wealthy employers like Elo
 that lefty values have gone too far. One meme shows a person who was "in the middle" is now on the right
 because the left have pushed the left farther out, thus moving the middle to the left.
 
+This quote captures what's going on quite nicely: _"Woke" is the latest word in the culture wars. But most Americans, including most independents, think it means aware of social injustices, not overly PC._ 
+
 ## Google Can't Ship Code
 
 This is new for March 2023 and sprang from Microsoft's work with GPT AI company OpenAI and Bing, and then
