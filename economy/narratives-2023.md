@@ -17,7 +17,7 @@ sounded like it'd become a standard large enterprise to me.
 
 This belief is being parroted by high profile Twitter accounts.
 
-## Nuclear Power Stations
+## Nuclear Power was Good Afterall
 
 Nuclear energy was never a risk and we'd have been better off if we kept building them, and we should build
 more today.
