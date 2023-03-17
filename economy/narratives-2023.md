@@ -11,6 +11,44 @@ because the left have pushed the left farther out, thus moving the middle to the
 
 This quote captures what's going on quite nicely: _"Woke" is the latest word in the culture wars. But most Americans, including most independents, think it means aware of social injustices, not overly PC._ 
 
+## US Debt Ceiling
+
+Todo.
+
+## Banking Crisis
+
+Rapid rise in Fed Funds Rate has devalued loans made prior. Cheap money causes bad loans when rates go up.
+Some depositors are draining accounts, like tech startups. SVB folded after needing to market their Held-
+to-Maturity portfolio, making them slightly insolvent. Customers which were VCs and startups pulled their
+money out causing a run.
+
+Government secured deposits. Problem now is that CFOs are moving money into the US Too-Big-To-Fail banks
+causing more deposits to leave the smaller ones and concentrating them in the larger ones. US had been
+telling EU not to backstop banks when they fail, a rule they broke straight away causing EU to raise
+eyebrows.
+
+Now some people wonder if that means everything is insured. This is causing crypto people to bang their
+drums about the next lot of money printing, though Bitcoin trades like a pure risk on asset. It has been
+up lately but so have tech stocks, so it's muddy.
+
+Now there might be a recession not because of the Fed's rate rises but because banks won't lend as much,
+as they try to hoard cash and stay strong. Lots of criticism of the Fed for its part, and also criticism
+of tech.
+
+## Commercial Real Estate
+
+People are talking about a problem in commercial real-estate loans. Post-pandemic preferences for WFH has
+left parts of cities quiet and some companies are consolidating offices or backing out of new
+developments.
+
+## People Hate Tech Arrogance
+
+For a while now it's been know that the traditional media are against tech and only paint them in a dim
+light. This is presumably because tech has disintermediated new and control of the narrative. However,
+they still drive the narrative, albeit via armies of journalists on Twitter. Many of their followers seem
+to agree with their anti-tech opinions. They seem to be trying to blame tech and VCs for the SVB bank
+run.
+
 ## Google Can't Ship Code
 
 This is new for March 2023 and sprang from Microsoft's work with GPT AI company OpenAI and Bing, and then
@@ -51,6 +89,11 @@ to do with a global pandemic in the modern era of globalised markets.
 - The US Federal Reserve seem to think the high job openings is a sign of a hot labour market which is
 causing wage inflation which is causing all inflation. All other financial market pundits accept this at
 face value and are carrying on their discouse as if this is fact.
+- Since the bank run, the Fed is now under fire for causing another banking crisis by devaluing the loans
+made during the ZIRP during the pandemic. It doesn't feel like many people think inflation is going to
+come down, perhaps buying the media or Fed narrative. More real-time data and charts continue to show
+huge drops in prices and activity. I don't think many people see these charts; they're not popular or
+shared often or at all by more prominent Twitter accounts. Oil is at new lows.
 
 ## Artificial Intelligence and AGI
 
