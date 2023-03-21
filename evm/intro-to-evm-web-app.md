@@ -1,4 +1,4 @@
-# Developing a simple blockchain pplication with a web UI
+# Developing a simple blockchain application with a web UI
 
 Notes taken from:
 
