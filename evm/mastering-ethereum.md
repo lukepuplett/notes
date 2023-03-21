@@ -165,3 +165,37 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - You can sign a tx on one device but then send it from another device via `web3.eth.sendSignedTransaction(...)` so decrypted keys are not in RAM on the network node that sends the tx.
 
 ### Transaction Propagation
+
+- Uses "flood routing" protocol, p2p like mesh of equal peers; a tx is validated and forwarded to node's usually ~13 direct neighbours.
+- They validate and propagate it to their neighbours, and so on.
+- Some nodes are miners (PoW era book).
+- Multi-sig is done by smart contract custom code.
+
+### Smart Contracts
+
+- Compiled as bytecode, deployed to 0x0, addressable, no special privileges for the owner, unless added in code.
+- Always single-threaded execution, and atomic.
+- A failed tx is still recorded has having been attempted on the blockchain.
+- A contract cannot be changed but it can be deleted!
+- Contracts must call `selfdestruct` which has negative gas to incentivize freeing resources.
+- Contract languages include: LLL, Serpent, Solidity, Vyper, Bamboo.
+- Solidity is by far the most popular; `solc` compiler https://github.com/ethereum/solidity
+- Notes here are all for Solidity 0.4.24
+- `solc --optimize --bin faucet.sol`
+- Contract ABI is a JSON array of function descriptions and events.
+- Function=type, name, inputs, outputs, constant, payable.
+- Events=type, name, inputs, anonymous.
+- `solc --abi faucet.sol`
+- Web3 just needs the ABI and contract address to be able to construct tx to interact with the contract.
+- Use the `pragma solidity ^0,4,19;` to ensure the code is not compiled by an out-dated compiler that's not aware of new features.
+- Solidity data types: `bool`, `int`, `uint`, `fixed`, `ufixed`, `address`, `byte array`, `Enum`, `Arrays`, `Struct`, `Mapping`, `seconds`, `minutes`, `hours`, `days`, `wei`, `finney`, `szabo`, `ether`.
+- `int` and `uint` should be declared with a number of bits size in increments of 8-256 and defaults to 256 if not specified, e.g. uint16.
+- `fixed` and `ufixed` need a size (8-256) and the number of decimals, e.g. `ufixed32x2`.
+- Byte arrays can be fixed like `bytes1` to `bytes32` or variable size declared as just `bytes` or `string`.
+- Arrays e.g. `uint32[][5]` is a fixed array of 5 dynamic arrays of 32-bit unsigned integers.
+- Contracts have access to some global variables at runtime: `block`, `msg` and `tx`.
+- `msg.sender`, `msg.value`, `msg.gas`, `msg.data`, `msg.sig`
+- `tx.gasprice`, `tx.origin` which is **unsafe**.
+- `block.blockhash`, `block.coinbase`, `block.difficulty`, `block.gaslimit`, `block.number`, `block.timestamp`.
+- `address.balance`, `address.transfer(addr)`, `address.send(addr)`, `address.call(payload)`, `address.callcode(payload)`, `address.delegatecall()`
+- 
