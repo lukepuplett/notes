@@ -57,3 +57,23 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 
 ### Cryptography
 
+- User EOAs are generated from public key part, but contract addresses are not gen from pub or priv key.
+- Private key needed to sign transactions and prove ownership/control.
+- Random entropy sent to Keccak256 hasher to get a private key.
+- Ethereum uses uncompressed publick key presentation standard.
+- 04 concat-with x-coord 64 hex chars concat-with y-coord 64 hex chars.
+- secp256k1 elliptic curve in OpenSSL and libsecp256k1
+- Ethereum uses originally designed Keccak256 and _not_ the NIST SHA-3 standard, due to Ed Snowden.
+- You can use a "test vector" known input output to see if your Keccak hasher lib is correct.
+- 04 is not included when you compute your own addresses since 04 just denotes the type of formatting in hex.
+- Ethereum addresses are last 20 bytes of hash of public key; 0x denotes hex format.
+- ICAP Inter Exchange Client Address Protocol encoding for Ethereum addresses partly compatible with IBAN encoding.
+- IBAN = 34 alphanumeric case insensitive chars of country code, checksum, and bank account ID.
+- ICAP uses XE as country code then 2-char checksum then any one of these account IDs:
+  - Direct: big endian base36 up to 30 chars representing the 155 least significant bits of Ethereum address. 155 is fewer that 160 bits of a full Ethereum address so address must be (is assumed to be) 0 at beginning. Might want to keep trying to create addresses until you find one with zeroes at the beginning to have it work with IBAN.
+  - Basic: same as above but 31 chars, so incompatible with IBAN field validation.
+  - Indirect: encodes an ENS name. Uses 16 chars: asset ID "ETH", name service "XREG", and 9 char human readable name "KITTYKATS" so e.g. XE##ETHXREGKITTYKATS where ## is the checksum.
+- `helpeth` command line tool makes ICAP addresses.
+- EIP-55 is another format that uses the hex capitalization to encode the checksum!
+
+### Wallet
