@@ -76,4 +76,11 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - `helpeth` command line tool makes ICAP addresses.
 - EIP-55 is another format that uses the hex capitalization to encode the checksum!
 
-### Wallet
+### Wallets
+
+- They're a GUI to Ethereum but technically they're a store of keys; a keyring that can create and sign transactions.
+- Nondeterministic wallet: keys not related and are random each time: JBOK.
+- Deterministic wallet: all keys derive from a single master key, often use BIP-32/44 tree structure.
+- Mnemonic code words are a backup of the seed key using BIP-39 standard.
+- Best practice to use a new address (new private key) each time you receive funds.
+- Heirarchically deterministic (HD) BIP-32 Bitcoin standard produces a tree where a key can produce children, which can produce grandchildren.
