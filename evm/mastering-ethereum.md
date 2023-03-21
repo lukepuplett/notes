@@ -84,3 +84,26 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - Mnemonic code words are a backup of the seed key using BIP-39 standard.
 - Best practice to use a new address (new private key) each time you receive funds.
 - Heirarchically deterministic (HD) BIP-32 Bitcoin standard produces a tree where a key can produce children, which can produce grandchildren.
+- Branches can be used to organise addresses perhaps in a corporation or organisation.
+- Can create public keys without the private key, so a wallet can make addresses to receive funds but cannot spend because it does not have the private key needed to sign the transaction.
+- Page 86 gives example for how to generate mnemonic words.
+- Most heirarchically deterministic wallets follow BIP-32 and "Paths" BIP-43/44.
+- Most/many BIP-32 implementations are designed for Bitcoin so use an Ethereum one!
+- bip32.org is useful tool for testing.
+- The term for using/deriving child/subchild keys is "extending" by taking a key and appending a "chain code".
+- If the key is private, it becomes an "extended private key" prefixed xprv.
+- An extended public key is prefixed xpub.
+- Can derive xpub without the private keys; xpubs can come from the child private key or from parent public key.
+- Can deploy xpub on a public web server insecure and safe to create a diffferent address to receive funds.
+- **Risk!** If a child private key leaks then the chain code can be gotten from the xpub and used to compute **all** the child private keys!!
+- **Worse!!** You can the compute the parent private key!!
+- To counter this risk, HD wallets use "hardened derivation" which breaks the link between the parent public key and child chain code.
+- Hardened derivation uses the parent private key to compute the child chain code.
+- **Best practice** is to have level 1 children of the master keys always derived by hardened derivation in order to prevent compromise of the master keys; this installs a kind of firewall/break.
+- An "index number" is an int32 index from the parent key which identifies and helps generate the child key.
+- The int32 key space is ranged so as to identify hardened and non-hardened index keys.
+- See page 95.
+- Keys are identified via a "path" convention like m/0/1 or M/0/1, see page 95.
+- Various BIP proposals for managing, organising and naming the paths, see page 96.
+
+### Transactions
