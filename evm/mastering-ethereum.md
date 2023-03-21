@@ -1,0 +1,3 @@
+Mastering Ethereum, TCP port, 303.03, and UDP 303.03. Go east guess. And parity clients. Greek. She or one equals one either? That's a diamond side. One way equals one. Quintillion equals one times 10 to the power of 18. He said always represented using you and metamasque wallet, address and private key is same on all these networks.
+00:47
+Use the testnets force it to fund. Your metamask wallet, use etherscan.io to look up the transaction. Use metamask, plus test force it to donate and return. Your testeath hoarding is frowned upon donate donating costs gas. EOA equals externally owned account has private key. Contract accounts has no private key, contracts cannot initiate transactions.
