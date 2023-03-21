@@ -31,4 +31,31 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 
 ### Ethereum Clients
 
-- 
+- "Remote Client" is a wallet with an API like web3.js
+- Ganache is a local blockchain emulator.
+- "Light Client" validates transactions and evalutates their effects like a full node.
+- Running a full node for a testnet is feasible.
+- Since THE MERGE two nodes are now needed: an execution layer node (EL) and a consensus layer node (CL).
+- Geth 500GB "snap sync" and >12GB for full node with all data.
+- DappNode and Avado will sell a prebuilt, pre-setup box as a node.
+- DappNode is also a "launcher" and "control center" app you can use on your own kit.
+- Others include: eth-docker, Stereum, NiceNode and Sedge.
+- Execution Clients: Besu, Erigon, Geth, Nethermind.
+- Consensus Clients: Lighthouse, Lodestar, Nimbus, Prysm, Teku.
+- Use GnuPG `> gpg` to verify signature or open source binaries or build/compile from source yourself.
+- OR `> sha256sum teku-22.6.1.tar.gz` will print the hash so you can check it matches what it says online.
+- Before starting, choose the network and synch mode.
+- You can also configure pruning options to remove old data.
+- Choose to enable HTTP or WebSockets and local path for JWTSECRET used to authenticate EL<->CL node communications.
+- Lodestar has the lowest CPU% and Teku the most. As of Feb 23 need C250GB for Goerli testnet node.
+- Nimbus uses the least RAM <2GB, Teku most at 8GB. Lighthouse leaked until it crashed.
+- Teku uses the least disk and Lighthouse the most >100GB.
+- All use <200 ops/s and >80h to synch, >3 weeks on archive mode!
+- All <6Mb/s network.
+- Ganache is a local blockchain simulator.
+- It has no other users, so no competition and sequencing and MEV is not representative or live env.
+- No other contracts; no stablecoins or lib contracts.
+- JSON RPC service runs on HTTP port 8545.
+
+### Cryptography
+
