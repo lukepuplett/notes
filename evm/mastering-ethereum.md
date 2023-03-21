@@ -1,5 +1,3 @@
-. . , .
-
 # Mastering Ethereum - Building Smart Contracts and DApps
 
 Notes taken from the book by Andreas Antonopoulos and Dr Gavin Wood.
