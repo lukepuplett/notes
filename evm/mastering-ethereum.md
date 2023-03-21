@@ -107,3 +107,61 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - Various BIP proposals for managing, organising and naming the paths, see page 96.
 
 ### Transactions
+
+- These are signed messages originated by an EOA, transmitted by the network, recorded on the blockchain.
+- They're the only things that can mutate state.
+- The network serialization is the only standard form.
+  - Nonce - sequence no. issued by EOA for anti-replay.
+  - Gas Price - the amount, in wei, originator is willing to pay for gas.
+  - Gas Limit - the max gas the originator is willing to buy for this transaction.
+  - Recipient - destination address.
+  - Value - optional amount to send to the address.
+  - Data - optional variable-length binary payload.
+  - v,r,s - three parts of ECDSA digital signature of the originating EOA.
+- This structure is serialized using Recursive Length Prefix (RLP) encoding.
+- All numbers in Ethereum encode as big-endian integers of lengths that are multiples of 8 bits.
+- RLP does not endode the field names.
+- EOA's address can be computed from v,r,s so there's no need for a from field.
+- The transaction ID is computed from field data.
+- Nonce is count of the number of tx sent from the address, or in the case of "accounts with associated code", the number of contract creations made by the account.
+- Nonce provides an order of execution–it seems that "later" nonces are "ignored" but presumably they must be retried periodically because they eventually get processed if transaction with "before" nonces turn up to fill "the gap".
+- I think the nonce is computed/looked-up from counting tx on the real blockchain by the originator when it sends, and by the validator when it checks.
+- `>web3.eth.getTransactionCount("0x9e61...")`
+- It appears that the need to use a valid incrementing nonce will mean designing a system around a single machine that issues transactions for an address, or a CAS-op must be run against an atomic database like MSSQL.
+- When the system above starts, it'll have to wait a bit for all pending tx to complete on the blockchain, then query the blockchain to get the next nonce value.
+- If you use a nonce that causes a "gap" then the tx will sit in the queue forever waiting for transactions with the missing nonce(s).
+- **Fuck!** If a tx fails then it creates a gap and subsequent tx will sit forever until you reissue a good tx with the same bad nonce, then the blocked ones will all go through.
+- Transactions cannot be recalled or cancelled.
+
+### Transaction Gas
+
+- Gas is NOT Ether! It's its own currency with its own exchange rate vs. Ether.
+- gasPrice in the tx is the exchange rate in wei per gas unit that the originator is willing to pay for gas.
+- It's not the max price but the actual bid and a higher bid will up the chances/incentive for the node to process your tx.
+- gasLimit is the max units of gas the originator is willing to buy to process the tx.
+- Simple payments from EOA to EOA in Ether are fixed at 21,000 gas, though you still need to bid on the gas.
+- If the tx involves a smart contract then the gas needed to "run" can only be estimated.
+- You're only charged for gas you actually burn.
+- **Note!** Addresses in the tx are not validated as actually existing; they may not and payments will succeed regardless.
+- A tx with only a value is a payment; a tx with only data is an invocation. See example commands on page 108, 109 using `web3.eth.sendTransaction()`
+- Use `address().balance` in Solidity to get your contract's balance.
+- data in the tx is an ABI-compatible hex payload laid out:
+  - Function selector: first 4 bytes of Keccak hash of the function's prototype (see below).
+  - Arguments as per ABI specification encoding.
+- Prototype of a function is `functionName(type, type, ...)` hashed, e.g. `withdraw(uint)` hashed and first 4 bytes is `0x2e1a7d4d`
+- See example on page 111 for encoding arguments.
+- Contract creation is sent to 0x0 a.k.a. "the zero address" with the payload as compiled byte code.
+- Set a value only if you want to seed a balance against the contract address.
+- The tx receipt contains the new contract address.
+
+### Digital Signatures
+
+- A transaction's Keccak of the RLP-encoded tx is signed, see page 116.
+- The final signature has two parts, r and s.
+- To verify a tx you need r and s, and the serialized tx and the public key.
+- JavaScript in Node sample code using a library can be seen on page 119.
+- EIP-155 adds three new fields to the transaction: the chain ID, 0 and 0.
+- "Public Key Recovery" is a method which uses v,r,s in the tx to compute the ephemeral public key of the sender of the tx, where v "signature prefix value" is used to determine which of two possible public keys (computed from r and s) is the right one.
+- You can sign a tx on one device but then send it from another device via `web3.eth.sendSignedTransaction(...)` so decrypted keys are not in RAM on the network node that sends the tx.
+
+### Transaction Propagation
