@@ -247,5 +247,16 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - Avoid calls to other contracts.
 - Example JS (I think) so estimate gas cost of a contract method on page 159.
 - Seems that Truffle can run JS files.
-- 
-- 
+
+### Vyper
+
+- Vyper, as of 2019 book, has stuff from Solidity omitted to make it safer.
+- Not in the book but on quick research, Vyper may produce less gassy bytecode.
+- Modifiers: (attributes) omitted since they essentially hide logic. I thought this, too!
+- Inheritence: I also thought composition is better than inheritence and esp. didn't like multiple inheritence!
+- Inline Assembly: low-level access would be a hole in Vyper's ethos. Obvs!
+- Function Overloading: confusion over which function is called at runtime. This makes sense!
+- Recursive Calling: when recursion is allowed, there's always scope for gas limit attack.
+- Infinite-length Loops: as above, really.
+- Binary Fixed Point: decimal fixed point is better since it doesn't approximate and lead to numeric errors.
+- Vyper enforces member ordering like Python.
