@@ -234,7 +234,18 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - **Note** - the owner of the other contract will be the contract that created it, not the EOA that create the transaction.
 - Another way is to cast the address of an existing contract to a known interface.
 - **Important** - it is vital you are sure of the type of the existing contract, e.g. when an address is passed in to a method, that address might be for a dodgy contract and the caller who passed it in could be The Devil Incarnate.
-- **Most dangerous of all** is to use low-level `call` and `delegatecall` etc. to invoke a method at an address and pass raw arguments in! It'll return `false` is there's a problem but this method opens your code up to _reentrancy attacks_, see page 155.
+- **Most dangerous of all** is to use low-level `call` and `delegatecall` etc. to invoke a method at an address and pass raw arguments in! It'll return `false` is there's a problem but this method opens your code up to _reentrancy attacks_, see page 173.
 - With `delegatecall` the context is preserved so the executing code thinks it's in the context that called it, the `msg.sender` is maintained.
-- `delegatecall` is most commonly used to call library code, but if that code is not designed to be a library then you could open a gateway to Hell.
+- `delegatecall`, page 155, is most commonly used to call library code, but if that code is not designed to be a library then you could open a gateway to Hell.
+- Good example of calling other code and the varying values of `tx.origin`, `msg.sender` and `this` for four different ways, on page 157.
 
+### Gas Considerations
+
+- More details on page 314.
+- When all consumed, "out of gas" exception is thrown and everything reverts and gas is taken.
+- Avoid dynamically sized arrays.
+- Avoid calls to other contracts.
+- Example JS (I think) so estimate gas cost of a contract method on page 159.
+- Seems that Truffle can run JS files.
+- 
+- 
