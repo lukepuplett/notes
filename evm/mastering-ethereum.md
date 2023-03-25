@@ -198,4 +198,43 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - `tx.gasprice`, `tx.origin` which is **unsafe**.
 - `block.blockhash`, `block.coinbase`, `block.difficulty`, `block.gaslimit`, `block.number`, `block.timestamp`.
 - `address.balance`, `address.transfer(addr)`, `address.send(addr)`, `address.call(payload)`, `address.callcode(payload)`, `address.delegatecall()`
-- 
+- Some built-in functions worth noting: `addmod`, `mulmod`, `keccak256`, `sha256`, `sha3`, `ripemd160`, `ecrecover`, `selfdestruct(addr)`, `this`.
+- Object types `contract`, `interface`, `library`.
+- The library is a contract deployed once, intended to be used by other contracts via `delegatecall(...)`.
+
+### Functions
+
+- Functions can be `public`, `external`, `internal`, `private`.
+- **Important** - `private` and `internal` only affect language compilation since **all code and state is public** on the blockchain.
+- A function's behaviour can be further marked with `constant`/`view`, `pure`, `payable`.
+- Contracts can also have a `constructor() { }` function that runs in the same tx as the contract creation and initializes state etc.
+- Contracts can also have a function that calls `selfdestruct(addr)` to tear down resources. It accepts an address to which the EVM pays what is effectively a reward for being good and clearing up.
+- It's convention to set `this.owner` field to `msg.sender` in the constructor and then to check this field in the destructor to ensure only the owner can delete the contract.
+- `function destroy() public { require(msg.sender = owner); selfdestruct(owner); }`
+- You can write function modifiers which are like attributes in C#, e.g. `function destroy() public onlyOwner` where `onlyOwner` is the modifier which is simply an outer function that's called before the inner `destroy`.
+- Inheritence is done via `is` keyword e.g. `contract Child is Parent { ... }` and multiple inheritence is via comma separated list.
+- It's common to use an `Owned` contract which has a constructor which sets `this.owner = msg.sender` and has a destructor, too.
+- Error handling is done via `assert`, `require` and `revert` where `assert` and `require` work the same way but `assert` is used when the condition should always be `true` and `require` is used when it's sometimes expected to be `false`, like checking argument values so `require` can include a friendly message.
+- The `revert(msg)` is used like `throw` in other languages.
+- Some methods like `transfer` do their own checks but it's worth spending gas to do the check and provide a clear error message.
+
+### Events
+
+- Whether a transaction completes successfully or not, it returns a receipt which contains log entries which are constructed from events.
+- Events take args that are serialized and recorded in the transaction logs on the blockchain.
+- Supplying the keyword `indexed` _before_ an argument makes the value part of a hashtable that can be "searched by an app" (!?)
+- `event Deposit(address indexed from, uint amount);`
+- Use `emit Deposit(msg.sender, msg.value);`
+
+### Calling Other Contracts
+
+- **Potentially dangerous** because you could be calling into a dodgy contract _and_ a dodgy contract could be calling your code!
+- Safest to instantiate the other contract yourself using `new` and the `import` statement which references the source code.
+- This actually creates the other contract on the blockchain! So you must remember to destroy it again from your destructor method.
+- **Note** - the owner of the other contract will be the contract that created it, not the EOA that create the transaction.
+- Another way is to cast the address of an existing contract to a known interface.
+- **Important** - it is vital you are sure of the type of the existing contract, e.g. when an address is passed in to a method, that address might be for a dodgy contract and the caller who passed it in could be The Devil Incarnate.
+- **Most dangerous of all** is to use low-level `call` and `delegatecall` etc. to invoke a method at an address and pass raw arguments in! It'll return `false` is there's a problem but this method opens your code up to _reentrancy attacks_, see page 155.
+- With `delegatecall` the context is preserved so the executing code thinks it's in the context that called it, the `msg.sender` is maintained.
+- `delegatecall` is most commonly used to call library code, but if that code is not designed to be a library then you could open a gateway to Hell.
+
