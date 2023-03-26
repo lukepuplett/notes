@@ -270,4 +270,13 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - Aerospace engineering quality.
 - Readability == auditability.
 - Test coverage.
-- 
+
+#### Reentrancy
+
+- You are **urged** to study such attacks online and learn from others' mistakes.
+- Can occur when a contract sends Ether to an unknown address.
+- Attacker crafts a dodgy contract containing malicious code in its fallback address and runs the attacker's code.
+- Typically the malicious code executes a function on the vulnerable contract.
+- It's called "reentrant" because the malicious contract calls back into the very contract that invoked it.
+- Page 173 provides an example.
+
