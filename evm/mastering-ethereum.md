@@ -279,4 +279,21 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - Typically the malicious code executes a function on the vulnerable contract.
 - It's called "reentrant" because the malicious contract calls back into the very contract that invoked it.
 - Page 173 provides an example.
+- **Do** use the `transfer` method to send ether because it limits gas to 2,300 which limits the cycles.
+- **Do** ensure the transfer is done after any other state changes such as deducting from their pot or anything else that the transfer is contingent on, such as daily withdrawal limits. This is known as the checks-effects-interactions pattern.
+- **Consider** introducing a mutex so that the contract can only be used one at a time.
 
+#### Arithmetic Over and Underflows
+
+- Solidity does **not** check for overflows or underflows like most programming languages and so setting a `uint8` to 256 will set it to 0.
+- Math code can easily overflow a variable and make it "go around the clock" like a car tachometer, esp. when subtracting.
+- **Always** validate user inputs will not over/underflow a variable, esp. ensure they are positive numbers.
+- **Do** read and re-read best practice on the web for preventing these attacks.
+- **Do** use trusted libraries for doing math and **don't** reinvent the wheel, so avoid `+=` esp. on small data types, see "SafeMath" lib.
+- **Remember** that all state is public so attackers can see the current value of a field and pass in the "right" number to over or underflow a variable.
+- **Consider** using a language that has built-in checks.
+- `pots[msg.sender] = pots[msg.sender].add(msg.value);`
+
+#### Unexpected Ether
+
+-
