@@ -260,3 +260,5 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - Infinite-length Loops: as above, really.
 - Binary Fixed Point: decimal fixed point is better since it doesn't approximate and lead to numeric errors.
 - Vyper enforces member ordering like Python.
+- Vyper has built-in overflow protection.
+- 
