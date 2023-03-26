@@ -298,4 +298,5 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 
 - Contract code that assumes and checks that fields tracking the total ether sent to the contract address are equal are open to attack by hackers sending ether to the contract via two other possible means; via the `selfdestruct(addr)` reward and to a less likely extent by an attacker preempting the contract's address before it is created which is possible because the contract address is deterministic.
 - Such checks can thus be made to fail and cause the contract to malfunction and potentially brick the contract so funds are stuck in it.
-- 
+- **Avoid** using `this.balance` and other ways to read the blockchain balance data, but instead account for ether using fields in your contract.
+
