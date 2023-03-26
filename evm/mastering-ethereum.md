@@ -264,4 +264,10 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 
 ### Smart Contract Security
 
+- **Complexity is the enemy of security**.
+- Aim for as few lines as possible.
+- Reuse code: do not reinvent the wheel.
+- Aerospace engineering quality.
+- Readability == auditability.
+- Test coverage.
 - 
