@@ -81,9 +81,10 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - They're a GUI to Ethereum but technically they're a store of keys; a keyring that can create and sign transactions.
 - Nondeterministic wallet: keys not related and are random each time: JBOK.
 - Deterministic wallet: all keys derive from a single master key, often use BIP-32/44 tree structure.
+- Heirarchically Deterministic (HD) wallets are created from a 128, 256 or 512-bit seed.
 - Mnemonic code words are a backup of the seed key using BIP-39 standard.
 - Best practice to use a new address (new private key) each time you receive funds.
-- Heirarchically deterministic (HD) BIP-32 Bitcoin standard produces a tree where a key can produce children, which can produce grandchildren.
+- HD BIP-32 Bitcoin standard produces a tree where a key can produce children, which can produce grandchildren.
 - Branches can be used to organise addresses perhaps in a corporation or organisation.
 - Can create public keys without the private key, so a wallet can make addresses to receive funds but cannot spend because it does not have the private key needed to sign the transaction.
 - Page 86 gives example for how to generate mnemonic words.
