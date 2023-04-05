@@ -308,5 +308,8 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - This means **state will conflict** causing all kinds of bugs and security holes.
 - **DO NOT** use a normal Smart Contract i.e. `contract` keyword for a library.
 - DO use the `library` keyword which causes the compiler to prevent the unit from having state; forces statelessness.
-- Using a normal contract as a library means all its functions are exposed and callable like any other contract.
 
+#### Smart Contract Gotchas
+
+- Using a normal contract as a library means all its functions are exposed and callable like any other contract.
+- Functions are **public by default** which is unusual for a programming language; always, always include access modifiers.
