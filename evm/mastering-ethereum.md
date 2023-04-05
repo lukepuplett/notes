@@ -301,3 +301,10 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - Such checks can thus be made to fail and cause the contract to malfunction and potentially brick the contract so funds are stuck in it.
 - **Avoid** using `this.balance` and other ways to read the blockchain balance data, but instead account for ether using fields in your contract.
 
+#### DELEGATECALL
+
+- Smart Contracts store data in indexed slots from [0] onwards.
+- When a contract is used like a library, any state in fields will also be allocated to slot beginning from [0].
+- This means **state will conflict** causing all kinds of bugs and security holes.
+- **DO NOT** use a normal Smart Contract i.e. `contract` keyword for a library.
+- DO use the `library` keyword which causes the compiler to prevent the unit from having state; forces statelessness.
