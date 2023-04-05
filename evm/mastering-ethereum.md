@@ -313,3 +313,12 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 
 - Using a normal contract as a library means all its functions are exposed and callable like any other contract.
 - Functions are **public by default** which is unusual for a programming language; always, always include access modifiers.
+
+#### Short Address/Parameter Attack
+
+- Applications should **never** take user input as verbatim parameter values when submitting transactions.
+- **Always** validate parameters are of the expect type and/or length before accepting, storing or using them in transactions.
+- This is because the EVM encodes according to the ABI spec. and pads the parameters data with zeros if short.
+- An attacker could generate a wallet address ending in zeroes and submit e.g. `usdc.transfer(shortened_addr, 100)`.
+- If the address value is missing its last byte, the parameters would be padded with zeroes, effectively bit-shifting the amount to 25600.
+- **Consider** designing signatures with a less vulnerable order of parameters.
