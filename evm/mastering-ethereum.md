@@ -321,4 +321,12 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - This is because the EVM encodes according to the ABI spec. and pads the parameters data with zeros if short.
 - An attacker could generate a wallet address ending in zeroes and submit e.g. `usdc.transfer(shortened_addr, 100)`.
 - If the address value is missing its last byte, the parameters would be padded with zeroes, effectively bit-shifting the amount to 25600.
-- **Consider** designing signatures with a less vulnerable order of parameters.
+- **Consider** designing signatures with a less vulnerable order of parameters; padding only happens at the end.
+- **Always** validate all inputs in UIs before submitting to the blockchain.
+
+#### Unchecked `CALL` Return Values
+
+- `call` and `send` return a boolean for success, and DO NOT throw or revert.
+- **Always** check the return value.
+- **Consider** using `transfer` over `send` because it will revert.
+- **Consider** adopting the _withdrawal pattern_ via an isolated `withdraw` function.
