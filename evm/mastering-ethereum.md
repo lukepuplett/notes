@@ -330,3 +330,53 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - **Always** check the return value.
 - **Consider** using `transfer` over `send` because it will revert.
 - **Consider** adopting the _withdrawal pattern_ via an isolated `withdraw` function.
+
+#### Race Conditions/Front Running/MEV
+
+I think since the book was written this became known as Miner Extractible Value and then after the move to Proof of Stake, the validators perform the role of choosing transactions and so it was renamed Maximal EV.
+
+I've updated this section to include a little I've read on MEV in PoS world.
+
+- The miner who solves the block gets to choose the transactions to include, typically ordered by gas price.
+- Attackers can watch the transaction pool and spot, e.g. ones that solve a problem, and change state detrimentally to the solver, get the solution from the transaction data and submit their own with a "bribe" gas fee.
+- It's not clear in the book but the two transactions may occur a then b, or b then a, but its the inclusion in the mined block that seems to matter.
+- Miners can be attackers in which case they can include what they like in a block, but can only attack when they solve a block.
+- Miners no longer exist, but validators do the same job and the problem persists.
+- "Searchers" look for transactions to abuse and use bots to enact the work.
+- Generalized frontrunners nowadays watch the mempool and test transactions locally for profitability and then submit their bribed transaction.
+- Flashbots is a project to extend Execution Clients with code to directly submit MEV transactions so that they're not broadcast (to compete with other bots).
+- Examples of MEV include Dex arbitrage, liquidations, switch trading, NFT MEV and the long tail.
+- Commit-Reveal is a technique for problem-solver based contracts.
+
+See https://ethereum.org/en/developers/docs/mev/
+
+#### Denial of Service (DoS)
+
+- A board category where a contract is rendered temporarily or permanently inoperable.
+- Attackers only need to make an contract execute to gas exhaustion to screw it up.
+- **Vulnerability** - looping through externally manipulated mappings or arrays often during bulk token distribution, e.g. where a mapping can be added to via a function, such as appending an account balance.
+- **Avoid** looping through items which can be changed by callers, instead use the _withdrawal pattern_.
+- **Consider** making the owner a multisig contract.
+- **Consider** could a time lock work instead of an owner action (that never arrives)?
+- **Vulnerability** - having something like an owner account which must unlock functionality or make progress, and the account keys are lost or owner dies.
+- **Vulnerability** - where a design sees progression of execution that's contingent on successful external calls, then an attacker can look for ways to make a call fail, see page 209.
+
+#### Block Timestamp Manipulation
+
+Potentially irrelevant in PoS world, or perhaps this all applies to validators.
+
+- `block.timestamp` and `now` can be manipulated by miners, if motivated.
+- **Never** use block timestamps for entropy or conditions that would motive an attack.
+- **Consider** using `block.number` and an average block time since miners can't change it.
+
+#### Constructors with Care
+
+- This is just an old Solidity design flaw where the constructor was defined by a function of the same name as the contract so that if the contract was renamed in code as it was being authored, then the constructor became a standard public function.
+- This was fixed in Solidity 0.4.22 which now uses `constructor` keyword.
+
+#### Uninitialized Storage Pointers
+
+- **Always** - understand exactly how data is stored and the default types for local variables of functions because inappropriately initialized variables can open vulnerabilities.
+- Function-local variables default to storage or memory depending on their type.
+- **Unitialized local storage variables can contain the value of other storage variables!** see page 214.
+- State variables are stored sequentially in slots in lexical order of 32 bytes.
