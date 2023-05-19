@@ -380,3 +380,32 @@ Potentially irrelevant in PoS world, or perhaps this all applies to validators.
 - Function-local variables default to storage or memory depending on their type.
 - **Unitialized local storage variables can contain the value of other storage variables!** see page 214.
 - State variables are stored sequentially in slots in lexical order of 32 bytes.
+- Solidity (at the time of writing) puts structs and complex data types in storage when initializing them as local variables.
+- See page 215 and check latest on Solidity's terrible design.
+- Solidity compiler shows a warning for uninitialized storage variables.
+- **Consider** (always?) use the `memory` or `storage` specifiers when dealing with complex types.
+
+#### Floating Point and Precision
+
+- As of writing Solidity 0.4.24 does not support fixed-point and floating-point numbers, so we use integers which can be troublesome.
+- **Solidity performs math operations in lexical order!**
+- Allow for large numerators in fractions.
+- **Consider** converting to higher precision, doing the math, then converting back down to the precision required for output.
+- Typically `uint256` is used as they're optimal for gas usage, which gives 60 orders of magnitude in their range.
+- **Consider** keeping all variables in high precision and converting back in external apps, like ERC-20 does.
+
+#### `tx.origin` Authentication
+
+- `tx.origin` traverses the callstack to discover the address of the account that originally sent the call or transaction.
+- Using this for auth opens the contract to phishing-like attack.
+- Users are tricked in performing actions on the vulnerable contract, e.g. attacker disguises the contract as their own address.
+- **Never** use `tx.origin` to auth a contract however it still has legit uses like `require(tx.origin == msg.sender)` to deny external contracts from calling since all work starts with an EOA submitting a transaction.
+
+#### Contract Libraries
+
+- Both deployed code and templates.
+- **Consider** using well-established on-chain libs.
+- OpenZeppelin is the most widely used.
+- ZeppelinOS is open source platform of services and tools for contract dev-ing.
+
+### Tokens
