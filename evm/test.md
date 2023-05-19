@@ -1,6 +1,6 @@
 # Child Protection Policy 
 
-## Introduction
+## Introduction test
 This policy outlines the school’s commitment to safeguarding and promoting the welfare of all children in its care. It recognises that all staff, governors and volunteers have a full and active part to play in protecting children from harm. 
 
 ## Aims 
