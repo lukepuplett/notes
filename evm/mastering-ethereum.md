@@ -409,3 +409,8 @@ Potentially irrelevant in PoS world, or perhaps this all applies to validators.
 - ZeppelinOS is open source platform of services and tools for contract dev-ing.
 
 ### Tokens
+
+- Can be programmed to serve many different functions, e.g. payment, access right, voting right.
+- Currency, resource earned or produced, asset, access, equity, voting, collectible, identity, attestation, utility.
+- If a token's provenance can be tracked it is not strictly fungible.
+- 

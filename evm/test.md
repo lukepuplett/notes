@@ -28,6 +28,10 @@ Staff, governors and volunteers must:
 * Respond to any concerns in a timely and appropriate manner. 
 * Record and report any concerns in accordance with the school’s procedures.
 
+1. ee
+1. eee
+1. eee
+
 ## Training
 All staff, governors and volunteers must attend safeguarding training. This will include training on recognizing signs of abuse and neglect, responding to disclosures and reporting concerns. 
 
