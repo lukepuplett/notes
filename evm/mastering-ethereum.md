@@ -413,4 +413,5 @@ Potentially irrelevant in PoS world, or perhaps this all applies to validators.
 - Can be programmed to serve many different functions, e.g. payment, access right, voting right.
 - Currency, resource earned or produced, asset, access, equity, voting, collectible, identity, attestation, utility.
 - If a token's provenance can be tracked it is not strictly fungible.
-- 
+- ERC-777 seeks to usurp ERC-20.
+- Side note: it looks like DELEGATECALL passes through the original `msg.sender` and so it appears if a caller has not checked the code of the contract it's calling, then it could delegate a call to transfer??
