@@ -413,5 +413,84 @@ Potentially irrelevant in PoS world, or perhaps this all applies to validators.
 - Can be programmed to serve many different functions, e.g. payment, access right, voting right.
 - Currency, resource earned or produced, asset, access, equity, voting, collectible, identity, attestation, utility.
 - If a token's provenance can be tracked it is not strictly fungible.
-- ERC-777 seeks to usurp ERC-20.
 - Side note: it looks like DELEGATECALL passes through the original `msg.sender` and so it appears if a caller has not checked the code of the contract it's calling, then it could delegate a call to transfer??
+- ERC-223 attempts to solve the problem of inadvertent transfer of tokens to a contract (that may or may not support tokens) by detecting whether the destination address is a contract or not. The idea is controversial at the time of book author.
+
+#### ERC-777
+  
+- ERC-777 seeks to usurp ERC-20 but compatible with it. Page 245.
+- Send function "similar to ether transfers".
+- Compatible with ERC-820 for token contract registrations.
+- `tokensToSend(...)` controls which tokens a contract or EOA can send (called before).
+- Lets contracts and EOAs get notified of tokens receipt via a `tokensReceived` callback. This also prevents tokens from getting locked into contracts by requiring contracts to provide the callback.
+- Allows existing contracts to use "proxy contracts" for the `tokensToSend()` and `tokensReceived()`.
+- To operate in the same way regardless of sending to a contract or an EOA.
+- Events for minting and burning.
+- To enable operators (trusted 3rd parties, intended to be verified contracts) to move tokens on behalf of a token holder.
+- Provides metadata on transfer in `userData` and `operatorData` fields.
+- Compatible with ERC-1820 registry.
+- ERC-777 seems to use interface segregation principle and comprises several interface definitions.
+
+##### ERC-777 Hooks
+
+`function tokensToSend(address operator, address from, address to, uint value, bytes userData, bytes operatorData) public`
+
+- Any address wishing to be notified of, to handle, or prevent the debit of tokens must implement this interface and its address must be registered via ERC1820.
+
+`function tokensReceived(address operator, address from, address to, uint value, bytes userData, bytes operatorData) public`
+
+- Any address wishing to be notified of, to handle, or to reject the receipt of tokens must implemenent this interface.
+- Recipient contracts MUST be registered and MUST implement this interface, else they cannot receive tokens, which prevents tokens being locked at the contract address.
+- Only a single "handler" contract can be registered per "send" and "recieve" but logic in this contract can determine the token by its address, as well as use the from and to for its logic.
+- Security by maturity/battle-tested: use OpenZeppelin implementations and resist the urge to customise or extend. Every line of code increases its attack surface.
+  
+**Note** - Page 247 discusses ERC-721 NFT "deed" contracts which I've skipped because they're so well known.
+
+### Oracles
+
+- Chapter 11, Page 253
+- Ideally trustless.
+- EVM execution must be totally deterministic and that means there's no intrinsic source of randomness; extrinsic data can only be introduced as the data payload of a transaction.
+- Bridge between offchain and blockchain worlds.
+- Many data sources are actually attestations. (note 2023 Ethereum Attestation Service)
+- All oracles provide a few key functions:
+ - Collect data from an offchain source.
+ - Transfer the data on-chain with a signed message.
+ - Make the data available by putting it in a contract's storage.
+- Three main ways to setup an oracle:
+ - Request/response
+ - Pub/sub
+ - Immediate-read
+- Immediate-read is simply "is this person 18?". The books mentions "direct lookup" but it's not clear, page 256.
+- Can store data in a Merkle hash tree with a salt to maintain privacy or just a hash of the data.
+- Pub/sub is where an oracle is regularly polled by a smart contract on-chain or watched by an off-chain daemon for updates.
+- This pattern is similar to RSS feeds. A flag signals new data is available and subscribers must poll or listen for updates to oracle contracts.
+- Polling on-chain is via a local Ethereum client which is automatically synched.
+- Polling from a smart contract incurs significant gas fees.
+- Page 257, request/response, is most complicated.
+- Data space too big for smart contract storage, users only expected to need small part of full set at any time.
+- Might be implemented as a system of smart contracts an off-chain infrastructure.
+- EOA interacts with a dapp resulting in an interaction with a fnuction defined in the oracle contract.... too complicated to translate into notes here, see page 257.
+- I think the idea is to have the oracle contract emit the data request details in an event and then the actual query is performed off-chain as some kind of record that its happened or perhaps as an elaborate way for a blockchain dapp to communicate with off chain code, e.g. via events.
+- The query executor code then directly delivers the resultant data back to the requestor dapp with a callback function transaction.
+
+#### Data Authentication
+
+- Authenticity Proofs and Trusted Execution Environments (TEE)
+- Authenticity Proofs are e.g. digitally signed; author discusses "TLS Notary" and a very complex process to prove that HTTPS traffic actually occurred.
+- The discusses how TEE is really just the secure enclave tech on some newer CPUs which can attest that a process was running on on an Intel SGX processor.
+
+#### Computation Oracles
+
+- Oracles could run very expensive computations off-chain where gas would be extraordinary.
+- Page 260 describes "not truly decentralized" system which is very elaborate: a Google Cloud Run instance starts a Docker instance from a hosted container so you could have a dapp specify the container, cloud and environment vars to parse and have its output returned to the dapp via a callback!!
+- Page 260 describes "Criplets" as part of Microsoft's ESC Framework.
+- Explains "TrueBit" which seems to be a "proper" solution using Ethereum somehow.
+- Page 261 describes ChainLink. Consists of a reputation contract, an order matching contract and an aggregation contract. The reputation contract keeps track of the data provider's performance... it gets complicated and I'm not sure it's worth taking notes.
+- Page 262 describes Shelling Coin which redistributes a deposit based on how similar your submission is to consensus. Seems like a way to incentivize groupthink to me.
+- Describes another design idea by Jason Teutsch that uses another blockchain and miners.
+- Page 262 describes/shows some oracle client Solidity contract interfaces:
+
+### Decentralized Applications
+
+- 
