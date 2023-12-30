@@ -493,4 +493,18 @@ Potentially irrelevant in PoS world, or perhaps this all applies to validators.
 
 ### Decentralized Applications
 
+- Decentralizing the rest of an app (logic, plus) storage, messaging, naming etc.
+- Composability of contracts seems a key idea. I think of Ethereum as a distributed .NET Framework where the EVM is the runtime and the contracts are the framework classes.
+- Frontend is the same as the web; HTML, CSS, JS
+- Mobile is possible in theory, but lack of mobile "wallet-cum-light-clients". Usually web3.js links web frontend to Ethereum network.
+- **Note** - Helios https://github.com/a16z/helios could change this.
+- Decentralized storage is ideal for images, videos and HTML, CSS, JS of frontend.
+- IPFS is "content-addressable" system meaning the content hash becomes the file ID. IPFS aims to replace HTTP!?
+- Swarm, similar to IPFS, created as part of Go Ethereum. It's own homepage is stored on Swarm, accessible on "your Swarm node or gateway: https://... page 271.
+- Whisper solves for P2P/interprocess communications. Also part of Go Ethereum suite.
+- **Note** - Whisper is dead. Long live Waku!
+- Final part is name resolution, ENS.
+- Page 273, begins intro of an Auction (NFT) Dapp with code in the book's GitHub repo.
+- Important point is the contracts have no special privileged user address or logic.
+- Only the auction owner has some extra rights over their auction.
 - 
