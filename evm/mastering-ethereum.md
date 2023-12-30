@@ -507,4 +507,22 @@ Potentially irrelevant in PoS world, or perhaps this all applies to validators.
 - Page 273, begins intro of an Auction (NFT) Dapp with code in the book's GitHub repo.
 - Important point is the contracts have no special privileged user address or logic.
 - Only the auction owner has some extra rights over their auction.
+- One the one hand, privileged accounts are dangerous but they offer sometimes necessary controls, esp. to mitigate bugs. Also, these accounts can be stolen.
+- **Note** - I suspect the privileged account account could be another contract which itself calls the manager funcitons only if 5 EOAs have signed a nonce, or have each called their own dedicated step function.
+- The demo app runs on a local HTTP server but needs access to an Ethereum node with JSON-RPC and websockets open. The frontend config then needs configuring with the deployed contract addresses. Once deployed, the auction app cannot ever be stopped or controlled. The assets (img etc.) are stored on Swarm.
+- Anyone can interact by direct transaction or by running the website on their machine/node.
+- The dapp code is on GitHub; now, can store this code on Swarm/IPFS and access the dapp by Ethereum Name Service.
+- The whole dapp can be stored on Swarm and "hosted" from a Swarm node, part of Go Ethereum; point it at Geth for its JSON-RPC API, then open http://localhost:8500 to see a simple web UI to lookup a file by hash or its ENS name.
+- A dapp web frontend will require its relative URLs etc. to be rewritten, so it needs packaging (the demo script on page 280 show `.map` sibling files which I assume are for restoring the folder structure).
+- The final Swarm URL is bzz://abl64cf and that's shit so ENS comes to the rescue.
+- ENS is itself a dapp specified formally in EIP 137, 162 and 181. It follows a "sandwich" design; simple bottom layer, the layers of complex "replaceable" code, then a simple top layer that "keeps all the funds in separate accounts".
+
+##### Bottom Layer: Name Owners and Resolvers
+
+- ENS operates on nodes; human readable names convert to nodes using the Namehash algorithm.
+- Base layer contracts let node owners set information and create sub nodes: set resolver, TTL, transfer owner and create owners of subnodes.
+- Namehash just recursively hashes from the root 0x0 then eth > domain > subdomain etc. `keccak(<root node>) + keccak('eth')` and so on.
+- A simple Python implementation is printed on page 283. Due to name normalization THIS has the same hash as this. Use names compatible with old DNS; 64 characters per label where full name < 255.
+- Root node owner is 4 of 7 multisig for TLD creation.
+- Resolvers are contracts that can ensure queries like what Swarm address is the entrypoint for a dapp, what address receives payments to the dapp, or what the hash of the app is (for verifying its integrity).
 - 
