@@ -525,4 +525,13 @@ Potentially irrelevant in PoS world, or perhaps this all applies to validators.
 - A simple Python implementation is printed on page 283. Due to name normalization THIS has the same hash as this. Use names compatible with old DNS; 64 characters per label where full name < 255.
 - Root node owner is 4 of 7 multisig for TLD creation.
 - Resolvers are contracts that can ensure queries like what Swarm address is the entrypoint for a dapp, what address receives payments to the dapp, or what the hash of the app is (for verifying its integrity).
+
+##### Middle Layer: The .eth Nodes
+
+- Upgradable, .eth domain distributed via a Vickrey Auction (sealed-bids revealed together but winner pays second-highest-price).
+- System is actually quite complex because its taking place on a public blockchain, all explained on page 285.
+
+##### Top Layer: The Deeds
+
+- Simple top contract holds the funds, your bid just gets locked for at least 1 year. Like a buyback. ENS makes a new deed contract for every new name so as to reduce/spread risk of attack/bugs. Manage/add subdomains via https://manager.ens.domains
 - 
