@@ -26,7 +26,7 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - Tooling like Remix allows a contract to be inspected by its address and it'll make a little GUI with the contract's methods available to execute.
 - Transactions sent by the contract are called "internal transactions" or messages and show differently in block explorers.
 - `mg.sender.transfer(addr);`
-
+- 
 ### Ethereum Clients
 
 - "Remote Client" is a wallet with an API like web3.js
@@ -549,4 +549,8 @@ https://swarm.gateways.net/bzz:/auction.ethereumbook.eth
 - Permanent storage, also zero initialized.
 - Also a set of environment variables and data available during execution.
 - EVM is like JSM; OS agnostic but is single-threaded, order of execution is determined by blocks ordered by miners.
+- Instruction set (bytecode ops) exist for arithmetic and bitwise logic, execution context inquiries, stack, memory and storage access, control flow, logging, calling etc.
+- EVM also has access to account information, e.g. address and balance, block information, block number/height, current gas price.
+- World state, 160bit addresses-to-accounts-map, balance in Wei, incrementing nonce; transaction successfully sent if an EOA or count of contracts created (if a contract account), the account's permanent storage only used by contract and the account's program code (if a contract). EOAs have no code and empty storage.
+- Contract execution runs in a sandboxed copy of the world state which can be completely discarded or have any changes written back/logged upon success with the gas cost going to the block beneficiary (coinbase?)
 - 
