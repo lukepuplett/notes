@@ -534,4 +534,19 @@ Potentially irrelevant in PoS world, or perhaps this all applies to validators.
 ##### Top Layer: The Deeds
 
 - Simple top contract holds the funds, your bid just gets locked for at least 1 year. Like a buyback. ENS makes a new deed contract for every new name so as to reduce/spread risk of attack/bugs. Manage/add subdomains via https://manager.ens.domains
+- Resolving a name: call the ENS registry with the hash and you'll get an address back of its resolver contract. There a default public resolver for convenience. It supports resolving wallet address, Swarm hash etc.
+- Once the default resolver is configured with the Swarm hash of our demo dapp, "set Content" page 294, you can visit:
+```
+https://swarm.gateways.net/bzz:/auction.ethereumbook.eth
+```
+### The Ethereum Virtual Machine
+
+- Deployment and execution of smart contracts.
+- EOA-to-EOA transfers of ETH don't touch the EVM.
+- Stack based, Turing complete, 256-bit word size for native hashing with several addressable data components.
+- Immutable program code ROM, loaded with contract byte code.
+- Volatile memory with every location initialized to zero.
+- Permanent storage, also zero initialized.
+- Also a set of environment variables and data available during execution.
+- EVM is like JSM; OS agnostic but is single-threaded, order of execution is determined by blocks ordered by miners.
 - 
