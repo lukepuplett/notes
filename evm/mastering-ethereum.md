@@ -548,9 +548,60 @@ https://swarm.gateways.net/bzz:/auction.ethereumbook.eth
 - Volatile memory with every location initialized to zero.
 - Permanent storage, also zero initialized.
 - Also a set of environment variables and data available during execution.
-- EVM is like JSM; OS agnostic but is single-threaded, order of execution is determined by blocks ordered by miners.
+- EVM is like JVM; OS agnostic but is single-threaded, order of execution is determined by blocks ordered by miners.
 - Instruction set (bytecode ops) exist for arithmetic and bitwise logic, execution context inquiries, stack, memory and storage access, control flow, logging, calling etc.
 - EVM also has access to account information, e.g. address and balance, block information, block number/height, current gas price.
-- World state, 160bit addresses-to-accounts-map, balance in Wei, incrementing nonce; transaction successfully sent if an EOA or count of contracts created (if a contract account), the account's permanent storage only used by contract and the account's program code (if a contract). EOAs have no code and empty storage.
+- World state comprises: 160bit addresses-to-accounts-map, balance in Wei, incrementing nonce; count of transactions successfully sent (if an EOA) or count of contracts created (if a contract account), the account's permanent storage only used by contract and the account's program code (if a contract). EOAs have no code and empty storage.
 - Contract execution runs in a sandboxed copy of the world state which can be completely discarded or have any changes written back/logged upon success with the gas cost going to the block beneficiary (coinbase?)
-- 
+- Page 304 details this.
+- Each sub call to a contract runs in a fresh EVM.
+
+#### Compiling Solidity to EVM Bytecode
+
+```
+$ solc -o BytecodeDir --opcodes Example.sol // write opcode file
+$ solc -o BytecodeDir --asm Example.sol     // write higher-level annotated code to example.evm
+$ solc -o BytecodeDir --bin Example.sol           // machine-readable hex of deployment bytecode
+$ solc -o BytecodeDir --bin-runtime Example.sol   // hex of just runtime bytecode
+```
+The file `example.opcode` may look something like this:
+
+```
+PUSH1 0x60 PUSH1 0x40 MSTORE CALLVALUE ISZERO PUSH1 0xE ...
+```
+- Page 300 details all the opcodes and page 307 explains what a real contract's opcodes are doing.
+
+#### Contract Deployment Code
+
+- For contract creation, the code for the new contract account is _not_ the code in the `data` field of the transacton. It's confusing but I think it's saying this is instead the deployment code, which then outputs the runtime code.
+- `solc` can output the deployment bytecode (which sort of includes the runtime bytecode) or just the runtime bytecode.
+
+#### Disassembling the Bytecode
+
+- Porosity, https://github.com/comaeio/porosity
+- Ethersplay, plug-in for Binary Ninja, https://github.com/trailofbits/ethersplay
+- IDA-Evm, plug-in for IDA, https://github.com/trailofbits/ida-evm
+- Transaction first interacts with smart contract's dispatcher which reads the `data` field and sends the relevant part to the appropriate function.
+- Further low level inspection on page 310.
+
+#### Gas
+
+- Gas is its own currency, purchased with ETH, which prevents infinite loops and rewards worker nodes.
+- Each opcode has a list price, e.g. sending a transaction costs 21,000 gas.
+- EVM is instantiated with the gas limit in the transaction and before each op, it checks there's enough gas.
+- `miner fee = gas consumed * gas price willing to pay in transaction`
+- Remaining is refunded as ETH based on price set in transaction.
+- Sender is charged for consumption up until the point of out-of-gas exception.
+- They use gas "cost" to mean consumption and "price" to mean a gas unit in ETH.
+- Nodes incentivized to include pending transactions based on their gas value.
+- Some opcodes have a negative cost so as to incentivize their use (freeing resources).
+
+##### Block Gas Limit
+
+- Max gas that can be consumed by all trans in a block to constrain total trans per block.
+- Time of book this is 8 million ~ 380 empty transactions at 21,000 each.
+- Miners can vote to adjust the limit by 0.0976% either way.
+
+### Consensus
+
+- Skipped because of move to PoS.
