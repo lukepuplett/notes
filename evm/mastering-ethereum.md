@@ -239,6 +239,7 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - With `delegatecall` the context is preserved so the executing code thinks it's in the context that called it, the `msg.sender` is maintained.
 - `delegatecall`, page 155, is most commonly used to call library code, but if that code is not designed to be a library then you could open a gateway to Hell.
 - Good example of calling other code and the varying values of `tx.origin`, `msg.sender` and `this` for four different ways, on page 157.
+- Basically, when a contract directly calls another contract like `b.doSomething()`, the `msg.sender` becomes the calling contract `a` but when calling a library like `lib.doSomething()` then it instead maintains the `msg.sender` as whatever it was. For low-level `b.call` the `msg.sender` is the caller and `b.deletegatecall` it is maintained.
 
 ### Gas Considerations
 
