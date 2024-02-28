@@ -317,6 +317,8 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 
 #### Short Address/Parameter Attack
 
+- **Note** - according to ChatGPT, this attack is no longer possible due to changes made to the `solc` compiler and EVM, which is noted in https://github.com/ethereum/solidity/blob/v0.5.0/Changelog.md
+
 - Applications should **never** take user input as verbatim parameter values when submitting transactions.
 - **Always** validate parameters are of the expect type and/or length before accepting, storing or using them in transactions.
 - This is because the EVM encodes according to the ABI spec. and pads the parameters data with zeros if short.
