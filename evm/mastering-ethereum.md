@@ -266,6 +266,8 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 
 ### Smart Contract Security
 
+See also https://consensys.github.io/smart-contract-best-practices/development-recommendations/
+
 - **Complexity is the enemy of security**.
 - Aim for as few lines as possible.
 - Reuse code: do not reinvent the wheel.
