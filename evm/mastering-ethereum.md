@@ -393,7 +393,7 @@ Potentially irrelevant in PoS world, or perhaps this all applies to validators.
 #### Floating Point and Precision
 
 - As of writing Solidity 0.4.24 does not support fixed-point and floating-point numbers, so we use integers which can be troublesome.
-- **Solidity performs math operations in lexical order!**
+- ~Solidity performs math operations in lexical order!~ <- ChatGPT says this is NOT true.
 - Allow for large numerators in fractions.
 - **Consider** converting to higher precision, doing the math, then converting back down to the precision required for output.
 - Typically `uint256` is used as they're optimal for gas usage, which gives 60 orders of magnitude in their range.
