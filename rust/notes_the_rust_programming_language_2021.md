@@ -425,3 +425,51 @@ Strings:
   ```
 - Page 168 shows a more concise example using closures and `unwrap_or_else()` method.
 
+- Chapter 9 (continued):
+  
+- Shortcut: Use `unwrap()` on `Result`, which returns the value or panics:
+  ```rust
+  File::open("file.txt").unwrap()
+  ```
+- Custom panic message with `expect()`:
+  ```rust
+  File::open("file.txt").expect("Failed to open file")
+  ```
+- Propagate errors with `?` operator:
+  ```rust
+  fn read_username() -> Result<String, io::Error> {
+      let mut file = File::open("username.txt")?;
+      // ...
+  }
+  ```
+- `?` operator uses `From` trait to convert error types
+- `impl` allows defining methods on types we don't own (like C# extension methods)
+- Chaining method calls with `?`:
+  ```rust
+  File::open("a.txt")?.read_to_string(&mut s)?;
+  ```
+- `?` can be used with `Option<T>` to propagate `None`
+- Example of `Option<T>` with `?`:
+  ```rust
+  fn last_char_of_first_line(text: &str) -> Option<char> {
+      text.lines().next()?.chars().last()
+  }
+  ```
+- Convert between `Result` and `Option` using `ok()` and `ok_or()`
+- `main()` can return `Result<(), Box<dyn Error>>`
+- `Box<dyn Error>` means any kind of error (see p. 379)
+- `unwrap()` and `expect()` are normal in tests
+
+Chapter 10: Generic Types, Traits, and Lifetimes
+- Generics similar to C#, including constraints:
+  ```rust
+  fn largest<T: PartialOrd>(list: &[T]) -> &T
+  ```
+- Constraint `PartialOrd` is from `std::cmp` and is a trait
+- Structs, enums, and methods can be generic
+- Implement methods for specific types:
+  ```rust
+  impl Point<f32> { 
+      // methods specific to Point<f32>
+  }
+  ```
