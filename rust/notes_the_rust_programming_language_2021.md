@@ -139,3 +139,99 @@ Page 94:
 - The book does a detour on printing a struct for debugging via `println!`, which means perhaps implementing a trait called `Debug` by adding an attribute to the struct: `#[derive(Debug)] struct Rectangle { ... }`
 - It mentions that the `dbg!` macro will take ownership of a value and print it along with the file and line number to standard error, not standard out
 - `dbg!(30 * scale)` will work because `dbg!` hands back the value
+I apologize for the omissions. You're right, I should have included more of the code examples you provided. Let me try again with a more comprehensive transcription of your notes:
+- Chapter 6: Enums and Pattern Matching
+- Similar to C# enums, but with key differences
+- Basic enum syntax:
+  ```rust
+  enum IpAddrKind {
+    V4,
+    V6
+  }
+  ```
+- Accessing enum variants: `IpAddrKind::V6`
+
+- Rust enums can hold data:
+  ```rust
+  enum IpAddr {
+    V4(String),
+    V6(String)
+  }
+  ```
+- Example usage:
+  ```rust
+  let home = IpAddr::V4(String::from("127.0.0.1"));
+  ```
+
+- Enums can hold tuples:
+  ```rust
+  enum IpAddr {
+    V4(u8, u8, u8, u8),
+    // ...
+  }
+  ```
+
+- Enums can contain structs:
+  ```rust
+  enum IpAddr {
+    V4(Ipv4Address),
+    // ...
+  }
+  ```
+
+- Enums can include other enums
+- Enums can be quite complex, resembling structs
+- Different variants can have different data types
+- All variants are of the same enum type, allowing them to be passed as a single parameter to functions
+- Methods can be defined for enums using `impl`
+
+- Rust uses `Option<T>` instead of null:
+  ```rust
+  enum Option<T> {
+    None,
+    Some(T)
+  }
+  ```
+
+- `match` expression for pattern matching:
+  ```rust
+  match coin {
+    Coin::Penny => 1,
+    Coin::Nickel => 5,
+    // ...
+  }
+  ```
+- Match arms can include multi-line code blocks
+- Can extract values from enums using binding patterns:
+  ```rust
+  match coin {
+    // ...
+    Coin::Quarter(state) => {
+      // use the state variable
+    }
+  }
+  ```
+
+- Match arms must cover all possibilities
+- Example of matching raw values with a catch-all pattern:
+  ```rust
+  match dice_roll {
+    6 => celebrate(),
+    other => move_player(other)
+  }
+  ```
+- Underscore `_` pattern for ignoring values
+- Combine `_` with unit `()` for no-op:
+  ```rust
+  match dice_roll {
+    6 => celebrate(),
+    _ => ()
+  }
+  ```
+
+- `if let` syntax for matching a single outcome:
+  ```rust
+  if let Some(v) = some_value {
+    // ...
+  }
+  ```
