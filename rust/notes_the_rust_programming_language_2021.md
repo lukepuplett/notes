@@ -298,3 +298,82 @@ I apologize for the omissions. You're right, I should have included more of the 
 
 - Re-exporting with `pub use`:
   - Allows modules to present different public structure
+
+- Chapter 7 (continued):
+  
+- Shorten `use` syntax with nested imports:
+  ```rust
+  use std::{cmp::Ordering, io};
+  ```
+  Can also place `self` in the curly braces
+- Append asterisk to bring everything into scope (globbing):
+  ```rust
+  use std::collections::*;
+  ```
+
+Chapter 8: Common Collections
+- All Rust collections: https://doc.rust-lang.org/std/collections/index.html
+- Vector (`Vec<T>`), similar to C# List<T>:
+  ```rust
+  let v: Vec<i32> = Vec::new();
+  let v = vec![1, 2, 3];  // macro syntax, defaults to i32
+  ```
+- Add items with `push()` (requires `mut`)
+- Access items:
+  - `v[2]` (panics if out of bounds)
+  - `v.get(2)` (returns `Option<&T>`)
+- Borrow checker gotcha example:
+  ```rust
+  let mut v = vec![1, 2, 3, 4, 5];
+  let first = &v[0];  // immutable borrow
+  v.push(6);  // mutable borrow
+  println!("The first element is {first}");  // Error
+  ```
+  This fails because `push` may cause internal reallocation
+- Iterating:
+  ```rust
+  for i in &v { ... }  // Borrowing its iterable
+  for i in &mut v { ... }
+  ```
+- Modifying values while iterating:
+  ```rust
+  for i in &mut v {
+      *i += 50;  // dereferencing (see p. 322)
+  }
+  ```
+- Cannot mutate vector contents from within an iterator due to borrow checker
+- Use enums to store different types in a vector:
+  ```rust
+  enum SpreadsheetCell {
+      Int(i32),
+      Text(String),
+  }
+  ```
+- For unknown types at compile time, use trait objects (see Chapter 17)
+
+Strings:
+- Book is confusing: mentions only one string type (`&str`), but also `String`
+- `String` type is a wrapper around `Vec<u8>`
+- `to_string()` method is on the `Display` trait
+- Creating strings:
+  ```rust
+  let s = "literal".to_string();
+  let s = String::from("literal");
+  ```
+- Concatenation:
+  ```rust
+  s1 + &s2  // s1 is moved
+  format!("{}{}{}", s1, s2, s3)  // doesn't move
+  ```
+- Appending:
+  ```rust
+  s.push_str("bar");
+  s.push('b');
+  ```
+- `+` operator uses `fn add(self, s: &str) -> String`
+- Multiple concatenations are unwieldy with `+`, use `format!` macro instead
+- Cannot index strings by integer (may break UTF-8):
+  ```rust
+  let s1 = String::from("hello");
+  let h = s1[0];  // This will panic
+  ```
