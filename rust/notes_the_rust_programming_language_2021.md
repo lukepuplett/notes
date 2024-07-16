@@ -377,3 +377,51 @@ Strings:
   let s1 = String::from("hello");
   let h = s1[0];  // This will panic
   ```
+
+- Chapter 8 (continued):
+
+- String handling:
+- Avoid using string slices with ranges (`[..]`) as it may cause runtime panic if not on character boundaries.
+- Use `chars()` function to iterate over characters, or `bytes()` for byte access (reliable only for ASCII).
+- The book demonstrates complexities of grapheme clusters using an obscure Asian script.
+- Refers to crates.io for specialized language support.
+- Unclear if standard library fully supports basic English, Spanish, and Latin languages.
+
+- HashMap:
+- Creation: `let mut scores = HashMap::new();`
+- Adding items: `scores.insert(String::from("Italy"), 2);`
+- Accessing with default value:
+  ```rust
+  let score = scores.get(&String::from("Italy")).copied().unwrap_or(0);
+  ```
+  This uses `copied()` to convert `Option<&i32>` to `Option<i32>`.
+- Iteration: `for (key, value) in &scores { ... }`
+- Types with the Copy trait are copied into the map, others are moved.
+- References can be put in the map but must remain valid for the map's lifetime.
+- `insert()` overwrites by default (last writer wins).
+- Using `entry()` for conditional insertion:
+  ```rust
+  scores.entry(String::from("Italy")).or_insert(5);
+  ```
+- Updating based on old value:
+  ```rust
+  let score = map.entry(String::from("Turkey")).or_insert(0);
+  *score += 1;
+  ```
+- Default hashing uses SipHash (implements `BuildHasher` trait).
+
+- Chapter 9: Error Handling
+- Rust uses `Result<T, E>` instead of exceptions, and `panic!` macro for unrecoverable errors.
+- Call stack can be displayed when an environment variable is set.
+- Pattern matching on `Result::Ok(T)` or `Result::Err(E)`.
+- Further pattern matching on error types:
+  ```rust
+  match error.kind() {
+      ErrorKind::NotFound => { /* etc */ },
+      other_error => {
+          // Could call panic!(error_message) and use other_error variable
+      }
+  }
+  ```
+- Page 168 shows a more concise example using closures and `unwrap_or_else()` method.
+
