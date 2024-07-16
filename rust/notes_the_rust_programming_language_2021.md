@@ -235,3 +235,66 @@ I apologize for the omissions. You're right, I should have included more of the 
     // ...
   }
   ```
+- Chapter 7: Managing Growing Projects with Packages, Crates, and Modules
+
+- Package: Can contain multiple binary crates and optionally one library crate
+  - Similar to Visual Studio solution
+  - Contains a `Cargo.toml` file
+  - Used to build, test, and share crates
+
+- Crate: A tree of modules producing a library or executable
+  - Smallest amount of code Rust compiler considers at a time
+  - Can be a single .rs file compiled by `rustc` command-line utility
+
+- Module: Controls organization, scope, and privacy of paths
+
+- Path: Way of naming items (struct, function, module)
+
+- Crate root: Source file where Rust compiler starts (root module)
+
+- Package structure:
+  - `src/main.rs`: Convention for binary crate root
+  - `src/lib.rs`: Convention for library crate root
+  - Can have both, resulting in two crates
+
+- Module declaration:
+  ```rust
+  mod name {
+    // Inline code
+  }
+  ```
+  Or in separate files:
+  - `src/name.rs`
+  - `src/name/mod.rs` (old way)
+
+- Privacy:
+  - Module code is private by default
+  - Use `pub mod` to make module public
+  - Use `pub` for items within the module
+
+- `use` keyword: Similar to C#'s `using`, but can import specific types
+
+- Module referencing:
+  - Relative path syntax
+  - `self` syntax
+  - `super` syntax
+  - Identifier
+
+- Sub-modules can use code from ancestor modules, but not vice versa
+
+- Rust API Guidelines: https://rust-lang.github.io/api-guidelines/
+
+- Packages with bin and lib:
+  - Define module tree in `lib.rs`
+  - Keep bin lightweight
+
+- Idiomatic to bring types into scope via full path
+  - Use parent module path for naming collisions:
+    ```rust
+    fmt::Result
+    ```
+
+- Aliasing with `as` keyword
+
+- Re-exporting with `pub use`:
+  - Allows modules to present different public structure
