@@ -473,3 +473,86 @@ Chapter 10: Generic Types, Traits, and Lifetimes
       // methods specific to Point<f32>
   }
   ```
+Here's the revised version with hyphens for bullets, corrected sentences, and recognized spoken symbols:
+
+- Page 192. Traits are like interfaces, but with some differences. They are defined using:
+
+```rust
+pub trait Summary {
+    fn summarize(&self) -> String;
+}
+```
+
+- With no implementation code, just like an interface. To implement the trait, we must use an Associated function as you would expect, but with special syntax:
+
+```rust
+impl Summary for NewsArticle
+```
+
+- Key difference to C#: the trait must be brought into scope via use. E.g.:
+
+```rust
+use aggregator::{Summary, Tweet};
+```
+
+- Other crates that depend on aggregator can implement the trait on their own types, too. But cannot stick external traits on external types. So we can implement our own traits on external types.
+
+- A big difference to C# seems to be that a trait can have an implementation. This is like a cross between a base class and an interface. 
+
+- You can specify a function parameter can only take a reference to a value with a trait by using the impl keyword. For example:
+
+```rust
+fn do_something(item: &impl Summary) { ... }
+```
+
+- For more complex signatures, can use the fuller trait bound syntax, which uses generic syntax. For example:
+
+```rust
+fn do_something<T: Summary>(item: &T) { ... }
+```
+
+- Cool feature: trait bounds can combine traits. For example:
+
+```rust
+fn do_something(item: &(impl Summary + Display)) { ... }
+```
+
+- Another example is:
+
+```rust
+fn do_something<T: Summary + Display>(item: &T) { ... }
+```
+
+- You can also use a where clause syntax just like C#. For example:
+
+```rust
+fn do_something<T, U>(t: &T, u: &U) -> i32
+where
+    T: Display + Clone,
+    U: Clone + Debug,
+{ ... }
+```
+
+- Functions can also return trait implementers using this syntax:
+
+```rust
+-> impl Summary
+```
+
+- Thirdly, you cannot return either one implementer type or another. You must return only a single type.
+
+- My own note: In general, you should return the specific type in programming. Generally. But I suspect being able to return a trait is helpful for signatures. Specify accepting a function or closure, though we have not touched upon passing functions as objects yet.
+
+- Can use combined trait bounds (+ sign) syntax to add methods (Associated functions) or just those types that implement both or more traits. This is done using the impl as usual, but with a combining generic T in angle brackets. Syntax, for example:
+
+```rust
+impl<T: Display + PartialOrd> { ... }
+```
+
+- Remember `SomeTrait for SomeStruct`? Remember using that to implement a trait? Well, adding a trait bound generic syntax to the impl block means we can implement a trait only if the struct implements a different trait. For example:
+
+```rust
+impl<T: Display> ToString for T { ... }
+```
+
+- Anything with the Display trait also gets the ToString trait.
