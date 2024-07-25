@@ -668,4 +668,60 @@ where
 
 - To add common utility code (e.g., for setting up test data), you must place it in a `mod.rs` file in a sub module so that it is not mistaken for an integration test crate. For example: `/tests/common/mod.rs`.
 
-- 
+- Page 241 continued: To use the common module code, we must define the submodule in the test files so the compiler knows to look for it and build it. Then refer to its members using paths as per usual: `common::setup`.
+
+- Chapter 12: An I/O Project - Building a Command Line Program.
+
+- Chapter 13: Iterators and Closures.
+
+- Code listing starting on page 274 has some interesting uses of the language:
+
+```rust
+fn giveaway(&self, user_preference: Option<ShirtColor>) -> ShirtColor {
+    user_preference.unwrap_or_else(|| self.most_stocked())
+}
+```
+
+This is fascinating for taking in an Option. The double pipe `||` is a closure with no parameters/arguments that's evaluated if the option has None. It's also interesting in that it can use the self value (capture it).
+
+- Page 277 has some cool examples of closure syntax. The compiler can infer information from usage. A function is:
+
+```rust
+fn add_1(x: u32) -> u32 {
+    x + 1
+}
+```
+
+And the closure would be:
+
+```rust
+let add_1 = |x| x + 1;
+```
+
+We can call it like this: `let res = add_1(15);`
+
+- Here's the really interesting part: The first use of a closure without any annotations will fix the types inferred.
+
+```rust
+let no_annotations = |x| x;
+```
+
+If we call this e.g. by passing a string, which it comes back in this particular example, then this closure will be typed as taking a string and returning a string. So a second call that passes an integer will break compilation.
+
+- Just like functions, closures can capture values either by borrowing mutably or borrowing immutably or taking ownership. (Page 278)
+
+- Rust allows multiple concurrent immutable references, so this one is easy for the compiler to emit. But a mutable borrow (e.g. where the closure adds something to a borrowed vec) prevents other borrows (usages) of the vec between the definition of the closure and its usage/call.
+
+- To force the closure to take ownership, you must use the move keyword. This is useful when passing the closure to e.g. a new thread:
+
+```rust
+thread::spawn(move || {
+    println!("from thread: {:?}", list)
+}).join().unwrap();
+```
+
+- Page 280 explains, rather curiously, that the main thread might finish before when we are creating and to drop the value.
+
+- A closure body can move a captured value out of the closure, mutate it, neither move nor mutate it, or capture nothing to begin with.
+
+- The way a closure captures and handles values affects the traits it implements, and traits are how functions and structs specify which kinds of closures they can use.
