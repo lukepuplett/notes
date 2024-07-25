@@ -613,3 +613,59 @@ where
     // ...
 }
 ```
+
+- Chapter 11: Writing Automated Tests. Using the `cargo test` command, Rust looks for functions with the attribute `#[test]` and compiles a binary test runner.
+
+- Whenever we make a new library in cargo, it adds a new test module and new test function for us. E.g., `cargo new adder --lib` command.
+
+- The default generated code contains a mod with the attribute `#[cfg(test)]`.
+
+- Within the module's curly brackets is a test function with the test attribute, which makes use of `assert_eq!()`. For example:
+  ```rust
+  assert_eq!(result, 4);
+  ```
+
+- To run the tests, use the `cargo test` command line.
+
+- We can ignore and filter as per many test frameworks can, using the `ignore` attribute.
+
+- Performance benchmarking tests can be written too, but you should Google it.
+
+- You can also write documentation tests.
+
+- Page 220 shows usage of `use super::*;` to import all the functions defined in the outer parent module.
+
+- When a test fails, arguments to the comparison `assert!()` macro will use the `PartialEq` and `Debug` traits.
+
+- Both these traits are derivable, and it's often as simple as sticking them on your structs.
+
+- To check that code correctly panics, use the `should_panic` attribute.
+
+- Rust automatically checks/asserts test functions that return `Result<T, E>`. For example:
+  ```rust
+  fn some_test() -> Result<(), String>
+  ```
+
+- But to check for a particular Error variant: `assert!(value.is_err());`
+
+- To run tests consecutively, use `cargo test -- --test-threads=1`.
+
+- Standard output is not shown when a test passes, only on failure. Must use `cargo test -- --show-output` to see all standard out.
+
+- Use `cargo test fn_name_here` to run a single test. But note that this uses a contains match, so it will also match other tests by name.
+
+- The attribute `#[cfg(test)]` is actually a compiler instruction to include the block because in Rust, the unit tests are included in the same code files as the program code (though integration tests are not).
+
+- Rust's privacy rules let you test private code.
+
+- Integration tests go in a `tests` folder, sibling to the `src` folder.
+
+- Each file in the `tests` directory is a separate crate, so need to use `use` keyword paths to bring them into scope.
+
+- Don't need `#[cfg(test)]`. Cargo runs unit tests, then integration tests, then doc tests, and will halt proceedings on a failure.
+
+- Can run integration tests by name and by file name.
+
+- To add common utility code (e.g., for setting up test data), you must place it in a `mod.rs` file in a sub module so that it is not mistaken for an integration test crate. For example: `/tests/common/mod.rs`.
+
+- 
