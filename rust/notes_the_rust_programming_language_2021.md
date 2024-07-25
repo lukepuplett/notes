@@ -556,3 +556,60 @@ impl<T: Display> ToString for T { ... }
 ```
 
 - Anything with the Display trait also gets the ToString trait.
+
+- Every reference in Rust has a lifetime - the scope for which that reference is valid.
+
+- This function will not compile because the compiler cannot determine to which reference the return refers (X or Y), because it is dependent on information at runtime, i.e. the length:
+
+```rust
+fn longest(x: &str, y: &str) -> &str {
+    if x.len() > y.len() { x } else { y }
+}
+```
+
+- We can annotate the method using generic syntax to constrain the function so that the return ref lifetime is the same as the two parameters. For example:
+
+```rust
+fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
+    // ...
+}
+```
+
+- We're not changing the actual lifetimes. Instead, we're constraining the function to only accept references that adhere to this relationship.
+
+- We can annotate a struct so it can hold a reference. This constrains the struct lifetime to be at least the same time as its field. I.e., the struct cannot outlive its field(s). Example:
+
+```rust
+struct ImportantExcerpt<'a> {
+    text: &'a str
+}
+```
+
+- The Rust compiler has lifetime elision rules where annotations are not needed. The book gives an example, which I think is obvious because the reference passed in forms the basis for the reference returned. It is not always conditional on runtime information.
+
+- For methods or associated functions, lifetime annotation must go on the impl and after the type name where they refer to the lifetimes on fields. But where they relate to the lifetimes on parameters, then they go in the signature itself. For example:
+
+```rust
+impl<'a> ImportantExcerpt<'a> {
+    // ...
+}
+```
+
+- Note that due to Rust's elision rules, annotations are only needed on method signatures themselves.
+
+- The special 'static lifetime denotes the reference lives as long as the program itself. For example:
+
+```rust
+let s: &'static str = "I have a static life";
+```
+
+- Use commas to separate the constraints inside angle brackets (generic syntax). For example:
+
+```rust
+fn example<'a, T>(x: &'a str) -> &'a str
+where
+    T: Display
+{
+    // ...
+}
+```
