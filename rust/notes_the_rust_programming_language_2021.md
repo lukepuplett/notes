@@ -267,6 +267,21 @@ I apologize for the omissions. You're right, I should have included more of the 
   - `src/name.rs`
   - `src/name/mod.rs` (old way)
 
+- The following is a sample structure:
+  ```
+  backyard
+  |- Cargo.lock
+  |- Cargo.toml
+  |- src
+     |- garden
+     |  |- vegetables.rs
+     |- garden.rs
+     |- main.rs
+  ```
+- I think `main.rs` would declare `mod garden` and its code would be in `/src/garden.rs`. Then, the garden module would declare `mod vegetables` and its code would be in `/src/garden/vegetables.rs` and so on.
+
+- I think this is a little strange and perhaps why the "old" `mod.rs` way works, too, but presumably that's problematic with source control, seeing that a mod file was updated but not knowing what module it is.
+
 - Privacy:
   - Module code is private by default
   - Use `pub mod` to make module public
