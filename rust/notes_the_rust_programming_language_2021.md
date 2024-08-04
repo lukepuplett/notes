@@ -811,34 +811,34 @@ Thank you for providing the transcript. I'll process it, preserving the bullet p
 
 ## Chapter 14: More about Cargo and Crates.io
 
-• Cargo.toml file can have sections and config per release profile. For example:
+- Cargo.toml file can have sections and config per release profile. For example:
 
 ```toml
 [profile.dev]
 opt-level = 0
 ```
 
-• Like NuGet, you can publish to crates.io. Invest time in markdown comments. Page 297 shows triple slash doc comments with examples in markdown.
+- Like NuGet, you can publish to crates.io. Invest time in markdown comments. Page 297 shows triple slash doc comments with examples in markdown.
 
-• Running `cargo doc --open` will build and open your browser to your doc page.
+- Running `cargo doc --open` will build and open your browser to your doc page.
 
-• It's common to have examples, panics, errors, and safety sections.
+- It's common to have examples, panics, errors, and safety sections.
 
-• If you add examples using your function/method and use `assert!`, then `cargo test` will also execute doc comment examples!
+- If you add examples using your function/method and use `assert!`, then `cargo test` will also execute doc comment examples!
 
-• Inside the crate root, use `//!` to apply comments to the crate itself.
+- Inside the crate root, use `//!` to apply comments to the crate itself.
 
-• The `//!` comments get applied to any logical code container like crate or module.
+- The `//!` comments get applied to any logical code container like crate or module.
 
-• Page 302 shows using `pub use` to re-export stuff from lib.rs, which can be used by closures or they can use the original paths.
+- Page 302 shows using `pub use` to re-export stuff from lib.rs, which can be used by closures or they can use the original paths.
 
-• You can also re-export stuff used in your dependencies.
+- You can also re-export stuff used in your dependencies.
 
-• `cargo login <your API key string here>` to store it in `~/.cargo/credentials`.
+- `cargo login <your API key string here>` to store it in `~/.cargo/credentials`.
 
-• Before publishing, you need a [package] section and `name = "some_string"` key-value pair, as well as a description and a license type, name, version, edition of rust.
+- Before publishing, you need a [package] section and `name = "some_string"` key-value pair, as well as a description and a license type, name, version, edition of rust.
 
-• You can then define a Cargo.toml file in a root folder and add a [workspace] section. Then add a JSON-like list of crates called members containing paths to those crates:
+- You can then define a Cargo.toml file in a root folder and add a [workspace] section. Then add a JSON-like list of crates called members containing paths to those crates:
 
 ```toml
 [workspace]
@@ -847,31 +847,57 @@ members = ["some_path"]
 
 Where "some_path" in this case would be "/some_path/Cargo.toml".
 
-• Important: Cargo doesn't assume crates in a workspace depend on each other. So the dependencies need to be defined as usual via the [dependencies] section. For example:
+- Important: Cargo doesn't assume crates in a workspace depend on each other. So the dependencies need to be defined as usual via the [dependencies] section. For example:
 
 ```toml
 [dependencies]
 add_one = { path = "../add_one" }
 ```
 
-• Use `cargo run -p <name>` to specifically run a certain crate by name. "adder" in this example.
+- Use `cargo run -p <name>` to specifically run a certain crate by name. "adder" in this example.
 
-• Workspaces have a single root Cargo.lock file to ensure the whole tree uses the same versions.
+- Workspaces have a single root Cargo.lock file to ensure the whole tree uses the same versions.
 
-• Use `cargo install` to install binary crates for tools in the Rust bin folder, likely $HOME/.cargo/bin, which implies it must be in your PATH.
+- Use `cargo install` to install binary crates for tools in the Rust bin folder, likely $HOME/.cargo/bin, which implies it must be in your PATH.
 
 ## Chapter 15: Smart Pointers
 
-• Smart pointers behave like normal pointers/refs but have added data and capabilities. For instance, the reference counting smart pointer.
+- Smart pointers behave like normal pointers/refs but have added data and capabilities. For instance, the reference counting smart pointer.
 
-• In many cases, smart pointers actually own the data they point to.
+- In many cases, smart pointers actually own the data they point to.
 
-• Technically, the String and Vec<T> types are smart pointers.
+- Technically, the String and Vec<T> types are smart pointers.
 
-• Smart pointers are usually implemented using structs, but implement the Deref and Drop traits.
+- Smart pointers are usually implemented using structs, but implement the Deref and Drop traits.
 
-• Deref trait lets it behave like a normal reference so you can code against it as either a smart pointer or reference.
+- Deref trait lets it behave like a normal reference so you can code against it as either a smart pointer or reference.
 
-•Drop affords custom code to run when it goes out of scope and sounds a bit like a destructor to me.
+- Drop affords custom code to run when it goes out of scope and sounds a bit like a destructor to me.
 
-Would you like me to explain or clarify any part of the processed notes?
+- You can write your own smart pointers, and many libraries ship their own smart pointers.
+
+- Common ones in the standard Library are `Box<T>`, `Rc<T>`, `Ref<T>`, `RefMut<T>` and `RefCell<T>`. `Box<T>` allocates values on the Heap. `Rc<T>` is a reference counter.`Ref<T>` and `RefMut<T>` are accessed through `RefCell<T>`, which enforces borrowing rules at runtime, not compile time.
+
+- Use a `Box<T>` when a type of a known size at compile time is needed, but you have a value of an unknowable size. Or when you have a large amount of data that you want to transfer ownership and be sure it won't be copied. When you want to own a value and you care only that it implements a particular trait rather than being of a particular type.
+
+- `Box<T>` is especially useful for recursive types, where the type contains itself, so Rust cannot compute its total size of the instance. Page 318 shows using an `enum` in Rust to implement a cons list, which is a Lisp way of doing a linked list.
+
+```rust
+enum List {
+    Cons(i32, List),
+    Nil,
+}
+```
+
+vs.
+
+```rust
+enum List {
+    Cons(i32, Box<List>),
+    Nil,
+}
+```
+
+In this version, `List` appears within the nested `Cons`, which is self-referential, and therefore, computing the size would be an infinite loop.
+
+- `Box<T>` implements the `Drop` trait, which runs code to clean up its Heap memory. Implementing `Deref` lets you customize the `*` dereference operator, and by coding it in a certain way, you can use the smart pointer like a regular reference. Functions expecting straight up stack values.
