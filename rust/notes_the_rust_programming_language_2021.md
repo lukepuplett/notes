@@ -1162,8 +1162,12 @@ Unfortunately, Rust will suspend checking for exhaustiveness of the arms. You ca
 ## Chapter 19 - Advanced Features
 
 - To use unsafe code, stick it in an `unsafe` block. Then you can dereference an unsafe pointer, call an unsafe function or method, access or modify a mutable static variable, implement an unsafe trait, or access fields of unions.
+  
 - The borrow checker still works/applies in `unsafe` code blocks.
+  
 - The `unsafe` keyword only gives you access to the unsafe features listed above. You'll still get some degree of safety by limiting access to within these blocks, effectively guaranteeing that bugs are inside these `unsafe` blocks, making debugging simpler.
+  
+- Raw pointers can be mutable or immutable and are written as `*const T` and `*mut T` respectively. The `*` is not a dereference but part of the type name itself.
+  
+- Raw pointers can ignore the boring rules and have both mutable and immutable pointers or many mutable pointers to the same location.
 
-Raw pointers can be mutable or immutable and are written as `*const T` and `*mut T` respectively. The `*` is not a dereference but part of the type name itself.
-Raw pointers can ignore the boring rules and have both mutable and immutable pointers or many mutable pointers to the same location.
