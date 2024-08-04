@@ -1171,3 +1171,66 @@ Unfortunately, Rust will suspend checking for exhaustiveness of the arms. You ca
   
 - Raw pointers can ignore the boring rules and have both mutable and immutable pointers or many mutable pointers to the same location.
 
+- Rule pointers are not guaranteed to point to valid memory. 
+
+- Raw pointers are allowed to be null, and they do not implement auto cleanup.
+
+Creating raw pointers from references:
+```rust
+let mut num = 5;
+let r1 = &num as *const i32;
+let r2 = &mut num as *mut i32;
+```
+
+In the code above, there's no `unsafe` block yet. We can create the raw pointers, which is safe to do, but we cannot dereference them outside of an `unsafe` block.
+
+We can create a raw pointer to an arbitrary location in memory:
+```rust
+let address = 0x012345usize;
+let r = address as *const i32;
+```
+
+Here's how we use the raw pointer:
+```rust
+unsafe {
+    println!("r1 is: {}", *r1);
+}
+```
+
+- You can define unsafe functions by prepending `unsafe` to the function definition, like `unsafe fn danger() { ... }`.
+
+- You can only call the unsafe function from within an `unsafe` block.
+
+- Page 425 shows using unsafe code from inside a safe normal function to abstract it. It has an `unsafe` block, which calls the `to_and_say` functions.
+
+- Rust has a keyword `extern` for creating foreign function interface (FFI).
+
+- The `extern` keyword creates a block within which we can define the signatures of the external functions we want to call from our Rust code.
+  ```rust
+  extern "C" { ... }
+  ```
+  This defines a block using the C language ABI (application binary interface).
+
+- We can also use `extern` to create an interface to allow other languages to call Rust. See page 427.
+  ```rust
+  #[no_mangle]
+  pub extern "C" fn cool() { ... }
+  ```
+
+- Calling out to external code is inherently unsafe, but incoming calls are safe.
+
+In Rust, global variables are called static variables and they're named in `SCREAMING_SNAKE_CASE`.
+
+- Accessing an immutable static variable is safe. They have the `'static` lifetime.
+
+- Accessing and modifying (reading and writing) mutable statics is safe, but it can introduce data races in multi-threaded programs, so you should use types from the `sync` crate like `Mutex`.
+
+- An `unsafe` trait is any trait where at least one method has some invariant that the compiler cannot verify.
+  ```rust
+  unsafe trait MySafeTrait { ... }
+  ```
+
+- If we need to manually mark a type as `Send` or `Sync`, then Rust can't verify that it upholds those guarantees, so we must use `unsafe` to do those checks.
+
+- A union is like a struct, but only one declared field is used in an instance at a time. They're used to interface with unions in C code.
+
