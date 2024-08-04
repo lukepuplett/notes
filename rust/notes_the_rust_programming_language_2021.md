@@ -57,7 +57,8 @@ Here are your reformatted notes with technical jargon and programming terms encl
       Err(_) => continue,
   };
   ```
-## Chapter 3: Common Programming Concepts
+## Chapter 3 - Common Programming Concepts
+
 - `const` can be declared in any scope, must be annotated with its type, and use shouting caps
 - Using the `let` keyword can shadow an existing variable. Shadows are locally scoped
 - Four scalar types: integers, floating-points, booleans, characters
@@ -92,7 +93,9 @@ Here are your reformatted notes with technical jargon and programming terms encl
 - `while some_condition { ... }` This is like C#
 - `for element in ... { ... }` This syntax is for-each style
 - `for number in (1..4).rev() { ... }` This syntax demonstrates a for-each over a group of numbers where the numbers have been reversed
-Chapter 4: Understanding Ownership
+
+## Chapter 4 - Understanding Ownership
+
 - Each value has an owner
 - There can only be one owner at a time
 - When the owner goes out of scope, the value will be dropped
@@ -124,7 +127,9 @@ Page 70:
 - Benefit: a string slice is bound to its underlying memory
 - A string literal (e.g., `"hello"`) is a string slice and `&str`
 - Use `&str` in function signatures, e.g., `fn first_word(s: &str) { ... }`
-Chapter 5: Using Structs to Structure Related Data
+  
+## Chapter 5 - Using Structs to Structure Related Data
+
 - `struct User { active: bool, username: String, ... }`
 - `let user1 = User { active: true, ... }` Note that it uses colons to set values, but uses dot notation to access fields, e.g., `user1.active`
 - The entire instance is mutable, and Rust has no access modifiers
@@ -140,7 +145,9 @@ Page 94:
 - It mentions that the `dbg!` macro will take ownership of a value and print it along with the file and line number to standard error, not standard out
 - `dbg!(30 * scale)` will work because `dbg!` hands back the value
 I apologize for the omissions. You're right, I should have included more of the code examples you provided. Let me try again with a more comprehensive transcription of your notes:
-## Chapter 6: Enums and Pattern Matching
+
+## Chapter 6 - Enums and Pattern Matching
+
 - Similar to C# enums, but with key differences
 - Basic enum syntax:
   ```rust
@@ -235,7 +242,7 @@ I apologize for the omissions. You're right, I should have included more of the 
     // ...
   }
   ```
-## Chapter 7: Managing Growing Projects with Packages, Crates, and Modules
+## Chapter 7 - Managing Growing Projects with Packages, Crates, and Modules
 
 - Package: Can contain multiple binary crates and optionally one library crate
   - Similar to Visual Studio solution
@@ -313,8 +320,6 @@ I apologize for the omissions. You're right, I should have included more of the 
 
 - Re-exporting with `pub use`:
   - Allows modules to present different public structure
-
-## Chapter 7 (continued):
   
 - Shorten `use` syntax with nested imports:
   ```rust
@@ -326,7 +331,8 @@ I apologize for the omissions. You're right, I should have included more of the 
   use std::collections::*;
   ```
 
-Chapter 8: Common Collections
+## Chapter 8 - Common Collections
+
 - All Rust collections: https://doc.rust-lang.org/std/collections/index.html
 - Vector (`Vec<T>`), similar to C# List<T>:
   ```rust
@@ -393,8 +399,6 @@ Strings:
   let h = s1[0];  // This will panic
   ```
 
-## Chapter 8 (continued):
-
 - String handling:
 - Avoid using string slices with ranges (`[..]`) as it may cause runtime panic if not on character boundaries.
 - Use `chars()` function to iterate over characters, or `bytes()` for byte access (reliable only for ASCII).
@@ -425,7 +429,8 @@ Strings:
   ```
 - Default hashing uses SipHash (implements `BuildHasher` trait).
 
-## Chapter 9: Error Handling
+## Chapter 9 - Error Handling
+
 - Rust uses `Result<T, E>` instead of exceptions, and `panic!` macro for unrecoverable errors.
 - Call stack can be displayed when an environment variable is set.
 - Pattern matching on `Result::Ok(T)` or `Result::Err(E)`.
@@ -439,8 +444,6 @@ Strings:
   }
   ```
 - Page 168 shows a more concise example using closures and `unwrap_or_else()` method.
-
-## Chapter 9 (continued):
   
 - Shortcut: Use `unwrap()` on `Result`, which returns the value or panics:
   ```rust
@@ -475,7 +478,8 @@ Strings:
 - `Box<dyn Error>` means any kind of error (see p. 379)
 - `unwrap()` and `expect()` are normal in tests
 
-Chapter 10: Generic Types, Traits, and Lifetimes
+## Chapter 10 - Generic Types, Traits, and Lifetimes
+
 - Generics similar to C#, including constraints:
   ```rust
   fn largest<T: PartialOrd>(list: &[T]) -> &T
@@ -629,7 +633,9 @@ where
 }
 ```
 
-## Chapter 11: Writing Automated Tests. Using the `cargo test` command, Rust looks for functions with the attribute `#[test]` and compiles a binary test runner.
+## Chapter 11 - Writing Automated Tests
+
+- Using the `cargo test` command, Rust looks for functions with the attribute `#[test]` and compiles a binary test runner.
 
 - Whenever we make a new library in cargo, it adds a new test module and new test function for us. E.g., `cargo new adder --lib` command.
 
@@ -685,9 +691,9 @@ where
 
 - Page 241 continued: To use the common module code, we must define the submodule in the test files so the compiler knows to look for it and build it. Then refer to its members using paths as per usual: `common::setup`.
 
-## Chapter 12: An I/O Project - Building a Command Line Program.
+## Chapter 12 - An I/O Project - Building a Command Line Program.
 
-## Chapter 13: Iterators and Closures.
+## Chapter 13 - Iterators and Closures.
 
 - Code listing starting on page 274 has some interesting uses of the language:
 
@@ -809,7 +815,7 @@ fn something(mut args: impl Iterator<Item = String>) {
 ```
 Thank you for providing the transcript. I'll process it, preserving the bullet points, correcting any misspoken parts, recognizing Rust code and terminology, applying syntax highlighting, and ensuring the code is legal and correctly formatted. Here's the processed version:
 
-## Chapter 14: More about Cargo and Crates.io
+## Chapter 14 - More about Cargo and Crates.io
 
 - Cargo.toml file can have sections and config per release profile. For example:
 
@@ -860,7 +866,7 @@ add_one = { path = "../add_one" }
 
 - Use `cargo install` to install binary crates for tools in the Rust bin folder, likely $HOME/.cargo/bin, which implies it must be in your PATH.
 
-## Chapter 15: Smart Pointers
+## Chapter 15 - Smart Pointers
 
 - Smart pointers behave like normal pointers/refs but have added data and capabilities. For instance, the reference counting smart pointer.
 
@@ -1009,7 +1015,7 @@ let leaf = Rc::new(Node {
 
 The reason this is not what it seems - assigning to a method - is because the `*` operator dereferences the actual value, so we can assign a new value over the top.
 
-## Chapter 16: Fearless Concurrency
+## Chapter 16 - Fearless Concurrency
 
 - Rust appears to have threads, message passing, shared and sync and send traits
 
@@ -1067,7 +1073,7 @@ The reason this is not what it seems - assigning to a method - is because the `*
 
 - Because of the composition rules above, there is no reason to manually implement or mark your own types with either of these traits, unless you're using unsafe Rust code features.
 
-## Chapter 17: Object-Oriented Programming Features
+## Chapter 17 - Object-Oriented Programming Features
 
 - Rust is somewhat object-oriented. It has methods and public/private.
 
@@ -1107,3 +1113,57 @@ match {
 ```
 
 - When matching into named variables, we've seen examples like `Some(v) => ...`, but we can also match a literal here, too. For example `Some(12307)` => ...`
+
+- We can use `|` OR operator. When matching as well as ranges. `1 = 5` goes to `...`.
+
+- Destructuring a struct's fields gets crazy when it's destructured into another struct. For example:
+```rust
+let Point { x, y } = some_other;
+```
+
+- This has more readable shorthand:
+```rust
+let Point { y, .. } = some_other;
+```
+And this means we can destructure literal values in the fields, for example:
+
+```rust
+match Point { x, y: 63 } {
+    Point { x, y } => println!("Blah, blah, blah. x = {x}"),
+}
+```
+
+- Page 409 shows destructuring enums, including pulling out values embedded in variants, for example:
+```rust
+match some_enum {
+    SomeEnum::SomeVariant { x, y } => { ... }
+}
+```
+You can even match and destructure nested enums within enums, see page 410. And at the top of page 411, it shows complex destructuring of structs and tuples.
+
+- The `_` and `..` can be combined to match and ignore. The `_` is like a C# discard and can/should be used even on function signatures where your implementation does not use a parameter. In Rust pattern matching, it seems to mean "don't care" or "whatever".
+
+- Using a `_` before a variable indicates that it's okay/valid that the variable is not used, but it still binds a value to it, as opposed to a true discard.
+
+- The `..` syntax (two periods) is the "rest of the fields" or "all the others" and works like a discard `_`. For example, `[first, _, last, ..]` goes to `{ ... }`.
+
+- Match guards are additional conditions on the arms of a `match` which must also be true. For example:
+```rust
+match num {
+    Some(x) if x % 2 == 0 => { ... },
+    _ => { ... },
+}
+```
+
+Unfortunately, Rust will suspend checking for exhaustiveness of the arms. You can combine with the `|` or `||` operator, for example: `4 | 5 | 6`.
+
+- You can even use the `@` symbol to capture a destructured value and also test it. See page 417.
+
+## Chapter 19 - Advanced Features
+
+- To use unsafe code, stick it in an `unsafe` block. Then you can dereference an unsafe pointer, call an unsafe function or method, access or modify a mutable static variable, implement an unsafe trait, or access fields of unions.
+- The borrow checker still works/applies in `unsafe` code blocks.
+- The `unsafe` keyword only gives you access to the unsafe features listed above. You'll still get some degree of safety by limiting access to within these blocks, effectively guaranteeing that bugs are inside these `unsafe` blocks, making debugging simpler.
+
+Raw pointers can be mutable or immutable and are written as `*const T` and `*mut T` respectively. The `*` is not a dereference but part of the type name itself.
+Raw pointers can ignore the boring rules and have both mutable and immutable pointers or many mutable pointers to the same location.
