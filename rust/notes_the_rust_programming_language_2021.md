@@ -948,3 +948,47 @@ And very much like a C# `Dispose` method. You can call `std::mem::drop` manually
 
 - `Rc<T>` is for reference counting lifetime. Like in Visual Basic, this is needed in graph object models where many nodes point at each other and only the last node pointing at any node is conceptually owned by the nodes pointing at it.
 
+- Chapter 16 deals with reference counting in multi-threaded situations. 
+
+- If you don't use `Rc<T>`, then you have to use regular references and that will entail using lifetime syntax to constrain the calling code to ensure all nodes' lives depend on each other.
+
+- Use `Rc::clone(&some_other_rc_instance)` to make a new one where this may actually just increment the reference counter internally.  
+
+- Using `Rc<T>` and Rust's immutable references, you can share read-only data.  
+
+- `RefCell<T>` along with `Rc<T>` affords multiple mutable references via the interior mutability pattern.  
+
+- It seems that the `RefCell<T>` encapsulates some unsafe code to allow some bending of the rules though the pattern/type is safe to use by its consumer at runtime, I think.
+
+- Because `RefCell<T>` allows mutable borrows at runtime, you can mutate the value inside even when the `RefCell<T>` is immutable.  
+
+```rust
+let x = 5;
+let y = &mut x; // illegal because `x` is immutable.
+```
+
+- We need a way to build a value where its methods are permitted to mutate its value, but outsiders see it as immutable.  
+
+- Page 339 sets up a complex situation to show the need for `RefCell<T>`. But the situation seems common to me. It defines a trait with a method that updates a value that the trait implementer holds via its `&self` reference. But it cannot because `&self` is immutable and `&mut self` breaks the signature of the trait method.  
+
+Instead, it puts the value inside a `RefCell<T>` and calls `borrow_mut()` to get a mutable reference, which it can update.  
+
+- The `borrow` method returns a `Ref<T>` and `borrow_mut` returns a `RefMut<T>`.  
+
+- Internally, `RefCell<T>` actually counts the mutable and immutable references being held and sticks to the same rules as the Rust compiler, but at runtime. So two calls to `borrow_mut` in the same scope will cause a runtime panic.  
+
+- By putting a `RefCell<T>` inside a `Rc<T>`, you can get a multiple owner writable reference.
+
+- On page 342, there's some crazy long-winded syntax for working with a graph object where the nodes are mutable. For example:
+
+```rust
+let a = Rc::new(Cons(Rc::clone(&value), Rc::new(Nil))); 
+```
+
+- As in Visual Basic, it's possible to leak memory using reference counting by creating a self-referential island of objects. See page 343 to 345.  
+
+- Can defend against this by designing types that don't own their values.  
+
+- Rust has a built-in weak reference `Weak<T>`. You can create `Weak<T>` by calling `Rc::downgrade()`, passing in an instance of an `Rc<T>`.
+
+- 
