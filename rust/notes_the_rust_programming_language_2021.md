@@ -1305,6 +1305,6 @@ trait MyTrait: OtherTrait { ... }
 
 - Note: Macros being an ask to write might make them perfect for AI/LLMs.
 
-- Chapter 20: Building a multi-threaded web server.
+## Chapter 20: Building a multi-threaded web server.
 
 - <end>
