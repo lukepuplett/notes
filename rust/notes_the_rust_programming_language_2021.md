@@ -1055,3 +1055,55 @@ The reason this is not what it seems - assigning to a method - is because the `*
   ```
 
 - The `Arc<T>` struct implements a trait called `Send`, which allows it to be sent across thread boundaries
+
+
+- There are other interesting types in `std::sync::Atomic`. 
+
+- Almost every type has the `Send` marker.
+
+- In `[std::marker]`, the `Send` marker trait indicates that the type can be referenced from multiple threads.
+
+- Any type `T` is `Send` if and only if an immutable reference to `T` is `Send`. Similar to `Send`, primitive types, `Sync`, and types composed of them are also `Sync`.
+
+- Because of the composition rules above, there is no reason to manually implement or mark your own types with either of these traits, unless you're using unsafe Rust code features.
+
+# Chapter 17: Object-Oriented Programming Features
+
+- Rust is somewhat object-oriented. It has methods and public/private.
+
+- Rust has no inheritance, but it does have traits with default implementations, and we can override them.
+
+- Pages 379 to 384 show how to use traits for polymorphism, it's obvious.
+
+- Pages 384 to 391 show how to implement the state pattern, where each state is represented by a struct type that implements a state trait, such that each state object contains its own logic for what to do to move between states. It's confusing at first, but quite interesting to contrast with using enums.
+
+- The point of the exercise is to show that Rust has better/idiomatic ways to implement this kind of state-changing program. It then describes using types to represent the blog articles in all their various states, which is possibly how I may have coded it in C#, anyway. And it doesn't, to my mind, show anything specific to Rust that isn't possible in any statically typed language.
+
+# Chapter 18: Patterns and Matching
+
+- Skipping over `match` keyword and its arms. The `if let` syntax is also covered again.
+
+- We can combine `else` and `else if let`. And the patterns do not have to relate to each other.
+
+- You can also use `while let`, and the value following `for` in a `for` loop is actually a pattern, often destructuring.
+
+- Function parameters can also be patterns. Example:
+
+```rust
+fn example(&(x, y): &(i32, i32), ...) { ... }
+```
+
+- Patterns are either refutable or irrefutable (i.e., they cannot fail to match).
+
+- When a pattern is refutable, we often just need an `if let` to branch execution for the non-match situation.
+
+- You can match literal values, too. For example:
+
+```rust
+match {
+    1 => println!("One"),
+    ...
+}
+```
+
+- When matching into named variables, we've seen examples like `Some(v) => ...`, but we can also match a literal here, too. For example `Some(12307)` => ...`
