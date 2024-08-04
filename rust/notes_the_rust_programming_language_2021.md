@@ -860,7 +860,7 @@ add_one = { path = "../add_one" }
 
 • Use `cargo install` to install binary crates for tools in the Rust bin folder, likely $HOME/.cargo/bin, which implies it must be in your PATH.
 
-Chapter 15: Smart Pointers
+## Chapter 15: Smart Pointers
 
 • Smart pointers behave like normal pointers/refs but have added data and capabilities. For instance, the reference counting smart pointer.
 
