@@ -1009,7 +1009,7 @@ let leaf = Rc::new(Node {
 
 The reason this is not what it seems - assigning to a method - is because the `*` operator dereferences the actual value, so we can assign a new value over the top.
 
-### Chapter 16: Fearless Concurrency
+## Chapter 16: Fearless Concurrency
 
 - Rust appears to have threads, message passing, shared and sync and send traits
 
@@ -1067,7 +1067,7 @@ The reason this is not what it seems - assigning to a method - is because the `*
 
 - Because of the composition rules above, there is no reason to manually implement or mark your own types with either of these traits, unless you're using unsafe Rust code features.
 
-# Chapter 17: Object-Oriented Programming Features
+## Chapter 17: Object-Oriented Programming Features
 
 - Rust is somewhat object-oriented. It has methods and public/private.
 
@@ -1079,7 +1079,7 @@ The reason this is not what it seems - assigning to a method - is because the `*
 
 - The point of the exercise is to show that Rust has better/idiomatic ways to implement this kind of state-changing program. It then describes using types to represent the blog articles in all their various states, which is possibly how I may have coded it in C#, anyway. And it doesn't, to my mind, show anything specific to Rust that isn't possible in any statically typed language.
 
-# Chapter 18: Patterns and Matching
+## Chapter 18: Patterns and Matching
 
 - Skipping over `match` keyword and its arms. The `if let` syntax is also covered again.
 
