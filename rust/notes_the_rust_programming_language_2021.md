@@ -21,7 +21,7 @@ Here are your reformatted notes with technical jargon and programming terms encl
 - `cargo run` will build and run
 - `cargo check` is like `tsc --noEmit` command, a fast way to check for compilation errors
 - `cargo build --release` to build an optimized proper release binary
-- Chapter 2
+## Chapter 2
 - Rust has a standard set of items it brings into scope of each program, called the Prelude
 - Function names ending with an exclamation mark are actually macro calls
 - By default, variables are immutable
@@ -57,7 +57,7 @@ Here are your reformatted notes with technical jargon and programming terms encl
       Err(_) => continue,
   };
   ```
-- Chapter 3: Common Programming Concepts
+## Chapter 3: Common Programming Concepts
 - `const` can be declared in any scope, must be annotated with its type, and use shouting caps
 - Using the `let` keyword can shadow an existing variable. Shadows are locally scoped
 - Four scalar types: integers, floating-points, booleans, characters
@@ -140,7 +140,7 @@ Page 94:
 - It mentions that the `dbg!` macro will take ownership of a value and print it along with the file and line number to standard error, not standard out
 - `dbg!(30 * scale)` will work because `dbg!` hands back the value
 I apologize for the omissions. You're right, I should have included more of the code examples you provided. Let me try again with a more comprehensive transcription of your notes:
-- Chapter 6: Enums and Pattern Matching
+## Chapter 6: Enums and Pattern Matching
 - Similar to C# enums, but with key differences
 - Basic enum syntax:
   ```rust
@@ -235,7 +235,7 @@ I apologize for the omissions. You're right, I should have included more of the 
     // ...
   }
   ```
-- Chapter 7: Managing Growing Projects with Packages, Crates, and Modules
+## Chapter 7: Managing Growing Projects with Packages, Crates, and Modules
 
 - Package: Can contain multiple binary crates and optionally one library crate
   - Similar to Visual Studio solution
@@ -314,7 +314,7 @@ I apologize for the omissions. You're right, I should have included more of the 
 - Re-exporting with `pub use`:
   - Allows modules to present different public structure
 
-- Chapter 7 (continued):
+## Chapter 7 (continued):
   
 - Shorten `use` syntax with nested imports:
   ```rust
@@ -393,7 +393,7 @@ Strings:
   let h = s1[0];  // This will panic
   ```
 
-- Chapter 8 (continued):
+## Chapter 8 (continued):
 
 - String handling:
 - Avoid using string slices with ranges (`[..]`) as it may cause runtime panic if not on character boundaries.
@@ -425,7 +425,7 @@ Strings:
   ```
 - Default hashing uses SipHash (implements `BuildHasher` trait).
 
-- Chapter 9: Error Handling
+## Chapter 9: Error Handling
 - Rust uses `Result<T, E>` instead of exceptions, and `panic!` macro for unrecoverable errors.
 - Call stack can be displayed when an environment variable is set.
 - Pattern matching on `Result::Ok(T)` or `Result::Err(E)`.
@@ -440,7 +440,7 @@ Strings:
   ```
 - Page 168 shows a more concise example using closures and `unwrap_or_else()` method.
 
-- Chapter 9 (continued):
+## Chapter 9 (continued):
   
 - Shortcut: Use `unwrap()` on `Result`, which returns the value or panics:
   ```rust
@@ -629,7 +629,7 @@ where
 }
 ```
 
-- Chapter 11: Writing Automated Tests. Using the `cargo test` command, Rust looks for functions with the attribute `#[test]` and compiles a binary test runner.
+## Chapter 11: Writing Automated Tests. Using the `cargo test` command, Rust looks for functions with the attribute `#[test]` and compiles a binary test runner.
 
 - Whenever we make a new library in cargo, it adds a new test module and new test function for us. E.g., `cargo new adder --lib` command.
 
@@ -685,9 +685,9 @@ where
 
 - Page 241 continued: To use the common module code, we must define the submodule in the test files so the compiler knows to look for it and build it. Then refer to its members using paths as per usual: `common::setup`.
 
-- Chapter 12: An I/O Project - Building a Command Line Program.
+## Chapter 12: An I/O Project - Building a Command Line Program.
 
-- Chapter 13: Iterators and Closures.
+## Chapter 13: Iterators and Closures.
 
 - Code listing starting on page 274 has some interesting uses of the language:
 
@@ -807,3 +807,71 @@ fn something(mut args: impl Iterator<Item = String>) {
     // ...
 }
 ```
+Thank you for providing the transcript. I'll process it, preserving the bullet points, correcting any misspoken parts, recognizing Rust code and terminology, applying syntax highlighting, and ensuring the code is legal and correctly formatted. Here's the processed version:
+
+## Chapter 14: More about Cargo and Crates.io
+
+• Cargo.toml file can have sections and config per release profile. For example:
+
+```toml
+[profile.dev]
+opt-level = 0
+```
+
+• Like NuGet, you can publish to crates.io. Invest time in markdown comments. Page 297 shows triple slash doc comments with examples in markdown.
+
+• Running `cargo doc --open` will build and open your browser to your doc page.
+
+• It's common to have examples, panics, errors, and safety sections.
+
+• If you add examples using your function/method and use `assert!`, then `cargo test` will also execute doc comment examples!
+
+• Inside the crate root, use `//!` to apply comments to the crate itself.
+
+• The `//!` comments get applied to any logical code container like crate or module.
+
+• Page 302 shows using `pub use` to re-export stuff from lib.rs, which can be used by closures or they can use the original paths.
+
+• You can also re-export stuff used in your dependencies.
+
+• `cargo login <your API key string here>` to store it in `~/.cargo/credentials`.
+
+• Before publishing, you need a [package] section and `name = "some_string"` key-value pair, as well as a description and a license type, name, version, edition of rust.
+
+• You can then define a Cargo.toml file in a root folder and add a [workspace] section. Then add a JSON-like list of crates called members containing paths to those crates:
+
+```toml
+[workspace]
+members = ["some_path"]
+```
+
+Where "some_path" in this case would be "/some_path/Cargo.toml".
+
+• Important: Cargo doesn't assume crates in a workspace depend on each other. So the dependencies need to be defined as usual via the [dependencies] section. For example:
+
+```toml
+[dependencies]
+add_one = { path = "../add_one" }
+```
+
+• Use `cargo run -p <name>` to specifically run a certain crate by name. "adder" in this example.
+
+• Workspaces have a single root Cargo.lock file to ensure the whole tree uses the same versions.
+
+• Use `cargo install` to install binary crates for tools in the Rust bin folder, likely $HOME/.cargo/bin, which implies it must be in your PATH.
+
+Chapter 15: Smart Pointers
+
+• Smart pointers behave like normal pointers/refs but have added data and capabilities. For instance, the reference counting smart pointer.
+
+• In many cases, smart pointers actually own the data they point to.
+
+• Technically, the String and Vec<T> types are smart pointers.
+
+• Smart pointers are usually implemented using structs, but implement the Deref and Drop traits.
+
+• Deref trait lets it behave like a normal reference so you can code against it as either a smart pointer or reference.
+
+•Drop affords custom code to run when it goes out of scope and sounds a bit like a destructor to me.
+
+Would you like me to explain or clarify any part of the processed notes?
