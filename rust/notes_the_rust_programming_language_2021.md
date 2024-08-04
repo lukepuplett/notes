@@ -1234,3 +1234,55 @@ In Rust, global variables are called static variables and they're named in `SCRE
 
 - A union is like a struct, but only one declared field is used in an instance at a time. They're used to interface with unions in C code.
 
+Page 430. 
+- **Advanced traits. Associated types.** This is sort of like generics for traits, except the syntax is different. And for some reason, the book doesn't make this analogy. Actually, it does a bit later.
+
+```rust
+trait Iterator {
+    type Item;
+    fn next(&mut self) -> Option<Self::Item>;
+}
+```
+
+- The implementer must specify the type.
+- `type Item = u32;`
+- But the method implementation still uses `Option<Self::Item>`.
+
+- Rust allows operator overloading for specific types. And the associated type and the default generic type features come into play.
+
+- The example on page 433 shows `struct Millimeters(i32)`, which is known as the "newtype pattern".
+- All its operators get overloaded.
+- The book notes that adding a generic to a trait after it has shipped is possible, because you can set its default. So everything still compiles.
+
+- A type can implement two traits which specify the same method name, and you can indicate which one to call by fully qualifying its path, e.g. `Pilot::method(&arg)`.
+
+- On page 435, it shows that traits can specify non-method associated functions, or what you call "static methods" in C#.
+- To disambiguate these associated functions: `<Dog as Animal>::_name()`.
+
+- We can define a trait so its implementer must also implement another trait. See page 437:
+```rust
+trait MyTrait: OtherTrait { ... }
+```
+
+- The "newtype pattern" lets us get around the inability to extend types. The thin wrapper struct is removed during compilation, so there's no runtime cost.
+
+- The book gives a nice example of a `People` newtype that wraps a `HashMap<i32, String>`.
+
+- The book mentions "type aliases", which are used to avoid having to keep track of lengthy and complex type names, e.g. `Box<dyn Fn(i32) -> i32 + Send + 'static>`.
+
+- Rust has a `!` (never) type, which is implied by code that shifts execution to another, like `continue` or `panic!()`.
+
+- Page 445 discusses the special `?` sized syntax for dynamically sized traits, but you didn't get it.
+
+- Passing functions to functions via function pointers:
+  - `Fn` is a type, not a trait, unlike closures.
+  - `fn example(func: fn(i32) -> i32) { ... }`
+  - It recommends using the closure syntax instead, which is useful for interacting with languages like C that have function pointers but not closures.
+  - You cannot return an `Fn` function pointer, but you can return a closure in a `Box`.
+
+- Macros:
+  - Rust has declarative macros and three kinds of procedural macros:
+    - Custom derive macros that define the code added to `#[derive]` for structs and enums.
+    - Attribute-like macros that define custom attributes usable on any item.
+    - Function-like macros that look like normal calls but operate on the tokens specified as their arguments.
+  - Macros are a way of writing code that writes other code. They expand to produce more code than you would have written manually.
