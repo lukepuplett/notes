@@ -740,3 +740,70 @@ thread::spawn(move || {
 - A closure body can move a captured value out of the closure, mutate it, neither move nor mutate it, or capture nothing to begin with.
 
 - The way a closure captures and handles values affects the traits it implements, and traits are how functions and structs specify which kinds of closures they can use.
+
+Thank you for providing the additional transcribed notes. I'll process them, correct any misspoken parts, recognize Rust code and terminology, apply syntax highlighting, and ensure the code is legal and correctly formatted. Here's the processed version:
+
+- Closures will automatically implement one, two, or all three of the following `Fn` traits, which I think are additive:
+
+- `FnOnce` applies to closures that can be called once. A closure that moves values out will only ever implement this trait. Because if it can be only called once, all others will always implement `FnOnce`, else you would never be able to call them.
+
+- `FnMut` applies to closures that don't move, but may mutate and can be called many times.
+
+- `Fn` applies to those which don't move or mutate, and those that don't capture anything. These can be called many times and concurrently. Presumably, these are pure functions.
+
+```rust
+pub fn unwrap_or_else<F>(self, f: F) -> T
+where
+    F: FnOnce() -> T
+{
+    // ...
+}
+```
+
+- As in C#, we can pass the name of a function that satisfies the trait and signature constraint instead of writing a lambda/closure. For example:
+
+```rust
+unwrap_or_else(Vec::new)
+```
+
+Where `Vec::new` is called when the value is None.
+
+Interestingly:
+
+```rust
+list.sort_by_key(|r| r.width);
+```
+
+Requires an `FnMut`. It doesn't mutate anything but does call the closure many times.
+
+- In Rust, like .NET, iterators are lazy execution.
+
+And like .NET, they're implemented via `Iterator`, a trait that has a type `Item` property and function:
+
+```rust
+fn next(&mut self) -> Option<Self::Item>
+```
+
+Some new syntax was introduced above: `type Item` and `Self::Item`, which is super interesting as it means implementing this trait means also defining an associated item type (see Chapter 19).
+
+So the trait says: Define your item, then implement the `next` function.
+
+Most interesting is that we need to make the iterator instance mutable because calling `next` changes internal state, but when we use `for`, the loop takes mutable ownership behind the scenes.
+
+```rust
+let mut my_iter = some_vec.iter();
+```
+
+The values we get from `next` are immutable references. Use `into_iter` to create an iterator that takes ownership and returns owned values, and use `iter_mut` to iterate over mutable references.
+
+The standard library has a bunch of default implementations that call `next` and consume or use up the iterator. These are like LINQ in .NET. Some iterator adapters produce different iterators. For example, `map`, which returns a new iterator with the modified items.
+
+But remember, you must call `collect` to actually execute the iterator.
+
+Here's a function which takes an iterator with an associated item type of `String`:
+
+```rust
+fn something(mut args: impl Iterator<Item = String>) {
+    // ...
+}
+```
