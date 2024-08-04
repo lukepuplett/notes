@@ -1015,7 +1015,7 @@ The reason this is not what it seems - assigning to a method - is because the `*
 
 - We use `thread::spawn(|| {...})` and when the main program thread exits, all spawned threads will be shut down
 
-- Spawn returns a JoinHandle<T> and you can call .join() to block the current thread
+- Spawn returns a `JoinHandle<T>` and you can call `.join()` to block the current thread
 
 - Remember to use the `move` keyword in the closure:
 
@@ -1031,7 +1031,7 @@ The reason this is not what it seems - assigning to a method - is because the `*
   let (tx, rx) = std::sync::mpsc::channel();
   ```
 
-- The channel looks like a blocking queue in C# with .send() and .recv() methods and try_recv() which is useful for when the receiving loop has other work it can do. These return Result<T> or Result<(), E>
+- The channel looks like a blocking queue in C# with `.send()` and `.recv()` methods and `try_recv()` which is useful for when the receiving loop has other work it can do. These return `Result<T>` or `Result<Ok<T>, E>`
 
 - Once the value is sent the channel takes ownership or it's copied 
 
@@ -1044,14 +1044,14 @@ The reason this is not what it seems - assigning to a method - is because the `*
   *num = 10;
   ```
 
-- The call to .lock() blocks until the mutex lock lets you set the value and the mutex lock will be dropped when it goes out of scope i.e. when the curly brackets end
+- The call to `.lock()` blocks until the mutex lock lets you set the value and the mutex lock will be dropped when it goes out of scope i.e. when the curly brackets end
 
-- Interestingly, the call to .lock() will fail if its current holder panics
+- Interestingly, the call to `.lock()` will fail if its current holder panics
 
-- So we need to clone the mutex to send it into a new thread closure. So we declare the mutex inside an Rc<T> which allows many references via ref counting, but Rc<T> itself isn't thread safe and its counting. So you have to use Arc<T> which is atomic, for example:
+- So we need to clone the mutex to send it into a new thread closure. So we declare the mutex inside an `Rc<T>` which allows many references via ref counting, but `Rc<T>` itself isn't thread safe and its counting. So you have to use `Arc<T>` which is atomic, for example:
 
   ```rust
   let mtx = Arc::new(Mutex::new(0));
   ```
 
-- The Arc<T> struct implements a trait called Send, which allows it to be sent across thread boundaries
+- The `Arc<T>` struct implements a trait called `Send`, which allows it to be sent across thread boundaries
