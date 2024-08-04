@@ -1286,3 +1286,25 @@ trait MyTrait: OtherTrait { ... }
     - Attribute-like macros that define custom attributes usable on any item.
     - Function-like macros that look like normal calls but operate on the tokens specified as their arguments.
   - Macros are a way of writing code that writes other code. They expand to produce more code than you would have written manually.
+
+- Macros can take a variable number of arguments. Macros are expanded before the compiler understands the meaning of the code. Code that writes code is hard to understand and write. Rust is no panacea for this problem. Macros must be brought into scope or defined lexically prior to calling.
+
+- The most widely used are declarative macros. Declarative macros work a bit like pattern matching where the code passed to the matching syntax is the arguments and the return value is the expanded final code the compiler should emit.
+
+- Page 450 shows a slightly simplified example of the `vec!` macro. The macro is defined using `macro_rules!` followed by its name. It can be annotated with the `#[macro_export]` attribute to make it available to the importers of the current crate. The Rust pattern matching syntax for macros can be found at https://doc.rust-lang.org/reference/macros-by-example.html.
+
+- Writing macros is a highly advanced, yet simple in concept feature, which is like using regex and can be painfully solved with functions.
+
+- Procedural macros don't use pattern matching. These are defined as functions, which take a token stream as input and return a token stream. Page 453 mentions that Rust has no reflection, which might be why macros are useful.
+
+- Page 457 explains how attribute-like macros are used to make attributes that can adorn functions, for example, in popular web frameworks to annotate functions as HTTP URL routes.
+
+- Attribute-like macros are implemented very much the same as custom derive type macros. They have two token stream arguments: one for the arguments on the attribute in square brackets, and another which captures the code of the function.
+
+- Finally, function-like macros combine the declarative style macro rules types, which can be called like functions with procedural using token streams.
+
+- Note: Macros being an ask to write might make them perfect for AI/LLMs.
+
+- Chapter 20: Building a multi-threaded web server.
+
+- <end>
