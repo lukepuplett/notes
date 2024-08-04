@@ -901,3 +901,50 @@ enum List {
 In this version, `List` appears within the nested `Cons`, which is self-referential, and therefore, computing the size would be an infinite loop.
 
 - `Box<T>` implements the `Drop` trait, which runs code to clean up its Heap memory. Implementing `Deref` lets you customize the `*` dereference operator, and by coding it in a certain way, you can use the smart pointer like a regular reference. Functions expecting straight up stack values.
+
+Functions expecting straight up stack values, not references, can have a value dereferenced into them.
+
+```rust
+let y = 5;
+assert_eq!(y, 5);
+```
+
+We can also use:
+
+```rust
+let y = Box::new(42);
+let x = *y;
+```
+
+Page 323 is interesting, because it defines a generic struct with no fields.
+
+To implement the `Deref` trait:
+
+```rust
+impl<T> Deref for MyBox<T> {
+    type Target = T;
+
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+```
+
+The expression `&self.0` simply accesses the first tuple struct value. Interestingly, this code still returns a reference, i.e., `&self`. Behind the scenes, Rust calls `*(y.deref())`.
+
+Note that if the value was returned raw, i.e., not a reference, then it would be moved out of `self`.
+
+Auto-deref coercion kicks in when calling a method where the parameters don't match what we're passing in and reduces the amount of `&` and `*` syntax to type in.
+
+Implementing `Drop` is just:
+
+```rust
+fn drop(&mut self) {
+    // ...
+}
+```
+
+And very much like a C# `Dispose` method. You can call `std::mem::drop` manually to force it. The only use case is a lock/semaphore that you might want to exactly control the drop/unlock of.
+
+- `Rc<T>` is for reference counting lifetime. Like in Visual Basic, this is needed in graph object models where many nodes point at each other and only the last node pointing at any node is conceptually owned by the nodes pointing at it.
+
