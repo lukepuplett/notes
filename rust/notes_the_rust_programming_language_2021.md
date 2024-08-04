@@ -991,4 +991,67 @@ let a = Rc::new(Cons(Rc::clone(&value), Rc::new(Nil)));
 
 - Rust has a built-in weak reference `Weak<T>`. You can create `Weak<T>` by calling `Rc::downgrade()`, passing in an instance of an `Rc<T>`.
 
-- 
+- To use the weak reference, you must ensure it still holds a value by calling its upgrade method which returns an Option<Rc<T>>:
+
+```rust
+struct Node {
+  parent: RefCell<Weak<Node>>,
+  children: RefCell<Vec<Rc<Node>>>,
+}
+
+let leaf = Rc::new(Node {
+  parent: RefCell::new(Weak::new()),
+  children: RefCell::new(vec![]),  
+});
+
+*leaf.parent.borrow_mut() = Rc::downgrade(&leaf);
+```
+
+The reason this is not what it seems - assigning to a method - is because the `*` operator dereferences the actual value, so we can assign a new value over the top.
+
+### Chapter 16: Fearless Concurrency
+
+- Rust appears to have threads, message passing, shared and sync and send traits
+
+- We use `thread::spawn(|| {...})` and when the main program thread exits, all spawned threads will be shut down
+
+- Spawn returns a JoinHandle<T> and you can call .join() to block the current thread
+
+- Remember to use the `move` keyword in the closure:
+
+  ```rust
+  thread::spawn(move || {
+    // ...
+  });
+  ```
+
+- Rust's channels are like those in Go, with a transmitter and a receiver, for example:
+
+  ```rust 
+  let (tx, rx) = std::sync::mpsc::channel();
+  ```
+
+- The channel looks like a blocking queue in C# with .send() and .recv() methods and try_recv() which is useful for when the receiving loop has other work it can do. These return Result<T> or Result<(), E>
+
+- Once the value is sent the channel takes ownership or it's copied 
+
+- Can treat the receiver as an infinite iterator, and clone the transmitter
+
+- A Rust mutex is quite safe to use due to all the other Rust rules and paradigms, for example:
+
+  ```rust
+  let mut num = mtx.lock().unwrap();
+  *num = 10;
+  ```
+
+- The call to .lock() blocks until the mutex lock lets you set the value and the mutex lock will be dropped when it goes out of scope i.e. when the curly brackets end
+
+- Interestingly, the call to .lock() will fail if its current holder panics
+
+- So we need to clone the mutex to send it into a new thread closure. So we declare the mutex inside an Rc<T> which allows many references via ref counting, but Rc<T> itself isn't thread safe and its counting. So you have to use Arc<T> which is atomic, for example:
+
+  ```rust
+  let mtx = Arc::new(Mutex::new(0));
+  ```
+
+- The Arc<T> struct implements a trait called Send, which allows it to be sent across thread boundaries
