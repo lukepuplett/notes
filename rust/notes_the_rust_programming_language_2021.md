@@ -1303,8 +1303,8 @@ trait MyTrait: OtherTrait { ... }
 
 - Finally, function-like macros combine the declarative style macro rules types, which can be called like functions with procedural using token streams.
 
-- Note: Macros being an ask to write might make them perfect for AI/LLMs.
+- Note: Macros being an ass to write might make them perfect for AI/LLMs.
 
 ## Chapter 20: Building a multi-threaded web server.
 
-- <end>
+<end>
