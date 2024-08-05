@@ -1307,4 +1307,12 @@ trait MyTrait: OtherTrait { ... }
 
 ## Chapter 20: Building a multi-threaded web server.
 
+- There's one more interesting thing to learn from the tutorial/lesson; the `if let` and `while let` syntax creates a scope that is as long as their blocks `{}`. In the lesson, a Mutex is used to access the receiving end of a channel, like a blocking queue, and obtaining the Mutex and dequeuing a channel item is done using this code:
+
+```rust
+let job = receiver.lock().unwrap().recv().unwrap();
+```
+
+The lock is released when the MutexGuard that is returned drops out of scope, which is at the end of the assignment in this code, but in a `while let Ok(job) = receiver.lock().unwrap().recv() { ... }` would be the end of the block! This would hold the lock for the entire duration of running the job, so no other jobs can be run at the same time!
+
 <end>
