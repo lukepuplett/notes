@@ -21,7 +21,9 @@ Here are your reformatted notes with technical jargon and programming terms encl
 - `cargo run` will build and run
 - `cargo check` is like `tsc --noEmit` command, a fast way to check for compilation errors
 - `cargo build --release` to build an optimized proper release binary
+  
 ## Chapter 2
+
 - Rust has a standard set of items it brings into scope of each program, called the Prelude
 - Function names ending with an exclamation mark are actually macro calls
 - By default, variables are immutable
@@ -57,6 +59,7 @@ Here are your reformatted notes with technical jargon and programming terms encl
       Err(_) => continue,
   };
   ```
+  
 ## Chapter 3 - Common Programming Concepts
 
 - `const` can be declared in any scope, must be annotated with its type, and use shouting caps
@@ -127,6 +130,25 @@ Page 70:
 - Benefit: a string slice is bound to its underlying memory
 - A string literal (e.g., `"hello"`) is a string slice and `&str`
 - Use `&str` in function signatures, e.g., `fn first_word(s: &str) { ... }`
+- **Learned the hard way** - structs own their field values such that sometimes you'll use the field with code that either you wrote yourself or with functions in the built-in libs that wants to move or consume the field value, and you cannot!! An example is with the `JoinHandle<T>` type which has a `.join(self)` method which takes ownership of the handle. So your own struct method can't performing actions on its own data! e.g. `self.handle.join();` won't compile because the struct (i.e. self) owns it. The workaround is to wrap the JoinHandle in an `Option`. This let's you "swap" it out for `None`, e.g. `let h = self.handle.take();`
+
+```rust
+impl Drop for Worker {
+    fn drop(&mut self) {
+        let thread = self.thread.take();
+
+        match thread {
+            Some(handle) => match handle.join() {
+                Ok(_) => (),
+                Err(_) => println!("error in thread {}", self.id),
+            },
+            _ => return,
+        }
+    }
+}
+```
+
+It might be that this is a pattern for structs which have member fields which could be "null", so to speak. It makes total sense that such fields would be optional and have either Some or None. If you need to transfer ownership and literally consume or "burn up" the value, then its field needs to have None. Amazing really.
   
 ## Chapter 5 - Using Structs to Structure Related Data
 
@@ -157,8 +179,6 @@ Page 94:
 - It mentions that the `dbg!` macro will take ownership of a value and print it along with the file and line number to standard error, not standard out
 
 - `dbg!(30 * scale)` will work because `dbg!` hands back the value
-
-- **Learned the hard way** - structs own their field values such that sometimes, you'll use them with code you wrote or in the built-in libs that wants to move the value and you cannot! An example is with the `JoinHandle<T>` type which has a `.join(self)` method which takes ownership of. This prevents your own methods from performing e.g. `self.handle.join();` because the struct (i.e. self) owns it. So the workaround is to wrap the JoinHandle in an `Option`. This let's you "swap" it out for `None`, e.g. `let h = self.handle.take();`
 
 ## Chapter 6 - Enums and Pattern Matching
 
