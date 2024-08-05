@@ -131,20 +131,34 @@ Page 70:
 ## Chapter 5 - Using Structs to Structure Related Data
 
 - `struct User { active: bool, username: String, ... }`
+
 - `let user1 = User { active: true, ... }` Note that it uses colons to set values, but uses dot notation to access fields, e.g., `user1.active`
+
 - The entire instance is mutable, and Rust has no access modifiers
+
 - Can use field init shorthand, e.g., `User { username, email, ... }` where the name of the variable/argument matches the name of the field
+
 - Struct update syntax makes a new instance using values from an existing instance: `let user2 = User { active: false, ..user1 }`
+
 - But the values are moved, and `user1` values can no longer be used
+
 - Tuple structs seem to be tuples but with a name, which makes them different types
+
 - Can define unit-like structs, which have no fields. This appears to be like a flag interface or trait in Rust parlance
+
 - The book explains why the `username` field is `String` and not `&str`: it's so that the `User` struct owns the value, as opposed to being lent the data
+
 - A struct can store references, but it needs a lifetime specified
+
 Page 94:
+
 - The book does a detour on printing a struct for debugging via `println!`, which means perhaps implementing a trait called `Debug` by adding an attribute to the struct: `#[derive(Debug)] struct Rectangle { ... }`
+
 - It mentions that the `dbg!` macro will take ownership of a value and print it along with the file and line number to standard error, not standard out
+
 - `dbg!(30 * scale)` will work because `dbg!` hands back the value
-I apologize for the omissions. You're right, I should have included more of the code examples you provided. Let me try again with a more comprehensive transcription of your notes:
+
+- **Learned the hard way** - structs own their field values such that sometimes, you'll use them with code you wrote or in the built-in libs that wants to move the value and you cannot! An example is with the `JoinHandle<T>` type which has a `.join(self)` method which takes ownership of. This prevents your own methods from performing e.g. `self.handle.join();` because the struct (i.e. self) owns it. So the workaround is to wrap the JoinHandle in an `Option`. This let's you "swap" it out for `None`, e.g. `let h = self.handle.take();`
 
 ## Chapter 6 - Enums and Pattern Matching
 
