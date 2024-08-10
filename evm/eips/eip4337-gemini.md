@@ -377,3 +377,196 @@ These methods are intended for testing and debugging purposes and should be disa
 - **Return Value**: `"ok"`.
 
 These RPC methods provide a comprehensive interface for interacting with the ERC-4337 Account Abstraction infrastructure, enabling developers and users to manage `UserOperations`, monitor the system's state, and debug their implementations effectively.
+
+# Reference Implementation for ERC-4337
+
+This document outlines a reference implementation for ERC-4337, focusing on the core contracts and their interactions. This implementation aims to be clear, concise, and serve as a starting point for developers building upon the ERC-4337 standard.
+
+**Note:** This is a simplified implementation for illustrative purposes. A production-ready implementation would require more robust error handling, gas optimizations, and security considerations.
+
+## 1. EntryPoint Contract
+
+```solidity
+pragma solidity ^0.8.0;
+
+import "./IAccount.sol";
+import "./IPaymaster.sol";
+
+contract EntryPoint {
+    // --- Storage ---
+    uint256 public constant UNUSED_GAS_PENALTY_PERCENT = 10; // 10% penalty on refunded gas
+    mapping(address => uint256) public balanceOf; // Deposit balance for each account/paymaster
+    mapping(address => uint192) public getNonce; // Nonce storage (key => sequence)
+
+    // --- Structs ---
+    struct UserOperation {
+        address sender;
+        uint256 nonce;
+        bytes initCode; // For account creation
+        bytes callData;
+        uint256 callGasLimit;
+        uint256 verificationGasLimit;
+        uint256 preVerificationGas;
+        uint256 maxFeePerGas;
+        uint256 maxPriorityFeePerGas;
+        address paymaster;
+        uint256 paymasterVerificationGasLimit;
+        uint256 paymasterPostOpGasLimit;
+        bytes paymasterData;
+        bytes signature;
+    }
+
+    // --- Events ---
+    event UserOperationEvent(
+        bytes32 userOpHash,
+        address indexed sender,
+        uint256 nonce,
+        bool success,
+        uint256 actualGasCost,
+        uint256 actualGasUsed
+    );
+
+    // --- Core Functions ---
+    function handleOps(UserOperation[] calldata ops, address payable beneficiary) external {
+        uint256 opsLength = ops.length;
+        for (uint256 i = 0; i < opsLength; ++i) {
+            _handleOp(ops[i], beneficiary);
+        }
+    }
+
+    function _handleOp(UserOperation calldata op, address payable beneficiary) internal {
+        bytes32 userOpHash = _getUserOpHash(op);
+
+        // 1. Account Creation (if initCode is provided)
+        if (op.initCode.length > 0) {
+            _createAccount(op);
+        }
+
+        // 2. Calculate and Validate Fees
+        uint256 preFund = _validateAndChargeFees(op, userOpHash);
+
+        // 3. Execute UserOperation
+        bool success = _executeUserOperation(op, userOpHash);
+
+        // 4. Refund Excess Gas and Pay Beneficiary
+        _refundAndPay(op, preFund, success, beneficiary);
+
+        emit UserOperationEvent(userOpHash, op.sender, op.nonce, success, msg.value - preFund, gasleft());
+    }
+
+    // --- Helper Functions ---
+    function _getUserOpHash(UserOperation calldata op) internal view returns (bytes32) {
+        return keccak256(abi.encode(op, block.chainid, address(this)));
+    }
+
+    function _createAccount(UserOperation calldata op) internal {
+        // Implement account creation logic using op.initCode
+        // ...
+    }
+
+    function _validateAndChargeFees(UserOperation calldata op, bytes32 userOpHash) internal returns (uint256 preFund) {
+        // Implement fee calculation and validation logic
+        // ...
+
+        // Charge fees from account or paymaster
+        // ...
+    }
+
+    function _executeUserOperation(UserOperation calldata op, bytes32 userOpHash) internal returns (bool success) {
+        // Call validateUserOp on the account
+        // ...
+
+        // Execute the UserOperation's callData
+        // ...
+    }
+
+    function _refundAndPay(UserOperation calldata op, uint256 preFund, bool success, address payable beneficiary) internal {
+        // Calculate gas refund
+        // ...
+
+        // Refund excess gas to account or paymaster
+        // ...
+
+        // Pay beneficiary
+        // ...
+    }
+
+    // --- Additional Functions ---
+    // Implement depositTo, withdrawTo, getNonce, etc.
+    // ...
+}
+```
+
+## 2. Account Contract Interface
+
+```solidity
+pragma solidity ^0.8.0;
+
+interface IAccount {
+    function validateUserOp(
+        EntryPoint.UserOperation calldata userOp,
+        bytes32 userOpHash,
+        uint256 missingAccountFunds
+    ) external returns (uint256 validationData);
+}
+```
+
+## 3. Paymaster Contract Interface
+
+```solidity
+pragma solidity ^0.8.0;
+
+interface IPaymaster {
+    function validatePaymasterUserOp(
+        EntryPoint.UserOperation calldata userOp,
+        bytes32 userOpHash,
+        uint256 maxCost
+    ) external returns (bytes memory context, uint256 validationData);
+
+    function postOp(
+        uint8 mode,
+        bytes calldata context,
+        uint256 actualGasCost,
+        uint256 actualGasUsed
+    ) external;
+}
+```
+
+## 4. Example Account Contract
+
+```solidity
+pragma solidity ^0.8.0;
+
+import "./IAccount.sol";
+import "./EntryPoint.sol";
+
+contract SimpleAccount is IAccount {
+    EntryPoint public immutable entryPoint;
+
+    constructor(EntryPoint _entryPoint) {
+        entryPoint = _entryPoint;
+    }
+
+    function validateUserOp(
+        EntryPoint.UserOperation calldata userOp,
+        bytes32 userOpHash,
+        uint256 missingAccountFunds
+    ) external override returns (uint256 validationData) {
+        require(msg.sender == address(entryPoint), "Only EntryPoint can call");
+
+        // Verify signature
+        // ...
+
+        // Ensure sufficient funds
+        // ...
+
+        // Return validation data (e.g., nonce)
+        return userOp.nonce;
+    }
+
+    // Add other account-specific functions (execute, transfer, etc.)
+    // ...
+}
+```
+
+This reference implementation provides a basic framework for ERC-4337. Developers can extend these contracts and interfaces to build more complex and feature-rich account abstraction solutions. Remember to prioritize security and thoroughly test all implementations before deploying them to a production environment.
