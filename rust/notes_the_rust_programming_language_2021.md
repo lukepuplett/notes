@@ -144,9 +144,9 @@ Page 23
   
 - `let number = if something { 5 } else { 6 };`
   
-- `let result = loop { ... break counter * 2; };` The break from the loop can return a value
+- `let result = loop { ... break counter * 2; };` The break from the loop can return a value, and I think the semi-colon is correct even though you'd normally need to 'express' the value - odd.
   
-- `'some_name: loop { ... break 'some_name; }` In this syntax, the loop has a name or label called `'some_name`
+- `'some_name: loop { ... break 'some_name; }` In this syntax, the loop has a name or label called `'some_name` so the correct loop can be exited.
   
 - `while some_condition { ... }` This is like C#
   
