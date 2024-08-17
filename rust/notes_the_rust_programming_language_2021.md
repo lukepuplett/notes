@@ -108,7 +108,7 @@ Page 23
   - `0xff` for hex
   - `0o77` for octal
   - `0b1111_0000` for binary
-  - `b'A'` for a byte
+  - `b'A'` for a byte using ASCII
     
 - Two types of floating-point: `f32` and `f64` (default, same speed as `f32`)
   
