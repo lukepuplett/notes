@@ -254,7 +254,7 @@ It might be that this is a pattern for structs which have member fields which co
 
 - Struct update syntax makes a new instance using values from an existing instance: `let user2 = User { active: false, ..user1 }`
 
-- But the values are moved, and `user1` values can no longer be used
+- Fields with the Copy trait are copied, else they're moved, and `user1` values can no longer be used. If a struct only uses types with the Copy trait it "inherits" the Copy trait. My own word for this is "transitive" like in math, but the book does not use this term.
 
 - Tuple structs seem to be tuples but with a name, which makes them different types
 
