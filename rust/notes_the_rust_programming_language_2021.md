@@ -1,4 +1,4 @@
-Here are your reformatted notes with technical jargon and programming terms enclosed in backticks:
+## Chapter 1 - Getting Started
 
 - `cargo` is the build system and package manager
   
@@ -35,7 +35,7 @@ Here are your reformatted notes with technical jargon and programming terms encl
   
 - `cargo build --release` to build an optimized proper release binary
   
-## Chapter 2
+## Chapter 2 - Programming a Guessing Game
 
 - Rust has a standard set of items it brings into scope of each program, called the Prelude
   
