@@ -1,17 +1,4 @@
 ## Chapter 1 - Getting Started
-
-- `cargo` is the build system and package manager
-  
-- `cargo` is a command-line executable tool
-  
-- Command `cargo new hello_cargo` creates a new project using:
-  - `Cargo.toml`
-  - `src/main.rs`
-  - Also initializes a new Git repo with a `.gitignore` file
-    
-- `TOML` stands for Tom's Obvious Minimal Language
-  
-- It looks like a Windows `.ini` file but with comments
   
 - `cargo` is the build system and package manager
   
@@ -23,7 +10,8 @@
   - Also initializes a new Git repo with a `.gitignore` file
     
 - `TOML` stands for Tom's Obvious Minimal Language
-  - Looks like a Windows `.ini` file but with comments
+ 
+- Looks like a Windows `.ini` file but with comments
     
 - Packages are called crates
   
