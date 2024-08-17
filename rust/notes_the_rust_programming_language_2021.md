@@ -100,6 +100,8 @@ Page 23
 - **IMPORTANT** - Overflows will panic in debug mode, wrap in release mode. This looks dangerous to me and I'd prefer overflows always crash the app.
   
 - Can use `wrapping_*`, `checked_*`, `overflowing_*`, and `saturating_*` type methods to get specific behaviors
+
+- `checked_*` and `overflowing_*` methods are safest as they produce either an `Option` or a `(8, false)` tuple where the boolean `false` indicates no overflow occurred.
   
 - Integer literals can be:
   - `98_222`
