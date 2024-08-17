@@ -248,7 +248,7 @@ It might be that this is a pattern for structs which have member fields which co
 
 - `let user1 = User { active: true, ... }` Note that it uses colons to set values, but uses dot notation to access fields, e.g., `user1.active`
 
-- The entire instance is mutable, and Rust has no access modifiers
+- The entire instance is mutable, though Rust has a `pub` access modifier
 
 - Can use field init shorthand, e.g., `User { username, email, ... }` where the name of the variable/argument matches the name of the field
 
