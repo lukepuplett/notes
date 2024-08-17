@@ -227,7 +227,7 @@ Page 70:
 ```rust
 impl Drop for Worker {
     fn drop(&mut self) {
-        let thread = self.thread.take();
+        let thread = self.thread.take(); // pluck the thread from ourself leaving `None`
 
         match thread {
             Some(handle) => match handle.join() {
