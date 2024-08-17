@@ -97,7 +97,7 @@ Page 23
   
 - Integer sizing: 8, 16, 32, 64, and 128 bits. Can use underscore in literals like in JavaScript, e.g., `1_000`
   
-- Overflows will panic in debug mode, wrap in release mode
+- **IMPORTANT** - Overflows will panic in debug mode, wrap in release mode. This looks dangerous to me and I'd prefer overflows always crash the app.
   
 - Can use `wrapping_*`, `checked_*`, `overflowing_*`, and `saturating_*` type methods to get specific behaviors
   
