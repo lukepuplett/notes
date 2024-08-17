@@ -136,7 +136,7 @@ Page 23
   
 - Rust uses snake_case for function names
   
-- `let y = { let x = 3; x + 1 }` works as long as there's no final semicolon, which would cause it to become a statement and not an expression that returns a value
+- `let y = { let x = 3; x + 1 }` works as long as there's no final semicolon `x + 1`, which would cause it to become a statement and not an expression that returns a value. In this case the code in the `{}` runs and is 'expressed' which causes it to be assigned to `y`.
   
 - `fn() -> i32 { }` uses the arrow to denote a return type
   
