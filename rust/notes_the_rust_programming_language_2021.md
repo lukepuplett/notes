@@ -215,8 +215,14 @@ Page 70:
 - A string literal (e.g., `"hello"`) is a string slice and `&str`
   
 - Use `&str` in function signatures, e.g., `fn first_word(s: &str) { ... }`
+
+#### Learned the hard way
+
+- Structs own their field values such that sometimes you'll use the field with code that either you wrote yourself or with functions in the built-in libs that wants to move or consume the field value, and you cannot!
+
+- If you try to use a struct field value with some function that takes ownership of the value then it's like it is plucking the value off of the struct, leaving nothing. That's impossible, the struct field cannot be null, so how can this be solved?
   
-- **Learned the hard way** - structs own their field values such that sometimes you'll use the field with code that either you wrote yourself or with functions in the built-in libs that wants to move or consume the field value, and you cannot!! An example is with the `JoinHandle<T>` type which has a `.join(self)` method which takes ownership of the handle. So your own struct method can't performing actions on its own data! e.g. `self.handle.join();` won't compile because the struct (i.e. self) owns it. The workaround is to wrap the JoinHandle in an `Option`. This let's you "swap" it out for `None`, e.g. `let h = self.handle.take();`
+- An example is with the `JoinHandle<T>` type which has a `.join(self)` method which takes ownership of the handle. So your own struct method can't performing actions on its own data! e.g. `self.handle.join();` won't compile because the struct (i.e. self) owns it. The workaround is to wrap the JoinHandle in an `Option`. This let's you "swap" it out for `None`, e.g. `let h = self.handle.take();`
 
 ```rust
 impl Drop for Worker {
