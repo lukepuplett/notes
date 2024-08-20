@@ -618,7 +618,6 @@ Strings:
       // methods specific to Point<f32>
   }
   ```
-Here's the revised version with hyphens for bullets, corrected sentences, and recognized spoken symbols:
 
 - Page 192. Traits are like interfaces, but with some differences. They are defined using:
 
@@ -688,7 +687,7 @@ where
 
 - My own note: In general, you should return the specific type in programming. Generally. But I suspect being able to return a trait is helpful for signatures. Specify accepting a function or closure, though we have not touched upon passing functions as objects yet.
 
-- Can use combined trait bounds (+ sign) syntax to add methods (Associated functions) or just those types that implement both or more traits. This is done using the impl as usual, but with a combining generic T in angle brackets. Syntax, for example:
+- Can use combined trait bounds (+ sign) syntax to add methods (Associated functions) for just those types that implement both or more traits. This is done using the impl as usual, but with a combining generic T in angle brackets. Syntax, for example:
 
 ```rust
 impl<T: Display + PartialOrd> { ... }
