@@ -828,6 +828,8 @@ where
 fn giveaway(&self, user_preference: Option<ShirtColor>) -> ShirtColor {
     user_preference.unwrap_or_else(|| self.most_stocked())
 }
+
+fn most_stocked(&self) -> ShirtColor { ... }
 ```
 
 This is fascinating for taking in an Option. The double pipe `||` is a closure with no parameters/arguments that's evaluated if the option has None. It's also interesting in that it can use the self value (capture it).
