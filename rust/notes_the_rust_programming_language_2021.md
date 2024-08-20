@@ -735,7 +735,9 @@ struct ImportantExcerpt<'a> {
 
 ```rust
 impl<'a> ImportantExcerpt<'a> {
-    // ...
+    fn some_method<'b>(&self, s: &'b str) -> &'b str {
+        // Method implementation
+    }
 }
 ```
 
