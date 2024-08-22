@@ -1052,7 +1052,17 @@ let y = Box::new(42);
 let x = *y;
 ```
 
-Page 323 is interesting, because it defines a generic struct with no fields.
+Page 323 - Defining our own Smart Pointer
+
+```rust
+struct MyBox<T>(T); // empty struct
+
+impl<T> MyBox<T> {
+    fn new(x: T) -> MyBox<T> {
+        MyBox(x)
+    }
+}
+```
 
 To implement the `Deref` trait:
 
