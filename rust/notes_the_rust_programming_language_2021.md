@@ -1117,11 +1117,35 @@ let y = &mut x; // illegal because `x` is immutable.
 
 - We need a way to build a value where its methods are permitted to mutate its value, but outsiders see it as immutable.  
 
-- Page 339 sets up a complex situation to show the need for `RefCell<T>`. But the situation seems common to me. It defines a trait with a method that updates a value that the trait implementer holds via its `&self` reference. But it cannot because `&self` is immutable and `&mut self` breaks the signature of the trait method.  
+- Page 339 sets up a complex situation to show the need for `RefCell<T>`. But the situation seems common to me. It gives an example of some trait method with a signature `blah(&self)` and the implementer wants to update something via `&self` but it cannot because `&self` is immutable and changing the signature to `&mut self` would no longer be the signature of the trait method.
 
-Instead, it puts the value inside a `RefCell<T>` and calls `borrow_mut()` to get a mutable reference, which it can update.  
+- Instead, it puts the value inside a `RefCell<T>` and calls `borrow_mut()` to get a mutable reference, which it can update.
 
 - The `borrow` method returns a `Ref<T>` and `borrow_mut` returns a `RefMut<T>`.  
+
+```rust
+trait MyTrait {
+    fn blah(&self);
+}
+
+struct MyStruct {
+    value: RefCell<i32>,  // Wrap the data you want to mutate in RefCell
+}
+
+impl MyTrait for MyStruct {
+    fn blah(&self) {
+        // Borrow the data mutably even though `self` is immutable
+        let mut value = self.value.borrow_mut();
+        *value += 1;  // Mutate the data
+    }
+}
+
+fn main() {
+    let my_struct = MyStruct { value: RefCell::new(0) };
+    my_struct.blah();
+    println!("Value: {:?}", my_struct.value.borrow());
+}
+```
 
 - Internally, `RefCell<T>` actually counts the mutable and immutable references being held and sticks to the same rules as the Rust compiler, but at runtime. So two calls to `borrow_mut` in the same scope will cause a runtime panic.  
 
