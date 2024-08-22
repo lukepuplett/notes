@@ -1055,7 +1055,7 @@ let x = *y;
 Page 323 - Defining our own Smart Pointer
 
 ```rust
-struct MyBox<T>(T); // empty struct
+struct MyBox<T>(T); // tuple struct of T
 
 impl<T> MyBox<T> {
     fn new(x: T) -> MyBox<T> {
