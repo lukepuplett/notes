@@ -1054,6 +1054,8 @@ let x = *y;
 
 Page 323 - Defining our own Smart Pointer
 
+A Smart Pointer is really just a struct implementing Deref, or DerefMut trait such that it can be used in code like a reference. The auto-dereferencing and dropping lets you "get in between" and manage crucial aspects of the value/memory management while just using it like a normal reference.
+
 ```rust
 struct MyBox<T>(T); // tuple struct of T
 
