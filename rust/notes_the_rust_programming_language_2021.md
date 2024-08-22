@@ -878,11 +878,11 @@ thread::spawn(move || {
 
 - Closures will automatically implement one, two, or all three of the following `Fn` traits, which I think are additive:
 
-- `FnOnce` applies to closures that can be called once. A closure that moves values out will only ever implement this trait. Because if it can be only called once, all others will always implement `FnOnce`, else you would never be able to call them.
+- **`FnOnce`**: Applies to closures that can be called only once, as they take ownership and may move captured values. Every closure implements `FnOnce`.
 
-- `FnMut` applies to closures that don't move, but may mutate and can be called many times.
+- **`FnMut`**: Applies to closures that can be called multiple times and mutate captured variables but do not move them.
 
-- `Fn` applies to those which don't move or mutate, and those that don't capture anything. These can be called many times and concurrently. Presumably, these are pure functions.
+- **`Fn`**: Applies to closures that do not move or mutate captured variables, and can be called multiple times, including concurrently. These are similar to pure functions.
 
 ```rust
 pub fn unwrap_or_else<F>(self, f: F) -> T
