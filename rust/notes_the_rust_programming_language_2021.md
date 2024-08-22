@@ -876,8 +876,6 @@ thread::spawn(move || {
 
 - The way a closure captures and handles values affects the traits it implements, and traits are how functions and structs specify which kinds of closures they can use.
 
-Thank you for providing the additional transcribed notes. I'll process them, correct any misspoken parts, recognize Rust code and terminology, apply syntax highlighting, and ensure the code is legal and correctly formatted. Here's the processed version:
-
 - Closures will automatically implement one, two, or all three of the following `Fn` traits, which I think are additive:
 
 - `FnOnce` applies to closures that can be called once. A closure that moves values out will only ever implement this trait. Because if it can be only called once, all others will always implement `FnOnce`, else you would never be able to call them.
