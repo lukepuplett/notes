@@ -940,7 +940,6 @@ fn something(mut args: impl Iterator<Item = String>) {
     // ...
 }
 ```
-Thank you for providing the transcript. I'll process it, preserving the bullet points, correcting any misspoken parts, recognizing Rust code and terminology, applying syntax highlighting, and ensuring the code is legal and correctly formatted. Here's the processed version:
 
 ## Chapter 14 - More about Cargo and Crates.io
 
