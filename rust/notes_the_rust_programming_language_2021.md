@@ -914,7 +914,11 @@ Requires an `FnMut`. It doesn't mutate anything but does call the closure many t
 And like .NET, they're implemented via `Iterator`, a trait that has a type `Item` property and function:
 
 ```rust
-fn next(&mut self) -> Option<Self::Item>
+pub trait Iterator {
+    type Item;
+
+    fn next(&mut self) -> Option<Self::Item>;
+}
 ```
 
 Some new syntax was introduced above: `type Item` and `Self::Item`, which is super interesting as it means implementing this trait means also defining an associated item type (see Chapter 19).
