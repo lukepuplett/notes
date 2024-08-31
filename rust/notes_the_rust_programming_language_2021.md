@@ -1437,7 +1437,13 @@ trait MyTrait: OtherTrait { ... }
 
 - The "newtype pattern" lets us get around the inability to extend types. The thin wrapper struct is removed during compilation, so there's no runtime cost.
 
-- The book gives a nice example of a `People` newtype that wraps a `HashMap<i32, String>`.
+- The book gives a nice example of a `People` newtype that wraps a `HashMap<i32, String>`. You can then add methods. This is very efficient and the struct is optimised away by the compiler, ChatGPT gives many reasons why this is super efficient "zero cost" abstraction.
+ 
+```rust
+    fn add_person(&mut self, id: i32, name: String) {
+        self.0.insert(id, name);
+    }
+```
 
 - The book mentions "type aliases", which are used to avoid having to keep track of lengthy and complex type names, e.g. `Box<dyn Fn(i32) -> i32 + Send + 'static>`.
 
