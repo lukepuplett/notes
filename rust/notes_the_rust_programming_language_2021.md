@@ -1235,7 +1235,12 @@ The reason this is not what it seems - assigning to a method - is because the `*
 
 - In `[std::marker]`, the `Send` marker trait indicates that the type can be referenced from multiple threads.
 
-- Any type `T` is `Send` if and only if an immutable reference to `T` is `Send`. Similar to `Send`, primitive types, `Sync`, and types composed of them are also `Sync`.
+- `Send`: A type `T` is `Send` if it can be safely transferred to another thread. If an immutable reference `&T` is `Send`, then `T` itself is `Send`.
+
+- `Sync`: A type `T` is `Sync` if it can be safely shared between threads. If `T` is composed of `Sync` types (like primitive types), then `T` is also `Sync`.
+
+- In essence, `Send` means ownership of the type can move between threads.
+- `Sync` means references to the type can be shared between threads.
 
 - Because of the composition rules above, there is no reason to manually implement or mark your own types with either of these traits, unless you're using unsafe Rust code features.
 
