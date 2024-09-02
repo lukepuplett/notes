@@ -22,6 +22,8 @@
 - `cargo check` is like `tsc --noEmit` command, a fast way to check for compilation errors
   
 - `cargo build --release` to build an optimized proper release binary
+
+- Specify command line args after double dash, like this, `cargo run -- arg1 arg2 arg3`
   
 ## Chapter 2 - Programming a Guessing Game
 
