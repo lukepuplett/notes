@@ -39,4 +39,16 @@ https://www.w3.org/TR/did-core/
 
 - Can store the document using different representations so long as they have a known content type and conform to DID RFC, though JSON seems obvious, using `application/did+json`
 
+- The `authentication` property is one of a limited bunch of mappings of RFC-defined verification methods.
+
+- Authentication is for defining how a challenge-response should be handled.
+
+- The `assertionMethod` property defines a verification method for claims.
+
+- The `keyAgreement` property defines a method for key exchange for secure channels.
+
+- The `capabilityInvocation` and `capabilityDelegation` are hard to explain, see RFC.
+
+- Document has "services" which are any kind of relevant linked resources the subject can advertise.
+
 - See examples, here: https://www.w3.org/TR/did-core/#examples
