@@ -26,7 +26,7 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - Tooling like Remix allows a contract to be inspected by its address and it'll make a little GUI with the contract's methods available to execute.
 - Transactions sent by the contract are called "internal transactions" or messages and show differently in block explorers.
 - `mg.sender.transfer(addr);`
-
+- 
 ### Ethereum Clients
 
 - "Remote Client" is a wallet with an API like web3.js
@@ -239,6 +239,7 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - With `delegatecall` the context is preserved so the executing code thinks it's in the context that called it, the `msg.sender` is maintained.
 - `delegatecall`, page 155, is most commonly used to call library code, but if that code is not designed to be a library then you could open a gateway to Hell.
 - Good example of calling other code and the varying values of `tx.origin`, `msg.sender` and `this` for four different ways, on page 157.
+- Basically, when a contract directly calls another contract like `b.doSomething()`, the `msg.sender` becomes the calling contract `a` but when calling a library like `lib.doSomething()` then it instead maintains the `msg.sender` as whatever it was. For low-level `b.call` the `msg.sender` is the caller and `b.deletegatecall` it is maintained.
 
 ### Gas Considerations
 
@@ -264,6 +265,8 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - Vyper has built-in overflow protection and an equivalent SafeMath library.
 
 ### Smart Contract Security
+
+See also https://consensys.github.io/smart-contract-best-practices/development-recommendations/
 
 - **Complexity is the enemy of security**.
 - Aim for as few lines as possible.
@@ -315,6 +318,8 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - Functions are **public by default** which is unusual for a programming language; always, always include access modifiers.
 
 #### Short Address/Parameter Attack
+
+- **Note** - according to ChatGPT, this attack is no longer possible due to changes made to the `solc` compiler and EVM, which is noted in https://github.com/ethereum/solidity/blob/v0.5.0/Changelog.md
 
 - Applications should **never** take user input as verbatim parameter values when submitting transactions.
 - **Always** validate parameters are of the expect type and/or length before accepting, storing or using them in transactions.
@@ -388,7 +393,7 @@ Potentially irrelevant in PoS world, or perhaps this all applies to validators.
 #### Floating Point and Precision
 
 - As of writing Solidity 0.4.24 does not support fixed-point and floating-point numbers, so we use integers which can be troublesome.
-- **Solidity performs math operations in lexical order!**
+- ~Solidity performs math operations in lexical order!~ <- ChatGPT says this is NOT true.
 - Allow for large numerators in fractions.
 - **Consider** converting to higher precision, doing the math, then converting back down to the precision required for output.
 - Typically `uint256` is used as they're optimal for gas usage, which gives 60 orders of magnitude in their range.
@@ -413,5 +418,195 @@ Potentially irrelevant in PoS world, or perhaps this all applies to validators.
 - Can be programmed to serve many different functions, e.g. payment, access right, voting right.
 - Currency, resource earned or produced, asset, access, equity, voting, collectible, identity, attestation, utility.
 - If a token's provenance can be tracked it is not strictly fungible.
-- ERC-777 seeks to usurp ERC-20.
 - Side note: it looks like DELEGATECALL passes through the original `msg.sender` and so it appears if a caller has not checked the code of the contract it's calling, then it could delegate a call to transfer??
+- ERC-223 attempts to solve the problem of inadvertent transfer of tokens to a contract (that may or may not support tokens) by detecting whether the destination address is a contract or not. The idea is controversial at the time of book author.
+
+#### ERC-777
+  
+- ERC-777 seeks to usurp ERC-20 but compatible with it. Page 245.
+- Send function "similar to ether transfers".
+- Compatible with ERC-820 for token contract registrations.
+- `tokensToSend(...)` controls which tokens a contract or EOA can send (called before).
+- Lets contracts and EOAs get notified of tokens receipt via a `tokensReceived` callback. This also prevents tokens from getting locked into contracts by requiring contracts to provide the callback.
+- Allows existing contracts to use "proxy contracts" for the `tokensToSend()` and `tokensReceived()`.
+- To operate in the same way regardless of sending to a contract or an EOA.
+- Events for minting and burning.
+- To enable operators (trusted 3rd parties, intended to be verified contracts) to move tokens on behalf of a token holder.
+- Provides metadata on transfer in `userData` and `operatorData` fields.
+- Compatible with ERC-1820 registry.
+- ERC-777 seems to use interface segregation principle and comprises several interface definitions.
+
+##### ERC-777 Hooks
+
+`function tokensToSend(address operator, address from, address to, uint value, bytes userData, bytes operatorData) public`
+
+- Any address wishing to be notified of, to handle, or prevent the debit of tokens must implement this interface and its address must be registered via ERC1820.
+
+`function tokensReceived(address operator, address from, address to, uint value, bytes userData, bytes operatorData) public`
+
+- Any address wishing to be notified of, to handle, or to reject the receipt of tokens must implemenent this interface.
+- Recipient contracts MUST be registered and MUST implement this interface, else they cannot receive tokens, which prevents tokens being locked at the contract address.
+- Only a single "handler" contract can be registered per "send" and "recieve" but logic in this contract can determine the token by its address, as well as use the from and to for its logic.
+- Security by maturity/battle-tested: use OpenZeppelin implementations and resist the urge to customise or extend. Every line of code increases its attack surface.
+  
+**Note** - Page 247 discusses ERC-721 NFT "deed" contracts which I've skipped because they're so well known.
+
+### Oracles
+
+- Chapter 11, Page 253
+- Ideally trustless.
+- EVM execution must be totally deterministic and that means there's no intrinsic source of randomness; extrinsic data can only be introduced as the data payload of a transaction.
+- Bridge between offchain and blockchain worlds.
+- Many data sources are actually attestations. (note 2023 Ethereum Attestation Service)
+- All oracles provide a few key functions:
+ - Collect data from an offchain source.
+ - Transfer the data on-chain with a signed message.
+ - Make the data available by putting it in a contract's storage.
+- Three main ways to setup an oracle:
+ - Request/response
+ - Pub/sub
+ - Immediate-read
+- Immediate-read is simply "is this person 18?". The books mentions "direct lookup" but it's not clear, page 256.
+- Can store data in a Merkle hash tree with a salt to maintain privacy or just a hash of the data.
+- Pub/sub is where an oracle is regularly polled by a smart contract on-chain or watched by an off-chain daemon for updates.
+- This pattern is similar to RSS feeds. A flag signals new data is available and subscribers must poll or listen for updates to oracle contracts.
+- Polling on-chain is via a local Ethereum client which is automatically synched.
+- Polling from a smart contract incurs significant gas fees.
+- Page 257, request/response, is most complicated.
+- Data space too big for smart contract storage, users only expected to need small part of full set at any time.
+- Might be implemented as a system of smart contracts an off-chain infrastructure.
+- EOA interacts with a dapp resulting in an interaction with a fnuction defined in the oracle contract.... too complicated to translate into notes here, see page 257.
+- I think the idea is to have the oracle contract emit the data request details in an event and then the actual query is performed off-chain as some kind of record that its happened or perhaps as an elaborate way for a blockchain dapp to communicate with off chain code, e.g. via events.
+- The query executor code then directly delivers the resultant data back to the requestor dapp with a callback function transaction.
+
+#### Data Authentication
+
+- Authenticity Proofs and Trusted Execution Environments (TEE)
+- Authenticity Proofs are e.g. digitally signed; author discusses "TLS Notary" and a very complex process to prove that HTTPS traffic actually occurred.
+- The discusses how TEE is really just the secure enclave tech on some newer CPUs which can attest that a process was running on on an Intel SGX processor.
+
+#### Computation Oracles
+
+- Oracles could run very expensive computations off-chain where gas would be extraordinary.
+- Page 260 describes "not truly decentralized" system which is very elaborate: a Google Cloud Run instance starts a Docker instance from a hosted container so you could have a dapp specify the container, cloud and environment vars to parse and have its output returned to the dapp via a callback!!
+- Page 260 describes "Criplets" as part of Microsoft's ESC Framework.
+- Explains "TrueBit" which seems to be a "proper" solution using Ethereum somehow.
+- Page 261 describes ChainLink. Consists of a reputation contract, an order matching contract and an aggregation contract. The reputation contract keeps track of the data provider's performance... it gets complicated and I'm not sure it's worth taking notes.
+- Page 262 describes Shelling Coin which redistributes a deposit based on how similar your submission is to consensus. Seems like a way to incentivize groupthink to me.
+- Describes another design idea by Jason Teutsch that uses another blockchain and miners.
+- Page 262 describes/shows some oracle client Solidity contract interfaces:
+
+### Decentralized Applications
+
+- Decentralizing the rest of an app (logic, plus) storage, messaging, naming etc.
+- Composability of contracts seems a key idea. I think of Ethereum as a distributed .NET Framework where the EVM is the runtime and the contracts are the framework classes.
+- Frontend is the same as the web; HTML, CSS, JS
+- Mobile is possible in theory, but lack of mobile "wallet-cum-light-clients". Usually web3.js links web frontend to Ethereum network.
+- **Note** - Helios https://github.com/a16z/helios could change this.
+- Decentralized storage is ideal for images, videos and HTML, CSS, JS of frontend.
+- IPFS is "content-addressable" system meaning the content hash becomes the file ID. IPFS aims to replace HTTP!?
+- Swarm, similar to IPFS, created as part of Go Ethereum. It's own homepage is stored on Swarm, accessible on "your Swarm node or gateway: https://... page 271.
+- Whisper solves for P2P/interprocess communications. Also part of Go Ethereum suite.
+- **Note** - Whisper is dead. Long live Waku!
+- Final part is name resolution, ENS.
+- Page 273, begins intro of an Auction (NFT) Dapp with code in the book's GitHub repo.
+- Important point is the contracts have no special privileged user address or logic.
+- Only the auction owner has some extra rights over their auction.
+- One the one hand, privileged accounts are dangerous but they offer sometimes necessary controls, esp. to mitigate bugs. Also, these accounts can be stolen.
+- **Note** - I suspect the privileged account account could be another contract which itself calls the manager funcitons only if 5 EOAs have signed a nonce, or have each called their own dedicated step function.
+- The demo app runs on a local HTTP server but needs access to an Ethereum node with JSON-RPC and websockets open. The frontend config then needs configuring with the deployed contract addresses. Once deployed, the auction app cannot ever be stopped or controlled. The assets (img etc.) are stored on Swarm.
+- Anyone can interact by direct transaction or by running the website on their machine/node.
+- The dapp code is on GitHub; now, can store this code on Swarm/IPFS and access the dapp by Ethereum Name Service.
+- The whole dapp can be stored on Swarm and "hosted" from a Swarm node, part of Go Ethereum; point it at Geth for its JSON-RPC API, then open http://localhost:8500 to see a simple web UI to lookup a file by hash or its ENS name.
+- A dapp web frontend will require its relative URLs etc. to be rewritten, so it needs packaging (the demo script on page 280 show `.map` sibling files which I assume are for restoring the folder structure).
+- The final Swarm URL is bzz://abl64cf and that's shit so ENS comes to the rescue.
+- ENS is itself a dapp specified formally in EIP 137, 162 and 181. It follows a "sandwich" design; simple bottom layer, the layers of complex "replaceable" code, then a simple top layer that "keeps all the funds in separate accounts".
+
+##### Bottom Layer: Name Owners and Resolvers
+
+- ENS operates on nodes; human readable names convert to nodes using the Namehash algorithm.
+- Base layer contracts let node owners set information and create sub nodes: set resolver, TTL, transfer owner and create owners of subnodes.
+- Namehash just recursively hashes from the root 0x0 then eth > domain > subdomain etc. `keccak(<root node>) + keccak('eth')` and so on.
+- A simple Python implementation is printed on page 283. Due to name normalization THIS has the same hash as this. Use names compatible with old DNS; 64 characters per label where full name < 255.
+- Root node owner is 4 of 7 multisig for TLD creation.
+- Resolvers are contracts that can ensure queries like what Swarm address is the entrypoint for a dapp, what address receives payments to the dapp, or what the hash of the app is (for verifying its integrity).
+
+##### Middle Layer: The .eth Nodes
+
+- Upgradable, .eth domain distributed via a Vickrey Auction (sealed-bids revealed together but winner pays second-highest-price).
+- System is actually quite complex because its taking place on a public blockchain, all explained on page 285.
+
+##### Top Layer: The Deeds
+
+- Simple top contract holds the funds, your bid just gets locked for at least 1 year. Like a buyback. ENS makes a new deed contract for every new name so as to reduce/spread risk of attack/bugs. Manage/add subdomains via https://manager.ens.domains
+- Resolving a name: call the ENS registry with the hash and you'll get an address back of its resolver contract. There a default public resolver for convenience. It supports resolving wallet address, Swarm hash etc.
+- Once the default resolver is configured with the Swarm hash of our demo dapp, "set Content" page 294, you can visit:
+```
+https://swarm.gateways.net/bzz:/auction.ethereumbook.eth
+```
+### The Ethereum Virtual Machine
+
+- Deployment and execution of smart contracts.
+- EOA-to-EOA transfers of ETH don't touch the EVM.
+- Stack based, Turing complete, 256-bit word size for native hashing with several addressable data components.
+- Immutable program code ROM, loaded with contract byte code.
+- Volatile memory with every location initialized to zero.
+- Permanent storage, also zero initialized.
+- Also a set of environment variables and data available during execution.
+- EVM is like JVM; OS agnostic but is single-threaded, order of execution is determined by blocks ordered by miners.
+- Instruction set (bytecode ops) exist for arithmetic and bitwise logic, execution context inquiries, stack, memory and storage access, control flow, logging, calling etc.
+- EVM also has access to account information, e.g. address and balance, block information, block number/height, current gas price.
+- World state comprises: 160bit addresses-to-accounts-map, balance in Wei, incrementing nonce; count of transactions successfully sent (if an EOA) or count of contracts created (if a contract account), the account's permanent storage only used by contract and the account's program code (if a contract). EOAs have no code and empty storage.
+- Contract execution runs in a sandboxed copy of the world state which can be completely discarded or have any changes written back/logged upon success with the gas cost going to the block beneficiary (coinbase?)
+- Page 304 details this.
+- Each sub call to a contract runs in a fresh EVM.
+
+#### Compiling Solidity to EVM Bytecode
+
+```
+$ solc -o BytecodeDir --opcodes Example.sol // write opcode file
+$ solc -o BytecodeDir --asm Example.sol     // write higher-level annotated code to example.evm
+$ solc -o BytecodeDir --bin Example.sol           // machine-readable hex of deployment bytecode
+$ solc -o BytecodeDir --bin-runtime Example.sol   // hex of just runtime bytecode
+```
+The file `example.opcode` may look something like this:
+
+```
+PUSH1 0x60 PUSH1 0x40 MSTORE CALLVALUE ISZERO PUSH1 0xE ...
+```
+- Page 300 details all the opcodes and page 307 explains what a real contract's opcodes are doing.
+
+#### Contract Deployment Code
+
+- For contract creation, the code for the new contract account is _not_ the code in the `data` field of the transacton. It's confusing but I think it's saying this is instead the deployment code, which then outputs the runtime code.
+- `solc` can output the deployment bytecode (which sort of includes the runtime bytecode) or just the runtime bytecode.
+
+#### Disassembling the Bytecode
+
+- Porosity, https://github.com/comaeio/porosity
+- Ethersplay, plug-in for Binary Ninja, https://github.com/trailofbits/ethersplay
+- IDA-Evm, plug-in for IDA, https://github.com/trailofbits/ida-evm
+- Transaction first interacts with smart contract's dispatcher which reads the `data` field and sends the relevant part to the appropriate function.
+- Further low level inspection on page 310.
+
+#### Gas
+
+- Gas is its own currency, purchased with ETH, which prevents infinite loops and rewards worker nodes.
+- Each opcode has a list price, e.g. sending a transaction costs 21,000 gas.
+- EVM is instantiated with the gas limit in the transaction and before each op, it checks there's enough gas.
+- `miner fee = gas consumed * gas price willing to pay in transaction`
+- Remaining is refunded as ETH based on price set in transaction.
+- Sender is charged for consumption up until the point of out-of-gas exception.
+- They use gas "cost" to mean consumption and "price" to mean a gas unit in ETH.
+- Nodes incentivized to include pending transactions based on their gas value.
+- Some opcodes have a negative cost so as to incentivize their use (freeing resources).
+
+##### Block Gas Limit
+
+- Max gas that can be consumed by all trans in a block to constrain total trans per block.
+- Time of book this is 8 million ~ 380 empty transactions at 21,000 each.
+- Miners can vote to adjust the limit by 0.0976% either way.
+
+### Consensus
+
+- Skipped because of move to PoS.
