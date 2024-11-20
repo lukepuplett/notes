@@ -1,10 +1,12 @@
-Part 1
+# ERC-4337 Account Abstraction - Alchemy Blog Notes
+
+## Part 1
 
 https://www.alchemy.com/blog/account-abstraction
 
 The following notes seem incredibly hard to follow. I think all the blog posts on the topic are bad and that's reflected here. Read my notes on EIP 4337 instead.
 
-Smart Contract Wallet
+### Smart Contract Wallet
 
 - Each person wanting to, e.g. use multiple signatories to transfer an asset, must have their own Smart Contract Wallet on the blockchain.
 
@@ -58,6 +60,7 @@ Smart Contract Wallet
 
 Not sure if these are the exact official interfaces.
 
+```
 contract SCW {
     function validateOp(UserOperation op, uint256 requiredPayment);
     function executeOp(UserOperation op);
@@ -94,7 +97,7 @@ contract EntryPoint {
 - Bundlers and block builders might merge into the same role.
 
 
-Part 2
+## Part 2
 
 https://www.alchemy.com/blog/account-abstraction-paymasters
 
@@ -104,9 +107,11 @@ https://www.alchemy.com/blog/account-abstraction-paymasters
 
 - A paymaster is a type of contract that sees if it wants to pay for a user's op and looks something like this:
 
+```
 contract Paymaster {
     function validatePaymasterOp(UserOperation op);
 }
+```
 
 - When a SCW submits an op is indicates which paymaster (if any) will pay gas: a new field on UserOperation struct can do this, and a new bytes field to pass arbitrary helpful data to the paymaster like "pleeeeease pay".
 
@@ -124,12 +129,14 @@ contract Paymaster {
 
 - To prevent paymasters just creating many instances of itself (a Sybil attack) the paymaster must stake ETH.
 
+```
 contract EntryPoint {
     // ..
     function addStake() payable;
     function unclockStake();
     function withdrawStake(address payable destination);
 }
+```
 
 - Stake cannot be removed until some time after calling entrypoint.unlockStake()
 
@@ -143,10 +150,12 @@ contract EntryPoint {
 
 - The paymaster needs a new method paymaster.postOp() which is a callback which is used to tell it how much gas was used so it can do stuff like pull down USDC.
 
+```
 contract Paymaster {
     function validatePaymasterOp(UserOperation) returns (bytes context);
     function postOp(bool hasAlreadyReverted, bytes context, uint256 actualGasCost);
 }
+```
 
 - Presumably the paymaster checked the user had enough USDC before it validated the op, but if the op gives away all its USDC during execution, the paymaster can't then extract payment at the end.
 
@@ -156,11 +165,13 @@ contract Paymaster {
 
 - If so, the entrypoint calls paymaster.postOp() once more and because we've undone whatever occurred in the execution the paymaster can extract its dues, hence the hasAlreadyReverted parameter.
 
+```
 struct UserOperation {
     // ..
     address paymaster;
     bytes paymasterData;
 }
+```
 
 - The paymasters deposit ETH into the entrypoint just as a SCW paying its own way would.
 
@@ -168,17 +179,19 @@ struct UserOperation {
 
 - Due to problems with simulating paymaster validation, paymasters must also stake ETH.
 
+```
 contract Paymaster {
     // ..
     function addStake() payable;
     function unlockStake();
     function withdrawStake(address payable destination);
 }
+```
 
 - Most of the above makes up ERC-4337 Account Abstraction, but not quite.
 
 
-Part 3
+## Part 3
 
 https://www.alchemy.com/blog/account-abstraction-wallet-creation
 
@@ -208,17 +221,21 @@ https://www.alchemy.com/blog/account-abstraction-wallet-creation
 
 - Different factories can make different types of SCW, like multi-sig or whatever.
 
+```
 contract Factory {
     function deployContract(bytes data) returns (address);
 }
+```
 
 - Users can simulate the call and get the actual address so they can fund it before calling it for real.
 
+```
 struct UserOperation {
     // ..
     address factory;
     bytes factoryData;
 }
+```
 
 - Factories are obviously shared singletons, audited, and the paymaster can choose to pay for deployments for certain factories.
 
@@ -228,7 +245,7 @@ struct UserOperation {
 
 - This is the entirety of ERC-4337.
 
-Part 4
+## Part 4
 
 https://www.alchemy.com/blog/account-abstraction-aggregate-signatures
 
