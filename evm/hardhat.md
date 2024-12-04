@@ -87,4 +87,29 @@ const [owner, otherAccount] = await hre.ethers.getSigners();
  - Reporting gas `REPORT_GAS=true npx hardhat test`
  - Can run in parallel but can cause issues, see docs.
 
- 
+# Deploying Contracts
+
+ - Declarative JS **Hardhat Ignition** as we know.
+
+```js
+  const lock = m.contract("Lock", [unlockTime], {
+    value: lockedAmount,
+  });
+```
+
+ - I think the object passed in `{ value: x }` is setting fields on the raw transaction.
+ - Remember to start the network, first: `npx hardhat node`
+
+```bash
+npx hardhat ignition deploy ./ignition/modules/Lock.ts --network localhost
+```
+
+ - That's it.
+
+# Verifying Contracts
+
+ - To **Verify** a contract means to publish its source code and compiler settings.
+ - This is sent to Etherscan so people can create the same exact bytecode.
+ - Need an API key from Etherscan to store as a **configuration variable**.
+ - Store this using `npx hardhat vars set ETHERSCAN_API_KEY` which prompts for the value.
+ - 
