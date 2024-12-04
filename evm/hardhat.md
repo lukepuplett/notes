@@ -38,3 +38,53 @@
  - Run `npx hardhat ignition deploy [path] --network localhost` to deploy to it (not sure if that network name must be in `hardhat.config.ts`).
  - Can run `npx hardhat node --hostname 0.0.0.0 --port 8545` to expose to public IPs.
 
+## Config
+
+ - The config is just TypeScript which is executed before any task, so can do other setup.
+ - `hardhat.config.ts` has various sections all detailed in the official docs.
+ - Networks are JSON-RPC services and can be configured with `url`, `chainId`, `from` (`msg.sender` address, else first account of node), `gas`, `gasPrice`, `gasMultiplier`, `accounts` (it can use "the node's accounts"?!), `httpHeaders`, `timeout`.
+ - The default EVM version is determined by the Solidity version but can override.
+
+## Testing
+
+ - Uses ethers.js to connect to Hardhart Network, and on Mocha and Chai for the tests.
+ - Not going to repeat everything that's in the HH docs.
+ - May need to pull in helpers for reading from the HH network, blockchain:
+
+ ```js
+ import { time } from "@nomicfoundation/hardhat-toolbox/network-helpers";
+ ```
+
+ - `time.latest()` returns the timestamp of the last mined block.
+ - To deploy, use normal `ethers.deployContract` passing an object with transaction params.
+ - The contract instance is returned which has methods which can be called to check stuff.
+
+ ```js
+ expect(await myContract.someGetter()).to.equal(someValue);
+ ```
+
+ - The following code shows how to test a function reverts:
+
+ ```js
+ it("Should revert with the right error if called too soon", async function () {
+  // ...deploy the contract as before...
+  await expect(lock.withdraw()).to.be.revertedWith("You can't withdraw yet");
+});
+```
+
+**Note** - In the above, the whole expect is awaited because "it has to wait until the transaction is mined." The second mutating function needs a transaction to be executed while the first is just a simple "call".
+
+ - You can alter the global state of the network, e.g. the block time, `await time.increaseTo(unlockTime);`.
+ - Since we're just using ethers.js then you can get other signers for testing stuff with.
+
+```js
+const [owner, otherAccount] = await hre.ethers.getSigners();
+```
+
+ - Import `loadFixture` and use that in each test to reset and rerun setup needed.
+ - You can test which events are emitted, too: https://hardhat.org/hardhat-chai-matchers/docs/reference#.emit
+ - Coverage is done via command line, `npx hardhat coverage`
+ - Reporting gas `REPORT_GAS=true npx hardhat test`
+ - Can run in parallel but can cause issues, see docs.
+
+ 
