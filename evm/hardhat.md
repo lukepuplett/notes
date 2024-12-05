@@ -44,6 +44,11 @@
  - `hardhat.config.ts` has various sections all detailed in the official docs.
  - Networks are JSON-RPC services and can be configured with `url`, `chainId`, `from` (`msg.sender` address, else first account of node), `gas`, `gasPrice`, `gasMultiplier`, `accounts` (it can use "the node's accounts"?!), `httpHeaders`, `timeout`.
  - The default EVM version is determined by the Solidity version but can override.
+ - Because it's just JavaScript, you can read environment vars and use packages.
+
+ ```js
+ const ETHERSCAN_API_KEY = vars.get("ETHERSCAN_API_KEY");
+ ```
 
 ## Testing
 
@@ -112,4 +117,54 @@ npx hardhat ignition deploy ./ignition/modules/Lock.ts --network localhost
  - This is sent to Etherscan so people can create the same exact bytecode.
  - Need an API key from Etherscan to store as a **configuration variable**.
  - Store this using `npx hardhat vars set ETHERSCAN_API_KEY` which prompts for the value.
- - 
+ - Sepolia is the main dev-test network, and will need a JSON-RPC proxy like Alchemy, or own node.
+ - Need to send some Sepolia ether to address making the deployment; get this from a faucet.
+
+**Note** - I'm not sure what that means, the "address making the deployment".
+
+ - The sample code in the docs is already verified so it'll error, so you need to add something unique, like a comment, to the code.
+ - Run this:
+
+```bash
+npx hardhat ignition deploy ignition/modules/Lock.ts --network sepolia --deployment-id sepolia-deployment
+```
+
+ - The `--deployment-id` flag is optional way to name the deployment to refer to later.
+ - To verify the contract, run:
+
+```bash
+npx hardhat ignition verify sepolia-deployment
+```
+
+ - This does both, combined:
+
+```bash
+npx hardhat ignition deploy ignition/modules/Lock.ts --network sepolia --verify
+```
+
+ - If you see an error that the address has no bytecode, it usually means Etherscan has not indexed it yet.
+
+# Writing Tasks
+
+ - Hardhat is a task runner with built-in `compile` and `test`.
+ - You can author your own custom tasks.
+ - The following is a custom task sample which should go in your hardhat config file:
+
+```js
+task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
+  const accounts = await hre.ethers.getSigners();
+
+  for (const account of accounts) {
+    console.log(account.address);
+  }
+});
+```
+
+ - And you can run it with:
+
+```bash
+npx hardhat accounts
+```
+
+ - The `hre` object is the Hardhat Runtime Environment, and its properties are all injected into the global namespace, too.
+ - You can do anything you want in the task function.
