@@ -111,7 +111,7 @@ npx hardhat ignition deploy ./ignition/modules/Lock.ts --network localhost
 
  - That's it.
 
-# Verifying Contracts
+## Verifying Contracts
 
  - To **Verify** a contract means to publish its source code and compiler settings.
  - This is sent to Etherscan so people can create the same exact bytecode.
@@ -144,7 +144,7 @@ npx hardhat ignition deploy ignition/modules/Lock.ts --network sepolia --verify
 
  - If you see an error that the address has no bytecode, it usually means Etherscan has not indexed it yet.
 
-# Writing Tasks
+## Writing Tasks
 
  - Hardhat is a task runner with built-in `compile` and `test`.
  - You can author your own custom tasks.
