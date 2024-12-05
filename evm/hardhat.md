@@ -92,7 +92,7 @@ const [owner, otherAccount] = await hre.ethers.getSigners();
  - Reporting gas `REPORT_GAS=true npx hardhat test`
  - Can run in parallel but can cause issues, see docs.
 
-# Deploying Contracts
+## Deploying Contracts
 
  - Declarative JS **Hardhat Ignition** as we know.
 
