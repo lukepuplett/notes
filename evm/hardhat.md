@@ -13,7 +13,16 @@
  - Make a new folder and `npm init` then `npm install --save-dev hardhat`.
  - Use `npx` to run `npx hardhat init`.
  - They recommend using TypeScript and WSL for Windows.
+ - To manually setup TypeScript stuff in your project, like so:
+
+ ```bash
+ npm install --save-dev ts-node typescript
+ npm install --save-dev chai@4 @types/node @types/mocha @types/chai@4
+```
+
  - `npx hardhat` provides usage docs.
+
+**Note** - Hardhat won't auto type check when any tasks are run, so you'll need to use `--typecheck` for that.
 
 ## Project Setup
 
@@ -47,11 +56,23 @@
  - Because it's just JavaScript, you can read environment vars and use packages.
 
  ```js
- const ETHERSCAN_API_KEY = vars.get("ETHERSCAN_API_KEY");
+ const { vars } = require("hardhat/config");
+ const ETHERSCAN_API_KEY = vars.get("ETHERSCAN_API_KEY", "fallback");
  ```
+
+  - I think this is using Hardhat's own config vars feature, which is stored in plaintext on the local disk.
+  - Run `npx hardhat vars path` to find the path.
+  - There's also `set`, `get`, `list`, `delete` and `setup` which shows all those in use and needing values.
+  - Does not recommend using popular **dotenv** due to risk of accidental `.env` file upload.
+  Local environment vars override configuration vars, so this works:
+
+```bash
+HARDHAT_VAR_MY_KEY=123 npx hardhat some-task
+```
 
 ## Testing
 
+ - Run them all with `npx hardhat test` and maybe add  `--typecheck`.
  - Uses ethers.js to connect to Hardhart Network, and on Mocha and Chai for the tests.
  - Not going to repeat everything that's in the HH docs.
  - May need to pull in helpers for reading from the HH network, blockchain:
@@ -166,5 +187,17 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 npx hardhat accounts
 ```
 
- - The `hre` object is the Hardhat Runtime Environment, and its properties are all injected into the global namespace, too.
+ - The `hre` object is the Hardhat Runtime Environment, and its properties are all injected into the global namespace, too, maybe...
+
+**Note** - It also says "When using TypeScript nothing will be available in the global scope and you will need to import everything explicitly using" in another part of the docs.
+
+ - TypeScript users need `import { ethers } from "hardhat"` to import stuff into the global scope.
  - You can do anything you want in the task function.
+
+**Note** - Hardhat won't auto type check when any tasks are run, so you'll need to use `--typecheck` for that.
+
+## Using TypeScript
+
+ - For Hardhat to generate types for your contracts, install and use `@typechain/hardhat` which generates typing files (*.d.ts) based on ABIs.
+ - But if you installed `@nomicfoundation/hardhat-toolbox` you don't need typechain.
+ - See this for TS path mapping: https://hardhat.org/hardhat-runner/docs/guides/typescript#support-for-path-mappings
