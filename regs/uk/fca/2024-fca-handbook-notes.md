@@ -7779,4 +7779,45 @@ For this reason, I will skip MIFIDPRU and come back to it later if I need to, ke
 
 Skipped. See important author's note above.
 
-##
+# MIPRU
+
+Skipped. This is for Mortgage and Home Finance firms.
+
+# IPRU-FSOC
+
+
+
+-
+
+Notes on which sections to expand:
+
+Sourcebooks That Might Apply (Depending on Structure) 
+
+1. COLL – Collective Investment Schemes
+
+  - If your platform structures invoice tokenization as a collective investment scheme (CIS)—where investors pool funds to buy invoice-backed tokens—this sourcebook could apply.
+  - If tokens represent a fund structure rather than individual claims, FCA could classify the platform under CIS rules.
+  - Key impact: Would require FCA authorization and compliance with fund management regulations.
+
+2. CONC – Consumer Credit Sourcebook
+
+  - If your platform provides credit or financing to businesses or consumers, it could fall under consumer credit regulation.
+  - If invoices are sold with recourse or structured as lending, FCA may classify the platform as a credit provider.
+  - Key impact: Would require FCA authorization as a consumer credit firm, triggering FSCS, FOS, and regulatory compliance requirements.
+
+3. SECN – Securitisation Sourcebook
+
+  - If your platform packages invoices into tradeable securities (rather than just selling them individually), it may fall under securitization regulations.
+  - If invoice-backed tokens function similarly to asset-backed securities (ABS), this sourcebook might apply.
+  - Key impact: Would require compliance with transparency, risk retention, and investor protection rules.
+
+4. CTPS – Critical Third Parties Sourcebook
+
+  - If your platform becomes systemically important for financial services firms (e.g., widely used for liquidity solutions), the FCA might classify it as a Critical Third Party (CTP).
+  - Key impact: May require resilience, security, and governance compliance.
+
+5. FUND – Investment Funds Sourcebook
+
+  - If invoices are structured into a fund-like vehicle where investors pool capital, investment fund regulations could apply.
+  - This is similar to COLL but applies more broadly to alternative investment funds (AIFs).
+  - Key impact: FCA AIFM registration could be required if managing assets for investors.
