@@ -7799,33 +7799,33 @@ Skipped. This is for investment firms.
 
 Many, if not all, of these sections are "sourcebooks", though they are separate from the "specialist sourcebooks" section. Many of these will not apply.
 
-## COBS Conduct of Business Sourcebook
+# COBS Conduct of Business Sourcebook
 
 Skipped. Irrelevent for now. Applies to designated investment business, and long-term insurance business.
 
-## ICOBS Insurance: Conduct of Business sourcebook
+# ICOBS Insurance: Conduct of Business sourcebook
 
 Skipped. Irrelevent for now.
 
-## MCOB Mortgages and Home Finance: Conduct of Business sourcebook
+# MCOB Mortgages and Home Finance: Conduct of Business sourcebook
 
 Skipped. Irrelevent for now.
 
-## BCOBS Banking: Conduct of Business sourcebook
+# BCOBS Banking: Conduct of Business sourcebook
 
-## CMCOB Claims Management: Conduct of Business sourcebook
-
-Skipped. Irrelevent for now.
-
-## FPCOB Funeral Plan: Conduct of Business sourcebook
+# CMCOB Claims Management: Conduct of Business sourcebook
 
 Skipped. Irrelevent for now.
 
-## PDCOB Pensions Dashboards: Conduct of Business sourcebook
+# FPCOB Funeral Plan: Conduct of Business sourcebook
+
+Skipped. Irrelevent for now.
+
+# PDCOB Pensions Dashboards: Conduct of Business sourcebook
 
 Expand +CASS Client Assets
 
-## MAR Market Conduct
+# MAR Market Conduct
 
 ## MAR 1.1 Application and interpretation
 
@@ -8485,8 +8485,660 @@ Essentially, an OTF is a regulated venue that allows for more flexible, less str
 - **Tick size:** The minimum price movement of a trading instrument.
 - **FCA (Financial Conduct Authority):** The UK financial regulatory body.
 
+## MAR 5AA Multilateral systems
 
--
+## MAR 5AA.1 Operation of a multilateral system as an MTF or OTF
+
+- **Requirement for Firms Operating a Multilateral System**
+
+  - <mark>If a firm runs a multilateral system from a location in the UK, it must operate it as either a multilateral trading facility (MTF) or an organised trading facility (OTF).</mark>
+
+- **Guidance on Multilateral Systems**
+
+  - According to our perspective, a system that only collects, combines, and shares indications of interest, bids, offers, or prices should not be classified as a multilateral system. For example, a bulletin board is not considered a multilateral system because there is no interaction between different trading interests within these facilities. However, running such a facility might still be considered as making arrangements for transactions in investments (refer to PERG 2.7.7BG).
+
+---
+
+### Definitions
+
+- **Multilateral Trading Facility (MTF):** A multilateral system operated by an investment firm or a market operator, which brings together multiple third-party buying and selling interests in financial instruments.
+- **Organised Trading Facility (OTF):** A multilateral system that is not an MTF or a regulated market and in which multiple third-party buying and selling interests in bonds, structured finance products, emission allowances or derivatives are able to interact in the system in a way that results in a contract.
+- **Bulletin Board:** A system that merely receives, pools, aggregates, and broadcasts indications of interest, bids, offers, or prices without facilitating interaction between trading interests.
+
+## MAR 6 Systematic internalisers
+
+Skipping for now.
+
+**Author's Note** - This section is about firms that deal on their own account by executing client orders outside a regulated market or MTF.
+
+## MAR 7
+
+Deleted
+
+## MAR 7A Algorithmic trading
+
+## MAR 7A.1 Application
+
+- **Who?**
+
+  - This chapter applies to:
+    - <mark>A UK MiFID investment firm.</mark>
+    - A third country investment firm with an establishment in the United Kingdom.
+
+- **What?**
+
+  - This chapter applies to a firm in relation to the following activities:
+    - <mark>Algorithmic trading (MAR 7A.3).</mark>
+    - <mark>Providing the service of Direct Electronic Access (DEA) to a trading venue (MAR 7A.4).</mark>
+    - <mark>Acting as a general clearing member for another person (MAR 7A.5).</mark>
+
+  - Note: <mark>This chapter implements article 17 of MiFID for the types of firms mentioned. Part 4 of the MiFI Regulations sets out equivalent requirements for persons exempt under certain articles of MiFID, who must comply with article 17(1) to (6) of MiFID due to article 1(5) of MiFID.</mark>
+
+- **Status of EU provisions as rules in certain instances**
+
+  - GEN 2.2.22AR ensures that a third country investment firm is not treated more favorably than an EEA firm.
+
+## MAR 7A.2 Purpose
+
+- The purpose of this chapter is to implement article 17 of MiFID, which imposes requirements on <mark>investment firms</mark> that are:
+  - Engaging in algorithmic trading.
+  - <mark>Providing the service of DEA to a trading venue.</mark>
+  - <mark>Acting as a general clearing member for another person.</mark>
+
+  - Note: Related requirements under article 48 of MiFID for trading venues, regarding members and participants engaging in algorithmic trading and providing DEA, are transposed in REC 2, MAR 5, and MAR 5A.
+
+## MAR 7A.3 Requirements for algorithmic trading
+
+- **Application**
+
+  - This section applies to a firm engaging in algorithmic trading.
+
+**Author's Note** - <mark>This section is about firms that use computer algorithms to execute orders. It is not clear whether this applies to the marketplace operator or the users of the marketplace doing the trading.</mark>
+
+- **Systems and controls**
+
+  - A firm must have effective systems and controls to ensure its trading systems:
+    - Are resilient and have sufficient capacity.
+    - Are subject to appropriate trading thresholds and limits.
+    - Prevent erroneous orders or disorderly market conditions.
+    - Cannot be used contrary to the Market Abuse Regulation or trading venue rules.
+
+  - <mark>A firm must have business continuity arrangements and ensure systems are tested and monitored.</mark>
+
+- **Market making**
+
+**Author's Note** - <mark>This section is about firms that provide liquidity to a trading venue, not the marketplace operator.</mark>
+
+  - A firm using algorithmic trading for market making must:
+    - Provide liquidity continuously during specified trading hours.
+    - Have a written agreement with the trading venue specifying requirements.
+    - Have systems and controls to meet agreement obligations.
+
+  - The firm must consider market liquidity, scale, and instrument characteristics.
+
+- **Notifications**
+
+  - A firm must notify the FCA immediately if engaging in algorithmic trading in the UK or an EEA State.
+
+  - A firm must provide, upon FCA request, details of its algorithmic trading strategies, systems, and controls.
+
+- **Record keeping**
+
+  - A firm must keep records to meet notification requirements and, if using high-frequency trading, store accurate records of all orders.
+
+## MAR 7A.4 Requirements when providing direct electronic access
+
+- **Application**
+
+  - <mark>This section applies to a firm providing DEA services to a trading venue.</mark>
+
+- **Systems and controls**
+
+  - A firm must have systems and controls to:
+    - <mark>Assess and review client suitability.</mark>
+    - <mark>Prevent clients from exceeding trading and credit thresholds.</mark>
+    - <mark>Prevent trading that risks the firm, creates disorderly markets, or violates regulations.</mark>
+
+- **Client dealings**
+
+  - A firm must monitor client transactions for rule infringements, disorderly conditions, or market abuse.
+
+  - A firm must have a written agreement with each client detailing rights, obligations, and compliance responsibilities.
+
+- **Notifications**
+
+  - A firm must notify the FCA immediately if providing DEA services.
+
+  - A firm must provide, upon FCA request, descriptions and evidence of its systems and controls.
+
+- **Record keeping**
+
+  - A firm must keep records related to its systems and controls and to meet FCA requests.
+
+## MAR 7A.5 Requirements when acting as a general clearing member
+
+- **Application**
+
+  - This section applies to a firm acting as a general clearing member.
+
+**Author's Note** - <mark>This section is about firms that provide clearing services to other firms, GCMs. Smart contracts on blockchains generally do not require clearing because they are self-settled.</mark>
+
+- **Requirements**
+
+  - A firm must:
+    - Have clear suitability criteria for clients.
+    - Apply these criteria.
+    - Impose requirements to reduce risks to the firm and market.
+    - Have a written agreement with clients detailing rights and obligations.
+
+---
+
+### Definitions
+
+- **UK MiFID investment firm**: A firm authorized in the UK to provide investment services under the Markets in Financial Instruments Directive (MiFID).
+- **Third country investment firm**: A firm from outside the European Economic Area (EEA) that provides investment services in the UK.
+- **Algorithmic trading**: Trading in financial instruments where a computer algorithm automatically determines individual parameters of orders.
+- **Direct Electronic Access (DEA)**: A service that allows a client to access a trading venue directly using the firm's trading code.
+- **General clearing member**: A firm that provides clearing services to other firms, ensuring the settlement of trades.
+
+## MAR 8 Benchmarks
+
+A benchmark is a standardized reference point or measure used in financial markets to price financial instruments, contracts, or to measure the performance of investments. Benchmarks are typically based on a basket of underlying data, such as interest rates, asset prices, or indices, and are widely used by market participants for valuation, trading, and risk management purposes.
+
+## MAR 8.1 Application and Purpose
+
+### Application
+
+- MAR 8.4 to MAR 8.7 apply according to the application provisions in those sections.
+
+### Purpose
+
+- This chapter outlines the requirements for firms involved in providing or contributing to benchmarks:
+  - **MAR 8.4**: Applies to third country benchmark contributors not supervised in the UK but would be if located there, mirroring rules for in-scope benchmark contributors.
+  - **MAR 8.5**: Details Handbook requirements for regulated benchmark administrators authorized under the benchmarks regulation.
+  - **MAR 8.6**: Covers responsibility for contributing input data to a BMR benchmark administrator.
+  - **MAR 8.7**: Describes procedures for imposing requirements on critical benchmarks under articles 21 and 23 of the benchmarks regulation.
+
+- Note: Articles 2(2) and 12 of the Market Abuse Regulation and article 15 of the same regulation relate to ongoing market abuse provisions for firms involved in activities specified in MAR 8.1.2G, and the benchmarks regulation outlines requirements for firms administering, contributing to, and using a benchmark.
+
+### Actions for Damages
+
+- A breach of a rule in MAR 8 does not allow a private person to take action under section 138D(2) of the Act, and each rule in MAR 8 is specified under section 138D(3) as not giving rise to such a right.
+
+## MAR 8.4 Third Country Benchmark Contributors
+
+### Application
+
+- Applies to third country benchmark contributors that:
+  - Are not supervised entities.
+  - Would be supervised if located in the UK.
+- Does not apply to contributors of input data for a commodity benchmark governed by Annex II of the benchmarks regulation.
+
+### Application of the Benchmarks Regulation
+
+- Third country benchmark contributors must comply with:
+  - Article 16 of the benchmarks regulation, as amended by article 26 and Annex 1.
+  - Article 23(3) of the benchmarks regulation.
+
+## MAR 8.5 Regulated Benchmark Administrators
+
+### Application
+
+- Applies to regulated benchmark administrators.
+
+### Responsibility for Benchmark Activities
+
+- Applies to regulated benchmark administrators, excluding Annex II administrators and PRA-authorized persons.
+- Must assign responsibility for implementing regulatory requirements to a director or senior manager, not a non-executive director.
+- For limited scope SMCR benchmark firms, the responsible person must meet the definition of a senior management function.
+- Must notify the FCA of the responsible person's identity.
+
+### Guidance on Responsibility
+
+- Responsibility can be shared but not divided; each person should cover all aspects.
+- The responsible person should be senior, credible, and have resources and authority to manage effectively.
+
+### Notifications about Suspected Benchmark Manipulation
+
+- Regulated benchmark administrators must have systems to ensure data integrity and report potential manipulation to the FCA.
+
+### Adequate Financial Resources for Administrators of Critical Benchmarks
+
+- Must meet liabilities and maintain financial resources to cover six months of operating costs.
+- Administrators of multiple critical benchmarks can hold combined resources for all.
+
+### Notifications for Breaches
+
+- Must notify the FCA if unable to maintain sufficient financial resources for nine months.
+
+## MAR 8.6 Responsibility for Benchmark Activities: Benchmark Contributors
+
+### Application
+
+- Applies to benchmark contributors, excluding those contributing to a commodity benchmark under Annex II.
+
+### Responsibility for Contributing Input Data
+
+- Must notify the FCA of senior personnel responsible for input data contribution.
+- Responsibility applies regardless of the location of data contribution.
+
+## MAR 8.7 Procedures for Exercising Powers in Relation to Critical Benchmarks
+
+### Application and Purpose
+
+- Applies to authorized and unauthorized persons.
+- Outlines FCA procedures for exercising powers under articles 21 and 23 of the benchmarks regulation.
+
+### Compulsion Powers under the Benchmarks Regulation
+
+- FCA can compel critical benchmark administrators to continue publishing or require data contribution for up to 24 months.
+
+### Exercise of Compulsion Powers: General
+
+- FCA may need to act quickly and will decide based on available information.
+- No consultation required, but may consult other regulatory bodies if needed.
+
+### Decision to Exercise a Compulsion Power
+
+- FCA will issue a written notice detailing the decision, reasons, effective date, and representation period.
+
+### Review of the First Decision
+
+- FCA will review decisions if representations are made, considering new information and conducted by senior staff not involved in the initial decision.
+
+### Own Initiative Review of the Exercise of Compulsion Powers
+
+- FCA may vary or revoke requirements based on new information or to extend duration under articles 21(3) or 23(6)(b).
+
+### Table of Defined Terms
+
+- **Administrator**: Defined in article 3.1(6) of the benchmarks regulation.
+- **Compulsion Powers**: Powers under articles 21(3) and 23(6).
+- **First Decision**: Initial decision in MAR 8.7.5G(1).
+- **Own Initiative Revocation**: Defined in MAR 8.7.8G(1).
+- **Own Initiative Variation**: Defined in MAR 8.7.8G(1).
+- **Second Decision**: Decision in response to review in MAR 8.7.7G(4).
+
+---
+
+### Definitions
+
+- **Third Country Benchmark Contributor**: An entity contributing to benchmarks from outside the UK, not supervised but would be if in the UK.
+- **Regulated Benchmark Administrator**: An entity authorized to administer benchmarks under the benchmarks regulation.
+- **Benchmark Contributor**: An entity providing input data to a benchmark administrator.
+- **Critical Benchmark**: A benchmark deemed essential for financial stability or market integrity.
+
+## MAR 9 Data reporting service
+
+A data reporting service involves the collection, processing, and dissemination of trade data to ensure market transparency and regulatory compliance. The three main types are APAs (publication of trade data), ARMs (reporting to regulators), and CTPs (consolidation of trade data). If your marketplace operates as a trading venue or facilitates trading, you may need to engage with data reporting services to meet MiFID II obligations. Always seek legal advice to confirm your specific requirements.
+
+## MAR 9.1 Application, Approach and Structure
+
+### Application
+
+**Author's Note** - <mark>This section seems to use the language "seeking to provide" a data reporting service.</mark>
+
+- This chapter applies to:
+  - A UK person seeking authorisation to provide a data reporting service.
+  - A UK branch of a third country person seeking authorisation to provide a data reporting service as an ARM or APA.
+  - <mark>A MiFID investment firm operating a trading venue seeking verification of its rights to provide a data reporting service under regulation 5(b) or (c) of the DRS Regulations.</mark>
+  - A UK RIE seeking verification of its rights to provide a data reporting service under regulation 5(d) of the DRS Regulations.
+  - A data reporting services provider.
+- <mark>This chapter is not limited to operators of trading venues and firms.</mark>
+
+### Approach
+
+- This regulatory framework allows for the authorisation and supervision of data reporting service providers, which are crucial for transparency in wholesale markets and for detecting and preventing market abuse.
+
+### Structure
+
+- The chapter is structured as follows:
+  - MAR 9.1: Application, approach and structure
+  - MAR 9.2: Authorisation and verification
+  - MAR 9.2A: Consolidated tape providers
+  - MAR 9.2B: Operating requirements
+  - MAR 9.2C: Financial resources requirements for consolidated tape providers
+  - MAR 9.3: Notification and information
+  - MAR 9.4: Supervisory regime
+  - MAR 9.5: Frequently Asked Questions
+  - MAR 9 Annex 1D to MAR Annex 10D: Forms
+
+## MAR 9.2 Authorisation and Verification
+
+### Application Form and Notification Form for Members of the Management Body
+
+- The following must complete specific forms:
+  - An applicant for a data reporting service authorisation.
+  - A MiFID investment firm operating a trading venue seeking verification of its rights to provide a data reporting service.
+  - A UK RIE operating a trading venue seeking verification of its rights to provide a data reporting service.
+- Required forms:
+  - Application form at MAR 9 Annex 1D.
+  - Notification form for the list of members of the management body at MAR 9 Annex 2D.
+
+### Variation of Authorisation Form
+
+- If a data reporting services provider wants to change its authorisation, it must complete the variation of authorisation form at MAR 9 Annex 3D.
+
+### Cancellation of Authorisation Form
+
+- A data reporting services provider wishing to cancel its authorisation should engage with the FCA early and provide a wind-down plan as part of the cancellation process.
+- The provider must complete the cancellation of authorisation form at MAR 9 Annex 4D.
+
+### Provision of Forms to the FCA
+
+- Forms must be provided to the FCA by email or post.
+
+## MAR 9.2A Consolidated Tape Providers
+
+### Selection of a Consolidated Tape Provider
+
+- The FCA will organise a selection procedure for a single consolidated tape provider for bonds.
+- Tenders should include a programme of operations and compliance policies.
+- The FCA will select a winning bidder based on the tender documentation.
+
+### Obligations for a CTP
+
+- A CTP must publish cost information and ensure a smooth transition to a successor CTP if needed.
+
+## MAR 9.2B Operating Requirements
+
+### Management Body Requirements
+
+- The management body must have adequate knowledge and skills.
+- Members must act with integrity and oversee management decisions effectively.
+
+### Conflicts of Interest
+
+- Providers must prevent conflicts of interest and have policies to manage them.
+
+### Organisational Requirements Regarding Outsourcing
+
+- Providers must ensure third-party service providers can perform activities reliably.
+- Providers remain responsible for outsourced activities.
+
+### Business Continuity and Back-Up Facilities
+
+- Providers must have robust systems and conduct periodic reviews.
+- Providers must have effective business continuity arrangements.
+
+### Testing and Capacity
+
+- Providers must have development and testing methodologies and conduct stress tests.
+
+### Security
+
+- Providers must have security measures to protect IT systems and data.
+
+### Record Keeping
+
+- Providers must maintain records for at least 5 years.
+
+### Reporting of Infringements
+
+- Providers must have procedures for employees to report potential infringements.
+
+### Conditions for an ARM
+
+- ARMs must have policies to report information quickly and securely.
+
+### Management of Incomplete or Potentially Erroneous Information by ARMs
+
+- ARMs must identify and correct errors in transaction reports.
+
+### Connectivity of ARMs
+
+- ARMs must have technical capabilities to comply with FCA specifications.
+
+### Conditions for an APA – Organisational Requirements
+
+- APAs must have security mechanisms and adequate resources.
+
+### Conditions for a CTP – Organisational Requirements
+
+- CTPs must have security mechanisms and adequate resources.
+
+### Other Services Provided by CTPs
+
+- CTPs for bonds must not provide additional services using information from UK trading venues and APAs.
+
+### Management of Incomplete or Potentially Erroneous Information by APAs
+
+- APAs must ensure accurate publication of trade reports and correct errors.
+
+### Conditions for an APA – Policies and Arrangements for Publication of Information
+
+- APAs must make information public in real-time and free of charge after 15 minutes.
+
+### Machine Readability – APAs
+
+- APAs must publish information in a machine-readable way.
+
+### Certification Requirement
+
+- APAs must require MiFIR investment firms to certify transaction reporting.
+
+### Details to be Published by the APA
+
+- APAs must publish transaction details as specified in MiFID RTS.
+
+### Non-Discrimination Requirements for APAs
+
+- APAs must ensure information is sent through all channels simultaneously.
+
+### Obligation on APAs to Provide Market Data on a Reasonable Commercial Basis
+
+- APAs must comply with obligations for making market data available.
+
+### Provision of Market Data Based on Cost – APAs
+
+- Market data pricing must be based on production and dissemination costs.
+
+### Obligation to Provide Market Data on a Non-Discriminatory Basis – APAs
+
+- APAs must offer market data at the same price and terms to similar customers.
+
+### Per User Fees – APAs
+
+- APAs must charge based on individual end-user use of market data.
+
+### Unbundling and Disaggregating Market Data – APAs
+
+- APAs must offer market data without bundling with other services.
+
+### Transparency Obligation – APAs
+
+- APAs must disclose prices and terms for market data provision.
+
+### Conflicts of Interest Obligations for CTPs
+
+- CTPs must manage conflicts of interest, especially within group structures.
+
+### Obligations for CTPs on Apportionment of Responsibilities
+
+- CTPs must clearly assign responsibilities among senior management.
+
+### Outsourcing Obligations for CTPs
+
+- CTPs must provide the FCA with agreements for outsourcing critical functions.
+
+### Non-Discrimination Obligations for CTPs
+
+- CTPs must treat all information non-discriminatorily and separate business functions.
+
+### Management of Incomplete or Potentially Erroneous Information by CTPs
+
+- CTPs must ensure accurate publication of trade reports and correct errors.
+
+### Obligations of CTPs to Ensure Data Quality and Report Information
+
+- CTPs must monitor IT systems and report data quality to the FCA.
+
+### Consolidation of Data by CTPs
+
+- CTPs must consolidate data from all UK trading venues and APAs.
+
+### Scope of the Consolidated Tape for Bonds and Publication of Information
+
+- CTPs for bonds must have policies to receive and publish information in real-time.
+
+### Machine Readability and Required Formats for CTPs for Bonds
+
+- CTPs for bonds must publish information in GUI and machine-readable formats.
+
+### Obligation for the CTP for Bonds to Provide Market Data on a Non-Discriminatory Basis
+
+- CTPs for bonds must offer market data at the same price and terms to similar customers.
+
+### Unbundling Market Data for the CTP for Bonds
+
+- CTPs for bonds must offer market data without bundling with other services.
+
+### Transparency Obligations for the CTP for Bonds
+
+- CTPs for bonds must disclose prices and terms for market data provision.
+
+### Governance Obligations for the CTP
+
+- CTPs must establish a consultative committee with users and data producers.
+
+## MAR 9.2C Financial Resources Requirements for Consolidated Tape Providers
+
+- CTPs must have sufficient financial resources to perform their obligations.
+- The FCA may consider various factors to assess financial sufficiency.
+
+## MAR 9.2D Complaints Concerning the Performance of a CTP
+
+- CTPs must have arrangements for investigating and resolving complaints.
+- Complaints must be investigated by an independent investigator.
+
+## MAR 9.3 Notification and Information
+
+### Notification to the FCA of Material Changes
+
+- Providers must inform the FCA of material changes using the specified form.
+
+### Notification to the FCA of Change to Membership of Management Body
+
+- Providers must notify the FCA of changes to the management body.
+
+### Notification to the FCA by an APA or a CTP of Compliance with Connectivity Requirements
+
+- APAs and CTPs must sign a confidentiality agreement and notify the FCA.
+
+### Yearly Notifications to the FCA
+
+- Providers must complete a yearly notification form.
+
+### Ad Hoc Notifications to the FCA
+
+- Providers must notify the FCA of breaches and service interruptions.
+
+### Provision of Forms to the FCA
+
+- Forms must be provided to the FCA by email or post.
+
+## MAR 9.4 Supervisory Regime
+
+### Overview of Supervisory Approach
+
+- The FCA expects an open and cooperative relationship with providers.
+- Providers should inform the FCA of significant changes to their operations.
+
+### Overview of Supervisory Tools
+
+- The FCA uses various tools to monitor compliance, including reviews and meetings.
+
+## MAR 9.5 Frequently Asked Questions
+
+- Clarifications on providing data reporting services, management body requirements, fees, and application processes are provided.
+
+## Definitions
+
+- **UK person**: A person whose registered office or head office is located in the UK.
+- **Third country person**: A person from a country outside the UK.
+- **MiFID investment firm**: A firm that operates under the Markets in Financial Instruments Directive.
+- **UK RIE**: A UK Recognised Investment Exchange.
+- **Data reporting services provider**: An entity authorised to provide data reporting services.
+- **ARM**: Approved Reporting Mechanism.
+- **APA**: Approved Publication Arrangement.
+- **CTP**: Consolidated Tape Provider.
+
+## MAR 9A Trade data
+
+## MAR 9A.1 Application
+
+- This chapter applies to:
+  - <mark>A trading venue operator</mark>
+  - A systematic internaliser
+
+## MAR 9A.2 Trade data requirements
+
+### Making trade data available on a reasonable commercial basis
+
+- A trading venue operator must:
+  - <mark>Make information published under certain MiFIR articles available to the public on a reasonable commercial basis.</mark>
+  - Ensure non-discriminatory access to this information.
+  - <mark>Provide the information free of charge 15 minutes after publication, except when making market data available to the public for free.</mark>
+
+- A systematic internaliser must:
+  - Ensure quotes published under certain MiFIR articles are accessible to other market participants on a reasonable commercial basis.
+  - Make quotes public in a way that is easily accessible to other market participants on a reasonable commercial basis, except when making market data available to the public for free.
+
+### Providing market data on the basis of cost
+
+- <mark>The price of market data should be based on the cost of producing and disseminating it, with a reasonable margin allowed.</mark>
+- Costs may include a fair share of joint costs for other services provided by a trading venue operator or systematic internaliser.
+
+### Providing market data on a non-discriminatory basis
+
+- A trading venue operator or systematic internaliser must:
+  - Offer market data at the same price and terms to all customers in the same category, based on published objective criteria.
+  - Ensure any price differences for different customer categories are proportionate to the value of the market data, considering:
+    - The scope and scale of the data, including the number of financial instruments and their trading volume.
+    - How the customer uses the data, whether for their own trading, resale, or data aggregation.
+  - <mark>Have scalable capacities to ensure timely, non-discriminatory access to market data for all customers.</mark>
+
+- They must also:
+  - <mark>Charge for market data based on individual end-user usage.</mark>
+  - Ensure each use of market data is charged only once.
+  - May choose not to charge on a per-user basis if it is disproportionate to the cost of providing the data, and must publish reasons for this decision on their webpage.
+
+### Unbundling and disaggregating market data
+
+- A trading venue operator or systematic internaliser must:
+  - <mark>Provide market data separately from other services.</mark>
+  - <mark>Offer pre-trade and post-trade transparency data separately.</mark>
+
+### Transparency
+
+- A trading venue operator or systematic internaliser must:
+  - Disclose the price and terms for providing market data in an easily accessible manner.
+  - Include in the disclosure:
+    - Current price lists, covering various fees and terms.
+    - Advance notice of at least 90 days for future price changes.
+    - Information on the content of the market data, such as the number of instruments and turnover.
+    - Revenue from market data and its proportion of total revenue.
+    - Details on how prices are set, including cost accounting methods and principles for cost allocation.
+
+---
+
+### Definitions
+
+- **Trading venue operator**: An entity that manages a platform where financial instruments are traded.
+- **Systematic internaliser**: A firm that deals on its own account by executing client orders outside a regulated market or multilateral trading facility.
+
+## MAR 10 Commodity derivative position limits and controls, and position reporting
+
+Skipped. Seems to be about commodity derivatives, not marketplace operator.
+
+# PROD Product Intervention and Product Governance Sourcebook
+
+##
+
+WILO
+
+
+
 
 
 # Notes on which sections to expand:
