@@ -6156,3 +6156,1627 @@ A huge table of qualifications.
 
 ## GEN 5 Regulators' logos and the Key facts logo
 
+## GEN 5.1 Application and Purpose
+
+### Application
+
+- **Guidance for Use of Logos**
+  - This chapter provides guidance <mark>for firms, authorised payment institutions, registered account information service providers, authorised electronic money institutions, and their appointed representatives, agents, or tied agents on when they can use the FSA and FCA logos.</mark>
+  - It also includes rules on how firms can use the <mark>Key facts logo</mark>.
+
+### Purpose
+
+- **Ownership and Enforcement**
+  - The FSA logo is a registered UK service mark (number 2150560), the FCA logo is a registered UK service mark (number 3213355), and the Key facts logo is a registered Community trade mark (number EU3866688). All these logos are owned by the FCA and are protected by copyright. They can only be used with the FCA's permission. Unauthorized use may lead to legal action by the FCA.
+
+- **General Licence**
+  - GEN 5 Annex 1 G provides a general licence outlining when the FSA and Key facts logos can be used without needing an individual licence.
+  - No general licence is available for the FCA logo.
+
+- **Individual Licence**
+  - The FCA does not generally allow the use of the FSA or Key facts logos outside the conditions in GEN 5 Annex 1 G. However, if someone wants to use these logos differently, they can apply for an individual licence, explaining why it should be granted.
+
+### The Key Facts Logo
+
+- **Usage Restrictions**
+  - A firm <mark>must only use the Key facts logo when required or expressly allowed by the rules and in line with the general licence in GEN 5 Annex 1 G.</mark>
+  - Firms must ensure their representatives <mark>do not misuse the Key facts logo.</mark>
+  - <mark>The Key facts logo should not appear on any document provided to a customer unless required by the rules.</mark>
+
+### The FSA Logo
+
+- **Usage Restrictions**
+  - Firms <mark>must not use the FSA logo in client communications unless it complies with the general licence in GEN 5 Annex 1 G or an individual licence from the FCA.</mark>
+  - The general licence for the FSA logo was valid until 1 April 2014. **Note** - What?! See below?!
+
+### The FCA Logo
+
+- **Usage Restrictions**
+  - Firms <mark>must not use the FCA logo in client communications unless they have an individual licence from the FCA.</mark>
+  - This rule also applies to registered persons promoting financial products related to qualifying cryptoassets under certain exemptions.
+
+## GEN 5 Annex 1 Licence for Use of the FSA and Key Facts Logos
+
+### Application
+
+- **Licence Grant**
+  - The FCA <mark>grants this licence</mark> to firms, authorised payment institutions, authorised electronic money institutions, appointed representatives, agents, and tied agents.
+
+### The FSA Logo
+
+- **Logo Composition**
+  - The FSA logo consists of a scroll and globe symbol and the letters "FSA."
+  - There are two versions of the FSA logo: a standard version and a simplified version for smaller sizes.
+
+- **Permission to Use**
+  - Certain entities can use the FSA logo in specific communications, such as letters stating they are authorised and regulated by the FSA, or if required by the FCA.
+  - The <mark>licence does not cover business cards, compliment slips, text messages, account statements, or similar documents.</mark>
+
+### Permission to Use the Key Facts Logo
+
+- **Usage Conditions**
+  - Firms and their representatives <mark>can use the Key facts logo when required or permitted by the rules.</mark>
+  - Examples include use <mark>in policy summaries and key features documents in ICOBS and certain illustrations and statements in MCOB.</mark>
+
+### Conditions on Appearance
+
+- **FSA Logo**
+  - The FSA logo must include the regulatory mark, appear in specific colors, and maintain its original proportions and design.
+  - The simplified version is only for small sizes, and electronic reproductions <mark>must not include hyperlinks.</mark>
+
+- **Key Facts Logo**
+  - The Key facts logo must include the regulatory mark and can appear in black, white, or color, maintaining its original design.
+  - The low-resolution version is for screen viewing only, and electronic reproductions <mark>must not include hyperlinks.</mark>
+
+### Further Conditions
+
+- **General Conditions**
+  - Materials displaying the logos must not imply FCA endorsement, misrepresent the relationship with the FCA, contain inappropriate content, or infringe on any rights or laws.
+
+### Commencement and Duration
+
+- **Licence Validity**
+  - The licence started on 1 May 2003, with the Key facts logo licence starting on 6 November 2006. The FSA logo licence ended on 1 April 2014.
+  - The FCA can change or revoke the licence with two months' notice.
+
+  **Note** - This doesn't make sense. The FSA logo licence ended over a decade ago and this section is still in the Handbook.
+
+### Interpretation
+
+- **Handbook Reference**
+  - This licence should be interpreted according to the Handbook's General provisions, with defined terms in italics.
+
+### Governing Law and Jurisdiction
+
+- **Legal Framework**
+  - The licence is governed by English law, and UK courts have exclusive jurisdiction over disputes related to it.
+
+---
+
+### Definitions
+
+- **Firm**: A business entity regulated by the FCA.
+- **Authorised Payment Institution**: A company authorised to provide payment services.
+- **Registered Account Information Service Provider**: A provider registered to offer account information services.
+- **Authorised Electronic Money Institution**: A company authorised to issue electronic money.
+- **Appointed Representative**: A person or firm that acts on behalf of an authorised firm.
+- **Agent**: A person or entity acting on behalf of another.
+- **Tied Agent**: An agent tied to a single firm for regulatory purposes.
+- **Registered Person**: An individual or entity registered with the FCA for specific activities.
+
+## GEN 6 Insurance against financial difficulties
+
+## GEN 6.1 Payment of financial penalties
+
+- **Application**
+
+  - This chapter applies to every firm, but only for business that can be regulated under section 137A (The FCA's general rules) of the Act.
+
+  - For the purposes of GEN 2.2.17 R (Activities covered by general rules), the chapter applies to both regulated and unregulated activities carried out in the UK or overseas. For regulated claims management activities and related activities, this chapter applies to activities in Great Britain, even if the business is not based in the UK (see PERG 2.4A).
+
+- **Purpose**
+
+  - The purpose of this section is to ensure that financial penalties are paid by the person on whom they are imposed.
+
+- **Interpretation**
+
+  - In this chapter, 'financial penalty' refers to a financial penalty that the FCA has imposed, or may impose, under the Act. It does not include penalties imposed by any other body.
+
+- **Payment of a penalty imposed on an employee**
+
+  - No firm, except a sole trader, may pay a financial penalty imposed by the FCA on a current or former employee, director, or partner of the firm or an affiliated company.
+
+- **Insurance against financial penalties**
+
+  - No firm may engage in, arrange, claim on, or make a payment under an insurance contract that is intended to, or does, indemnify any person against all or part of a financial penalty.
+
+  - The Society, managing agents, and members' agents must not allow any member, in conducting insurance business at Lloyd's, to engage in, arrange, claim on, or make a payment under an insurance contract that is intended to, or does, indemnify any person against all or part of a financial penalty.
+
+  - The rules in GEN 6.1.4A R, GEN 6.1.5 R, and GEN 6.1.6 R do not prevent a firm or member from engaging in, arranging, claiming on, or making a payment under an insurance contract that indemnifies any person against all or part of the costs of defending FCA enforcement action or any costs they may be ordered to pay to the FCA.
+
+---
+
+### Definitions
+
+- **Firm**: Any business entity that is subject to regulation by the FCA.
+- **Sole trader**: An individual who owns and operates a business alone.
+- **Society**: Refers to the Society of Lloyd's.
+- **Managing agents**: Firms that manage the underwriting of insurance business at Lloyd's.
+- **Members' agents**: Firms that act on behalf of members of Lloyd's in relation to their underwriting activities.
+- **Member**: An individual or corporate entity that is part of the Lloyd's insurance market.
+
+## GEN 7 Charging consumers for telephone calls
+
+## GEN 7.1 Application
+
+- **Who? Where?**
+
+  - This chapter applies to a firm carrying out activities from an establishment in the United Kingdom. For regulated claims management activities, it applies to activities conducted in Great Britain, even if the establishment is not located in the UK (see PERG 2.4A).
+
+- **What?**
+
+  - This chapter applies when a firm operates a telephone line for consumers to contact the firm regarding a contract entered into with the firm in connection with:
+    - Regulated activities; or
+    - Payment services.
+
+- **MiFID firm exception**
+
+  - This chapter <mark>does not apply to telephone lines provided for contracts related to the MiFID business of a firm.</mark>
+
+- **Payment services exception**
+
+  - This chapter <mark>does not apply to telephone lines that:</mark>
+    - Allow payment service users to request information as per paragraph (2) of regulation 56 of the Payment Services Regulations; or
+    - Relate to the termination of a framework contract, unless:
+      - The contract was for a fixed period of more than 12 months or for an indefinite period; and
+      - At least 12 months of the contract have passed.
+
+- **Complaints exception**
+
+  - This chapter <mark>does not apply to telephone lines provided by a respondent for enabling an eligible complainant to submit a complaint.</mark>
+  - DISP 1.3 contains rules for telephone lines provided by respondents for complaints submission.
+
+- **Application to firms carrying on credit-related regulated activities**
+
+  - GEN 7.1.1R and GEN 7.2.1R mean this chapter applies to contracts where a firm provides or agrees to provide credit broking services. Specifically, it applies when a credit broker operates a telephone line for customers to contact the firm about entering into a credit or consumer hire agreement.
+
+- **Related consumer credit rules**
+
+  - The following CONC provisions apply when a firm operates a telephone line for credit-related activities, but the call charges rule does not apply (e.g., before a contract is entered into):
+    - CONC 2.5.8R and CONC 2.5.9G (unfair business practices: credit broking);
+    - CONC 2.6.3R and CONC 2.6.4G (unfair business practices: debt counselling, debt adjusting, and credit information services);
+    - CONC 3.3.9G (financial promotions and communications);
+    - CONC 3.9.5R and CONC 3.9.6G (financial promotions and communications for debt counselling and adjusting);
+    - CONC 7.9.5R (arrears, default, and recovery);
+    - CONC 8.7.6R (charging for debt counselling, debt advice, and related services).
+
+- **Regulated benchmark administrators**
+
+  - This chapter does not apply to telephone lines for contracts related to a firm’s administration of a benchmark.
+
+## GEN 7.2 Call charges
+
+- **Call charges rule**
+
+  - A firm operating a telephone line for consumers to contact the firm about a contract <mark>must not charge more than the basic rate for the call.</mark>
+
+- **Meaning of basic rate**
+
+  - The basic rate is the simple cost of connection and <mark>must not contribute to the firm's costs or revenues.</mark>
+
+- **Compliant numbers**
+
+  - Numbers that comply with the call charges rule include:
+    - Geographic numbers or numbers with a consistent rate, usually starting with 01, 02, or 03;
+    - Free calls, such as 0800 and 0808 numbers;
+    - Standard mobile numbers, usually starting with 07, if the firm typically uses a mobile number for calls.
+
+- **Non-compliant numbers**
+
+  - Numbers that do not comply with the call charges rule include:
+    - Premium rate numbers starting with 09;
+    - Revenue-sharing numbers where part of the charge provides a service or payment to the firm, such as numbers starting with 084 or 0871, 0872, or 0873;
+    - Numbers starting with 0870, as their cost can exceed geographic rates and vary with the consumer’s tariff.
+
+---
+
+### Definitions
+
+- **Firm**: A business entity regulated by the FCA, carrying out financial services activities.
+- **MiFID firm**: A firm conducting business under the Markets in Financial Instruments Directive.
+- **Payment service users**: Individuals or entities using payment services.
+- **Framework contract**: An agreement governing the future execution of individual payment transactions.
+- **Respondent**: A firm or individual responding to a complaint.
+- **Eligible complainant**: A person or entity eligible to make a complaint under FCA rules.
+- **Credit broker**: A firm that arranges credit for consumers.
+- **Regulated benchmark administrators**: Firms administering financial benchmarks regulated by the FCA.
+
+# FEES Fees Manual
+
+## FEES 1 Fees Manual
+
+## FEES 1.1 Application and Purpose
+
+- **General Application**
+
+  - FEES applies to anyone required to pay a fee or levy as per the Handbook. This chapter explains who the rules and guidance in FEES apply to.
+
+- **Specific Sections**
+
+  - **FEES 2 (General Provisions):** Contains general rules that may apply to any fee payer.
+  
+  - **FEES 3 (Application, Notification and Vetting Fees):** Covers one-time fees for specific events, such as:
+    - Application fees for authorisation, variation of Part 4A permission, registration as a CBTL firm, authorisation of a data reporting services provider, and listing.
+    - Fees for designated credit reference agencies, finance platforms, and certain notifications and document vetting requests.
+  
+  - **FEES 4 (Periodic Fees):** Covers all regular fees and transaction reporting fees.
+  
+  - **FEES 4A:** Relates to periodic fees for a TP person (including a supervised run-off firm) and special project fees for a CRO firm.
+  
+  - **FEES 5 (Financial Ombudsman Service Funding):** Relates to FOS levies and case fees.
+  
+  - **FEES 6 (Financial Services Compensation Scheme Funding):** Relates to the FSCS levy.
+  
+  - **FEES 7A:** Relates to the SFGB levy.
+  
+  - **FEES 7B:** Relates to the DA levy.
+  
+  - **FEES 7C:** Relates to the TPR SFGB levy.
+  
+  - **FEES 7D:** Relates to the TPR DA levy.
+
+- **Additional Applications**
+
+  - **FEES App 1 Annex 1A:** Applies to anyone required to pay a fee or other amount to the FCA under the Unauthorised Mutuals Registration Fees Rules.
+  
+  - **FEES 9 (Payment System Regulator Funding):** Relates to PSR fees.
+  
+  - **FEES 12 (FOS ADR Levy):** Relates to the FOS ADR levy.
+  
+  - **FEES Appendix 2:** Applies to those applying to become a professional body listed in the Money Laundering Regulations and those already listed.
+  
+  - **FEES Appendix 3:** Applies to persons registered under the Money Laundering Regulations that are not cryptoasset businesses.
+  
+  - **FEES Appendix 4:** Applies to cryptoasset businesses registered under the Money Laundering Regulations.
+
+- **Application Details**
+
+  - **FEES 1, 2, and 3:** Apply to fee payers listed in the Table of application, notification, and vetting fees in FEES 3.2.7 R.
+  
+  - **FEES 1, 2, and 4:** Apply to various entities including firms, authorised fund managers, ACDs, designated professional bodies, and others as specified.
+  
+  - **FEES 1, 2, and 5:** Apply to firms subject to the Compulsory Jurisdiction of the Financial Ombudsman Service.
+  
+  - **FEES 1, 2, and 6:** Apply to participant firms, the FSCS, and the Society.
+  
+  - **FEES 1, 2, 7A, and 7B:** Apply to persons with Part 4A permission, the Society, and certain fee-paying service providers.
+  
+  - **FEES App 1 Annex 1A:** Applies to registered societies, sponsoring bodies, and those submitting proposals for registration.
+  
+  - **FEES 7A:** Applies to firms for the SFGB pensions guidance levy.
+  
+  - **FEES 7C and 7D:** Apply to TP firms, TA EMI firms, TA PI firms, and TA RAISP firms.
+
+- **Special Applications**
+
+  - **FEES 1 and FEES 9:** Apply to operators of regulated payment systems and direct payment service providers.
+  
+  - **FEES 1 and 12:** Apply to FOS Ltd.
+
+- **Purpose**
+
+  - The manual outlines the fees applicable to the persons specified in FEES 1.
+
+## Definitions
+
+- **CBTL firm:** A firm registered for consumer buy-to-let mortgage business.
+- **TP person:** A person subject to temporary permissions.
+- **CRO firm:** A firm involved in special projects.
+- **FOS:** Financial Ombudsman Service.
+- **FSCS:** Financial Services Compensation Scheme.
+- **SFGB:** Single Financial Guidance Body.
+- **DA levy:** Debt Advice levy.
+- **TPR:** Temporary Permissions Regime.
+- **AIFM:** Alternative Investment Fund Manager.
+- **ICVC:** Investment Company with Variable Capital.
+- **ACD:** Authorised Corporate Director.
+- **TA EMI firm:** Temporary Authorisation Electronic Money Institution.
+- **TA PI firm:** Temporary Authorisation Payment Institution.
+- **TA RAISP firm:** Temporary Authorisation Registered Account Information Service Provider.
+- **VJ participants:** Participants in voluntary jurisdiction.
+
+## FEES 2 General Provisions
+
+## FEES 2.1 Introduction
+
+### Application
+
+- **Who it applies to:**
+  - This chapter is relevant to anyone required to pay a fee or share of a levy to the FCA, FOS Ltd, or FSCS as per the Handbook.
+
+- **Exceptions:**
+  - This chapter does not apply to:
+    - FEES 5.5B
+    - FEES 5 Annex 2R
+    - FEES 5 Annex 3R
+    - PSR fee
+    - FOS ADR levy
+
+- **Specific Exclusions:**
+  - FEES 2.2.1R does not apply to fees under FEES 3 (Application, notification, and vetting fees).
+  - Late payment provisions in FEES 2.2.1R do not apply to fees under FEES 3, as applications are incomplete until fees are paid.
+
+### Purpose
+
+- **General Purpose:**
+  - This chapter outlines the general rules for those required to pay fees or levies to the FCA or a share of the FSCS levy.
+
+- **Fee Charging Authority:**
+  - The FCA <mark>can charge fees based on:</mark>
+    - Paragraph 23 of Schedule 1ZA of the Act
+    - Various regulations including Payment Services, Electronic Money, MCD Order, and others.
+  - FSCS levy, FOS levies, and CFEB levies are detailed in FEES 6.1, FEES 5.2, and FEES 7.1.4G.
+  - Case fees for FOS Ltd are in FEES 5.5B.
+  - Certain entities like fee-paying payment service providers are exempt from the FSCS levy but must pay FOS levies.
+
+- **Regulatory Functions:**
+  - Functions under certain regulations are treated as conferred on the FCA under the Act for fee purposes.
+
+- **Fee Variability:**
+  - <mark>FCA fees change yearly based on funding needs and other components, with periodic fees usually paid annually.</mark>
+
+- **Fee Mechanism Components:**
+  - Funding requirement from financial management, budget, and adjustments.
+  - Penalty application mechanisms.
+  - Fee-blocks grouping similar fee payers.
+  - Costing system for fee allocation.
+  - Tariff bases for fee calculation.
+
+- **Fee Calculation:**
+  - <mark>Fees depend on the regulated activity category and business volume.</mark>
+
+- **Minimizing Cross-Sector Subsidies:**
+  - Fee-blocks are based on business categories to reduce cross-sector subsidies.
+
+- **PRA Fees Collection:**
+  - FCA acts as PRA's collection agent for PRA fees, with both fees paid as a single payment to the FCA.
+
+### Method of Payment
+
+- **Standard Payment Methods:**
+  - <mark>Payments must be made via direct debit, credit transfer (BACS/CHAPS), or credit/debit card unless exceptions apply.</mark>
+
+- **Alternative Payment Methods:**
+  - Payments can be made by banker’s draft, cheque, or other orders if:
+    - Unable to use standard methods.
+    - Permitted for paper applications for specific permissions.
+    - FCA agrees that standard methods are inequitable in exceptional cases.
+
+- **Notification Requirement:**
+  - Fee or levy payers should notify the FCA in advance if using alternative payment methods, unless impossible due to circumstances.
+
+## FEES 2.2 Late Payments and Recovery of Unpaid Fees
+
+### Late Payments
+
+- **Consequences of Late Payment:**
+  - If fees or levies are unpaid by the due date, an administrative fee of £250 plus interest at 5% above the Official Bank Rate is charged.
+
+- **Invoice Issuance:**
+  - FCA expects to issue invoices at least 30 days before due dates, giving payers time before administrative fees apply.
+
+### Recovery of Fees
+
+- **Recovery Authority:**
+  - FCA can recover fees as debts, including those related to payment services, electronic money, and other specified levies.
+
+- **FSCS Levy Recovery:**
+  - FSCS can recover levy shares as debts owed to FCA and FSCS.
+
+- **Recovery Actions:**
+  - FCA and FSCS may take civil court action for recovery, including interest.
+
+- **Regulatory Action:**
+  - FCA may take regulatory action for non-payment of fees or levies, considering the case's circumstances.
+
+## FEES 2.3 Relieving Provisions
+
+### Remission of Fees and Levies
+
+- **Exceptional Circumstances:**
+  - FCA or FSCS may reduce or remit fees or levies if payment is inequitable in exceptional cases.
+
+- **Refunds:**
+  - FCA, FSCS, or CFEB may refund fees or levies if retention is inequitable, unless specific rules apply.
+
+- **Claims Limitations:**
+  - Claims for overpaid amounts due to mistakes must be made within two years of the relevant period.
+
+## FEES 2.4 VAT
+
+- **VAT on Fees:**
+  - All fees are stated net of VAT, and applicable VAT must be included.
+
+---
+
+### Definitions
+
+- **FCA:** Financial Conduct Authority
+- **FOS Ltd:** Financial Ombudsman Service Limited
+- **FSCS:** Financial Services Compensation Scheme
+- **PSR fee:** Payment Systems Regulator fee
+- **FOS ADR levy:** Financial Ombudsman Service Alternative Dispute Resolution levy
+- **PRA:** Prudential Regulation Authority
+- **CBTL firms:** Consumer Buy-to-Let firms
+- **SFGB levy:** Single Financial Guidance Body levy
+- **TPR SFGB levy:** Temporary Permissions Regime Single Financial Guidance Body levy
+- **TPR DA levy:** Temporary Permissions Regime Devolved Authorities levy
+- **CFEB:** Consumer Financial Education Body
+
+## FEES 3 Application, Notification and Vetting Fees
+
+**Note** - This section is long and contains hard currency amounts. The reader is advised to refer to the Handbook for the most accurate and up to date information.
+
+## FEES 3.1 Introduction
+
+### Application
+
+- This chapter applies to everyone listed in column 1 of the Table of application, notification, and vetting fees in FEES 3.2.7 R, and those mentioned in the annexes to FEES 3 referred to in the same column.
+
+- When this chapter mentions a "firm," it includes:
+  - Fee-paying payment service providers
+  - CBTL firms
+  - Fee-paying electronic money issuers
+  - Designated finance platforms
+  - Designated credit reference agencies
+  - Data reporting services providers
+
+### Purpose
+
+- The chapter's purpose is to outline the FCA fee-paying requirements for the entities listed in FEES 1.1.2R (1).
+
+- <mark>Most details about the fees payable by these entities are found in FEES 3 Annex 1AR to FEES 3 Annex 16R.</mark>
+
+- Fees for funds are based on the estimated costs to the FCA for assessing applications and notifications. The fee level varies depending on the Act's provision under which it is made and is adjusted for umbrella schemes.
+
+- Application fees for recognized bodies are calculated using a tariff structure reflecting the estimated processing cost for that type and complexity of application.
+
+- Fees for applications and notifications under the Payment Services Regulations are detailed in FEES 3 Annex 8R. The fee depends on the type of payment services a firm wants to provide and whether it will be a small or authorized payment institution, and the number of agents it has.
+
+- Fees under the Electronic Money Regulations are in FEES 3 Annex 10 R, depending on whether the firm is an authorized or small electronic money institution.
+
+- Application fees for registration under article 8(1) of the MCD Order are in FEES 3 Annex 10AR, depending on whether the firm holds an existing Part 4A permission or has previously registered as a CBTL firm.
+
+- Fees for designated credit reference agencies and finance platforms are in FEES 3 Annex 10B, charged under specific regulations.
+
+- Application fees for authorization under the DRS Regulations and for operators of trading venues seeking verification of compliance with Title V of MiFID are set out in FEES 3.2.7R, depending on the number of data reporting services applied for.
+
+- Potential applicants for Part 4A permission can discuss their proposed application with the FCA before submitting it formally. This dialogue helps the FCA make an initial assessment of the fee categorization and indicate the authorisation fee.
+
+- Application fees for applications and variations of Part 4A permission in respect of credit-related regulated activities are also in FEES 3 Annex 1AR and FEES 3 Annex 16R. PRA-authorized persons may also pay regulatory transaction fees to the PRA as set out in Chapter 4 of the Fees Part of the PRA Rulebook.
+
+## FEES 3.2 Obligation to pay fees
+
+### General
+
+- A person listed as the relevant fee payer for a particular activity in the table in <mark>FEES 3.2.7 R</mark> must pay the FCA a fee for each application, request for vetting, or support request related to system compatibility, admission approval, notification, or other applicable matters, as set out in the provisions in column (2) of the appropriate table:
+  - In full and without deduction
+  - On or before the date given in column (3) of that table or the relevant annexes
+
+- A person must pay the fee in Categories A5 and A6 of FEES 3 Annex 12R for the first submission of a document to the FCA for approval or review related to a significant or super transaction. After that fee is paid, Categories A1 to A4 of FEES 3 Annex 12R specify the fees for any further documents submitted for approval or review related to the same transaction.
+
+- If an application for a Part 4A permission falls into more than one category in FEES 3 Annex 1, <mark>only one fee is payable, which is the highest fee tariff unless stated otherwise.</mark> Separate fees apply for applications under the benchmarks regulation.
+
+### Method of payment
+
+- The appropriate authorization or registration fee is part of an application for, or a variation of, a Part 4A permission or other permissions under various regulations. Any application or notification received without the full fee will not be treated as made, and the FCA will contact the applicant to inform them that the application cannot proceed until the fee is received. <mark>If the fee is not forthcoming, the application will be returned.</mark>
+
+- Except for those seeking to become a designated professional body, <mark>all applications, notifications, requests for vetting, or admission approval are incomplete until the fee is fully paid.</mark> The FCA will not consider them until the fee is paid. Designated professional bodies have 30 days after the designation order to pay the fee.
+
+- Fees paid under this chapter are <mark>non-refundable.</mark>
+
+### Table of application, notification, vetting, and other fees payable to the FCA
+
+- **Part 1A: <mark>Application, notification, and vetting fees</mark>**
+  - Various fee payers and the fees they must pay are listed, with due dates specified for each type of application or notification.
+
+- **Part 2: Primary market fees**
+  - Lists fee payers and the fees payable, with due dates specified for each type of application or notification.
+
+## Definitions
+
+- **Fee-paying payment service provider**: A provider of payment services that is required to pay fees to the FCA.
+- **CBTL firm**: A firm involved in consumer buy-to-let activities.
+- **Fee-paying electronic money issuer**: An issuer of electronic money that is required to pay fees to the FCA.
+- **Designated finance platform**: A platform designated by the FCA for providing finance-related services.
+- **Designated credit reference agency**: A credit reference agency designated by the FCA.
+- **Data reporting services provider**: A provider of services related to data reporting, as recognized by the FCA.
+
+## FEES 3 Annexes
+
+**Note** - There are 16 annexes to FEES 3 which I have not included in this document.
+
+## FEES 4 Periodic Fees
+
+**Note** - This section is long and contains hard currency amounts. The reader is advised to refer to the Handbook for the most accurate and up to date information.
+
+## FEES 4 Periodic fees
+
+## FEES 4.1 Introduction
+
+### Application
+
+- This chapter <mark>applies to everyone listed in FEES 1.1.2R (2).</mark>
+- When this chapter mentions a "firm," it <mark>includes:</mark>
+  - Fee-paying payment service providers
+  - CBTL firms
+  - Fee-paying electronic money issuers
+  - Recognised investment exchanges
+  - Data reporting services providers
+
+### Purpose
+
+- The chapter outlines the requirements for firms and others to pay <mark>periodic and transaction reporting fees under certain conditions.</mark>
+
+### Gibraltar-based firms
+
+- Rules or guidance in FEES 4 that applied to Gibraltar before IP completion day continue to apply, except for specific fee rates that may change annually.
+- Gibraltar-based firms have specific deductions from their tariff payable, depending on their activity group, ranging from 10% to 100%.
+
+### Background
+
+- Detailed periodic fees payable by firms are in FEES 4 Annexes 1A to 11BR, with guidance in Annexes 12G and 13G. These annexes may change yearly.
+- Periodic fees for collective investment schemes cover FCA costs for proposals, record maintenance, and policy work.
+- Periodic fees for certain firms are detailed in FEES 4 Annex 11R, which includes activity groups, tariff bases, valuation dates, and flat fees.
+- The Society of Lloyd's has its own fee block.
+- Periodic fees for firms are calculated individually but can be paid on a group basis if desired.
+
+## FEES 4.2 Obligation to pay periodic fees
+
+### General
+
+- <mark>Relevant fee payers must pay each applicable periodic fee in full and by the specified date, unless exceptions apply.</mark>
+- <mark>Fee payers must pay a periodic fee for every year they hold a relevant status, with possible reductions or exemptions.</mark>
+- Recognised bodies may have additional fee obligations under other rules.
+- <mark>The FCA issues invoices online at least 30 days before payment is due.</mark>
+- A £50 administration charge applies if a paper invoice is requested.
+
+### <mark>Modifications for new firms during a fee year</mark>
+
+- New firms must pay a fee based on projected valuation for the first 12 months.
+- Specific calculations apply for ICVCs and issuers of regulated covered bonds.
+- Designated firms pay a pro-rata share of fees based on the number of months they hold the status.
+
+### <mark>Calculating fees in the first and second years</mark>
+
+- Fees in the first year are based on projected valuations and specific formulas.
+- Fees in the second year, if permission was granted between January and March, are based on projected or annualised figures.
+- Firms must provide data from a complete period if possible, or calculate an annualised figure if not.
+
+### Fee payers ceasing relevant status
+
+- The FCA does not rebate fees if a fee payer ceases relevant status after the start of the period, unless specific provisions apply.
+
+### Extension of Time
+
+- Payment deadlines can be extended under certain emergency circumstances or if specific conditions are met.
+
+### Table of periodic fees
+
+- Lists fee payers, fees payable, due dates, and events leading to modified fees.
+
+### Groups of firms
+
+- A firm in a group can pay fees for other group members if notified to the FCA and paid as a single amount.
+
+### Firms applying to cancel or vary permission
+
+- Specific rules apply for firms applying to cancel or vary permissions before the start of the fee year.
+
+### Firms acquiring businesses
+
+- Rules apply for firms acquiring all or part of another firm's business, affecting periodic fee obligations.
+
+### Cancellation and variation of permission
+
+- The FCA does not refund fees if a person's permission is cancelled or varied after the start of the period.
+
+### Effect of annulment
+
+- Annulment of cancellation or variation of permission affects periodic fees as if the cancellation or variation never occurred.
+
+## FEES 4.4 Information on which fees are calculated
+
+- <mark>Firms must notify the FCA of the value of each business element on which fees are calculated.</mark>
+- Information must be sent <mark>within two months of the valuation date unless exceptions apply.</mark>
+- Specific rules apply for UK Solvency II firms and alternative data sources.
+- Compliance with other Handbook provisions may satisfy these requirements.
+- Payment services business is exempt from these obligations.
+- Annulment of cancellation or variation affects notification deadlines.
+
+### Information for payment services and electronic money
+
+- <mark>Fee-paying payment service providers and electronic money issuers must notify the FCA of business elements for fee calculation.</mark>
+- Information must be sent <mark>within two months of the valuation date.</mark>
+- Compliance with other Handbook provisions may satisfy these requirements.
+
+---
+
+### Definitions
+
+- **Fee-paying payment service provider**: A provider of payment services that is required to pay fees.
+- **CBTL firm**: A firm involved in consumer buy-to-let activities.
+- **Fee-paying electronic money issuer**: An issuer of electronic money that is required to pay fees.
+- **Recognised investment exchange**: An exchange recognized by the FCA for trading securities.
+- **Data reporting services provider**: A provider of services related to the reporting of data to the FCA.
+- **ICVC**: Investment Company with Variable Capital.
+- **Designated firm**: A firm designated by the FCA for specific regulatory purposes.
+
+## FEES 4A Temporary Permissions Regime (TPR) and Financial Service Contracts Regime (FSCR) – periodic fees
+
+**Note** - Section skipped.
+
+From ChatGPT:
+
+The **Temporary Permissions Regime (TPR)** and **Financial Services Contracts Regime (FSCR)** were introduced by the UK government and the Financial Conduct Authority (FCA) in response to Brexit. They were designed to ensure that firms previously operating under EU passporting rights could continue servicing UK clients after the UK left the European Union.
+
+### 1. **Temporary Permissions Regime (TPR)**  
+The **TPR** allowed EEA-based firms and funds that were passporting into the UK before Brexit to continue operating while they sought full UK authorisation. This regime was meant to provide continuity and avoid disruption after the end of the Brexit transition period.
+
+### 2. **Financial Services Contracts Regime (FSCR)**  
+The **FSCR** applied to EEA firms that did **not** enter the TPR but still had **pre-existing contractual obligations** in the UK. It allowed them to wind down their UK operations in an orderly fashion, ensuring that they could continue servicing existing contracts but without taking on new business.
+
+Both regimes came with **periodic fees** charged by the FCA to cover the cost of oversight and regulatory functions.
+
+## FEES 5 Financial Ombudsman Service Funding
+
+## FEES 5.1 Application and Purpose
+
+### Application
+
+- **Who it applies to:**
+  - The rules and guidance in this chapter apply to every firm under the Compulsory Jurisdiction.
+  - While no rules apply to VJ participants, some guidance might. The application of rules by FOS Ltd is detailed in FEES 5.5B and FEES 5.1.2 AG.
+  - "Firm" includes fee-paying payment service providers, electronic money issuers, CBTL firms, designated finance platforms, and designated credit reference agencies.
+  - This chapter also applies to a TP firm, indicating a contrary intention under GEN 2.2.26R.
+
+- **Exemptions:**
+  - Firms exempt under DISP 1.1.12 R are also exempt from FEES 5.1, 5.2, 5.3, 5.4, and 5.6.
+  - A firm is exempt from FEES 5.7 for a financial year if it met conditions in DISP 1.1.12 R on 31 March of the previous year.
+  - Firms that cease to be exempt under FEES 5.1.4 R are treated as firms to which FEES 5.8 applies.
+  - Firms that cease to be authorized and subject to the Compulsory Jurisdiction mid-year will not receive a refund of their general levy, except in exceptional circumstances.
+
+### Purpose
+
+- The chapter outlines <mark>requirements for firms to pay annual fees (general levy collected by FCA for FOS Ltd)</mark> and case fees (collected directly by FOS Ltd) to fund the Financial Ombudsman Service. It also provides for unauthorised persons to pay case fees for relevant complaints handled by FOS Ltd.
+
+### Gibraltar-based firms
+
+- Provisions in FEES 5 that applied to Gibraltar before IP completion day continue to apply, except for annual and case fees in FEES 5 Annex 1R, 2R, and 3R, which may change each fee year.
+
+## FEES 5.2 Introduction
+
+- **Budget and Funding:**
+  - FOS Ltd must adopt an annual budget approved by the FCA, distinguishing costs between Compulsory and Voluntary Jurisdictions.
+  - The FCA can require firms to pay specified amounts to cover the establishment and operation of the Financial Ombudsman Service.
+  - FOS Ltd can require firms under the Compulsory Jurisdiction and other complaint respondents to pay fees for complaints closed by the Financial Ombudsman Service.
+  - Unauthorised persons can be charged fees for relevant complaints handled by the Financial Ombudsman Service.
+  - VJ participants must pay amounts specified in standard terms by FOS Ltd.
+
+- **Framework:**
+  - This chapter sets the framework for funding arrangements of the Financial Ombudsman Service, including fee calculation methods. Actual fees vary yearly based on the Financial Ombudsman Service's annual budget.
+
+## FEES 5.3 The General Levy
+
+- **Consultation and Calculation:**
+  - Each year, the FCA and FOS Ltd consult on the annual budget amount to be raised by the general levy.
+  - Firms fall into industry blocks based on business activities, as set out in FEES 5 Annex 1R.
+  - The FCA determines the amount to be raised from each industry block based on budgeted costs and expected complaint volumes.
+  - Fee tariffs for each industry block are detailed in FEES 5 Annex 1R.
+  - <mark>A minimum levy is specified for firms in each industry block.</mark>
+
+- **Payment:**
+  - <mark>Firms must pay a general levy to the FCA for operating the Compulsory Jurisdiction of the Financial Ombudsman Service.</mark>
+  - VJ participants pay an amount calculated similarly for the Voluntary Jurisdiction, invoiced and collected by FOS Ltd.
+  - The general levy is calculated by identifying applicable tariff bases, calculating sums payable, and adding them together.
+
+- **Special Cases:**
+  - VJ participants joining partway through a financial year pay a proportion of the annual levy.
+  - Members of the Society of Lloyd's or managing agents at Lloyd's are not treated as firms for levy purposes, but the Society pays a general levy for Lloyd's insurance business.
+  - <mark>References to relevant business for firms in industry blocks 16 or 17 are based on annual income reported in accordance with FEES 4 Annex 1AR Part 3.</mark>
+
+## FEES 5.4 Information Requirement
+
+- **<mark>Annual Statement:</mark>**
+  - Firms must provide the FCA with a statement of relevant business conducted by the end of February each year.
+  - Firms in industry blocks 2 and 4 must report gross written premium for fees purposes unless they notify the FCA of an alternative amount by 8 April.
+  - Firms paying a general levy on a flat fee basis or the Bank of England are exempt from this requirement.
+  - If unable to provide a statement, firms must provide the best estimate of relevant business conducted.
+
+- **Consequences of Non-compliance:**
+  - Failure to submit a complete statement results in a £250 administrative fee and levy calculation based on previous valuations, adjusted once true figures are known.
+  - The FCA may use alternative data sources if specified data is unavailable.
+
+- **New Definition:**
+  - From 1 April 2025, a new definition of relevant business applies to business with all types of eligible complainants.
+
+## FEES 5.5B Case Fees
+
+### Application
+
+- **Who it applies to:**
+  - FEES 5.5B applies to respondents, including VJ participants.
+  - Firms in industry blocks 13 or 15 are exempt from case fees for chargeable cases related to those blocks.
+  - Credit unions or community finance organizations subject to the minimum levy are exempt from case fees for related chargeable cases.
+  - Exemptions apply to firms, payment service providers, electronic money issuers, designated credit reference agencies, and designated finance platforms under certain conditions.
+
+### Purpose
+
+- **Funding:**
+  - FEES 5.5B outlines requirements for respondents to pay fees for cases referred to the Financial Ombudsman Service, funding its operations.
+  - Fees are invoiced and collected directly by FOS Ltd.
+  - The annual budget reflects expected levies and case fees for the financial year.
+
+### Standard Case Fee
+
+- **Payment:**
+  - Respondents must pay the standard case fee for each chargeable case closed by the Financial Ombudsman Service, unless part of a charging group.
+  - Only the 4th and subsequent chargeable cases in a financial year incur a standard case fee.
+
+### Special Case Fee
+
+- **Charging Groups:**
+  - Charging groups pay a special case fee instead of the standard case fee, calculated and invoiced by FOS Ltd.
+  - Individual respondents in a charging group are jointly and individually liable for the group's obligations.
+
+### Leaving the Financial Ombudsman Service
+
+- **Liability:**
+  - Respondents ceasing to be a firm or related entity mid-year remain liable for case fees for cases within the Financial Ombudsman Service's jurisdiction.
+
+### Late Payment
+
+- **Penalties:**
+  - Late payment of case fees incurs a £250 administrative fee and interest at 5% above the Official Bank Rate.
+
+### Time Limit for Claims
+
+- **Claims for Remission or Repayment:**
+  - Claims for remission or repayment of case fees must be made within one year of invoicing, with exceptions for exceptional circumstances.
+
+## FEES 5.7 Payment
+
+- **General Levy Payment:**
+  - Firms must pay the general levy annually to the FCA by 1 April or within 30 days of invoice issuance.
+  - Payment methods are specified in FEES 2.1.12R.
+
+- **Extension of Time:**
+  - Payment deadlines may be extended in emergencies, with payment due within five business days after the emergency period ends.
+
+## FEES 5.8 Joining the Financial Ombudsman Service
+
+- **Proportional Payment:**
+  - Firms joining the Financial Ombudsman Service mid-year must pay a rateable proportion of the general levy.
+
+- **Tariff Base Calculation:**
+  - The tariff base is calculated using projected valuations for the first year of business, with specific rules for firms obtaining or extending permissions.
+
+## Definitions
+
+- **Compulsory Jurisdiction:** The mandatory area of jurisdiction for firms under the Financial Ombudsman Service.
+- **VJ Participants:** Participants in the Voluntary Jurisdiction of the Financial Ombudsman Service.
+- **TP Firm:** A firm with temporary permissions.
+- **CBTL Firm:** A firm with permissions related to consumer buy-to-let activities.
+- **Designated Finance Platform:** A platform designated for financial services.
+- **Designated Credit Reference Agency:** An agency designated for credit referencing.
+- **FOS Ltd:** Financial Ombudsman Service Limited.
+- **Industry Block:** A category of firms grouped by similar business activities for fee calculation.
+- **Relevant Business:** Business activities relevant to fee calculations.
+- **Standard Case Fee:** The fee charged for each chargeable case closed by the Financial Ombudsman Service.
+- **Special Case Fee:** A fee charged to charging groups instead of the standard case fee.
+- **Charging Group:** A group of firms identified for special case fee calculations.
+- **General Levy:** The annual fee paid by firms to fund the Financial Ombudsman Service.
+- **Tariff Base:** The basis for calculating fees, often related to business activities or income.
+
+## FEES 6 Financial Services Compensation Scheme Funding
+
+## FEES 6.1 Application
+
+- **Who this chapter applies to:**
+  - <mark>Every participant firm.</mark>
+  - The FSCS (Financial Services Compensation Scheme).
+  - The Society.
+
+- **Exemptions:**
+  - Firms that are not participant firms, like certain service companies, ICVCs, and pre-IP completion day incoming EEA firms, do not need to contribute to the compensation scheme.
+  - Fees related to insurance market activities by members are imposed on the Society, not individual members.
+
+- **Purpose:**
+  - This chapter outlines the requirements for participant firms to pay levies imposed by the FSCS to fund its functions under COMP. The PRA Rulebook covers funding for depositor and policyholder protection.
+
+- **General Structure:**
+  - Section 213(3)(b) of the Act requires regulators to make rules for the FSCS to impose levies on authorized persons and recognized investment exchanges to cover expenses, including compensation, borrowing, or insuring risks.
+  - Section 224F allows regulators to make rules for the FSCS to impose levies on authorized persons to cover management expenses if required by HM Treasury, but only if the FSCS has tried to get reimbursement from the scheme manager.
+
+- **Types of Levies:**
+  - The FSCS can impose three types of levies: management expenses levy (base costs and specific costs), compensation costs levy, and MERS levy. The FSCS decides the amount and timing.
+
+- **Calculating Compensation Costs Levy:**
+  - <mark>The FSCS can include up to one-third of expected compensation costs in the next 36 months or the expected costs in the next 12 months.</mark>
+
+- **Management Expenses Levies:**
+  - The total amount of management expenses levies for a financial year is capped as per FEES 6 Annex 1 R.
+
+- **Funding Arrangements:**
+  - Specific costs and compensation costs are divided into seven classes based on the permissions held by a participant firm.
+
+- **Allocation of Levies:**
+  - Levies are allocated to classes to reflect the amount of claims made or likely to be made.
+
+- **Management Expenses Levy:**
+  - Section 223 of the Act limits the FSCS from recovering management expenses beyond the set limit, excluding expenses for compensation, insurance continuity, funeral plan contracts, and certain Treasury-required actions.
+
+- **Base Costs Levy:**
+  - Consists of 50% of the base costs of running the compensation scheme, covering general expenses like board salaries and premises costs. All participant firms contribute based on regulatory costs.
+
+- **Specific Costs Levy:**
+  - Covers costs attributable to a class, like staff salaries and claims handling fees. Participant firms pay based on business conducted in that class.
+
+- **Consultation on Management Expenses:**
+  - The limit on management expenses for the upcoming financial year is consulted on annually in January.
+
+- **Compensation Costs Levy:**
+  - Takes into account incurred compensation costs, recoveries, and expected costs in the financial year or one-third of expected costs in the next 36 months.
+
+- **Compensation Costs:**
+  - Include costs for paying compensation, Treasury-required payments, borrowing costs, and funeral plan continuity arrangements.
+
+- **Participant Firms in Multiple Classes:**
+  - Total levies for a firm in multiple classes are the sum of individual class levies.
+
+- **Retail Pool:**
+  - Compensation and specific costs exceeding class limits may be allocated to the retail pool, shared among other classes.
+
+## FEES 6.2 Exemption
+
+- **Exemption Conditions:**
+  - <mark>A participant firm not conducting business eligible for FSCS compensation and with no likelihood of doing so is exempt from specific or compensation costs levies if it notifies the FSCS and conditions continue to apply.</mark>
+
+- **Notification and Effect:**
+  - Exemption takes effect from the notice date, subject to certain rules.
+
+- **Exemption Exceptions:**
+  - Does not apply to specific costs or compensation costs levies from certain categories like general insurance provision or consumer credit provision.
+
+- **Reporting Requirements:**
+  - Firms must report annual eligible income if subject to claims under COMP 3.2.4 R.
+
+- **Notification of Change:**
+  - Exempt firms must notify the FSCS if conditions no longer apply.
+
+- **Effect of Ceasing Business:**
+  - Firms ceasing compensatable business are treated as exempt until the end of the financial year.
+
+- **Financial Year Definition:**
+  - The financial year of the compensation scheme ends on 31 March.
+
+- **Exemption Timing:**
+  - Exemption applies if conditions are met on 31 March of the preceding financial year.
+
+## FEES 6.3 The FSCS's Power to Impose Levies
+
+- **Imposing Levies:**
+  - The FSCS can impose management expenses or compensation costs levies if funds are insufficient, considering expected expenses and recoveries.
+
+- **Levy Calculation:**
+  - Takes into account previous levies and actual costs.
+
+- **Annual and Interim Levies:**
+  - FSCS usually levies annually but can impose interim levies or use other funding sources if costs exceed available funds.
+
+- **Levying Policy:**
+  - FSCS publishes its levying policy in a Memorandum of Understanding with the FCA.
+
+- **Third-Party Agents:**
+  - FSCS can use third parties to raise and collect levies.
+
+- **MERS Levy:**
+  - FSCS can impose a MERS levy if funds are insufficient for relevant expenses.
+
+- **Class Levy Limits:**
+  - Maximum compensation and specific costs levies for each class are limited as per FEES 6 Annex 2 R.
+
+- **Compensation Costs Paid in Error:**
+  - FSCS can include costs of compensation paid in error in a levy if not made in bad faith.
+
+- **Fund Management:**
+  - FSCS manages funds prudently and credits interest to the relevant class.
+
+- **Class Fund Transfers:**
+  - FSCS can transfer funds between classes if more economical than borrowing, ensuring reimbursement with interest.
+
+- **Recoveries:**
+  - Recoveries are credited to the class that incurred the related compensation costs.
+
+- **Surplus Funds:**
+  - FSCS can refund surplus funds to class members if not needed for the next 12 months.
+
+- **Levy Share Adjustments:**
+  - FSCS can adjust levy shares for excesses, exemptions, or unrecovered amounts.
+
+- **Firms Acquiring Businesses:**
+  - Firms acquiring another's business must pay levies as if the acquired firm remained liable.
+
+- **Small Levy Shares:**
+  - FSCS can waive small levy shares if collection costs are disproportionate.
+
+- **Levies on Lloyd’s Society:**
+  - FSCS can levy the Society as the aggregate of member levies.
+
+- **Effect of Annulment:**
+  - Annulment of permission cancellation or variation affects levy liability.
+
+## FEES 6.4 Management Expenses
+
+- **Obligation to Pay:**
+  - Participant firms must pay a share of each management expenses levy.
+
+- **Management Expenses Limit:**
+  - Total management expenses levies cannot exceed the set limit for the period.
+
+- **Participant Firm's Share:**
+  - Consists of a share of base costs and specific costs levies.
+
+- **Base Costs Levy Calculation:**
+  - Based on regulatory costs and allocated among participant firms.
+
+- **Specific Costs Levy Calculation:**
+  - Allocated and calculated like a compensation costs levy.
+
+## FEES 6.4A Management Expenses in Respect of Relevant Schemes
+
+- **Obligation to Pay:**
+  - Participant firms must pay a share of each MERS levy.
+
+- **MERS Levy Restriction:**
+  - Imposed only if FSCS fails to get reimbursement from the scheme manager.
+
+- **MERS Levy Calculation:**
+  - Calculated on a reasonable basis.
+
+## FEES 6.5 Compensation Costs
+
+- **Allocation:**
+  - Compensation costs levies are allocated to classes based on claims and levy limits.
+
+- **Cap and Clawback:**
+  - Levies on certain categories are capped, with clawback if limits are exceeded.
+
+- **Borrowing for Liquidity:**
+  - FSCS borrowing does not affect compensation costs attribution.
+
+- **Defaulting Firms:**
+  - Costs from unauthorized activities are treated as if permission was held.
+
+- **Appointed Representatives:**
+  - Costs from activities not accepted by a principal are treated as if accepted.
+
+- **Participant Firm's Share:**
+  - Calculated based on class membership and business conducted.
+
+- **New Participant Firms:**
+  - Not liable for levies in the year they become participant firms.
+
+- **Compensation Costs for New Firms:**
+  - Calculated using projected business valuation.
+
+- **Membership of Several Classes:**
+  - Firms may belong to multiple classes.
+
+- **Reporting Requirements:**
+  - Firms must report class membership and business conducted annually.
+
+- **Use of PRA Information:**
+  - FSCS may use PRA-provided information for levy calculations.
+
+- **Late Submission Penalty:**
+  - Firms failing to submit reports on time face a penalty and levy calculation adjustments.
+
+## FEES 6.5A The Retail Pool
+
+- **Allocation Through Retail Pool:**
+  - Levies exceeding class limits are allocated to the retail pool and distributed among classes with unused limits.
+
+- **Levy Limit Calculation:**
+  - Based on original class limits, not remaining capacity.
+
+- **Excess Levy Allocation:**
+  - Excess levies are reallocated among classes until limits are exhausted.
+
+## FEES 6.7 Payment of Levies
+
+- **Payments on Account:**
+  - Certain firms must pay levies in installments.
+
+- **Annulment Effect:**
+  - Annulment of permission cancellation affects payment timing.
+
+- **Payment by Other Firms:**
+  - Firms not on installment plans must pay levies in one payment.
+
+- **Interim Levy Payments:**
+  - Due within 30 days of invoice issuance.
+
+- **Payment Method:**
+  - Levies must be paid using specified methods without additional charges.
+
+- **Firms Ceasing Participation:**
+  - Liable for unpaid levies and may face additional levies before ceasing authorization.
+
+- **Extension of Time:**
+  - Payment deadlines may be extended in emergencies.
+
+## Definitions
+
+- **Participant Firm:** A firm that is part of the FSCS and subject to its levies.
+- **FSCS:** Financial Services Compensation Scheme, responsible for protecting consumers when financial services firms fail.
+- **Society:** Refers to the Society of Lloyd's, a market for insurance and reinsurance.
+- **Management Expenses Levy:** A levy to cover the FSCS's operational costs.
+- **Compensation Costs Levy:** A levy to cover the costs of compensation paid to claimants.
+- **MERS Levy:** A levy related to management expenses for relevant schemes.
+- **Retail Pool:** A mechanism for distributing excess levies among classes with unused limits.
+- **Class:** A category of firms based on the type of business they conduct, used for levy allocation.
+- **Tariff Base:** A measure of a firm's business activity used to calculate its share of levies.
+
+## FEES 7A SFGB levies
+
+## FEES 7A.1 Application and Purpose
+
+### Application
+
+- **Who it applies to:**
+  - This chapter is relevant to:
+    - Those listed in FEES 1.1.2R(5) concerning the SFGB money advice levy and SFGB debt advice levy.
+    - Those listed in FEES 7A.1.2R concerning the SFGB pensions guidance levy.
+
+- **SFGB pensions guidance levy:**
+  - Applies to firms with a Part 4A Permission and involved in specific activities:
+    - A.1 Deposit acceptors
+    - A.4 Insurers – life
+    - A.7 Portfolio managers (excluding Class (1)A firms)
+    - A.9 Managers and depositaries of investment funds, and operators of collective investment schemes or pension schemes
+    - A.13 Advisors, arrangers, dealers, or brokers
+
+### Purpose
+
+- **Objective:**
+  - This chapter outlines the requirements for funding the Secretary of State's costs related to the SFGB and the FCA's collection costs.
+
+### Background
+
+- **Expenses Notification:**
+  - The Secretary of State can notify the FCA about expenses related to the SFGB's operation or under the Financial Guidance and Claims Act 2018.
+  - Expenses include grants, loans, or financial assistance for establishing or enabling the SFGB to function.
+
+- **FCA's Role:**
+  - Upon notification, the FCA must create rules for authorised persons, electronic money issuers, or payment service providers to pay specified sums to recover:
+    - The amount notified by the Secretary of State.
+    - FCA's expenses related to its functions under the Act.
+
+- **Payment to Secretary of State:**
+  - The FCA must pay the amounts received (minus collection costs) to the Secretary of State.
+
+- **Levy Variability:**
+  - The SFGB levy amount may change annually based on the Secretary of State's notification.
+
+### Exemption
+
+- **Exempt Entities:**
+  - The Bank of England, government departments, local authorities, municipal banks, and the National Savings Bank are exempt from the SFGB levy for payment services or electronic money issuance.
+
+### Gibraltar-based Firms
+
+- **Application Post-IP Completion Day:**
+  - Rules or guidance in FEES 7A that applied to Gibraltar before IP completion day continue to apply, except for certain fee rates which may change annually.
+
+- **Fee Modifications:**
+  - Gibraltar-based firms have specific deductions from the tariff payable under FEES 7A Annex 1R for various activity groups.
+
+## FEES 7A.2 The SFGB Levy
+
+Single Financial Guidance Body, responsible for providing money and pensions guidance.
+
+- **Components:**
+  - The SFGB levy consists of:
+    - SFGB money advice levy
+    - SFGB debt advice levy
+    - SFGB pensions guidance levy
+
+- **Annulment Effect:**
+  - If the FCA annuls a cancellation or variation of Part 4A permission, the SFGB levy applies as if the cancellation or variation never occurred.
+
+## FEES 7A.3 The SFGB Money Advice Levy and Debt Advice Levy
+
+### Obligation to Pay
+
+- **Payment Requirements:**
+  - Firms must pay the SFGB money advice levy or debt advice levy in full by 1 August or within 30 days of the invoice date.
+
+- **Annulment Payment:**
+  - If annulment occurs after the due date, payment is due on the annulment date.
+
+### Calculation
+
+- **Levy Calculation Steps:**
+  - Identify applicable activity groups.
+  - Calculate the amount payable for each group.
+  - Add amounts and check for minimum fees.
+  - Modify results as needed and apply payment charges.
+
+- **Activity Group Calculation:**
+  - Determine the firm's tariff base size.
+  - Identify applicable bands and calculate fees.
+  - Apply modifications and calculate using previous period data if necessary.
+
+### Amount Payable by the Society of Lloyds
+
+- **Specified Levy:**
+  - The SFGB money advice levy for the Society is specified in Part 1 of FEES 7A Annex 1R.
+
+### FEES 4 Rules Incorporated
+
+- **Cross-Reference:**
+  - Certain FEES 4 rules apply to the SFGB money advice levy and debt advice levy, as listed in FEES 7A.3.10R.
+
+## FEES 7A.4 The SFGB Pensions Guidance Advice Levy
+
+### Obligation to Pay
+
+- **Payment Requirements:**
+  - Firms must pay the SFGB pensions guidance levy in full by 1 August or within 30 days of the invoice date.
+
+- **Annulment Payment:**
+  - If annulment occurs after the due date, payment is due on the annulment date.
+
+### Calculation
+
+- **Levy Calculation Steps:**
+  - Identify applicable activity groups.
+  - Calculate the amount payable for each group.
+  - Modify results as needed and apply payment charges.
+
+- **Activity Group Calculation:**
+  - Determine the firm's tariff base size.
+  - Identify applicable bands and calculate fees.
+  - Apply modifications and calculate using previous period data if necessary.
+
+### Application of FEES 4
+
+- **Cross-Reference:**
+  - Certain FEES 4 rules apply to the SFGB pensions guidance levy, as listed in FEES 7A.4.11R.
+
+## Definitions
+
+- **Part 4A Permission:** A regulatory permission granted to firms under the Financial Services and Markets Act 2000.
+- **SFGB:** Single Financial Guidance Body, responsible for providing money and pensions guidance.
+- **Activity Groups:** Categories of financial activities used to determine applicable levies.
+- **Tariff Base:** The measure used to calculate fees, such as income or liabilities.
+- **Annulment:** The cancellation of a regulatory decision, treating it as if it never occurred.
+
+## FEES 7B The DA levy
+
+Skipped
+
+## FEES 7C Temporary Permissions Regime (TPR) and Financial Service Contracts Regime (FSCR) - Single Financial Guidance Body levy
+
+Skipped
+
+## FEES 7D Temporary Permissions Regime (TPR) – Devolved Authorities levy
+
+Skipped
+
+## FEES 8 [deleted]
+
+Skipped
+
+## FEES 9 Payment Systems Regulator funding
+
+## FEES 9.1 Application and Purpose
+
+### Application
+
+- This chapter applies to:
+  - <mark>Operators of regulated payment systems</mark>
+  - Operators of IFR card payment systems
+  - <mark>Operators of payment systems under the Payment Services Regulations</mark>
+  - <mark>Direct payment service providers</mark>
+
+### Purpose
+
+- This chapter explains how fees payable by PSR fee payers and other participants are calculated to establish and fund the PSR.
+
+### Introduction
+
+- Section 40(1) of FSBRA requires the FCA to establish the PSR.
+- Paragraph 9 of Schedule 4 of FSBRA and the 2015 Interchange Regulations allow the FCA to make rules for participants in regulated payment systems and IFR card payment systems to pay specified amounts to:
+  - Cover relevant costs
+  - Maintain adequate reserves for the PSR
+- Relevant costs include:
+  - Expenses incurred by the PSR in its functions
+  - Expenses incurred by the FCA in establishing the PSR
+  - Other expenses related to FCA functions under Part 5 of FSBRA
+  - Expenses related to PSR functions by FCA staff
+- The amounts may include FCA expenses in collecting PSR fees.
+- FEES 9 outlines the rules mentioned above.
+- The FCA must pay PSR fees to the PSR, except for certain expenses and collection costs.
+
+### Publication of Fees Information
+
+- The PSR must adopt an annual budget and prepare an annual plan, both approved by the FCA.
+- PSR fees vary yearly based on the PSR’s AFR and transaction volumes/values. The PSR will publish these figures annually to help fee payers apply the methodology in FEES 9 Annex 1R.
+
+## FEES 9.2 PSR Fees
+
+### Obligation to Pay PSR Fees
+
+- <mark>PSR fee payers must pay fees to the FCA as calculated in FEES 9 Annex 1 R, in full and without deduction, subject to certain conditions.</mark>
+- A PSR fee payer is exempt from paying fees if collection costs are disproportionate to the amount.
+- If a payment service provider acquires another's business, it assumes the fee liability for the acquired transaction volumes.
+- An operator acting as a PSR fee payer must pay the entire fee for the relevant card payment system.
+- No other acquirers or card issuers need to pay fees if the operator pays the entire fee.
+
+### Time of Payment
+
+- <mark>Certain PSR fee payers must pay 50% of the previous year's fee by 1 April and the balance by 1 September.</mark>
+- <mark>If the above does not apply, fees must be paid in full by 1 August or within 30 days of the invoice date.</mark>
+
+### Method of Payment
+
+- <mark>Fees should be paid by direct debit, electronic credit transfer, cheque, Maestro, Visa Debit, or credit card (Visa/MasterCard).</mark>
+
+### Provision of Information
+
+- <mark>Operators must provide transaction data and contact information to the FCA and PSR by 1 March each year.</mark>
+- The FCA uses this data to calculate fees and may verify it with fee payers.
+
+### Ceasing to be Designated
+
+- No fee relief or refund is given if a payment system or provider ceases to be regulated after the start of the fee year.
+- Outstanding fees must be paid before losing regulated status.
+
+### Late Payments
+
+- Late payments incur a £250 administrative fee and interest at 5% above the Official Bank Rate.
+- The FCA may recover fees as a debt and consider regulatory action for non-payment.
+
+### Reduction, Remission, and Repayment of Fees
+
+- The FCA may reduce or remit fees in exceptional circumstances.
+- Refunds may be given if retaining fees would be inequitable, but claims must be made within two years.
+
+### VAT
+
+- Fees are stated net of VAT, which must be included if applicable.
+
+## FEES 9.3 PSR Special Project Fee
+
+### General Information
+
+- The PSR Special Project Fee (PSPF) is payable by operators of regulated payment systems, IFR card payment systems, and payment systems under the Payment Services Regulation.
+- It funds specific projects promoting payment service users' interests.
+
+### Payment Conditions
+
+- The PSPF is payable if the PSR undertakes work related to new payment systems and determines costs should be met by the PSPF.
+- The PSPF is calculated based on estimated project costs and allocated among liable persons.
+- It is payable in addition to any other PSR fees.
+
+### Payment Terms
+
+- PSPF must be paid by 1 September or within 30 days of the invoice date.
+- Payment methods include direct debit, electronic credit transfer, cheque, Maestro, Visa Debit, or credit card.
+
+### Late Payments
+
+- Late PSPF payments incur a £250 fee and interest at 5% above the Official Bank Rate.
+- The FCA may recover PSPF as a debt and consider regulatory action for non-payment.
+
+### Cost Adjustments
+
+- If actual project costs differ from the PSPF charged, adjustments are made in the following year, either adding or refunding the difference.
+
+## FEES 9 Annex 1 PSR Fees Methodology
+
+- The table outlines how the FCA determines PSR fees for each fee year based on transaction volumes and values across various payment systems.
+
+---
+
+### Definitions
+
+- **PSR fee payer**: Entities required to pay fees to the FCA for the PSR.
+- **Regulated payment system**: Payment systems regulated under specific regulations.
+- **IFR card payment system**: Card payment systems regulated under the Interchange Fee Regulation.
+- **Direct payment service provider**: Entities providing payment services directly to users.
+- **PSPF**: Special Project Fee for funding specific PSR projects.
+- **AFR**: Annual Funding Requirement for the PSR.
+
+## FEES 12 FOS ADR levy
+
+Skipped
+
+## FEES 13 Illegal money lending levy
+
+Skipped
+
+## FEES 13A Temporary Permissions Regime (TPR) and Financial Service Contracts Regime (FSCR) – Illegal money lending levy
+
+## FEES Appendices
+
+Skipped
+
+# Prudential Standards
+
+# GENPRU
+
+## GENPRU 1
+
+Deleted.
+
+## GENPRU 2
+
+Missing from handbook.
+
+## GENPRU 3 Cross sector groups
+
+## GENPRU 3.1 Application
+
+- **Application of GENPRU 3.1**
+
+  - GENPRU 3.1 applies to firms in a financial conglomerate, except:
+    - ICVCs - Investment Company with Variable Capital
+    - Banks - A financial institution licensed to receive deposits and make loans.
+    - Designated investment firms - A firm designated under specific regulatory criteria.
+    - Insurers - A company that provides insurance policies.
+
+  - GENPRU 3.1 (except specific sections) applies to:
+    - Banks - A financial institution licensed to receive deposits and make loans.
+    - Designated investment firms - A firm designated under specific regulatory criteria.
+    - Insurers that are "UK Solvency II firms" - An insurer subject to Solvency II regulations in the UK.
+
+  - GENPRU 3.1 does not apply if a firm's interest in the conglomerate is only a participation.
+
+  - Certain rules do not apply to third-country financial conglomerates.
+
+- **Purpose**
+
+  - GENPRU 3.1 implements the Financial Groups Directive.
+  - Additional materials on third-country financial conglomerates are in GENPRU 3.2.
+  - Notification rules are in SUP 15.9.
+  - Reporting obligations are in SUP 16.12.32 R and SUP 16.12.33 R.
+  - Systems and controls information is in SYSC 12.
+
+- **Amendments for MiFIDPRU**
+
+  - GENPRU 3.1 reflects a new prudential regime for MiFID investment firms, focusing on potential harm to consumers and markets.
+  - Financial conglomerates should contact the FCA if amendments do not reflect their risks.
+
+- **Identifying a Financial Conglomerate**
+
+  - Competent authorities identify financial conglomerates.
+  - A group member can notify authorities if it may be a financial conglomerate.
+  - The coordinator leads the identification process.
+  - Notification does not automatically make a group a financial conglomerate.
+  - GENPRU 3 Annex 3 is a questionnaire for potential financial conglomerates.
+  - The FCA can disapply certain provisions for mixed financial holding companies.
+
+- **Role of Other Competent Authorities**
+
+  - A coordinator is appointed for each financial conglomerate.
+
+- **Definition of Financial Conglomerate**
+
+  - A financial conglomerate is identified using a decision tree in GENPRU 3 Annex 4.
+  - Sub-groups can still be financial conglomerates.
+  - Financial sectors include banking/investment services and insurance.
+  - Mixed financial holding companies are outside the overall financial sector for certain tests.
+  - Once identified, thresholds in the decision tree are adjusted.
+
+- **Capital Adequacy Requirements**
+
+  - Designed for financial conglomerates.
+  - High-level capital adequacy rule applies regardless of the FCA's role as coordinator.
+  - Detailed requirements apply only if the FCA is the coordinator.
+  - Three methods for calculating capital adequacy:
+    - Method 1: Accounting consolidation
+    - Method 2: Deduction and aggregation
+    - Method 3: Combination of Methods 1 and 2
+
+- **Risk Concentration and Intra-group Transactions**
+
+  - Sectoral rules apply to the most important financial sector in a conglomerate.
+  - The FCA may require application of sectoral rules at the conglomerate level.
+
+- **Asset Management Companies and Alternative Investment Fund Managers**
+
+  - Included in the regulation of financial conglomerates.
+  - Must be allocated to either the MIFIDPRU investment services sector or the insurance sector.
+
+## GENPRU 3.2 Third-country Groups
+
+- **Application**
+
+  - Applies to firms in a third-country group, excluding ICVCs, banks, designated investment firms, and insurers.
+
+- **Purpose**
+
+  - Implements requirements related to the Financial Groups Directive and other directives.
+
+- **Equivalence**
+
+  - Determines if UK entities in a third-country group are supervised equivalently by a third-country authority.
+
+- **Other Methods**
+
+  - If equivalence is not met, UK provisions or other methods may apply.
+
+- **Supervision by Analogy**
+
+  - FCA may apply supplementary or consolidated supervision by analogy for unusual group structures.
+
+## GENPRU 3.3 Actions for Damages
+
+- **No Right of Action**
+
+  - Contraventions of GENPRU rules do not give rise to a right of action by private persons.
+
+## Definitions
+
+- **ICVC**: Investment Company with Variable Capital
+- **Bank**: A financial institution licensed to receive deposits and make loans.
+- **Designated Investment Firm**: A firm designated under specific regulatory criteria.
+- **Insurer**: A company that provides insurance policies.
+- **UK Solvency II Firm**: An insurer subject to Solvency II regulations in the UK.
+- **Financial Conglomerate**: A group identified as such under specific regulatory criteria.
+- **Mixed Financial Holding Company**: A company that holds subsidiaries in different financial sectors.
+- **Coordinator**: The lead supervisor for a financial conglomerate.
+- **MIFIDPRU**: Prudential regime for MiFID investment firms.
+- **FCA**: Financial Conduct Authority, the UK regulator for financial services.
+
+## INSPRU Prudential sourcebook for Insurers
+
+**Note** - The handbook jumps to this section from GENPRU 3.1. so I assume it is all missing.
+
+Skipped. This section is for insurers.
+
+## MIFIDPRU Prudential sourcebook for MiFID Investment Firms
+
+## MIFIDPRU 1.1 Application and Purpose
+
+**IMPORTANT AUTHOR'S NOTE** - The MIFIDPRU section is aimed at companies with value at risk.
+
+The firms within MIFIDPRU typically have some form of financial exposure, which could include:
+
+- Market Risk - If the firm trades financial instruments on its own account (proprietary trading, market-making).
+- Credit Risk - If it extends credit to clients or is exposed to counterparties.
+- Operational Risk - If it holds client money/assets or relies on complex systems for execution.
+- Liquidity Risk - If it needs to meet funding obligations but lacks immediate access to liquid assets.
+
+For this reason, I will skip MIFIDPRU and come back to it later if I need to, keeping just this first section, below.
+
+### Application
+
+- **General Application**
+  - <mark>MIFIDPRU doesn't have a single application rule. Each chapter or section has its own application statement.</mark>
+  - Generally, MIFIDPRU applies to:
+    1. MIFIDPRU investment firms
+    2. UK parent entities
+    3. Parent undertakings in an investment firm group based in the UK
+
+- **Collective Portfolio Management Investment Firms**
+  - These firms are included in the definition of a MIFIDPRU investment firm and must follow MIFIDPRU rules unless stated otherwise.
+  - They are also subject to IPRU-INV 11 requirements and should refer to IPRU-INV 11.6 for guidance on how MIFIDPRU interacts with IPRU-INV 11.
+  - Many MIFIDPRU requirements apply only to MiFID business, not to collective portfolio management activities, but some apply to the entire firm.
+
+- **Application to Overseas Firms**
+  - MIFIDPRU doesn't directly apply to firms not based in the UK. However, it imposes obligations on UK parent entities regarding third-country undertakings in the same group.
+  - MIFIDPRU 2 provides more guidance on its application to investment firm groups.
+
+- **Third Country MIFIDPRU Investment Firms**
+  - The FCA generally won't authorize these firms unless they are subject to equivalent prudential regulation in their home country.
+  - The FCA considers factors like regulatory outcomes, supervision, legal framework, and cooperation with overseas regulators.
+  - If a third country firm isn't subject to equivalent regulation, it may need to establish a UK subsidiary to comply with MIFIDPRU.
+  - Even if granted permission, these firms must comply with ongoing threshold conditions and Principles, including informing the FCA of relevant matters.
+
+### Purpose
+
+- **General Purpose**
+  - <mark>MIFIDPRU outlines prudential requirements for MIFIDPRU investment firms, excluding designated investment firms regulated by the PRA.</mark>
+  - <mark>It mainly covers MiFID business but some rules apply to the whole firm.</mark>
+
+- **Expansion on Basic Requirements**
+  - MIFIDPRU builds on basic requirements like maintaining adequate financial resources as per COND 2.4 and Principle 4.
+
+### Tied Agents
+
+- **Definition and Application**
+  - Tied agents act on behalf of investment firms, promoting services, handling orders, placing instruments, or providing advice.
+  - MIFIDPRU references to tied agents exclude appointed representatives not involved in MiFID business.
+  - Firms' responsibilities for appointed representatives are relevant for their ICARA process under MIFIDPRU 7.
+
+### Voluntary Application of Stricter Requirements
+
+- **Holding More Funds or Stricter Measures**
+  - Firms can hold more funds or apply stricter measures than required by MIFIDPRU.
+  - Stricter measures must still meet MIFIDPRU's basic requirements.
+  - Firms unsure about stricter measures should consult the FCA.
+
+### Notifications and Applications Without Dedicated Forms
+
+- **General Rule**
+  - If a notification or application is required but no specific form is provided, firms must use forms in MIFIDPRU 1 Annex 5R or 6R and submit them online.
+
+## MIFIDPRU 1.2 SNI MIFIDPRU Investment Firms
+
+### Basic Conditions for Classification
+
+- **Conditions for SNI Classification**
+  - A firm is an SNI MIFIDPRU investment firm if it meets specific conditions regarding AUM, COH, ASA, CMH, permissions, balance sheet total, revenue, and other factors.
+
+- **Client Assets and Money**
+  - Definitions of ASA and CMH relate to MiFID business. Firms can hold client assets/money in other business and still be SNI if they have necessary permissions.
+
+### Additional Provisions for Calculation
+
+- **Calculation Methods**
+  - Firms must use end-of-day values for AUM, COH, ASA, and intra-day values for CMH.
+  - An alternative approach allows using 12-month data without excluding recent values, with FCA notification required.
+
+- **Use of Provisional Accounts**
+  - Firms must use provisional accounts if final accounts aren't approved within 6 months of the financial year-end.
+
+- **Error Handling in CMH**
+  - Firms can use end-of-day values for CMH if errors are corrected by day's end, with immediate FCA notification required.
+
+### Group Considerations
+
+- **Group Calculations**
+  - Firms must assess conditions based on their group, considering combined metrics for AUM, COH, balance sheet total, and revenue.
+  - Double counting in group revenue can be excluded.
+
+### Reclassification and Notifications
+
+- **Reclassification as SNI**
+  - Non-SNI firms meeting SNI conditions for 6 months can be reclassified with FCA notification.
+  - Firms ceasing to meet SNI conditions must notify the FCA and may be reclassified as non-SNI.
+
+### Senior Management, Remuneration, and Controls
+
+- **Exemptions for SNI Firms**
+  - Certain provisions don't apply to SNI firms unless they cease to meet SNI conditions, in which case they must comply within 12 months.
+
+## MIFIDPRU 1.3 Actions for Damages
+
+- **No Right of Action**
+  - Breaching MIFIDPRU rules doesn't give private persons a right to action under section 138D of the Act.
+
+## Definitions
+
+- **MIFIDPRU Investment Firm**: A firm subject to MIFIDPRU rules, including collective portfolio management investment firms.
+- **UK Parent Entity**: A parent company based in the UK.
+- **Parent Undertaking**: A parent company within an investment firm group.
+- **Third Country MIFIDPRU Investment Firm**: An investment firm from outside the UK.
+- **SNI MIFIDPRU Investment Firm**: A small and non-interconnected investment firm meeting specific conditions.
+- **AUM**: Assets Under Management.
+- **COH**: Client Orders Handled.
+- **ASA**: Assets Safeguarded and Administered.
+- **CMH**: Client Money Held.
+- **DTF**: Daily Trading Flow.
+- **ICARA**: Internal Capital Adequacy and Risk Assessment.
+- **FCA**: Financial Conduct Authority.
+- **PRA**: Prudential Regulation Authority.
+
+## MIFIDPRU Sections
+
+Skipped. See important author's note above.
+
+##
