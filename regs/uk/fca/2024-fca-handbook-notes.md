@@ -4,6 +4,10 @@ Glossary of terms:
 
 https://www.handbook.fca.org.uk/handbook/glossary
 
+Guide to the Handbook:
+
+https://www.handbook.fca.org.uk/handbook/guide
+
 My notes on types of firm
 
 A MiFID optional exemption firm, is exempt from full MiFID and ChatGPT says that this may include "Receiving and transmitting orders without holding client funds or securities". However, ZW may be seen as holding securities, unless perhaps this falls under the smart contract operator which is decentralised or a DAO or DUNA. Exemption may be provided if no retail customers are involved, only pros.
@@ -4852,4 +4856,1303 @@ There is no **prescribed format** from the FCA, but the certificate must include
 - **Authorised Primary Dealer Exemption**: An exemption for primary dealers in government securities to engage in short selling without restrictions.
 
 # TC Training and Competence
+
+## TC 1.1 Who, what and where?
+
+- **Who and what?**
+
+  - This sourcebook applies to a firm when its employee performs an activity listed in TC App 1 for retail clients, customers, or consumers, with limitations as outlined in TC App 3.
+
+  - The application of this sourcebook is adjusted for:
+    - A MiFID investment firm and a third country investment firm by the rules in TC 4.1, when its employee performs an activity in TC App 1 that is also listed in TC 4.1.2R.
+    - A firm conducting insurance distribution activities by the rules in TC 4.2.
+
+  - ESMA has issued guidelines for assessing knowledge and competence, dated 3 January 2017.
+
+- **Where?**
+
+  - The territorial scope of this sourcebook is detailed in TC App 2.
+
+- **Purpose**
+
+  - The main requirement concerning employee competence is the <mark>competent employees rule</mark>. This sourcebook aims to support the FCA's supervisory role by enhancing the competent employees rule for retail activities.
+
+- **Meaning of competence**
+
+  - In this sourcebook, <mark>competence refers to having the necessary skills, knowledge, and expertise to fulfill an employee's role responsibilities, including maintaining a high standard of ethical behavior.</mark>
+
+## TC 1.2 Actions for damages
+
+- A breach of the rules in TC does not create a right of action for a private person under section 138D of the Act. Each of these rules is specified under section 138D(3) of the Act as not giving rise to such a right of action.
+
+---
+
+### Definitions
+
+- **Firm**: A business entity regulated by the FCA, which can include banks, investment firms, insurance companies, etc.
+- **MiFID investment firm**: A firm that provides investment services or activities under the Markets in Financial Instruments Directive (MiFID).
+- **Third country investment firm**: An investment firm that is based outside the European Economic Area (EEA) but operates within it.
+- **Retail clients, customers, or consumers**: Individuals or entities that receive financial services primarily for personal, family, or household purposes.
+- **ESMA**: European Securities and Markets Authority, an EU financial regulatory agency.
+- **Competent employees rule**: A rule requiring firms to ensure their employees are competent to perform their roles.
+
+## TC 2 Competence
+
+## TC 2.1 Assessing and Maintaining Competence
+
+### Assessment of Competence and Supervision
+
+- **Competence Assessment**
+  - <mark>A firm must not consider an employee competent to perform an activity listed in TC Appendix 1 until the employee has shown the necessary competence and, if required, completed each module of an appropriate qualification. This assessment can occur after the employee begins the activity.</mark>
+
+- **Supervision Requirement**
+  - A firm must ensure that an employee performing an activity in TC Appendix 1 is under appropriate supervision.
+
+- **Supervision Guidelines**
+  - Employees should be supervised appropriately at all times, with more intense supervision before being assessed as competent. Firms should have clear criteria for when an employee is considered competent to justify reduced supervision. The employee's experience level should guide the supervision level.
+
+### Supervisors
+
+- **Supervisor Qualifications**
+  - Supervisors should have the necessary coaching, assessment skills, technical knowledge, and experience. Firms should consider if supervisors need an appropriate qualification, especially when supervising employees not yet assessed as competent.
+
+- **Specific Requirements for Supervisors**
+  - If an employee is not assessed as competent and:
+    1. Gives personal recommendations on retail investment products, the supervisor must have an appropriate qualification.
+    2. Advises on P2P agreements, the supervisor must have a qualification for giving personal recommendations on retail investment products.
+    3. Acts as a pension transfer specialist, the supervisor must have qualifications for both pension transfer activities and retail investment product recommendations.
+
+### Knowledge and Competence Requirements
+
+- **MCD Credit Agreement Activities**
+  - Firms acting as MCD creditors or intermediaries must ensure employees have appropriate knowledge and competence before performing activities 23A to 23E in TC Appendix 1, including understanding MCD credit agreements, consumer protection laws, property purchasing, security valuation, land registers, market knowledge, business ethics, creditworthiness assessment, and financial/economic competency.
+
+- **Assessment of Knowledge and Competence**
+  - Firms should not base competence solely on professional experience but also consider qualifications, training, and competency tests.
+
+- **Role and Responsibility Consideration**
+  - Firms must consider the employee's role and responsibility level when determining the appropriate knowledge and competence level.
+
+- **Regulated Mortgage Contracts**
+  - Employees with the appropriate qualification for regulated mortgage contracts may be assessed as competent, but firms must meet other applicable requirements.
+
+### P2P Agreements and Pension Transfer Specialists
+
+- **P2P Agreements**
+  - Firms advising on P2P agreements must ensure employees attain qualifications for giving personal recommendations on retail investment products before being assessed as competent.
+
+- **Pension Transfer Specialists**
+  - Firms advising on pension transfers must ensure employees attain qualifications for both pension transfer activities and retail investment product recommendations before being assessed as competent.
+
+### Qualification Requirements
+
+- **Before Starting Activities**
+  - Employees must attain relevant qualifications before performing activities in TC Appendix 1, except overseeing activities. Specific qualifications are required for advising on P2P agreements and other activities.
+
+- **Exemption from Qualification Requirements**
+  - Employees with at least three years of relevant experience outside the UK, who haven't been required to comply with qualification requirements, and have passed relevant modules may be exempt, except when giving personal recommendations or advising on P2P agreements.
+
+### Selecting an Appropriate Qualification
+
+- **Qualification Selection**
+  - Firms should select qualifications from the list in TC Appendix 4E. Non-compliance may indicate a breach of rules.
+
+- **FCA Assessment of Qualification Providers**
+  - TC Appendix 5G outlines criteria for FCA assessment of qualification providers and information required for adding qualifications to the list.
+
+### Training Needs
+
+- **Training Assessment**
+  - Firms should assess employees' training needs initially and regularly, providing appropriate training and support. The quality and effectiveness of training should be reviewed regularly.
+
+### Maintaining Competence
+
+- **Regular Review**
+  - Firms must regularly review employees' competence and take action to ensure they remain competent.
+
+- **Factors for Maintaining Competence**
+  - Consider technical knowledge, skills, expertise, and changes in the market, products, legislation, and regulation.
+
+- **Training and Competence Scheme**
+  - Firms may establish a training and competence scheme.
+
+### Continuing Professional Development (CPD)
+
+- **Retail Investment Advisers**
+  - Must complete 35 hours of CPD annually, with at least 21 hours structured. Requirements can be suspended for certain absences.
+
+- **Pension Transfer Specialists**
+  - Must complete 15 hours of CPD annually, including 9 structured hours and 5 from an external provider.
+
+- **Funeral Plan Activities**
+  - Relevant employees must complete 15 hours of CPD annually, considering their role and products sold.
+
+### Record-Keeping and Declarations
+
+- **CPD Record-Keeping**
+  - Firms must keep records of CPD completed by retail investment advisers, pension transfer specialists, and relevant employees, including any suspension reasons.
+
+- **Annual Declarations**
+  - Retail investment advisers must confirm compliance with APER or COCON and CPD completion annually.
+
+### Independent Verification
+
+- **Verification Requirement**
+  - Firms must obtain independent verification from an accredited body for compliance with qualification and CPD requirements.
+
+### Notification Requirements
+
+- **Significant Events Notification**
+  - Firms must notify the FCA of significant events affecting retail investment advisers' competence or qualification attainment.
+
+### Time Limits for Qualifications
+
+- **Qualification Time Limits**
+  - Employees must attain qualifications within 48 months of starting an activity, with time aggregated across different employments and certain absences disregarded.
+
+### Record-Keeping
+
+- **Qualification Time Limits Records**
+  - Firms should keep records of time limits for attaining qualifications.
+
+---
+
+### Definitions
+
+- **Firm**: A business or company regulated by the FCA.
+- **Employee**: An individual working for a firm, including those under contract or arrangement.
+- **Retail Investment Adviser**: An employee providing investment advice to retail clients.
+- **Pension Transfer Specialist**: An employee advising on pension transfers and related activities.
+- **MCD Creditor/Intermediary**: A firm involved in mortgage credit directive activities.
+- **Relevant Employee**: Employees involved in regulated funeral plan activities or responsible for their management or supervision.
+- **Accredited Body**: An organization recognized by the FCA for providing independent verification of qualifications and CPD compliance.
+
+## TC 3 Record Keeping
+
+## TC 3.1 Record-keeping requirements
+
+- **General Record-Keeping Obligations**
+
+  - A firm is required to maintain suitable records to show that it complies with the rules in this sourcebook.
+
+- **Retention Periods**
+
+  - The records must be kept for different periods depending on the type of business:
+
+    - **MiFID Business**: Records must be kept for at least 5 years after an employee stops performing the activity.
+
+    - **Non-MiFID Business**: Records must be kept for 3 years after an employee stops performing the activity.
+
+    - **Pension Transfer Specialist**: Records must be kept indefinitely.
+
+- **Reference**
+
+  - This requirement is in line with article 9(4) of the MCD.
+
+---
+
+### Definitions
+
+- **Firm**: A business or company that is subject to the rules in this sourcebook.
+- **MiFID Business**: Activities that fall under the Markets in Financial Instruments Directive.
+- **Non-MiFID Business**: Activities that do not fall under the Markets in Financial Instruments Directive.
+- **Pension Transfer Specialist**: An individual or entity that provides advice or services related to pension transfers.
+- **MCD**: Mortgage Credit Directive, a European Union directive that regulates the mortgage market.
+
+## TC 4 Specified modified requirements
+
+## TC 4.1 Specified requirements for MiFID investment firms and for third country investment firms
+
+- **Amendments to Rules for MiFID or Equivalent Third Country Business**
+
+  - For firms dealing with MiFID or equivalent third country business, the rules in column 1 of the table in TC 4.1.4R are modified as shown in column 2.
+
+- **Definition of Relevant Individuals**
+
+  - Relevant individuals are those who, on behalf of the firm:
+    - Make personal recommendations to retail clients about financial instruments.
+    - <mark>Provide information to retail clients about financial instruments, investment services, or ancillary services.</mark>
+    - Supervise individuals who haven't yet gained the necessary knowledge and competence for the above roles.
+
+- **Knowledge and Competence Requirements**
+
+  - References to a relevant individual's knowledge and competence relate to ensuring the firm can meet its obligations under:
+    - Rules implementing articles 24 and 25 of MiFID and related provisions under the MiFID Delegated Directive.
+    - Related provisions of the MiFID Org Regulation.
+
+- **Amendments to Specific Rules**
+
+  - **TC 2.1.1R(1)**
+    - A firm must not assess a relevant individual as competent unless they have:
+      - <mark>Gained appropriate experience, demonstrated through at least 6 months of full-time equivalent work.</mark>
+      - <mark>Attained an appropriate qualification as per ESMA guidelines.</mark>
+    - The level of knowledge and competence should match the scope and degree of activities performed.
+
+  - **TC 2.1.2R**
+    - A relevant individual without the necessary knowledge or competence cannot perform activities under supervision for more than 48 months.
+
+  - **TC 2.1.5R(1)**
+    - If a relevant individual lacks necessary knowledge and competence:
+      - The supervising individual must be competent and responsible for the recommendations or information provided.
+      - Supervision should be tailored to the services provided by the individual.
+
+- **Guidance on SYSC 5.1.5ABR**
+
+  - Rules relate to requirements in SYSC 5.1.5ABR.
+  - For relevant individuals of an incoming EEA firm with a UK establishment, SYSC 5.1.5ABR matters are reserved for the UK as the Host State regulator.
+
+## TC 4.2 Specified requirements for firms carrying on insurance distribution activities
+
+- **Amendments to Rules for Insurance Distribution Activities**
+
+  - For firms involved in insurance distribution, the rules and guidance in column 1 of TC 4.2.5R are modified as shown in column 2.
+
+- **Limitations and Definitions**
+
+  - TC 4.2.1R is limited as outlined in TC App 2 and TC App 3.
+  - Relevant employees include those:
+    - Directly involved in insurance distribution activities.
+    - Within the management structure responsible for these activities.
+    - Supervising relevant employees in these roles.
+
+- **Definition of 'Employee'**
+
+  - 'Employee' includes:
+    - Individuals not restricted to those under a contract of employment.
+    - Any person whose services are provided to the firm through a third-party arrangement.
+    - Appointed representatives and their employees.
+
+- **Amendments to Specific Rules and Guidance**
+
+  - **TC 2.1.1R(1)**
+    - A firm must ensure a relevant employee's knowledge and ability meet SYSC 28.2.3R requirements, appropriate to their role and the nature of products sold.
+
+  - **TC 2.1.15R, TC 2.1.17R, TC 2.1.24R, TC 2.1.25R**
+    - Rules apply as if references to retail investment advisers include 'relevant employees'.
+    - For non-retail investment advisers, '35 hours' is replaced with '15 hours'.
+    - Retail investment advisers must include 15 hours covering SYSC 28.2.3R in their 35-hour requirement.
+
+  - **TC 2.1.16G**
+    - Continued training for relevant employees can include various learning opportunities like courses, e-learning, and mentoring.
+
+  - **TC 2.1.18G, TC 2.1.19G, TC 2.1.23G**
+    - Guidance applies as if references to retail investment advisers include 'relevant employees'.
+
+  - **TC 2.1.24R**
+    - Firms must be able to provide the FCA with the name of the person responsible for record-keeping.
+
+  - **TC 3.1.1R**
+    - Firms must keep records of each relevant employee's training for at least 3 years after they stop the activity and provide records to the FCA on request.
+
+- **Application to Retail Investment Advisers**
+
+  - For relevant employees who are also retail investment advisers:
+    - Unamended rules apply when acting as retail investment advisers.
+    - Amended rules apply when acting as relevant employees.
+
+- **Guidance on SYSC 28**
+
+  - Rules and guidance relate to SYSC 28 requirements for insurance distribution activities.
+
+---
+
+### Definitions
+
+- **MiFID investment firm**: A firm that provides investment services or activities under the Markets in Financial Instruments Directive (MiFID).
+- **Third country investment firm**: A firm from a non-EEA country providing investment services or activities.
+- **Relevant individual**: A person making recommendations or providing information to retail clients, or supervising such activities.
+- **Relevant employee**: Employees involved in insurance distribution activities or supervising such activities.
+- **Retail investment adviser**: An adviser providing investment advice to retail clients.
+- **SYSC 5.1.5ABR**: A specific rule within the FCA Handbook related to systems and controls.
+- **SYSC 28**: A section of the FCA Handbook outlining minimum knowledge and competence requirements for insurance distribution activities.
+
+## TC Skipped
+
+**Note** - The handbook contains lots more appendices and other stuff.
+
+## TC App 4 Appropriate Qualification tables
+
+A huge table of qualifications.
+
+## TC App 4.1 Appropriate Qualification Tables
+
+### Part 1: Activities
+
+- **Note:** The activity numbers in this table relate to the activities in TC App 1.1.1 R. These tables do not cover activities 1, 5, 13A, 13B, 13C, 20A, 21B, 23A, 23B, 23C, 23D, 23E, 24, 25, or 26 as these activities do not have a qualification requirement. For advising on P2P agreements (activity 9A), see TC 2.1.5HR and TC 2.1.6R(2).
+
+#### Part 1A: The Retail Distribution Review Activities (RDR Activities)
+
+- **Activity Number 2:** Giving personal recommendations on securities which are not stakeholder pension schemes, personal pension schemes, or broker funds.
+  
+- **Activity Number 3:** Giving personal recommendations on derivatives.
+
+- **Activity Numbers 4 and 6:** 
+  - (4) Giving personal recommendations on retail investment products which are not broker funds.
+  - (6) Giving personal recommendations on friendly society tax-exempt policies (other than Holloway sickness policies where the Holloway policy special application conditions are met).
+
+- **Activity Number 12:** Giving personal recommendations on and dealing in securities which are not stakeholder pension schemes, personal pension schemes, or broker funds.
+
+- **Activity Number 13:** Giving personal recommendations on and dealing in derivatives.
+
+#### Extent to which the qualification meets the qualification requirement in relation to RDR activities
+
+- A qualification in the table in Part 2 will meet the qualification requirement for the activity listed in column 3 of that table, for the purpose of TC 2.1.10E(2), to the extent set out below:
+  - **(1)** Where an ‘a’ appears in the fourth column of the table in Part 2, the qualification will fully meet the qualification requirement on and after 31 December 2012.
+  - **(2)** Where a ‘b’ appears in the fourth column of the table in Part 2, the qualification will fully meet the qualification requirement until 31 December 2012. On and after 31 December 2012, this must be combined with qualification gap-fill. This gap-fill constitutes additional structured continuing professional development, which need not be by examination, completed and verified by an accredited body.
+
+#### Part 1B: The Non-Retail Distribution Review Activities (Non-RDR Activities)
+
+- **Activity Number 7:** Giving personal recommendations on long-term care insurance contracts.
+
+- **Activity Number 8:** Giving personal recommendations on investments in the course of corporate finance business.
+
+- **Activity Number 9:** Advising on syndicate participation at Lloyd's.
+
+- **Activity Number 11:** Undertaking the activity of a pension transfer specialist.
+
+- **Activity Numbers 14 and 10:** Managing investments and/or undertaking the activity of a broker fund adviser.
+
+- **Activity Number 20:** Advising on a regulated mortgage contract for a non-business purpose; or arranging (bringing about) an execution-only sale of a regulated mortgage contract for a non-business purpose, excluding variations to an existing regulated mortgage contract, except where the effect is to change all or part of the regulated mortgage contract from one interest rate to another.
+
+- **Activity Number 21:** Advising on equity release transactions; or arranging (bringing about) an execution-only sale of an equity release transaction, excluding variations to an existing equity release transaction, except where the effect is to change all or part of the equity release transaction from one interest rate to another.
+
+- **Activity Number 21A:** Designing scripted questions for an execution-only sale of a regulated mortgage contract for a non-business purpose.
+
+- **Activity Number 22:** Designing scripted questions for an execution-only sale of an equity release transaction.
+
+#### Non-RDR Activity (Overseeing Activity)
+
+- **Activity Number 15:** Overseeing on a day-to-day basis operating a collective investment scheme or undertaking activities of a trustee or depositary of a collective investment scheme.
+
+- **Activity Number 16:** Overseeing on a day-to-day basis safeguarding and administering investments or holding client money.
+
+- **Activity Number 17:** Overseeing on a day-to-day basis administrative functions in relation to managing investments, including arranging settlement, monitoring and processing corporate actions, client account administration, liaison and reporting including valuation and performance measurement, ISA or CTF administration, and investment trust savings scheme administration.
+
+- **Activity Number 18:** Overseeing on a day-to-day basis administrative functions in relation to effecting or carrying out contracts of insurance which are life policies, including new business administration, policy alterations including surrenders and policy loans, preparing projections, processing claims including pension payments, and fund switching.
+
+- **Activity Number 19:** Overseeing on a day-to-day basis administrative functions in relation to the operation of stakeholder pension schemes, including new business administration, receipt of or alteration to contributions, preparing projections and annual statements, administration of transfers, handling claims including pension payments, and fund allocation and switching.
+
+- **Activity Number 23:** Overseeing non-advised sales on a day-to-day basis of equity release transactions.
+
+#### Extent to which the qualification meets the qualification requirement in relation to non-RDR activities
+
+- A qualification in the table in Part 2 will meet the qualification requirement for the activities in column 3 of the table, for the purpose of TC 2.1.10E(2), to the extent set out below:
+  - **(1)** Where a ‘1’ appears in the fourth column of Part 2, that qualification alone will fully meet the appropriate qualification requirement.
+  - **(2)** Where a ‘2’ or ‘3’ appears in the fourth column of Part 2, two qualifications must be obtained: one being any qualification in the table denoted by a ‘2’ and the other being any qualification in the table denoted by a ‘3’. Together those qualifications will fully meet the qualification requirement.
+  - **(3)** Where a ‘4’, ‘5’ or ‘6’ appears in the fourth column of Part 2, three qualifications must be obtained: one being any qualification in the table denoted by a ‘4’, another being any qualification in the table denoted by a ‘5’ and the other being any qualification in the table denoted by a ‘6’. Together those qualifications will fully meet the qualification requirement.
+
+#### Guidance on meeting the appropriate qualification requirement
+
+- To meet the appropriate qualification requirement, a qualification is expected to meet the appropriate qualification criteria and the content should cover both technical aspects in relation to the activity number in column 3 of the table in Part 2 as well as the regulation and ethics concerning those activities. Some of the qualifications in the table in Part 2 deal with all aspects and some only deal with certain aspects, as follows:
+  - **(1)** A ‘1’ refers to a syllabus which contains all aspects, namely technical, regulation, and ethics.
+  - **(2)** A ‘2’ or a ‘6’ refers to a syllabus which only deals with aspects of a technical nature.
+  - **(3)** A ‘3’ or a ‘5’ refers to a syllabus which only deals with aspects of regulation and ethics.
+  - **(4)** A ‘4’ refers to a syllabus which is only of an introductory nature.
+
+### Part 2: Appropriate Qualifications Tables
+
+- **Note:** A qualification is deemed an appropriate qualification if it appears in this table and is attained within the relevant time period, where one is indicated by the dates set out in the qualification column.
+
+#### Part 2A: Appropriate Qualifications Offered
+
+- **ACI The Financial Markets Association**
+  - ACI Diploma (provided it is accompanied by appropriate qualifications in Regulation and Ethics, Investment Principles and Risk and Personal Taxation) for activities 2, 3, 12, 13 (Key: a).
+  - ACI Dealing Certificate when combined with Chartered Institute of Securities and Investment (CISI) Introduction to Securities and Investments and one of the Regulatory units of the Investment Operations Certificate (IOC) for activities 15, 17 (Key: 4).
+  - ACI Operations Certificate when combined with CISI Introduction to Securities and Investments and one of the Regulatory units of the IOC for activities 10 and 14 (Key: 4), 15, 16, 17, 18, 19 (Key: 4).
+
+- **Association of Accounting Technicians**
+  - Member for activities 15, 16, 17, 18, 19 (Key: 4).
+
+- **Association of Certified International Investment Analysts (ACIIA)**
+  - CIIA qualification (provided it is accompanied by appropriate qualifications in Regulation and Ethics, Investment Principles and Risk and Personal Taxation) for activities 2, 3, 12, 13 (Key: a).
+  - Certified International Investment Analyst (CIIA) for activities 14 and 10 (Key: 2).
+
+- **Association of Chartered Certified Accountants**
+  - Member or Affiliate for activity 8 (Key: 1).
+  - Fellow or Associate for activities 15, 16, 17, 18, 19 (Key: 4).
+
+- **Association of Corporate Treasurers**
+  - MCT Advanced Diploma (Member or Fellow) or AMCT Diploma in Treasury (Associate Member) for activities 15, 16, 17, 18, 19 (Key: 4).
+
+- **Association of International Wealth Management (AIWM)**
+  - Certified International Wealth Manager Diploma (CIWM) for activities 2, 3, 12, 13 (Key: a), 14 and 10 (Key: 1).
+
+- **Bayes Business School (Formerly CASS Business School)**
+  - MSC in Banking and International Finance (provided it is accompanied by appropriate qualifications in Regulation and Ethics, Investment Principles and Risk and Personal Taxation) for activities 2, 3, 12, 13 (Key: a).
+
+- **Calibrand / Scottish Qualifications Authority**
+  - Diploma in Professional Financial Advice (NMBA - Alternative Assessment method) for activities 4 and 6 (Key: a).
+
+- **Canadian Securities Institute**
+  - Canadian Securities Course (CSC) and Conduct and Practices Handbook Course (CPH) - must include a pass in both modules (provided it is accompanied by appropriate qualifications in Regulation and Ethics and Personal Taxation) - both courses must be completed for activities 2, 12 (Key: b).
+  - Canadian Securities Course (CSC), Conduct and Practices Handbook (CPH), the Futures Licensing Course (FLC), the Derivatives Fundamentals Course (DCF) and the Options Licensing Course (OLC) - must include a pass in all modules (provided it is accompanied by appropriate qualifications in Regulation and Ethics and Personal Taxation) - all courses must be completed for activities 3, 13 (Key: b).
+
+- **CFA Institute**
+  - The CFA Institute Investment Foundations Certificate - (Formerly the Claritas Investment Certificate) for activities 15, 16, 17, 18, 19 (Key: 4).
+  - Level 1 of CFA Program plus Investment Management Certificate (Level 4) for activities 2, 3, 12, 13 (Key: a).
+  - Completion of CFA Program plus Investment Management Certificate Unit 1: The investment environment (Level 4) for activities 2, 3, 12, 13 (Key: b).
+
+- **CFA Society of UK (Formerly the UK Society of Investment Professionals/ Institute of Investment Management and Research (IIMR))**
+  - Investment Management Certificate (Level 4) plus other qualifications that meet specialist standards for advising on securities for activities 2, 12 (Key: a).
+  - Investment Management Certificate (Level 4) plus other qualifications that meet specialist standards for advising on packaged products for activities 4 and 6.
+  - Investment Management Certificate (Level 4) plus other qualifications that meet specialist standards for advising on derivatives for activities 3, 13.
+
+- **Chartered Alternative Investment Analysis Association (CAIA)**
+  - CAIA Level 1 (provided it is accompanied by appropriate qualifications in Regulation and Ethics and Personal Taxation) for activities 2, 12 (Key: b).
+
+- **Chartered Banker Institute (Formerly the Chartered Institute of Bankers in Scotland)**
+  - Certificate in Investment Planning for activity 17 (Key: 4).
+  - Diploma in Professional Financial Advice (Post 28/02/2022) for activities 4 and 6 (Key: a).
+
+- **Chartered Institute of Management Accountants**
+  - Fellow or Associate for activities 15, 16, 17, 18, 19 (Key: 4).
+
+- **Chartered Institute of Public Finance and Accountancy**
+  - Fellow or Associate for activities 15, 16, 17, 18, 19 (Key: 4).
+
+- **Chartered Institute for Securities and Investment (CISI) - (Formerly the Securities and Investment Institute (SII); formerly The Securities Association)**
+  - Certificate in Pension Transfers and Planning Advice (when combined with an RDR compliant qualification for Activities 4 and 6) for activity 11 (Key: 1).
+  - Investment Advice Diploma (where candidate holds 3 modules including the private client advice module) for activities 4 and 6 (Key: a).
+
+- **Chartered Insurance Institute**
+  - Certificate in Advanced Mortgage Advice for activity 20 (Key: 1).
+  - Certificate in Pension Transfer Advice (meets requirement until 30 September 2021) (Post 30/09/2021 meets requirement when combined with an RDR compliant qualification for Activities 4 and 6) for activity 11 (Key: 1).
+
+- **Deutsche Boerse AG**
+  - Certified Securities Trader (provided it is accompanied by appropriate qualifications in Regulation and Ethics, Investment Principles and Risk and Personal Taxation) for activities 2, 12 (Key: b).
+
+- **EFFAS Societies with accredited examinations**
+  - Certified European Financial Analyst for activities 14 and 10 (Key: 2).
+
+- **Faculty or Institute of Actuaries**
+  - Fellow or Associate or where the individual has passed all of the following modules CT1, CT2, CT4, CT5, CT6, CT7 and CT8 for activities 2, 3, 4 and 6, 12, 13 (Key: a).
+
+- **Financial Industry Regulatory Authority (FINRA) - Formerly the National Association of Securities Dealers (NASD)**
+  - Series 7 - General Securities Representatives Examination (provided it is accompanied by appropriate qualifications in Regulation and Ethics and Personal Taxation) for activities 2, 3, 12, 13 (Key: b).
+
+- **ICMA Centre/ University of Reading (Formerly ISMA Centre/ University of Reading)**
+  - Diploma in Capital Markets, Regulation and Compliance for activity 17 (Key: 5).
+
+- **Institute of Chartered Accountants in England and Wales**
+  - Fellow or Associate for activity 8 (Key: 1).
+
+- **Institute of Chartered Accountants in Ireland**
+  - Fellow or Associate for activity 8 (Key: 1).
+
+- **Institute of Chartered Accountants in Scotland**
+  - Member for activity 8 (Key: 1).
+
+- **Institute of Chartered Secretaries and Administrators**
+  - Certificate in Collective Investment Scheme Administration for activities 15, 16, 17, 18 (Key: 4).
+
+- **Insurance Sector Education and Training Authority**
+  - National Diploma: Financial Services Long-Term Risk Assessment for activity 7 (Key: 2).
+
+- **International Capital Markets Association (ICMA)**
+  - Operations Certificate Programme (OCP) for activities 16, 17 (Key: 6).
+
+- **Investment Property Forum**
+  - IPF Certificate in Property Investment for activities 14 and 10 (Key: 2).
+
+- **Japanese Bankers Association**
+  - Representative of Public Securities Qualification - Class 1 for activity 8 (Key: 2).
+
+- **Japan Securities Dealers Association**
+  - Class -1 Sales Representative Qualification (formerly known as the Representative of Public Securities Qualification - Type 1) for activity 8 (Key: 2).
+
+- **Law Society of England and Wales**
+  - Module B(ii), Securities and Portfolio Management for activity 8 (Key: 2).
+
+- **Lloyd's/ Chartered Insurance Institute**
+  - Lloyd's Market Certificate for activity 9 (Key: 1).
+
+- **London Stock Exchange**
+  - London Stock Exchange Full Membership Exams (and other regional stock exchanges as merged with London Stock Exchange) - where candidate holds three or four papers or holds both the Stock Exchange Practice and Techniques of Investment papers for activities 2, 3, 4 and 6, 12, 13 (Key: b).
+
+- **Manchester Metropolitan University**
+  - BA (Hons) Financial Services, Planning and Management for activities 2, 3, 4 and 6, 12, 13 (Key: a).
+
+- **N/A**
+  - In-house module (only where the firm can demonstrate that none of the listed examinations are appropriate) for activities 15, 16, 17, 18, 19 (Key: 6).
+
+- **NIBE SVV the Dutch Institute for the Banking, Insurance and Stockbroking Industry**
+  - Examination for activity 8 (Key: 2).
+
+- **Pensions Management Institute**
+  - Diploma in Regulated Retirement Advice for activities 4 and 6 (Key: a).
+
+- **SIX Swiss Exchange**
+  - Certified Securities Trader the Swiss Markets Insight course (provided it is accompanied by appropriate qualifications in Regulation and Ethics, Investment Principles and Risk and Personal Taxation) for activities 2, 12 (Key: b).
+
+- **Society of Investment Analysts in Ireland**
+  - Certificate in Investment Management (at least 3 papers passed by examination) for activities 14 and 10 (Key: 2).
+
+- **South African Institute of Financial Markets**
+  - Ordinary and Senior Certificates for activities 8, 14 and 10 (Key: 2).
+
+- **Swiss Finance Institute**
+  - Dual degree Executive MBA in Asset and Wealth Management for activities 14 and 10 (Key: 2).
+
+- **The Institute of Banking in Ireland**
+  - Fellow or Associate for activities 15, 16, 17, 18, 19 (Key: 4).
+
+- **The London Institute of Banking & Finance Limited**
+  - Diploma for Financial Advisers (post 2010 examination standards) for activities 4 and 6 (Key: a).
+
+- **The Securities Analysts Association of Japan (SAAJ)**
+  - CMA Level 2 (for individuals not advising before 30 June 2009 - provided it is accompanied by appropriate qualifications in Regulation and Ethics, Investment Principles and Risk and Personal Taxation) for activities 2, 3, 12, 13 (Key: b).
+
+- **University of Northampton**
+  - BSc Banking and Financial Planning for activities 4, 6 (Key: a).
+
+- **University of South Wales**
+  - BSc (Hons) Financial Planning, Investment and Risk for activities 4 and 6 (Key: a).
+
+- **University of Stirling**
+  - BA in Finance for activities 2, 4 and 6, 12 (Key: b).
+
+#### Part 2B: Appropriate Qualifications No Longer Offered
+
+- **Bayes Business School (Formerly CASS Business School)**
+  - MSC in Investment Management pre 2003 syllabus (provided it is accompanied by appropriate qualifications in Regulation and Ethics and Personal Taxation) for activities 2, 3, 12, 13 (Key: b).
+
+- **Blackburn College - University Centre**
+  - Foundation Degree Award in Financial Services (syllabus in force until 31 October 2017) for activities 4 and 6 (Key: a).
+
+- **Bournemouth University**
+  - BA in Financial Services (1995 to 2001) for activities 4 and 6 (Key: b).
+
+- **Calibrand / Chartered Banker Institute (Formerly the Chartered Institute of Bankers in Scotland)**
+  - Diploma in Professional Financial Advice (Post 30/4/2014) and Pre 01/03/2022) for activities 4 and 6 (Key: a).
+
+- **Chartered Banker Institute (Formerly the Chartered Institute of Bankers in Scotland)**
+  - Associate (March 1992 to July 1994 syllabus (including top-up test)) for activities 4 and 6 (Key: b).
+
+- **Chartered Institute for Securities and Investment (CISI) - (Formerly the Securities and Investment Institute (SII); formerly The Securities Association)**
+  - Certificate in Corporate Finance (Pre 01/04/2024) for activity 8 (Key: 1).
+
+- **Chartered Insurance Institute**
+  - Advanced Diploma in Financial Planning (CII gap fill available pre 01/09/2021) for activities 4 and 6 (Key: b).
+
+- **Faculty or Institute of Actuaries**
+  - Associate - achieved by examination passed before 1 December 2001 (must include a pass in Subject 301 - Investment and Asset Management (syllabus in force from 1998)) for activities 14 and 10 (Key: 1).
+
+- **Financial & Legal Skills Partnership (formerly the Financial Skills Partnership/Financial Services Skills Council (FSP/ FSSC)) (Dissolved on 7 April 2015)**
+  - FLSP Advanced/Modern Apprenticeship in Advising on Financial Products (Long Term Care Insurance Pathway) for activity 7 (Key: 1).
+
+- **ICMA Centre/ University of Reading (Formerly ISMA Centre/ University of Reading)**
+  - Operations Certificate Programme (OCP) (Until January 2020) for activities 16, 17 (Key: 6).
+
+- **Institute of Financial Planning (until 1 November 2015)**
+  - Certified Financial Planner (syllabus in force until 31/10/2015) for activities 4 and 6 (Key: b).
+
+- **Investment Management Association**
+  - Investment Administration Management Award for activities 15, 16, 17 (Key: 6).
+
+- **Japan Securities Dealers Association**
+  - Representative of Public Securities Examination (Pre April 1990) for activity 8 (Key: 2).
+
+- **Japanese Bankers Association**
+  - Registered Representative of Public Securities Examination (Pre April 1990) for activity 8 (Key: 2).
+
+- **Lloyd’s**
+  - Lloyd’s and London Market Introductory Test (Formerly the Lloyd’s Introductory Test) (Pre 31/12/2015) for activity 9 (Key: 1).
+
+- **Sheffield Hallam University**
+  - BA in Financial Services (1995 to 2001) for activities 4 and 6 (Key: b).
+
+- **The London Institute of Banking & Finance Limited**
+  - CeMAP bridge paper plus entry requirements (Pre 31/10/2004) for activities 21, 22 (Key: 1).
+
+- **The Securities Analysts Association of Japan (SAAJ)**
+  - CMA Level 2 (for individuals advising before 30/06/2009) for activities 2, 3, 12, 13 (Key: b).
+
+- **University of the West of England**
+  - BA in Financial Services (1995 to 2001) for activities 4 and 6 (Key: b).
+
+### Definitions
+
+- **RDR Activities:** Activities related to the Retail Distribution Review, which focuses on giving personal recommendations on various financial products.
+- **Non-RDR Activities:** Activities not related to the Retail Distribution Review, including advising on long-term care insurance, corporate finance, and overseeing investment schemes.
+- **Qualification Gap-Fill:** Additional structured continuing professional development required to meet qualification requirements after a certain date.
+- **Appropriate Qualification:** A qualification that meets the criteria set out in the FCA Handbook for specific financial activities.
+
+# GEN General Provisions
+
+## GEN 1 FCA approval and emergencies
+
+## GEN 1.1 Application
+
+- **General Application**
+
+  - <mark>This chapter applies to every firm.</mark> Additionally, GEN 1.3 (Emergency) also applies to an unauthorised person if a rule in the Handbook applies to them.
+
+  - <mark>GEN 1.2.2AR(1) also applies to a registered person who is communicating a financial promotion related to one or more qualifying cryptoassets, relying on the exemption in article 73ZA of the Financial Promotion Order.</mark>
+
+  - For the purpose of the above, references to a firm in GEN 1.2.2AR(1) include references to a registered person.
+
+## GEN 1.2 Referring to approval by the FCA
+
+- **Purpose**
+
+  - The purpose of GEN 1.2.2AR is to prevent clients from being misled about the extent to which the FCA has approved a firm's affairs.
+
+- **Restrictions on Claims of Approval**
+
+  - <mark>Unless required by the regulatory system, a firm must ensure that neither it nor anyone acting on its behalf claims, either publicly or to a client, that its affairs have the approval or endorsement of the FCA or another competent authority.</mark>
+
+  - This restriction does not apply if it conflicts with obligations under article 44(8) of the MiFID Org Regulation.
+
+  - The restriction does not apply to statements that clearly and fairly explain that:
+    - The firm is an authorised person.
+    - The firm has permission to carry out a specific activity.
+    - An authorisation order has been made for an AUT, ACS, or ICVC.
+    - A recognised scheme has that status.
+    - The firm's approved persons have been approved by the appropriate regulator for specific arrangements.
+    - The firm has received express written approval from the appropriate regulator for a specific aspect of its affairs.
+
+  - The restriction applies to both regulated and unregulated activities.
+
+- **Written Approval**
+
+  - GEN 1.2.2AR(2)(g) is limited to written approval to ensure clarity about the scope of any approval given by the appropriate regulator.
+
+- **MiFID and Other Business**
+
+  - A firm involved in MiFID, equivalent third country, or optional exemption business should consider the requirement in article 44(8) of the MiFID Org Regulation, as reproduced in COBS 4.5A.16UK.
+
+## GEN 1.3 Emergency
+
+- **Recognition of Emergencies**
+
+  - The FCA acknowledges that emergencies may occur, making it difficult for a person (usually a firm, but sometimes an unauthorised person) to comply with a specific rule in the Handbook. GEN 1.3.2 R provides relief from the consequences of such rule contraventions in emergencies.
+
+- **Conditions for Relief**
+
+  - If an emergency arises that:
+    - Makes it impractical to comply with a specific rule.
+    - Could not have been avoided by taking all reasonable steps.
+    - Is beyond the control of the person, their associates, agents, and employees.
+  
+  - The person will not be in contravention of that rule to the extent that compliance is impractical due to the emergency.
+
+  - This relief applies only as long as:
+    - The emergency's consequences continue.
+    - The person demonstrates they are taking all practical steps to address the consequences, comply with the rule, and mitigate losses to clients.
+
+- **Notification Requirements**
+
+  - The person must notify the FCA as soon as possible about the emergency and the steps being taken to address it.
+
+  - Notifications must be given in accordance with SUP 15.7 (Form and method of notification). If the person is not a firm, the notification should be addressed to the FCA's Contact Centre.
+
+- **Ongoing Communication**
+
+  - A firm should keep the FCA informed of the steps it is taking to comply with its obligations under Principle 11 (Relations with regulators).
+
+- **Definition of Practicability**
+
+  - An action is not considered practicable if it requires unreasonable efforts.
+
+- **FCA's Powers**
+
+  - GEN 1.3.2 R applies to the FCA's rules but does not limit the FCA's power to take action against a firm in an emergency for contravening other requirements. The FCA may use its own-initiative power to vary a firm's Part 4A permission if necessary.
+
+---
+
+### Definitions
+
+- **Firm**: Any entity that is subject to the rules of the FCA Handbook.
+- **Unauthorised person**: An individual or entity that does not have FCA authorisation but may still be subject to certain rules.
+- **Registered person**: An individual or entity registered for specific activities, such as communicating financial promotions.
+- **AUT, ACS, ICVC**: Types of collective investment schemes.
+- **MiFID Org Regulation**: A regulation that outlines organisational requirements for investment firms under the Markets in Financial Instruments Directive (MiFID).
+- **Financial Promotion Order**: Legislation that regulates financial promotions in the UK.
+
+## GEN 2 Interpreting the Handbook
+
+## GEN 2.1 Introduction
+
+### Application
+
+- **GEN 2.1.2 R 28/07/2023 RP**
+  - <mark>This chapter applies to everyone who is subject to any provision in the Handbook.</mark> For provisions that are not rules, the rules in this chapter apply as if they were part of that provision.
+
+- **GEN 2.1.8 R 01/04/2021 RP**
+  - This chapter applies to all provisions made by FOS Ltd.
+
+- **GEN 2.1.9 G 06/01/2010 RP**
+  - The effect of GEN 2.1.8 R is that this chapter applies to provisions in DISP 2 (Jurisdiction of the Financial Ombudsman Service), DISP 3 (Complaint handling procedures of the Financial Ombudsman Service), DISP 4 (Standard terms), and FEES 5 (Financial Ombudsman Service Funding) made by FOS Ltd.
+
+### The Reader's Guide
+
+- **GEN 2.1.10 G 06/07/2006 RP**
+  - <mark>The Reader's Guide supplements this chapter.</mark> It introduces the structure and contents of the Handbook and related materials, explaining how the different modules fit together and how to interpret and use the Handbook.
+
+## GEN 2.2 Interpreting the Handbook
+
+### Purposive interpretation
+
+- **GEN 2.2.1 R 21/06/2001 RP**
+  - Every provision in the Handbook must be interpreted in light of its purpose.
+
+- **GEN 2.2.2 G 21/06/2001 RP**
+  - The purpose of any provision in the Handbook should be understood primarily from the text of the provision and its context among other relevant provisions. Guidance on the purpose of a provision is meant to help readers but is not a complete or definitive explanation.
+
+### Evidential provisions
+
+- **GEN 2.2.3 R 01/04/2013 RP**
+  - Any rule in the Handbook with the status letter "E" in the margin or heading:
+    1. Indicates that <mark>breaking the rule does not lead to consequences under the Act other than section 138C (Evidential provisions).</mark>
+    2. Includes the status letter "E" as part of the rule.
+
+- **GEN 2.2.4 G 03/07/2016 RP**
+  - Rules to which section 138C of the Act applies ("evidential provisions") are marked with "E". Other provisions marked with "E" are not rules but are in codes, and GEN 2.2.3 R does not apply to them.
+
+- **GEN 2.2.5 G 01/01/2006 RP**
+  - Chapter 6 of the Reader's Guide explains the significance of status letters R, E, G, D, UK, EU, P, and C, and provides more information on Handbook provisions, including evidential provisions.
+
+### Use of defined expressions
+
+- **GEN 2.2.6 G 01/07/2012 RP**
+  - Expressions with defined meanings appear in italics in the Handbook, unless stated otherwise in individual sourcebooks or manuals.
+
+- **GEN 2.2.7 R 31/12/2004 RP**
+  - In the Handbook (except IPRU, unless indicated otherwise):
+    1. An italicized expression defined in the Glossary has the meaning given there.
+    2. An italicized expression related to a Glossary definition must be interpreted accordingly.
+
+- **GEN 2.2.8 G 01/03/2016 RP**
+  - Examples of related expressions include:
+    1. "advice on investments" and "advise on investments" should be interpreted by reference to "advising on investments".
+    2. "closely linked" should be interpreted by reference to "close links".
+    3. "controls" and "controlled" should be interpreted by reference to "control".
+    4. "effect", as in "effect a life policy", should be interpreted by reference to "effecting contracts of insurance".
+    5. "employment" should be interpreted by reference to "employee".
+
+- **GEN 2.2.9 G 01/07/2012 RP**
+  - Unless the context requires otherwise or stated in a particular sourcebook or manual, where italics are not used, an expression bears its natural meaning, subject to the Interpretation Act 1978.
+
+- **GEN 2.2.10 G 21/06/2001 RP**
+  - The Interim Prudential sourcebooks (IPRU) have individual arrangements for defined terms, and each contains rules or guidance on its own arrangements. Do not rely on Glossary definitions unless indicated.
+
+### Application of the Interpretation Act 1978
+
+- **GEN 2.2.11 R 21/06/2001 RP**
+  - The Interpretation Act 1978 applies to the Handbook.
+
+- **GEN 2.2.12 G 01/03/2024 RP**
+  - The Interpretation Act 1978's application to the Handbook means:
+    1. Expressions used in the Handbook that are in the Act have the same meanings unless a contrary intention appears.
+    2. References to an enactment in the Handbook are to that enactment as amended, including extensions or applications by other enactments, unless a contrary intention appears.
+    3. Unless a contrary intention appears:
+       - Words importing masculine gender include feminine and vice versa.
+       - Words in the singular include the plural and vice versa.
+
+### Civil partnership - references to stepchildren etc
+
+- **GEN 2.2.12A R 05/12/2005 RP**
+  - References to stepchildren, step-parents, etc., in provisions made before 5 December 2005 are interpreted according to section 246 of the Civil Partnership Act 2004.
+
+- **GEN 2.2.12B G 05/12/2005 RP**
+  - GEN 2.2.12A R and sections 246 and 247 of the Civil Partnership Act 2004 amend references to stepchildren and related expressions to account for civil partnerships. For example, a stepchild of a person includes the child of the civil partner of that person.
+
+### Cross-references in the Handbook
+
+- **GEN 2.2.13 R 01/03/2024 RP**
+  - References in the Handbook to other provisions are references to those provisions as amended over time.
+  - Unless a contrary intention appears:
+    - References to provisions in the PRA Rulebook are to those provisions as amended over time.
+    - References in Handbook rules (other than those by FOS Ltd) to enactments are to those enactments as amended over time.
+    - References to enactments in the Glossary are construed as references to those enactments as amended over time.
+
+- **GEN 2.2.13A R 04/12/2015 RP**
+  - Unless a contrary intention appears, if an FCA provision cross-references a non-FCA provision (including deleted PRA provisions), the referred provision is treated as made by the FCA to ensure the cross-reference functions effectively.
+
+- **GEN 2.2.13B G 04/12/2015 RP**
+  - GEN 2.2.13AR ensures cross-references in the FCA Handbook to provisions outside it are effective, including references to material formerly in the PRA Handbook but now deleted.
+
+### References to writing
+
+- **GEN 2.2.14 R 21/06/2001 RP**
+  - If a Handbook provision refers to a document "in writing", it means in legible form and capable of being reproduced on paper, regardless of the medium used, unless a contrary intention appears.
+
+- **GEN 2.2.15 G 01/04/2013 RP**
+  - GEN 2.2.14 R allows electronic media for communications required to be "in writing", unless a contrary intention appears or it contravenes another requirement. It does not affect other legal requirements for document execution.
+
+- **GEN 2.2.15A G 01/04/2013 RP**
+  - An example of a requirement relevant to electronic media use for "in writing" communications is the requirement to treat customers fairly under Principle 6.
+
+- **GEN 2.2.16 G 21/06/2001 RP**
+  - "Document" is defined in the Glossary to include information recorded in any form, including electronic form.
+
+### Activities covered by general rules
+
+- **GEN 2.2.17 R 04/11/2016 RP**
+  - A general rule is interpreted as:
+    1. Applying to a firm for all regulated activities, unless a contrary intention appears.
+    2. Not applying to unregulated activities, unless a contrary intention appears.
+
+### Continuity of authorised partnerships and unincorporated associations
+
+- **GEN 2.2.18 R 06/07/2006 RP**
+  - If a partnership or unincorporated association is dissolved but its authorisation continues under section 32 of the Act, the successor is regarded as the same firm for Handbook purposes unless the context requires otherwise.
+
+- **GEN 2.2.19 G 06/02/2008 RP**
+  - A change in partners or members can form a new partnership or association. GEN 2.2.18 R reflects section 32 of the Act, ensuring continuing authorisation if conditions are met, maintaining the status of the partnership or association as a "firm" or "authorised person" for Handbook purposes.
+
+### Designated investment exchanges
+
+- **GEN 2.2.20 G 01/01/2006 RP**
+  - The Glossary defines designated investment exchanges, listing certain exchanges. More information and guidance on adding an exchange to the list is in GEN 2 Annex 1 G, and the application fee obligation is in FEES 3.2.
+
+### European Economic Area (EEA)
+
+#### Registered persons
+
+- **GEN 2.2.20A G 08/10/2023**
+  - Registered persons can communicate financial promotions about qualifying cryptoassets using an exemption in article 73ZA of the Financial Promotion Order.
+  - The Financial Services and Markets Act 2000 (Financial Promotion) (Amendment) Order 2023 applies certain powers in the Act to registered persons for their communication of financial promotions under this exemption.
+  - The FCA can exercise supervisory and enforcement powers over registered persons. Guidance on these powers for authorised persons also applies to registered persons, and references to firms should be construed accordingly.
+
+### Treaty of Lisbon
+
+- **GEN 2.2.22 G 01/01/2021 RP**
+  - Due to the Treaty of Lisbon, the European Union has replaced the European Community. References to the European Community in the Handbook should be interpreted as references to the European Union where context requires.
+
+### Onshored Regulations and third country firms
+
+- **GEN 2.2.22A R 01/01/2021 RP**
+  - Unless exempted, MiFIR and onshored regulations from MiFIR or MiFID apply to a third country investment firm as if it were a UK MiFID investment firm when:
+    1. It carries on MiFID or equivalent third country business.
+    2. The business is conducted from a UK establishment.
+  - Paragraph (1) does not apply if:
+    1. MiFIR or an onshored regulation imposes a specific requirement for a third country investment firm.
+    2. Onshored regulations were previously EU regulations under article 7 of MiFID.
+  - Paragraph (1) is modified by application provisions in individual Handbook chapters.
+  - GEN 2.2.22AR(1) is subject to articles 2A to 2E of MiFIR and article 1(3) to (5) of the MiFID Org Regulation.
+  - For TP firms, GEN 2.2.22AR(1) does not apply additional requirements imposed by MiFIR or the MiFID Org Regulation beyond those in articles 2A to 2E MiFIR and article 1(3) to (5) of the MiFID Org Regulation.
+
+- **GEN 2.2.22B G 01/01/2021 RP**
+  - The purpose of GEN 2.2.22AR is to ensure a third country investment firm is not treated more favorably than a UK firm.
+  - GEN 2.2.22AR may be overridden by application provisions at the beginning of individual Handbook chapters.
+
+### Application of provisions where there are commensurate PRA provisions
+
+- **GEN 2.2.23 R 26/01/2017 RP**
+  - This rule applies to Handbook provisions where the PRA has made commensurate provisions in the PRA Rulebook. It may affect their application by the FCA to PRA-authorised persons and PRA approved persons.
+  - Where a Handbook provision exceeds the FCA's powers or responsibilities, it applies only to the extent of the FCA’s powers and responsibilities.
+  - The extent of a Handbook provision is reduced by the minimum degree necessary.
+
+- **GEN 2.2.24 G 01/04/2013 RP**
+  - The published Memorandum of Understanding between the FCA and the PRA describes their regulatory responsibilities.
+
+- **GEN 2.2.25 G 26/01/2017 RP**
+  - An example of a rule being reduced by GEN 2.2.23R is SYSC 6.1.1R, which requires a firm to maintain adequate policies and procedures for compliance with its obligations under the regulatory system. SYSC 6.1.1R should be interpreted as applied by the FCA for a PRA-authorised person’s compliance with FCA responsibilities, such as banking conduct requirements in BCOBS.
+
+### Rules applying while a firm has temporary permission: the General Rules
+
+- **GEN 2.2.26 R 01/01/2021**
+  - Unless a contrary intention appears, a rule does not apply to a TP firm except:
+    1. A rule that imposed an obligation on a person before IP completion day who becomes a TP firm continues to apply to the same extent and activities.
+    2. A rule dealing with a matter reserved to the Home State or EEA state under an EU directive applies to a TP firm if it applies to a UK firm carrying on the same regulated activity and implemented an EU directive provision before IP completion day.
+    3. A TP firm carrying on an activity from its UK branch does not contravene a rule if it complied with a provision implementing the same directive provision reserved to its Home State.
+    4. A TP firm carrying on an activity into the UK does not contravene a rule if it complied with a provision implementing the same directive provision reserved to its Home State.
+    5. Paragraph (3) or (4) does not apply unless a TP firm can demonstrate compliance with the provision.
+    6. If a TP firm’s Home State exercises a national discretion not to apply a provision, the TP firm does not need to comply with the rule.
+    7. A provision includes one where an EU directive sets options, and the state chose different options than the FCA.
+
+### Amendments to rules applied by the General Rules
+
+- **GEN 2.2.27 R 04/10/2024**
+  - A rule applied by GEN 2.2.26R(1) or GEN 2.2.26R(2):
+    1. Applies with any amendment made on IP completion day to address an issue from the UK’s withdrawal from the EU.
+    2. Applies until deleted after IP completion day, or continues as amended or replaced unless stated otherwise.
+    3. Only applies to activities from a UK branch or establishment or into the UK.
+  - Apart from in COMP and FEES 6, where a rule applied by GEN 2.2.26R(1) or GEN 2.2.26R(2) was deleted on IP completion day, deletion is disregarded, and it continues to apply to the TP firm, with references to the EU deemed as UK.
+
+### Modification of rules applied by the General Rules in cases of conflict
+
+- **GEN 2.2.28 R 01/01/2021**
+  - Where a rule in GEN 2.2.26R(1) applies and:
+    1. An amendment on IP completion day removes a reference to an EEA matter, and it is impracticable for the TP firm to comply, the firm may treat the rule as if it continued to refer to the EEA matter.
+    2. If a rule applied by GEN 2.2.26R(1) contradicts a rule applied by GEN 2.2.26R(2), the rule in GEN 2.2.26R(2) does not apply.
+    3. If different provisions apply in an EEA State to a TP firm due to the UK’s withdrawal from the EU, and complying with a rule applied by GEN 2.2.26R(2) would contravene a provision in that EEA State, the rule in GEN 2.2.26R(2) does not apply.
+
+### MiFID technical standards
+
+- **GEN 2.2.29 R 04/10/2024**
+  - Provisions, as amended on or after IP completion day, apply to a TP firm which is an EEA MiFID investment firm as if it were a MiFID investment firm when:
+    1. It carries on MiFID or equivalent third country business.
+    2. The business is conducted from a UK branch or provided into the UK.
+  - The provisions are technical standards from previously adopted EU regulations under MiFID, except:
+    1. Those from EU regulations under article 7 of MiFID.
+    2. Those from EU regulations under article 32(2) and (3) of MiFID for firms other than TP firms operating an organised trading facility or acting as a systematic internaliser from a UK branch.
+    3. To the extent inconsistent with Chapter 5 of the MiFID Org Regulation or MAR 10.4.
+  - A TP firm from a UK branch does not contravene a rule if it complied with the same provision applied by its Home State.
+  - A TP firm into the UK does not contravene a rule if it complied with the same provision applied by its Home State.
+  - A rule in (3) or (4) does not apply unless a TP firm can demonstrate compliance with the provision.
+  - Neither paragraphs (3) nor (5) apply to rules from EU regulations under article 27 of MiFID.
+
+### Rules and guidance applying while a firm has temporary permission – capital adequacy requirements
+
+- **GEN 2.2.30 R 01/01/2022**
+  - Nothing in GENPRU, MIFIDPRU, INSPRU, MIPRU, IPRU(FSOC), IPRU(INS), or IPRU(INV) applies to a TP firm, except for provisions in (2).
+  - To the extent a TP firm carries on the relevant regulated activity, the following apply by GEN 2.2.26R:
+    1. INSPRU 1.5.33R.
+    2. MIPRU.
+    3. IPRU(FSOC).
+    4. IPRU(INV) 5, 6, 12, and 13, except capital adequacy rules in these chapters do not apply to a TP firm.
+
+- **GEN 2.2.31 G 01/01/2022**
+  - GEN 2.2.30R excludes the application of sourcebooks in the Prudential Standards part of the FCA Handbook, except those in GEN 2.2.30R(2).
+  - Sourcebooks in GEN 2.2.30R(2) may apply to a TP firm by GEN 2.2.26R(1) if they applied before IP completion day, or by GEN 2.2.26R(2) if conditions are met, and the rule does not relate to capital adequacy.
+  - The approach in GEN 2.2.30R ensures a TP firm is only subject to capital adequacy rules that applied before IP completion day.
+  - Sourcebooks in GEN 2.2.30R(2) contain rules not related to capital adequacy, which may apply to TP firms by GEN 2.2.26R.
+  - Other sourcebooks may include capital adequacy rules that apply to a TP firm by GEN 2.2.26R, but not additional requirements beyond those before IP completion day.
+  - Rules relating to capital adequacy include financial resources adequacy, but not professional indemnity insurance unless tied to capital adequacy. Such rules may apply to a TP firm by GEN 2.2.26R, but not if tied to capital adequacy by GEN 2.2.26R(2).
+
+### Rules applying while a firm has temporary recognition – general – TP UCITS qualifiers
+
+- **GEN 2.2.32 R 04/10/2024**
+  - Unless a contrary intention appears, a rule does not apply to a TP UCITS qualifier, except:
+    1. A rule that imposed an obligation on a person before IP completion day who becomes a TP UCITS qualifier continues to apply to the same extent and activities.
+    2. If a person becomes a TP UCITS qualifier for a new sub-fund after IP completion day, a rule that would have applied before IP completion day applies to the new sub-fund to the same extent and activities.
+
+### Amendments to rules applied to TP UCITS qualifiers
+
+- **GEN 2.2.33 R 04/10/2024**
+  - A rule applied by GEN 2.2.32R:
+    1. Applies with any amendment made on IP completion day from the UK’s exit from the EU.
+    2. Applies until deleted after IP completion day, or continues as amended or replaced unless stated otherwise.
+    3. Only applies to activities in relation to the AIF or scheme in the UK.
+  - Where a rule applied by GEN 2.2.32R was deleted on IP completion day, deletion is disregarded, and it continues to apply to the TP UCITS qualifier, with references to the EU deemed as UK.
+
+### Modification of rules applied to TP UCITS qualifiers
+
+- **GEN 2.2.34 R 04/10/2024**
+  - Where a rule in GEN 2.2.32R applies and:
+    1. An amendment on IP completion day removes a reference to an EEA matter, and it is impracticable for the TP UCITS qualifier to comply, the qualifier may treat the rule as if it continued to refer to the EEA matter.
+    2. If complying with a rule applied by GEN 2.2.32R would contravene a provision in its Home State, the rule does not apply.
+
+### Guidance applying while a firm has temporary permission
+
+- **GEN 2.2.35 R 04/10/2024**
+  - Unless a contrary intention appears, guidance does not apply to a TP firm or TP UCITS qualifier except:
+    1. Guidance on a rule applied by GEN 2.2.26R(1) applies to a TP firm to the same extent as that rule.
+    2. Guidance on a rule applied by GEN 2.2.26R(2) applies to a TP firm to the same extent as that rule.
+    3. Guidance on a rule applied by GEN 2.2.32R applies to a TP UCITS qualifier to the same extent as that rule.
+    4. Guidance on an enactment applying to both a TP firm and a firm with Part 4A permission applies to a TP firm to the same extent. If an enactment is modified for the EU Exit Passport Regulations, guidance must be read subject to those modifications. This applies similarly to guidance for TP UCITS qualifiers.
+
+- **GEN 2.2.35A G 04/11/2024**
+  - A TP firm should refer to provisions identifying rules and guidance in their sourcebooks that came into force after IP completion day and apply to TP firms.
+
+### Purpose
+
+- **GEN 2.2.36 G 04/10/2024**
+  - The approach to rules for TP firms is to apply rules that applied immediately before IP completion day, whether in the UK or in the firm’s Home State or relevant state.
+  - Glossary definitions of TP firm and temporary permission now apply only to firms in the financial services contracts regime under Part 6 of the EU Exit Passport Regulations.
+  - GEN 2.2.26R (1) and GEN 2.2.33R refer to rules imposing substantive obligations, not rules setting application.
+  - GEN 2.2.26R to GEN 2.2.35R apply rules and guidance to firms with passporting rights under the Treaty on the Functioning of the European Union or the EEA Agreement.
+  - The application of rules and guidance to TP firms considers the purpose of temporary permission under Part 6 of the Regulations, allowing TP firms to continue regulated activities in the UK, or for TP UCITS qualifiers to market funds in the UK, considering the changed legal framework post-EU law.
+  - For a TP firm under Part 6 of the EU Exit Passport Regulations, the scope of authorisation is preserved but limited to what is permitted under regulation 33 or 40 of those Regulations.
+  - The General Rules apply where regulated activities have been amended on IP completion day, enabling TP firms to continue such activities in the UK.
+  - Part 6 of the Collective Investment Schemes (Amendment etc.) (EU Exit) Regulations 2019 allows a new sub-fund to be a recognised scheme, ensuring a rule applies to a TP UCITS qualifier for a new sub-fund if it would have applied before IP completion day.
+  - For persons with temporary EMI, PI, and RAISP authorisation, specified directions, rules, and guidance in FEES 4A, 7C, and 13A apply, along with DISP, SUP, PRIN, and BCOBS as they apply to UK-authorised institutions.
+  - A person with temporary EMI authorisation is deemed an authorised electronic money institution, subject to the Electronic Money Regulations and exclusions in the E-money and Payments Transitional Provisions Regulations.
+  - For persons with temporary PI authorisation and temporary RAISP registration, the Payment Services Regulations apply, subject to exclusions in the E-money and Payments Transitional Provisions Regulations.
+  - Glossary definitions of temporary EMI, PI, and RAISP authorisation now apply only to persons in the financial services contracts regime under the E-money and Payments Transitional Provisions Regulations.
+
+### The effect of the General Rules
+
+- **GEN 2.2.37 G 04/10/2024**
+  - The approach in these rules is general and does not apply where a rule states a different provision applies or that position is stated.
+  - The FCA has specifically applied rules to TP firms in certain cases, such as:
+    1. Principles for Businesses (PRIN).
+    2. Fees Manual (FEES) chapters 4A, 6, 7C, 7D, and 13A, and rule 5.1.1CR.
+    3. General Provisions (GEN) on status disclosure.
+    4. Client Assets sourcebook (CASS) chapter 14.
+    5. Compensation sourcebook (COMP).
+    6. Dispute Resolution: Complaints sourcebook (DISP) chapters 1, 2, and 3.
+    7. Approved persons regime in the Supervision Manual (SUP) 10A.
+    8. Senior managers and certification regime in the Senior Management Arrangements, Systems and Controls sourcebook (SYSC) at SYSC 23.3.3G.
+  - GEN 2.2.26R(1) and GEN 2.2.32R include rules applying to a firm’s activity beyond its permitted activity under Schedule 3 or 4 to the Act or beyond permitted activity under paragraph 2(1) of Schedule 5 to the Act.
+  - None of GEN 2.2.26R(1), GEN 2.2.26R(2), and GEN 2.2.32R prevent changes to rules applying to such firms on and after IP completion day.
+  - GEN 2.2.26R(2) refers to rules dealing with matters reserved to the Home State, including rules always the responsibility of that state or depending on where the service or activity takes place.
+  - The effect of GEN 2.2.26R(2) is to apply a rule implementing an EU directive, even if the matter was reserved to the Home State or the state where the service is provided. A rule imposed by a national discretion in a directive is taken as implementing a directive. If a TP firm’s home state exercises a national discretion not to apply a provision, the firm does not need to comply with the rule. A more stringent rule applied by the FCA in relation to a minimum harmonisation EU directive would not be applied by GEN 2.2.26R(2).
+  - The General Rules in GEN 2.2.26R to 2.2.31G do not address EEA fund managers only marketing funds in the UK without carrying on regulated activity. Persons only marketing are defined as TP UCITS qualifiers and TP AIFM qualifiers, covered by GEN 2.2.32R, 2.2.33R, 2.2.34R, and 2.2.35R.
+  - An example of a matter in GEN 2.2.28R(1) or GEN 2.2.34R(1) may be a rule referring only to UK professional body membership. Where applicable, the firm may treat the rule as if it continued to refer to an EEA professional body.
+  - TP firms may find it helpful to refer to the table in SUP 13A Annex 1 (Rules that apply to incoming EEA firms) as it applied before IP completion day, but it will not apply entirely to each TP firm. For example, a TP firm with top-up permission needs to comply with rules for that activity, and specified rules deleted on IP completion day are not applied by the General Rules as set out in GEN 2.2.27R(2).
+  - TP firms may find it helpful to refer to the table in SUP 13A Annex 2G (Matters reserved to the home state) as it applied before IP completion day.
+
+### Rules and guidance applying while a firm has temporary permission – tied agents
+
+- **GEN 2.2.38 G 01/01/2021**
+  - A tied agent that is an appointed representative may not start acting as a tied agent until included on the Financial Services Register.
+  - To ensure inclusion, a TP firm should complete the Appointed representative appointment form in SUP 12 Annex 3R when appointing a tied agent for MiFID business in the UK.
+  - A TP firm terminating its relationship with a tied agent should complete the Appointed representative termination form in SUP 12 Annex 5R to remove the agent from the Financial Services Register.
+
+### TP firms that enter the financial services contracts regime under Part 6 of the EU Exit Passport Regulations
+
+- **GEN 2.2.39 G 01/01/2021**
+  - As TP firm and temporary permission definitions include TP firms under Part 6 of the EU Exit Passport Regulations, rules and guidance in GEN 2.2.26R to GEN 2.2.35G apply to firms entering the financial services contracts regime after IP completion day.
+  - The application of rules and guidance to TP firms under Part 6 of the EU Exit Passport Regulations considers the purpose of temporary permission, enabling such a TP firm to run down its regulated business in the UK. Regulation 33 or 40 of the EU Exit Passport Regulations sets the scope of permitted activities.
+  - Rules and guidance in GEN 2.2.26R to 2.2.31G, and 2.2.35R to 2.2.37G continue to apply where a TP firm leaves temporary permission under Part 3 and enters temporary permission under Part 6 of the EU Exit Passport Regulations.
+  - GEN 2.2.27R applies changes between IP completion day and when the person enters temporary permission under the regulation in question to the TP firm.
+  - Where a TP firm enters temporary permission under regulation 32 of the EU Exit Passport Regulations, a rule in GEN 2.2.26R(1) applies again, with changes referred to in paragraph (3). Rules applied by GEN 2.2.26R(2) apply with changes referred to in paragraph (3).
+
+## GEN 2.3 General saving of the Handbook for Gibraltar
+
+### Continued application of the Handbook with respect to Gibraltar
+
+- **GEN 2.3.1 R 29/07/2022**
+  - The FCA Handbook, after IP completion day, confers rights and imposes obligations in relation to Gibraltar corresponding to those before IP completion day.
+  - Provisions applying to Gibraltar before IP completion day continue to apply after, with necessary modifications, unless a contrary intention is indicated.
+  - "Gibraltar" includes rights or obligations related to Gibraltar-based firms, public institutions, residents, body corporates, and firm activities in Gibraltar.
+  - A Gibraltar-based firm with permission for funeral plan provision or distribution must comply with relevant Handbook provisions.
+
+### Extent of guidance applying in relation to or in connection with Gibraltar
+
+- **GEN 2.3.2 R 01/01/2021**
+  - Guidance on a rule applying to Gibraltar before IP completion day continues to apply after, with necessary modifications, unless a contrary intention is indicated.
+  - Guidance on an enactment other than a rule continues to apply to Gibraltar as the enactment continues to apply.
+
+### Purpose of GEN 2.3.1R and GEN 2.3.2R
+
+- **GEN 2.3.3 G 01/01/2021**
+  - The purpose of GEN 2.3.1R and GEN 2.3.2R is to ensure rules and guidance applying to Gibraltar before IP completion day continue after, despite amendments from the UK’s withdrawal from the EU.
+  - Amendments or deletions addressing the UK’s withdrawal from the EU are disregarded if they change the application to Gibraltar.
+  - Rules or guidance applying before IP completion day to Gibraltar-based firms, residents, body corporates, or firm activities continue after with necessary modifications.
+  - The approach in GEN 2.3.1R is general and does not apply where a rule or guidance states a different provision applies to Gibraltar.
+  - The contrary intention in GEN 2.3.1R should be construed in light of regulations under the EUWA. GEN 2.3.1R does not apply where it would be contrary to regulations under the EUWA or incompatible with the legislative scheme.
+  - Rules and guidance are saved with necessary modifications to give effect to corresponding rights or obligations before IP completion day. For example, a rule referring only to UK professional body membership may be treated as referring to a Gibraltar-based professional body if necessary.
+  - GEN 2.3.1R and GEN 2.3.2R do not prevent changes to rules and guidance applying to Gibraltar after IP completion day.
+
+### Further guidance on GEN 2.3.1R and GEN 2.3.2R as they apply in relation to Gibraltar-based firms exercising market access rights by virtue of the Gibraltar Order
+
+- **GEN 2.3.4 G 01/01/2021**
+  - Where GEN 2.3.1R and GEN 2.3.2R apply to a Gibraltar-based firm exercising market access rights by the Gibraltar Order and carrying on activities outside its entitlement, rules and guidance continue to apply by virtue of a Part 4A permission.
+  - Gibraltar-based firms exercising market access rights by the Gibraltar Order may find it helpful to refer to the table in SUP 13A Annex 1G (Rules that applied to incoming EEA firms) as it applied before IP completion day, but it will not apply entirely if a firm has a Part 4A permission for other activities.
+
+### Exception for fee rates
+
+- **GEN 2.3.5 G 01/04/2021**
+  - Provisions in FEES applying to Gibraltar before IP completion day continue after, except fee rates, which may change each fee year.
+
+## GEN 2 Annex 1 Designated investment exchanges
+
+### Introduction
+
+1. A designated investment exchange is an named known exchange listed in the Glossary.
+
+### Benefits of designation
+
+2. Under certain rules, firms may treat transactions on a designated investment exchange like transactions on RIEs (e.g., see CASS 2).
+
+### Criteria for inclusion in the list of designated investment exchanges
+
+3. Before adding an exchange to the list, the FCA will comply with all requirements imposed by the Act for rule-making, including consulting on the proposed amendment.
+
+4. The FCA will determine if the exchange provides appropriate consumer protection, considering:
+   - Relevant law and practice, including the regulatory framework where the exchange operates.
+   - The exchange's rules and practices.
+
+5. Only exchanges not carrying on regulated activity in the UK and not regulated markets may be added to the list, as those carrying on regulated activity need recognition as an RIE or authorisation.
+
+### Applications to be added to the list of designated investment exchanges
+
+6. Applications should be in writing and delivered to the FCA by post or in person at the FCA's address.
+
+7. An exchange should provide information on questions in the designated investment exchange questionnaire.
+
+8. An application will not be considered until the application fee is paid (see FEES 3.2).
+
+### Designated investment exchange questionnaire
+
+1. Describe member supervision by the exchange or another body, including capital resources monitoring.
+2. What powers does the exchange or another body have to intervene in a member's business?
+3. Describe the exchange's clearing arrangements and contract performance assurance.
+4. How is price information disseminated to investors, especially in the UK?
+5. Describe the exchange's transaction reporting and recording arrangements.
+6. Does the exchange require client money and asset segregation? Describe how it operates or other investor protections.
+7. Describe the exchange's complaint investigation procedures.
+8. Does the exchange classify contracts by liquidity? Can certain contracts be identified as more liquid with a ready market?
+
+---
+
+### Definitions
+
+- **FOS Ltd**: Financial Ombudsman Service Limited, responsible for resolving disputes between consumers and financial businesses.
+- **TP firm**: A firm with temporary permission to operate in the UK following Brexit, under the EU Exit Passport Regulations.
+- **TP UCITS qualifier**: A firm with temporary recognition to market UCITS funds in the UK following Brexit.
+- **MiFID**: Markets in Financial Instruments Directive, a European Union law that provides harmonized regulation for investment services across the EU.
+- **MiFIR**: Markets in Financial Instruments Regulation, a regulation that complements MiFID.
+- **PRA**: Prudential Regulation Authority, responsible for the prudential regulation and supervision of banks, building societies, credit unions, insurers, and major investment firms.
+- **RIE**: Recognised Investment Exchange, an exchange recognized by the FCA to operate in the UK.
+- **EEA**: European Economic Area, which includes EU countries and Iceland, Liechtenstein, and Norway.
+- **IP completion day**: The end of the Brexit transition period, after which EU law ceased to apply in the UK.
+- **EUWA**: European Union (Withdrawal) Act 2018, legislation that repealed the European Communities Act 1972 and incorporated EU law into UK law post-Brexit.
+
+## GEN 2A Interpreting the Handbook and other documents during the implementation period
+
+## GEN 2A.1 Introduction
+
+- **Application**
+
+  - <mark>This chapter applies to anyone who is subject to any provision in the FCA Handbook and to anyone reading the Handbook.</mark>
+
+  - It also applies to instruments or documents issued by the FCA under a law that are not part of the FCA Handbook. Therefore, it applies to anyone to whom such an instrument or document applies and to any reader of such an instrument or document.
+
+- **Purpose**
+
+  - Section 1B of the EUWA ensures that UK legislation reflects the implementation period in Part 4 of the withdrawal agreement. For example, it ensures that the term “Member State” in EU-derived legislation includes “the UK” and that references to “EU law” are understood as applicable to the UK by Part 4 of the withdrawal agreement. These provisions also apply to FCA Handbook rules and other legislation made by the FCA.
+
+  - The purpose of this chapter is to confirm and explain that, during the implementation period, the entire FCA Handbook and other documents issued by the FCA should be interpreted in light of section 1B of the EUWA.
+
+- **Interpretation**
+
+  - In this chapter, “EUWA” refers to the European Union (Withdrawal) Act 2018.
+
+  - Terms like “implementation period”, “EU-derived domestic legislation”, and “enactment” have the same meanings as in the EUWA. The terms “withdrawal agreement” and “IP completion day” have the same meanings as in the European Union (Withdrawal Agreement) Act 2020.
+
+## GEN 2A.2 Interpreting the Handbook and other documents during the implementation period
+
+- During the implementation period, rules, directions (including waivers), guidance, statements of policy and/or procedure, and any other instrument or document made or issued by the FCA under a law should be interpreted in light of section 1B of the EUWA.
+
+- This means that, until IP completion day, these should be read, as far as the context allows or requires, as if:
+
+  - Any reference to the “Treaties” or the “EU Treaties” includes Part 4 of the withdrawal agreement (implementation period), except for parts related to the Common Foreign and Security Policy.
+
+  - The United Kingdom were a member State of the EU.
+
+  - Any reference to:
+    - EU law;
+    - Any specific EU Treaty or part of it;
+    - Any EU instrument, or document of an EU entity or the EU, or any part of such instrument or document;
+    - Any part of EU law not covered by the above;
+    - Any tax, duty, levy, or interests of the EU; or
+    - Any arrangement involving or relating to the EU not mentioned above,
+    is a reference to such things as applicable to the UK by Part 4 of the withdrawal agreement.
+
+  - Any reference to the European Communities Act 1972 includes a reference to that act as it continues to have effect by section 1A(2) to (4) of the EUWA.
+
+  - Any reference to the area of the EU or the EEA includes the United Kingdom.
+
+  - Any reference to a citizen of the EU or a national of the EEA includes a United Kingdom national as defined by the withdrawal agreement.
+
+- These should also be read in light of any additional modifications mentioned in section 1B(3)(f) of the EUWA.
+
+---
+
+### Definitions
+
+- **EUWA**: European Union (Withdrawal) Act 2018.
+- **Implementation period**: The transition period as defined in the EUWA.
+- **EU-derived domestic legislation**: Legislation in the UK derived from EU law.
+- **Enactment**: A law or regulation.
+- **Withdrawal agreement**: The agreement setting the terms of the UK's withdrawal from the EU.
+- **IP completion day**: The end of the implementation period as defined in the European Union (Withdrawal Agreement) Act 2020.
+
+## GEN 4 Statutory status disclosure
+
+## GEN 4.1 Application
+
+- **Who? What?**
+  - <mark>This chapter applies to every firm and every regulated activity, except:</mark>
+    - Only GEN 4.1 (Application) and GEN 4.5 (Statements about authorisation and regulation by the appropriate regulator) apply to MiFID or equivalent third country business, unless it involves transactions between an MTF operator and its users, transactions concluded on an MTF, or transactions concluded on a regulated market.
+    - Only GEN 4.1 (Application) and GEN 4.5 (Statements about authorisation and regulation by the appropriate regulator) apply to administering a benchmark.
+
+- **Where?**
+  - GEN 4.3 (Letter disclosure) applies to activities from an establishment in the UK, subject to GEN 4.3.4 R (Exception: insurers). For regulated claims management activities, it applies to activities in Great Britain, even if not from a UK establishment.
+  - GEN 4.3 (Letter disclosure) applies to a TP firm for activities from a UK establishment or into the UK from a non-UK establishment, subject to GEN 4.3.4R (Exception: insurers).
+  - GEN 4.4 (Business for private customers from non-UK offices) applies to regulated activities from a non-UK establishment.
+  - GEN 4.5 (Statements about authorisation and regulation by the appropriate regulator) applies to activities from a UK establishment.
+  - GEN 4.5 (Statements about authorisation and regulation by the appropriate regulator) applies to a TP firm for activities from a UK establishment or into the UK from a non-UK establishment.
+
+## GEN 4.2 Purpose
+
+- <mark>This chapter ensures firms provide minimum information about the regulator that authorised them and governs how they describe their regulation.</mark>
+- It builds on Principle 7 (Communications with clients), helping achieve statutory objectives like ensuring markets function well and protecting consumers.
+- Other pre-contract information requirements exist outside this chapter, including:
+  - Financial promotions in financial promotion rules.
+  - Designated investment business in COBS 8, COBS 8A, COBS 5, COBS 6, COBS 13, COBS 14, and CASS.
+  - PRIIPs require a key information document for retail investors.
+  - Non-investment insurance contracts in ICOBS 3, ICOBS 4, ICOBS 5, and ICOBS 6.
+  - Electronic commerce activities in COBS 5.2, ICOBS 3.2, and MCOB 2.8.
+  - Regulated mortgage contracts and home purchase plans in MCOB 4, MCOB 5, and MCOB 6.
+  - Equity release transactions in MCOB 8.4, MCOB 9.4, and MCOB 9.5.
+  - Regulated sale and rent back agreements in MCOB 4.11, MCOB 5.9, and MCOB 6.9.
+  - Regulated credit agreements in Consumer Credit (Disclosure of Information) Regulations 2010 and 2004.
+  - Regulated claims management activities in CMCOB 4.2 and CMCOB 4.3.
+
+## GEN 4.3 Letter disclosure
+
+- **Disclosure in letters to retail clients**
+  - <mark>Firms must ensure letters (or electronic equivalents) to retail clients include the required disclosure from GEN 4 Annex 1 R or GEN 4 Annex 1AR, as applicable.</mark>
+  - TP firms must ensure letters to retail clients include the required disclosure from GEN 4 Annex 1C 1.1R or 1.2R, or GEN 4 Annex 1C 2.1R or 2.2R, as applicable.
+  - If a letter covers both applicable and non-applicable activities, firms should comply with the rules for the applicable business.
+  - For UK domestic firms not PRA-authorised, the required disclosure is <mark>"Authorised and regulated by the Financial Conduct Authority"</mark>.
+  - For UK domestic firms that are PRA-authorised, the required disclosure is <mark>"Authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority"</mark>.
+  - GEN 4.3.1 R covers letters delivered by hand, post, fax, and email, but not text messages, account statements, business cards, or compliment slips.
+  - GEN 4.3.1 R applies to letters sent by any firm's employees, including appointed representatives and their employees.
+  - Firms may find it convenient to include the required disclosure in their letterhead.
+
+- **Exception: insurers**
+  - GEN 4.3.1 R does not apply to:
+    - General insurance business if the risk is outside the UK and the client is not in the UK when the contract is entered.
+    - Long-term insurance business if the client is habitually resident outside the UK and not present in the UK when the contract is entered.
+
+- **Exception: authorised professional firms**
+  - GEN 4.3.1 R does not apply to authorised professional firms for non-mainstream regulated activities.
+
+- **Exception: use of third-party processors in home finance and insurance distribution activities**
+  - If a firm outsources activities to a third-party processor, GEN 4.3.1 R does not apply to the processor if the outsourcing firm ensures compliance as if the processor were the firm.
+  - If an appointed representative outsources insurance distribution or home finance mediation activities, GEN 4.3.1 R does not apply to the processor if the principal ensures compliance as if the processor were the appointed representative.
+  - If an appointed representative carries on outsourced activities, GEN 4.3.1 R does not apply to the firm if it ensures compliance as if the representative were the firm.
+
+- **Exception: credit firms**
+  - GEN 4.3.1 R does not apply to credit firms (other than those with limited permission) for entering into regulated credit agreements as lenders, which would have been covered by the Consumer Credit Directive before IP completion day.
+  - Credit firms must disclose pre-contract information as required by the Consumer Credit (Disclosure of Information) Regulations 2010 and ensure specified information is included in credit agreements.
+  - GEN 4.3.7 R means credit firms do not need to comply with GEN 4.3.1 R for letters accompanying required information under the Regulations.
+  - GEN 4.3.7R and related guidance do not apply to activities covered by a limited permission.
+
+## GEN 4.4 Business for retail clients from non-UK offices
+
+- If a firm indicates it is authorised in communications with retail clients from non-UK offices, it <mark>must also provide information that the regulatory system may differ from the UK and may indicate protections and arrangements under another system.</mark>
+- Firms need not provide this information if it has already been given in writing to the customer.
+
+- **Exception**
+  - This section does not apply to regulated claims management activities, but such activities in Great Britain are subject to GEN 4.3.
+
+## GEN 4.5 Statements about authorisation and regulation by the appropriate regulator
+
+- **Application**
+  - This section <mark>applies to firms communicating with customers or approving financial promotions, except for certain exempt promotions or unregulated collective investment scheme promotions.</mark>
+  - It also <mark>applies to registered persons communicating financial promotions related to qualifying cryptoassets.</mark>
+  - Registered persons must ensure they do not contravene section 24 of the Act (False claims to be authorised or exempt).
+
+- **The duty**
+  - Firms must not imply they are authorised by the FCA or PRA for business they are not authorised for.
+  - Firms must not imply they are regulated by the FCA or PRA for business they are not regulated for.
+  - It is misleading for firms not authorised by the FCA or PRA to state or imply they are so authorised or that clients have recourse to the Financial Ombudsman Service or FSCS if not true.
+  - Misleading statements may breach Principle 7 (Communications with clients) or Part 7 of the Financial Services Act 2012 and may lead to private law actions for misrepresentation.
+
+## Definitions
+
+- **Firm**: Any entity that is subject to the rules and regulations of the FCA or PRA.
+- **TP firm**: A firm operating under the Temporary Permissions Regime following the UK's exit from the EU.
+- **PRA-authorised person**: A firm authorised by the Prudential Regulation Authority.
+- **MiFID**: Markets in Financial Instruments Directive, a regulatory framework for investment services in the EU.
+- **MTF**: Multilateral Trading Facility, a type of trading venue.
+- **COBS**: Conduct of Business Sourcebook, part of the FCA Handbook.
+- **ICOBS**: Insurance: Conduct of Business Sourcebook.
+- **MCOB**: Mortgages and Home Finance: Conduct of Business Sourcebook.
+- **CMCOB**: Claims Management: Conduct of Business Sourcebook.
+- **PRIIPs**: Packaged Retail and Insurance-based Investment Products.
+- **FSCS**: Financial Services Compensation Scheme.
+- **IDD**: Insurance Distribution Directive.
+- **FCA**: Financial Conduct Authority.
+- **PRA**: Prudential Regulation Authority.
+
+## GEN 5 Regulators' logos and the Key facts logo
 
