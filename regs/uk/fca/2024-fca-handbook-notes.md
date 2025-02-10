@@ -1349,3 +1349,1605 @@ All section within are deleted.
 
 ## SYSC 13 Operational risk: systems and controls for insurers
 
+## SYSC 13.1 Application
+
+- **Insurer Application**
+  - SYSC 13 applies to insurers, except for non-directive friendly societies.
+
+- **Swiss General Insurer Application**
+  - SYSC 13 applies to Swiss general insurers only for activities conducted from a UK branch.
+
+- **UK ISPV Application**
+  - SYSC 13 applies to UK Insurance Special Purpose Vehicles (ISPVs).
+
+- **Incoming ECA Provider Exemption**
+  - SYSC 13 does not apply to incoming ECA providers acting in that capacity.
+
+## SYSC 13.2 Purpose
+
+- **Guidance on Systems and Controls**
+  - SYSC 13 provides guidance on interpreting SYSC 3.1.1 R and SYSC 3.2.6 R, focusing on managing operational risk, which involves risks from internal processes, people, systems, or external events. It covers systems and controls for managing risks in operations like IT systems and outsourcing, excluding credit, market, liquidity, and insurance risk.
+
+- **Operational Risk Assessment**
+  - Firms should assess the guidance's appropriateness based on their activities' scale, nature, and complexity, and their obligations under Principle 3 to manage affairs responsibly.
+
+- **Understanding Operational Risk**
+  - Firms should identify relevant operational risks and potential losses, considering risks from people, processes, systems, and external events.
+
+- **Impact on Consumers and Financial Crime**
+  - Operational risk can lead to unfair consumer treatment or financial crime. Firms should consider all operational risk events affecting these areas when establishing systems and controls.
+
+## SYSC 13.3 Other related Handbook sections
+
+- **Relevant Rules and Guidance**
+  - The Handbook contains rules and guidance relevant to managing operational risk, including sections from COBS on conduct, communication, information, insurance distribution, suitability, dealing, investment research, product information, and pensions.
+
+## SYSC 13.4 Requirements to notify the appropriate regulator
+
+- **Notification of Operational Risk Matters**
+  - Under Principle 11 and SUP 15.3.1 R, firms must notify the FCA immediately of operational risk matters the FCA would expect to know, such as significant system failures or operational losses.
+
+- **Specific Operational Risk Notifications**
+  - Notifications should include significant operational exposures, invocation of business continuity plans, and significant changes to a firm's organization, infrastructure, or business environment.
+
+## SYSC 13.5 Risk management terms
+
+- **Definitions of Risk Management Terms**
+  - Risk culture: Awareness, attitude, and behavior towards risk management within a firm.
+  - Operational exposure: Degree of operational risk, expressed in likelihood and impact of losses.
+  - Operational risk profile: Types of operational risks faced by a firm and their impact on service quality.
+
+## SYSC 13.6 People
+
+- **Guidance on Human Resources Management**
+  - Firms should refer to SYSC 3.2.2 G to SYSC 3.2.5 G for guidance on reporting lines and delegation, and SYSC 3.2.13 G to SYSC 3.2.14 G for employee suitability. Additional guidance is provided for managing employees and human resources in operational risk contexts.
+
+- **Systems and Controls for Employee Risks**
+  - Firms should establish systems and controls for managing risks from employees, considering risk culture, remuneration, training, regulatory compliance, continuity arrangements, and third-party supplier employees.
+
+- **Employee Responsibilities**
+  - Firms should ensure employees understand their operational risk management responsibilities, including segregation of duties, recruitment processes, policy communication, training, and disciplinary procedures.
+
+- **Considerations for Approved Persons**
+  - Firms should consider SYSC 13.6.3 G for approved persons and those in high-trust or technical roles, and refer to rules and guidance in APER, COCON, SUP, and SYSC 2.1.
+
+## SYSC 13.7 Processes and systems
+
+- **Systems and Controls for Process and System Risks**
+  - Firms should establish systems and controls for managing risks from process and system failures, considering process complexity, failure prevention, regulatory compliance, continuity arrangements, and risk monitoring.
+
+- **Internal Documentation**
+  - Adequate internal documentation of processes and systems is important for understanding and continuity.
+
+- **External Documentation**
+  - Firms should ensure external documentation is accurate and compliant, considering standard terms, issuance methods, and acceptance confirmation.
+
+- **IT Systems Management**
+  - Firms should manage IT system risks, considering organization structure, business strategy alignment, system acquisition and maintenance, and operational support.
+
+- **Information Security Management**
+  - Firms should manage information security risks, focusing on confidentiality, integrity, availability, authentication, non-repudiation, and accountability, and adhere to standards like ISO17799.
+
+- **Geographic Location Considerations**
+  - Firms should understand operational risk profiles across geographic locations, considering local regulatory requirements, data protection, information flow timeliness, and compatibility with head office arrangements.
+
+## SYSC 13.8 External events and other changes
+
+- **Managing Risks During Change**
+  - Firms should assess and monitor risks during organizational, infrastructure, or business environment changes, considering employee impact, resource allocation, process stability, and management information.
+
+- **Systems and Controls for Change Management**
+  - Firms should establish systems and controls for managing change risks, ensuring adequate organization, management processes, and communication strategies.
+
+- **Unexpected Changes and Business Continuity**
+  - Firms should consider disruptions from unexpected events, assess susceptibility, and implement arrangements to maintain continuity, including succession planning, systems resilience, and contingency arrangements.
+
+- **Documenting Continuity Strategies**
+  - Firms should document continuity strategies, including business continuity plans, escalation processes, information validation, and regular updates.
+
+- **Alternative Site Use**
+  - Firms using alternative sites for recovery should assess site appropriateness, considering location, recovery speed, resource adequacy, and shared resource risks.
+
+## SYSC 13.9 Outsourcing
+
+- **Outsourcing Management Guidance**
+  - Firms cannot outsource regulatory obligations and should supervise outsourced functions. Guidance is provided for managing outsourcing arrangements and third-party dependencies in operational risk contexts.
+
+- **Material Outsourcing Arrangements**
+  - Firms should manage material outsourcing arrangements carefully and notify the FCA when entering such arrangements.
+
+- **Service Provider Considerations**
+  - Firms should not assume reduced operational risk with regulated or intra-group service providers and should analyze outsourcing arrangements' fit with their organization, risk profile, and regulatory obligations.
+
+- **Contract Negotiation Considerations**
+  - Firms should consider reporting requirements, access for auditors and the FCA, information ownership, guarantees, compliance with policies, business continuity, software availability, and change processes in contracts.
+
+- **Relationship Management Framework**
+  - Firms should implement a relationship management framework with service providers, identifying performance targets, evaluating performance, and establishing remedial actions.
+
+- **Contingency Arrangements**
+  - Firms should have contingency arrangements for business continuity in case of significant service loss from providers, considering resource loss, financial failure, and unexpected termination.
+
+- **Solvency II Firm Exemptions**
+  - Certain guidance does not apply to Solvency II firms, which are subject to specific outsourcing requirements in the PRA Rulebook and Solvency II Regulation.
+
+## SYSC 13.10 Insurance
+
+- **Insurance as Risk Mitigation**
+  - While insurance can reduce monetary impacts of operational risk events, non-monetary impacts like reputational damage may remain. Insurance should not replace robust systems and controls.
+
+- **Considerations for Using Insurance**
+  - Firms should consider claim payment times, insurer financial strength, and limiting conditions or exclusions that may restrict coverage.
+
+---
+
+### Definitions
+
+- **Insurer**: A company that provides insurance policies to protect against financial loss.
+- **Non-directive Friendly Society**: A type of mutual society in the UK that is not subject to certain EU insurance directives.
+- **Swiss General Insurer**: An insurance company based in Switzerland that operates in the UK.
+- **UK ISPV**: UK Insurance Special Purpose Vehicle, a company set up to facilitate risk transfer and securitization in the insurance industry.
+- **Incoming ECA Provider**: A provider of export credit agency services entering the UK market.
+- **Solvency II Firm**: An insurance firm subject to the Solvency II Directive, which sets out EU-wide capital requirements and risk management standards.
+
+## SYSC 14 Risk management and associated systems and controls for insurers
+
+## SYSC 14.1 Application
+
+- **Applicability**
+
+  - This section applies to an insurer unless it is a non-directive friendly society.
+
+  - It applies to a Swiss general insurer only for activities conducted from a branch in the UK.
+
+  - It does not apply to:
+    - An incoming ECA provider acting in that capacity.
+    - A firm in relation to benchmark activities.
+
+  - This section applies to a UK ISPV.
+
+## Internal controls: introduction
+
+- **Establishing Internal Controls**
+
+  - A firm must take reasonable steps to establish and maintain adequate internal controls.
+
+- **Role and Organisation of Internal Controls**
+
+  - The role and organisation of internal controls can vary between firms. However, they should generally help the governing body and senior managers ensure the firm meets these objectives:
+    - Safeguarding the firm's and customers' assets, and managing liabilities.
+    - Maintaining operational efficiency and effectiveness.
+    - Ensuring the reliability and completeness of accounting, financial, and management information.
+    - Complying with internal policies, procedures, and applicable laws and regulations.
+
+- **Assessing Adequacy of Internal Controls**
+
+  - When assessing the adequacy of internal controls, a firm should consider potential risks that might hinder achieving the objectives and the need to control these risks. This includes:
+    - Appropriateness of reporting and communication lines.
+    - Monitoring and controlling delegated or contracted functions or activities.
+    - Risk of employees or contractors breaching policies and procedures.
+    - Need for adequate segregation of duties.
+    - Establishment and control of risk management committees.
+    - Need for risk assessment and a risk assessment function.
+    - Need for internal audit and an internal audit function and audit committee.
+
+- **Specific Considerations for Solvency II Firms**
+
+  - Certain provisions do not apply to Solvency II firms:
+    - Risk assessment function requirements.
+    - Internal audit function references, but audit committee references do apply.
+
+  - For Solvency II firms, the PRA has rules implementing governance provisions of the Solvency II Directive related to internal controls.
+
+  - The Solvency II Regulation also imposes specific requirements.
+
+  - The FCA will consider these rules and requirements when evaluating a Solvency II firm's internal controls.
+
+---
+
+### Definitions
+
+- **Insurer**: A company that provides insurance policies to protect individuals or entities against financial loss.
+
+- **Non-directive friendly society**: A type of mutual society in the UK that is not subject to certain EU insurance directives.
+
+- **Swiss general insurer**: An insurance company based in Switzerland that provides general insurance services.
+
+- **Incoming ECA provider**: A firm providing electronic communications services or networks entering the UK market.
+
+- **UK ISPV**: UK-based Insurance Special Purpose Vehicle, a company created to facilitate risk transfer in the insurance sector.
+
+- **Solvency II firm**: An insurance or reinsurance firm subject to the Solvency II Directive, which sets out EU-wide capital requirements and risk management standards.
+
+## SYSC 15A Operational resilience
+
+## SYSC 15A.1 Application
+
+- **Who this applies to:**
+  - Firms that are:
+    - Enhanced scope SMCR firms
+    - Banks
+    - Designated investment firms
+    - Building societies
+    - Solvency II firms
+  - UK RIEs
+  - Electronic money institutions, payment institutions, or registered account information service providers
+  - Consolidated tape providers
+
+- **Inclusions and Exclusions:**
+  - References to a firm include UK RIEs, electronic money institutions, payment institutions, registered account information service providers, and consolidated tape providers.
+  - This chapter does not apply to TP firms, TA PI firms, TA RAISP firms, or TA EMI firms.
+  - It does not apply to firms with their registered or head office outside the UK.
+  - For UK RIEs, a client includes anyone entitled to use the UK RIE’s facilities.
+  - For consolidated tape providers, a client includes anyone purchasing a consolidated tape for bonds from them or a data vendor.
+
+- **Scope of Requirements:**
+  - Applies to regulated activities, dealing in investments as principal, ancillary activities, MiFID or equivalent third country business, collective portfolio management, payment services, issuance of electronic money, and data reporting services by a consolidated tape provider.
+  - No territorial limitation on the application of this chapter.
+
+## SYSC 15A.2 Operational resilience requirements
+
+- **Important Business Services:**
+  - Firms <mark>must identify their important business services and review compliance if there are material changes or at least annually</mark>.
+  - Each service should be treated separately, not as a collection.
+  - Factors to consider include client base, substitutability, time criticality, data sensitivity, and potential impacts on the UK financial system.
+
+- **Impact Tolerances:**
+  - Firms <mark>must set impact tolerances for each important business service and review compliance if there are material changes or at least annually</mark>.
+  - Consider factors like client vulnerabilities, potential financial loss, reputational damage, and market impact.
+  - Firms <mark>must ensure they can remain within impact tolerances during severe disruptions, without breaching other obligations</mark>.
+
+## SYSC 15A.3 Strategies, processes and systems
+
+- **Requirements:**
+  - Firms must have sound, effective, and comprehensive strategies, processes, and systems to comply with obligations.
+  - These must be proportionate to the nature, scale, and complexity of the firm’s activities.
+
+## SYSC 15A.4 Mapping
+
+- **Documentation:**
+  - Firms <mark>must document the people, processes, technology, facilities, and information necessary for delivering important business services</mark>.
+  - Review compliance if there are material changes or at least annually.
+
+## SYSC 15A.5 Scenario testing
+
+- **Testing Plan:**
+  - Develop and update a <mark>testing plan to ensure the firm can remain within impact tolerances</mark>.
+  - Consider factors like scenario types, testing frequency, and communication strategies.
+
+- **Testing:**
+  - <mark>Conduct scenario testing to assess ability to remain within impact tolerances during severe disruptions</mark>.
+  - Identify adverse circumstances and work with third parties if necessary.
+  - Conduct lessons learned exercises after testing or disruptions to improve future responses.
+
+## SYSC 15A.6 Self-assessment and lessons learned exercise documentation
+
+- **Record Keeping:**
+  - Maintain written records of compliance assessments, including important business services, impact tolerances, mapping, testing plans, and lessons learned.
+  - Retain records for at least 6 years and provide to the FCA upon request.
+
+## SYSC 15A.7 Governance
+
+- **Approval and Review:**
+  - The governing body must approve and regularly review the written records required under SYSC 15A.6.
+
+## SYSC 15A.8 Communications
+
+- **Strategy:**
+  - Maintain a communication strategy to reduce harm from operational disruptions.
+  - Consider how to provide warnings or advice quickly and gather information during incidents.
+
+## SYSC 15A.9 Supervisory review and feedback
+
+- **FCA Guidance:**
+  - The FCA may provide guidance on compliance and require actions to address failures.
+  - Firms should consider FCA views and discuss disagreements, with the FCA potentially using other tools to enforce compliance.
+
+---
+
+### Definitions
+
+- **Enhanced scope SMCR firm:** A firm subject to the Senior Managers and Certification Regime with enhanced requirements.
+- **UK RIE:** UK Recognised Investment Exchange.
+- **Consolidated tape provider:** A firm providing consolidated data on financial instruments.
+- **TP firm, TA PI firm, TA RAISP firm, TA EMI firm:** Transitional firms under specific regulatory categories.
+- **MiFID:** Markets in Financial Instruments Directive.
+- **AIF:** Alternative Investment Fund.
+- **UK UCITS:** Undertakings for Collective Investment in Transferable Securities in the UK.
+
+## SYSC 18 Whistleblowing
+
+## SYSC 18.1 Application and Purpose
+
+### Application
+
+- **Who it applies to:**
+  - Firms
+  - All firms for certain guidance
+  - EEA SMCR banking firms and overseas SMCR banking firms for specific rules
+  - UK MiFID investment firms (except collective portfolio management firms) and third country investment firms for whistleblowing obligations under MiFID
+  - Persons under certain EU legislation for other whistleblowing obligations
+
+- **Clarifications:**
+  - "Firm" has a specific meaning in this context, including UK SMCR banking firms and certain insurers.
+  - References to the Employment Rights Act 1996 include Northern Ireland's equivalent.
+  - Firms not specifically mentioned can adopt these rules as best practice.
+
+### Purpose
+
+- **Objectives:**
+  - Establish internal procedures for handling whistleblower concerns.
+  - Define the role of the whistleblowers’ champion.
+  - Ensure settlement agreements allow for protected disclosures.
+  - Implement whistleblowing obligations under MiFID and other EU legislation.
+  - Provide best practice guidance for firms not required to follow these rules.
+  - Link effective whistleblowing measures to fitness and propriety.
+
+## SYSC 18.3 Internal Arrangements
+
+### Arrangements to be Appropriate and Effective
+
+- **Requirements:**
+  - Establish effective arrangements for whistleblower disclosures.
+  - Handle disclosures confidentially and through various methods.
+  - Assess and escalate concerns appropriately.
+  - Protect whistleblowers from victimization.
+  - Provide feedback to whistleblowers when feasible.
+  - Maintain records and written procedures.
+  - Report annually to the governing body and promptly to the FCA on tribunal cases.
+
+- **Guidance:**
+  - Use resources from whistleblowing charities or standards organizations.
+  - Consult with employees on arrangements.
+  - Clarify alternative routes for grievances and complaints.
+  - Allow for internal, group, or third-party operation of arrangements.
+
+### Training and Development
+
+- **Training should include:**
+  - For all employees: seriousness of whistleblowing, reporting methods, examples, confidentiality measures, and external support.
+  - For managers: recognizing disclosures, protecting whistleblowers, providing feedback, fair treatment of accused, and advice sources.
+  - For those operating arrangements: confidentiality, assessing information, and assisting the whistleblowers’ champion.
+
+### Reporting of Concerns by Employees to Regulators
+
+- **Communication:**
+  - Inform employees they can report concerns to the PRA or FCA.
+  - Include this information in employee handbooks.
+
+### Appointed Representatives and Tied Agents
+
+- **Encouragement:**
+  - Invite representatives and agents to adopt internal whistleblowing procedures.
+
+### Link to Fitness and Propriety
+
+- **Seriousness:**
+  - Detriment to whistleblowers could affect a firm's suitability or staff's status.
+
+### Additional Rules for UK Branches
+
+- **Communication:**
+  - Inform UK branch employees about group entity whistleblowing arrangements.
+
+## SYSC 18.4 The Whistleblowers’ Champion
+
+- **Role:**
+  - Oversee the integrity, independence, and effectiveness of whistleblowing policies.
+  - Should have authority, independence, and access to resources.
+  - Not required to handle disclosures daily.
+  - Can be based anywhere if effective.
+
+## SYSC 18.5 Settlement Agreements with Workers
+
+- **Requirements:**
+  - Include terms in agreements that allow protected disclosures.
+  - Avoid warranties requiring disclosure of protected disclosures.
+  - Do not prevent workers from making protected disclosures.
+
+## SYSC 18.6 Whistleblowing Obligations under the MiFID Regime and Other Sectoral Legislation
+
+### Whistleblowing Obligations under the MiFID Regime
+
+- **Procedures:**
+  - MiFID investment firms must have procedures for reporting breaches.
+  - Provide independent and autonomous reporting channels.
+
+### Whistleblowing Obligations under Other Sectoral Legislation
+
+- **Additional Obligations:**
+  - Similar obligations apply under various EU and UK legislation, including Market Abuse Regulation and UCITS Directive.
+
+---
+
+## Definitions
+
+- **Firm:** A UK SMCR banking firm or an insurer as defined in the PRA Rulebook.
+- **EEA SMCR Banking Firm:** A banking firm from the European Economic Area operating in the UK.
+- **Overseas SMCR Banking Firm:** A non-EEA banking firm operating in the UK.
+- **UK MiFID Investment Firm:** A UK firm providing investment services under the Markets in Financial Instruments Directive.
+- **Third Country Investment Firm:** A non-UK firm providing investment services in the UK.
+- **Whistleblowers’ Champion:** A senior individual responsible for overseeing whistleblowing policies and procedures.
+- **Protected Disclosure:** A disclosure made by a worker about wrongdoing, protected under the Employment Rights Act 1996.
+
+## SYSC 19B AIFM Remuneration Code
+
+## SYSC 19B.1 Application
+
+- **Who it applies to:**
+  - The AIFM Remuneration Code is relevant for a full-scope UK AIFM managing:
+    - A UK AIF
+    - A non-UK AIF
+
+- **Guidance for full-scope UK AIFMs:**
+  - ESMA has published guidelines on sound remuneration policies under the AIFMD, which full-scope UK AIFMs should follow.
+  - The FCA provides additional guidance on applying proportionality principles to AIFM remuneration policies, available on their website.
+
+## Remuneration policies and practices
+
+- **Establishing remuneration policies:**
+  - An AIFM must create and maintain remuneration policies for staff that align with effective risk management and do not promote excessive risk-taking.
+
+- **Who are AIFM Remuneration Code staff:**
+  - Staff whose activities significantly impact the risk profiles of the AIFMs or AIFs, including senior management, risk takers, control functions, and high earners.
+
+- **Applying remuneration principles:**
+  - AIFMs must apply remuneration principles appropriately based on their size, organization, and activities.
+  - Significant AIFMs must have a remuneration committee.
+  - The principles apply to all types of remuneration, including carried interest and transfers of units or shares.
+
+## AIFM Remuneration Principles
+
+### Principle 1: Risk management
+
+- Remuneration policies must support sound risk management and not encourage risk-taking beyond the fund's risk profile.
+
+### Principle 2: Supporting business strategy and avoiding conflicts
+
+- Remuneration policies should align with the AIFM's and AIFs' business strategies and avoid conflicts of interest.
+
+### Principle 3: Governance
+
+- The governing body must adopt, review, and implement remuneration policies.
+- Policies must undergo an annual independent review for compliance.
+
+- **Significant AIFMs:**
+  - Must have a remuneration committee with independent judgment on policies and risk management.
+  - The committee should consist of non-executive members of the governing body.
+
+### Principle 4: Control functions
+
+- Employees in control functions should be compensated based on their objectives, not the performance of the business areas they oversee.
+- Senior officers in risk management and compliance should have their remuneration overseen by the remuneration committee or governing body.
+
+### Principle 5: Remuneration structures
+
+- **Assessment of performance:**
+  - Performance-related pay should consider individual, business unit, and overall AIFM performance, using both financial and non-financial criteria.
+  - Performance assessment should be multi-year to reflect long-term performance and risks.
+
+- **Guaranteed variable remuneration:**
+  - Should only be exceptional, for new hires, and limited to the first year.
+
+- **Fixed and variable components:**
+  - Must be balanced, with a high fixed component to allow flexibility in variable pay.
+
+- **Payments for early termination:**
+  - Should reflect performance over time and not reward failure.
+
+- **Retained units or shares:**
+  - At least 50% of variable pay should be in units or shares, subject to retention policies aligning with long-term interests.
+
+- **Deferral:**
+  - At least 40% of variable pay should be deferred over 3-5 years, with 60% deferral for high amounts.
+
+- **Performance adjustment:**
+  - Variable pay should be sustainable and justified by performance, with reductions in poor performance scenarios.
+
+### Principle 6: Measurement of performance
+
+- Performance measurement for variable pay should include adjustments for all relevant risks.
+
+### Principle 7: Pension policy
+
+- Pension policies should align with business strategy and long-term interests.
+- Discretionary pension benefits should be retained for five years if an employee leaves before retirement.
+
+### Principle 8: Personal investment strategies
+
+- Employees should not use personal strategies to undermine risk alignment in remuneration.
+
+### Principle 9: Avoidance of the remuneration code
+
+- Variable pay should not be structured to bypass the AIFM Remuneration Code requirements.
+
+---
+
+## Definitions
+
+- **AIFM (Alternative Investment Fund Manager):** A firm managing alternative investment funds.
+- **Full-scope UK AIFM:** A UK-based AIFM subject to the full requirements of the AIFMD.
+- **AIF (Alternative Investment Fund):** A collective investment undertaking not subject to the UCITS directive.
+- **ESMA (European Securities and Markets Authority):** An EU authority that contributes to safeguarding the stability of the EU's financial system.
+- **FCA (Financial Conduct Authority):** The conduct regulator for financial services firms and financial markets in the UK.
+
+## SYSC 19D Dual-regulated firms Remuneration Code
+
+## SYSC 19D.1 Application and Purpose
+
+### Who? What? Where?
+
+- **Application of the Dual-Regulated Firms Remuneration Code:**
+  - Applies to:
+    - A building society
+    - A UK bank
+    - A UK designated investment firm
+    - An overseas firm that would be one of the above if it were a UK domestic firm and conducted all its business in the UK with necessary authorizations.
+  - For firms in the first three categories, the Code applies to:
+    - UK activities
+    - Activities of a UK domestic firm, regardless of location.
+  - For overseas firms, the Code applies only to activities from a UK establishment.
+  - Otherwise, the Code applies as per SYSC 4.1.1R (General requirements).
+
+- **Extent of FCA's Powers:**
+  - The application of SYSC 19D.1.1R(2) is limited to the FCA's regulatory powers.
+
+- **Scope of the Code:**
+  - Applies to regulated activities, dealing in investments as principal, ancillary activities, and unregulated activities in a prudential context.
+  - Considers activities of other group members.
+
+### When?
+
+- **Remuneration Requirements:**
+  - Apply to remuneration awarded or paid from 1 January 2011 onwards.
+  - Specific rules apply to variable remuneration from performance years starting on or after 1 January 2016.
+  - Does not require breach of contract or employment law.
+
+### Conflict with Other Obligations
+
+- **Compliance with the Code:**
+  - If compliance breaches a prior contract, firms must amend or terminate the contract to comply.
+  - Until resolved, firms must manage risks from the contract.
+
+### Purpose
+
+- **Objective of the Code:**
+  - Ensure risk-focused remuneration policies that promote effective risk management and do not expose firms to excessive risk.
+  - Implements CRD provisions on remuneration and aligns with EBA guidelines.
+
+### Notifications to the FCA
+
+- **Notification Requirements:**
+  - Firms must notify the FCA of significant breaches, proposed policies impacting reputation or service, changes affecting risk profile, and issues like fraud linked to remuneration policies.
+  - Notifications should be immediate upon awareness.
+
+### Individual Guidance
+
+- **FCA Guidance Policy:**
+  - Firms should provide detailed analysis when seeking guidance on remuneration structures.
+
+### Interpretation
+
+- **Definitions:**
+  - Terms used in this chapter have meanings as defined in the UK CRR.
+
+## SYSC 19D.2 General Requirement
+
+### Remuneration Policies Must Promote Effective Risk Management
+
+- **Establishment of Policies:**
+  - Firms must have remuneration policies that align with sound risk management.
+
+- **Scope of the Code:**
+  - Covers all remuneration aspects affecting risk management, including salaries, bonuses, and pensions.
+  - Policies must be proportionate to the firm's activities.
+
+- **FCA Expectations:**
+  - Firms should apply principles on risk management, business strategy, conflicts of interest, governance, risk adjustment, pension policy, personal investment strategies, early termination payments, and deferral.
+
+### Gender Neutral Policies and Practices
+
+- **Gender Neutrality:**
+  - Remuneration policies must be gender neutral and comply with the Equality Act 2010.
+
+### Record Keeping
+
+- **Documentation:**
+  - Remuneration policies and decisions must be clear and documented.
+
+### Interpretation of References to Remuneration
+
+- **Definition:**
+  - Includes remuneration paid in connection with employment by a firm.
+
+## SYSC 19D.3 Remuneration Principles
+
+### Application: Groups
+
+- **Group Compliance:**
+  - Firms in a group must comply individually and ensure group compliance on a consolidated basis.
+
+### Application: Categories of Staff and Proportionality
+
+- **Staff Categories:**
+  - Applies to dual-regulated firms Remuneration Code staff, with proportionality based on firm size and complexity.
+
+### Remuneration Principles
+
+- **Principle 1: Risk Management and Risk Tolerance**
+  - Policies must align with sound risk management and not encourage excessive risk-taking.
+
+- **Principle 2: Supporting Business Strategy**
+  - Policies must align with the firm's strategy and long-term interests.
+
+- **Principle 3: Avoiding Conflicts of Interest**
+  - Policies must include measures to avoid conflicts of interest.
+
+- **Principle 4: Governance**
+  - Management must oversee and review remuneration policies.
+
+- **Principle 5: Control Functions**
+  - Employees in control functions must be independent and appropriately remunerated.
+
+- **Principle 6: Remuneration and Capital**
+  - Variable remuneration must not limit the firm's ability to strengthen its capital base.
+
+- **Principle 7: Exceptional Government Intervention**
+  - Firms benefiting from government support must limit variable remuneration.
+
+- **Principle 8: Profit-Based Measurement and Risk Adjustment**
+  - Performance measurement must include risk adjustments.
+
+- **Principle 9: Pension Policy**
+  - Pension policies must align with the firm's strategy and long-term interests.
+
+- **Principle 10: Personal Investment Strategies**
+  - Employees must not use strategies that undermine risk alignment.
+
+- **Principle 11: Non-Compliance**
+  - Variable remuneration must not facilitate non-compliance with the Code.
+
+- **Principle 12: Remuneration Structures**
+  - Structures must promote effective risk management and distinguish between fixed and variable remuneration.
+
+### Effect of Breaches of the Remuneration Principles
+
+- **Voiding and Recovery:**
+  - Provisions contravening the Code are void, and firms must recover payments made under such provisions.
+
+## Definitions
+
+- **Building Society:** A financial institution owned by its members that offers banking and related financial services, especially savings and mortgage lending.
+- **UK Bank:** A bank that is incorporated in the United Kingdom and authorized to operate as a bank.
+- **UK Designated Investment Firm:** A firm designated by the FCA that provides investment services and activities.
+- **Overseas Firm:** A firm that operates outside the UK but would be considered a UK firm if it conducted all its business in the UK.
+- **Dual-Regulated Firms Remuneration Code Staff:** Employees subject to specific remuneration rules due to their role in a dual-regulated firm.
+- **Higher Paid Material Risk Takers:** Employees whose remuneration is subject to specific deferral and clawback rules due to their impact on the firm's risk profile.
+
+## SYSC 19E UCITS Remuneration Code
+
+## SYSC 19E.1 Application
+
+- **Who it applies to:**
+  - The UCITS Remuneration Code is relevant for a UK UCITS management company managing a UCITS scheme.
+  - Such a firm is referred to as a "management company."
+
+- **Scope of application:**
+  - This chapter concerns remuneration paid, provided, or awarded in connection with employment by a management company.
+  - This does not affect the definition of remuneration elsewhere in the Handbook.
+
+- **Inclusion of seconding organisations:**
+  - Remuneration includes payments made by an organisation not subject to the UCITS Remuneration Code to a secondee employed by a management company that is subject to the Code.
+
+## SYSC 19E.2 Remuneration policies and practices
+
+- **Establishing remuneration policies:**
+  - A management company must create and apply remuneration policies for UCITS Remuneration Code staff that:
+    - Promote sound risk management.
+    - Avoid encouraging risk-taking inconsistent with the UCITS's risk profiles or instruments.
+    - Ensure compliance with the duty to act in the best interests of the UCITS.
+    - Include both fixed and variable remuneration components.
+
+- **Identifying UCITS Remuneration Code staff:**
+  - Staff whose activities impact the risk profiles of the management company or UCITS are included.
+  - This includes senior management, risk takers, control function staff, and employees with remuneration similar to senior management.
+
+- **Exemptions for certain staff:**
+  - A management company may exclude certain individuals from being treated as UCITS Remuneration Code staff if their activities do not materially impact risk profiles.
+
+- **Proportionality in applying remuneration principles:**
+  - Remuneration policies must be appropriate to the company's size, organisation, and activity complexity.
+  - Significant management companies must have a remuneration committee.
+  - The principles apply to all benefits, payments, and transfers related to UCITS Remuneration Code staff.
+
+### UCITS Remuneration Principles
+
+- **Principle 1: Risk management**
+  - Remuneration policies must align with sound risk management and not encourage inappropriate risk-taking.
+
+- **Principle 2: Supporting business strategy and avoiding conflicts**
+  - Policies must align with the business strategy and avoid conflicts of interest.
+
+- **Principle 3: Governance**
+  - The management body must adopt and review remuneration policies annually, ensuring non-executive members with risk management expertise handle these tasks.
+
+- **Principle 4: Control functions**
+  - Control function employees' compensation should be independent of the performance of business areas they oversee.
+
+- **Principle 5(a): Performance assessment**
+  - Performance-related remuneration should consider individual, business unit, and overall company performance, using both financial and non-financial criteria.
+
+- **Principle 5(b): Guaranteed variable remuneration**
+  - Guaranteed variable remuneration is only allowed in exceptional cases, for new hires, and limited to the first year.
+
+- **Principle 5(c): Fixed and variable components**
+  - Remuneration must balance fixed and variable components, with the fixed part being high enough to allow flexibility in variable pay.
+
+- **Principle 5(d): Early termination payments**
+  - Payments for early termination should reflect performance and not reward failure.
+
+- **Principle 5(e): Retained units and shares**
+  - At least 50% of variable remuneration should be in the form of units, shares, or equivalent instruments, subject to retention policies.
+
+- **Principle 5(f): Deferral**
+  - A significant portion of variable remuneration should be deferred for at least three years, with higher deferral for larger amounts.
+
+- **Principle 5(g): Performance adjustment**
+  - Variable remuneration should be sustainable and justified by performance, with adjustments for poor financial performance.
+
+- **Principle 6: Measurement of performance**
+  - Performance measurement for remuneration should include adjustments for all relevant risks.
+
+- **Principle 7: Pension Policy**
+  - Pension policies should align with long-term interests, with discretionary benefits held for five years.
+
+- **Principle 8: Personal investment strategies**
+  - Employees must not use personal strategies or insurance to undermine risk alignment in remuneration.
+
+- **Principle 9: Avoidance of the remuneration code**
+  - Remuneration should not be structured to avoid the requirements of the UCITS Remuneration Code.
+
+---
+
+### Definitions
+
+- **Management company:** A UK UCITS management company that manages a UCITS scheme.
+- **UCITS Remuneration Code staff:** Staff whose professional activities impact the risk profiles of the management company or the UCITS it manages, including senior management, risk takers, control function staff, and employees with similar remuneration to senior management.
+
+## SYSC 19F Remuneration and performance management
+
+## SYSC 19F.1 MiFID remuneration incentives
+
+### Application
+
+- **Who it applies to:**
+  - A common platform firm, unless it is a collective portfolio management investment firm.
+  - A MiFID optional exemption firm.
+  - A third country firm, but only for activities conducted from a UK establishment.
+
+### Purpose
+
+- This chapter implements article 24(10) of MiFID, focusing on remuneration policies and practices.
+
+### MiFID requirement on remuneration incentives
+
+- Firms providing investment services must ensure their staff's remuneration or performance assessments do not conflict with acting in the best interests of clients.
+- Firms must avoid remuneration or sales targets that incentivize staff to recommend financial instruments that are not in the client's best interest.
+
+### Remuneration policies and practices
+
+- **Requirements for certain firms:**
+  - Define and implement remuneration policies that consider all clients' interests, ensuring fair treatment and avoiding conflicts of interest.
+  - Apply these policies to all relevant persons impacting investment services, preventing conflicts of interest.
+  - Ensure the management body approves the remuneration policy, with senior management responsible for its implementation and compliance monitoring.
+
+- **Criteria for remuneration:**
+  - Remuneration should not be based solely on quantitative criteria but should include qualitative criteria reflecting compliance, fair treatment of clients, and service quality.
+  - Maintain a balance between fixed and variable remuneration components to avoid conflicts with client interests.
+
+### Additional Guidance
+
+- Firms should be aware of:
+  - Remuneration requirements in article 27 of the MiFID Org Regulation for common platform firms.
+  - Requirements related to remuneration policies and conflicts of interest.
+  - Finalised Guidance on risks to customers from financial incentives and performance management.
+
+## SYSC 19F.2 IDD remuneration incentives
+
+### Application
+
+- Applies to insurance distributors conducting insurance distribution activities from a UK establishment.
+
+### Exemptions
+
+- Does not apply to authorized professional firms with non-mainstream regulated activities if certain conditions are met, including FCA-approved rules.
+
+### Remuneration and the customer’s best interests
+
+- Insurance distributors must not remunerate or assess employee performance in ways that conflict with customer best interest rules.
+- Distributors should avoid incentives that lead to recommending insurance contracts not best suited to customer needs.
+
+### Additional Guidance
+
+- Consider all remuneration related to non-investment insurance contracts, ensuring it aligns with customer best interest rules.
+- Incentives to third parties, like premium refunds, should be considered as remuneration.
+
+### Retail premium finance
+
+- The rules on remuneration apply to insurance distributors in relation to retail premium finance.
+- Further guidance is available in ICOBS 6A.5.
+
+## SYSC 19F.3 Funeral plan remuneration incentives
+
+### Application
+
+- Applies to firms conducting regulated funeral plan activities.
+
+### Remuneration and the customer’s best interests
+
+- Firms must not remunerate in ways that conflict with customer best interest rules.
+- Avoid incentives that lead to recommending funeral plans not best suited to customer needs.
+
+### Additional Guidance
+
+- Consider FPCOB 6.4R and FPCOB 6.5R when setting remuneration or performance incentives.
+- Examples of conflicting remuneration arrangements include:
+  - Higher remuneration for more expensive plans.
+  - Remuneration based on the number or price of plans sold.
+  - Lack of provisions for remuneration clawback if a plan is canceled.
+
+---
+
+### Definitions
+
+- **Common platform firm:** A firm that is subject to the common platform requirements, which include certain investment firms and credit institutions.
+- **MiFID optional exemption firm:** A firm that is exempt from certain MiFID requirements but still provides investment services.
+- **Third country firm:** A firm that is based outside the European Economic Area but operates within the UK.
+- **Insurance distributor:** A firm or individual involved in the distribution of insurance products.
+- **Authorized professional firm:** A firm authorized by a designated professional body to conduct certain regulated activities.
+- **Dormant account fund operator:** A firm managing funds from dormant accounts, subject to specific regulations.
+- **Funeral plan firm:** A firm that offers or manages funeral plan contracts.
+
+## SYSC 19G MIFIDPRU Remuneration Code
+
+## SYSC 19G.1 General application
+
+### Application: non-SNI MIFIDPRU investment firms
+
+- **MIFIDPRU Remuneration Code Application**
+  - Applies to non-SNI MIFIDPRU investment firms unless certain conditions are met.
+  - Exemptions if:
+    - Firm's average assets over 4 years are £100 million or less.
+    - Firm's average assets over 4 years are £300 million or less, and specific conditions are met:
+      - Trading book business exposure is £150 million or less.
+      - Derivatives business exposure is £100 million or less.
+
+- **Exempted Provisions**
+  - Shares, instruments, and alternative arrangements.
+  - Retention policy.
+  - Deferral.
+  - Discretionary pension benefits.
+
+- **Data Calculation**
+  - If lacking 4-year data, use available data points.
+  - FCA expects data insufficiency only if no MiFID business was conducted or data wasn't recorded monthly.
+
+- **Calculation Method**
+  - Calculate amounts individually using accounting standards for assets and nominal value for off-balance items.
+  - Use monthly data points for a 4-year average.
+  - Choose a consistent day for monthly data points.
+
+- **Currency Conversion**
+  - Convert foreign currency amounts to pound sterling using a relevant market rate.
+
+### Application: SNI MIFIDPRU investment firms
+
+- **Applicable Provisions**
+  - Remuneration policies and practices.
+  - Oversight of remuneration policies.
+  - Control functions.
+  - Fixed and variable components of remuneration.
+  - Remuneration and capital.
+  - Exceptional government intervention.
+  - Assessment of performance.
+
+### Application: Summary for MIFIDPRU investment firms
+
+- **Summary Table**
+  - Non-SNI firms not meeting exemptions: Full MIFIDPRU Remuneration Code.
+  - Non-SNI firms meeting exemptions: Code minus specific provisions.
+  - SNI firms: Specific sections of the Code.
+
+- **Classification**
+  - MIFIDPRU 1.2 explains firm classification as SNI or non-SNI.
+
+### Application: Changes in Application
+
+- **Rule for Non-SNI Firms**
+  - If a firm meets exemption conditions for 6 months and notifies FCA, exempt provisions cease to apply.
+  - Notification through online system.
+
+- **Reversion to Compliance**
+  - If conditions are no longer met, comply within 12 months.
+  - Notify FCA promptly if conditions change.
+
+### Application: Collective Portfolio Management Investment Firms
+
+- **MIFIDPRU Remuneration Code Application**
+  - Applies to collective portfolio management investment firms.
+  - Assess thresholds based on total MiFID and non-MiFID business.
+
+### Application: Levels of Application
+
+- **Individual vs. Consolidated Basis**
+  - Code applies individually unless consolidated application is required.
+  - Consolidated application treats group entities as a single firm.
+
+### Application: Firms with Different Remuneration Requirements
+
+- **Most Stringent Requirement**
+  - Comply with the most stringent remuneration provisions if subject to multiple codes.
+
+### Application: Staff
+
+- **Broad Interpretation**
+  - 'Staff' includes employees, partners, group employees, joint service company employees, and secondees.
+
+### Application: Performance Periods
+
+- **Performance Period Compliance**
+  - Code applies to each performance period, regardless of frequency.
+
+### Application: Proportionality
+
+- **Appropriate Compliance**
+  - Compliance should match the firm's size, organization, and activity complexity.
+
+### Application: Carried Interest
+
+- **Carried Interest Conditions**
+  - Exempt from certain provisions if conditions on performance, payment period, and forfeiture are met.
+
+### Application: General
+
+- **Beyond Minimum Requirements**
+  - Firms should consider exceeding minimum requirements for better risk management and culture.
+
+### When?
+
+- **Start Date**
+  - Apply the Code from the start of the first performance period on or after January 1, 2022.
+
+---
+
+## Definitions
+
+- **Non-SNI MIFIDPRU Investment Firm**: A firm that does not qualify as a small and non-interconnected investment firm under MIFIDPRU regulations.
+- **SNI MIFIDPRU Investment Firm**: A small and non-interconnected investment firm under MIFIDPRU regulations.
+- **MIFIDPRU Remuneration Code**: A set of rules governing remuneration policies and practices for investment firms under MIFIDPRU.
+- **Collective Portfolio Management Investment Firm**: A firm managing collective investment portfolios, subject to specific remuneration rules.
+- **Material Risk Taker**: A staff member whose activities significantly impact the firm's risk profile or managed assets.
+- **FCA**: Financial Conduct Authority, the UK regulator for financial services firms and financial markets.
+- **MiFID**: Markets in Financial Instruments Directive, a European Union law that provides harmonized regulation for investment services.
+- **MiFID Org Regulation**: Regulation supplementing MiFID, detailing organizational requirements for investment firms.
+- **MIFIDPRU**: Prudential requirements for investment firms under MiFID II.
+- **SYSC**: Senior Management Arrangements, Systems and Controls, a section of the FCA Handbook.
+- **K-NPR**: Net Position Risk, a measure used in calculating capital requirements for trading book positions.
+- **K-TCD**: Trading Counterparty Default, a measure used in calculating capital requirements for counterparty credit risk.
+- **AIFM Remuneration Code**: Remuneration rules for Alternative Investment Fund Managers.
+- **UCITS Remuneration Code**: Remuneration rules for Undertakings for Collective Investment in Transferable Securities.
+- **Dual-regulated Firms Remuneration Code**: Remuneration rules for firms regulated by both the FCA and the Prudential Regulation Authority (PRA).
+
+## SYSC 20 Reverse stress testing
+
+Deleted.
+
+## SYSC 21 Risk control: additional guidance
+
+## SYSC 21.1 Risk Control: Guidance on Governance Arrangements
+
+### Additional Guidance on Governance Arrangements
+
+- **Purpose and Scope**
+  - This chapter offers extra guidance on governance arrangements focused on risk management. It builds on the general organizational requirements found in SYSC 2, SYSC 3, SYSC 4, SYSC 7, and FUND 3.7. It applies similarly to insurers, managing agents, the Society, other firms, and full-scope UK AIFMs of authorized AIFs.
+
+- **Considerations for Firms**
+  - Firms should evaluate, based on their size, nature, and complexity, whether their risk control arrangements should include:
+    - Appointing a Chief Risk Officer (CRO).
+    - Establishing a governing body risk committee.
+  - The roles of a CRO and a governing body risk committee are detailed further in this section.
+
+- **Applicability to Firms**
+  - The FCA suggests that banks and insurers in the FTSE 100 Index should adopt these risk control structures. This guidance may also apply to similar-sized firms and some smaller firms, depending on their risk profile or complexity.
+
+- **Solvency II Firms**
+  - For Solvency II firms, the PRA Rulebook designates the chief risk function as a PRA-controlled function.
+  - The chief risk function oversees the risk management system as specified in the PRA Rulebook.
+  - Solvency II firms can interpret references to the Chief Risk Officer in SYSC 21 as referring to the risk management function in the PRA Rulebook.
+
+### Chief Risk Officer
+
+- **Role and Responsibilities**
+  - A Chief Risk Officer should:
+    - Be accountable to the firm's governing body for overseeing firm-wide risk management.
+    - Be independent of individual business units.
+    - Have the authority, stature, and resources needed to perform effectively.
+    - Have unrestricted access to any part of the business affecting the firm's risk profile.
+    - Ensure the data used for risk assessment is appropriate in quality, quantity, and scope.
+    - Oversee and challenge the firm's risk management systems and controls.
+    - Oversee and validate the firm's external risk reporting.
+    - Ensure adequate risk information, analysis, and training for the governing body.
+    - Report on risk exposures relative to risk appetite and tolerance, and challenge any business strategies exceeding these limits.
+    - Provide risk-focused advice on the firm's remuneration policy.
+
+- **Approval and Group Structure**
+  - Firms must seek FCA or PRA approval for a CRO to perform specific functions.
+  - In a group structure, a CRO should consider group-wide risks.
+
+### Reporting Lines of Chief Risk Officer
+
+- **Accountability and Reporting**
+  - The CRO should be accountable to the firm's governing body.
+  - An executive reporting line is necessary for operational management, typically to the chief executive, chief finance officer, or another executive director.
+
+### Appointment of Chief Risk Officer
+
+- **Remuneration and Removal**
+  - The CRO's remuneration should be approved by the governing body or a sub-committee.
+  - The CRO cannot be removed without the governing body's approval.
+
+- **SMCR Banking Firms**
+  - Procedures should ensure the independence of the CRO is not compromised by removal or disciplinary actions.
+  - Approval for removal or disciplinary actions should involve a majority of the governing body, including non-executive members.
+
+### Governing Body Risk Committee
+
+- **Purpose and Responsibilities**
+  - Firms should consider establishing a governing body risk committee to support risk governance.
+  - Responsibilities may include advising on risk strategy, overseeing risk exposures, developing risk appetite proposals, overseeing stress testing, and advising on remuneration risk weightings.
+
+- **Committee Composition**
+  - The chairman should be a non-executive director, and membership should mainly consist of non-executives, though senior executives like the chief finance officer may be included.
+
+- **Collaboration with Audit Functions**
+  - The governing body and risk committee should consider advice from the audit committee or internal audit on control effectiveness and seek expert advice as needed.
+
+---
+
+### Definitions
+
+- **Chief Risk Officer (CRO):** An executive responsible for overseeing risk management across the firm, ensuring data quality, and advising on risk-related matters.
+- **Governing Body Risk Committee:** A committee providing focused support and advice on risk governance, typically comprising non-executive directors.
+- **Solvency II Firms:** Firms subject to the Solvency II Directive, which regulates insurance firms in the EU.
+- **SMCR Firm:** A firm subject to the Senior Managers and Certification Regime, which applies to financial services firms in the UK.
+- **PRA:** Prudential Regulation Authority, responsible for the prudential regulation of financial firms in the UK.
+
+## SYSC 22 Regulatory references
+
+## SYSC 22.1 Application
+
+### General application
+
+- **Applicability**
+  - This chapter applies to all SMCR firms.
+  - SYSC TP 8.5.1R extends this chapter to certain claims management firms that are not SMCR firms.
+  - An SMCR firm is a firm that is subject to the Senior Managers and Certification Regime.
+  - More in section below.
+
+### Activities covered
+
+- This chapter is not restricted to regulated activities or specific types of activities.
+
+### Territorial scope and overseas firms
+
+- **Territorial Scope**
+  - There is no territorial limitation on the application of this chapter, except as noted in SYSC 22.1.6R.
+  - The obligation to provide a reference can apply even if the employee worked in an overseas office of the employer.
+
+- **Overseas Firms**
+  - For an overseas firm, the obligation to give references applies only if the employee worked at its UK branch and only relates to their activities there.
+  - To determine if someone is an employee of a branch, the definition of employee is applied as if the branch and the firm were separate entities, excluding certain group employment considerations.
+
+## SYSC 22.2 Getting, giving and updating references: the main rules
+
+### Obligation to obtain references
+
+- **When to Obtain References**
+  - <mark>A firm (A) must obtain references when considering:</mark>
+    - Appointing someone to a controlled function.
+    - Issuing a certification for someone.
+    - Appointing a board director.
+  - References _should_ be obtained from the current employer and any employer from the past six years.
+  - The reference _should_ be obtained before a specified time, and if not, as soon as possible thereafter.
+  - <mark>Specific information must be requested, especially if the previous employer is an SMCR firm</mark>.
+
+### Obligation to give references
+
+- **When to Give References**
+  - <mark>A firm (B) must provide a reference to another firm (A) if A is considering appointing someone to a controlled function or issuing a certification</mark>.
+  - B must disclose all relevant information for assessing the individual's fitness and propriety.
+  - Information must cover the past six years or any serious misconduct at any time.
+  - <mark>Specific questions from SYSC 22 Annex 1R must be answered</mark>.
+
+### Table: What positions need a reference
+
+- **Positions and Timing**
+  - Controlled functions: Reference needed one month before the end of the application period.
+  - Certification under section 63F: Before issuing the certificate.
+  - Non-executive directors and key function holders: Not applicable for obtaining references, but applicable for giving references.
+  - Non-SMF board directors: Before appointment, applicable to certain SMCR firms.
+
+### Obligation to revise references: The main rule
+
+- **Updating References**
+  - If new information arises that would have changed the original reference, the firm must update the reference.
+  - The firm must make reasonable inquiries to identify the current employer and provide updated information.
+
+### Sole traders
+
+- **Exemption**
+  - The obligation to obtain references does not apply if the individual is a sole trader appointing themselves.
+
+## SYSC 22.3 Drafting the reference and the request for a reference
+
+- **Requesting References**
+  - A firm should provide enough information to the firm giving the reference to understand the requirements.
+  - Specific information requests are not necessary as the giving firm should include required information.
+
+## SYSC 22.4 Drafting the reference: detailed requirements
+
+### Drafting the reference: detailed requirements for SMCR firms
+
+- **Template Use**
+  - Firms <mark>must use the template in SYSC 22 Annex 1R when giving a reference</mark>.
+  - Minor changes to the format are allowed as long as all required information is included.
+
+### PRA requirements
+
+- **Combining Requirements**
+  - A single reference can combine PRA and SYSC requirements.
+
+### Inclusion of additional material
+
+- **Additional Information**
+  - Firms can include more information than required, but it should not alter the scope of the template questions.
+
+## SYSC 22.5 Giving references: additional rules and guidance for all firms
+
+### Verification
+
+- **Proper Verification**
+  - Firms are not required to disclose unverified information.
+
+### Accuracy
+
+- **Complete Picture**
+  - <mark>References should provide a complete picture of the employee’s conduct</mark>.
+
+### Fairness
+
+- **Duty of Care**
+  - Firms owe a duty of care to provide true, accurate, and fair references based on documented facts.
+
+### Outsourcing
+
+- **Third-Party Collection**
+  - The requirements apply even if the reference collection is outsourced to a third party.
+
+### Circumstances in which the ex-employee left
+
+- **Obligation Regardless of Departure**
+  - The obligation to give a reference applies regardless of how employment ended.
+
+### Missing or incomplete information
+
+- **Record Limitations**
+  - If records do not cover the required periods, this should be noted in the reference.
+
+### All relevant information: Calculation of six year period for disclosure
+
+- **Six-Year Limit**
+  - Generally, there is a six-year limit on disclosures, but ongoing conduct may extend this period.
+
+### All relevant information: Removal of six year period
+
+- **Serious Matters**
+  - Serious matters may require disclosure beyond the six-year limit.
+
+### Agreements not to disclose information
+
+- **Prohibition on Limiting Disclosure**
+  - Firms <mark>must not enter agreements that limit their ability to disclose information</mark>.
+
+### Time in which to respond to reference requests
+
+- **Response Time**
+  - References should normally be issued within six weeks of a request.
+
+### Duty to investigate allegations
+
+- **Investigation Feasibility**
+  - Firms should conclude investigations before an employee departs, but there is no duty to investigate under this chapter.
+
+### Criminal record checks
+
+- **Exclusion from References**
+  - Criminal record checks need not be included in references; recruiting firms should conduct their own checks.
+
+## SYSC 22.6 Giving and updating references: additional rules and guidance
+
+### Omitting or supplementing mandatory disclosures
+
+- **Revising Conclusions**
+  - Firms may revise or qualify conclusions if new facts emerge.
+
+### Requirement to consider whether there has been a conduct breach
+
+- **Conduct Breach Consideration**
+  - Firms should consider if disciplinary actions relate to conduct breaches and include them in references if applicable.
+
+### All relevant information: Interaction with mandatory disclosures
+
+- **Beyond Minimum Information**
+  - Firms may need to disclose information beyond the mandatory minimum if relevant.
+
+### Updating references fairly
+
+- **Fairness in Updates**
+  - Fairness requirements apply to updating references as well.
+
+## SYSC 22.7 Getting references: additional rules and guidance for SMCR firms
+
+### Who should be asked to give a reference
+
+- **Identifying Employers**
+  - Firms may need the employee’s help to identify previous employers.
+
+### Asking for a reference to be updated
+
+- **Renewals and Changes**
+  - References may need updating for renewals or significant role changes.
+
+### When references are to be obtained
+
+- **Timing Flexibility**
+  - Firms should obtain references as soon as possible, even if not by the specified time.
+
+## SYSC 22.8 Policies and appointed representatives
+
+### Policies and procedures
+
+- **Adequate Policies**
+  - Firms <mark>must have adequate policies to comply with this chapter</mark>.
+
+### Appointed representatives
+
+- **Applicability**
+  - This chapter applies to appointed representatives, with specific requirements for SMCR firms.
+
+## SYSC 22.8A Groups and outsourcing
+
+### Intra-group transfers
+
+- **Group Information Sharing**
+  - Firms in the same group may not need to request references if they have access to shared information.
+
+### Getting and giving a reference where the employee has worked in a group or on secondment
+
+- **Group and Secondment References**
+  - Firms should request references from all relevant group members or secondment employers.
+
+## SYSC 22.9 Records and transitionals
+
+### General record keeping rules
+
+- **Orderly Records**
+  - Firms <mark>must keep records sufficient to comply with this chapter</mark>.
+
+### Time limit for records to be kept
+
+- **Record Retention**
+  - Record retention time limits align with those in SYSC 22 Annex 1R.
+
+### Reduction in disclosure obligations where there are limited record keeping requirements
+
+- **Limited Records**
+  - Firms are not in breach if they lack records they are not required to keep.
+
+### Effect of previous record keeping requirements
+
+- **Historical Records**
+  - Firms are not in breach for not having records destroyed before this chapter came into force.
+
+### Transitionals
+
+- **Transitional Provisions**
+  - Requirements apply to firms that become SMCR firms after a reference request.
+
+## Definitions
+
+- **SMCR Firm**: A firm subject to the Senior Managers and Certification Regime.
+- **Certification Function**: A function requiring certification under the SMCR.
+- **Controlled Function**: A function requiring FCA or PRA approval.
+- **PRA Controlled Function**: A function requiring approval under the PRA Rulebook.
+- **Appointed Representative**: A person or firm appointed by an authorized firm to carry out regulated activities.
+- **COCON**: Code of Conduct Sourcebook.
+- **APER**: Statements of Principle and Code of Practice for Approved Persons.
+- **FCA**: Financial Conduct Authority.
+- **PRA**: Prudential Regulation Authority.
+
+## SYSC 23 Senior managers and certification regime: Introduction and classification
+
+## SYSC 23.1 Purpose
+
+- **Purpose of the Chapter:**
+  - Explain the senior managers and certification regime (SMCR) and where to find the main FCA Handbook provisions.
+  - Define which firms the regime applies to.
+  - Define the different kinds of SMCR firms.
+  - Require certain firms to carry out criminal record checks before appointing certain board directors.
+
+## SYSC 23.2 Definitions and Types of Firms
+
+- **Definition of SMCR Firm:**
+  - SYSC 23 Annex 1R defines what an SMCR firm is and the different types of SMCR firms.
+
+- **Categories of Firms:**
+  - Dual-regulated firms by the FCA and PRA are divided into:
+    - SMCR banking firms (Banks and deposit-takers).
+    - SMCR insurance firms (Insurers).
+
+  - FCA-regulated firms are divided into:
+    - <mark>Core SMCR firms: Most firms fall here</mark>.
+    - Enhanced scope SMCR firms: Certain large firms.
+    - Limited scope SMCR firms: Firms with limited business types, such as:
+      - Limited permission consumer credit firms.
+      - Authorised professional firms with non-mainstream activities.
+      - Internally managed AIFs.
+      - Firms with regulated business limited to insurance distribution.
+      - Firms with regulated claims management activities.
+      - Firms with permission for benchmark activities with a waiver.
+      - Firms with permission for funeral plan distribution.
+      - Firms with permission for regulated pensions dashboard activity.
+
+## SYSC 23.3 Overview of the Senior Managers and Certification Regime
+
+- **Main Elements:**
+  - Senior managers regime.
+  - Certification regime.
+  - Conduct rules for a firm’s workforce.
+
+- **Table Summary:**
+  - **Senior Managers Regime:**
+    - <mark>Pre-approval by FCA for senior management</mark>.
+    - Firms must ensure candidates are fit and proper.
+    - Annual assessment of fitness and propriety.
+    - <mark>Criminal records checks before approval</mark>.
+    - <mark>Regulatory references required</mark>.
+    - Statements of responsibilities for SMF managers.
+    - Duty of responsibility for SMF managers.
+    - Allocation of management responsibilities.
+    - <mark>Criminal records checks for board directors</mark>.
+    - Management responsibilities map for enhanced scope firms.
+    - Overall responsibility for firm activities.
+
+  - **Certification Regime:**
+    - <mark>Certification required for certain functions</mark>.
+    - Annual renewal of certificates.
+    - <mark>Regulatory references required</mark>.
+    - Reporting of Directory persons.
+
+  - **Conduct Rules:**
+    - <mark>Apply to all firms</mark>.
+    - Firms must report breaches to FCA.
+    - Firms must ensure understanding of conduct rules.
+
+- **PRA Requirements:**
+  - PRA has corresponding requirements for PRA-authorised persons.
+
+## SYSC 23.4 Criminal Record Checks for Certain Directors
+
+- **Application:**
+  - Applies to UK SMCR firms that are enhanced scope or core SMCR firms.
+
+- **Requirement:**
+  - Firms must obtain the fullest lawful information about non-SMF board directors before appointment.
+
+- **Guidance:**
+  - Guidance on criminal record checks for SMF managers applies here.
+
+## SYSC 23 Annex 1 Definition of SMCR Firm and Different Types of SMCR Firms
+
+- **Flow Diagram:**
+  - Defines SMCR firms and their categories.
+
+- **Gibraltar-based Firms:**
+  - Treated as EEA SMCR firms for categorisation.
+
+- **Changing Category:**
+  - Firms may be required to comply with enhanced scope requirements if deemed appropriate by FCA.
+
+- **Exempt Firms:**
+  - Defined as firms without an establishment in the UK or certain other conditions.
+
+- **Banking Sector Definition:**
+  - Conditions for being in the banking sector include accepting deposits or being an investment firm.
+
+- **Insurance Sector Definition:**
+  - Includes Solvency II firms and small non-directive insurers.
+
+- **Limited Scope SMCR Firm Definition:**
+  - Includes firms with specialised activities, sole traders, limited permission consumer credit firms, and others.
+
+- **Exclusion from Enhanced Regime:**
+  - Certain firms are excluded from the enhanced regime based on specific criteria.
+
+- **Financial Qualification Conditions:**
+  - Criteria for being an enhanced scope SMCR firm based on financial thresholds.
+
+- **Other Qualification Conditions:**
+  - Includes being a significant SYSC firm or a CASS large firm.
+
+- **Becoming an Enhanced Scope SMCR Firm:**
+  - Firms must comply with enhanced scope requirements from specified dates.
+
+- **Stopping Being an Enhanced Scope SMCR Firm:**
+  - Firms cease to be enhanced scope if they no longer meet qualification conditions.
+
+- **Opting Up and Opting Back Down:**
+  - Firms can opt to change their SMCR category by notifying the FCA.
+
+- **Form O:**
+  - Used for changing firm status under the SMCR.
+
+---
+
+### Definitions
+
+- **SMCR Firm:** A firm subject to the Senior Managers and Certification Regime.
+- **Core SMCR Firm:** A firm regulated by the FCA that does not fall into other specific categories.
+- **Enhanced Scope SMCR Firm:** Certain large firms with additional requirements.
+- **Limited Scope SMCR Firm:** Firms with limited business types or permissions.
+- **SMF Manager:** Senior management function manager requiring FCA approval.
+- **PRA:** Prudential Regulation Authority, a UK financial regulatory body.
+
+## SYSC 24 Senior managers and certification regime: Allocation of prescribed responsibilities
+
+## SYSC 24.1 Application
+
+### Main application rules
+
+- **Who it applies to:**
+  - This chapter applies to an SMCR firm, except where a narrower scope is specified for a particular provision.
+  - It does not apply to:
+    - An EEA SMCR firm.
+    - A limited scope SMCR firm.
+
+- **Scope of activities:**
+  - This chapter is not restricted to regulated activities or specific types of activities.
+
+### Territorial scope
+
+- **General rule:**
+  - There is no territorial limitation on the application of this chapter, except as noted in SYSC 24.1.4R.
+
+- **Overseas SMCR firms:**
+  - For overseas SMCR firms, this chapter applies to the activities of the firm’s branch in the United Kingdom.
+
+## SYSC 24.2 Allocation of FCA-prescribed senior management responsibilities: Main allocation rules
+
+### Allocation of FCA-prescribed senior management responsibilities
+
+- **General allocation:**
+  - A firm <mark>must allocate each applicable FCA-prescribed senior management responsibility to one or more SMF managers</mark>.
+
+- **Specific allocation guidance:**
+  - SYSC 24 Annex 1 outlines which responsibilities apply to which type of SMCR firm.
+  - Some responsibilities have further restrictions on the types of firms and circumstances to which they apply.
+
+- **Restrictions on allocation:**
+  - A firm cannot allocate a responsibility to an SMF manager approved only for the other overall responsibility function or the other local responsibility function, except for responsibility (z) related to CASS.
+
+- **Clarity in allocation:**
+  - Allocations must be clear about who holds which responsibilities.
+
+### What the FCA-prescribed senior management responsibilities are
+
+- **Responsibilities list:**
+  - The responsibilities are detailed in the table in SYSC 24.2.6R.
+
+## SYSC 24.3 Who prescribed responsibilities should be allocated to
+
+### Seniority and authority
+
+- **Expectations for responsibility holders:**
+  - Generally, the most senior employee or officer responsible for managing an area should hold the responsibility.
+  - They should be sufficiently senior, credible, and have the resources and authority to manage effectively.
+
+### Executive or non-executive
+
+- **Allocation to non-executive directors:**
+  - <mark>Certain responsibilities are expected to be allocated to non-executive directors, such as:</mark>
+    - Development of governing body members.
+    - Internal audit oversight.
+    - Compliance oversight.
+    - Risk control oversight.
+    - Remuneration code oversight.
+    - Whistleblowers’ champion.
+
+- **Allocation to executives:**
+  - <mark>Other responsibilities are typically allocated to executives</mark>.
+
+### Exceptions for small non-complex firms
+
+- **Practical considerations:**
+  - <mark>Small non-complex firms may not be able to comply with certain expectations due to their size and complexity</mark>.
+
+- **Criteria for small and non-complex firms:**
+  - <mark>A UK SMCR banking firm is small if it is a small CRR firm or a qualifying credit union</mark>.
+  - <mark>A firm is non-complex if it has limited business lines and does not rely on group governance</mark>.
+
+### Not assigning too many responsibilities to one person
+
+- **Avoiding overload:**
+  - Firms should avoid giving an SMF manager too many responsibilities, which could hinder their effectiveness.
+
+### Dividing and sharing management functions between different people
+
+- **General rule:**
+  - Responsibilities should not normally be split or shared between multiple SMF managers.
+
+- **Exceptions:**
+  - Responsibilities can be divided or shared if justified, such as in job shares or during handovers.
+
+- **Grouping responsibilities:**
+  - Responsibilities should be grouped appropriately, considering the firm’s organization and business.
+
+### Allocation of responsibilities and territorial scope
+
+- **No territorial limitation:**
+  - Responsibilities should cover activities both inside and outside the UK.
+
+- **Overseas SMCR firms:**
+  - Responsibilities relate to the UK branch activities.
+
+## SYSC 24 Annex 1 Which FCA-prescribed senior management responsibilities apply to which kind of firm
+
+### Introduction and exclusions
+
+- **Applicability table:**
+  - The annex provides a table indicating which responsibilities apply to different types of SMCR firms.
+
+- **Exclusions:**
+  - Certain responsibilities do not apply to full-scope UK AIFMs in relation to managing an AIF.
+
+### Banking sector firms
+
+- **Applicability by firm type:**
+  - The table specifies which responsibilities apply to UK SMCR banking firms, small UK SMCR banking firms, and overseas SMCR banking firms.
+
+### Insurance sector firms
+
+- **Applicability by firm type:**
+  - The table specifies which responsibilities apply to Solvency II firms, overseas branches, other insurance sector firms, and insurance special purpose vehicles.
+
+### Solo regulated firms
+
+- **Applicability by firm type:**
+  - The table specifies which responsibilities apply to UK core SMCR firms, overseas core SMCR firms, and enhanced scope SMCR firms.
+
+---
+
+### Definitions
+
+- **SMCR firm:** A firm subject to the Senior Managers and Certification Regime.
+- **EEA SMCR firm:** An SMCR firm based in the European Economic Area.
+- **Limited scope SMCR firm:** A firm with limited scope under the SMCR.
+- **SMF manager:** A Senior Management Function manager.
+- **CASS:** Client Assets Sourcebook, rules for firms holding client money or assets.
+- **CRR firm:** A firm subject to the Capital Requirements Regulation.
+- **AIFM:** Alternative Investment Fund Manager.
+- **Solvency II firm:** An insurance or reinsurance firm subject to Solvency II regulations.
+- **ISPV:** Insurance Special Purpose Vehicle.
+
+## SYSC 25 Senior managers and certification regime: Management responsibilities maps and handover procedures and material changes
+
