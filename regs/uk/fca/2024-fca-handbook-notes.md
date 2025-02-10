@@ -14,9 +14,9 @@ A MiFID optional exemption firm, is exempt from full MiFID and ChatGPT says that
 
 A credit institution accepts deposits, grants loans and credit for its own account, so e.g. banks and building societies.
 
-**Note** -  "Further, MiCA doesn’t cover crypto-assets (or crypto-asset services) that are deemed to be securities in order to prevent a duplication of frameworks. These services around tokenized securities are covered by MiFID and for those who want to trial securities trading and settlement on blockchains, the EU adopted a “DLT pilot regime” that kicked-off officially in March 2023."
+**Author's Note** -  "Further, MiCA doesn’t cover crypto-assets (or crypto-asset services) that are deemed to be securities in order to prevent a duplication of frameworks. These services around tokenized securities are covered by MiFID and for those who want to trial securities trading and settlement on blockchains, the EU adopted a “DLT pilot regime” that kicked-off officially in March 2023."
 
-**Note** -  There's this "prudential context" which seems to be a broader responsibility to the UK and the industry.
+**Author's Note** -  There's this "prudential context" which seems to be a broader responsibility to the UK and the industry.
 
 # PRIN Principles for Businesses
 
@@ -483,7 +483,7 @@ Applies to insurers and is not applicable.
 
 ## SYSC 4.1 General Requirements
 
-**Note** -  ESMA Regulation guidelines exist for MiFID, see http://www.esma.europa.eu/content/Guidelines-certain-aspects-MiFID-compliance-function-requirements
+**Author's Note** -  ESMA Regulation guidelines exist for MiFID, see http://www.esma.europa.eu/content/Guidelines-certain-aspects-MiFID-compliance-function-requirements
 
  - Application to a common platform firm:
 
@@ -532,7 +532,7 @@ Applies to insurers and is not applicable.
 
      - If a management company, maintain effective reporting and comms, all levels, and information flows with an third party
 	
-	My own **Note** -  it's really vague, doesn't really say anything other than be a fucking pro about things.
+	My own **Author's Note** -  it's really vague, doesn't really say anything other than be a fucking pro about things.
 
  - Operators of pensions dashboard services: security, integrity and confidentiality
 
@@ -704,7 +704,7 @@ A firm may wish to use the <mark>“Template for a matrix to assess the collecti
      - The second row concerns EEA SMCR firm, allocation of the functions 1 and 2 above to directors and senior managers.
      - The last row is for any other firm and both functions to the CEO(s) jointly else, directors and senior managers.
 
-   - Author's **Note** -  it's bizarrely convoluted way to express things. There's a long FAQ table underneath it.
+   - Author's **Author's Note** -  it's bizarrely convoluted way to express things. There's a long FAQ table underneath it.
 
    - Claude says:
 
@@ -2967,7 +2967,7 @@ Deleted.
   - Enhanced scope SMCR firms.
   - Note: Some provisions may apply to a narrower scope.
 
-  **Note** - Seems like this chapter is not applicable to smaller or core SMCR firms.
+  **Author's Note** - Seems like this chapter is not applicable to smaller or core SMCR firms.
 
 - **Activity Scope:**
   - This chapter is not limited to regulated activities or specific types of activities.
@@ -3109,7 +3109,7 @@ Deleted.
   - Enhanced scope SMCR firms.
   - Note: Some provisions may have a narrower scope.
 
-  **Note** - Seems like this chapter is not applicable to smaller or core SMCR firms.
+  **Author's Note** - Seems like this chapter is not applicable to smaller or core SMCR firms.
 
 - **Activity Scope:**
   - This chapter is not limited to regulated activities or specific types of activities.
@@ -4337,7 +4337,7 @@ There is no **prescribed format** from the FCA, but the certificate must include
 
 ## APER 2 The Statements of Principle for Approved Persons
 
-**Note** - This is rather repetitive.
+**Author's Note** - This is rather repetitive.
 
 ## APER 2.1A The Statements of Principle
 
@@ -4454,7 +4454,7 @@ There is no **prescribed format** from the FCA, but the certificate must include
 
 ## APER 4 Code of Practice for Approved Persons: specific
 
-**Note** - Super repetitive.
+**Author's Note** - Super repetitive.
 
 ## APER 4.1 Statement of Principle 1
 
@@ -5168,7 +5168,7 @@ There is no **prescribed format** from the FCA, but the certificate must include
 
 ## TC Skipped
 
-**Note** - The handbook contains lots more appendices and other stuff.
+**Author's Note** - The handbook contains lots more appendices and other stuff.
 
 ## TC App 4 Appropriate Qualification tables
 
@@ -6187,7 +6187,7 @@ A huge table of qualifications.
 
 - **Usage Restrictions**
   - Firms <mark>must not use the FSA logo in client communications unless it complies with the general licence in GEN 5 Annex 1 G or an individual licence from the FCA.</mark>
-  - The general licence for the FSA logo was valid until 1 April 2014. **Note** - What?! See below?!
+  - The general licence for the FSA logo was valid until 1 April 2014. **Author's Note** - What?! See below?!
 
 ### The FCA Logo
 
@@ -6239,7 +6239,7 @@ A huge table of qualifications.
   - The licence started on 1 May 2003, with the Key facts logo licence starting on 6 November 2006. The FSA logo licence ended on 1 April 2014.
   - The FCA can change or revoke the licence with two months' notice.
 
-  **Note** - This doesn't make sense. The FSA logo licence ended over a decade ago and this section is still in the Handbook.
+  **Author's Note** - This doesn't make sense. The FSA logo licence ended over a decade ago and this section is still in the Handbook.
 
 ### Interpretation
 
@@ -6615,7 +6615,7 @@ A huge table of qualifications.
 
 ## FEES 3 Application, Notification and Vetting Fees
 
-**Note** - This section is long and contains hard currency amounts. The reader is advised to refer to the Handbook for the most accurate and up to date information.
+**Author's Note** - This section is long and contains hard currency amounts. The reader is advised to refer to the Handbook for the most accurate and up to date information.
 
 ## FEES 3.1 Introduction
 
@@ -6694,11 +6694,11 @@ A huge table of qualifications.
 
 ## FEES 3 Annexes
 
-**Note** - There are 16 annexes to FEES 3 which I have not included in this document.
+**Author's Note** - There are 16 annexes to FEES 3 which I have not included in this document.
 
 ## FEES 4 Periodic Fees
 
-**Note** - This section is long and contains hard currency amounts. The reader is advised to refer to the Handbook for the most accurate and up to date information.
+**Author's Note** - This section is long and contains hard currency amounts. The reader is advised to refer to the Handbook for the most accurate and up to date information.
 
 ## FEES 4 Periodic fees
 
@@ -6814,7 +6814,7 @@ A huge table of qualifications.
 
 ## FEES 4A Temporary Permissions Regime (TPR) and Financial Service Contracts Regime (FSCR) – periodic fees
 
-**Note** - Section skipped.
+**Author's Note** - Section skipped.
 
 From ChatGPT:
 
@@ -7644,7 +7644,7 @@ Missing from handbook.
 
 ## INSPRU Prudential sourcebook for Insurers
 
-**Note** - The handbook jumps to this section from GENPRU 3.1. so I assume it is all missing.
+**Author's Note** - The handbook jumps to this section from GENPRU 3.1. so I assume it is all missing.
 
 Skipped. This section is for insurers.
 
@@ -7785,13 +7785,563 @@ Skipped. This is for Mortgage and Home Finance firms.
 
 # IPRU-FSOC
 
+Skipped. This is like a redirect to a relevantsourcebook.
+
+# IPRU-INS
+
+Skipped. This is for insurance firms.
+
+# IPRU-INV Interim Prudential sourcebook for Investment Businesses
+
+Skipped. This is for investment firms.
+
+# Business Standards
+
+Many, if not all, of these sections are "sourcebooks", though they are separate from the "specialist sourcebooks" section. Many of these will not apply.
+
+## COBS Conduct of Business Sourcebook
+
+Skipped. Irrelevent for now. Applies to designated investment business, and long-term insurance business.
+
+## ICOBS Insurance: Conduct of Business sourcebook
+
+Skipped. Irrelevent for now.
+
+## MCOB Mortgages and Home Finance: Conduct of Business sourcebook
+
+Skipped. Irrelevent for now.
+
+## BCOBS Banking: Conduct of Business sourcebook
+
+## CMCOB Claims Management: Conduct of Business sourcebook
+
+Skipped. Irrelevent for now.
+
+## FPCOB Funeral Plan: Conduct of Business sourcebook
+
+Skipped. Irrelevent for now.
+
+## PDCOB Pensions Dashboards: Conduct of Business sourcebook
+
+Expand +CASS Client Assets
+
+## MAR Market Conduct
+
+## MAR 1.1 Application and interpretation
+
+### Application and purpose
+
+- <mark>This chapter is for anyone looking for guidance on the market abuse regime.</mark>
+- It provides guidance on the Market Abuse Regulation, useful for those who:
+  - Want to avoid market abuse.
+  - Need to know if they must report a suspicious transaction or order to the FCA.
+- The FCA's policy on penalties for market abuse is in DEPP 6.
+
+### Using MAR 1
+
+- <mark>Help with interpreting MAR 1 and the Handbook is in the Readers' Guide and GEN 2.</mark>
+- This chapter doesn't cover all behaviors that might indicate market abuse. Consider:
+  - Elements specified by the Market Abuse Regulation.
+  - Descriptions in the Market Abuse Regulation that aren't market abuse.
+  - Provisions in MAR Level 2 Regulations and ESMA guidelines.
+- <mark>Not all factors for determining market abuse are covered. Missing a factor doesn't imply the opposite.</mark>
+- "Profit" includes potential profits and avoiding losses.
+- References to the Market Abuse Regulation are to help readers, but other provisions may also be useful.
+
+## MAR 1.2 Market Abuse: general
+
+- Provisions here apply to multiple types of market abuse behavior.
+- The Market Abuse Regulation <mark>doesn't require intent to commit market abuse.</mark>
+
+### Factors for behavior before trading or sale
+
+- Consider if behavior before trading or sale affects financial instruments:
+  - If a request for admission to trading is made.
+  - If it affects the market after admission or sale.
+- Consider if refraining from action indicates market abuse:
+  - Failing a legal or regulatory obligation.
+  - Creating an expectation of action and not correcting it.
+
+### Insiders: factors to consider
+
+- Consider if a person with inside information should know it's inside information:
+  - If a reasonable person would know the source is an insider.
+  - If a reasonable person would know it's inside information.
+- Being an insider doesn't require knowing the information is inside information.
+
+### Inside information: factors to consider
+
+- Consider if information is public:
+  - Disclosed to a market or platform through a regulatory service.
+  - In public records.
+  - Generally available, including online.
+  - Observable by the public without privacy or confidentiality issues.
+- It's irrelevant if information is only available outside the UK or to those with resources or expertise.
+
+### Recommending or inducing
+
+- Examples of behavior under article 14(b) of the Market Abuse Regulation:
+  - A director instructs an employee to sell a financial instrument with inside information.
+  - A person advises a friend to engage in market abuse.
+
+## MAR 1.3 Insider dealing
+
+### Descriptions of insider dealing behavior
+
+- Examples include:
+  - Front running/pre-positioning.
+  - Transactions in a takeover using inside information.
+  - Acting for an offeror in a takeover using inside information.
+
+### Factors for "on the basis of"
+
+- Market makers and lawful dealers may not commit market abuse if pursuing legitimate business.
+- Factors for legitimate business:
+  - Trading to hedge risk.
+  - Trading with client disclosure.
+  - Reasonable behavior by market standards.
+
+### Execution of client orders
+
+- Factors for legitimate execution:
+  - Compliance with COBS or equivalent.
+  - Agreement with the client.
+  - Facilitating order execution.
+  - Reasonable behavior by market standards.
+
+### Takeover and merger activity
+
+- Using inside information for mergers or takeovers may include:
+  - Seeking support for an offer.
+  - Arranging securities for the offer.
+  - Offering cash as consideration.
+
+### Examples of insider dealing
+
+- Examples include:
+  - A director shares takeover information with a friend who trades on it.
+  - An employee sells shares based on unannounced contract loss.
+  - A trader buys futures based on insider information about stock levels.
+
+## MAR 1.4 Unlawful disclosure
+
+### Descriptions of unlawful disclosure
+
+- Indications include:
+  - A director discloses inside information socially.
+  - Selective briefing of analysts.
+
+### Behavior not indicating unlawful disclosure
+
+- Disclosure in normal duties includes:
+  - To regulatory bodies for legal obligations.
+  - As required or permitted by Part 6 rules.
+
+### Factors for lawful disclosure
+
+- Consider if disclosure:
+  - Is permitted by trading venue rules.
+  - Is confidential and reasonable for employment or advice.
+  - Fulfills a legal obligation.
+
+### Examples of unlawful disclosure
+
+- Examples include:
+  - A director shares takeover information with a friend.
+  - A broker discloses a manager's identity as inside information.
+
+## MAR 1.6 Manipulating transactions
+
+### Giving false or misleading impressions
+
+- Stock lending or repo transactions don't indicate manipulation by themselves.
+
+### Factors for legitimate reasons
+
+- Indications of non-legitimate behavior:
+  - Purpose to induce trading or move prices.
+  - Executed to create false impressions.
+- Indications of legitimate behavior:
+  - Legal obligations.
+  - Fair market operation.
+  - Opening new positions.
+
+### Abusive squeezes
+
+- Factors for abusive squeezes:
+  - Willingness to maintain market order.
+  - Causing settlement defaults.
+  - Divergence in delivery prices.
+  - Unusual market prices.
+
+### Examples of manipulating transactions
+
+- Examples include:
+  - A trader positions prices to profit from index changes.
+  - A fund manager manipulates share prices for performance.
+
+## MAR 1.7 Manipulating devices
+
+- Descriptions and factors for manipulating devices are outlined in the Market Abuse Regulation.
+
+## MAR 1.8 Dissemination
+
+### Descriptions of dissemination
+
+- Factors for dissemination:
+  - Knowing information is false or misleading.
+  - Lack of access to information behind a Chinese wall.
+
+### Example of dissemination
+
+- Posting false takeover information online.
+
+**Author's Note** - <mark>Posting false solvency information online is market abuse.</mark>
+
+## MAR 1.9 Misleading behavior & distortion
+
+- Short selling in the financial sector is addressed.
+
+## MAR 1.10 Statutory exceptions
+
+### Behavior that does not amount to market abuse
+
+- Conforming with article 5 or Buy-back and Stabilisation Regulation is not market abuse.
+- No FCA rules permit market abuse.
+- Takeover Code rules don't permit market abuse.
+
+### Takeover Code conformity
+
+- Behavior conforming with specified Takeover Code rules is unlikely to be market abuse.
+
+## MAR 1 Annex 1 Provisions of the Buy-back and Stabilisation Regulation
+
+- The FCA accepts disclosure through a regulatory information service or equivalent.
+
+## MAR 1 Annex 2 Accepted Market Practices
+
+- Article 13 of the Market Abuse Regulation is referenced.
+
+---
+
+### Definitions
+
+- **Market Abuse Regulation (MAR):** A set of rules aimed at preventing market abuse, including insider trading and market manipulation.
+- **Inside Information:** Information not public that could significantly impact financial instrument prices.
+- **Insider:** A person with access to inside information.
+- **Market Maker:** A firm or individual that provides liquidity to the market by being ready to buy and sell financial instruments.
+- **Takeover Code:** A set of rules governing the conduct of takeovers and mergers.
+- **ESMA:** European Securities and Markets Authority, responsible for safeguarding the stability of the EU's financial system.
+- **COBS:** Conduct of Business Sourcebook, part of the FCA Handbook outlining rules for financial firms' conduct.
+
+## MAR 2 Stabilisation
+
+## MAR 2.5 The Price Stabilising Rules: overseas provisions
+
+- **Application of Overseas Stabilisation Rules**
+
+  - If someone outside the UK is involved in actions to stabilize investment prices and follows certain specified rules, they are considered to be acting in line with the UK's price stabilising rules according to sections 89(3)(a) and 90(9)(b) of the Financial Services Act 2012.
+
+- **Specified Provisions by Country**
+
+  - **United States of America**
+    - Regulation M by the Securities and Exchange Commission (17 CFR 242, # 100-105).
+
+  - **Japan**
+    - The Securities and Exchange Law of Japan, Article 159, paragraphs 3 and 4.
+    - Cabinet Orders for the Enforcement of the Securities and Exchange Law of Japan, Articles 20 to 26.
+    - Ministerial Ordinance concerning the Registration of Stabilisation Trading.
+    - Ministerial Ordinance concerning rules for the soundness of securities companies, Article 2.
+
+  - **Hong Kong**
+    - The Securities and Futures (Price Stabilizing) Rules, Cap. 571 W by the Hong Kong Securities and Futures Commission.
+
+- **Effectiveness of Provisions**
+
+  - The provisions mentioned are applicable as they are updated over time, as long as this rule is in effect.
+
+- **Equivalent Treatment for Disciplinary and Legal Actions**
+
+  - A person considered to be acting in line with the price stabilising rules under MAR 2.5.1R is also treated similarly for:
+    - Part XIV (Disciplinary measures)
+    - Part XXV (Injunctions and Restitution) of the Act.
+
+## Definitions
+
+- **Financial Services Act 2012**: A UK law that provides the framework for financial regulation and oversight.
+- **Price Stabilising Rules**: Regulations that allow certain actions to stabilize the price of investments during specific periods, such as after a new issue of securities.
+- **Regulation M**: A set of rules by the US SEC to prevent manipulative practices in the securities market.
+- **Securities and Exchange Law of Japan**: Japanese law governing securities transactions and market practices.
+- **Securities and Futures (Price Stabilizing) Rules**: Hong Kong regulations that allow for price stabilization activities under specific conditions.
+
+## MAR 4 Support of the Takeover Panel's Functions
+
+## MAR 4.1 Application and Purpose
+
+### Application
+
+- **Who it applies to:**
+  - This chapter applies to every firm whose permission includes, or should include, any designated investment business, except as specified in MAR 4.4.1 R.
+
+- **Scope of application:**
+  - The rule applies regardless of whether the firm's activity:
+    1. Is a regulated activity.
+    2. Is conducted from an office of the firm in the United Kingdom.
+    3. Involves a client in the United Kingdom.
+
+### Purpose
+
+#### MAR 4.3 Support of the Takeover Panel's Functions
+
+- **Compliance with the Takeover Code:**
+  - A firm must not act, or continue to act, for any person in connection with a transaction to which the Takeover Code applies if the firm reasonably believes that the person, or their principal, is not complying or is unlikely to comply with the Takeover Code.
+
+- **Takeover Panel notices:**
+  1. The Takeover Panel issues notices about compliance with the Takeover Code and may name individuals it believes are unlikely to comply. These notices are available on the Takeover Panel's website.
+  2. Firms should stay informed about these notices and consider them to comply with MAR 4.3.1 R. If a person is named in such a notice, the FCA expects firms to comply by not acting for that person.
+  3. The FCA does not consider a firm in breach of MAR 4.3.1 R if the Takeover Panel allows the firm to act in relation to that transaction.
+
+- **Restrictions under MAR 4.3.1 R:**
+  1. When a restriction applies, the firm cannot engage in any designated investment business activity or approve any financial promotion related to a transaction under the Takeover Code.
+  2. The firm can still perform other activities, including regulated activities, for that person, as long as they are not connected to a transaction under the Takeover Code.
+
+- **Professional advice exceptions:**
+  1. An authorised professional firm can still provide professional advice or representation in proceedings if it falls under section 327(8) of the Act. This includes legal advice from law firms and accounting advice from accounting firms.
+  2. Although authorised professional firms have a duty to act in their clients' best interests, this duty does not override the Takeover Code's provisions.
+
+- **Providing information to the Takeover Panel:**
+  - A firm must provide any requested information and documents to the Takeover Panel to help it perform its functions, as well as any assistance the firm can reasonably provide.
+
+- **Definition of "documents":**
+  - In MAR 4.3.5 R, "documents" include information recorded in any form. For information not in legible form, providing documents means producing a legible copy.
+
+- **Limitation on document requests:**
+  - Due to section 413 of the Act, MAR 4.3.5 R does not require a firm to produce, disclose, or allow inspection of protected items.
+
+### MAR 4.4 Exceptions
+
+- **Exceptions to the chapter:**
+  1. This chapter does not require an authorised professional firm to break any professional conduct rules or guidance notes applicable to its profession.
+  2. It does not prevent an authorised professional firm from providing professional advice that:
+     - Does not involve a regulated activity.
+     - Is supervised and regulated by a designated professional body.
+  3. This chapter does not apply to an authorised professional firm concerning non-mainstream regulated activity.
+  4. [Deleted]
+
+---
+
+### Definitions
+
+- **Firm:** A business entity that is regulated by the FCA and has permission to conduct designated investment business.
+- **Designated investment business:** Specific types of investment activities that require FCA authorization.
+- **Takeover Code:** A set of rules governing the conduct of takeovers and mergers of public companies in the UK.
+- **Authorised professional firm:** A firm that is authorized to provide professional services and is regulated by a designated professional body.
+- **Designated professional body:** An organization that regulates a profession, such as law or accounting, and is recognized by the FCA.
+- **Non-mainstream regulated activity:** Activities that are not the primary focus of regulation under the FCA's rules.
+
+## MAR 5 Multilateral trading facilities (MTFs)
+
+- **Definition of MTF:**
+  - A multilateral trading facility (MTF) is a trading venue that allows multiple participants to trade financial instruments with each other.
+
+- **Key Features of MTFs:**
+  - **Multiple Participants:** Allows multiple buyers and sellers to trade in a single market.
+
+## MAR 5.1 Application
+
+- **Who and what?**
+
+  - This chapter applies to:
+    - <mark>A UK domestic firm operating a Multilateral Trading Facility (MTF) from an establishment in the UK or elsewhere.</mark>
+    - An overseas firm operating an MTF from an establishment in the UK.
+
+- **Status of EU provisions as rules in certain instances**
+
+  - GEN 2.2.22AR ensures that a third country investment firm is not treated more favorably than an EEA firm.
+
+## MAR 5.2 Purpose
+
+- <mark>The purpose of this chapter is to implement MiFID provisions for firms operating MTFs, specifically articles 18, 19, 31, 32, 33, 48, 49, and 50. It excludes bilateral systems from the MTF definition.</mark>
+
+## MAR 5.3 Trading process requirements
+
+- **<mark>Rules, procedures, and arrangements</mark>**
+
+  - A firm must have:
+    - Transparent rules and procedures for fair and orderly trading.
+    - Objective criteria for efficient order execution through non-discretionary rules.
+    - Arrangements for sound management of technical operations, including contingency plans for system disruptions.
+    - Transparent rules for determining financial instruments tradable under its systems.
+    - Published, transparent, and non-discriminatory rules for access to its facility, ensuring members or participants are reputable, competent, and adequately resourced.
+    - Arrangements to provide sufficient publicly available information for users to make investment judgments.
+    - Arrangements to manage conflicts of interest affecting the trading venue's operation or its members and participants.
+
+- **<mark>Functioning of an MTF</mark>**
+
+  - A firm must:
+    - Ensure the MTF has <mark>at least three materially active members or users for price interaction</mark>.
+    - Have arrangements to manage risks and implement systems to identify and mitigate significant risks.
+    - Maintain sufficient financial resources for orderly functioning.
+    - Not execute orders against proprietary capital or engage in matched principal trading.
+    - <mark>Provide the FCA with a detailed description of the MTF's functioning and a list of its members, participants, and users.</mark>
+
+**Author's Note** - Presumably, active members must simply see the price of the instrument, not necessarily bid and offer.
+
+- **Operation of a primary market in financial instruments not admitted to trading on a regulated market**
+
+  - The FCA may vary the Part 4A permission of an MTF operator to ensure fair and orderly trading.
+
+- **Transferable securities traded without issuer consent**
+
+  - If a transferable security is traded on an MTF without issuer consent, the firm must not impose disclosure obligations on the issuer.
+
+## <mark>MAR 5.3A Systems and controls for algorithmic trading</mark>
+
+- **Systems and controls**
+
+  - A firm must ensure its systems and controls are adequate, effective, and appropriate for its business scale and nature, particularly concerning:
+    - Trading system resilience.
+    - Capacity for peak order volumes.
+    - Orderly trading under severe market stress.
+    - Business continuity arrangements.
+    - Order rejection for exceeding thresholds or errors.
+    - Prevention of disorderly trading from algorithmic systems.
+    - Management of disorderly trading conditions.
+    - Slowing order flow if system capacity is at risk.
+    - <mark>Enforcing minimum tick sizes.</mark>
+    - <mark>Testing of algorithms by members and participants.</mark>
+
+- **Market making agreements**
+
+  - A firm must:
+    - Have written agreements with market makers.
+    - Ensure sufficient market making agreements for liquidity.
+    - Monitor and enforce compliance with agreements.
+    - Inform the FCA of agreement content and provide requested information.
+
+- **Measures to prevent disorderly markets**
+
+  - A firm must be able to:
+    - <mark>Temporarily halt or constrain trading for significant price movements.</mark>
+    - Cancel, vary, or correct transactions in exceptional cases.
+    - Calibrate trading halt parameters considering liquidity, market model, and user types.
+    - <mark>Report parameters to the FCA and notify them of trading halts.</mark>
+
+- **Direct electronic access**
+
+**Author's Note** - Presumably, this is trading without people in the middle.
+
+  - A firm allowing direct electronic access must:
+    - Permit only certain qualified entities to provide such services.
+    - Set criteria for suitability of access recipients.
+    - <mark>Ensure members or participants adhere to MiFID requirements.</mark>
+    - Set risk control standards for trading through direct access.
+    - Distinguish and potentially stop orders from direct access users.
+    - Suspend or terminate access for non-compliance.
+
+**Author's Note** - Risk control standards might be an API through which the party can see their recent won orders vs. their normal activity, and perhaps only allow them to trade if they have a certain ratio of won orders to normal activity, i.e. ramp up their activity.
+
+- **Co-location**
+
+  - Rules on co-location services must be transparent, fair, and non-discriminatory.
+
+- **Fee structures**
+
+  - Fee structures must be transparent, fair, non-discriminatory, and not incentivize disorderly trading or market abuse. They may adjust fees for canceled orders and impose higher fees for certain order behaviors.
+
+- **Flagging orders, tick sizes, and clock synchronization**
+
+  - Members and participants must flag algorithmic orders for identification.
+  - Adopt tick size regimes for certain financial instruments.
+  - Synchronize business clocks for reportable events.
+
+## MAR 5.4 Finalisation of transactions
+
+- A firm must inform users of settlement responsibilities and have arrangements for efficient transaction settlement.
+
+## MAR 5.5 Monitoring compliance with the rules of the MTF
+
+- <mark>A firm must have arrangements to monitor user compliance with rules and identify breaches, disorderly trading, system disruptions, or market abuse.</mark>
+
+## MAR 5.6 Reporting requirements
+
+- A firm must report significant rule breaches, disorderly trading, market abuse, and system disruptions to the FCA and assist in investigations.
+
+## MAR 5.6A Suspension and removal of financial instruments
+
+- A firm must not suspend or remove financial instruments from trading if it harms investor interests or market orderliness, and must notify the FCA of such actions.
+
+## MAR 5.7 Pre- and post-trade transparency requirements for equity and non-equity instruments: form of waiver and deferral
+
+- Firms must apply to the FCA for waivers or deferrals in pre- and post-trade transparency requirements and notify the FCA of urgent matters.
+
+## MAR 5.10 Operation of an SME growth market
+
+- **<mark>Registering an MTF as an SME growth market</mark>**
+
+  - A firm may apply to register an MTF as an SME growth market, ensuring compliance with specific criteria for issuer size, admission criteria, financial reporting, and market abuse prevention.
+
+**Author's Note** - Grok: "registering an MTF as an SME growth market allows firms to create a specialized trading environment tailored for smaller companies, providing them with a platform to raise funds while adhering to tailored regulatory standards that balance ease of access with investor protection."
+
+- **The contents of an application for registration as an SME growth market**
+
+  - Applications should include rules, systems, and procedures for compliance and any additional information required by the FCA.
+
+- **Deregistering an MTF as an SME growth market**
+
+  - An MTF may be deregistered if the operating firm applies or if compliance requirements are not met.
+
+## Definitions
+
+- **UK domestic firm**: A firm based in the UK.
+- **Overseas firm**: A firm based outside the UK.
+- **MTF (Multilateral Trading Facility)**: A trading system that facilitates the exchange of financial instruments between multiple parties.
+- **EEA firm**: A firm based in the European Economic Area.
+- **MiFID**: Markets in Financial Instruments Directive, a regulatory framework for investment services in the EU.
+- **CRD credit institutions**: Credit institutions regulated under the Capital Requirements Directive.
+- **MiFIR**: Markets in Financial Instruments Regulation, complementing MiFID.
+- **SME growth market**: A market designed for small and medium-sized enterprises to access capital.
+- **FCA**: Financial Conduct Authority, the UK financial regulatory body.
+
 
 
 -
 
-Notes on which sections to expand:
 
-Sourcebooks That Might Apply (Depending on Structure) 
+# Notes on which sections to expand:
+
+### Relevant Areas to Explore:
+
+- COBS (Conduct of Business Sourcebook):
+
+  - If your marketplace involves activities that could be interpreted as regulated financial services, such as facilitating investments, this section may apply.
+  - Review to determine if tokenizing invoices could be viewed as a financial instrument.
+
+- CASS (Client Assets):
+
+  - While your firm won't manage client assets, review this to ensure compliance in case any part of your operations might involve safeguarding or administering tokens or funds temporarily.
+
+- MAR (Market Conduct):
+
+  - Since you're creating a marketplace, this section is critical for understanding rules regarding market integrity, insider trading, and market abuse.
+
+- PROD (Product Intervention and Product Governance Sourcebook):
+
+  - Review to ensure your product design and governance meet regulatory requirements, especially with a focus on the fair treatment of users.
+
+- ESG (Environmental, Social and Governance Sourcebook):
+
+  - If ESG considerations are important to your marketplace's strategy or operations (e.g., transparency in supply chains), this could be relevant.
+
+- AML and KYC Obligations:
+
+  - While not explicitly listed above, ensure your KYC/AML processes align with FCA's expectations under financial crime regulations.
+
+- Decentralization and DAOs:
+
+  - While not directly in the Handbook, consider consulting external FCA guidance or legal advice on the implications of using a DAO structure within a regulated activity.
+
+### Specialist Sourcebooks That Might Apply (Depending on Structure) 
 
 1. COLL – Collective Investment Schemes
 
