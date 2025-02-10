@@ -3875,3 +3875,981 @@ There is no **prescribed format** from the FCA, but the certificate must include
 
 ## COCON 4 Specific guidance on conduct rules
 
+## COCON 4.1 Specific guidance on individual conduct rules
+
+### Rule 1: <mark>You must act with integrity</mark>
+
+- Examples of conduct breaching Rule 1:
+  - Misleading actions or omissions towards:
+    - A client
+    - The firm or its auditors
+    - The FCA or PRA
+  - Falsifying documents.
+  - Misleading clients about investment risks, charges, or performance.
+  - Incorrectly marking investment values.
+  - Altering prices unjustifiably on contracts.
+  - Misleading about a borrower's credit-worthiness.
+  - Providing false information or documentation.
+  - Destroying documents relevant to misleading actions.
+  - Failing to disclose required dealings.
+  - Misleading about accepted risks.
+  - Recommending unsuitable investments.
+  - Not correcting misunderstandings.
+  - Preparing inaccurate records or returns.
+  - Misusing client or firm assets.
+  - Designing transactions to hide regulatory breaches.
+  - Ignoring customer interests.
+  - Practices causing customer harm.
+
+### Rule 2: <mark>You must act with due skill, care and diligence</mark>
+
+- Importance of skill, care, and diligence:
+  - Especially crucial when affecting customers or financial system integrity.
+- Examples of conduct breaching Rule 2:
+  - Failing to inform about material information.
+  - Recommending unsuitable investments.
+  - Undertaking transactions without understanding risks.
+  - Inadequate control over client assets.
+  - Continuing roles without required competence.
+- Acting with due skill as a manager:
+  - Managers should understand business risks.
+  - Investigate risks before business expansion.
+  - Question unusually profitable business.
+  - Seek expertise when needed.
+- Examples of managerial conduct breaching Rule 2:
+  - Ineffective business control.
+  - Lack of business understanding.
+  - Inadequate delegation oversight.
+
+### Rule 3: <mark>You must be open and cooperative with the FCA, the PRA and other regulators</mark>
+
+- Cooperation with regulators:
+  - Includes recognized jurisdictions with information power.
+- No duty to report unless responsible, but obstruction is viewed as responsibility.
+- Examples of conduct breaching Rule 3:
+  - Failing to report information promptly.
+  - Not informing regulators without good reason.
+- Good reasons for non-disclosure:
+  - Legal privilege, self-incrimination rights, court orders, or legal obligations.
+- Specific expectations for benchmark administrators.
+
+### Rule 4: <mark>You must pay due regard to the interests of customers and treat them fairly</mark>
+
+- Rule 4 applies to all conduct rules staff.
+- Examples of conduct breaching Rule 4:
+  - Failing to inform customers of material information.
+  - Recommending unsuitable investments.
+  - Inadequate control over client assets.
+  - Providing incorrect products.
+  - Not resolving customer mistakes.
+  - Unclear terms and conditions.
+- Specific considerations for benchmark administrators.
+
+### Rule 5: <mark>You must observe proper standards of market conduct</mark>
+
+- Compliance with market codes and exchange rules indicates adherence to Rule 5.
+- Examples of conduct breaching Rule 5:
+  - Manipulating benchmarks or markets.
+- Markets include various types, not limited to regulated or professional markets.
+- Proper standards for benchmark administrators.
+
+### Rule 6: <mark>You must act to deliver good outcomes for retail customers</mark>
+
+- Guidance from PRIN 2A.2 is helpful for Rule 6 interpretation.
+- Rule 6 imposes higher standards than Rule 4.
+- Rule 6 applies to all conduct rules staff.
+- Reasonable application considers factors like seniority, job scope, expertise, and discretion.
+- Managers have significant influence on retail customer outcomes.
+
+## COCON 4.2 Specific guidance on senior manager conduct rules
+
+### SC1: <mark>You must ensure effective business control</mark>
+
+- SMF manager roles are defined in their responsibilities.
+- Strategy and plans affect risk and control levels.
+- Clear business organization and responsibilities are crucial.
+- Examples of conduct breaching SC1:
+  - Poor responsibility apportionment.
+  - Inadequate staff competence review.
+  - Allowing risky managerial vacancies.
+
+### SC2: <mark>You must ensure compliance with regulatory standards</mark>
+
+- Senior conduct rules staff must ensure compliance awareness.
+- Systems of control depend on business nature and complexity.
+- Address problems promptly and appropriately.
+- Examples of conduct breaching SC2:
+  - Inadequate systems of control.
+  - Poor monitoring of compliance.
+  - Failing to implement improvement recommendations.
+
+### SC3: <mark>You must ensure appropriate delegation and oversight</mark>
+
+- Delegation requires belief in delegate's competence.
+- Responsibility cannot be delegated, only authority.
+- Examples of conduct breaching SC3:
+  - Lack of understanding about delegated issues.
+  - Inadequate supervision of delegates.
+
+### SC4: <mark>You must disclose information to regulators</mark>
+
+- SC4 applies in addition to Rule 3.
+- Senior conduct rules staff have a duty to disclose without requests.
+- Examples of conduct breaching SC4:
+  - Failing to inform regulators of significant information.
+  - Not ensuring firm compliance with reporting obligations.
+
+## Definitions
+
+- **Conduct rules staff**: Individuals subject to the conduct rules, including senior managers and other staff.
+- **SMF manager**: Senior Management Function manager, responsible for specific areas within a firm.
+- **Annex II benchmark administrator**: A firm acting as a benchmark administrator under specific regulations.
+- **FCA**: Financial Conduct Authority, a regulatory body in the UK.
+- **PRA**: Prudential Regulation Authority, a regulatory body in the UK.
+- **PRIN**: Principles for Businesses, part of the FCA Handbook.
+- **SYSC**: Senior Management Arrangements, Systems and Controls, part of the FCA Handbook.
+
+# COND Threshold Conditions
+
+## COND 1.1A Application
+
+### To which threshold conditions does COND apply?
+
+- **Creation of Threshold Conditions**
+  - The Financial Services Act 2012 allowed HM Treasury to amend Schedule 6, leading to the creation of four sets of threshold conditions:
+    - <mark>Conditions for firms regulated only by the FCA.</mark>
+    - FCA-specific conditions for dual-regulated firms.
+    - PRA-specific conditions for insurers.
+    - PRA-specific conditions for other PRA-authorised persons.
+
+- **Applicable Guidance**
+  - The guidance in COND applies to the threshold conditions relevant to the FCA's functions, specifically those for FCA-only regulated firms and dual-regulated firms.
+
+- **Firms Not Engaging in PRA-Regulated Activities**
+  - For firms not involved in PRA-regulated activities, the relevant threshold conditions are those set out for FCA-only regulated firms.
+
+- **Firms Engaging in PRA-Regulated Activities**
+  - For firms involved in PRA-regulated activities, the relevant threshold conditions are those set out for dual-regulated firms.
+
+- **Definition of "FCAthreshold conditions"**
+  - Refers to the threshold conditions applicable to a specific firm, whether FCA-only or dual-regulated.
+
+### To whom does COND apply?
+
+- **General Application**
+  - <mark>COND applies to all firms unless otherwise specified.</mark>
+
+- **Definition of 'Firm'**
+  - Includes applicants for Part 4A permission unless context dictates otherwise.
+
+### To what extent does COND apply to firms authorised by the PRA (PRA-authorised persons) and subject to dual regulation?
+
+- **Dual Regulation Framework**
+  - PRA-authorised persons are subject to both FCA-specific and PRA-specific threshold conditions.
+
+- **Guidance for All Firms**
+  - Most guidance in COND is to help all firms understand the FCA's assessment of FCAthreshold conditions.
+
+- **Financial Position and Prudential Requirements**
+  - Guidance on financial position or prudential requirements is not for PRA-authorised persons, as these are assessed by the PRA.
+
+- **Assessment Approach**
+  - The FCA assesses its threshold conditions with its statutory objectives in mind, separate from the PRA's assessment.
+
+- **PRA's Assessment**
+  - The guidance in COND does not apply to the PRA's assessment of its threshold conditions.
+
+### To what extent does COND apply to Swiss general insurance companies?
+
+- **Applicable Conditions**
+  - FCA threshold conditions 3B, 3C, and 3E apply to Swiss General Insurance Companies.
+
+### To what extent does COND apply to credit firms with limited permission?
+
+- **Application with Modifications**
+  - FCAthreshold conditions apply to firms with limited permission for relevant credit activities, with specific modifications.
+
+- **Modifications to Conditions**
+  - Certain sub-paragraphs of the Effective Supervision condition do not apply.
+  - Adequate financial resources are defined as the ability to meet debts as they fall due.
+  - The Business Model condition does not apply.
+
+- **Definitions and Interpretations**
+  - Key terms like "borrower," "supplier," "customer," and "domestic premises supplier" are defined for clarity.
+
+- **Relevant Credit Activities**
+  - Includes credit broking, consumer credit lending, entering into consumer hire agreements, debt adjusting or counselling, providing credit information services, and agreeing to carry on these activities.
+
+### To what extent does COND apply to regulated benchmark administrators?
+
+- **Non-Applicability to Benchmark Administration**
+  - Threshold conditions do not apply to firms solely administering a benchmark.
+
+- **Application to Other Activities**
+  - For firms also authorised for other activities, threshold conditions apply to those activities.
+
+### To which regulated activities does COND apply?
+
+- **General Application**
+  - <mark>COND applies to all regulated activities for which a firm has or will have permission, subject to limitations.</mark>
+
+### Where does COND apply?
+
+- **Geographical Scope**
+  - <mark>COND applies to all regulated activities wherever they are carried on.</mark>
+
+## COND 1.2 Purpose
+
+- **Guidance on Threshold Conditions**
+  - COND provides guidance on the FCAthreshold conditions, which are the minimum conditions firms must satisfy to obtain and retain Part 4A permission.
+
+### Applications for Part 4A permission or variation of Part 4A permission
+
+- **FCA's Responsibility**
+  - The FCA must ensure firms satisfy the FCAthreshold conditions when granting or varying Part 4A permission.
+
+### Exercise of the FCA's own-initiative powers
+
+- **Failure to Satisfy Conditions**
+  - If a firm fails or is likely to fail to satisfy the FCAthreshold conditions, the FCA may use its own-initiative powers to vary or cancel permissions.
+
+- **Ensuring Compliance**
+  - When using these powers, the FCA must ensure the firm satisfies the FCAthreshold conditions for all relevant activities.
+
+### Approval of acquisitions or increases of control
+
+- **Assessment Criteria**
+  - The FCA can object to acquisitions or control increases if the firm cannot meet prudential requirements, including threshold conditions.
+
+## COND 1.3 General
+
+- **Explanation of Conditions**
+  - COND 2 explains each FCAthreshold condition and how the FCA interprets them.
+
+- **Assessment Context**
+  - <mark>The FCA considers the size, nature, scale, and complexity of a firm's business when assessing threshold conditions.</mark>
+
+- **Disclosure and Assessment**
+  - <mark>Firms should disclose relevant matters to the FCA, which will assess their significance in relation to the firm's activities.</mark>
+
+- **Relevant Relationships**
+  - The FCA may consider relationships with controllers, directors, or others influencing the firm when assessing threshold conditions.
+
+- **Case-by-Case Basis**
+  - The FCA assesses each firm individually.
+
+### Statutory quotations
+
+- **Reference to Conditions**
+  - FCAthreshold conditions are quoted in full in COND 2, with interpretative provisions included for reference.
+
+## Definitions
+
+- **FCAthreshold conditions**: The minimum conditions firms must satisfy for FCA regulation.
+- **PRA-authorised persons**: Firms authorised by the Prudential Regulation Authority.
+- **Part 4A permission**: Permission granted under Part 4A of the Financial Services and Markets Act 2000.
+- **Regulated activities**: Activities regulated by the FCA or PRA.
+- **Swiss General Insurance Companies**: Insurance companies based in Switzerland subject to specific FCA conditions.
+- **Credit firms with limited permission**: Firms with limited permission to carry out certain credit-related activities.
+- **Regulated benchmark administrators**: Firms authorised to administer financial benchmarks.
+
+## COND 2 The threshold conditions
+
+## COND 2.2 Location of offices
+
+- **General Requirements**
+
+  - <mark>If a company (A) is incorporated in the UK, its head office and registered office must be in the UK unless specific exceptions apply.</mark>
+  
+  - If A is not a corporate body but has its head office in the UK, it must conduct business in the UK.
+
+- **Specific Cases**
+
+  - For investment services and activities, if A is a corporate body with no registered office but has its head office in the UK, it must conduct business in the UK.
+  
+  - For insurance distribution activities:
+    - If A is a corporate body incorporated in the UK, its registered office or head office must be in the UK.
+    - If A is an individual, they are considered to have a head office in the UK if they reside in the UK.
+
+- **Definitions and References**
+
+  - "Insurance distribution activity" includes dealing, arranging, assisting, advising, and agreeing on insurance contracts.
+  
+  - These activities must be read with section 22, any relevant order, and Schedule 2 of the Act.
+
+- **AIF Management**
+
+  - If A manages an AIF and is a full-scope UK AIFM, its head office and registered office must be in the UK.
+
+- **Regulatory Responsibility**
+
+  - The FCA is responsible for the location of offices threshold condition for firms not carrying out PRA-regulated activities.
+
+- **Implementation of Directives**
+
+  - Various paragraphs of Schedule 6 implement articles from the UCITS Directive, MiFID, IDD, and AIFMD, extending conditions to authorized persons outside these directives.
+
+- **Head Office Definition**
+
+  - The term 'head office' is not defined by the UCITS Directive, MiFID, IDD, AIFMD, or the Act. It generally refers to the location of central management and control, including directors and senior management.
+
+## COND 2.3 Effective supervision
+
+- **General Requirements**
+
+  - <mark>A firm (A) must be capable of being effectively supervised by the FCA, considering factors like the nature and complexity of activities, business organization, group membership, and close links with other entities.</mark>
+
+- **Exemptions**
+
+  - Certain exemptions apply where only relevant credit activities are carried out.
+
+- **Close Links Definition**
+
+  - A firm has close links with another entity (CL) if there are parent-subsidiary relationships or significant ownership/control of voting rights or capital.
+
+- **Regulatory Responsibility**
+
+  - The FCA handles effective supervision for firms not carrying out PRA-regulated activities.
+
+- **Assessment Factors**
+
+  - <mark>The FCA considers information adequacy, organizational structure, and financial position when assessing effective supervision.</mark>
+
+- **Parent and Subsidiary Definitions**
+
+  - Definitions align with the Companies Act 2006, with additional considerations for friendly societies and other specific cases.
+
+## COND 2.4 Appropriate resources
+
+- **General Requirements**
+
+  - <mark>A firm (A) must have appropriate resources for its regulated activities, considering business nature, risks, and group membership.</mark>
+
+- **Financial Resources**
+
+  - <mark>Financial resources must cover liabilities and manage risks, with specific provisions for relevant credit activities.</mark>
+
+- **Non-Financial Resources**
+
+  - <mark>Non-financial resources include management skills, compliance capabilities, and systems to meet FCA requirements.</mark>
+
+- **Regulatory Responsibility**
+
+  - The FCA assesses non-financial resources, while the PRA assesses financial resources for PRA-regulated activities.
+
+- **Assessment Factors**
+
+  - The FCA considers resource sufficiency, group impact, and compliance readiness when assessing resource appropriateness.
+
+## COND 2.5 Suitability
+
+- **General Requirements**
+
+  - <mark>A firm (A) must be fit and proper, considering connections, activity nature, consumer interests, compliance, management skills, and financial crime prevention.</mark>
+
+- **Regulatory Responsibility**
+
+  - The FCA assesses suitability for non-PRA-regulated activities, while the PRA assesses suitability for PRA-regulated activities.
+
+- **Assessment Factors**
+
+  - <mark>The FCA considers integrity, management competence, compliance readiness, and past regulatory issues when assessing suitability.</mark>
+
+## COND 2.7 Business model
+
+- **General Requirements**
+
+  - <mark>A firm’s (A) business model must be suitable for its regulated activities, considering sound management, consumer interests, and financial system integrity.</mark>
+
+- **Regulatory Responsibility**
+
+  - The FCA assesses business models for non-PRA-regulated activities, while the PRA assesses business models for PRA-regulated activities.
+
+- **Assessment Factors**
+
+  - <mark>The FCA considers business assumptions, strategy, consumer needs, governance, and external environment when assessing business model suitability.</mark>
+
+## Definitions
+
+- **AIF**: Alternative Investment Fund
+- **AIFM**: Alternative Investment Fund Manager
+- **FCA**: Financial Conduct Authority
+- **PRA**: Prudential Regulation Authority
+- **UCITS**: Undertakings for Collective Investment in Transferable Securities
+- **MiFID**: Markets in Financial Instruments Directive
+- **IDD**: Insurance Distribution Directive
+- **A**: A firm or entity being assessed
+- **B**: Another firm or entity being assessed
+- **CL**: Close Link, referring to entities with significant relationships or ownership connections
+
+# APER Statements of Principle and Code of Practice for Approved Persons
+
+## APER 1 Application and purpose
+
+## APER 1.1A Application
+
+- **Who?**
+
+  - APER applies to FCA-approved persons who are approved to perform a controlled function in SUP 10A (FCA Approved Persons in Appointed Representatives).
+
+- **What?**
+
+  - APER applies to the performance by an approved person of FCA controlled functions in SUP 10A, regardless of whether approval has been sought and granted.
+  
+  - APER also applies to the performance by an approved person of any other functions related to the carrying on of a regulated activity by their authorised approved person employer.
+  
+  - APER does not apply to conduct to which COCON applies, except where COCON does not apply under COCON 1.1.8AR.
+  
+  - APER does not apply to conduct unless it falls within the scope of section 64A of the Act (Rules of conduct).
+  
+  - The functions described in APER 1.1A.2R are called accountable functions.
+
+- **Where?**
+
+  - The territorial scope of the approved persons regime is set out in SUP 10A.1.
+
+## Coverage of APER
+
+- **APER 1.2 Purpose**
+
+  - The Statements of Principle in APER 2 are rules made under section 64A(1)(a) of the Act (Rules of conduct).
+  
+  - The guidance in APER 3 and APER 4 is guidance on the Statements of Principle and is called the Code of Practice for Approved Persons.
+  
+  - The Code of Practice for Approved Persons describes conduct that, in the FCA's opinion, does or does not comply with a Statement of Principle. It also outlines factors to consider in determining compliance with a Statement of Principle.
+  
+  - A function is a controlled function only if it is performed under an arrangement entered into by a firm or a contractor of the firm, in relation to the carrying on by the firm of a regulated activity.
+
+---
+
+### Definitions
+
+- **FCA-approved persons**: Individuals approved by the Financial Conduct Authority to perform certain roles or functions within a firm.
+- **Controlled function**: Specific roles within a firm that require FCA approval due to their potential impact on the firm's compliance with regulatory requirements.
+- **SUP 10A**: A section of the FCA Handbook that outlines the requirements for FCA Approved Persons in Appointed Representatives.
+- **COCON**: The Code of Conduct sourcebook, which sets out rules and guidance for individual conduct within firms.
+- **Accountable functions**: Functions performed by approved persons that are subject to the rules and guidance in APER.
+- **Regulated activity**: Activities that are regulated by the FCA, requiring firms and individuals to comply with specific rules and obtain necessary approvals.
+
+## APER 2 The Statements of Principle for Approved Persons
+
+**Note** - This is rather repetitive.
+
+## APER 2.1A The Statements of Principle
+
+- **General Overview**
+
+  - APER 2.1A.3R outlines the Statements of Principle issued by the FCA. These principles are referenced in APER 1.2.1A G and are applicable under the Code of Practice for Approved Persons found in APER 3 and APER 4.
+
+- **Exceptions to the Statements of Principle**
+
+  - An approved person is not bound by a Statement of Principle if it conflicts with an EU measure that was passed or made before the IP completion day, as long as those requirements continue to be effective after the IP completion day under the EUWA.
+
+- **Statements of Principle under Section 64A(1)(a) of the Act**
+
+  - **Statement of Principle 1**: An approved person must act with integrity when performing their accountable functions.
+
+  - **Statement of Principle 2**: An approved person must use due skill, care, and diligence in carrying out their accountable functions.
+
+  - **Statement of Principle 3**: An approved person must adhere to proper standards of market conduct while performing their accountable functions.
+
+  - **Statement of Principle 4**: An approved person must interact with the FCA, the PRA, and other regulators in an open and cooperative manner and must appropriately disclose any information that the FCA or the PRA would reasonably expect to be informed about.
+
+  - **Statement of Principle 5**: An approved person in a higher management role must take reasonable steps to ensure that the business of the APER employer, for which they are responsible, is organized in a way that allows for effective control.
+
+  - **Statement of Principle 6**: An approved person in a higher management role must exercise due skill, care, and diligence in managing the business of the APER employer for which they are responsible.
+
+  - **Statement of Principle 7**: An approved person in a higher management role must take reasonable steps to ensure that the business of the APER employer, for which they are responsible, complies with the relevant requirements and standards of the regulatory system.
+
+---
+
+### Definitions
+
+- **Approved Person**: An individual who has been approved by the FCA to perform certain functions within a firm, ensuring compliance with regulatory requirements.
+- **APER Employer**: The employer of an approved person, typically a firm regulated by the FCA.
+- **Accountable Functions**: Specific roles or responsibilities within a firm that an approved person is accountable for, as defined by the FCA.
+- **Higher Management Function**: A role within a firm that involves significant responsibility for managing the business, typically at a senior level.
+- **FCA**: Financial Conduct Authority, the regulatory body for financial services in the UK.
+- **PRA**: Prudential Regulation Authority, responsible for the prudential regulation and supervision of banks, building societies, credit unions, insurers, and major investment firms in the UK.
+- **EUWA**: European Union (Withdrawal) Act, legislation that governs the transition of EU law into UK law post-Brexit.
+- **IP Completion Day**: The end of the transition period following the UK's exit from the EU, after which EU laws ceased to apply in the UK.
+
+## APER 3 Code of Practice for Approved Persons: general
+
+## APER 3.1 Introduction
+
+- **Purpose of the Code of Practice for Approved Persons**
+  - Helps approved persons determine if their conduct aligns with a Statement of Principle.
+  - Describes conduct that complies or does not comply with the Statements of Principle.
+  - Lists factors to consider in assessing compliance with a Statement of Principle.
+
+- **Nature of the Code of Practice**
+  - General guidance, not legally binding.
+  - Represents FCA's view, not binding on courts or third parties.
+  - Not mandatory to follow for compliance, and deviation doesn't imply a breach.
+  - Following guidance suggests compliance with related rules.
+
+- **Assessment of Compliance**
+  - FCA considers all circumstances of a case.
+  - Context, individual case details, and expected behavior in a function are considered.
+
+- **Personal Culpability**
+  - Breach occurs only if the approved person is personally culpable.
+  - Culpability involves deliberate conduct or conduct below reasonable standards.
+  - Statements of Principle do not extend duties beyond those owed by the APER employer.
+
+- **Determining Compliance**
+  - FCA considers if conduct is stated to be in breach of a Statement of Principle.
+
+- **Exhaustiveness of the Code**
+  - Code is not exhaustive of conduct that may breach Statements of Principle.
+  - Code may be updated to clarify unacceptable practices.
+
+- **Application of Statements of Principle**
+  - Principles 1 to 4 apply to all approved persons.
+  - Principles 5 to 7 apply to those in accountable higher management functions.
+
+- **Conduct in Relation to Employers**
+  - Principles 1 to 4 apply to conduct related to appointed representatives and authorized employers.
+  - Principles 5 to 7 apply to conduct related to appointed representatives in higher management roles.
+
+- **Assessing Conduct in Management Functions**
+  - Nature, scale, and complexity of business and individual roles are considered.
+  - Breach of Principles 5 to 7 occurs if conduct is below reasonable standards.
+
+- **Corporate Governance Code**
+  - APER employers with UK listings must follow the UK Corporate Governance Code.
+  - Compliance with this code is considered in assessing regulatory compliance.
+
+- **Definition of APER Employer**
+  - For Principles 5 to 7, APER employer refers to the appointed representative related to the controlled function.
+
+## APER 3.2 Factors relating to all Statements of Principle
+
+- **Factors for Compliance Assessment**
+  - Conduct related to activities under other Handbook provisions.
+  - Consistency with regulatory system requirements relevant to the APER employer.
+
+## APER 3.3 Factors relating to Statements of Principle 5 to 7
+
+- **Factors for Higher Management Functions**
+  - Reasonable care in considering available information.
+  - Reaching and acting on reasonable conclusions.
+  - Nature, scale, and complexity of the business.
+  - Role and responsibility in higher management.
+  - Knowledge of regulatory concerns in the business.
+
+---
+
+### Definitions
+
+- **Approved Person**: An individual approved by the FCA to perform certain functions within a firm.
+- **APER Employer**: The appointed representative or firm related to the approved person's controlled function.
+- **Accountable Higher Management Function**: A role involving significant responsibility for managing a firm's affairs.
+- **Statement of Principle**: A set of principles outlining the standards of conduct expected from approved persons.
+
+## APER 4 Code of Practice for Approved Persons: specific
+
+**Note** - Super repetitive.
+
+## APER 4.1 Statement of Principle 1
+
+- **Integrity Requirement**
+  - An approved person must act with integrity in their accountable functions.
+
+- **Non-compliance Examples**
+  - Conduct described in various sections (APER 4.1.3G to APER 4.1.15G) does not comply with this principle.
+
+- **Misleading Conduct**
+  - Deliberately misleading clients, employers, auditors, actuaries, or regulators.
+  - Includes falsifying documents, misleading about investment risks, charges, performance, or mismarking values.
+
+- **Unsuitable Recommendations**
+  - Recommending investments without justifying suitability.
+
+- **Failure to Inform**
+  - Not correcting misunderstandings of material issues.
+
+- **Inaccurate Records**
+  - Preparing inaccurate records or returns.
+
+- **Misuse of Assets**
+  - Misusing client or employer assets or information.
+
+- **Disguising Breaches**
+  - Designing transactions to hide regulatory breaches.
+
+- **Conflict of Interest**
+  - Not disclosing conflicts of interest.
+
+- **Consumer Detriment**
+  - Acts causing consumer harm.
+
+## APER 4.2 Statement of Principle 2
+
+- **Skill, Care, and Diligence Requirement**
+  - An approved person must act with due skill, care, and diligence.
+
+- **Non-compliance Examples**
+  - Conduct described in various sections (APER 4.2.3G to APER 4.2.14G) does not comply with this principle.
+
+- **Failure to Inform**
+  - Not informing clients or employers of material information.
+
+- **Unsuitable Recommendations**
+  - Recommending investments without reasonable grounds for suitability.
+
+- **Understanding Risks**
+  - Undertaking transactions without understanding risk exposure.
+
+- **Conflict of Interest**
+  - Not disclosing conflicts of interest.
+
+- **Client Asset Control**
+  - Failing to control client assets adequately.
+
+- **Training and Competence**
+  - Performing functions without meeting required standards.
+
+## APER 4.3 Statement of Principle 3
+
+- **Market Conduct Requirement**
+  - An approved person must observe proper market conduct standards.
+
+- **Compliance with Regulations**
+  - Compliance with Market Abuse Regulation and market codes indicates adherence to this principle.
+
+## APER 4.4 Statement of Principle 4
+
+- **Regulator Interaction Requirement**
+  - An approved person must deal openly and cooperatively with regulators.
+
+- **Non-compliance Examples**
+  - Conduct described in various sections (APER 4.4.4G to APER 4.4.9G) does not comply with this principle.
+
+- **Reporting Failures**
+  - Not reporting significant information to regulators.
+
+- **Obstructing Reporting**
+  - Influencing decisions to not report to regulators.
+
+- **Regulator Cooperation**
+  - Failing to attend interviews or provide requested information.
+
+## APER 4.5 Statement of Principle 5
+
+- **Business Organization Requirement**
+  - An approved person must ensure effective business organization.
+
+- **Non-compliance Examples**
+  - Conduct described in various sections (APER 4.5.3G to APER 4.5.8G) does not comply with this principle.
+
+- **Responsibility Apportionment**
+  - Not clearly assigning business responsibilities.
+
+- **Suitable Individuals**
+  - Ensuring suitable individuals manage business areas.
+
+- **Temporary Vacancies**
+  - Addressing temporary managerial vacancies.
+
+## APER 4.6 Statement of Principle 6
+
+- **Management Skill Requirement**
+  - An approved person must manage business with skill, care, and diligence.
+
+- **Non-compliance Examples**
+  - Conduct described in various sections (APER 4.6.3G to APER 4.6.8G) does not comply with this principle.
+
+- **Business Understanding**
+  - Failing to inform themselves about business affairs.
+
+- **Delegation**
+  - Delegating without ensuring delegate competence.
+
+- **Supervision**
+  - Inadequate supervision of delegated responsibilities.
+
+## APER 4.7 Statement of Principle 7
+
+- **Regulatory Compliance Requirement**
+  - An approved person must ensure business compliance with regulatory standards.
+
+- **Non-compliance Examples**
+  - Conduct described in various sections (APER 4.7.3G to APER 4.7.11AG) does not comply with this principle.
+
+- **Systems of Control**
+  - Implementing and monitoring adequate control systems.
+
+- **Breaches Investigation**
+  - Investigating significant breaches of regulatory standards.
+
+- **System Improvements**
+  - Reviewing and improving systems after breaches.
+
+---
+
+### Definitions
+
+- **Approved Person**: An individual approved by the FCA to perform certain functions within a firm.
+- **APER Employer**: The employer of an approved person, typically a regulated firm.
+- **FCA**: Financial Conduct Authority, the UK regulator for financial services.
+- **PRA**: Prudential Regulation Authority, the UK regulator for financial stability.
+- **Accountable Function**: A role within a firm that carries specific regulatory responsibilities.
+- **Accountable Higher Management Function**: A senior management role with significant responsibility for a firm's operations.
+
+# FIT Fit and Proper test for Employees and Senior Personnel
+
+## FIT 1 General
+
+## FIT 1.1 Application and Purpose
+
+- **Who FIT Applies To:**
+  - <mark>SMCR firms.</mark>
+  - <mark>Applicants for Part 4A permission that will become SMCR firms if approved.</mark>
+  - <mark>Approved persons performing an FCA controlled function.</mark>
+  - <mark>Candidates for an FCA controlled function.</mark>
+  - <mark>Certification employees performing an FCA certification function.</mark>
+  - <mark>Individuals an SMCR firm plans to certify for an FCA certification function.</mark>
+  - <mark>Board directors as specified in FIT 1.1.2G(1)(e).</mark>
+
+- **Purpose of FIT:**
+  - To outline criteria for SMCR firms to assess:
+    - Fitness and propriety of candidates for FCA-approved SMF manager roles.
+    - Ongoing fitness and propriety of FCA-approved SMF managers.
+    - Fitness and propriety of individuals for FCA certification functions.
+    - Ongoing fitness and propriety of certified individuals.
+    - Fitness of non-SMF board directors in FCA-authorised firms (not limited scope SMCR firms).
+  - To describe criteria the FCA considers for assessing candidates and approved persons for controlled functions.
+
+## FIT 1.2 Introduction
+
+- **Approval Requirements:**
+  - Firms must ensure candidates are fit and proper before applying for FCA approval for a controlled function.
+  - The FCA grants approval only if satisfied with the candidate's fitness and propriety.
+
+- **Certification Function:**
+  - Firms can issue certificates for certification functions only if the person is fit and proper.
+
+- **Assessment Criteria:**
+  - Consider qualifications, training, competence, and personal characteristics as per FCA rules.
+  - Key rules include SYSC 4.2, SYSC 4.3A.3R, competent employees rule, TC 2.1.1R, TC 2.1.5BR, TC 2.1.12R, and SYSC 3.1.6R.
+
+- **Withdrawal of Approval:**
+  - The FCA can withdraw approval if a person is not fit and proper.
+
+- **Factors for Solvency II Firms:**
+  - For Solvency II firms, the FCA considers the firm's assessment and other guidelines.
+
+- **Standstill Direction:**
+  - Guidance from before IP completion day remains relevant as long as the standstill direction is in force.
+
+## FIT 1.3 Assessing Fitness and Propriety
+
+- **FCA's Assessment Factors:**
+  - <mark>Honesty, integrity, reputation, competence, capability, and financial soundness are key considerations.</mark>
+
+- **Firm's Assessment Considerations:**
+  - Consider the firm's activities, permissions, and market operations.
+  - Evaluate the candidate's knowledge, skills, and experience for the role.
+  - Ensure the management body collectively has adequate knowledge and skills.
+
+- **Guidance on Criteria:**
+  - FIT 2.1 to FIT 2.3 provide general guidance on criteria for assessing fitness and propriety.
+  - Firms should apply these criteria broadly, recognizing they are not exhaustive.
+
+- **Handling Concerns:**
+  - If issues arise suggesting a person might not be fit and proper, assess their relevance and importance.
+  - Notify the FCA if there are grounds for withdrawing approval.
+
+- **Assessment During Temporary Absence:**
+  - Follow guidance for assessing fitness and propriety during temporary absences.
+
+- **Role-Specific Assessment:**
+  - Assess the actual role performed at the time of evaluation, using an up-to-date job description.
+
+- **Application Process:**
+  - The FCA may discuss fitness and propriety assessments informally with firms during the application process.
+
+---
+
+### Definitions
+
+- **SMCR Firm:** A firm subject to the Senior Managers and Certification Regime.
+- **FCA Controlled Function:** A role requiring FCA approval due to its significant influence on a firm.
+- **FCA Certification Function:** A role requiring certification by the firm, not direct FCA approval.
+- **FCA-Approved SMF Manager:** A senior management function manager approved by the FCA.
+- **Non-SMF Board Director:** A board director not holding a senior management function but subject to competence requirements.
+- **Solvency II Firm:** An insurance firm subject to Solvency II regulations.
+
+## FIT 2 Main assessment criteria
+
+## FIT 2.1 Honesty, Integrity, and Reputation
+
+- **General Considerations by the FCA**
+  - The FCA considers all relevant matters when assessing a person's honesty, integrity, and reputation, including those listed in FIT 2.1.3 G. These matters can arise in the UK or elsewhere. The FCA should be informed of these matters, but will only consider them if they are relevant to regulatory standards. For example, <mark>a criminal conviction does not automatically disqualify a candidate</mark>. Each case is assessed individually, considering the seriousness and context of the offence, the candidate's explanation, relevance to the role, time elapsed since the offence, and evidence of rehabilitation.
+
+- **Considerations by Firms**
+  - Firms should also consider all relevant matters when assessing staff under FIT, including those in FIT 2.1.3G. This includes checking for criminal convictions and contacting previous employers. If a staff member has a criminal conviction, firms should evaluate the seriousness and context of the offence, the person's explanation, relevance to the role, time since the offence, and evidence of rehabilitation.
+
+- **Impact on Firm's Reputation**
+  - The FCA will assess whether a person's reputation could negatively impact the firm for which they perform a controlled function, considering their responsibilities.
+
+- **Firm's Assessment of Reputation**
+  - Firms should consider if a person's reputation might adversely affect the firm and the responsibilities of the role they are to perform.
+
+- **Specific Matters for Consideration**
+  - The FCA and firms should consider:
+    1. Criminal convictions, including spent convictions, especially for dishonesty, fraud, financial crime, or offences related to financial services.
+    2. Adverse findings or settlements in civil proceedings, especially related to financial misconduct.
+    3. Involvement in investigations or disciplinary proceedings by regulators or professional bodies.
+    4. Disciplinary or criminal proceedings, or notifications of potential proceedings.
+    5. Breaches of regulatory standards or equivalent standards of other authorities.
+    6. Justified complaints related to regulated activities.
+    7. Involvement with organisations that have had their registration or licence revoked.
+    8. Refusal of the right to carry on a trade or profession due to licence removal.
+    9. Management roles in businesses that went insolvent.
+    10. Investigations or disciplinary actions by regulatory or professional bodies.
+    11. Dismissal or resignation from employment or positions of trust.
+    12. Disqualification from acting as a director or in managerial roles.
+    13. Past candor and truthfulness in dealings with regulatory bodies and willingness to comply with regulatory standards.
+
+## FIT 2.2 Competence and Capability
+
+- **FCA's Assessment**
+  - The FCA considers all relevant matters when determining a person's competence and capability, including:
+    1. Compliance with FCA training and competence requirements for the controlled function.
+    2. Suitability demonstrated through experience and training.
+    3. Adequate time to perform the controlled function and associated responsibilities.
+
+- **Firm's Assessment**
+  - Firms should consider similar factors when assessing competence and capability for senior management or certification functions, including:
+    1. Compliance with applicable training and competence requirements.
+    2. Suitability demonstrated through experience and training.
+    3. Adequate time to perform the function and meet responsibilities.
+
+- **Consideration of Past Conduct**
+  - The FCA considers convictions or dismissals for drug or alcohol abuse only in relation to the person's ability to perform the controlled function.
+
+- **Firm's Consideration of Past Conduct**
+  - Firms should similarly consider such past conduct only in relation to the person's ability to perform senior management or certification functions.
+
+## FIT 2.3 Financial Soundness
+
+- **FCA's Considerations**
+  - The FCA considers factors such as:
+    1. Outstanding judgment debts or awards.
+    2. Bankruptcy-related proceedings or arrangements with creditors.
+
+- **Firm's Considerations**
+  - Firms should also consider these factors when assessing financial soundness.
+
+- **Financial Means**
+  - The FCA does not usually require a statement of assets or liabilities. Limited financial means alone do not affect suitability for a controlled function. Firms are expected to adopt a similar approach.
+
+---
+
+### Definitions
+
+- **FCA**: Financial Conduct Authority, the regulatory body for financial services in the UK.
+- **Firm**: Any company or organization that is regulated by the FCA.
+- **Controlled Function**: A role within a firm that requires FCA approval due to its significance in the firm's operations.
+- **Senior Management Function**: A specific type of controlled function involving senior management responsibilities.
+- **Certification Function**: A role within a firm that requires certification by the firm itself, rather than direct FCA approval.
+
+# FINMAR Financial Stability and Market Confidence Sourcebook
+
+## FINMAR 2 Short selling
+
+## FINMAR 2.1 Application and Purpose
+
+- **Application**
+
+  - This chapter is relevant to <mark>all natural and legal persons to whom the short selling regulation applies, regardless of whether they are regulated by the FCA.</mark>
+
+- **Purpose**
+
+  - The purpose of this chapter is to provide guidance on the FCA's functions under the short selling regulation.
+
+  - Note: Other relevant parts of the Handbook for those to whom the short selling regulation applies include Chapter 2 of SUP (the Supervision manual) and DEPP (the Decision Procedure and Penalties manual).
+
+  - The following Regulatory Guides are also relevant:
+    - The Enforcement Guide (EG)
+
+## FINMAR 2.5 Measures to Prohibit, Restrict or Limit Transactions in Short Selling
+
+- **Approach to Imposing Measures**
+
+  - The FCA must consider whether to impose measures to prohibit or restrict short selling or limit transactions in a financial instrument on a trading venue if the price of that instrument falls significantly during a single trading day compared to the previous day's closing price.
+
+  - The FCA will assess:
+    1. Whether the price fall is or may become disorderly.
+    2. Whether imposing measures will prevent a further disorderly decline in the price.
+
+- **Factors for Assessing Disorderly Price Falls**
+
+  - The FCA will consider:
+    1. Violent price movements, including sudden or significant changes during the trading day.
+    2. Evidence of unusual or improper trading that could indicate abnormal pricing pressure.
+    3. Unsubstantiated rumors or false/misleading information about the financial instrument.
+
+  - This list is not exhaustive; other factors may be considered.
+
+- **Legitimate Causes for Price Falls**
+
+  - The FCA may determine a price fall is not disorderly if there is a legitimate cause, such as poor financial results.
+
+- **Factors for Assessing Necessity of Measures**
+
+  - The FCA will consider:
+    1. Trading volume on the venue compared to total trading volume for the day.
+    2. Whether the price has stabilized after a significant fall.
+
+  - This list is not exhaustive; other factors may be considered.
+
+- **Exemptions from Measures**
+
+  - Measures will not apply to those who meet criteria for the market maker or authorised primary dealer exemptions and are listed by the FCA.
+
+- **Exchange Rate Calculations**
+
+  - The FCA will convert EUR 0.50 into pounds using the Bank of England's daily spot rate as of the first business day of October 2012, rounded up to the nearest £0.01, and publish this figure.
+
+  - The rate will be recalculated annually or if the exchange rate fluctuates by more than 10% for 20 consecutive business days.
+
+- **Main National Equity Index**
+
+  - The FTSE 100 index is treated as the main national equity index of the UK for certain regulatory purposes.
+
+## FINMAR 2.6 Procedures Relating to the Market Maker Exemption and the Authorised Primary Dealer Exemption
+
+- **Decision on Use of Exemptions**
+
+  - The FCA can prohibit a person from using these exemptions if they do not meet the conditions.
+
+  - Notifications on using these exemptions must follow FCA directions, published on the FCA website and listed in FINMAR 2 Annex 1 G.
+
+- **Process for Prohibition**
+
+  - If the FCA believes a person does not meet exemption criteria, they will send a letter explaining why they may prohibit the exemption use.
+
+  - The person can make written representations to the FCA.
+
+  - A decision will be made by senior FCA staff not involved in the initial consideration.
+
+- **Review of Prohibition Decision**
+
+  - If unsatisfied with the decision, a person can request a review by at least three senior FCA staff not involved in the original decision.
+
+  - The review can occur after the 30-day notification period but within 3 months of the decision.
+
+## Definitions
+
+- **Natural and Legal Persons**: Individuals or entities subject to the short selling regulation.
+- **FCA**: Financial Conduct Authority, the UK regulator for financial markets.
+- **Short Selling Regulation**: EU regulation governing short selling activities.
+- **Market Maker Exemption**: An exemption allowing certain market participants to engage in short selling without restrictions.
+- **Authorised Primary Dealer Exemption**: An exemption for primary dealers in government securities to engage in short selling without restrictions.
+
+# TC Training and Competence
+
