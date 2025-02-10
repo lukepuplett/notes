@@ -2951,3 +2951,927 @@ Deleted.
 
 ## SYSC 25 Senior managers and certification regime: Management responsibilities maps and handover procedures and material changes
 
+## SYSC 25.1 Application and Purpose
+
+### Main Application Rules
+
+- **Who This Chapter Applies To:**
+  - SMCR banking firms.
+  - SMCR insurance firms that are Solvency II firms (including large non-directive insurers), but not:
+    - Insurance special purpose vehicles.
+    - Firms in run-off as per SYSC 23 Annex 1 5.2R.
+  - Enhanced scope SMCR firms.
+  - Note: Some provisions may apply to a narrower scope.
+
+  **Note** - Seems like this chapter is not applicable to smaller or core SMCR firms.
+
+- **Activity Scope:**
+  - This chapter is not limited to regulated activities or specific types of activities.
+
+### Territorial Scope
+
+- **General Territorial Application:**
+  - No territorial limitation, except as noted in SYSC 25.1.4R.
+
+- **Overseas SMCR Firms:**
+  - Applies to activities of a branch in the UK.
+
+### How This Chapter Applies to Overseas SMCR Firms
+
+- **Terminology Adjustments:**
+  - "Firm" refers to the branch.
+  - "Governing body," "management body," "senior management," and "senior personnel" refer to the branch's equivalents.
+  - "Group" includes the rest of the firm.
+
+### Purpose
+
+- **Management Responsibilities Map:**
+  - Helps ensure a clear organizational structure.
+  - Assists FCA in identifying key contacts for issues.
+  - Aids FCA in exercising powers and requirements for individuals, such as accountability and role understanding.
+
+## SYSC 25.2 Management Responsibilities Maps: Main Rules
+
+### General Rule
+
+- **UK SMCR Firms:**
+  - Must have a comprehensive, up-to-date management responsibilities map detailing management and governance arrangements.
+
+- **Overseas SMCR Firms:**
+  - Must have a similar map for any UK branch.
+
+- **Map Contents:**
+  - Reporting lines and responsibilities.
+  - Details of involved persons and their responsibilities.
+
+### Specific Requirements
+
+- **Map Must Include:**
+  - Names and responsibilities of approved persons, governing body members, senior management, and senior personnel.
+  - Responsibilities in current statements of responsibilities.
+  - Management and governance arrangements for FCA and PRA-prescribed responsibilities.
+  - Reasons for joint or divided responsibilities.
+  - Functions under SYSC 26, including activities, governance, and reasons for joint allocation.
+  - Reserved matters to the governing body.
+  - How management arrangements fit with the group and others.
+  - Reporting lines and responsibilities with group members or third parties.
+  - Information about individuals, including employment status and responsibilities.
+  - Overall integration of management and governance arrangements.
+
+### Exclusion of Non-Financial Services Activities
+
+- **Enhanced Scope SMCR Firms:**
+  - May limit the map to SMCR financial activities, but must show how excluded arrangements fit with overall governance.
+
+### Guidance on Management Responsibilities Maps
+
+- **Consistency:**
+  - Maps should align with statements of responsibilities.
+
+- **Details:**
+  - Include functions in PRA controlled functions and exclusions.
+  - Ensure no gaps in responsibility allocation.
+  - Include summary details of persons and responsibilities.
+  - Provide a checklist for FCA-prescribed responsibilities.
+
+### Small Firms
+
+- **Expectations:**
+  - Maps for small, non-complex firms may be simple and short.
+
+## SYSC 25.5 Management Responsibilities Map as a Single Document
+
+- **Single Document Requirement:**
+  - Maps must be a single document, but can be a folder with multiple items.
+  - Must be complete and not refer to external documents.
+
+## SYSC 25.6 Material for EEA SMCR Firms
+
+- **Application:**
+  - Applies to EEA SMCR firms.
+
+- **Exclusion of Information:**
+  - May exclude information already supplied to FCA or PRA.
+
+## SYSC 25.7 Guidance on SYSC 25 Annex 1G
+
+- **Purpose:**
+  - Use Annex 1G as a prompt for covering business activities in the map.
+
+## SYSC 25.8 Management Responsibilities Maps: Records
+
+- **Record Keeping:**
+  - Past versions of maps are important records.
+  - Solvency II firms must retain maps for 6-10 years.
+
+## SYSC 25.9 Handover Procedures and Material
+
+- **Application:**
+  - Applies to UK SMCR firms and overseas SMCR banking firms.
+
+- **Handover Material:**
+  - Ensure new SMF managers have necessary information.
+  - Maintain a policy and records for compliance.
+
+## SYSC 25 Annex 1 Examples of Business Activities and Functions
+
+- **Business Areas and Functions:**
+  - Includes payment services, settlement, investment management, advice, sales, trading, market making, research, lending, product design, marketing, customer service, complaints handling, collections, middle office, IT, HR, and more.
+
+---
+
+### Definitions
+
+- **SMCR Banking Firm:** A firm subject to the Senior Managers and Certification Regime in the banking sector.
+- **SMCR Insurance Firm:** A firm subject to the Senior Managers and Certification Regime in the insurance sector.
+- **Solvency II Firm:** An insurance firm subject to the Solvency II Directive.
+- **Enhanced Scope SMCR Firm:** A firm with an extended scope under the SMCR.
+- **Overseas SMCR Firm:** A firm with branches in the UK but headquartered outside the UK.
+- **EEA SMCR Firm:** A firm from the European Economic Area subject to the SMCR.
+- **Management Responsibilities Map:** A document detailing a firm's management and governance arrangements.
+- **SMF Manager:** A Senior Management Function manager responsible for specific roles under the SMCR.
+
+## SYSC 26 Senior managers and certification regime: Overall and local responsibility
+
+## SYSC 26.1 Application
+
+### Main application rules
+
+- **Who this chapter applies to:**
+  - SMCR banking firms.
+  - SMCR insurance firms that are Solvency II firms, including large non-directive insurers, but not:
+    - Insurance special purpose vehicles.
+    - Firms in run-off as per SYSC 23 Annex 1 5.2R.
+  - Enhanced scope SMCR firms.
+  - Note: Some provisions may have a narrower scope.
+
+  **Note** - Seems like this chapter is not applicable to smaller or core SMCR firms.
+
+- **Activity Scope:**
+  - This chapter is not limited to regulated activities or specific types of activities.
+
+### Exclusions
+
+- **EEA SMCR Firms:**
+  - This chapter does not apply to EEA SMCR firms.
+
+### Territorial scope
+
+- **General Territorial Scope:**
+  - No territorial limitation, except as specified in SYSC 26.1.5R.
+
+- **Overseas SMCR Firms:**
+  - Applies to the UK branch of an overseas SMCR firm.
+
+- **Terminology Adjustments for Overseas SMCR Firms:**
+  - "Firm" is treated as "branch."
+  - "Governing body" refers to the branch’s governing body.
+  - "Group" includes the rest of the firm.
+  - "Chief executive" refers to the branch manager or equivalent.
+
+## SYSC 26.2 Purpose
+
+- **Purpose of this chapter:**
+  - Ensure SMF managers are responsible and accountable for all firm activities.
+  - Responsibilities are allocated systematically and explicitly.
+  - Covers all firm activities, business areas, and management functions without gaps.
+
+- **Allocation of Responsibilities:**
+  - Not just about formal responsibility; aims to avoid implicit or default allocations.
+  - Does not replace chief executive responsibilities but ensures performance management.
+
+## SYSC 26.3 Main rules
+
+- **UK SMCR Firms:**
+  - Must ensure SMF managers have overall responsibility for all activities, business areas, and management functions.
+
+- **Overseas SMCR Firms:**
+  - SMF managers must have overall responsibility for branch activities under the branch’s governing body.
+  - Must ensure responsibility for activities not covered by the branch’s governing body.
+  - SMF managers must be directly involved in management.
+
+- **Responsibility Definitions:**
+  - UK SMCR firms: "Overall responsibility."
+  - Overseas SMCR firms: "Local responsibility."
+
+- **Clarity in Responsibility Allocation:**
+  - Allocations must clearly indicate who is responsible for what.
+
+## SYSC 26.4 Exclusions
+
+### Exclusions where other requirements apply
+
+- **PRA-authorised Persons:**
+  - Not required to ensure SMF managers have responsibility for activities covered by FCA-prescribed senior management responsibilities.
+
+- **PRA-prescribed Responsibilities:**
+  - Not required for activities managed by certain PRA-designated senior management functions.
+
+### Exclusion of the governing body and non-executive directors
+
+- **Governing Body:**
+  - No requirement to allocate responsibility for running the governing body.
+
+- **Non-executive Directors:**
+  - Oversight does not equate to responsibility under this chapter.
+
+### Exclusion where the 12-week rule applies
+
+- **Temporary Cover:**
+  - Responsibilities can be allocated to non-SMF managers during temporary cover under the 12-week rule.
+
+### Exclusion of the legal function
+
+- **Legal Function:**
+  - Responsibility can be allocated to non-SMF managers.
+  - Includes legal advice, representation, and certain legal activities.
+
+### Exclusion of non-financial services activities
+
+- **Enhanced Scope SMCR Firms:**
+  - Only need to allocate responsibility for activities related to SMCR financial activities.
+
+### Exclusion for AIFMD
+
+- **Full-scope UK AIFM:**
+  - May exclude managing an AIF from SMCR financial activities.
+
+## SYSC 26.5 Guidance on territorial scope
+
+- **Overall Responsibilities:**
+  - Should cover activities inside and outside the UK.
+
+- **Overseas SMCR Firms:**
+  - Limited to UK branch activities.
+
+- **Transaction Responsibility:**
+  - Should not exclude transactions involving the branch even if other elements occur outside the UK.
+
+## SYSC 26.6 Meaning of local and overall responsibility: General
+
+### UK firms
+
+- **Overall Responsibility:**
+  - Depends on whether the function is under the governing body’s management.
+
+- **Governing Body’s Role:**
+  - Ultimate responsibility for managing the firm.
+
+### Branches of overseas firms
+
+- **Branch Management:**
+  - Responsibility allocation considers whether activities are under the branch’s governing body.
+
+## SYSC 26.7 Meaning of local and overall responsibility: Reporting to the governing body
+
+- **Responsibility Definition:**
+  - Ultimate responsibility for managing or supervising a function.
+  - Primary responsibility for briefing and reporting to the governing body.
+
+- **Reporting Structure:**
+  - Responsibility may lie with the most senior employee or officer managing the function.
+
+## SYSC 26.8 Meaning of local and overall responsibility: Not reporting to the governing body
+
+### Branches
+
+- **Local Responsibility:**
+  - Can be held by someone outside the branch’s management structure.
+
+- **Strategy vs. Implementation:**
+  - Responsibility should be with those implementing strategy, not just setting it.
+
+### UK firms
+
+- **Overall Responsibility:**
+  - Most senior employee or officer responsible for managing or supervising the function.
+
+## SYSC 26.9 Who functions should be allocated to
+
+### Seniority
+
+- **Expectations:**
+  - Responsible individuals should be senior, credible, and have sufficient resources and authority.
+
+- **Governing Body Membership:**
+  - Not unusual for responsible individuals to not be part of the governing body.
+
+### Responsibility Allocation
+
+- **Avoid Overloading:**
+  - Avoid assigning too many responsibilities to one person.
+
+- **Complex Firms:**
+  - Responsibility may be assigned to management below the governing body.
+
+### Dividing and sharing management functions
+
+- **Responsibility Sharing:**
+  - Generally not shared unless necessary.
+
+## SYSC 26.10 Group management arrangements and outsourcing
+
+- **Group Employees:**
+  - Firms can rely on group employees for functions, but must ensure appropriate SMF manager oversight.
+
+- **Outsourcing:**
+  - Similar rules apply to outsourced functions.
+
+## SYSC 26.11 Link between this chapter and other parts of the senior managers regime
+
+### Designated Senior Management Functions
+
+- **Approval Requirement:**
+  - Overall or local responsibility requires SMF manager approval.
+
+### SYSC 25 Annex 1G
+
+- **Management Responsibilities Map:**
+  - SYSC 25 Annex 1G can help ensure comprehensive responsibility allocation.
+
+### Internal Operations
+
+- **Chief Operations Function:**
+  - Responsibility should be allocated among SMF managers if no chief operations function exists.
+
+---
+
+### Definitions
+
+- **SMCR Banking Firm:** A firm subject to the Senior Managers and Certification Regime in the banking sector.
+- **SMCR Insurance Firm:** A firm subject to the Senior Managers and Certification Regime in the insurance sector.
+- **Solvency II Firm:** An insurance firm subject to the Solvency II Directive.
+- **Enhanced Scope SMCR Firm:** A firm with extended obligations under the Senior Managers and Certification Regime.
+- **EEA SMCR Firm:** A firm from the European Economic Area subject to the Senior Managers and Certification Regime.
+- **SMF Manager:** A Senior Management Function manager responsible for specific areas within a firm.
+- **PRA-authorised Person:** A person or firm authorised by the Prudential Regulation Authority.
+- **AIFM:** Alternative Investment Fund Manager, responsible for managing alternative investment funds.
+
+## SYSC 27 Senior managers and certification regime: Certification regime
+
+## SYSC 27.1 Application and Purpose
+
+### Application
+
+- **Who it applies to:**
+  - <mark>This chapter applies to an SMCR firm, except those excluded by SYSC 27.6, below</mark>.
+  - <mark>It is also relevant to employees of SMCR firms performing functions specified as FCA certification functions</mark>.
+
+### Purpose
+
+- **What it's about:**
+  - This chapter is about the FCA’s certification regime.
+  - Under this regime, a firm should <mark>ensure that its employees only perform an FCA certification function if they have a certificate issued by that firm to perform that function</mark>.
+  - The purpose is to specify ‘FCA certification functions’ and provide guidance on the FCA’s certification regime.
+
+### Note - ChatGPT Explainer
+
+In the FCA’s **SYSC 27** rules under the **Senior Managers and Certification Regime (SM&CR)**, the term **"certificate"** refers to a document issued by a firm to individuals performing **certification functions** to confirm that they are **fit and proper** to carry out their role.
+
+### **Who Issues the Certificate?**
+The **firm itself** (i.e., the employer) is responsible for issuing the certificate—not the FCA. The firm must assess the individual's **fitness and propriety** at least **annually** before issuing or renewing the certificate.
+
+### **What Does the Certificate Look Like?**
+There is no **prescribed format** from the FCA, but the certificate must include:
+1. **The name of the individual** being certified.
+2. **The functions** they are certified to perform.
+3. **A statement that the firm is satisfied** that the individual is fit and proper to carry out those functions.
+
+### **Key Points:**
+- It is an internal certification, not an FCA-issued license.
+- The firm must ensure employees meet **honesty, integrity, competence, and financial soundness** standards.
+- If a firm decides an employee is **not fit and proper**, they must not issue or renew the certificate.
+
+## SYSC 27.2 Requirements of the Certification Regime
+
+### General
+
+- **Overview:**
+  - Most requirements of the certification regime are in the Act. This section summarizes and provides guidance on them.
+  - SYSC TP 5, SYSC TP 7, and SYSC TP 8 contain transitional material about the certification regime, including staggered implementation dates.
+
+### Basic Requirements
+
+- **Firm's responsibility:**
+  - A firm <mark>must ensure no employee performs an FCA certification function without a valid certificate issued by the firm</mark>.
+
+### Fitness to Act
+
+- **Issuing certificates:**
+  - A firm <mark>may issue a certificate only if satisfied that the person is fit and proper to perform the function</mark>.
+  - In assessing fitness, a firm must consider qualifications, training, competence, and personal characteristics.
+  - FIT 1.3 provides guidance on assessing fitness.
+  - SYSC 22 deals with obtaining references from previous employers.
+
+### Issuing and Renewing Certificates
+
+- **Certificate details:**
+  - A certificate <mark>must state the person is fit and proper and outline their role</mark>.
+  - Certificates are <mark>valid for 12 months but can be issued for less time if deemed necessary</mark>.
+  - If a firm decides not to issue a certificate, it <mark>must notify the person in writing with reasons and proposed steps</mark>.
+  - Firms <mark>must maintain records of all employees with valid certificates</mark>.
+  - Multiple certificates are not needed for employees performing several functions; a single certificate can cover multiple roles.
+
+### Territorial Scope
+
+- **Where it applies:**
+  - A function is an FCA certification function for a UK SMCR firm if performed in the UK or dealing with UK clients from overseas.
+  - For overseas SMCR firms, it applies if performed in the UK.
+  - There are no territorial limits for material risk takers in UK SMCR firms.
+
+## SYSC 27.4 General Material About the Scope of the Certification Regime
+
+### Employees
+
+- **Who it covers:**
+  - <mark>The regime applies to employees, including those providing services under firm arrangements and subject to firm control</mark>.
+  - It may apply to those working for appointed representatives if conditions are met.
+
+### Effect of PRA Requirements
+
+- **Overlap with PRA:**
+  - A function remains an FCA certification function even if it is also a PRA certification function.
+
+## SYSC 27.5 Exclusions for Emergency and Temporary Appointments
+
+### Emergency Appointments
+
+- **Temporary cover:**
+  - Temporary appointments for unforeseen absences under <mark>four weeks are not FCA certification functions, except for functions requiring qualifications</mark>.
+
+### Temporary UK Role (30-Day Rule)
+
+- **Short-term roles:**
+  - <mark>Individuals based outside the UK can perform functions in the UK for up to 30 days in a 12-month period, with supervision</mark>.
+  - This rule does not apply to certain advisory roles or material risk takers in UK SMCR firms.
+
+## SYSC 27.6 Other Exclusions
+
+### Specific Exclusions
+
+- **Who it doesn't apply to:**
+  - Excludes arrangements reserved to non-UK authorities under certain EU legislation.
+  - Does not apply to insolvency practitioners, non-executive directors, benchmark activities, or certain sole traders and internally managed AIFs.
+
+## SYSC 27.7 Specification of Functions
+
+### General Requirements
+
+- **Defining functions:**
+  - <mark>A function is an FCA certification function if it involves regulated activities and is not a controlled function</mark>.
+
+### Scope: FCA Certification Functions
+
+- **Types of functions:**
+  - <mark>Includes:</mark>
+    - CASS oversight
+    - Proprietary trading
+    - Significant management
+    - Functions requiring qualifications
+    - Managers of certification employees
+    - Material risk takers
+    - Client-dealing, and algorithmic trading.
+
+## SYSC 27.8 Definitions of the FCA Certification Functions
+
+### Specific Functions
+
+- **Details on functions:**
+  - Each function is defined with specific criteria, such as CASS oversight, proprietary trading, significant management, and others.
+  - Functions requiring qualifications and managers of certification employees are also detailed.
+
+## SYSC 27.9 Material Relating to Several FCA Certification Functions
+
+### Legal Function
+
+- **Overlap with other functions:**
+  - The legal function may overlap with significant management or material risk taker functions.
+
+## SYSC 27 Annex 1 Examples of How the Temporary UK Role Rule Works
+
+- **Examples:**
+  - Provides scenarios illustrating the application of the 30-day rule for temporary UK roles.
+
+---
+
+### Definitions
+
+- **SMCR Firm:** A firm subject to the Senior Managers and Certification Regime.
+- **FCA Certification Function:** A role requiring certification by the firm as specified by the FCA.
+- **CASS Firm:** A firm subject to the Client Assets Sourcebook.
+- **PRA:** Prudential Regulation Authority, which oversees certain financial firms.
+- **Material Risk Taker:** An employee whose role can significantly impact the firm's risk profile.
+- **Algorithmic Trading:** Trading using computer algorithms.
+- **UK SMCR Firm:** A firm based in the UK subject to the SMCR.
+- **Overseas SMCR Firm:** A firm based outside the UK subject to the SMCR.
+
+## SYSC 28 Insurance distribution: specific knowledge, ability and good repute requirements
+
+## SYSC 28.1 Minimum knowledge, ability and good repute requirements for carrying out insurance distribution activities
+
+### Application
+
+- **Who it applies to:**
+  - This chapter is relevant to firms with Part 4A permission to conduct insurance distribution activities.
+  - SYSC 28.2 (except SYSC 28.2.1R(1)) does not apply to authorised professional firms concerning their non-mainstream regulated activities.
+
+- **Relevant employees:**
+  - Employees or others directly involved in the firm's insurance distribution activities.
+  - Those in the management structure responsible for these activities.
+  - Individuals supervising relevant employees.
+
+- **Definition of 'employee':**
+  - Not limited to individuals under a contract of employment.
+  - Includes any person whose services are provided to the firm through an arrangement with a third party.
+  - Also includes appointed representatives and their employees.
+
+- **Related rules:**
+  - SYSC 28.2 (knowledge and ability), SYSC 28.4 (record-keeping), and SYSC 28.5 (other requirements) relate to:
+    - SYSC 3.1.6R
+    - SYSC 5.1.1R
+    - SYSC 3.2.20R, SYSC 9.1.1R, and SYSC 9.1.1AR
+    - TC 4.2 (Specified requirements for firms carrying on insurance distribution activities)
+    - Article 22 of the AIFMD level 2 regulation
+
+## SYSC 28.2 Knowledge and ability requirements
+
+### Knowledge and ability requirements
+
+- **General requirements:**
+  - Firms must ensure that they and each relevant employee have the appropriate knowledge and ability to perform their duties adequately.
+  - Compliance with continued professional training and development is required to maintain performance levels.
+  - Each relevant employee must complete at least 15 hours of professional training or development annually.
+  - Training should consider the employee's role, the type of distribution, and the nature of products sold.
+
+- **Training and development:**
+  - Can include various learning opportunities such as courses, e-learning, and mentoring.
+
+- **Professional knowledge and competence:**
+  - For general insurance contracts, employees must have knowledge of policy terms, applicable laws, claims and complaints handling, customer needs assessment, the insurance market, business ethics, and financial competence.
+  - For insurance-based investment products, knowledge should cover product terms, investment options, financial risks, applicable laws, market knowledge, complaints handling, customer needs assessment, conflict of interest management, business ethics, and financial competence.
+  - For long-term insurance contracts, knowledge should include policy terms, pension systems, applicable laws, market knowledge, complaints handling, customer needs assessment, conflict of interest management, business ethics, and financial competence.
+
+## SYSC 28.3 Good repute
+
+### Good repute requirements
+
+- **Application:**
+  - This section does not apply to connected travel insurance intermediaries.
+
+- **General requirements:**
+  - Firms must ensure that management and staff involved in insurance distribution are of good repute.
+
+- **Specific requirements:**
+  - IDD ancillary insurance intermediaries must ensure that staff responsible for ancillary insurance distribution are of good repute.
+
+- **Assessing repute:**
+  - Firms must ensure individuals have a clean criminal record and have not been declared bankrupt unless rehabilitated under national law.
+  - Rehabilitation in the UK includes spent convictions under the Rehabilitation of Offenders Act 1974 and discharged bankruptcies.
+  - Consideration should be given to offences related to dishonesty, fraud, financial crime, and relevant legislation.
+
+- **Systems and controls:**
+  - Firms should have systems to assess the suitability and honesty of individuals acting for them.
+
+## SYSC 28.4 Record-keeping requirements
+
+### Record-keeping requirements
+
+- **General requirements:**
+  - Firms must establish and maintain records to demonstrate compliance with this chapter.
+  - They must be able to provide the FCA with the name of the person responsible for record-keeping.
+
+- **Training records:**
+  - Firms must keep up-to-date records of each relevant employee's training or development for at least 3 years after they stop the activity.
+  - They must be able to provide these records to the FCA on request.
+
+- **Employee access:**
+  - Firms must not prevent relevant employees from obtaining copies of their records.
+
+## SYSC 28.5 Other requirements to consider
+
+- **Additional considerations:**
+  - Firms may need to comply with the Training and Competence sourcebook (TC).
+  - Article 22 of the AIFMD level 2 regulation and competent employees rules (SYSC 3.1.6R and SYSC 5.1.1R) set high-level competence requirements.
+  - These rules may impose additional requirements beyond those in SYSC 28.
+
+---
+
+### Definitions
+
+- **Firm:** A business entity with Part 4A permission to conduct insurance distribution activities.
+- **Relevant employees:** Employees or other persons involved in or responsible for insurance distribution activities.
+- **IDD ancillary insurance intermediary:** A firm involved in ancillary insurance distribution activities.
+- **Connected travel insurance intermediary:** A firm involved in travel insurance distribution not covered by certain good repute requirements.
+
+## SYSC 28A Regulated funeral plan activities: good repute requirements
+
+## SYSC 28A.1 Application
+
+- This chapter applies to a firm concerning regulated funeral plan activities.
+
+## SYSC 28A.2 Good repute
+
+- **Good repute requirements**
+
+  - A firm must ensure that all individuals in its management structure and any staff directly involved in regulated funeral plan activities are of good repute.
+
+  - This includes, but is not limited to, individuals who are:
+    - Directly involved in regulated funeral plan activities.
+    - Within the management structure responsible for these activities.
+    - Within the management structure responsible for any staff directly involved in these activities.
+
+  - When considering a person’s repute, a firm must ensure at a minimum that the person:
+    - Has a clean criminal record or equivalent concerning serious criminal offences related to property or financial activities.
+    - Has not been declared bankrupt, unless rehabilitated according to national law.
+
+  - In the UK, a person is considered rehabilitated if:
+    - Their conviction for a serious criminal offence is ‘spent’ under the Rehabilitation of Offenders Act 1974.
+    - Their bankruptcy has been discharged.
+
+  - References to “serious criminal offences” are not limited to offences under UK law.
+
+  - A firm should particularly consider offences involving dishonesty, fraud, financial crime, or other offences related to banking, financial services, companies, insurance, and consumer protection.
+
+  - A firm’s systems and controls should enable it to assess the suitability of anyone acting for it, including evaluating an individual’s honesty.
+
+## SYSC 28A.3 Record keeping requirements
+
+- **Record keeping requirements**
+
+  - A firm must:
+    - Establish, maintain, and keep appropriate records to demonstrate compliance with this chapter.
+    - Be able to provide the FCA, upon request, with the name of the person responsible for record-keeping.
+
+  - A firm must not prevent any person from obtaining a copy of records related to them maintained by the firm for compliance purposes.
+
+  - The rules specified relate to the requirements in SYSC 5.1.1R, SYSC 9.1.1R, and SYSC 10.1.6R.
+
+---
+
+### Definitions
+
+- **Firm**: A business entity engaged in regulated funeral plan activities.
+- **FCA**: Financial Conduct Authority, the regulatory body overseeing financial services in the UK.
+
+# COCON Code of Conduct
+
+## COCON 1 Application and purpose
+
+## COCON 1.1 Application
+
+- **General Application**
+  - The FCA can make rules about the conduct of certain people working in firms under section 64A of the Act.
+
+- **To Whom Does It Apply?**
+  - COCON applies to the individuals listed in the table in COCON 1.1.2R.
+
+- **Table: <mark>To Whom Does COCON Apply?</mark>**
+  - **SMF Manager**: Applies to individuals in senior management functions.
+  - **Employee of an SMCR Firm**: 
+    - Performing a senior management function without approval but required to be approved.
+    - Performing a senior management function under the 12-week rule.
+  - **Certification Employee**: Applies even if not notified of COCON.
+  - **Employee Performing FCA Certification Function**: Applies even under emergency or temporary roles.
+  - **Other Employees**: Applies to employees not covered by other categories, except those in specific roles like receptionists, security guards, etc.
+  - **Board Director**: Applies to directors of UK SMCR firms.
+
+- **Special Cases**
+  - For Swiss general insurers, references to parts of the PRA Rulebook for ‘Solvency II firms’ should be read as references to parts applying to large non-directive insurers.
+
+- **Conduct Rules Application**
+  - Rules 1 to 6 in COCON 2.1 apply to all conduct rules staff.
+  - Rules SC1 to SC4 in COCON 2.2 apply to senior conduct rules staff, with some exceptions.
+
+- **Guidance**
+  - Guidance in COCON 2.3 applies to SMCR firms.
+  - Non-executive directors acting as such are not performing an FCA certification function.
+
+- **Scope of Conduct Rules**
+  - Rule 6 in COCON 2.1 does not apply unless the firm's activities are within the scope of PRIN 3.1 and Principle 12.
+
+- **Additional Restrictions**
+  - Restrictions in COCON 1.1.7AR to COCON 1.1.7ER are cumulative with those in COCON 1.1.6R to COCON 1.1.7R.
+
+- **Conduct of Approved Persons**
+  - COCON applies to approved persons in relation to their functions for the firm that approved them.
+
+- **Conduct of Board Directors**
+  - Applies to board directors not approved persons in relation to their functions for the firm.
+
+- **Conduct of Non-Approved Persons**
+  - Applies to non-approved persons in relation to their functions for their employer.
+
+- **COCON Firm Activities**
+  - Defines "COCON firm activities" and who is considered conduct rules staff.
+
+- **Application to SMCR Firms**
+  - <mark>Further restrictions apply to SMCR firms other than banking firms, focusing on financial activities and potential negative effects on the financial system</mark>.
+
+- **Application to Benchmark Administrators**
+  - Further restrictions apply to pure benchmark SMCR firms and Annex II benchmark administrators.
+
+- **Territorial Scope**
+  - COCON applies to conduct rules staff wherever performed, with specific rules for material risk takers and other staff.
+
+- **Interpretation of Terms**
+  - Clarifies terms like "dealing with" and "client of the firm in the United Kingdom."
+
+- **EU Measures**
+  - COCON does not apply if it conflicts with EU measures effective before IP completion day.
+
+- **Purpose**
+  - The chapter sets out rules for conduct rules staff and provides guidance for firms.
+
+## COCON 1.2 Investments
+
+- **Definition of Investments**
+  - The term 'investments' is broad and includes rights under a contract of insurance.
+
+- **Guidance on Risks**
+  - Guidance on investment risks includes risks related to insurance contracts.
+
+## COCON 1 Annex 1 Guidance on the Role and Responsibilities of Non-Executive Directors of SMCR Firms
+
+- **Introduction**
+  - <mark>Applies to non-executive directors (NEDs) of an SMCR firm</mark>.
+
+- **Roles of a NED**
+  - Includes chair of the board, chair of the nomination committee, chair of other committees, and general NED role.
+
+- **General Role of a NED**
+  - Oversight and challenge, strategy development, attending meetings, and informed decision-making.
+
+- **Key Responsibilities**
+  - Scrutinizing management performance, monitoring reporting, ensuring financial integrity, and involvement in succession planning.
+
+- **Role as Chair**
+  - Ensuring meetings are frequent, fostering inclusive discussion, and reporting to the main board.
+
+- **Nomination Committee**
+  - Ensuring compliance with SYSC 4.3A and other relevant requirements.
+
+- **General Approach**
+  - NEDs do not manage the firm's business like executive directors and have limited responsibilities.
+
+- **Standard of Care**
+  - Expected to exercise care, skill, and diligence as a reasonably diligent person with relevant knowledge and experience.
+
+---
+
+### Definitions
+
+- **SMF Manager**: Senior Management Function manager.
+- **SMCR Firm**: Senior Managers and Certification Regime firm.
+- **Certification Employee**: Employee performing a role requiring certification.
+- **FCA Certification Function**: Functions requiring certification by the Financial Conduct Authority.
+- **Conduct Rules Staff**: Staff subject to conduct rules.
+- **Non-Executive Director (NED)**: A director not involved in the day-to-day management of the firm.
+- **Material Risk Taker**: Employee whose role can materially impact the firm's risk profile.
+- **Pure Benchmark SMCR Firm**: Firm focused on administering benchmarks.
+- **Annex II Benchmark Administrator**: Administrator of benchmarks subject to Annex II of the benchmarks regulation.
+
+## COCON 2 Individual conduct rules
+
+## COCON 2.1 Individual Conduct Rules
+
+- <mark>**Rule 1**: You must act with integrity.</mark>
+
+- <mark>**Rule 2**: You must act with due skill, care, and diligence.</mark>
+
+- <mark>**Rule 3**: You must be open and cooperative with the FCA, the PRA, and other regulators.</mark>
+
+- <mark>**Rule 4**: You must pay due regard to the interests of customers and treat them fairly.</mark>
+
+- <mark>**Rule 5**: You must observe proper standards of market conduct.</mark>
+
+- <mark>**Rule 6**: You must act to deliver good outcomes for retail customers. (See COCON 2.4 for more details)</mark>
+
+## COCON 2.2 Senior Manager Conduct Rules
+
+- **SC1**: <mark>You must take reasonable steps to ensure that the business of the firm for which you are responsible is controlled effectively.</mark>
+
+- **SC2**: <mark>You must take reasonable steps to ensure that the business of the firm for which you are responsible complies with the relevant requirements and standards of the regulatory system.</mark>
+
+- **SC3**: <mark>You must take reasonable steps to ensure that any delegation of your responsibilities is to an appropriate person and that you oversee the discharge of the delegated responsibility effectively.</mark>
+
+- **SC4**: <mark>You must disclose appropriately any information of which the FCA or PRA would reasonably expect notice.</mark>
+
+## COCON 2.3 Firms: Training and Breaches
+
+- An SMCR firm must:
+  - <mark>Ensure that all persons subject to the rules in COCON are notified of the rules that apply to them.</mark>
+  - <mark>Take all reasonable steps to ensure that those persons understand how the rules in COCON apply to them.</mark>
+
+- Steps for ensuring understanding include providing suitable training:
+  - <mark>Training should ensure awareness and broad understanding of all COCON rules.</mark>
+  - <mark>Training should provide a deeper understanding of the practical application of specific rules relevant to their work.</mark>
+  - For example:
+    - Individuals trading in markets may need additional training on Rule 5.
+    - <mark>Individuals dealing directly with customers may need additional training on Rule 4.</mark>
+
+- There are rules and guidance in SUP 15.3 and SUP 15.11 regarding reporting COCON breaches to the FCA.
+
+## COCON 2.4 The Consumer Duty
+
+### Application
+
+- This section applies to Rule 6 (You must act to deliver good outcomes for retail customers).
+
+- "You" refers to a member of a firm’s conduct rules staff.
+
+### Meaning of Retail Customer
+
+- A retail customer is defined for Rule 6 purposes as a retail customer of the firm for PRIN purposes.
+
+- A person can be a retail customer even without a direct client relationship with the firm.
+
+### Obligations: Introduction
+
+- COCON 2.4.6R to COCON 2.4.8R outline what is required by Rule 6.
+
+- References to obligations under Rule 6 refer to requirements in COCON 2.4.6R to COCON 2.4.8R.
+
+### Obligations: Rules
+
+- **COCON 2.4.6**: You must act in good faith towards retail customers, characterized by honesty, fair and open dealing, and meeting reasonable expectations.
+
+- **COCON 2.4.7**: You must avoid causing foreseeable harm to retail customers.
+
+- **COCON 2.4.8**: You must enable and support retail customers to pursue their financial objectives.
+
+### Reasonable Application of Individual Conduct Rule 6
+
+- Obligations in Rule 6 should be interpreted as what a prudent person subject to COCON would reasonably be expected to do:
+  - Carrying on the same activity in relation to the same product.
+  - Considering the needs and characteristics of retail customers in the target market or individual customers as needed.
+
+### References to Principle 12
+
+- Any reference to Principle 12 in COCON should be read in line with PRIN 2A.1.1R, PRIN 2A.1.2R, and PRIN 2A.2.26R.
+
+---
+
+### Definitions
+
+- **FCA**: Financial Conduct Authority
+- **PRA**: Prudential Regulation Authority
+- **SMCR firm**: A firm subject to the Senior Managers and Certification Regime
+- **Conduct rules staff**: Employees of a firm who are subject to the conduct rules
+- **PRIN**: Principles for Businesses
+- **Retail customer**: A customer of a firm as defined for the purposes of PRIN, which may include individuals without a direct client relationship with the firm.
+
+## COCON 3 General factors for assessing compliance
+
+## COCON 3.1 General factors for assessing compliance
+
+- **Examples of Conduct**
+
+  - The examples of conduct in this chapter that illustrate breaches of COCON rules are not exhaustive. They do not cover all possible conduct that might break the rules.
+
+- **Assessing Compliance or Breach**
+
+  - When evaluating compliance with or a breach of a COCON rule, the FCA will consider the context of the conduct, including:
+    - The specific circumstances of the case.
+    - The characteristics of the function performed by the individual.
+    - The expected behavior in that function.
+
+- **Personal Culpability**
+
+  - A person is only in breach of COCON rules if they are personally responsible. Personal culpability occurs when:
+    - <mark>The conduct was intentional.</mark>
+    - <mark>The conduct fell below what would be reasonable in the circumstances.</mark>
+
+- **Factors for Compliance Determination**
+
+  - When determining if a person's conduct complies with COCON rules, the FCA will consider:
+    - If the conduct relates to activities covered by other Handbook provisions.
+    - If the conduct aligns with the regulatory system's requirements and standards relevant to the person's firm.
+
+- **Senior Conduct Rules Staff Member Compliance**
+
+  - In assessing if a senior conduct rules staff member complies with rules SC1 to SC4, the FCA will consider:
+    - Whether they used reasonable care with the information available.
+    - Whether they reached a reasonable conclusion to act upon.
+    - The nature, scale, and complexity of the firm's business.
+    - Their role and responsibility as outlined in their statement of responsibility.
+    - Their knowledge of any regulatory concerns related to their role.
+
+- **Reasonableness of Conduct**
+
+  - When assessing if a senior conduct rules staff member may have breached a COCON rule, the business's nature, scale, and complexity, and the individual's role and responsibility will be relevant. Smaller and less complex businesses require less detailed systems of control.
+
+- **UK Corporate Governance Code**
+
+  - UK domestic firms listed in the equity shares (commercial companies) or closed-ended investment funds categories must follow the UK Corporate Governance Code. This includes internal control provisions explained in the Financial Reporting Council's publication on risk management and internal control. Firms in these categories must adhere to this code and COCON rules. The FCA will give credit if a senior conduct rules staff member follows the UK Corporate Governance Code and related guidance.
+
+---
+
+### Definitions
+
+- **COCON**: Code of Conduct Sourcebook, part of the FCA Handbook, outlining conduct rules for financial services staff.
+- **FCA**: Financial Conduct Authority, the regulatory body for financial services in the UK.
+- **Senior Conduct Rules Staff Member**: Individuals in senior roles subject to specific conduct rules under COCON.
+- **UK Corporate Governance Code**: A set of principles of good corporate governance for UK listed companies.
+
+## COCON 4 Specific guidance on conduct rules
+
