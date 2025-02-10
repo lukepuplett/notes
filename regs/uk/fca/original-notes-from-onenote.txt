@@ -1,0 +1,1012 @@
+The following are my notes from reading the FCA Handbook
+
+Glossary of terms:
+
+https://www.handbook.fca.org.uk/handbook/glossary
+
+My notes on types of firm
+
+A MiFID optional exemption firm, is exempt from full MiFID and ChatGPT says that this may include "Receiving and transmitting orders without holding client funds or securities". However, ZW may be seen as holding securities, unless perhaps this falls under the smart contract operator which is decentralised or a DAO or DUNA. Exemption may be provided if no retail customers are involved, only pros.
+
+A credit institution accepts deposits, grants loans and credit for its own account, so e.g. banks and building societies.
+
+**Note** -  "Further, MiCA doesn’t cover crypto-assets (or crypto-asset services) that are deemed to be securities in order to prevent a duplication of frameworks. These services around tokenized securities are covered by MiFID and for those who want to trial securities trading and settlement on blockchains, the EU adopted a “DLT pilot regime” that kicked-off officially in March 2023."
+
+**Note** -  There's this "prudential context" which seems to be a broader responsibility to the UK and the industry.
+
+The actual principles, with the principles part known as PRIN:
+
+| Principle | Title | Description |
+|-----------|--------|-------------|
+| 1 | Integrity | A firm must conduct its business with integrity. |
+| 2 | Skill, care and diligence | A firm must conduct its business with due skill, care and diligence. |
+| 3 | Management and control | A firm must take reasonable care to organise and control its affairs responsibly and effectively, with adequate risk management systems. |
+| 4 | Financial prudence | A firm must maintain adequate financial resources. |
+| 5 | Market conduct | A firm must observe proper standards of market conduct. |
+| 6 | Customers' interests | A firm must pay due regard to the interests of its customers and treat them fairly. |
+| 7 | Communications with clients | A firm must pay due regard to the information needs of its clients, and communicate information to them in a way which is clear, fair and not misleading. |
+| 8 | Conflicts of interest | A firm must manage conflicts of interest fairly, both between itself and its customers and between a customer and another client. |
+| 9 | Customers: relationships of trust | A firm must take reasonable care to ensure the suitability of its advice and discretionary decisions for any customer who is entitled to rely upon its judgment. |
+| 10 | Clients' assets | A firm must arrange adequate protection for clients' assets when it is responsible for them. |
+| 11 | Relations with regulators | A firm must deal with its regulators in an open and cooperative way, and must disclose to the FCA appropriately anything relating to the firm of which that regulator would reasonably expect notice. |
+| 12 | Consumer Duty | A firm must act to deliver good outcomes for retail customers. |
+	
+	
+ - A firm is generally a regulated firm.
+ - A person can be a human or a company entity.
+ - The Principles are straight forward and reasonable.
+
+https://www.handbook.fca.org.uk/handbook/PRIN/2/1.html#D3
+
+ - 'fit and proper standards' are specified separately for PSR and EMR firms.
+ - Other businesses in the firm's group have an impact on adequacy of risk/controls/conduct.
+ - Conduct applies to world-wide activities, though depends on standards expected in location/market, duties to its regulator.
+ - Breaching a principle brings about liability to disciplinary sanctions.
+ - Onus on FCA to find fault, depending on the principle.
+ - A client can be treated as eligible counterparty which means they are sophisticated and can look after themselves.
+ - A retail customer can be a prospective customer, obviously.
+
+## PRIN 2A
+	
+PRIN 2A seems focused on principle 12, Consumer Duty and retail customers.
+	
+ - There's separate guidance on expectations for Consumer Duty: https://www.fca.org.uk/publication/finalised-guidance/fg22-5.pdf
+ - If principles 6 and 7 apply, and are breached, likely 12 is breached, but if 6, 7 are in accordance it doesn't mean 12 is in accordance by default.
+ - "Acting in good faith is a standard of conduct characterised by honesty, fair and open dealing and acting consistently with the reasonable expectations of retail customers."
+ - "PRIN 2A.2.5 does not apply where the harm identified was caused by risks inherent in a product, provided the firm reasonably believed that retail customers or the relevant retail customer (as the context requires) understood and accepted those risks.", presumably this is for trading systems etc.
+ - "ensuring all aspects of the design, terms, marketing, sale of and support for its products avoid causing foreseeable harm;".
+ - Product may include a mortgage with inherent risks.
+	
+	Skipped the rest of 2A in search of more relevant stuff.
+
+## PRIN 3
+	
+PRIN 3 seems to be about to whom the principles apply.
+
+ - Applies to all firms except emissions auctioneers.
+ - Also applies to an electronic money institution and an authorised payment institution, a small payment institution, or a registered account information service provider - presumably these are not firms else why enumerate them especially?
+ - Principle 7 applies to a registered person communicating a financial promotion for crypto assets.
+ - I think  3.1.8 it says the Payments Services Directive, Consumer Credit Directive and Electronic Money Directive have priority over the principles.
+ - Bunch of stuff to do with Brexit transition.
+ - Quite repetitive/obvious.
+ - PRIN 3.3 Where? 
+ - Principles 1, 2 and 3, in a prudential context, applies wherever you're doing business but there's some legalese verbiage about wider scopes and onshore regulations.
+ - Principle 4, everywhere active.
+ - It's repetitive and obvious.
+ - PRIN 3.4 General
+ - Mentions principle 7 applies in full to MiFID.
+ - Mentions treating clients as eligible counterparties again.
+ - Contravention of rules in PRIN does not give right of action to a private person, section138D (shit ton of legalese to define a private person).
+ - Principle 11 refers to regulators, which means any of them in the world.
+
+## PRIN 4.1
+
+PRIN 4.1 appears to be about MiFID businesses, which is what we care about. It's about how the EU Law takes precedent over FCA in certain circumstances for UK MiFID businesses (the UK's copy pasta of MiFID II).
+
+ - Confusing and nebulous.
+
+ - "Certain requirements" from MiFID don't apply for eligible counterparty business and/or transactions under rules of multilateral trading facility, and/or transactions concluded on a regulated market.
+
+ - Above is for principles 1, 2, 6, 9 and 12.
+
+Claude explains it like so:
+
+
+Let me clarify - looking at PRIN 4.1.4(3), it's stating that Principles 3, 4, 5, 7, 8, 10 and 11 are "not limited in this way" - meaning these Principles are not affected by the EU supremacy rule discussed in PRIN 3.1.6 R.
+
+To put it another way:
+
+ - These Principles (3, 4, 5, 7, 8, 10 and 11) aren't subject to the MiFID-related disapplications
+ - They apply in full, regardless of whether there might be conflicting EU measures
+ - This is in contrast to Principles 1, 2, 6, 9, 12 which can be disapplied where they conflict with EU measures
+
+So it's talking about the rule of EU supremacy - these seven Principles are exempt from having to give way to EU rules, unlike the other Principles which must yield where there's a conflict.
+
+## PRIN TP 1 Transitional Provisions
+
+Section is a table of situational carve-outs for what I assume is Brexit. Each has a time span.
+
+## PRIN Sch 1 Record Keeping Requirements - None
+
+## PRIN Sch 2 Notification Requirements
+
+Very short section, a table, on principle 11 which simply lists "Anything relating to the firm of which the appropriate regulator would reasonably expect notice"
+
+## PRIN Sch 3 Fees and Other Required Payments - None
+
+## PRIN Sch 4 Powers Exercised - Two deleted sections, not visible.
+
+## PRIN Sch 5 Rights of Action for Damages
+
+Bizarre section that really just says the FCA has removed the right of action for all rules in PRIN.
+
+## PRIN Sch 6 Rules That Can Be Waived
+
+FCA can waive all its rules other than those mase under sections 137O, 247, 248, 261I, 261J.
+
+
+# SYSC
+
+SYSC is the Systems and Controls, but the handbook neglects to actually explain this.
+
+## SYSC 1.1A Application
+
+Summary of application (details found in each chapter).
+
+ - The first part lists chapter numbers applicable to various types of firm, though only specifies them for Insurer, UK ISPV, Managing agent, Society, Any other SMCR firm and "Every other firm".
+
+ - Every over firm having the following chapters: 4 - 12, 15A, 18, 19D, 19F, 19G, 21, 22, 28, 28A.
+
+ - Next section is a small table for firms that are not PRA-authorised.
+
+ - Chapter 15A applies to electronic money institution, payment institution, registered account information service provider, and also UK RIE.
+
+ - Provisions in SYSC should be read in conjunction with GEN 2.2.23 R to GEN 2.2.25 G, in particular:
+
+   - Both FCA and PRA rules may be applied to PRA-authorised persons.
+
+   - For Solvency II firms there's a note about a bunch of chapters not being inconsistent with PRA rules for Solvency II Directive, or the Solvency II Regulation or EIOPA guidelines from 2015.
+
+	This 1.1A.2 is about Solvency II firms.
+
+## SYSC 1.2 Purpose
+
+Taken verbatim because it's a rare readable part:
+
+(1) 
+to encourage firms' directors and senior managers to take appropriate practical responsibility for their firms' arrangements on matters likely to be of interest to the FCA because they impinge on the FCA’s functions under the Act;
+
+(2) 
+to increase certainty by amplifying Principle 3, under which a firm must take reasonable care to organise and control its affairs responsibly and effectively, with adequate risk management systems;
+
+(3) 
+to encourage firms to vest responsibility for effective and responsible organisation in specific directors and senior managers; and
+
+(4) 
+to create a common platform of organisational and systems and controls requirements for all firms.
+
+## SYSC 1.4 Application of SYSC 11 to 28A
+
+Interesting parts:
+
+ - SYSC 12 and 21 don't apply to auction regulation bidding (emissions trading) and some other exceptions for this type.
+
+## SYSC 1.5 Significant SYSC Firm
+
+ - Defines what makes a firm a "significant SYSC firm"
+
+ - Affects governance requirements around directorship limits, nomination committees, and risk committees
+
+ - Impacts whether a firm is considered "enhanced scope" for senior managers regime
+
+ - MIFIDPRU firms have separate requirements
+
+ - Qualification Criteria (any one of):
+   - Total assets > £530m
+   - Total liabilities > £380m
+   - Annual fees/commission income > £160m
+   - Client money held > £425m
+   - Client assets held > £7.8bn
+
+ - And rules around firms likely to meet this, and those "exiting".
+
+## SYSC 1 Annexes
+
+This section is many pages of long, long tables and is impossible to read. It is pure spaghetti so I have enlisted Google Gemini since it is too long for Claude.
+
+### Google Gemini
+
+Okay, let's break down SYSC 1 Annex 1 of the FCA Handbook. This section is crucial because it defines who the SYSC rules apply to, what activities they apply to, and where they apply. It also specifies which rules are applicable to different types of firms.
+
+#### Key Concepts
+
+ - SYSC: This refers to the Systems and Controls sourcebook of the FCA Handbook. It sets out the organizational and operational requirements for firms.
+ - Common Platform Requirements: These are a set of core requirements (SYSC 4-10) that apply to most firms, with some variations.
+ - Insurers, UK ISPVs, Managing Agents, and the Society: These are specific types of firms that are generally excluded from the common platform requirements and instead have their own specific rules (SYSC 2 and 3).
+ - MiFID: Markets in Financial Instruments Directive. This is a key piece of EU legislation that has been transposed into UK law.
+ - MiFID Org Regulation: This is a regulation that sets out detailed organizational requirements for firms subject to MiFID.
+ - AIFM: Alternative Investment Fund Manager.
+ - UCITS: Undertakings for Collective Investment in Transferable Securities.
+ - Prudential Context: This refers to the financial soundness and stability of a firm.
+ - Regulated Activities: These are activities that require authorization by the FCA.
+ - Ancillary Activities: These are activities that are related to regulated activities.
+ - Financial Promotions: These are communications that invite or induce someone to engage in investment activity.
+ - UK Domestic Firm: A firm that is incorporated in the UK.
+ - Overseas Firm: A firm that is incorporated outside the UK.
+ - Third Country Firm: A firm that is incorporated outside the UK and the EU.
+ - MIFIDPRU Investment Firm: A firm subject to the prudential requirements in the MIFIDPRU sourcebook.
+ - CRR Firm: A firm subject to the Capital Requirements Regulation.
+ - Electronic System in Relation to Lending: A system that facilitates lending.
+ - Money Laundering Regulations: UK regulations aimed at preventing money laundering and terrorist financing.
+
+#### Part 1: Application of SYSC 2 and SYSC 3
+
+ - Who: SYSC 2 and 3 primarily apply to insurers, UK ISPVs, managing agents, and the Society of Lloyd's.
+   - Sole Traders: SYSC 2 applies to sole traders only if they employ someone who needs FCA approval. SYSC 3.2.6I R does not apply to sole traders with no employees.
+   - Benchmark Activities: SYSC 2 and 3 generally do not apply to benchmark activities, except for firms that have permission to administer a specified benchmark.
+ - What: SYSC 2 and 3 apply to:
+   - Regulated activities.
+   - Dealing in investments as principal (with a specific exclusion).
+   - Ancillary activities related to designated investment business, home finance, and insurance distribution.
+   - Activities directly arising from insurance risk transformation.
+   - Financial promotions.
+   - Unregulated activities in a prudential context.
+   - The activities of other members of a firm's group.
+   - Important Exceptions: SYSC 3.3 only applies to insurance distribution activities. SYSC 3.2.6A R to SYSC 3.2.6J G do not apply to a wide range of activities, including general insurance, insurance distribution for general insurance and pure protection contracts, long-term insurance outside Solvency II, certain contracts of insurance, Lloyd's activities, home finance, reversion activity, pure reinsurers, and activities directly arising from insurance risk transformation.
+ - Where: SYSC 2 and 3 apply to activities carried on from a UK establishment. They also apply in a prudential context to UK domestic firms and overseas firms, regardless of where the activities are carried on.
+ - Actions for Damages: A breach of SYSC 2 or 3 does not give rise to a private right of action for damages.
+
+#### Part 2: Application of the Common Platform Requirements (SYSC 4 to 10)
+
+ - Who: The common platform requirements apply to all firms except insurers, UK ISPVs, managing agents, and the Society (unless otherwise specified).
+   - Sole Traders: SYSC 4.3 does not apply to sole traders without employees requiring FCA approval. SYSC 4.1.4 R and SYSC 6.3.9 R do not apply to sole traders with no employees.
+   - UCITS and AIFM Qualifiers: SYSC 4.3 does not apply to these firms.
+   - Authorised Professional Firms: Certain financial crime, conflicts of interest, and Chinese wall requirements do not apply to these firms when carrying on non-mainstream regulated activities.
+   - Firms Supervised by Professional Bodies: The financial crime requirements do not apply to firms supervised by professional bodies for money laundering purposes.
+   - Full-Scope UK AIFMs of Unauthorised AIFs: These firms have a limited application of the common platform requirements.
+   - Benchmark Activities: The common platform requirements generally do not apply to benchmark activities, except for firms that have permission to administer a specified benchmark.
+ - What: The common platform requirements apply to:
+   - Regulated activities.
+   - Dealing in investments as principal (with a specific exclusion).
+   - Ancillary activities.
+   - Ancillary services related to MiFID business.
+   - Collective portfolio management.
+   - Financial promotions.
+   - Unregulated activities in a prudential context.
+   - The activities of other members of a firm's group.
+   - MiFID Org Regulation: Certain articles of the MiFID Org Regulation apply to firms' non-MiFID business as if they were rules.
+   - Record-Keeping: Record-keeping requirements apply to ancillary activities related to designated investment business, home finance, insurance distribution, credit-related regulated activity, and regulated pensions dashboard activity.
+   - Financial Crime: The financial crime requirements do not apply to a wide range of activities, including dealing as principal, ancillary activities, general insurance, insurance distribution for general insurance and pure protection contracts, long-term insurance outside Solvency II, certain contracts of insurance, Lloyd's activities, home finance, reversion activity, meeting of repayment claims, managing dormant asset funds, and regulated funeral plan activities.
+   - Money Laundering Regulations: SYSC 6.3 only applies to firms subject to the Money Laundering Regulations.
+ - Where: The common platform requirements apply to activities carried on from a UK establishment, except for regulated claims management activities and ancillary activities, which are based on where the activity is carried on (Great Britain). They also apply in a prudential context to UK domestic firms and overseas firms, regardless of where the activities are carried on.
+ - Actions for Damages: A breach of the common platform requirements does not give rise to a private right of action for damages.
+
+#### Part 3: Tables Summarising the Application of the Common Platform Requirements
+
+This section provides tables that detail how the common platform requirements apply to different types of firms. The key categories are:
+ - Common Platform Firm: These firms have the most comprehensive application of the common platform requirements (Column A).
+ - Management Company: These firms have a slightly modified application of the common platform requirements (Column A+).
+ - Full-Scope UK AIFM of an Authorised AIF: These firms have a specific application of the common platform requirements (Column A++).
+ - MiFID Optional Exemption Firm and Third Country Firm: These firms have a modified application of the common platform requirements, with some rules being treated as guidance (Table B and C).
+ - All Other Firms: These firms have a more proportionate application of the common platform requirements, with many rules being treated as guidance (Column B).
+
+#### Key Takeaways
+
+ - Complexity: The application of SYSC is complex and depends heavily on the type of firm and the activities it undertakes.
+ - Exclusions: Insurers, UK ISPVs, managing agents, and the Society are generally excluded from the common platform requirements.
+ - Proportionality: The rules are applied proportionately, taking into account the nature, scale, and complexity of a firm's business.
+ - MiFID Influence: MiFID and the MiFID Org Regulation have a significant impact on the application of the common platform requirements.
+ - Prudential Context: The rules have a wider territorial scope when applied in a prudential context.
+ - No Private Right of Action: Breaches of SYSC rules do not give rise to a private right of action for damages.
+
+#### In Simple Terms
+
+ - SYSC 2 & 3: These are the rules for the big insurance players and Lloyd's.
+ - SYSC 4-10: These are the rules for everyone else, but with different levels of strictness depending on the type of firm.
+ - MiFID: This adds extra rules for firms dealing with investments.
+ - Where: The rules generally apply to UK activities, but can have a wider reach for financial stability reasons.
+Important Note: This is a high-level summary. The actual application of these rules is very detailed and requires careful consideration of the specific circumstances of each firm. You should always refer to the full text of the FCA Handbook for complete and accurate information.
+
+End of Gemini
+
+The common platform requirements are:
+
+(1) SYSC 4 to SYSC 10; and
+(2) those articles of the MiFID Org Regulation as applied in accordance with SYSC 1 Annex 1 2.8AR , SYSC 1 Annex 1 3.2-AR, SYSC 1 Annex 1 3.2-BR, SYSC 1 Annex 1 3.2CR and SYSC 1 Annex 1 3.3R.
+
+## SYSC 2.1 Apportionment of Responsibilities
+
+So here we are in the meat of the Systems and Controls for the FCA.
+
+ - Reasonable care to "apportion" significant responsibilities among directors and senior managers such that it is clear who has them, and the business  can be adequately monitored and controlled
+
+ - Consider additional guidance in SYSC 21.
+
+ - The non-executive director will vary (a director who has no responsibility for implementing the decisions or the policies of the governing body of a firm.) I'm not sure what the point of this part is.
+
+ - Note about insurance distribution activities.
+
+## SYSC 2.2 Recording the Apportionment
+
+ - Keep records up to date, keep for 6 years.
+
+ - Note about Solvency II firms.
+
+ - Org charts, project docs etc. and record changes ASAP.
+
+ - Be clear about single responsibilities shared by people.
+
+## SYSC 3.1 Systems and Controls
+
+ - A firm must take reasonable care to establish and maintain such systems and controls as are appropriate to its business, the nature and extent depending on:
+
+   - Nature, scale and complexity of business.
+   - Diversity of operations.
+   - Volume and size of transactions.
+   - Degree of risk in each area of ops.
+
+ - Regular reviews.
+
+ - Areas typically covered are in SYSC 3.2 with details elsewhere in the handbook.
+
+ - Consider guidance on risk-centric governance in SYSC 21.
+
+ - Due credit given for following UK Corporate Governance Code where relevant, see https://www.frc.org.uk/directors/corporate-governance-and-stewardship/uk-corporate-governance-code
+
+ - A firm has specific responsibilities regarding its appointed representatives or where applicable its tied agents, see SUP 12.
+
+ - SYSC 2.1.3 R (2) prescribes how a firm must allocate the function of overseeing the establishment and maintenance of systems and controls described in SYSC 3.1.1 R.
+
+	This is the first, specific rule, I've read.
+
+ - SYSC 3.1.6 to 10 incl. defines the Competent Employees Rule. A firm must employ personnel with the skills, knowledge and expertise necessary.
+
+ - Take into account the nature, scale and complexity of its business, and services offered, etc. Obvious stuff.
+
+ - SYSC 28 contains rules and guidance relating to the minimum knowledge and competence requirements for insurance distribution activities.
+
+ - The Training and Competence Sourcebook (TC) contains further rules and guidance for retail activities, but even (I think it means non-retail firms) may wish to consider them.
+
+ - If a firm requires employees who are not subject to a qualification requirement in TC to pass a relevant examination from the list of appropriate qualifications maintained by the FCA, the appropriate regulator will take that into account when assessing whether the firm has ensured that the employee satisfies the knowledge component of the competent employees rule.
+
+	Basically, over-qualifying/training will help you.
+
+ - Note about insurance.
+
+## SYSC 3.2 Areas Covered by Systems and Controls
+
+Main issues which a firm is expected to consider.
+
+ - Organisation
+
+   - Clear reporting lines, responsibilities, communicated.
+
+   - Where a governing body delegates functions and tasks to either employees, appointed representatives, or its tied agents, safeguards should be put in place. Assess delegate's suitability given responsibility. Make extent/limits clear. Monitor. Concerns followed up.
+
+   - Also applies externally; cannot contract out regulatory obligations.
+
+   - Larger firms should segregate duties to reduce financial crime, regs breaches, e.g. front and back office, no single person can control the full transaction.
+
+ - System and controls in relation to compliance, financial crime and money laundering
+
+   - Care; systems and controls for countering risk that the firm used to further financial crime.
+
+   - Systems must identify, assess, monitor, manage money laundering risk, and proportionate to scale, nature, complexity of business.
+
+   - Regular reviews of adequacy and compliance.
+
+   - May also have separate obligations to comply with e.g. Terrorism Act 2000, Proceeds of Crime Act 2002 and MLR. Carve out for these is mentioned.
+
+   - Consider guidance issued by Join Money Laundering Steering Group.
+
+   - Should consider its customer, product and activity profiles, distribution channels, complexity and volume of transactions, processes and systems, and operating environment.
+
+   - Ensure systems include MLR training, annual report from MLRO (officer) to the board and management on systems and controls. Docs of risk management policies, risk profile in regard to MLR, documentation of application of policies. Measures to ensure MLR risk considered during development of new products, new customers, change in its business profile, and yet measures to ensure new customer ID checks don't unreasonable deny access to services for those who cannot be expected to produce detailed evidence of identity!
+
+   - Must allocate to director or senior manager (who may be the MLRO) overall responsibility for establishment and maintenance of anti-MLR systems and controls.
+
+ - The money laundering reporting officer (MLRO)
+
+   - A firm must appoint an individual MLRO to oversee compliance with all MLR stuff, and must have authority and independence and information access.
+
+   - The MLRO is expected to be UK based, focal point for all MLR stuff.
+
+ - Financial crime guidance
+
+   - See Financial Crime Guide: A firm’s guide to countering financial crime risks, and Financial Crime Thematic Reviews.
+
+ - The compliance function
+
+   - Depending on nature/scale/complexity, separate out compliance function. Document responsibilities, give authority, information, access to board.
+
+   - Must allocate to a director or senior manager the function of oversight of compliance, and reporting to governing body/board.
+
+   - Compliance means compliance with regulatory system under FCA ("FCA compliance").
+
+ - Note about Lloyd's firms.
+
+ - Risk assessment
+
+   - Nature/scale/complexity, may want a separate risk assessment function, documented, resourced well, competent, independent.
+
+   - Talks about this being about common concept of risk assessment, then seems to allude to controlling risk exposure, i.e. market risk, may fall under PRA chief risk officer controlled function.
+
+   - Specifics mentioned for Solvency II firms.
+
+ - Management information
+
+   - The board must have good information with which to manage risk of regulatory concern; relevant, reliable, timely.
+
+   - Risks of regulatory concern relate to fair treatment of customers, consumer protection, "effective competition" and integrity of UK financial system (soundness, stability, resilience) and use of system wrt financial crime.
+
+ - Employees and agents
+
+   - Systems and controls should assess suitability of anyone who acts for it.
+
+   - Talks about assessing honesty.
+
+   - Part V of the Act (Performance of Regulated Activities) and SUP 10C and the Senior Insurance Management Function parts of PRA Rulebook specify requirements wrt approved persons.
+
+ - Audit committee
+
+   - Nature/scale/complexity: may form an audit committee to examine management's process for ensuring the appropriateness and effectiveness of systems and controls, oversee internal audit functions (if applicable) and interface with external auditors. Should have appropriate number of non-executive directors and form terms of reference.
+
+ - Internal audit
+
+   - Nature/scale/complexity: reports to the above audit committee or senior manager, independent of day-to-day activities, access to records.
+
+   - This function is not an FCA controlled function itself, but may fall under PRA chief risk officer controlled function.
+
+   - Carve out for Solvency II firms.
+
+ - Business strategy
+
+   - Plan so it can identify, measure, manage and control risk of regulatory concern. Maybe be appropriate to have business plans or strategy plans documented and updated on regular basis to account for changes in business environment.
+
+ - Renumeration policies
+
+   - Manage tensions between ability for firm meet requirements and standards and personal advantage of those who act for it. Mentions Solvency II and EIOPA.
+
+ - Business continuity
+
+   - Nature/scale/complexity: BCP provision, updated and tested. Solvency II firms have own requirements in PRA Rulebook.
+
+ - Records
+
+   - Record matters and dealings, accounts. Must be capable of being reproduced in English on paper, unless from activity outside UK, then can use their language.
+
+   - Records must be adequate, accessible, retained for correct time, secure. "The general principle is that records should be retained for as long as is relevant for the purposes for which they are made."
+
+   - SYSC 28 has rules and guidance re. knowledge and competence records, re. insurance distribution activities.
+
+   - Details per firm type are elsewhere in the handbook.
+
+ - Investment strategy and investment decision making
+
+   - Part about ESG and investments and principles, policyholder returns, all N/A to my needs.
+
+ - Operators of pensions dashboard services: security, integrity and confidentiality
+
+   - N/A
+
+## SYSC 3.3 Additional Requirements for Insurance Distribution, and
+
+## SYSC 3.4 SRD Requirements
+
+Applies to insurers and is not applicable.
+
+## SYSC 4.1 General Requirements
+
+**Note** -  ESMA Regulation guidelines exist for MiFID, see http://www.esma.europa.eu/content/Guidelines-certain-aspects-MiFID-compliance-function-requirements
+
+ - Application to a common platform firm:
+
+   - The MiFID Org Regulation applies.
+
+ - Application to a MiFID optional exemption firm and to a third country firm
+
+   - Yes, applies, as does MiFID Org Regulation
+
+ - General requirements
+
+   - Must have robust governance arrangements, clear org structure, well defined, transparent and consistent lines of responsibility, effective processes to identify, manage, monitor and report the risks it is or might be exposed to, and internal control mechanisms, including sound administrative and accounting procedures and effective control and safeguard arrangements for information processing systems.
+
+   - Must good security for the transfer of information, mitigating data loss and unauthorised access, and leakage, while not obstructing any competent authority e.g. FCA access.
+
+   - Additional stuff for fund managers and UCITS (collective investments).
+
+   - For common platform firm, nature/scale/complexity, must be comprehensive, and take in specific technical criteria in article 21(3) or MiFID Org Regulation and whichever of the following:
+
+     - SYSC 19B for full-scope UK AIFM
+     - SYSC 19D, where applicable
+     - PRA Rulebook remuneration part, where applicable
+     - SYSC 19G, where applicable
+
+   - Note saying that for other firms, the comprehensiveness and proportionality rule above is to be treated as guidance.
+
+   - Notes for management company or full-scope UK AIFM.
+
+ - Resources for management companies and AIFMs
+
+	Not applicable
+
+ - Subordinate measures…
+
+	Not applicable
+
+ - Mechanisms and procedures for a firm
+
+   - A firm, except a common platform firm and a sole trader (not applicable), nature/scale/complexity, must:
+
+     - For a management company (investments), establish, implement and maintain decision-making procedures and clear org structure with reporting lines, etc. etc.
+
+     - Maintain adequate internal control mechanisms to secure compliance with decisions, procedures at all levels of the firm.
+
+     - Maintain internal reporting and comms at all levels, and
+
+     - If a management company, maintain effective reporting and comms, all levels, and information flows with an third party
+	
+	My own **Note** -  it's really vague, doesn't really say anything other than be a fucking pro about things.
+
+ - Operators of pensions dashboard services: security, integrity and confidentiality
+
+Not applicable
+
+ - Business continuity
+
+   - A common platform firm must take reasonable steps to make sure shit works all the time.
+
+   - A CRR firm and a management company must also limit losses, not lose data, etc.
+
+   - For other firms this is guidance "should" not "must".
+
+   - BCP includes people, systems, operations recovery priorities, comms including internal and external and FCA and clients and press.
+
+   - Escalation and invocation plans, contact info.
+
+   - Processes to check integrity of information affected by outage, and
+
+   - Regular testing of it all.
+
+ - Operators of electronic systems in relation to lending: arrangements to administer loans in the event of platform failure
+
+   - It reads as if the loans should continue to be managed according to their terms, if the operator "fails" which I read as technically, but I think it means financially. It specificially talks about P2P agreements, but also non-P2P in the same portfolio. Perhaps it means keeping money aside to manually deal with the loans, even if the companies fails, or perhaps find some other company to take the business on?!
+
+   - I guess the "administrators" do this.
+
+   - Administrators must deal with each loan or customer equally.
+
+   - Okay then it goes on to mention finding another firm to help. And get consent from lender clients to fund any cost of administration of the loan, fees, and consent from both parties to transfer the loans to the other firm.
+
+   - It does indeed say about holding ring-fenced money to administer loans during administration.
+
+   - And to continually be thinking about this ring-fenced amount wrt the loan portfolio.
+
+   - Seek professional advice on its plan from insolvency experts on whether provisions, ring-fenced money is good enough, especially:
+
+     - Terms in contracts are enforceable.
+     - Practical obstacles, including having enough money ring-fenced.
+     - Ancillary activities.
+     - Fair for customers, doesn't favor non-P2P.
+     - Account for tax for lender clients.
+
+   - Reminder about disclosure requirements in COBS 18.12.28R and WDPG, Wind Down Planning Guide.
+
+   - Write to FCA is contemplating ceasing to manage P2P agreements, or implementing arrangements above, or similar arrangements.
+
+   - An operator of an electronic system in relation to lending must keep an up-to-date P2P resolution manual which is like a BCP plan for the business loan side, and must address:
+	
+     - How it operates normally, day-to-day, people and resources, critical staff, premises, IT systems, data storage and recovery, record-keeping systems and organisation, bank accounts and payments facilities, persons outside the firm (note persons also means companies, outsourcers), legal docs and contracts, structure chart of firm's group with owners and geo, holding of "security" for loans.
+
+   - Steps to manage loans by an administrator, critical loan terms, and how the firm's systems can produce the detail specified in COBS 18.12.31R Ongoing Disclosures for each P2P agreement facilitated by it.
+
+   - Must ensure P2P resolution manual would be immediately available to an administrator, receiver, trustee, liquidator or similar officer and the FCA, on request.
+
+   - And it must be stored in the same place as its CASS resolution pack, if CASS 10 applies.
+
+ - Operators of electronic systems in relation to lending: title transfer
+
+   - Must not accept, take or receive the transfer of full ownership of money relating to P2P agreements. The following is from Claude:
+
+   - If the operator has made a client money election (which is a formal declaration about how they'll handle client funds) AND they are operating an electronic system for non-P2P agreements (lending arrangements that don't involve peer-to-peer lending) THEN they must not accept or take full ownership of any money related to these non-P2P agreements.
+
+   - In simpler terms, this rule prevents lending platforms that have opted into certain client money protections from taking ownership of funds related to non-P2P lending activities. This is likely designed to protect client funds by ensuring they remain separate from the operator's own assets.
+
+	 A "client money election" under CASS 7.10.7AR is a specific regulatory choice that firms can make regarding how they handle client money.
+     
+     When a firm makes a client money election, they are essentially opting to treat certain funds as "client money" under the FCA's Client Assets Sourcebook (CASS) rules. This means the money will be subject to strict regulatory protections and requirements designed to safeguard client assets.
+	
+ - Accounting policies: management company
+
+   - Means investment management, units, funds, portfolios etc.
+
+   - Must have processes to make financial reports (in a "timely manner") which reflect a true and fair view of its financial position and which comply with all applicable accounting standards and rules, on FCA request.
+
+ - Regular monitoring: management company
+
+   - Systems and controls must be frequently reviewed.
+
+ - Regular monitoring: other firms
+
+   - Above applies as guidance.
+
+ - Audit committee
+
+   - Nature/scale/complexity: perhaps form an audit committee.
+
+ - Risk control: additional guidance
+
+   - All firms should consider additional guidance on risk-centric governance, in SYSC 21.
+
+ - Apportionment of responsibilities: the role of the non-executive director
+
+   - "The role undertaken by a non-executive director will vary from one firm to another." - literally that's all it says.
+
+ - Investment strategy and investment decision making of an operator of a personal pension scheme of stakeholder pension scheme
+
+   - How to think about ESG financial considerations, and other financials considerations and non-financial matters as part of its investment strategy or decision making to demonstrate compliance with princinples 2, 3, 6 or 8.
+
+   - Not applicable to my business.
+
+## SYSC 4.2 Persons who effectively direct the business
+
+ - General requirement
+
+   - The senior personnel of a common platform firm, a management company, a full-scope UK AIFM, or of the UK branch of a non-UK bank must be of sufficiently good repute and sufficiently experience as to ensure the sound and prudent management of the firm.
+
+   - A common platform firm means a MiFIDPRU investment firm, or a bank, or a building society, or a designated investment firm, or a dormant asset fund operator.
+
+   - Other firms should take account of the senior personnel rule SYSC 4.2.1 R as if guidance ("should" over "must").
+
+ - Responsibility of senior personnel of an AIFM
+
+   - Not applicable
+
+ - Composition of management
+
+   - The senior personnel of a common platform firm, a management company, a full-scope UK AIFM, or of the UK branch of a non-UK bank must have at least two people meeting requirements, this is not applicable.
+
+   - For a body corporate, the persons re. 4.2.2 R should be either executive directors or persons granted execute powers by and reporting immediately to the governing body, or active partners if a partnership. A "body corporate" is like a limited company, so this is applicable.
+
+   - At least two independent minds should be applied to the formulation and implementation of the policies of a common platform firm, a management company, a full-scope UK AIFM and the UK branch of a third country firm. So this is not applicable.
+
+ - Alternative arrangements
+
+   - This reads as if a common platform firm may be a single person, sole trader or something.
+
+   - It must have "alternative arrangements" in place which ensure sound and prudent management of the firm.
+
+I don’t think this is applicable because ZW would not be a common platform firm, but in any case I think it is saying that a single person should bring in external help and audit and expertise, succession planning and sickness cover.
+
+## SYSC 4.3 Responsibility of senior personnel
+
+ - A firm (with the exception of a common platform firm and a sole trader who does not employ any person who is required to be approved under section 59 of the Act (Approval for particular arrangements)), when allocating functions internally, must ensure that senior personnel and, where appropriate, the supervisory function, are responsible for ensuring that the firm complies with its obligations under the regulatory system. In particular, senior personnel and, where appropriate, the supervisory function must assess and periodically review the effectiveness of the policies, arrangements and procedures put in place to comply with the firm's obligations under the regulatory system and take appropriate measures to address any deficiencies.
+
+   In a sense, they must be a kind of internal audit. The "supervisory function" relates to a function in a common platform firm, management company, or electronic system in relation to lending, which sounds not applicable.
+
+ - Further notes pertaining to management company and operator of an electronic system in relation to lending, likely not applicable, see SYSC 4.3.2 R, about frequent, at least annual written reports.
+
+ - Other firms should take account of the written reports as guidance.
+
+ - The supervisory function does not include a general meeting of the shareholders of a firm, or equivalent bodies, but could involve, for example, a separate supervisory board within a two-tier board structure or the establishment of a non-executive committee of a single-tier board structure. Not applicable.
+
+## SYSC 4.3 A Management body and nomination committee
+
+ - Section seems only to apply to a common platform firm and its management body.
+	
+ - Interesting note:
+
+A firm may wish to use the “Template for a matrix to assess the collective competence of members of the management body” in Annex I of the joint ESMA and EBA publication titled “Guidelines on the assessment of the suitability of members of the management body and key function holders under Directive 2013/36/EU and Directive 2014/65/EU” when assessing collective competence.
+
+## SYSC 4.4 Apportionment of responsibilities
+
+ - Application
+
+   - Section applies to a complex set of firms, which Claude thinks could be most smaller regulated firms. "SMCR firms" seem to be the broad category for most regulated firms.
+
+   - Mentions a flow chart of firm types, here: https://www.handbook.fca.org.uk/handbook/SYSC/23/Annex1.html?date=2025-01-22#D26
+
+ - Maintaining a clear and appropriate apportionment
+
+   - Must take reasonable case to apportion significant responsibilities in a way so it's clear, affords monitoring and control.
+
+ - Allocating functions of apportionment and oversight
+
+   - Must allocate to one or more individuals, the functions of (1) dealing with apportionment of responsibilities under 4.4.3 R, and (2) overseeing systems and controls under 4.1.1 R, according to the table:
+
+     - The first row concerns firms in a group, not applicable.
+     - The second row concerns EEA SMCR firm, allocation of the functions 1 and 2 above to directors and senior managers.
+     - The last row is for any other firm and both functions to the CEO(s) jointly else, directors and senior managers.
+
+   - Author's **Note** -  it's bizarrely convoluted way to express things. There's a long FAQ table underneath it.
+
+   - Claude says:
+
+		Main Requirements:
+
+        - Organizations must assign two key functions to specific individuals: 
+        - Apportioning responsibilities
+        - Overseeing systems and controls
+    
+        Who Can Be Assigned:
+
+	   - For most firms, these functions must be assigned to the Chief Executive (CEO)
+	   - If there's no CEO, or in addition to the CEO, the functions can be assigned to: 
+
+		   - Directors
+		   - Senior managers
+		   - For group companies, a director/senior manager responsible for the group or division
+
+		Key Points:
+
+	   - These individuals must be approved persons (officially approved for their role)
+	   - Functions can be shared between multiple people if appropriate
+	   - For most firms, having 1-2 people responsible is considered appropriate
+	   - A Chief Executive can be someone with an equivalent title (like Managing Director)
+	   - For international firms, the requirements apply to UK operations
+	   - The allocation should support compliance with core principles and controls
+
+		Special Cases:
+
+	   - If a firm has a management committee, functions can be allocated to all members
+	   - For partnerships, most partners would typically qualify as directors or senior managers
+	   - In some cases, good corporate governance might require the CEO to not be involved in certain aspects (like audit committees)
+	   - Different rules apply for EEA firms (European Economic Area) operating in the UK
+
+	The rest of the section is missing or deleted.
+
+## SYSC 5.1 Skills, knowledge and expertise
+
+ESMA has also issued guidelines under article 16(3) of the ESMA Regulation covering certain aspects of the MiFID compliance function requirements. See  http://www.esma.europa.eu/content/Guidelines-certain-aspects-MiFID-compliance-function-requirements
+
+ - Application to a common platform firm
+
+Not applicable
+
+ - Application to a MiFID optional exemption firm and to a third country firm
+
+	Not applicable
+
+ - Competent employees rule
+
+   - Basically: hire properly.
+
+   - Skill/knowledge/expertise: a firm (not common platform firm) must employ capable personnel.
+
+   - A firm's systems and controls should "enable it to satisfy itself of the suitability of anyone who acts for it", including assessing honesty and competence, usually during recruitment, honesty reviewed if justified.
+
+   - Consider level of responsibility, obvious stuff.
+
+   - Note about SYSC 28 and insurance.
+
+   - "The Training and Competence sourcebook (TC) contains additional rules and guidance relating to specified retail activities undertaken by a firm."
+
+   - "The requirements on firms with respect to approved persons are in Part V of the Act (Performance of regulated activities) and SUP 10A, SUP 10C and in the corresponding parts of the PRA’s Rulebook." - "approved persons" are those with controlled functions.
+
+   - Controlled functions are listed here: https://www.handbook.fca.org.uk/handbook/SUP/10C/4.html?date=2025-01-22#D83, and https://www.handbook.fca.org.uk/handbook/SUP/10A/4.html?date=2025-01-22#DES95, and Senior Management Functions under PRA Rulebook.
+
+   - If a firm requires employees who are not subject to a qualification requirement in TC to pass a relevant examination from the list of appropriate qualifications maintained by the FCA, or for the purposes of meeting its obligations under SYSC 5.1.5ABR, the FCA will take that into account when assessing whether the firm has ensured that the employee satisfies the knowledge component of the competent employees rule.
+
+I think it's saying the FCA likes over-skilling people.
+
+ - Knowledge and competence
+
+   - SYSC 5.1.5AA regards a common platform firm and third country firm, so not applicable. It's saying firms must prove to the FCA if asked that people are skilled and there's an ESMA guide for this.
+
+   - Talks about nature/scale/complexity vs. competence.
+
+ - Segregation of functions
+
+   - 5.1.6 R Applies to a management company and considering conflicts of duty for people wearing more than one hat.
+
+   - 5.1.7 R is for common platform company and is about conflict of interest.
+
+   - Other firms should take account of segregation rules SYSC 5.1.6 R and 7 R, above.
+
+   - It's obvious stuff, it barely really says anyting, "ensure that no one individual is completely free to commit a firm's assets or incur liabilities on its behalf" - I guess if you've never worked in a regulated company this might be news.
+
+ - Segregation of functions: additional guidance
+
+   - Should ensure no single individual has unrestricted authority to do all of the following:
+
+	   - Initiate a transaction
+	   - "bind" the firm
+	   - make payments, and
+	   - "account for it"
+
+   - Companies with limited staff should add compensating controls, reviews by others.
+
+   - Any outsourced people performing internal audit should be independent from those doing external audit.
+
+ - Awareness of procedures: management company
+
+   - A management company must ensure people follow procedure.
+
+ - Awareness of procedures: other firms
+
+   - For other firms this is a "should" (weirdly obvious, and weird that they only "should" be aware of procedures).
+
+ - General
+
+   - Nature/scale/complexity, range of services wrt to above.
+
+   - Management company must monitor, regularly review, fix, procedures etc. but for other firms, monitoring/review of systems is guidance.
+
+## SYSC 6.1 Compliance
+
+
+ESMA has also issued guidelines under article 16(3) of the ESMA Regulation covering certain aspects of the MiFID compliance function requirements. See https://www.esma.europa.eu/sites/default/files/library/esma35-36-1946_final_report_guidelines_on_certain_aspects_of_the_mifid_ii_compliance_function.pdf
+ - Application to a common platform firm
+
+   - Not applicable
+
+ - Application to a MiFID optional exemption firm and to a third country firm
+
+   > (1) the rules and guidance in this chapter apply to them as if they were rules or as guidance in accordance with SYSC 1 Annex 1 3.2CR(1); and (2) those articles of the MiFID Org Regulation in SYSC 1 Annex 1 2.8AR and 3.2CR apply to them as if they were rules or as guidance in accordance with SYSC 1 Annex 1 3.2CR(2).
+
+ - Adequacy policy and procedures
+
+   - A firm must have policies and procedures for its managers, employees, appointed representatives and any tied agents for its regulatory obligations and prevention of financial crime.
+
+   - Nature/scale/complexity, range of services, a management firm or operator of electronic system in relation to lending must have procedures to detect any risk of failure to comply and to minimise such risk and to enable to FCA to "exercise its powers".
+
+   - The above is guidance for other firms.
+
+ - Compliance function
+
+   - A management company or operator of an electronic system in relation to lending must have a permanent compliance function to monitor and assess everything, advise and assist on compliance.
+
+   - For other firms the above is guidance but consider nature/scale/complexity.
+
+   - Further notes for compliance for management company or operator of an electronic system in relation to lending in 6.1.4 R.
+
+   - May need to consider dual-regulated firms Remuneration Code, and/or "remuneration part" of PRA Rulebook, and/or MiFIDPRU Remuneration Code.
+
+   - SYSC 6.1.4A a firm which is not a common platform firm or management company and which carries on designated investment business or for retails client of professional clients must allocate to a director or senior manager the function of:
+
+	   - Overseeing compliance and
+	   - Reporting compliance matters to board
+
+   - And this means compliance with rules in COBS (Conduct of Business sourcebook), COLL (Collective Investment Schemes sourcebook), CASS (Client Assets sourcebook) and ICOBS (Insurance: Conduct of Business sourcebook).
+
+   - Full-scope UK AIFMs need to comply with AIFM Remuneration Code.
+
+   - A debt management firm and credit repair firm or Class 1 as per CMCOB 7.2.5R(1) and SUP 10C (FCA senior managers regime for approved persons in SMCR firms) must appoint a compliance officer.
+
+I think this this is companies that do IVAs and bankruptcies.
+
+   - "(3) In the FCA's view, it will be appropriate, in many cases, for the removal or any other disciplinary sanctioning of the compliance officer to require the approval of a majority of the management body, including at least a majority of its members who do not perform any executive function in the firm."
+
+   - SYSC 6.1.5 then caveats all of this with nature/scale/complexity consideration except if you're doing P2P lending with a "target rate" then you need a compliance officer.
+
+## SYSC 6.2 Internal audit
+
+ - Repeats stuff way above about having a discreet IA for large/complex enough management company or operator of an electronic system in relation to lending.
+
+ - Repeats what IA do.
+
+ - Guidance for everyone else.
+
+ - Mentions firms required to have IA under article 24 of MiFID Org Regulation.
+
+ - Mentions the firing of IA head and independence of IA and same note about disciplinary as for compliance person, above.
+
+ - Mentions internal audit being a function of assessing adherence to systems and controls, effectiveness of them etc.
+
+ - SYSC 6.2.2 G (3) For an SMCR firm that is a PRA-authorised person,the internal audit function is a PRA controlled function (SMF5). For an enhanced scope SMCR firm it is an FCA controlled function (SMF5).
+
+## SYSC 6.3 Financial crime
+
+ - Nature/scale/complexity: a firm must have policies/procedures, systems/controls to spot, assess, monitor, manage money laundering risk, these must be regularly reviewed etc. etc.
+
+ - A firm may also need to comply with the Terrorism Act 2000, and/or the Proceeds of Crime Act 2002, and Money Laundering Regulation.
+
+ - Firms should follow ML guidance issued by Joint Money Laundering Steering Group.
+
+ - Firms should consider its customer, product and activity profiles, distribution channels, complexity and volume of transactions, processes and systems, operating environment.
+
+ - Should ensure:
+
+   - Employees are trained for ML.
+   - Frequent reports (at least annually) to governing body/board, senior management, at least annual report from MLRO on soundness of controls.
+   - Documentation of ML risk management policies, and application of them.
+   - ML risk is taken into account in day-to-day ops when developing new products, taking on new customers, changing its "business profile".
+   - Not to unreasonable deny services to those that cannot reasonable demonstrate identity (weird).
+
+ - Must allocate to a director or senior manager, who may be MLRO, overall responsibility for anti-ML systems/controls. A firm may not allocate that to a person who is approved to perform the other overall responsibility function.
+
+WTF. ChatGPT says this is a "catch all" function. I think it's saying that the role can't be "left to catch-all" but must be explicitly defined. It can be a "single person company CEO".
+
+ - The money laundering reporting officer
+
+   - A firm, except sole trader, must:
+
+	   - Appoint an MLRO, and
+	   - Ensure they are authorised and independent in the firm, with access rights.
+
+   - Usually in UK.
+
+ - Financial crime guidance
+
+   - See FGC, Financial Crime Guide: A firm's guide to countering financial crime risks, and FCTR, Financial Crime Thematic Reviews.
+
+## SYSC 7.1 Risk control
+
+ESMA has also issued guidelines under article 16(3) of the ESMA Regulation covering certain aspects of the MiFID compliance function requirements. See  http://www.esma.europa.eu/content/Guidelines-certain-aspects-MiFID-compliance-function-requirements
+
+ - Application to a common platform firm
+
+	Not applicable
+
+ - Application to an MiFID optional exemption firm and to a third country firm
+
+   - Seems to say defer to SYSC 1 Annex as many "applications" parts do.
+
+ - Risk assessment
+
+   - SYSC 4.1.1 R requires a firm to have effective processes to identify, manage, monitor and report the "risks" it is or might be exposed to.
+
+   - Presumably it means financial risks?!
+
+   - "must" applies to UCITS investment firm and operator of an electronic system in relation to lending, else "should".
+
+   - A management company should be aware that COLL 6.11 contains requirements in relation to risk control and internal reporting that will apply to it.
+
+   - Full-scope UK AIFMs should be aware that FUND 3.7 and articles 38 to 47 of the AIFMD level 2 regulation contain further requirements in relation to risk management.
+	
+ - Risk management
+
+   - Repeats itself.
+
+   - Not applicable stuff about managers reviewing risks, and controls, and mentions also risks from macroeconomy, business cycle.
+
+   - MIFIDPRU investment firms should refer to MIFIDPRU 7 for more specific details on risk management expectations.
+
+   - Guidance for other firms.
+
+   - SYSC 7.1.5 probably not applicable, aUCITS investment firm or an operator of an electronic system in relation to lending.
+
+   - If big, complex, aUCITS investment firm or an operator of an electronic system in relation to lending should make a risk management function who reports to senior personnel. Else it must demonstrate compliance with risk.
+
+   - Guidance for others.
+
+   - SYSC 7.1.7B and BA and BD has notes on remuneration.
+
+ - Risk control: additional provisions
+
+   - Consider added guidance in SYSC 21.
+
+   - Says that for common platform firm risk means "risk exposure" and for SMCR firm that is PRA authorised person, the risk management function is a PRA controlled function, as too for an enhanced scope SMCR firm.
+
+   - Weird bunch of empty headers.
+
+ - Additional rules for firms falling under The Capital Requirements Regulations 2013.
+
+   - Not applicable, banks etc.
+
+## SYSC 8 Outsourcing
+
+Skipping this section as I have no intention of outsourcing.
+
+## SYSC 9 Record-keeping
+
+## SYSC 9.1 General rules on record-keeping
+
+ - Application to a common platform firm
+
+   - The MiFID Org Regulation applies, SYSC1 Annex 1 3.2G, and others in that annex.
+
+   - 9.1.1AR, 2AR, 2CR, 2BG, 4G, 5G, 6G and 6AG.
+
+ - Application to a MiFID optional exemption firm and to a third country firm
+
+   - Same boilerplate as many sections, refers to SYSC1 Annex 1 3.2CR(1) etc.
+
+ - General requirements
+
+   - A firm (other than a CPF) must keep records of its business, org, and transactions sufficient for FCA to do its job.
+
+   - A CPF must keep records on all services, activities and transactions, sufficient for the FCA to enforce regs, MiFID, MiFIR and Market Abuse Regulation, and "in particular" to check obligations to clients or potential clients and the integrity of the market.
+
+   - A CPF must retain all records for 5 years.
+
+ - Specific requirements for the distribution of insurance-based investment products
+
+   - Not applicable
+
+ - Guidance on record-keeping
+
+   - Records should be reproducible in English on paper, unless business carried out abroad.
+
+   - For non-MiFID, a firm should have systems/controls around record-keeping, retained for "relevant" time.
+
+   - Schedule 1 to each module of the Handbook sets out a list summarising its record-keeping requirements. A CPF should also refer to record-keeping in MiFID Org Regulation.
+
+   - SYSC 28 contains rules/guidance on knowledge/competence or record-keeping for insurance distribution activities.
+
+## SYSC 9.2 Credit institutions providing account information services or payment initiation services
+
+ - A credit institution must keep records of any account information services and payment initiation services it provides in the UK.
+
+ - Not applicable (banking).
+
