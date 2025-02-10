@@ -14,6 +14,8 @@ A credit institution accepts deposits, grants loans and credit for its own accou
 
 **Note** -  There's this "prudential context" which seems to be a broader responsibility to the UK and the industry.
 
+# PRIN Principles for Businesses
+
 The actual principles, with the principles part known as PRIN:
 
 | Principle | Title | Description |
@@ -125,7 +127,7 @@ Bizarre section that really just says the FCA has removed the right of action fo
 FCA can waive all its rules other than those mase under sections 137O, 247, 248, 261I, 261J.
 
 
-# SYSC
+# SYSC Senior Management Arrangements, Systems and Controls
 
 SYSC is the Systems and Controls, but the handbook neglects to actually explain this.
 
@@ -335,7 +337,7 @@ So here we are in the meat of the Systems and Controls for the FCA.
 
  - A firm has specific responsibilities regarding its appointed representatives or where applicable its tied agents, see SUP 12.
 
- - SYSC 2.1.3 R (2) prescribes how a firm must allocate the function of overseeing the establishment and maintenance of systems and controls described in SYSC 3.1.1 R.
+ - SYSC 2.1.3 R (2) prescribes how a firm <mark>must allocate the function of overseeing the establishment and maintenance of systems and controls</mark> described in SYSC 3.1.1 R.
 
 	This is the first, specific rule, I've read.
 
@@ -347,7 +349,7 @@ So here we are in the meat of the Systems and Controls for the FCA.
 
  - The Training and Competence Sourcebook (TC) contains further rules and guidance for retail activities, but even (I think it means non-retail firms) may wish to consider them.
 
- - If a firm requires employees who are not subject to a qualification requirement in TC to pass a relevant examination from the list of appropriate qualifications maintained by the FCA, the appropriate regulator will take that into account when assessing whether the firm has ensured that the employee satisfies the knowledge component of the competent employees rule.
+ - If a firm requires employees who are not subject to a <mark>qualification requirement in TC</mark> to pass a relevant examination from the list of appropriate qualifications maintained by the FCA, the appropriate regulator will take that into account when assessing whether the firm has ensured that the employee satisfies the knowledge component of the competent employees rule.
 
 	Basically, over-qualifying/training will help you.
 
@@ -381,15 +383,15 @@ Main issues which a firm is expected to consider.
 
    - Should consider its customer, product and activity profiles, distribution channels, complexity and volume of transactions, processes and systems, and operating environment.
 
-   - Ensure systems include MLR training, annual report from MLRO (officer) to the board and management on systems and controls. Docs of risk management policies, risk profile in regard to MLR, documentation of application of policies. Measures to ensure MLR risk considered during development of new products, new customers, change in its business profile, and yet measures to ensure new customer ID checks don't unreasonable deny access to services for those who cannot be expected to produce detailed evidence of identity!
+   - Ensure systems include MLR training, <mark>annual report from MLRO (officer) to the board and management on systems and controls</mark>. Docs of risk management policies, risk profile in regard to MLR, documentation of application of policies. Measures to ensure MLR risk considered during development of new products, new customers, change in its business profile, <mark>and yet measures to ensure new customer ID checks don't unreasonable deny access to services for those who cannot be expected to produce detailed evidence of identity!</mark>
 
-   - Must allocate to director or senior manager (who may be the MLRO) overall responsibility for establishment and maintenance of anti-MLR systems and controls.
+   - <mark>Must allocate to director or senior manager (who may be the MLRO) overall responsibility for establishment and maintenance of anti-MLR systems and controls.</mark>
 
  - The money laundering reporting officer (MLRO)
 
-   - A firm must appoint an individual MLRO to oversee compliance with all MLR stuff, and must have authority and independence and information access.
+   - A firm <mark>must appoint an individual MLRO to oversee compliance with all MLR stuff</mark>, and must have authority and independence and information access.
 
-   - The MLRO is expected to be UK based, focal point for all MLR stuff.
+   - The MLRO is <mark>expected to be UK based</mark>, focal point for all MLR stuff.
 
  - Financial crime guidance
 
@@ -399,7 +401,7 @@ Main issues which a firm is expected to consider.
 
    - Depending on nature/scale/complexity, separate out compliance function. Document responsibilities, give authority, information, access to board.
 
-   - Must allocate to a director or senior manager the function of oversight of compliance, and reporting to governing body/board.
+   - <mark>Must allocate to a director or senior manager the function of oversight of compliance, and reporting to governing body/board</mark>.
 
    - Compliance means compliance with regulatory system under FCA ("FCA compliance").
 
@@ -409,7 +411,7 @@ Main issues which a firm is expected to consider.
 
    - Nature/scale/complexity, may want a separate risk assessment function, documented, resourced well, competent, independent.
 
-   - Talks about this being about common concept of risk assessment, then seems to allude to controlling risk exposure, i.e. market risk, may fall under PRA chief risk officer controlled function.
+   - Talks about this being about common concept of risk assessment, then seems to allude to controlling risk exposure, i.e. market risk, <mark>may fall under PRA chief risk officer controlled function</mark>.
 
    - Specifics mentioned for Solvency II firms.
 
@@ -425,7 +427,7 @@ Main issues which a firm is expected to consider.
 
    - Talks about assessing honesty.
 
-   - Part V of the Act (Performance of Regulated Activities) and SUP 10C and the Senior Insurance Management Function parts of PRA Rulebook specify requirements wrt approved persons.
+   - <mark>Part V of the Act (Performance of Regulated Activities) and SUP 10C and the Senior Insurance Management Function parts of PRA Rulebook specify requirements wrt approved persons</mark>.
 
  - Audit committee
 
@@ -489,7 +491,7 @@ Applies to insurers and is not applicable.
 
  - General requirements
 
-   - Must have robust governance arrangements, clear org structure, well defined, transparent and consistent lines of responsibility, effective processes to identify, manage, monitor and report the risks it is or might be exposed to, and internal control mechanisms, including sound administrative and accounting procedures and effective control and safeguard arrangements for information processing systems.
+   - <mark>Must have robust governance arrangements, clear org structure, well defined, transparent and consistent lines of responsibility, effective processes to identify, manage, monitor and report the risks it is or might be exposed to, and internal control mechanisms, including sound administrative and accounting procedures and effective control and safeguard arrangements for information processing systems</mark>.
 
    - Must good security for the transfer of information, mitigating data loss and unauthorised access, and leakage, while not obstructing any competent authority e.g. FCA access.
 
@@ -632,11 +634,11 @@ Not applicable
 
  - General requirement
 
-   - The senior personnel of a common platform firm, a management company, a full-scope UK AIFM, or of the UK branch of a non-UK bank must be of sufficiently good repute and sufficiently experience as to ensure the sound and prudent management of the firm.
+   - The senior personnel of a common platform firm, a management company, a full-scope UK AIFM, or of the UK branch of a non-UK bank <mark>must be of sufficiently good repute and sufficiently experience as to ensure the sound and prudent management of the firm</mark>.
 
    - A common platform firm means a MiFIDPRU investment firm, or a bank, or a building society, or a designated investment firm, or a dormant asset fund operator.
 
-   - Other firms should take account of the senior personnel rule SYSC 4.2.1 R as if guidance ("should" over "must").
+   - <mark>Other firms should take account of the senior personnel rule SYSC 4.2.1 R as if guidance ("should" over "must")</mark>.
 
  - Responsibility of senior personnel of an AIFM
 
@@ -646,7 +648,7 @@ Not applicable
 
    - The senior personnel of a common platform firm, a management company, a full-scope UK AIFM, or of the UK branch of a non-UK bank must have at least two people meeting requirements, this is not applicable.
 
-   - For a body corporate, the persons re. 4.2.2 R should be either executive directors or persons granted execute powers by and reporting immediately to the governing body, or active partners if a partnership. A "body corporate" is like a limited company, so this is applicable.
+   - For a body corporate, the persons re. 4.2.2 R should be either executive directors or persons granted execute powers by and reporting immediately to the governing body, or active partners if a partnership. A "body corporate" is like a limited company, so this <mark>is applicable</mark>.
 
    - At least two independent minds should be applied to the formulation and implementation of the policies of a common platform firm, a management company, a full-scope UK AIFM and the UK branch of a third country firm. So this is not applicable.
 
@@ -654,17 +656,17 @@ Not applicable
 
    - This reads as if a common platform firm may be a single person, sole trader or something.
 
-   - It must have "alternative arrangements" in place which ensure sound and prudent management of the firm.
+   - <mark>It must have "alternative arrangements" in place which ensure sound and prudent management of the firm</mark>.
 
 I don’t think this is applicable because ZW would not be a common platform firm, but in any case I think it is saying that a single person should bring in external help and audit and expertise, succession planning and sickness cover.
 
 ## SYSC 4.3 Responsibility of senior personnel
 
- - A firm (with the exception of a common platform firm and a sole trader who does not employ any person who is required to be approved under section 59 of the Act (Approval for particular arrangements)), when allocating functions internally, must ensure that senior personnel and, where appropriate, the supervisory function, are responsible for ensuring that the firm complies with its obligations under the regulatory system. In particular, senior personnel and, where appropriate, the supervisory function must assess and periodically review the effectiveness of the policies, arrangements and procedures put in place to comply with the firm's obligations under the regulatory system and take appropriate measures to address any deficiencies.
+ - A firm (with the exception of a common platform firm and a sole trader who does not employ any person who is required to be approved under section 59 of the Act (Approval for particular arrangements)), <mark>when allocating functions internally, must ensure that senior personnel and, where appropriate, the supervisory function, are responsible for ensuring that the firm complies with its obligations under the regulatory system. In particular, senior personnel and, where appropriate, the supervisory function must assess and periodically review the effectiveness of the policies, arrangements and procedures put in place to comply with the firm's obligations under the regulatory system and take appropriate measures to address any deficiencies</mark>.
 
    In a sense, they must be a kind of internal audit. The "supervisory function" relates to a function in a common platform firm, management company, or electronic system in relation to lending, which sounds not applicable.
 
- - Further notes pertaining to management company and operator of an electronic system in relation to lending, likely not applicable, see SYSC 4.3.2 R, about frequent, at least annual written reports.
+ - Further notes pertaining to management company and operator of an electronic system in relation to lending, likely not applicable, see SYSC 4.3.2 R, about <mark>frequent, at least annual written reports</mark>.
 
  - Other firms should take account of the written reports as guidance.
 
@@ -676,7 +678,7 @@ I don’t think this is applicable because ZW would not be a common platform fir
 	
  - Interesting note:
 
-A firm may wish to use the “Template for a matrix to assess the collective competence of members of the management body” in Annex I of the joint ESMA and EBA publication titled “Guidelines on the assessment of the suitability of members of the management body and key function holders under Directive 2013/36/EU and Directive 2014/65/EU” when assessing collective competence.
+A firm may wish to use the <mark>“Template for a matrix to assess the collective competence of members of the management body”</mark> in Annex I of the joint ESMA and EBA publication titled “Guidelines on the assessment of the suitability of members of the management body and key function holders under Directive 2013/36/EU and Directive 2014/65/EU” when assessing collective competence.
 
 ## SYSC 4.4 Apportionment of responsibilities
 
@@ -749,7 +751,7 @@ Not applicable
 
  - Competent employees rule
 
-   - Basically: hire properly.
+   - <mark>Basically: hire properly.</mark>
 
    - Skill/knowledge/expertise: a firm (not common platform firm) must employ capable personnel.
 
@@ -759,9 +761,9 @@ Not applicable
 
    - Note about SYSC 28 and insurance.
 
-   - "The Training and Competence sourcebook (TC) contains additional rules and guidance relating to specified retail activities undertaken by a firm."
+   - <mark>The Training and Competence sourcebook (TC) contains additional rules and guidance relating to specified retail activities undertaken by a firm.</mark>
 
-   - "The requirements on firms with respect to approved persons are in Part V of the Act (Performance of regulated activities) and SUP 10A, SUP 10C and in the corresponding parts of the PRA’s Rulebook." - "approved persons" are those with controlled functions.
+   - <mark>"The requirements on firms with respect to approved persons are in Part V of the Act (Performance of regulated activities) and SUP 10A, SUP 10C and in the corresponding parts of the PRA’s Rulebook."</mark> - "approved persons" are those with controlled functions.
 
    - Controlled functions are listed here: https://www.handbook.fca.org.uk/handbook/SUP/10C/4.html?date=2025-01-22#D83, and https://www.handbook.fca.org.uk/handbook/SUP/10A/4.html?date=2025-01-22#DES95, and Senior Management Functions under PRA Rulebook.
 
@@ -842,7 +844,7 @@ ESMA has also issued guidelines under article 16(3) of the ESMA Regulation cover
 
    - May need to consider dual-regulated firms Remuneration Code, and/or "remuneration part" of PRA Rulebook, and/or MiFIDPRU Remuneration Code.
 
-   - SYSC 6.1.4A a firm which is not a common platform firm or management company and which carries on designated investment business or for retails client of professional clients must allocate to a director or senior manager the function of:
+   - SYSC 6.1.4A a firm which is not a common platform firm or management company and which carries on <mark>designated investment business</mark> or for retails client of professional clients must allocate to a director or senior manager the function of:
 
 	   - Overseeing compliance and
 	   - Reporting compliance matters to board
@@ -851,13 +853,13 @@ ESMA has also issued guidelines under article 16(3) of the ESMA Regulation cover
 
    - Full-scope UK AIFMs need to comply with AIFM Remuneration Code.
 
-   - A debt management firm and credit repair firm or Class 1 as per CMCOB 7.2.5R(1) and SUP 10C (FCA senior managers regime for approved persons in SMCR firms) must appoint a compliance officer.
+   - A <mark>debt management firm</mark> and credit repair firm or Class 1 as per CMCOB 7.2.5R(1) and SUP 10C (FCA senior managers regime for approved persons in SMCR firms) <mark>must appoint a compliance officer</mark>.
 
 I think this this is companies that do IVAs and bankruptcies.
 
    - "(3) In the FCA's view, it will be appropriate, in many cases, for the removal or any other disciplinary sanctioning of the compliance officer to require the approval of a majority of the management body, including at least a majority of its members who do not perform any executive function in the firm."
 
-   - SYSC 6.1.5 then caveats all of this with nature/scale/complexity consideration except if you're doing P2P lending with a "target rate" then you need a compliance officer.
+   - <mark>SYSC 6.1.5 then caveats all of this with nature/scale/complexity consideration</mark> except if you're doing P2P lending with a "target rate" then you need a compliance officer.
 
 ## SYSC 6.2 Internal audit
 
@@ -1009,4 +1011,341 @@ Skipping this section as I have no intention of outsourcing.
  - A credit institution must keep records of any account information services and payment initiation services it provides in the UK.
 
  - Not applicable (banking).
+
+## SYC 10 Conflicts of interest
+
+## SYSC 10.1 Application
+
+ - **Application to funeral plan distribution**
+   - This section applies to firms involved in funeral plan distribution as per the tables in Part 3 of SYSC 1 Annex 1.
+
+ - **Application to insurance intermediaries**
+   - This section applies to firms conducting insurance distribution activities according to Part 3 of SYSC 1 Annex 1, except where SYSC 10.1A rules apply.
+   - For insurance intermediaries, it applies to their insurance distribution activities.
+
+ - **Exemptions for insurance distribution related to investment products**
+   - Certain rules do not apply to firms when distributing insurance-based investment products if SYSC 10.1A rules are applicable.
+
+ - **Application to a common platform firm**
+   - For common platform firms, the MiFID Org Regulation applies, and specific rules and guidance are listed for services, conflicts, and policies.
+
+ - **Application to a MiFID optional exemption firm and to a third-country firm**
+   - These firms follow the rules and guidance as if they were rules or guidance in SYSC 1 Annex 1 3.2CR(1).
+
+ - **General application**
+   - Applies to firms providing services during regulated or ancillary activities, including UK UCITS management companies.
+
+ - **Requirements only apply if a service is provided**
+   - Requirements apply only when a service is provided, regardless of the client's status.
+
+ - **SRD requirements**
+   - Apply to SRD asset managers regarding their engagement activities.
+
+ - **Identifying conflicts**
+   - Firms must identify and manage conflicts of interest between themselves and clients or between clients.
+
+ - **Types of conflicts**
+   - Management companies must consider financial gains, interests in outcomes, incentives, business overlaps, and inducements when identifying conflicts.
+
+ - **Record of conflicts**
+   - Firms must keep records of conflicts that pose a material risk to clients' interests.
+
+ - **Managing conflicts**
+   - Firms must have arrangements to prevent conflicts from harming clients' interests.
+
+ - **Proportionality – insurance distribution activities**
+   - Arrangements must be proportionate to the activities and policies involved.
+
+ - **Disclosure of conflicts**
+   - If conflicts can't be managed, firms must disclose them to clients, detailing the nature, risks, and mitigation steps.
+
+ - **Conflicts policy**
+   - Firms must have a written conflicts of interest policy appropriate to their size and complexity.
+
+ - **Contents of policy**
+   - The policy must identify conflicts and specify management procedures.
+
+ - **Application of conflicts of interest rules to non-common platform firms**
+   - Rules also apply to firms producing investment research or non-independent research.
+
+ - **Additional requirements for a management company**
+   - UK UCITS management companies must consider interests and duties towards UCITS schemes.
+
+ - **Structure and organisation of a management company**
+   - Must be organised to minimise conflicts of interest.
+
+ - **Avoidance of conflicts of interest for a management company**
+   - Must avoid conflicts and ensure fair treatment of UCITS schemes.
+
+ - **Disclosure of conflicts of interest for a management company**
+   - Must inform senior personnel and report to Unitholders if conflicts can't be managed.
+
+ - **Collective portfolio management investment firms**
+   - Must obtain client approval before investing in AIF or UCITS they manage.
+
+ - **Additional requirements for an AIFM**
+   - AIFMs must identify, manage, and disclose conflicts of interest to protect AIFs and investors.
+
+ - **Subordinate measures for alternative investment fund managers**
+   - Detailed rules supplementing AIFMD provisions.
+
+## SYSC 10.1A Insurance-based investment products – Conflicts of interest
+
+ - **Application**
+   - Applies to firms distributing insurance-based investment products, in addition to SYSC 10.1 rules.
+
+ - **Identifying conflicts**
+   - Firms must assess conflicts of interest in insurance distribution activities, considering financial gains, incentives, and management involvement.
+
+ - **Conflicts policy**
+   - Firms must have a written conflicts policy appropriate to their size and complexity.
+
+ - **Contents of policy**
+   - Must include identification of conflicts and management procedures.
+
+ - **Disclosure of conflicts**
+   - Disclosure is a last resort if conflicts can't be managed.
+
+ - **Review of conflicts policy**
+   - Firms must review their conflicts policy annually and address deficiencies.
+
+ - **Record keeping**
+   - Firms must keep records of conflicts and report them to senior management.
+
+## SYSC 10.2 Chinese walls
+
+ - **Application**
+   - Applies to any firm.
+
+ - **Control of information**
+   - Firms can establish Chinese walls to withhold information between business parts, ensuring effective monitoring.
+
+ - **Effect of rules**
+   - Provides a defense against certain legal actions if firms comply with Chinese wall rules.
+
+ - **Attribution of knowledge**
+   - Firms aren't considered to have knowledge if individuals are separated by a Chinese wall.
+
+## Definitions
+
+- **Common platform firm**: A firm subject to the MiFID Org Regulation.
+- **Management company**: A company managing UCITS schemes.
+- **Insurance intermediary**: A firm conducting insurance distribution activities.
+- **MiFID optional exemption firm**: A firm exempt from certain MiFID requirements.
+- **Third-country firm**: A firm based outside the UK.
+- **UK UCITS management company**: A company managing UK UCITS schemes.
+- **Full-scope UK AIFM**: A UK Alternative Investment Fund Manager managing AIFs.
+- **SRD asset manager**: An asset manager subject to the Shareholder Rights Directive.
+- **AIFM**: Alternative Investment Fund Manager.
+- **UCITS scheme**: Undertakings for Collective Investment in Transferable Securities.
+- **AIF**: Alternative Investment Fund.
+
+## SYSC 10A.1 Recording telephone conversations and electronic communications
+
+### Application
+
+- **Who this chapter applies to:**
+  - This chapter applies to a firm that is any of the following:
+    - MiFID investment firm
+    - Full-scope UK AIFM
+    - Small authorised UK AIFM or residual CIS operator
+    - UCITS management company
+    - MiFID optional exemption firm, performing activities covered by the exemption
+    - Third country investment firm
+    - A firm involved in activities related to:
+      - Commodity futures
+      - Commodity options
+      - Contracts for differences related to an underlying commodity
+      - Other futures or contracts for differences not related to commodities, financial instruments, or cash
+    - A firm involved in energy market activity or oil market activity
+    - OPS firm
+  - Exclusions:
+    - Depositary when acting as such
+    - Authorised professional firm with respect to its non-mainstream regulated activities
+
+- **Activities covered:**
+  - Arranging deals in investments
+  - Dealing in investments as agent or principal
+  - Managing investments
+  - Managing a UK UCITS or AIF as specified in relevant directives
+  - Establishing, operating, or winding up a collective investment scheme
+
+- **Location:**
+  - Applies only to activities carried out from an establishment in the UK.
+
+- **Third country investment firms:**
+  - This chapter applies alongside GEN 2.2.22AR to ensure they are not treated more favorably than UK firms.
+
+- **Non-MiFID firms:**
+  - MiFIR and related regulations apply as if they were MiFID investment firms.
+
+- **Exemptions:**
+  - Activities between operators and depositaries of the same fund
+  - Certain energy market activities
+  - Activities in non-traded financial instruments
+  - Underwriting and placing of financial instruments
+  - Ancillary services
+
+### Obligations for Telephone and Electronic Communications
+
+- **Recording requirements:**
+  - Firms <mark>must record telephone conversations and keep copies of electronic communications related to financial instrument activities</mark>.
+  - Applies to equipment provided by the firm or accepted for use by employees or contractors.
+
+- **Preventing unrecorded communications:**
+  - Firms must prevent employees or contractors from using private equipment for relevant communications if it cannot be recorded.
+
+- **Scope of communications:**
+  - Includes communications intended to result in financial instrument activities, even if they do not.
+
+- **Exemption for retail-focused MiFID optional exemption firms:**
+  - Can use written minutes or notes instead of recordings, including specific details like date, time, participants, and order information.
+
+- **Recording policy:**
+  - Firms using the exemption should document their decision in their recording policy and ensure records are durable and unalterable.
+
+### Notification
+
+- **Client notification:**
+  - Firms <mark>must inform clients that communications may be recorded before providing investment services</mark>.
+
+- **Timing of notification:**
+  - Notify new clients before service provision.
+  - Notify existing clients before service provision after rules commence or the firm becomes subject to them.
+
+### Obligation for Other Communications
+
+- **Non-telephone instructions:**
+  - Must be in a durable medium like mail, faxes, emails, or documented meeting instructions.
+
+### Record-keeping
+
+- **Record provision and retention:**
+  - Records must be provided to clients upon request.
+  - Retain <mark>records for five years, extendable to seven years if requested by the FCA</mark>.
+
+---
+
+### Definitions
+
+- **MiFID investment firm:** A firm authorized to provide investment services under the Markets in Financial Instruments Directive (MiFID).
+- **Full-scope UK AIFM:** A UK-based Alternative Investment Fund Manager with full authorization.
+- **Small authorised UK AIFM:** A smaller UK-based Alternative Investment Fund Manager with specific authorization.
+- **Residual CIS operator:** An operator of a collective investment scheme not covered by other specific regulations.
+- **UCITS management company:** A company managing Undertakings for Collective Investment in Transferable Securities.
+- **MiFID optional exemption firm:** A firm exempt from certain MiFID requirements but still performing related activities.
+- **Third country investment firm:** An investment firm based outside the UK or EU.
+- **OPS firm:** A firm involved in occupational pension schemes.
+- **Depositary:** An entity holding assets on behalf of a fund.
+- **Authorised professional firm:** A firm authorized to conduct certain regulated activities.
+
+## SYSC 11 Liquidity risk systems and controls
+
+## SYSC 11.1 Application
+
+All section within are deleted.
+
+## SYSC 12 Group risk systems and controls requirements
+
+## SYSC 12.1 Application
+
+- **Who This Section Applies To:**
+  - This section applies to members of a group, specifically:
+    - An investment firm that is not a designated investment firm.
+    - An insurer.
+    - A UK ISPV.
+    - A UK parent entity of an investment firm group subject to certain prudential rules.
+    - A firm subject to specific rules in IPRU(INV) Chapter 14.
+    - A UCITS firm, but only if its group includes a firm from the above categories.
+    - The Society.
+
+- **Different Types of Groups:**
+  - Certain rules apply to all groups, including financial conglomerates.
+  - Additional requirements apply only to financial conglomerates identified as such.
+  - Other specific rules apply to certain types of groups.
+
+- **Exclusions:**
+  - This section does not apply to an ICVC.
+
+- **Specific Rule Applications:**
+  - Some rules only apply to financial conglomerates that have been officially identified.
+  - These rules do not apply if the firm's relationship with the conglomerate is only a participation.
+  - They also do not apply to third-country groups.
+
+- **Definition of a Group:**
+  - A group includes all financial and non-financial undertakings within a firm's group, and other linked undertakings if excluding them would mislead.
+
+- **Purpose:**
+  - This chapter explains how systems and control requirements apply to firms within a group, focusing on assessing risks from both the group and the firm's own activities.
+
+## General Rules
+
+- **Risk Management and Internal Controls:**
+  - A firm must have adequate risk management processes and internal controls for managing group risk.
+  - The group must also have adequate risk management processes and internal controls.
+
+- **Judging Adequacy:**
+  - The adequacy of these processes should be judged based on the group's business nature, scale, complexity, and risks.
+
+- **Internal Control Mechanisms:**
+  - Must include mechanisms for producing data relevant to monitoring compliance with prudential requirements.
+  - Must monitor funding within the group.
+
+- **Application to Solvency II Firms:**
+  - The application of these rules is limited for Solvency II firms.
+
+## Financial Conglomerates
+
+- **Risk Management for Financial Conglomerates:**
+  - Must include sound governance, capital adequacy policies, integrated risk monitoring, consistent systems and controls, and recovery plans.
+
+- **Internal Controls for Financial Conglomerates:**
+  - Must identify and measure risks, relate capital to risks, and have sound reporting for intra-group transactions.
+
+## CRR Firms and Non-CRR Firms
+
+- **Requirements for CRR Firms:**
+  - Must comply with risk management and internal control obligations on a consolidated basis.
+  - Ensure consistent and integrated arrangements within the consolidation group.
+
+- **Application to Specific Firms:**
+  - Applies to CRR firms and certain non-CRR firms that are parent financial holding companies.
+
+- **Mixed-Activity Holding Companies:**
+  - Must have procedures to manage transactions between the firm and its parent mixed-activity holding company.
+
+## Nature and Extent of Requirements
+
+- **Assessment by FCA:**
+  - The FCA will assess the adequacy of a group's systems and controls as part of its risk management process.
+
+- **Varying Requirements:**
+  - The necessary systems and controls depend on the materiality of risks and the firm's position within the group.
+
+- **Delegation of Functions:**
+  - Firms may delegate risk management functions to group members, but remain responsible for compliance.
+
+- **Joint Responsibility:**
+  - Responsibility for group systems and controls is shared among firms in the group.
+
+- **Relying on Parent's Systems:**
+  - Firms can rely on their parent's group risk systems if both are subject to the same rules.
+
+---
+
+### Definitions
+
+- **Investment Firm:** A firm engaged in investment services and activities.
+- **Designated Investment Firm:** A specific category of investment firm subject to particular regulations.
+- **Insurer:** A company that provides insurance services.
+- **UK ISPV:** A UK-based Insurance Special Purpose Vehicle.
+- **UCITS Firm:** A firm managing Undertakings for Collective Investment in Transferable Securities.
+- **The Society:** Refers to the Society of Lloyd's.
+- **ICVC:** Investment Company with Variable Capital.
+- **Financial Conglomerate:** A group of companies in the financial sector, identified as such under specific regulations.
+- **CRR Firm:** A firm subject to the Capital Requirements Regulation.
+- **Non-CRR Firm:** A firm not subject to the Capital Requirements Regulation but may be a parent financial holding company.
+- **Mixed-Activity Holding Company:** A parent company with subsidiaries in different sectors, not limited to financial services.
+
+## SYSC 13 Operational risk: systems and controls for insurers
 
