@@ -8303,6 +8303,187 @@ Expand +CASS Client Assets
 - **SME growth market**: A market designed for small and medium-sized enterprises to access capital.
 - **FCA**: Financial Conduct Authority, the UK financial regulatory body.
 
+## MAR 5A Organised trading facilities (OTFs)
+
+**Author's Note** - The following is from Grok and explains OTFs.
+
+ChatGPT:
+
+An **OTF** (Organised Trading Facility) is a type of trading venue under European financial regulations, specifically designed for trading financial instruments that do not fit into the traditional exchange or multilateral trading facility (MTF) categories. OTFs are regulated by MiFID II (Markets in Financial Instruments Directive II) and provide a platform for trading instruments such as bonds, structured products, and derivatives.
+
+Key characteristics of an OTF include:
+
+- **Discretionary Order Execution**: Unlike traditional exchanges, firms operating OTFs can exercise discretion in the execution of client orders.
+- **No Proprietary Trading**: An OTF operator is prohibited from executing client orders against its own capital unless specific conditions are met.
+- **Separation from Systematic Internalisers**: OTFs must operate independently of systematic internalisers (SIs) to prevent conflicts of interest or order interaction between the two.
+
+Essentially, an OTF is a regulated venue that allows for more flexible, less structured trading compared to an exchange, with a focus on giving discretion to the operator in matching client orders and executing trades.
+
+## MAR 5A.1 Application
+
+### Who and what?
+
+- **Application to Firms:**
+  - This chapter applies to:
+    - <mark>A UK domestic firm operating an OTF (Organised Trading Facility) from an establishment in the UK or elsewhere.</mark>
+    - An overseas firm operating an OTF from an establishment in the UK.
+
+- **Additional Provisions:**
+  - MAR 5A.3.9R applies to a UK RIE (Recognised Investment Exchange) as if it were an investment firm.
+  - GEN 2.2.22AR ensures that a third country investment firm is not treated more favorably than an EEA firm.
+
+## MAR 5A.2 Purpose
+
+- **Objective:**
+  - <mark>This chapter implements MiFID provisions for firms operating OTFs, specifically articles 18, 20, 31, 32, 48, 49, and 50.</mark>
+  - MAR 5A.3.9R outlines how investment firm obligations under articles 16, 24, 25, 27, and 28 apply to OTF operations.
+  - <mark>Bilateral systems are excluded from the OTF definition.</mark>
+
+## MAR 5A.3 Specific requirements for OTFs
+
+### Executing orders
+
+- **Order Execution:**
+  - <mark>Firms must execute orders on a discretionary basis.</mark>
+  - Firms cannot execute client orders against their proprietary capital unless permitted.
+  - OTF operations must be separate from systematic internalisers (SIs) and not connect in a way that allows order interaction.
+
+**Author's Note** - A firm acting as an SI matches client orders with its own orders, rather than sending them to an external venue.
+
+- **Discretion in Order Execution:**
+  - Discretion involves deciding whether to place or retract an order on the OTF.
+  - Discretion also involves matching client orders with others on the OTF, complying with client instructions and best execution obligations.
+
+- **Crossing Client Orders:**
+  - Firms can decide if, when, and how much of orders to match and facilitate negotiation between clients.
+
+- **Market Making:**
+  - Firms can engage another investment firm for market making on an OTF, provided there are no close links.
+
+### Proprietary trading
+
+- **Trading Restrictions:**
+  - Firms cannot engage in matched principal trading on an OTF except in specific instruments and with client consent.
+  - Firms cannot deal on own account on an OTF, except in certain sovereign debt instruments without a liquid market.
+
+- **Liquid Market Definition:**
+  - A liquid market has continuous buyers and sellers, assessed by transaction frequency, market participants, and spread size.
+
+- **Matched Principal Trading:**
+  - Firms must ensure compliance with matched principal trading definitions and manage settlement risk.
+
+### Other MiFID obligations
+
+- **Compliance:**
+  - <mark>Firms must comply with specific MiFID articles related to operating an OTF, transposed into the FCA Handbook.</mark>
+
+### Reporting to the FCA
+
+- **Information Provision:**
+  - <mark>Firms must explain why an OTF cannot operate as an MTF, how discretion is exercised, and use of matched principal trading.</mark>
+  - Information must be supplied to the FCA electronically.
+
+### Functioning of an OTF
+
+- **Operational Requirements:**
+  - <mark>OTFs must have at least three active members for price interaction.</mark>
+  - <mark>Firms must provide detailed descriptions of OTF functioning and member lists to the FCA.</mark>
+
+### Transferable securities traded without issuer consent
+
+- **Issuer Obligations:**
+  - Firms must not impose disclosure obligations on issuers when securities are traded on an OTF without issuer consent.
+
+## MAR 5A.5 Systems and controls for algorithmic trading
+
+### <mark>Systems and controls</mark>
+
+- **Adequacy and Effectiveness:**
+  - Systems and controls must be adequate for the firm's business scale and nature, especially for algorithmic trading.
+
+- **Specific Controls:**
+  - Controls must ensure system resilience, capacity for peak volumes, orderly trading under stress, and business continuity.
+  - Systems must reject erroneous orders, manage disorderly trading, and enforce tick size limits.
+
+### <mark>Market making agreements</mark>
+
+- **Agreements and Compliance:**
+  - Firms must have written agreements with market makers, ensure sufficient market maker participation, and monitor compliance.
+  - Agreements must specify liquidity obligations and incentives.
+
+### Measures to prevent disorderly markets
+
+- **Trading Halts:**
+  - <mark>Firms must be able to halt trading during significant price movements and report parameters to the FCA.</mark>
+
+### Direct electronic access
+
+- **Access Criteria:**
+  - <mark>Direct electronic access is restricted to certain firms, with criteria for suitability and standards for risk controls.</mark>
+
+### Co-location
+
+- **Service Rules:**
+  - Co-location service rules must be transparent, fair, and non-discriminatory.
+
+### Fee structures
+
+- **Fee Transparency:**
+  - Fee structures must be transparent, fair, and not incentivize disorderly trading.
+
+### Flagging orders, tick sizes and clock synchronisation
+
+- **Order Identification:**
+  - Orders generated by algorithmic trading must be flagged for identification.
+  - <mark>Tick size regimes must reflect liquidity profiles and be adapted appropriately.</mark>
+  - Business clocks must be synchronized for reportable events.
+
+## MAR 5A.6 Finalisation of transactions
+
+- **Settlement Responsibilities:**
+  - Firms must inform users of settlement responsibilities and facilitate efficient transaction settlement.
+
+## MAR 5A.7 Monitoring compliance with the rules of the OTF
+
+- **Monitoring Arrangements:**
+  - Firms must monitor user compliance with OTF rules and identify breaches or disorderly trading.
+
+## MAR 5A.8 Reporting requirements
+
+- **Reporting Obligations:**
+  - Firms must report significant rule breaches, disorderly trading, market abuse, and system disruptions to the FCA.
+
+## MAR 5A.9 Suspension and removal of financial instruments
+
+- **Suspension Rules:**
+  - Firms must not suspend or remove instruments if it harms investors or market orderliness, and must notify the FCA of such actions.
+
+## MAR 5A.10 Pre-trade transparency requirements for non-equity instruments: form of waiver
+
+- **Waiver Application:**
+  - Firms must apply for pre-trade transparency waivers in the specified form.
+
+## MAR 5A.11 Post-trade transparency requirements for non-equity instruments: form of deferral
+
+- **Deferral Application:**
+  - Firms must apply for post-trade transparency deferrals in writing and notify the FCA promptly.
+
+## Definitions
+
+- **UK domestic firm:** A firm based in the UK.
+- **Overseas firm:** A firm based outside the UK.
+- **OTF (Organised Trading Facility):** A platform for trading financial instruments.
+- **UK RIE (Recognised Investment Exchange):** An exchange recognized by UK authorities.
+- **MiFID:** Markets in Financial Instruments Directive, EU legislation for financial markets.
+- **MTF (Multilateral Trading Facility):** A trading system that facilitates the exchange of financial instruments.
+- **Systematic internaliser:** A firm that deals on its own account by executing client orders outside a regulated market or MTF.
+- **Matched principal trading:** A trading method where the firm interposes itself between buyer and seller to match orders.
+- **Liquid market:** A market with continuous buying and selling activity.
+- **Algorithmic trading:** Trading using computer algorithms to execute orders.
+- **Direct electronic access:** Allowing clients to access a trading venue directly using the firm's infrastructure.
+- **Co-location:** Placing trading systems close to a trading venue's infrastructure to reduce latency.
+- **Tick size:** The minimum price movement of a trading instrument.
+- **FCA (Financial Conduct Authority):** The UK financial regulatory body.
 
 
 -
