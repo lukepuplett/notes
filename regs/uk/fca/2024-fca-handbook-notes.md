@@ -9133,11 +9133,1318 @@ Skipped. Seems to be about commodity derivatives, not marketplace operator.
 
 # PROD Product Intervention and Product Governance Sourcebook
 
-##
+## PROD 1 Product Intervention and Product Governance Sourcebook (PROD)
 
-WILO
+## PROD 1.1 Application and Purpose
 
+**Author's Note** - Starting with some definitions via DeepSeek, Feb 10 2025.
 
+Definition: The manufacturing pathway <mark>refers to the process by which a firm designs, creates, and manages financial products or services.</mark> This includes:
+
+- Identifying target markets.
+- Designing products to meet the needs of those markets.
+- Ensuring products are distributed appropriately.
+- Monitoring products throughout their lifecycle.
+
+Definition: A default option is a pre-selected choice offered to clients when they do not actively make a decision. For example:
+
+- In workplace pension schemes, a default investment fund is selected for employees who do not choose their own investments.
+- In insurance or investment products, a default option may be offered if the client does not specify their preferences.
+
+### Purpose
+
+- **Improving Processes**: <mark>The purpose of PROD is to enhance firms' product oversight and governance processes and to outline the FCA's policy on temporary product intervention rules.</mark>
+
+- **Product Oversight and Governance**: <mark>This refers to the systems and controls firms use to design, approve, market, and manage products throughout their lifecycle to ensure compliance with legal and regulatory standards.</mark>
+
+- **Good Product Governance**: This should lead to products that:
+  1. Meet the needs of specific target markets.
+  2. Are sold to clients in these target markets through suitable distribution channels.
+  3. Deliver appropriate outcomes for clients.
+
+- **Gibraltar-based Firms**: References to Gibraltar-based firms in PROD have the same meaning as in the Gibraltar Order.
+
+## PROD 1.2 Application of PROD 2
+
+- **Relevance**: <mark>PROD 2 outlines the FCA's approach to temporary product intervention rules and is relevant to all firms.</mark>
+
+## PROD 1.3 Application of PROD 3
+
+### General: Who? What?
+
+- **Applicable Firms**: <mark>PROD 3 applies to:</mark>
+  1. MiFID investment firms.
+  2. CRD credit institutions.
+  3. MiFID optional exemption firms.
+  4. Branches of third-country investment firms.
+  
+- **Activities Covered**: This includes:
+  1. Manufacturing financial instruments and structured deposits.
+  2. Distributing financial instruments, structured deposits, and investment services.
+
+- **TP and Gibraltar-based Firms**: These firms must comply with PROD 1.3 and PROD 3 regarding pathway investments from UK establishments.
+
+### Other Firms Manufacturing or Distributing Financial Instruments or Structured Deposits
+
+- **Guidance**: Other firms should consider PROD 3 as guidance, replacing "must" with "should," unless they must comply with Principle 12 (Consumer Duty) and PRIN 2A.
+
+### Eligible Counterparty Business
+
+- **Exemption**: PROD 3.3.1R does not apply to eligible counterparty business.
+
+### Where?
+
+- **UK Establishments**: PROD 3 applies to activities from UK establishments or their representatives.
+
+- **Overseas Activities**: PROD 3 also applies to overseas activities with UK clients unless certain exclusions apply.
+
+### MiFID
+
+- **Guidance**: <mark>PERG 13 provides general guidance on the application of UK provisions implementing MiFID.</mark>
+
+### Interaction of PROD 3 and the RPPD Guide
+
+- **Compliance**: Firms complying with PROD 3 need not apply RPPD guidance for covered matters.
+
+### Manufacturing Pathway Investments and Default Options
+
+- **Additional Guidance**: <mark>Firms under PROD 3 for manufacturing pathway investments or default options are also subject to PROD 6 guidance.</mark>
+
+## PROD 1.4 Application of PROD 4
+
+- **Applicable Firms**: PROD 4 applies to:
+  1. Insurance intermediaries.
+  2. Insurers.
+  
+- **Activities Covered**: This includes manufacturing insurance products, governance and distribution arrangements for legacy non-investment insurance products, and distributing insurance products.
+
+- **TP and Gibraltar-based Firms**: These firms must comply with PROD 1.4 and PROD 4.5 regarding value measures data and pathway investments.
+
+- **Exemptions**: PROD 4 does not apply to large risk contracts meeting specific conditions or reinsurance contracts.
+
+### Manufacturing and Distributing Pathway Investments and Default Options
+
+- **Additional Guidance**: Firms under PROD 4 for manufacturing pathway investments or default options are also subject to PROD 6 guidance.
+
+### When an Intermediary May Be Considered to Be Manufacturing
+
+- **Criteria**: An insurance intermediary is considered a manufacturer if they have a decision-making role in product design and development.
+
+### Scope of ‘Manufacturing’
+
+- **Definition**: 'Manufacture' includes designing, developing, creating, and/or underwriting insurance products.
+
+### Where?
+
+- **UK and Overseas**: PROD 4 applies to activities from UK establishments and overseas for non-investment insurance products marketed or distributed in the UK.
+
+### Interaction of PROD 4 and the RPPD Guide
+
+- **Compliance**: Firms complying with PROD 4 need not apply RPPD guidance for covered matters.
+
+### Modification of PROD 4.2 and PROD 4.3 for Overseas Non-Investment Insurance Products
+
+- **Modifications**: PROD 4 applies to overseas non-investment insurance products with specific modifications.
+
+### Meaning of ‘Customer’ in PROD 4 for Non-Investment Insurance Contracts
+
+- **Definition**: 'Customer' includes policyholders, prospective policyholders, and policy stakeholders like leaseholders.
+
+## PROD 1.5 Application of PROD 5
+
+### General: Who? What?
+
+- **Applicable Firms**: PROD 5 applies to firms offering or referring extended warranties in connection with rent-to-own agreements.
+
+### Where?
+
+- **UK Establishments**: PROD 5 applies to activities from UK establishments or their representatives.
+
+## PROD 1.6 Application of PROD 6
+
+- **Applicable Firms**: PROD 6 applies to firms manufacturing or distributing pathway investments or default options in connection with personal pension schemes or stakeholder pension schemes.
+
+## PROD 1.7 Application of PROD 7
+
+### Application of PROD 7
+
+- **Applicable Firms**: PROD 7 applies to funeral plan providers and intermediaries for manufacturing and distributing funeral plan products.
+
+- **Gibraltar-based Firms**: These firms must comply with PROD 7 provisions.
+
+### Manufacturing a Funeral Plan Product
+
+- **Definition**: 'Manufacture' includes designing, developing, creating, and/or entering into funeral plan contracts.
+
+### Territorial Scope
+
+- **Scope**: PROD 7 applies to activities related to funeral plan products and subsisting funeral plans.
+
+### Interaction of PROD 7 and the RPPD Guide
+
+- **Compliance**: The RPPD Guide does not apply to firms complying with PROD 7 for covered matters.
+
+---
+
+## Definitions
+
+- **MiFID Investment Firm**: A firm authorized under the Markets in Financial Instruments Directive to provide investment services.
+- **CRD Credit Institution**: A bank or other financial institution regulated under the Capital Requirements Directive.
+- **MiFID Optional Exemption Firm**: A firm that opts out of certain MiFID requirements.
+- **TP Firm**: A temporary permissions firm operating under the UK's temporary permissions regime post-Brexit.
+- **Gibraltar-based Firm**: A firm based in Gibraltar, subject to specific UK regulations.
+- **Insurance Intermediary**: A person or firm that arranges insurance contracts between clients and insurers.
+- **Insurer**: A company that provides insurance policies.
+- **Funeral Plan Provider**: A firm that offers funeral plan products.
+- **Funeral Plan Intermediary**: A firm that distributes funeral plan products.
+
+## PROD 2 Statement of policy with respect to the making of temporary product intervention rules
+
+**Author's Note** - By "temporary product intervention rules", the "temporary" aspect indicates that these measures are not permanent but are imposed for a limited period to mitigate immediate risks while longer-term solutions are developed.
+
+## PROD 2.1 Purpose
+
+- **Explanation of FCA Policy**
+  - This chapter outlines the FCA's policy on creating temporary product intervention rules under sections 137D and 138M of the Act. It updates the previous policy statement PS13/03.
+
+- **Definition of Product Intervention Rules**
+  - These are rules made under section 137D of the Act that apply to specific products, product features, or marketing practices.
+
+- **Temporary Product Intervention Rules**
+  - These rules can be made without consultation under section 138M of the Act, but they can only last for a maximum of 12 months.
+
+## PROD 2.2 General Rule Making and Product Intervention Rules
+
+- **FCA's Rule-Making Power**
+  - The FCA can make general rules to advance its operational objectives.
+
+- **Use of Rule-Making Power for Product Intervention**
+  - The FCA can prohibit authorised persons from entering into certain agreements to advance consumer protection, competition, or market integrity objectives.
+
+- **Prohibitions Under Section 137D(2)**
+  - The FCA can prevent authorised persons from entering into specified agreements unless certain conditions are met.
+
+- **Range of Options for Rule Making**
+  - The FCA has various options for making rules to prohibit certain agreements.
+
+- **Extent of Rules**
+  - The rules depend on the type of intervention needed to address identified issues, ensuring a proportionate response.
+
+- **Possible Rule Requirements**
+  - Rules may require changes to product features, promotional materials, or impose sales restrictions.
+
+- **Rules for Products from Outside the UK**
+  - Rules can target UK-regulated activities leading to specified agreements.
+
+## PROD 2.3 Agreements Made in Breach of Product Intervention Rules
+
+- **Consequences of Breaching Rules**
+  - Agreements made in breach of rules may be unenforceable, and money or property transferred under such agreements may be recoverable.
+
+- **Unenforceability Conditions**
+  - Agreements are unenforceable if made after the rules' introduction and in contravention of those rules.
+
+- **Pre-Rule Arrangements**
+  - Contracts made before the rules are not affected, but clients can still seek redress through usual channels.
+
+## PROD 2.4 Temporary Product Intervention Rules
+
+- **Consultation Exemption**
+  - Normally, the FCA must consult before making rules, but there is an exemption if delay would harm consumer interests.
+
+- **Specific Exemption for Temporary Rules**
+  - The FCA can make temporary rules without consultation if necessary to advance consumer protection, competition, or market integrity.
+
+- **FCA Board's Role**
+  - The FCA Board decides on making rules, considering evidence and impact.
+
+- **Publication of Rationale**
+  - The FCA will publish the rationale for temporary rules.
+
+## PROD 2.5 Factors the FCA Will Consider When Making Temporary Product Intervention Rules
+
+- **Risk Identification**
+  - The FCA will consider rules where there is a risk of consumer harm, market integrity threat, or ineffective competition.
+
+- **Need for Prompt Action**
+  - The main consideration is whether quick action is needed to reduce or prevent harm.
+
+## PROD 2.6 General Considerations for Product Intervention Rules
+
+- **Regulatory Principles**
+  - The FCA will consider regulatory principles when making rules.
+
+- **General Considerations**
+  - Considerations include effectiveness, proportionality, competition compatibility, evidence support, transparency, client benefit, and legal compatibility.
+
+- **Equality Considerations**
+  - The FCA will consider equality issues, such as eliminating discrimination and advancing equality.
+
+## PROD 2.7 Contextual Considerations for Product Intervention Rules
+
+- **Factors for Consideration**
+  - Factors include potential market detriment, individual client detriment, social context, market context, and unintended consequences.
+
+## PROD 2.8 Competition Considerations for Temporary Product Intervention Rules
+
+- **Promotion of Competition**
+  - The FCA will promote competition in the interests of consumers when making rules.
+
+- **Competition-Related Considerations**
+  - Considerations include the scope for promoting competition, impact on innovation, proportionality, alternative solutions, and overall market effect.
+
+## PROD 2.9 Regulatory Principles
+
+- **Regulatory Principles Consideration**
+  - The FCA will consider regulatory principles when making temporary rules.
+
+- **Innovation Consideration**
+  - The FCA will weigh the deterrent effect on market entry and innovation against reducing consumer harm.
+
+## PROD 2.10 Process for Making Temporary Product Intervention Rules
+
+- **Proposal Process**
+  - Initial proposals are discussed at the working group level and then proposed to the FCA Board by a committee.
+
+- **Committee's Role**
+  - The committee may endorse, amend, or reject proposals.
+
+- **Board's Decision**
+  - The Board decides on the proposals, and if approved, the rules are published.
+
+## PROD 2.11 Consulting the Panels
+
+- **Panel Consultation**
+  - The FCA will seek views from various panels during the rule-making process if time allows.
+
+## PROD 2.12 Consulting the PRA
+
+- **PRA Consultation**
+  - The FCA will consult the PRA before making any product intervention rules.
+
+## PROD 2.13 Communication, Publication, and Post-Implementation Review of Temporary Product Intervention Rules
+
+- **Communication Strategy**
+  - The FCA will consider how to inform affected firms and clients about the rules.
+
+- **Publication of Statement**
+  - The FCA will publish a statement explaining the rule and may invite feedback.
+
+- **Review of Rules**
+  - The FCA may review rules during their term, considering market feedback and evidence.
+
+- **Review Outcomes**
+  - Reviews may lead to rule revocation or amendment.
+
+- **Communication of Changes**
+  - Changes to rules will be communicated with a new statement.
+
+- **Consultation on New Rules**
+  - The FCA may consult on new rules to replace temporary ones.
+
+## PROD 2.14 Revocation or Replacement of Rules
+
+- **Duration of Rules**
+  - Temporary rules have a maximum duration of 12 months but can be shorter.
+
+- **Review and Revocation**
+  - The FCA can review or revoke rules before their end date.
+
+- **Reasons for Revocation**
+  - Reasons include new permanent rules, industry initiatives, new evidence, or unforeseen negative effects.
+
+- **Restriction on Re-Making Rules**
+  - The FCA cannot make the same temporary rules within 12 months after the initial rules end.
+
+---
+
+### Definitions
+
+- **FCA (Financial Conduct Authority):** The regulatory body responsible for overseeing financial markets and firms in the UK.
+- **Authorised Persons:** Individuals or firms that have been granted permission by the FCA to carry out regulated activities.
+- **Specified Agreements:** Contracts or arrangements that are defined by FCA rules and subject to intervention.
+- **Temporary Product Intervention Rules:** Rules made by the FCA without consultation, lasting up to 12 months, to address urgent issues.
+- **PRA (Prudential Regulation Authority):** The regulatory authority responsible for the prudential regulation of financial firms in the UK.
+
+## PROD 3 Product governance: MiFID
+
+## PROD 3.1 General
+
+- **Interpretation: financial instruments and structured products**
+  - For PROD 3, "financial instruments" also includes structured deposits.
+
+- **Proportionate application of rules**
+  - <mark>Firms must comply with the rules in this chapter when creating or choosing financial instruments and services to distribute, in a way that is suitable and proportionate.</mark>
+  - Consider the nature of the financial instrument/service and the target market.
+  - Simpler compliance may be sufficient for simple financial instruments aimed at the mass retail market.
+
+## PROD 3.2 Manufacture of products
+
+- **General**
+  - Manufacturers must ensure financial instruments meet the needs of a specific target market and that distribution strategies align with this market.
+  - Consider target market factors throughout product development and distribution.
+
+- **Product governance arrangements**
+  - <mark>Manufacturers must have a process to approve each financial instrument and significant changes before marketing.</mark>
+  - <mark>The approval process must define the target market, assess risks, and ensure distribution strategy consistency.</mark>
+  - <mark>Systems and controls should manage risks from financial instrument design.</mark>
+
+- **Manufacture by more than one firm**
+  - When collaborating, only one target market needs to be identified.
+  - Responsibilities must be outlined in a written agreement.
+
+- **Target market**
+  - Identify the target market at a detailed level, specifying compatible and incompatible client groups.
+  - Assess if the financial instrument meets the target market's needs and benefits the client.
+
+- **Product testing**
+  - Conduct scenario analysis to assess risks and conditions leading to poor outcomes.
+  - Evaluate the charging structure for compatibility, transparency, and impact on returns.
+  - Consider if the financial instrument threatens market stability.
+
+- **Information disclosure to distributors**
+  - Provide distributors with all necessary information about the financial instrument and its target market.
+  - Clarify if information is not for end client use.
+
+- **Review of financial instruments**
+  - Regularly review financial instruments for consistency with the target market and distribution strategy.
+  - Identify and act on crucial events affecting risk or return expectations.
+
+- **Conflicts of interest**
+  - Implement procedures to manage conflicts of interest, ensuring financial instruments do not adversely affect clients or market integrity.
+
+- **Oversight and training requirements**
+  - <mark>Management must control product governance processes, and staff must have expertise in financial instruments.</mark>
+
+- **Compliance reports**
+  - Include information on manufactured financial instruments and distribution strategy in compliance reports, available to the FCA on request.
+
+## PROD 3.3 Distribution of products and investment services
+
+- **General**
+  - Distributors must understand financial instruments, assess compatibility with client needs, and ensure distribution is in the client's best interest.
+
+- **Obtaining information from manufacturers**
+  - Distributors must obtain sufficient information from manufacturers to understand and distribute financial instruments appropriately.
+
+- **Distributing financial instruments manufactured by firms to whom PROD 3.2 does not apply**
+  - Distributors must ensure they have adequate information from manufacturers not subject to PROD 3.2.
+
+- **Target market and distribution strategy**
+  - Distributors must determine the target market and distribution strategy using manufacturer and client information.
+  - Ensure financial instruments and services align with the target market's needs.
+
+- **Oversight and training requirements**
+  - Product governance arrangements must be monitored for compliance, and staff must understand financial instruments and services.
+
+- **Compliance reports**
+  - Include information on distributed financial instruments and services in compliance reports, available to the FCA on request.
+
+- **Post-sale review**
+  - Regularly review financial instruments and services for consistency with the target market and distribution strategy.
+
+- **Information sharing**
+  - Provide manufacturers with sales information and review outcomes to support their product reviews.
+
+- **Responsibilities in chains of distributors**
+  - Ensure obligations are met for financial instruments/services distributed to end clients and pass relevant information along the distribution chain.
+
+## Definitions
+
+- **Firm**: A business entity involved in manufacturing or distributing financial instruments.
+- **Manufacturer**: A firm that creates financial instruments.
+- **Distributor**: A firm that sells or recommends financial instruments to clients.
+- **Financial Instrument**: Includes structured deposits and other investment products.
+- **Target Market**: The specific group of clients for whom a financial instrument is designed.
+- **MiFID**: Markets in Financial Instruments Directive, a regulatory framework for investment services in the EU.
+- **FCA**: Financial Conduct Authority, the UK regulator for financial services.
+
+## PROD 4 Product governance: IDD and pathway investments
+
+Skipped. Concerns the manufacture of insurance products.
+
+## PROD 5 Extended warranties sold with rent-to-own agreements: customer information and deferred opt-in
+
+Skipped. Concerns the sale of extended warranties with rent-to-own agreements.
+
+## PROD 6 Product governance: additional provisions for pathway investments and default options
+
+Skipped. Concerns the manufacture of investment products, esp. "pathway investments" for retail.
+
+## PROD 7 Product governance: funeral plans
+
+Skipped. Concerns the manufacture of funeral plans.
+
+# ESG Environmental, Social and Governance sourcebook
+
+Skipped. Concerns the governance of ESG factors.
+
+## ESG 1.1 Purpose and Application
+
+### Purpose
+
+- **ESG Sourcebook Overview**
+  - The ESG sourcebook provides rules and guidance on how firms should handle environmental, social, and governance (ESG) issues.
+
+- **Climate-Related Financial Information**
+  - ESG 1A and ESG 2 include rules and guidance for disclosing climate-related financial information in line with TCFD Recommendations and Recommended Disclosures.
+
+- **Disclosure Requirements**
+  - ESG 2's disclosure requirements pertain to assets managed or administered by a firm, either in a TCFD entity report or related to specific financial products/services in TCFD product reports.
+
+- **Application of ESG 3, 4, and 5**
+  - <mark>ESG 3 applies to all firms, detailing how ESG 4 and ESG 5 rules apply to different firm types.</mark> Most rules in ESG 4 and ESG 5 target managers, but some also apply to distributors and firms generally.
+
+- **Anti-Greenwashing Rules**
+  - ESG 4 includes anti-greenwashing rules applicable to any firm, regardless of whether they engage in sustainability-related business, concerning claims about product/service sustainability.
+
+- **Sustainability Labeling and Marketing**
+  - ESG 4 also sets rules for managers involved in sustainability-related business, restricting sustainability labels unless criteria are met, and outlines naming/marketing conditions for these products. It also covers distributors of sustainability products and recognized schemes, including ETFs, to retail clients.
+
+- **Consumer-Facing and Pre-Contractual Disclosure**
+  - ESG 5 outlines rules for managers in sustainability-related business regarding consumer-facing disclosure, pre-contractual disclosure, public product-level sustainability reports, and on-demand sustainability information, along with entity-level reporting requirements.
+
+- **TCFD-Related Disclosures**
+  - TCFD-related disclosures aim to meet the information needs of market participants, including institutional clients (e.g., pension trustees, employers, corporate investors) and product consumers (e.g., pension scheme members, retail investors), regarding climate-related impacts and risks.
+
+- **Sustainability-Related Information Needs**
+  - The sustainability-related rules in ESG 4 and ESG 5 also aim to meet market participants' information needs, including retail and institutional clients, about the sustainability characteristics and risks/opportunities of a manager's sustainability-related business.
+
+- **Transitional Challenges and Expectations**
+  - The FCA acknowledges potential data and methodological challenges during a transitional period but expects firms to provide sufficient information to clients and consumers. Firms should disclose metrics and quantitative scenario analysis or examples per the sourcebook's rules, ensuring fairness, clarity, and accuracy. Firms should explain any disclosure limitations and steps to address them.
+
+## ESG 1.2 General Application
+
+- **Specific Application of Rules**
+  - The specific application of rules and guidance in ESG 2, ESG 4, and ESG 5 is detailed in ESG 1A and ESG 3.
+
+- **Overview of Rule Application**
+  - A table provides a general overview of how ESG 2, ESG 4, and ESG 5 rules apply to different firms:
+
+  - **All Firms**
+    - ESG 4.1.1R(1); ESG 4.3.1R
+
+  - **Distributors**
+    - ESG 4.1.1R(1); ESG 4.1.16R to ESG 4.1.19R; ESG 4.3.1R
+
+  - **Asset Managers**
+    - Firms managing UK UCITS or AIFs, excluding:
+      - ESG 2 (except ESG 2.3.5R to ESG 2.3.8R for on-demand TCFD information)
+      - ESG 4 (except ESG 4.1.16R to ESG 4.1.19R for distributors) for UK UCITS and UK AIFs
+      - ESG 5 (except ESG 5.5.13R to ESG 5.5.15R for on-demand sustainability information) for UK UCITS and UK AIFs
+    - Firms managing a feeder fund or a full-scope UK AIFM/small authorised UK AIFM managing an unauthorised AIF not listed on a recognised exchange
+
+  - **Firms Managing a Feeder Fund**
+    - ESG 4.1.2R to ESG 4.1.8R, ESG 4.1.13R, ESG 4.1.14R; ESG 4.3.1R to ESG 4.3.8R; ESG 5.6
+
+  - **Full-Scope UK AIFM or Small Authorised UK AIFM**
+    - ESG 2 (except ESG 2.3.1R to ESG 2.3.4R for public TCFD product report)
+    - ESG 4 (except ESG 4.1.16R to ESG 4.1.19R for distributors) for UK AIFs
+    - ESG 5 (except for Part B of public product-level sustainability report) for UK AIFs
+
+  - **Asset Owners**
+    - Firms in table ESG 1A.1.1R(2), Part B
+    - ESG 2 (except ESG 2.3.5R to ESG 2.3.8R for on-demand TCFD information)
+    - ESG 4.1.1R(1); ESG 4.3.1R
+
+## Definitions
+
+- **Firm**: A business entity regulated by the FCA.
+- **Manager**: A firm responsible for managing assets or financial products.
+- **Distributor**: A firm that sells or distributes financial products to clients.
+- **TCFD**: Task Force on Climate-related Financial Disclosures, providing a framework for climate-related financial risk disclosures.
+- **Sustainability In-Scope Business**: Business activities that involve sustainability-related products or services.
+- **UK UCITS**: Undertakings for Collective Investment in Transferable Securities, a type of investment fund in the UK.
+- **AIF**: Alternative Investment Fund, a collective investment that is not a UCITS.
+- **Full-Scope UK AIFM**: A firm authorized to manage AIFs in the UK.
+- **Small Authorised UK AIFM**: A smaller firm authorized to manage AIFs in the UK.
+- **Feeder Fund**: A fund that invests in another fund (the master fund).
+- **Recognised Investment Exchange**: An exchange recognized by the FCA for trading securities.
+
+## ESG 1A.1 Application of ESG 2
+
+- **Application of Rules**
+
+  - <mark>The rules in ESG 2 apply to firms listed in column 1 of the table below, concerning their TCFD in-scope business conducted from a UK establishment, as described in column 2.</mark>
+
+**Author's Note** - The table below is not reproduced here but the information shows that ESG 2 does not apply for us.
+
+- **Table of Firm Types and TCFD In-Scope Business**
+
+  - **Part A: Asset Managers**
+    - Any firm: Portfolio management
+    - UK UCITS management company: Managing a UK UCITS
+    - ICVC that is a UCITS scheme without a separate management company: Managing a UK UCITS
+    - Full-scope UK AIFM: Managing an AIF
+    - Small authorised UK AIF: Managing an AIF
+
+  - **Part B: Asset Owners**
+    - Insurer or pure reinsurer: Providing insurance-based investment products
+    - Operating a personal pension scheme (excluding a SIPP) or stakeholder pension scheme
+    - Operating a SIPP, but only for SIPPs containing insurance-based investment products provided by the firm
+    - Other asset owners (excluding insurers or pure reinsurers): Operating a personal pension scheme (excluding a SIPP) or stakeholder pension scheme
+    - Operating a SIPP, but only for SIPPs containing any of the following provided by the firm:
+      - a unit
+      - an interest in a closed-ended investment fund
+      - a pre-set investment portfolio
+
+- **Exemption from Disclosure Requirements**
+
+  - A firm is exempt from the disclosure requirements under ESG 2 if its assets under administration or management for TCFD in-scope business are less than £5 billion, calculated as a 3-year rolling average on an annual basis.
+
+---
+
+### Definitions
+
+- **Asset Managers**: Firms involved in managing investment portfolios or funds.
+- **UK UCITS Management Company**: A company managing UK Undertakings for Collective Investment in Transferable Securities.
+- **ICVC**: Investment Company with Variable Capital, a type of UK investment fund.
+- **Full-scope UK AIFM**: A UK Alternative Investment Fund Manager with full regulatory permissions.
+- **Small Authorised UK AIF**: A smaller UK Alternative Investment Fund with specific authorisation.
+- **Asset Owners**: Entities that own assets, including insurers and pension scheme operators.
+- **Insurer or Pure Reinsurer**: Companies providing insurance or reinsurance services.
+- **SIPP**: Self-Invested Personal Pension, a type of UK pension scheme.
+- **TCFD**: Task Force on Climate-related Financial Disclosures, a framework for climate-related financial risk disclosures.
+
+## ESG 2 Disclosure of climate related financial information
+
+Skipped. Concerns the disclosure of climate related financial information. See note in previous section.
+
+## ESG 3 Application of ESG 4 and ESG 5
+
+## ESG 3.1 Application of ESG 4 and ESG 5 to firms
+
+- **Application**
+
+  - <mark>This chapter applies to all firms.</mark>
+
+- **Application of ESG 4 and ESG 5**
+
+  - ESG 4 and ESG 5 apply as follows:
+
+    - <mark>ESG 4.1.1R(1) and ESG 4.3.1R apply to all firms.</mark>
+
+    - In addition to the above rules, ESG 4.1.16R to ESG 4.1.19R apply to a distributor who distributes a sustainability product or a recognised scheme, including an ETF that is a recognised scheme, to retail clients.
+
+    - Subject to ESG 3.1.3R, all the rules and guidance in ESG 4 and ESG 5 apply to a manager of a type listed in column 1 of the table at ESG 3.1.2R(4) in relation to the sustainability in-scope business described in column 2 which either:
+
+      - is carried out from an establishment maintained by the manager in the United Kingdom; or
+
+      - to the extent that it is not carried out from an establishment maintained by the manager in the United Kingdom, is carried on in relation to a UK AIF.
+
+    - This table belongs to ESG 3.1.2R(3).
+
+      - **Column 1: type of manager**
+
+        - UK UCITS management company
+        - ICVC that is a UCITS scheme without a separate management company
+        - Full-scope UK AIFM
+        - Small authorised UK AIFM
+
+      - **Column 2: sustainability in-scope business**
+
+        - Managing a UK UCITS
+        - Managing a UK UCITS
+        - Managing an AIF
+        - Managing an AIF
+
+- **Exemption from ESG 5.6 for managers of assets below threshold**
+
+  - A manager is exempt from the disclosure requirements under ESG 5.6 if and for as long as the assets under administration or management in relation to its sustainability in-scope business amount to less than £5bn calculated as a 3-year rolling average on an annual assessment.
+
+- **Delegation of activities**
+
+  - Where a firm delegates its activities to another person, that firm still remains responsible for ensuring compliance with the requirements of ESG 4 and ESG 5.
+
+- **Meaning of assets in ESG 4 and ESG 5**
+
+  - In ESG 4 to ESG 5, unless the context otherwise requires, a reference to the term ‘assets’ means:
+
+    - the scheme property, in relation to an authorised fund; or
+
+    - in relation to a sustainability product other than an authorised fund, the investments that the sustainability product makes.
+
+---
+
+### Definitions
+
+- **Firm**: Any business or company that is subject to the rules and regulations of the FCA.
+- **Distributor**: A firm that distributes a sustainability product or a recognised scheme to retail clients.
+- **Manager**: A person or entity responsible for managing a UK UCITS, ICVC, or AIF.
+- **UK UCITS management company**: A company managing a UK Undertakings for Collective Investment in Transferable Securities.
+- **ICVC**: Investment Company with Variable Capital that is a UCITS scheme without a separate management company.
+- **Full-scope UK AIFM**: A full-scope UK Alternative Investment Fund Manager.
+- **Small authorised UK AIFM**: A small authorised UK Alternative Investment Fund Manager.
+- **Sustainability product**: A product that is designed to meet sustainability criteria.
+- **Recognised scheme**: A scheme that is recognised under the FCA regulations.
+- **ETF**: Exchange-Traded Fund that is a recognised scheme.
+- **UK AIF**: UK Alternative Investment Fund.
+- **Authorised fund**: A fund that is authorised under the FCA regulations.
+
+## ESG 4 Sustainability labelling, naming and marketing - Sections 4.1.1R and 4.3.1R
+
+**Author's Note** - This section is <mark>just 4.1.1R and 4.3.1R</mark> as these two apply to all firms, as afore mentioned.
+
+## ESG 4.1 Use of Sustainability Labels
+
+- **General Rule on Sustainability Labels**
+
+  - A firm is generally prohibited from using the following sustainability labels:
+    - ‘Sustainability focus’
+    - ‘Sustainability improvers’
+    - ‘Sustainability impact’
+    - ‘Sustainability mixed goals’
+
+  - **Exception for Managers**
+
+    - Starting from 31 July 2024, a manager can use a sustainability label if they are involved in sustainability in-scope business related to a sustainability product:
+      - If the product is not a feeder fund, it must meet the requirements in ESG 4.2.
+      - If the product is a feeder fund, it must meet the requirements in ESG 4.1.2R.
+
+## ESG 4.3 Naming and Marketing
+
+- **Anti-Greenwashing Rule**
+
+  - This rule applies to any firm, regardless of whether it is involved in sustainability in-scope business, that:
+    - Communicates with a client in the UK about a product or service.
+    - Communicates or approves a financial promotion for someone in the UK.
+
+  - A firm must ensure that any mention of the sustainability features of a product or service is:
+    - Consistent with the actual sustainability characteristics of the product or service.
+    - Fair, clear, and not misleading.
+
+---
+
+### Definitions
+
+- **Firm**: A business or company that is subject to the rules of the FCA Handbook.
+- **Manager**: A person or entity responsible for managing a sustainability product.
+- **Sustainability in-scope business**: Business activities that fall under the sustainability regulations as defined by the FCA.
+- **Sustainability product**: A product that is designed to meet certain sustainability criteria.
+- **Feeder fund**: A fund that invests in another fund, known as the master fund.
+
+## ESG 5 Disclosure of sustainability-related information
+
+Skipped. Concerns the disclosure of sustainability-related information.
+
+# Regulatory Processes
+
+# SUP Supervision
+
+## SUP 2 Information gathering by the FCA or PRA on its own initiative
+
+## SUP 2.1 Application and Purpose
+
+### Application
+
+- **SUP 2.1.1 R**
+  - <mark>This chapter applies in the same way as Principle 11, which deals with relations with regulators.</mark>
+
+- **SUP 2.1.2 G**
+  - PRIN 3 outlines who, what, and where Principle 11 applies.
+
+**Author's Note** - <mark>Almost every regulated firm it seems.</mark>
+
+- **SUP 2.1.2A G**
+  - CBTL firms must deal with the FCA openly and cooperatively under article 18(1)(d) of the MCD Order. SUP 2.3 applies to CBTL firms as if:
+    1. "Firm" includes CBTL firm.
+    2. "Regulatory system" refers to MCD Order provisions, rules, directions, and guidance for CBTL firms.
+    3. "Principle 11" refers to the duty in article 18(1)(d) of the MCD Order.
+    4. "Appropriate regulator’s functions under the Act" refers to FCA’s functions under Part 3 of the MCD Order.
+    5. "SUP 12.5.3G" refers to SUP 12.5.13G.
+    6. "Material outsourcing" refers to outsourcing services critical to CBTL firm’s registration conditions.
+    7. Rules are guidance with "must" replaced by "should".
+
+### Purpose
+
+- **SUP 2.1.3 G**
+  - The FCA needs information about firms and markets to achieve regulatory objectives. The Act mandates the FCA to supervise authorized persons and cooperate with other bodies.
+
+- **SUP 2.1.4 G**
+  - The FCA gathers information through firm notifications (SUP 15) and regular reporting (SUP 16). This chapter covers FCA's own initiative information gathering, excluding powers under Unfair Terms Regulations and CRA, which are in UNFCOG.
+
+- **SUP 2.1.5 G**
+  - Part XI of the Act gives the FCA powers to:
+    1. Require information (sections 165 and EG 3).
+    2. Require skilled person reports (section 166 and SUP 5).
+    3. Appoint investigators (sections 167, 168, 169 and EG 3).
+    4. Apply for a warrant to enter premises (section 176 and EG 4).
+
+- **SUP 2.1.6 G**
+  - The FCA prefers open and cooperative relationships with firms but will use statutory powers if necessary. Principle 11 requires firms to deal openly with regulators and disclose relevant information to the FCA.
+
+- **SUP 2.1.7 G**
+  - SUP 2.2 explains how the Act and general law relate to FCA's information gathering methods in SUP 2.3 and SUP 2.4.
+
+- **SUP 2.1.8 G**
+  - SUP 2.3 expands on Principle 11 regarding FCA's information gathering on its own initiative, detailing how firms should cooperate.
+
+- **SUP 2.1.9 G**
+  - SUP 2.4 explains "mystery shopping," a method for gathering information about how firms sell products and services.
+
+- **SUP 2.1.10 G**
+  - SUP 2.1.2AG provisions for CBTL firms emphasize their duty to deal openly with the FCA under article 18(1)(d) of the MCD Order.
+
+## SUP 2.2 Information Gathering by the Appropriate Regulator on its Own Initiative: Background
+
+### Link to the Statutory Information Gathering and Investigation Powers
+
+- **SUP 2.2.1 G**
+  - Breaching Principle 11 or rules in this chapter can lead to regulatory sanctions but is not a criminal offense or contempt of court.
+
+- **SUP 2.2.2 G**
+  - Principle 11 and SUP 2.3.5 R (1) do not allow the regulator to force access to premises.
+
+### Banking Confidentiality and Legal Privilege
+
+- **SUP 2.2.3 G**
+  - The FCA typically does not seek information it cannot obtain under Part XI of the Act. Limitations include:
+    1. Section 175(5) protects banking confidentiality.
+    2. Section 413 protects privileged items.
+
+### Confidentiality of Information
+
+- **SUP 2.2.4 G**
+  - The FCA must treat confidential information as such under Part XXIII of the Act and will not disclose it without lawful authority.
+
+### Admissibility of Information in Proceedings
+
+- **SUP 2.2.5 G**
+  - Information obtained by the FCA is admissible in proceedings if it meets admissibility requirements.
+
+## SUP 2.3 Information Gathering by the FCA on its Own Initiative: Cooperation by Firms
+
+### Introduction: Methods of Information Gathering Requiring Cooperation
+
+- **SUP 2.3.1 G**
+  - The FCA uses methods requiring firm cooperation, including:
+    1. Visits by FCA representatives or appointees.
+    2. Meetings at FCA offices or elsewhere.
+    3. Information requests by phone, meetings, or writing.
+
+- **SUP 2.3.2 G**
+  - The FCA usually gives reasonable notice for visits but may access premises without notice to ensure compliance.
+
+### Access to a Firm's Documents and Personnel
+
+- **SUP 2.3.3 G**
+  - Firms should:
+    1. Be available for meetings.
+    2. Provide access to records and facilities.
+    3. Produce requested documents.
+    4. Convert information to readable formats.
+    5. Allow document copying.
+    6. Answer questions truthfully and promptly.
+
+- **SUP 2.3.4 G**
+  - Firms should ensure employees, agents, and group members cooperate similarly.
+
+### Access to Premises
+
+- **SUP 2.3.5 R**
+  - Firms must allow FCA access to business premises and ensure agents and representatives do the same.
+
+- **SUP 2.3.6 G**
+  - The FCA usually gives reasonable notice for visits.
+
+### Suppliers Under Material Outsourcing Arrangements
+
+- **SUP 2.3.7 R**
+  - Firms must ensure suppliers cooperate with the FCA, except for regulated benchmark administrators.
+
+- **SUP 2.3.8 G**
+  - Supplier cooperation should match firm cooperation but is limited to FCA's functions.
+
+- **SUP 2.3.9 G**
+  - Firms should ensure contracts with suppliers allow FCA access and cooperation.
+
+- **SUP 2.3.10 G**
+  - The FCA usually seeks information from firms first but may approach suppliers if needed.
+
+- **SUP 2.3.10A G**
+  - Regulated benchmark administrators have equivalent requirements under the benchmarks regulation.
+
+### Information Requested on Behalf of Other Regulators
+
+- **SUP 2.3.11 G**
+  - The FCA may request information for other regulators and share information with them, subject to confidentiality obligations.
+
+- **SUP 2.3.12A G**
+  - Firms should cooperate with the FCA in providing information for other regulators. The FCA has statutory powers to obtain information for overseas regulators.
+
+## SUP 2.4 'Mystery Shopping'
+
+- **SUP 2.4.1 G**
+  - FCA representatives may approach firms as potential consumers, known as 'mystery shopping'.
+
+- **SUP 2.4.2 G**
+  - Mystery shopping helps protect consumers by recording firm practices, which is difficult to establish otherwise.
+
+- **SUP 2.4.3 G**
+  - The FCA may conduct mystery shopping with visits, focused visits, or recording devices to gather information.
+
+- **SUP 2.4.4 G**
+  - Mystery shopping calls and meetings are recorded, following the Market Research Society Code of Practice.
+
+- **SUP 2.4.5 G**
+  - Information from mystery shopping supports FCA's supervisory and enforcement functions and may be shared with firms and approved persons.
+
+---
+
+### Definitions
+
+- **CBTL firm**: A firm subject to the duty to deal with the FCA in an open and cooperative manner under the MCD Order.
+- **FCA**: Financial Conduct Authority, the regulator responsible for overseeing financial markets and firms in the UK.
+- **MCD Order**: Mortgage Credit Directive Order, which sets out regulations for mortgage credit in the UK.
+- **Principle 11**: A principle requiring firms to deal with regulators in an open and cooperative way.
+- **Regulated benchmark administrator**: An entity responsible for administering a benchmark, subject to specific regulatory requirements.
+- **SUP**: Supervision manual, part of the FCA Handbook detailing rules and guidance for firms' interactions with the FCA.
+
+## SUP 3 Auditors
+
+## SUP 3.1 Application
+
+- **General Application**
+
+  - This chapter applies to:
+    - <mark>Every firm listed in the table in SUP 3.1.2 R.</mark>
+    - The external auditor of such a firm, if appointed under SUP 3.3 or due to a statutory provision other than in the Act.
+
+  - This chapter does not apply to a firm's benchmark activities.
+
+- **Exemptions**
+
+  - This chapter does not apply to certain firms if they do not hold client money or assets and do not appoint an auditor under statutory provisions other than in the Act. These firms include:
+    - Authorised professional firms
+    - Energy market participants
+    - Exempt insurance intermediaries
+    - Certain insurance intermediaries
+    - Investment management firms
+    - Home finance administrators, intermediaries, and providers
+    - Personal investment firms
+    - Securities and futures firms
+    - Service companies
+
+- **Applicable Sections**
+
+  - The table in SUP 3.1.2 R outlines which sections apply to different categories of firms and their auditors. It should be read with GEN 2.2.23 R to GEN 2.2.25 G.
+
+  This table and the provisions in SUP 3 should be read alongside GEN 2.2.23 R to GEN 2.2.25 G. Notably, the PRA does not apply any of the provisions in SUP 3 to FCA-authorised persons. SUP 3.10 and SUP 3.11 are applied solely by the FCA.
+
+### Categories and Applicable Sections
+
+  1. **Authorised Professional Firm (IPRU(INV) 2.1.2R compliance with chapters 3, 5, or 13)**
+    - **Firm:** SUP 3.1 - SUP 3.7, SUP 3.11
+    - **Auditor:** SUP 3.1, SUP 3.2, SUP 3.8, SUP 3.10
+
+  2. **Authorised Professional Firm (Custody or Client Money Chapter applies)**
+    - **Firm:** SUP 3.1 - SUP 3.7, SUP 3.11
+    - **Auditor:** SUP 3.1, SUP 3.2, SUP 3.8, SUP 3.10
+
+  3. **Authorised Professional Firm (Auditor appointed under statutory provision)**
+    - **Firm:** SUP 3.1, SUP 3.2, SUP 3.7
+    - **Auditor:** SUP 3.1, SUP 3.2, SUP 3.8
+
+  4. **Bank, Building Society, or Dormant Asset Fund Operator (Designated Investment Business)**
+    - **Firm:** SUP 3.1 - SUP 3.7, SUP 3.11
+    - **Auditor:** SUP 3.1, SUP 3.2, SUP 3.8, SUP 3.10
+
+  5. **Bank, Building Society, or Dormant Asset Fund Operator (No Designated Investment Business)**
+    - **Firm:** SUP 3.1 - SUP 3.7
+    - **Auditor:** SUP 3.1, SUP 3.2, SUP 3.8
+
+  5A. **Credit Union**
+    - **Firm:** SUP 3.1 - SUP 3.7
+    - **Auditor:** SUP 3.1, SUP 3.2, SUP 3.8
+
+  5B. **CASS Debt Management Firm (No Client Money Requirement)**
+    - **Firm:** SUP 3.1, SUP 3.10, SUP 3.11
+    - **Auditor:** SUP 3.1, SUP 3.10
+
+  5C. **<mark>CASS 7 Loan-Based Crowdfunding Firm</mark>**
+    - **Firm:** SUP 3.1 - SUP 3.7, SUP 3.11
+    - **Auditor:** SUP 3.1, SUP 3.2, SUP 3.8, SUP 3.10
+
+  5D. **CASS 13 Claims Management Firm**
+    - **Firm:** SUP 3.1 - SUP 3.7, SUP 3.11
+    - **Auditor:** SUP 3.1, SUP 3.2, SUP 3.8, SUP 3.10
+
+  6. **Insurer, Society of Lloyd's, Underwriting Agent, Members' Adviser, UK ISPV**
+    - **Firm:** SUP 3.1 - SUP 3.7
+    - **Auditor:** SUP 3.1, SUP 3.2, SUP 3.8
+
+  7. **Investment Management Firm, Personal Investment Firm, Securities and Futures Firm, Collective Portfolio Management Firm (External AIFM)**
+    - **Firm:** SUP 3.1 - SUP 3.7, SUP 3.11
+    - **Auditor:** SUP 3.1, SUP 3.2, SUP 3.8, SUP 3.10
+
+  7A. **Investment Management Firm, Personal Investment Firm, Securities and Futures Firm, Collective Portfolio Management Firm (Custody or Client Money Chapter applies)**
+    - **Firm:** SUP 3.1 - SUP 3.7, SUP 3.11
+    - **Auditor:** SUP 3.1, SUP 3.2, SUP 3.8, SUP 3.10
+
+  7B. **Collective Portfolio Management Firm (UCITS Firm or Internally Managed AIF)**
+    - **Firm:** SUP 3.1 - SUP 3.7, SUP 3.11
+    - **Auditor:** SUP 3.1, SUP 3.2, SUP 3.8, SUP 3.10
+
+  7C. **<mark>MiFID Investment Firm (Auditor appointed under statutory provision)</mark>**
+    - **Firm:** SUP 3.1 - SUP 3.7, SUP 3.11
+    - **Auditor:** SUP 3.1, SUP 3.2, SUP 3.8, SUP 3.10
+
+  7D. **<mark>Sole Trader or Partnership (MiFID Investment Firm)</mark>**
+    - **Firm:** SUP 3.1 - SUP 3.7, SUP 3.11
+    - **Auditor:** SUP 3.1, SUP 3.2, SUP 3.8, SUP 3.10
+
+  8. **Small Personal Investment Firm or Service Company (Auditor appointed under statutory provision)**
+    - **Firm:** SUP 3.1, SUP 3.2, SUP 3.7
+    - **Auditor:** SUP 3.1, SUP 3.2, SUP 3.8
+
+  9. **Home Finance Provider (Auditor appointed under statutory provision)**
+    - **Firm:** SUP 3.1 - SUP 3.7
+    - **Auditor:** SUP 3.1, SUP 3.2, SUP 3.8
+
+  10. **Insurance Intermediary (Insurance Client Money Chapter applies)**
+      - **Firm:** SUP 3.1 - SUP 3.7, SUP 3.11
+      - **Auditor:** SUP 3.1, SUP 3.2, SUP 3.8, SUP 3.10
+
+  11. **Exempt Insurance Intermediary (Auditor appointed under statutory provision)**
+      - **Firm:** SUP 3.1, SUP 3.2, SUP 3.7
+      - **Auditor:** SUP 3.1, SUP 3.2, SUP 3.8
+
+  12. **Home Finance Intermediary or Administrator (Auditor appointed under statutory provision)**
+      - **Firm:** SUP 3.1, SUP 3.2, SUP 3.7
+      - **Auditor:** SUP 3.1, SUP 3.2, SUP 3.8
+
+  ### Notes
+
+  - **Note 1:** Applies to authorised professional firms in row (1) as if they were of the relevant type in IPRU(INV) 2.1.4R.
+  - **Note 2A:** Designated investment business excludes certain dealings as specified.
+  - **Note 3:** Applies to oil and energy market participants not covered by IPRU(INV) 3.
+  - **Note 3B:** MiFID investment firms include those eligible for MiFID optional exemption but not exercising it.
+  - **Note 3C:** Sole traders or partnerships that are MiFID investment firms must have audited annual accounts.
+  - **Note 4:** Client money audit requirement applies except for certain insurance intermediaries.
+  - **Note 5:** Specific application details for managing agents.
+  - **Note 6:** SUP 3.11 and SUP 3.10 apply regardless of client money or custody asset permissions.
+  - **Multiple Categories**
+
+  - If a firm falls into more than one category, it and its auditor must comply with all applicable sections.
+
+- **Auditors of Lead Regulated Firms**
+
+  - The application of SUP 3.10 to the auditor of a lead regulated firm is specified in SUP 3.10.3 R.
+
+- **Material Elsewhere in the Handbook**
+
+  - Firms mentioned in SUP 3.1.10 G should refer to the Prudential Standards part of the Handbook for further provisions on auditors.
+
+## SUP 3.2 Purpose
+
+- **General Purpose**
+
+  - This chapter provides rules and guidance on the role of auditors in monitoring firms' compliance with regulatory requirements. Auditors provide information to the regulator and report on financial resources, report accuracy, and compliance with rules like the Client asset rules.
+
+- **Statutory Framework**
+
+  - The Act and other legislation like the Companies Acts and the Building Societies Act provide the statutory framework for firms' and auditors' obligations.
+
+- **Insurance Intermediaries**
+
+  - Insurance intermediaries' senior management must determine if they are exempt and appoint an auditor if not. SUP 3.7 outlines considerations for notifying the FCA of auditor-raised matters.
+
+- **Rights and Duties of Auditors**
+
+  - Auditors' rights and duties are detailed in SUP 3.8 and SUP 3.10, including statutory duties to report certain matters to the FCA.
+
+## SUP 3.3 Appointment of Auditors
+
+- **Purpose**
+
+  - Firms must appoint an auditor and provide information to the regulator to ensure compliance.
+
+- **Appointment by Firms**
+
+  - Firms must appoint an auditor, notify the regulator of vacancies, fill vacancies promptly, and inform the regulator of new appointments.
+
+- **Appointment by the Regulator**
+
+  - If a firm fails to appoint an auditor within 28 days, the regulator may appoint one, who will be remunerated by the firm.
+
+- **Compliance with Terms**
+
+  - Firms must comply with terms of auditor appointments made by the regulator.
+
+## SUP 3.4 Auditors' Qualifications
+
+- **Purpose**
+
+  - The regulator ensures auditors have the necessary skills and experience.
+
+- **Qualifications**
+
+  - Firms must ensure auditors have the required skills and are eligible under relevant laws.
+
+- **Disqualified Auditors**
+
+  - Firms must not appoint disqualified auditors.
+
+- **Requests for Information**
+
+  - Firms must ensure auditors provide information about their qualifications and independence to the regulator.
+
+## SUP 3.5 Auditors' Independence
+
+- **Purpose**
+
+  - Auditors must be independent to avoid conflicts of interest.
+
+- **Independence**
+
+  - Firms must ensure auditors are independent and notify the FCA if independence is not achieved.
+
+## SUP 3.6 Firms' Cooperation with Their Auditors
+
+- **Cooperation**
+
+  - Firms must cooperate with auditors, providing access to records and information.
+
+- **Access and Cooperation**
+
+  - Firms should ensure appointed representatives and suppliers cooperate with auditors.
+
+- **False Information**
+
+  - Providing false information to auditors is an offence.
+
+## SUP 3.7 Notification of Matters Raised by Auditor
+
+- **Notification**
+
+  - Firms should notify the FCA if auditors qualify reports or comment on internal controls.
+
+## SUP 3.8 Rights and Duties of Auditors
+
+- **Purpose**
+
+  - Auditors have rights and duties to obtain and report information to the regulator.
+
+- **Cooperation with the Regulator**
+
+  - Auditors must cooperate with the regulator and provide requested information.
+
+- **Independence**
+
+  - Auditors must be independent and free from conflicts of interest.
+
+- **Rights to Information**
+
+  - Auditors have rights to information under the Act and other relevant laws.
+
+- **Communication**
+
+  - The regulator may share relevant information with auditors, who must maintain confidentiality.
+
+- **Statutory Duty to Report**
+
+  - Auditors must report certain matters to the regulator as required by regulations.
+
+- **Termination and Disqualification**
+
+  - Auditors must notify the regulator if removed, resign, or are not re-appointed.
+
+## SUP 3.10 Duties of Auditors: Notification and Report on Client Assets
+
+- **Application**
+
+  - Certain auditors are exempt from reporting on client money rules if regulated by specific professional bodies.
+
+- **Client Assets Report**
+
+  - Auditors must submit a report on client assets, stating compliance with relevant rules.
+
+- **Report Content and Submission**
+
+  - Reports must be prepared according to assurance engagement terms and submitted within specified timeframes.
+
+- **Requirements Not Met**
+
+  - Auditors must specify unmet requirements and breaches in the report.
+
+## SUP 3.11 Review of Auditor’s Client Assets Report
+
+- **Review Process**
+
+  - Firms should review draft reports, provide explanations for breaches, and integrate reports into risk management frameworks.
+
+- **Final Report**
+
+  - The final report should be presented to the firm's governing body.
+
+## Definitions
+
+- **Authorised Professional Firm**: A firm authorized to provide professional services, such as legal or accounting services.
+- **Energy Market Participant**: A firm involved in the energy market, including oil market participants.
+- **Exempt Insurance Intermediary**: An insurance intermediary exempt from certain regulatory requirements.
+- **Investment Management Firm**: A firm that manages investments on behalf of clients.
+- **Home Finance Administrator/Intermediary/Provider**: Firms involved in providing or administering home finance products.
+- **Personal Investment Firm**: A firm providing personal investment services.
+- **Securities and Futures Firm**: A firm dealing in securities and futures.
+- **Service Company**: A company providing services to other businesses.
+- **MiFID Investment Firm**: A firm providing investment services under the Markets in Financial Instruments Directive.
+- **UCITS Firm**: A firm managing Undertakings for Collective Investment in Transferable Securities.
+- **CASS Debt Management Firm**: A firm managing client money under the Client Assets Sourcebook.
+- **Collective Portfolio Management Firm**: A firm managing collective investment portfolios.
+- **Lead Regulated Firm**: A firm primarily regulated by a specific regulatory body.
+- **Appropriate Regulator**: The regulatory body responsible for overseeing a firm's compliance, such as the FCA or PRA.
+
+## SUP 4 Actuaries
+
+Skipped. Applies to insurers, friendly societies and Solvency II firms.
+
+## SUP 5 Reports by skilled persons
+
+## SUP 5.1 Application and Purpose
+
+### Application
+
+- **General Application**
+  - <mark>This chapter applies to every firm.</mark>
+  - The rules and guidance in SUP 5.5 (Duties of firms) do not apply to a UCITS qualifier.
+
+- **Recognised Investment Exchange**
+  - For the FCA's power under section 166 of the Act (Reports by skilled persons), references to a firm in certain rules include a recognised investment exchange.
+  - The guidance in this chapter applies to a recognised investment exchange in the same way as it applies to a firm.
+
+- **CBTL Firms**
+  - SUP 5.5.1R and SUP 5.5.5R apply to CBTL firms in relation to their CBTL business as if references to a firm were to a CBTL firm and references to section 166 of the Act were as applied by the MCD Order.
+  - For former CBTL firms, these rules apply as guidance, with "must" replaced by "should".
+
+- **Designated Banks and Agencies**
+  - This chapter also applies as guidance to designated banks, credit reference agencies, or finance platforms in relation to specific regulations, treating "must" as "should" and as if they were firms.
+  - Specific regulations apply Part 11 of the Act concerning skilled persons to these entities.
+
+- **Critical Third Parties**
+  - This chapter does not apply to a critical third party in its capacity as such; CTPS 13 applies instead.
+
+### Purpose
+
+- The purpose of this chapter is to guide the FCA’s use of powers under sections 166 and 166A of the Act, requiring firms to assist skilled persons and include certain provisions in contracts with them. This ensures the FCA receives necessary information and skilled persons receive assistance from firms.
+
+## SUP 5.2 The FCA’s Power
+
+### Who May Be Required to Provide a Report?
+
+- Under section 166, the FCA can appoint a skilled person to provide a report or require:
+  - A firm,
+  - Any other member of the firm's group,
+  - A partnership of which the firm is a member,
+  - A person who has been any of the above, if they are or were carrying on a business.
+
+- Under section 166A, the FCA can require a firm to appoint, or itself appoint, a skilled person to collect or update information.
+
+## SUP 5.3 Policy on the Use of Skilled Persons
+
+- **Purpose of Skilled Persons**
+  - Used for diagnostics, monitoring, preventative action, and remedial action.
+
+- **Decision to Require a Report**
+  - Prompted by specific needs for information, analysis, expert advice, or assurance related to regulatory returns or risk mitigation.
+
+- **Factors Considered**
+  - Circumstances relating to the firm, alternative tools, legal considerations, objectives, cost, and FCA resources.
+
+- **Circumstances Relating to the Firm**
+  - Includes cooperation, history of issues, system quality, objectivity, conflicts of interest, and available expertise.
+
+- **Alternative Tools**
+  - Includes informal requests, section 165 powers, and appointing investigators under sections 167 and 168.
+
+- **Legal and Procedural Considerations**
+  - Includes statutory powers, subsequent proceedings, and application of Handbook rules.
+
+- **Objectives of Enquiries**
+  - Gathering historic information, expert analysis, or recommendations.
+
+- **Cost Considerations**
+  - Includes who pays for the skilled person and the potential benefits to the firm.
+
+- **FCA Resources**
+  - Considers FCA expertise and resource availability.
+
+## SUP 5.4 Appointment and Reporting Process
+
+### Scope of Report
+
+- The FCA will send a written notice requiring a report by a skilled person or notifying of an appointment for collecting or updating information.
+
+- **Discussion Before Decision**
+  - The FCA will discuss needs with the relevant person before finalizing the decision.
+
+- **Notification and Discussion**
+  - Written notification of the report's purpose, scope, timetable, and format, followed by discussions if needed.
+
+### Appointment Process
+
+- **Nomination and Approval**
+  - The skilled person must be nominated or approved by the FCA, who may provide a shortlist.
+
+- **Qualifications of Skilled Person**
+  - Must have necessary skills, ability to complete on time, relevant knowledge, no conflicts of interest, and enough detachment.
+
+### Reporting Process
+
+- **Reporting to FCA**
+  - Normally, the skilled person reports through the firm, but may report directly if appointed by the FCA.
+
+- **Dialogue and Timelines**
+  - The FCA may discuss the report during preparation and expects timely delivery.
+
+## SUP 5.5 Duties of Firms
+
+### Contract with the Skilled Person
+
+- **Contractual Requirements**
+  - Firms must ensure contracts require skilled persons to cooperate with the FCA, report specified matters, and waive confidentiality.
+
+- **Information Sharing**
+  - Contracts should allow skilled persons to share interim reports, data, and progress with the FCA.
+
+- **Legal Framework**
+  - Contracts must be governed by UK law and allow FCA enforcement.
+
+### Assisting the Skilled Person
+
+- **Reasonable Assistance**
+  - Firms must provide reasonable assistance, including access to records and information.
+
+- **Responsibility for Delivery**
+  - Firms are expected to ensure skilled persons deliver reports or updates as required.
+
+## SUP 5.6 Confidential Information and Privilege
+
+### Confidential Information
+
+- The FCA may share relevant information with skilled persons, who must maintain confidentiality under the Act.
+
+### Banking Confidentiality and Legal Privilege
+
+- **Limitations**
+  - Certain sections of the Act limit disclosure of banking confidentiality and protected items.
+
+- **Confidentiality Waivers**
+  - Firms may provide information otherwise confidential if required for skilled person duties.
+
+## Definitions
+
+- **Firm**: Any entity regulated by the FCA.
+- **UCITS Qualifier**: A type of investment fund that meets specific EU regulations.
+- **Recognised Investment Exchange**: An exchange recognized by the FCA for trading securities.
+- **CBTL Firm**: A firm involved in consumer buy-to-let business.
+- **Designated Bank/Credit Reference Agency/Finance Platform**: Entities designated under specific regulations for small and medium-sized business activities.
+- **Critical Third Party**: An entity providing essential services to financial institutions.
+- **Skilled Person**: An expert appointed to provide reports or collect information for the FCA.
+- **MCD Order**: Mortgage Credit Directive Order, applying certain EU regulations in the UK.
+
+---
+
+WILO / 2025-02-11 / Stopping here for now.
 
 
 
@@ -9204,3 +10511,57 @@ WILO
   - If invoices are structured into a fund-like vehicle where investors pool capital, investment fund regulations could apply.
   - This is similar to COLL but applies more broadly to alternative investment funds (AIFs).
   - Key impact: FCA AIFM registration could be required if managing assets for investors.
+
+
+  ---
+
+Prompt for gpt-4o:
+
+You are an expert on the UK FCA Handbook. You are able to comprehend its pages and legal jargon. You take texts from sections of the handbook and present them again in more user friendly language, in exactly the order presented under the section numbers/headings.
+
+Where there is mention of to which companies or people a rule applies, you keep the original term, such as "common platform firm" or "management company". You collate all these terms and produce a list of them and their definitions and add them at the bottom of your output.
+
+Use headings and bullets and whitespace.
+
+Do not include the smallest section identifier:
+
+Bad example:
+
+- **SYSC 13.1.1 G 01/01/2021 RP**
+  - SYSC 13 applies to an insurer unless it is a non-directive friendly society.
+
+Here's a good example of the formatting Markdown for a different section:
+
+## SYSC 9.1 General rules on record-keeping
+
+ - Application to a common platform firm
+
+   - The MiFID Org Regulation applies, SYSC1 Annex 1 3.2G, and others in that annex.
+
+   - 9.1.1AR, 2AR, 2CR, 2BG, 4G, 5G, 6G and 6AG.
+
+ - Application to a MiFID optional exemption firm and to a third country firm
+
+   - Same boilerplate as many sections, refers to SYSC1 Annex 1 3.2CR(1) etc.
+
+ - General requirements
+
+   - A firm (other than a CPF) must keep records of its business, org, and transactions sufficient for FCA to do its job.
+
+   - A CPF must keep records on all services, activities and transactions, sufficient for the FCA to enforce regs, MiFID, MiFIR and Market Abuse Regulation, and "in particular" to check obligations to clients or potential clients and the integrity of the market.
+
+   - A CPF must retain all records for 5 years.
+
+ - Specific requirements for the distribution of insurance-based investment products
+
+   - Not applicable
+
+ - Guidance on record-keeping
+
+   - Records should be reproducible in English on paper, unless business carried out abroad.
+
+   - For non-MiFID, a firm should have systems/controls around record-keeping, retained for "relevant" time.
+
+   - Schedule 1 to each module of the Handbook sets out a list summarising its record-keeping requirements. A CPF should also refer to record-keeping in MiFID Org Regulation.
+
+   - SYSC 28 contains rules/guidance on knowledge/competence or record-keeping for insurance distribution activities.
