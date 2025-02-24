@@ -128,7 +128,7 @@ Repo for the book: https://github.com/ethereumbook/ethereumbook
 - Nonce provides an order of execution–it seems that "later" nonces are "ignored" but presumably they must be retried periodically because they eventually get processed if transaction with "before" nonces turn up to fill "the gap".
 - I think the nonce is computed/looked-up from counting tx on the real blockchain by the originator when it sends, and by the validator when it checks.
 - `>web3.eth.getTransactionCount("0x9e61...")`
-- It appears that the need to use a valid incrementing nonce will mean designing a system around a single machine that issues transactions for an address, or a CAS-op must be run against an atomic database like MSSQL.
+- It appears that the need to use a valid incrementing nonce will mean designing a system around a single machine, process or thread that issues transactions for an address or range of addresses, if sharding, or a CAS-op must be run against an atomic database like MSSQL.
 - When the system above starts, it'll have to wait a bit for all pending tx to complete on the blockchain, then query the blockchain to get the next nonce value.
 - If you use a nonce that causes a "gap" then the tx will sit in the queue forever waiting for transactions with the missing nonce(s).
 - **Fuck!** If a tx fails then it creates a gap and subsequent tx will sit forever until you reissue a good tx with the same bad nonce, then the blocked ones will all go through.
