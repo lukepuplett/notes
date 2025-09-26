@@ -1,4 +1,4 @@
-## System Architecture Overview
+# System Architecture Overview
 
 **Core Structure**: The original application was re-architected into an event-based microservices system with approximately 18 services running on Microsoft Azure Service Fabric (Microsoft's pre-Kubernetes orchestration platform that originally powered Azure when it was called "Red Dog").
 
