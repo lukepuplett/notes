@@ -74,6 +74,8 @@ The Tech Lead had ran with the things I started in 2016 and had put together a g
 
 #### Engineering Achievements
 
+[See detailed technicals](/me/equinity-technicals.md)
+
 With a far out deployment date and small hope of winning hearts and minds around weekly production pushes, the Tech Lead and I instead solutioned a complete replacement of the existing quoting service with a set of new, smaller, event-driven microservices using Rabbit MQ and a new Angular front-end. The idea was to build loosely-coupled service stacks behind the product's main feature areas.
 
 I introduced backends-for-frontends to decouple microservices from UX demands helping insulate against front-end change and also aid the transition from service orchestration to event choreography.
@@ -106,6 +108,8 @@ There were many problems, most of which could be traced back to working around t
 
 #### Engineering Achievements
 
+[See detailed technicals](/me/centrica-technicals.md)
+
 I oversaw the development and launch of a clever trade version control system that enabled PnL changes to be "explained", like Git Blame for but derivatives trades.
 
 Then I began breaking their monoliths and working with a Microsoft MVP on all the CICD automation using VSTS and Azure DevTest Labs, ARM templates, etc.
@@ -129,6 +133,8 @@ The culture was difficult; a stereotypical, high-pressure tradefloor where tacti
 I was initially hired simply to write a SAML 2.0 SSO solution for a flexible new pension product to be used by tens of thousands of public users, but they were in dire need of delivery expertise having never built software like this. They'd been cargo cult software engineering for months, producing Gant charts and piles of Word docs and little code. No process. No source control. No UX. No stories. They had 6 manual testers but no buildable app; they needed help but didn't even know it.
 
 #### Engineering Achievements
+
+[See detailed technicals](/me/mgm-tra-technicals.md)
 
 With the help of a couple of other good contractors we managed to deliver a pretty slick single-page app. Despite having zero authority and in a low-trust setting, I steered them towards Git, Visual Studio Online, Slack, a semblance of Scrumban, NuGet, TeamCity, CI and towards the end, PowerShell DSC and even infra-as-code.
 
@@ -274,6 +280,8 @@ I reworked the "machine learning" algorithm from 2003 (below) and designed and b
 
 #### Engineering Achievements
 
+[See detailed technicals](/me/vuplan-technicals.md)
+
 Designed and coded extreme-performance, sharded in-memory caches, with query self-optimisation and cache routing to speed up mining of millions of rows of data. I query tuned relentlessy and got know the innards of SQL Server. Threat-modelling for DDoS, SQL injection, x-scripting etc. concerns for deployment, reliability and instrumentation on customer computers. Bought and hardened my own public IIS servers and hosted them at a rental facility. The WPF client looked like a phone app, employing MVVM pattern and gestural UI with my own physics math. It dynamically downloaded its ViewModel logic from the cloud at runtime for unobtrusive updates and used full localisation of UI controls and textual elements. I built a top quality Windows Phone 7 application; authored my own controls and made it highly asynchronous and super reliable. During this time I worked directly with the Visual Studio team at Microsoft Redmond to assist with improving the impending VS2010 release.
 
 **On Reflection**
@@ -291,6 +299,8 @@ Optimizing a product no one wants for millions of non-existant users is exactly 
 Hard to describe. 20 years ago it was unheard of to be a coder who works in a big IT department. Thus, I became an inventor, building tools to automate the industrial scale problems around me and make life easier. I became famous for the stuff I made, it was polished like a boxed app. I've rolled up 7 years of stuff at SGCIB into the following paragraphs.
 
 #### Engineering Achievements
+
+[See detailed technicals](/me/socgen-hector-technicals.md)
 
 Designed a global Wake-on-LAN solution using HTTP APIs as 'proxies' in subnets all around the world, routing wake-requests to machines to control power state. It integrated into other management systems and even Microsoft SMS allowing machines to be woken for critical updates.
 
