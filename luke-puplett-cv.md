@@ -26,6 +26,8 @@ I started Zipwire to get through the pandemic, to be at home with a young family
 
 #### Engineering Achievements
 
+[See detailed technicals](/me/zipwire-technicals.md)
+
 Zipwire's fully-featured and too much to cover here, as it integrates with various LLMs, Google Document AI, OpenAI TTS, Stripe, Twilio and Yoti. Everything was built, designed or written by me alone. It uses a modular 'microservices in a monolith' architecture which I discuss here.
 
 I'll spare you the details but the aim is to integrate with the Ethereum blockchain. In March alone I cranked out a 35,000 line Ethereum library, open source, here: [Evoq.Ethereum](https://github.com/luke-puplett/Evoq.Ethereum) with the help of Cursor.ai.
