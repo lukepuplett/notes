@@ -24,7 +24,7 @@ Zipwire is a platform for recruiters. Zipire Approve is your private journal, co
 
 ProofPack is an OSS npm package I created for helping people make selective-disclosure proofs. It's a verifiable data exchange format, too. Essentially, it's an attested Merkle tree structure and a JS and .NET SDK to help create, read and verify them. A bank could use it to let its customers prove a single line item from a bank statement, without revealing it all.
 
-I started Zipwire to get through the pandemic and to be at home with a young family while my wife became a headteacher. I didn't expect it to consume/ruin my life. I learned Google Cloud, React, Docker, AI/LLMs, even Hardhat and even Rust but settled on C# and Golang. It's a monolithic ASP.NET 6 MPA, Bootstrap, Sass and Knockout.js and some HTMX. I began on Azure using blobs and Cosmos, DevOps/Pipelines before I moved to GCP, containerised in Cloud Run, built on Cloud Build and uses blobs, Firestore, and Big Query.
+I started Zipwire to get through the pandemic and to be at home with a young family while my wife became a headteacher. I didn't expect it to consume/ruin my life. I learned Google Cloud, React, Docker, AI/LLMs, even Hardhat and Rust but settled on C# and Golang. It's a monolithic ASP.NET 6 MPA, Bootstrap, Sass and Knockout.js and some HTMX. I began on Azure using blobs and Cosmos, DevOps/Pipelines before I moved to GCP, containerised in Cloud Run, built on Cloud Build and uses blobs, Firestore, and Big Query.
 
 #### Engineering Achievements
 
