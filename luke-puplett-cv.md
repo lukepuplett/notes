@@ -350,6 +350,22 @@ I held the largest skill-set covering all Windows and DOS versions, all Exchange
 
 I read tons and study technologies and languages just for fun. I listen to many podcasts, I especially like Lenny Ratchitsky's at the moment. Here's just a few of the people's who's ideas I like.
 
+**Childhood**
+
+My childhood was unusual unlike most kids, bears some relevance to today. I've been writing code since I was 8 years old. I had terrible asthma and a computer that didn't run games, but did have a BASIC interpreter built-in, and that meant that a lot of the time I had off school was spent teaching myself to code.
+
+My brother and I were nerdy kids and we used to play with electronics and have competitions on who could design a circuit diagram to solve a particular problem. There were wires all over the house, and even lasers in the back garden where we'd made our own burglar alarm, which actually caught burglars. I once designed a code entry system using relays, buttons and a solenoid. My brother and I ordered the parts and soldered it all together, and it worked! It secured our bedroom cupboard.
+
+Later, I would code a login system for my computer to stop my friends using it, or give them logins. This was using a DOS scripting language called 4DOS. I also made a file encrypter and even figured out a seeded key algorithm to vary the output so repeating characters weren't obvious. This was all before the internet, with no books and very unsupportive parents.
+
+Then I got into computer arts and design. I made nightclub fliers and sold them to promoters. I've even found some of my designs for sale as collectible today! I made them when I was 15. I stopped going to school. Partly because I had become a severe night owl from being up with asthma my whole life, and partly because I'd be coding.
+
+Even though I went to one of the best schools in Britain, it was boring and traditional. I have always been able to teach myself everything, and have always been extremely curious and self motivated - so I found school irrelevant and stopped going. I tried college, but again, I knew everything and I even used to teach some computer arts classes - so that was pointless and I stopped going, too.
+
+When I was hired for Microsoft support, they just wanted smart kids with computing knowledge. Later, I'd have problems getting hired because I was probably in the top 20 most knowledgeable Windows NT engineers in the country, but I was only 21. No recruiter or hiring manager could even begin to ask the right questions - it takes one to know one, and there wasn't anyone.
+
+As an adult, I still struggle. The UK and Europe have stagnated since the birth of the web democratised information and pulled people to Silicon Valley. Here, there are far fewer places to work who understand how to organise highly intelligent, creative and productive people. My CV above is really story of fighting to do great work in old bureacracies.
+
 **People with ideas**
 
 *   Eric Ries for invalidating assumptions.
