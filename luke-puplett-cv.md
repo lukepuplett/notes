@@ -1,14 +1,14 @@
 # Luke Puplett - Cloud Product Developer
 
-I'm a curious, hard-working and collaborative engineer with over two decades experience in very large and very small companies. You'll see a few themes in the stories below; inventiveness, ingenuity and pushing for a better way.
+Hello - I'm a curious, hard-working and collaborative engineer with well over two decades experience in very large and very small companies. You'll see a few themes in the stories below; inventiveness, ingenuity and improving how teams build stuff.
 
-I've invented and built award-winning tools for managing IT at big banks, built visually rich multi-screen trading apps, failed as an entrepreneur in predictive analytics, way back in 2003 I made up a machine learning algo and solved a gnarly problem, developed a new app for medics in the US, ran a Python supercomputer, and wrote an API auth system that my client patented. I also designed and built my own house. I dropped out of one of England's best secondary schools when I was only 13 to write code. My first job was in Microsoft's tech support team.
+I've invented and delivered award-winning tools for managing IT at big banks, built visually rich multi-screen trading apps, failed as an entrepreneur in predictive analytics, developed a new app for medics in the US, ran a Python supercomputer, and wrote an API auth system that my client patented. I also designed and built my own house, dropped out of one of England's best secondary schools when I was only 13 to write code, and my first job was in Microsoft's tech support team.
 
-I've an unusually broad knowledge and interests. I'm from an ops background in vast banking environments where I built tools for automating everything, however I could have gone down a UX path. I can design visually—I even oil paint—and I can also design internet-scale architectures. On a micro scale, I have written lock-free, low-contention, low-GC code for trading.
+I've broad knowledge and interests, being from an ops background in vast banking environments where I built tools for automating everything, a little like SRE today, however I could have gone down a UX path. I can paint in oil _and_ design internet-scale architectures, or low latency trading having written lock-free, low-contention, low-GC code. These days, just use Rust.
 
-I work in small batches. I minimise time-to-insight. I automate all the things. I slow down to speed up. I read voraciously and make time to learn. I teach those around me. I write. I focus. I research how best to do something, then I strap in and crack on with it.
+I work in small batches. I minimise time-to-insight. I automate all the things!! I slow down to speed up. I read voraciously and make time to learn. I teach those around me. I write for others. I focus. I research how best to do something, then I strap in and crack on with it.
 
-This version of my CV is very long. Please skim or read enough to form a decision. Else, paste this into an LLM and ask me questions (that's probably the future of hiring, anyway).
+This CV is the super long director's cut. I recommend pasting my CV and your job spec into an LLM and asking it if I might be a good or bad fit, it's the future anyway.
 
 ## Experience
 
@@ -20,15 +20,17 @@ This version of my CV is very long. Please skim or read enough to form a decisio
 
 #### Context and Business Situation
 
-Zipwire is a platform for recruiters. 'Zipire Approve' is for time journalling; it combines WhatsApp and AI so you can keep a diary using natural speech, it has an approval workflow and a backoffice and payments workflow. 'Zipwire Collect', pairs WhatsApp and AI to collect documents from people and run ID checks using a government approved selfie AI model.
+Zipwire is a platform for recruiters. Zipire Approve is for time journalling, combining WhatsApp and AI so you can keep a diary using natural speech or even via CLI. It has an approval workflow and a backoffice and payments workflow. Zipwire Collect pairs WhatsApp and AI to collect documents from people and run ID checks using government-approved selfie tech. Zipwire Attest puts that information onchain, Ethereum. These apps all feed into the truly big idea to move invoice factoring onchain.
 
-I started Zipwire to get through the pandemic, to be at home with a young family while my wife became a headteacher. I didn't expect it to consume my life. I learned Google Cloud, Docker, AI/LLMs, even Hardhat and Rust but settled on C# and Golang. It's a monolithic ASP.NET 6 MPA, Bootstrap, Sass and Knockout.js. I began on Azure using blobs and Cosmos, DevOps/Pipelines before I moved to GCP, containerised in Cloud Run, built on Cloud Build and uses blobs, Firestore, and Big Query.
+ProofPack is an OSS npm package I created for helping people make selective-disclosure proofs. It's a verifiable data exchange format, too. Essentially, it's an attested Merkle tree structure and a JS and .NET SDK to help create, read and verify them. A bank could use it to let its customers prove a single line item from a bank statement, without revealing it all.
+
+I started Zipwire to get through the pandemic and to be at home with a young family while my wife became a headteacher. I didn't expect it to consume/ruin my life. I learned Google Cloud, React, Docker, AI/LLMs, even Hardhat and even Rust but settled on C# and Golang. It's a monolithic ASP.NET 6 MPA, Bootstrap, Sass and Knockout.js. I began on Azure using blobs and Cosmos, DevOps/Pipelines before I moved to GCP, containerised in Cloud Run, built on Cloud Build and uses blobs, Firestore, and Big Query.
 
 #### Engineering Achievements
 
 [See detailed technicals](/me/zipwire-technicals.md)
 
-Zipwire's fully-featured and too much to cover here, as it integrates with various LLMs, Google Document AI, OpenAI TTS, Stripe, Twilio and Yoti. Everything was built, designed or written by me alone. It uses a modular 'microservices in a monolith' architecture which I discuss here.
+Zipwire's fully-featured and too much to cover here, as it integrates with various LLMs, Google Document AI, OpenAI, Stripe, Twilio and Yoti. Everything was built, designed or written by me alone. It uses a modular 'microservices in a monolith' architecture which I discuss at the link above.
 
 I'll spare you the details but the aim is to integrate with the Ethereum blockchain. In March alone I cranked out a 35,000 line Ethereum library, open source, here: [Evoq.Ethereum](https://github.com/luke-puplett/Evoq.Ethereum) with the help of Cursor.ai.
 
