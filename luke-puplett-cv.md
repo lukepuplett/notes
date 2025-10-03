@@ -20,11 +20,11 @@ This CV is the super long director's cut. I recommend pasting my CV and your job
 
 #### Context and Business Situation
 
-Zipwire is a platform for recruiters. Zipire Approve is for time journalling, combining WhatsApp and AI so you can keep a diary using natural speech or even via CLI. It has an approval workflow and a backoffice and payments workflow. Zipwire Collect pairs WhatsApp and AI to collect documents from people and run ID checks using government-approved selfie tech. Zipwire Attest puts that information onchain, Ethereum. These apps all feed into the truly big idea to move invoice factoring onchain.
+Zipwire is a platform for recruiters. Zipire Approve is your private journal, combining WhatsApp and AI so you can keep a diary using natural speech or even via CLI, and then it populates timesheets such that they cannot be wrong. It has workflows for approval and backoffice and payments. Zipwire Collect pairs WhatsApp and AI to collect documents from people and run ID checks using government-approved selfie tech. Zipwire Attest puts that information onchain, Ethereum. These apps all feed into the truly big idea to move invoice factoring onchain.
 
 ProofPack is an OSS npm package I created for helping people make selective-disclosure proofs. It's a verifiable data exchange format, too. Essentially, it's an attested Merkle tree structure and a JS and .NET SDK to help create, read and verify them. A bank could use it to let its customers prove a single line item from a bank statement, without revealing it all.
 
-I started Zipwire to get through the pandemic and to be at home with a young family while my wife became a headteacher. I didn't expect it to consume/ruin my life. I learned Google Cloud, React, Docker, AI/LLMs, even Hardhat and even Rust but settled on C# and Golang. It's a monolithic ASP.NET 6 MPA, Bootstrap, Sass and Knockout.js. I began on Azure using blobs and Cosmos, DevOps/Pipelines before I moved to GCP, containerised in Cloud Run, built on Cloud Build and uses blobs, Firestore, and Big Query.
+I started Zipwire to get through the pandemic and to be at home with a young family while my wife became a headteacher. I didn't expect it to consume/ruin my life. I learned Google Cloud, React, Docker, AI/LLMs, even Hardhat and even Rust but settled on C# and Golang. It's a monolithic ASP.NET 6 MPA, Bootstrap, Sass and Knockout.js and some HTMX. I began on Azure using blobs and Cosmos, DevOps/Pipelines before I moved to GCP, containerised in Cloud Run, built on Cloud Build and uses blobs, Firestore, and Big Query.
 
 #### Engineering Achievements
 
