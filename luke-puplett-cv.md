@@ -2,13 +2,13 @@
 
 Hello - I'm a curious, hard-working and collaborative engineer with well over two decades experience in very large and very small companies. You'll see a few themes in the stories below; inventiveness, ingenuity and improving how teams build stuff.
 
-I've invented and delivered award-winning tools for managing IT at big banks, built visually rich multi-screen trading apps, failed as an entrepreneur in predictive analytics, developed a new app for medics in the US, ran a Python supercomputer, and wrote an API auth system that my client patented. I also designed and built my own house, dropped out of one of England's best secondary schools when I was only 13 to write code, and my first job was in Microsoft's tech support team.
+I've invented and delivered award-winning tools for managing IT at big banks, built visually rich multi-screen trading apps, tried to build a predictive analytics startup, developed a new app for medics in the US, ran a Python supercomputer and wrote an API auth system that my client patented. I also designed and built my own house, dropped out of one of England's best secondary schools when I was only 13 to write code, and my first job was in Microsoft's tech support team.
 
-I've broad knowledge and interests, being from an ops background in vast banking environments where I built tools for automating everything, a little like SRE today, however I could have gone down a UX path. I can paint in oil _and_ design internet-scale architectures, or low latency trading having written lock-free, low-contention, low-GC code. These days, just use Rust.
+I've broad knowledge and interests, being from an ops background in vast banking environments where I built tools for automating everything, a little like SRE before it was cool. I can design distributed architectures, or go deep for low-latency trading having written lock-free, low-contention, low-GC code. These days, just use Rust.
 
 I work in small batches. I minimise time-to-insight. I automate all the things!! I slow down to speed up. I read voraciously and make time to learn. I teach those around me. I write for others. I focus. I research how best to do something, then I strap in and crack on with it.
 
-This CV is the super long director's cut. I recommend pasting my CV and your job spec into an LLM and asking it if I might be a good or bad fit, it's the future anyway.
+This CV is the super long director's cut. I recommend pasting my CV and your job spec into an LLM and asking it if I might be a good or bad fit, it's the future.
 
 ## Experience
 
@@ -26,9 +26,7 @@ ProofPack is an OSS npm package I created for helping people make selective-disc
 
 I started Zipwire to get through the pandemic and to be at home with a young family while my wife became a headteacher. I didn't expect it to consume/ruin my life. I learned Google Cloud, React, Docker, AI/LLMs, even Hardhat and Rust but settled on C# and Golang. It's a monolithic ASP.NET 6 MPA, Bootstrap, Sass and Knockout.js and some HTMX. I began on Azure using blobs and Cosmos, DevOps/Pipelines before I moved to GCP, containerised in Cloud Run, built on Cloud Build and uses blobs, Firestore, and Big Query.
 
-#### Engineering Achievements
-
-[See detailed technicals](/me/zipwire-technicals.md)
+#### Engineering Achievements - [See detailed technicals](/me/zipwire-technicals.md)
 
 Zipwire's fully-featured and too much to cover here, as it integrates with various LLMs, Google Document AI, OpenAI, Stripe, Twilio and Yoti. Everything was built, designed or written by me alone. It uses a modular 'microservices in a monolith' architecture which I discuss at the link above.
 
@@ -48,11 +46,11 @@ One client's system ingested up to 50mln long JSON quotes a day from e-commerce 
 
 #### Engineering Achievements
 
-I was tasked with redesigning the on-prem, SOAP-based marketplace that sits beneath much of the UK insurance industry, Polaris imarket. Think how Go Compare gets quotes from all the insurers.
+I was tasked with redesigning the on-prem, SOAP-based, real-time B2B marketplace that connects many brokers and insurers, Polaris imarket.
 
 I proposed all Azure PaaS, active-active regions, serverless bits and pieces, plus a redesigned stateless JSON API to be entirely hypermedia driven with webhooks. Designed for high-availability and durability of message data in the event of a regional outage, as well as end-to-end security and auth.
 
-I began building components using Azure Event Hubs, Stream Analytics, Service Bus Queues and Functions to determine their suitability and failure modes. You can often find me submitting feedback to the Microsoft docs or engaging with their product teams and even jumping on calls with PMs in Redmond.
+I began building components using Azure Event Hubs, Stream Analytics, Service Bus Queues and Functions to determine their suitability and failure modes. You would often find me submitting feedback to the Microsoft docs or engaging with their product teams and even jumping on calls with PMs in Redmond.
 
 **April 2018 - May 2019**
 
@@ -70,25 +68,23 @@ The 70-strong team were "told" they were working Agile but it was waterscrumfall
 
 The Tech Lead and I strenuously evangelised a better way using continuous deployments to production with regular feedback and instrumentation to guide development. As in 2015, changing their ways was super challenging.
 
-The original microservices app was built fast, on a "bet the company" basis. Now Canada Life wanted drastic changes. The main Angular quoting app and its backend were'nt designed for such change and a previous attempt to add a new product type had been abandoned.
+The original microservices app was built fast, on a "bet the company" basis. Now Canada Life wanted drastic changes. The main Angular quoting app and its backend weren't designed for such change and a previous attempt to add a new product type had been abandoned.
 
-The Tech Lead had ran with the things I started in 2016 and had put together a great development team of 16. We moved to Azure and incorporated Ops. I challenged inertia and pushed hard to break silos, map impacts and align incentives with the client's goals, which was a struggle since the business had been outsourced/disintegrated.
+The Tech Lead had ran with the things I started in 2016 and had put together a great development team of 16. We moved to Azure and integrated the Ops team into Dev. I challenged inertia and pushed hard to break silos, map impacts and align incentives with the client's goals - this was a struggle since the business had been outsourced/disintegrated by a PE firm.
 
-#### Engineering Achievements
-
-[See detailed technicals](/me/equinity-technicals.md)
+#### Engineering Achievements - [See detailed technicals](/me/equinity-technicals.md)
 
 With a far out deployment date and small hope of winning hearts and minds around weekly production pushes, the Tech Lead and I instead solutioned a complete replacement of the existing quoting service with a set of new, smaller, event-driven microservices using Rabbit MQ and a new Angular front-end. The idea was to build loosely-coupled service stacks behind the product's main feature areas.
 
 I introduced backends-for-frontends to decouple microservices from UX demands helping insulate against front-end change and also aid the transition from service orchestration to event choreography.
 
-I evangelised and mentored 8 analysts and up to 16 developers on designing a real holy-grail, self-documenting HATEOAS application using RESTful APIs the likes of which I have never seen any company produce. I worked on a PoC for a hypermedia client that I've since rewritten as an open-source library called [Surfdude](https://github.com/luke-puplett/Surfdude).
+I evangelised and mentored 8 analysts and up to 16 developers on designing a real holy-grail, self-documenting HATEOAS application using RESTful APIs the likes of which I have never seen any company produce. I worked on a PoC for a hypermedia client that I've since rewritten and open-sourced as [Surfdude](https://github.com/luke-puplett/Surfdude) - it self-drives hypermedia APIs!
 
-It was eventually consistent so I designed a SignalR service to push updates and even nav to the browser. Pitched and won use of Azure Service Fabric. Introduced Application Insights for observability, though I regret it.
+The system was eventually consistent so I designed a SignalR service to push updates and even nav to the browser. Pitched and won use of Azure Service Fabric. Introduced Application Insights for observability, though I regret it.
 
 Moved the product team to a wiki and went desk to desk teaching non-technical folks Markdown. They used Office docs in a SharePoint accessed via RDP, ugh. Information used to be scattered across thousands of files, Jiras and emails.
 
-Built a PoC for BDD to specify APIs using SpecFlow which drove the app via the hypermedia API, via my Surfdude client. It was very cool.
+Built a PoC for BDD to specify APIs using SpecFlow which drove the app via the hypermedia API, via my Surfdude client - very cool.
 
 > You've been a massive influence for me professionally and I suspect you're unaware of the number of doors you've opened, and light bulb moments you've provided. This was both in the 2 weeks we initially worked at RA and on a more ongoing basis since you've come back into EQ. I'd like to say thank you and that I'm really, really grateful for all the ways you've helped me.
 >
@@ -102,17 +98,15 @@ Built a PoC for BDD to specify APIs using SpecFlow which drove the app via the h
 
 #### Context and Business Situation
 
-Within Centrica—the owner of British Gas—is EM&T, a prestigious unit that buys, sells and hedges options in energy markets, like a commodities hedge fund. I had a small team of banking developers that worked closely with Quantitative Analytics to value Centrica's nonlinear derivatives portfolios using a Python quant model, scaled to collate data, break the problem up, and run on thousands of compute cores on Azure overnight, with monitoring tools.
+Within Centrica—the owner of British Gas—is EM&T, its prestigious unit that buys, sells and hedges options in energy markets. I had a small team of banking developers that worked closely with Quantitative Analytics to value and stress test their entuire nonlinear derivatives portfolios using Python quant models, scaled to collate data, break the problem up, and run on thousands of compute cores on Azure overnight.
 
-Traders access our HPC grid via Excel add-in or an Angular web portal to which they submit and monitor jobs. The on-prem side comprises several Windows Services and an Angular SPA backed by an RPC-over-HTTP API. The Azure PaaS side is highly-available, active-active with 2 environments providing 4 deployments over two Azure regions and jobs can be moved between them. We were such a large consumer of Azure Batch that I had the personal mobile number of the PM in Redmond since we often discovered regressions in Azure before anyone else.
+Traders accessed our HPC grid via Excel add-in or an Angular web portal to which they submit and monitor jobs. The on-prem side comprises several Windows Services and an Angular SPA backed by an RPC-over-HTTP API. The Azure PaaS side is highly-available, active-active with 2 environments providing 4 deployments over two Azure regions and jobs can be moved between them. We were such a large consumer of Azure Batch that I had the personal mobile number of the PM in Redmond since we often discovered regressions in Azure before anyone else.
 
-There were many problems, most of which could be traced back to working around the friction imposed by ITIL. It could have been an excellent system and a joy to work on, but it had been hacked together in response to rapidly evolving needs.
+Alas, it was unreliable and we were often woken at 3am to troublshoot it. I rented a flat near the office. The issues could be traced back to hacks to get around the friction of ITIL. It could have been an excellent system and a joy, but it had been hacked together in response to rapidly evolving trading needs amidst the huge bureacracy of the wider unit.
 
-#### Engineering Achievements
+#### Engineering Achievements - [See detailed technicals](/me/centrica-technicals.md)
 
-[See detailed technicals](/me/centrica-technicals.md)
-
-I oversaw the development and launch of a clever trade version control system that enabled PnL changes to be "explained", like Git Blame for but derivatives trades.
+I oversaw the development and launch of a clever trade version control system that enabled PnL changes to be "explained", like Git Blame for but derivatives trades!
 
 Then I began breaking their monoliths and working with a Microsoft MVP on all the CICD automation using VSTS and Azure DevTest Labs, ARM templates, etc.
 
@@ -134,9 +128,7 @@ The culture was difficult; a stereotypical, high-pressure tradefloor where tacti
 
 I was initially hired simply to write a SAML 2.0 SSO solution for a flexible new pension product to be used by tens of thousands of public users, but they were in dire need of delivery expertise having never built software like this. They'd been cargo cult software engineering for months, producing Gant charts and piles of Word docs and little code. No process. No source control. No UX. No stories. They had 6 manual testers but no buildable app; they needed help but didn't even know it.
 
-#### Engineering Achievements
-
-[See detailed technicals](/me/mgm-tra-technicals.md)
+#### Engineering Achievements - [See detailed technicals](/me/mgm-tra-technicals.md)
 
 With the help of a couple of other good contractors we managed to deliver a pretty slick single-page app. Despite having zero authority and in a low-trust setting, I steered them towards Git, Visual Studio Online, Slack, a semblance of Scrumban, NuGet, TeamCity, CI and towards the end, PowerShell DSC and even infra-as-code.
 
@@ -280,9 +272,7 @@ My first £multi-million grown-up development role, I learned a ton. I was alrea
 
 I reworked the "machine learning" algorithm from 2003 (below) and designed and built vuPlan.tv, an app which harvests TV viewing habits data, demographic information, and personalises the customer's programme guide. It offered remote record and synched with Windows Media Center. Sponsored by Microsoft under their BizSpark programme.
 
-#### Engineering Achievements
-
-[See detailed technicals](/me/vuplan-technicals.md)
+#### Engineering Achievements - [See detailed technicals](/me/vuplan-technicals.md)
 
 Designed and coded extreme-performance, sharded in-memory caches, with query self-optimisation and cache routing to speed up mining of millions of rows of data. I query tuned relentlessy and got know the innards of SQL Server. Threat-modelling for DDoS, SQL injection, x-scripting etc. concerns for deployment, reliability and instrumentation on customer computers. Bought and hardened my own public IIS servers and hosted them at a rental facility. The WPF client looked like a phone app, employing MVVM pattern and gestural UI with my own physics math. It dynamically downloaded its ViewModel logic from the cloud at runtime for unobtrusive updates and used full localisation of UI controls and textual elements. I built a top quality Windows Phone 7 application; authored my own controls and made it highly asynchronous and super reliable. During this time I worked directly with the Visual Studio team at Microsoft Redmond to assist with improving the impending VS2010 release.
 
@@ -300,9 +290,7 @@ Optimizing a product no one wants for millions of non-existant users is exactly 
 
 Hard to describe. 20 years ago it was unheard of to be a coder who works in a big IT department. Thus, I became an inventor, building tools to automate the industrial scale problems around me and make life easier. I became famous for the stuff I made, it was polished like a boxed app. I've rolled up 7 years of stuff at SGCIB into the following paragraphs.
 
-#### Engineering Achievements
-
-[See detailed technicals](/me/socgen-hector-technicals.md)
+#### Engineering Achievements - [See detailed technicals](/me/socgen-hector-technicals.md)
 
 Designed a global Wake-on-LAN solution using HTTP APIs as 'proxies' in subnets all around the world, routing wake-requests to machines to control power state. It integrated into other management systems and even Microsoft SMS allowing machines to be woken for critical updates.
 
