@@ -114,6 +114,8 @@ Introduced Scrum and a huge Kanban board. The company were in two worlds, Azure 
 
 I designed much of their MiFID2 reporting solution using Azure Functions, Web Apps, Queues and SQL Data Warehouse with a couple of architects from Microsoft. And for a short while I worked on a greenfield .NET Core 2.0 proper REST API to maintain portfolio stress testing/what-if analysis on Azure App Service and CosmosDB.
 
+Trained at Splunk's headoffices for an observability solution for the distributed HPC environment. Problem here is that Splunk, like any high-perf database, ideally needs custom-designed co-lo servers, but big corp server provision tends to be outsourced and standard build.
+
 **On Reflection**
 
 The culture was difficult; a stereotypical, high-pressure tradefloor where tactical fixes and continual fire-fighting had become the MO. It was difficult to slow down or even work deeply on engineering reliable solutions.
