@@ -316,7 +316,7 @@ Writing and supporting VBA, macros and complex Excel workbooks for demanding tra
 
 **On Reflection**
 
-Amazing formative years in a City investment bank, but I burned out. Big time. Much of the stuff I built could be productized and sold. No other bank had this stuff. We had it because we unusually had a developer (me) working and innovating freely in the team. I learned that adoption was about making software that's a delight to use.
+Amazing formative years in a City investment bank but I burned out big time. I was on an uncapped hourly contract and was paid to work as long as I fancied - I almost killed myself. Many of the products I invented and built could be turned into startups. No other bank had this stuff, but we did because we unusually had a developer (me) working and innovating freely on our problems (albeit in secret). I learned that adoption was about making software that solves a real problem and that's a delight to use.
 
 **January 2000 - September 2000**
 
