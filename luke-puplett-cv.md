@@ -104,6 +104,8 @@ Traders accessed our HPC grid via Excel add-in or an Angular web portal to which
 
 It was unreliable and we were often woken at 3am - I rented a flat near the office. I blamed a culture of hacks to get around the friction of change control imposed by British Gas on a trading division which needed to move hour by hour. A compounding issue was that the quants who's model would crash on corrupt data were not on pager duty, so they had no incentive to fix their code and get a full night's sleep.
 
+If you built it, you run it.
+
 #### Engineering Achievements - [See detailed technicals](/me/centrica-technicals.md)
 
 I oversaw the development and launch of a clever trade version control system that enabled PnL changes to be "explained", like Git Blame for but derivatives trades!
