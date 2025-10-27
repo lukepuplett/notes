@@ -1,14 +1,14 @@
 # Luke Puplett - Cloud Product Developer
 
-Hello - I'm a curious, hard-working and collaborative engineer with well over two decades experience in very large and very small companies. You'll see a few themes in the stories below; inventiveness, ingenuity and improving how teams build stuff.
+Hello - I'm a curious, hard-working and collaborative engineer with over two decades experience in very large and very small companies. You'll see a few themes in the stories below; ingenuity, agency and improving how teams build stuff.
 
 I've invented and delivered award-winning tools for managing IT at big banks, built visually rich multi-screen trading apps, tried to build a predictive analytics startup, developed a new app for medics in the US, ran a Python supercomputer and wrote an API auth system that my client patented. I also designed and built my own house, dropped out of one of England's best secondary schools when I was only 13 to write code, and my first job was in Microsoft's tech support team.
 
-I've broad knowledge and interests, being from an ops background in vast banking environments where I built tools for automating everything, a little like SRE before it was cool. I can design distributed architectures, or go deep for low-latency trading having written lock-free, low-contention, low-GC code. These days, just use Rust.
+Coming from an ops background in vast banking environments where I invented tools for automation and control - SRE before it had a name - I've broad knowledge and interests spanning design and UX to distributed architectures, low-latency trading and lock-free, low-GC code, but also very much company culture and organising people and work.
 
 I work in small batches. I minimise time-to-insight. I automate all the things!! I slow down to speed up. I read voraciously and make time to learn. I teach those around me. I write for others. I focus. I research how best to do something, then I strap in and crack on with it.
 
-This CV is the super long director's cut. I recommend pasting my CV and your job spec into an LLM and asking it if I might be a good or bad fit, it's the future.
+This CV is the super long director's cut. If you have a similarly long specification of your role and ideal person, I recommend pasting my CV and your spec into an LLM and asking it if I might be a good or bad fit and why - I think it's the future.
 
 ## Experience
 
@@ -20,7 +20,7 @@ This CV is the super long director's cut. I recommend pasting my CV and your job
 
 #### Context and Business Situation
 
-Zipwire is a platform for recruiters. Zipire Approve is your private journal, combining WhatsApp and AI so you can keep a diary using natural speech or even via CLI, and then it populates timesheets such that they cannot be wrong. It has workflows for approval and backoffice and payments. Zipwire Collect pairs WhatsApp and AI to collect documents from people and run ID checks using government-approved selfie tech. Zipwire Attest puts that information onchain, Ethereum. These apps all feed into the truly big idea to move invoice factoring onchain.
+Zipwire is a platform for recruiters. Zipire Approve is your private journal, combining WhatsApp and AI so you can keep a diary using natural speech or via a Go CLI, and then it populates timesheets such that they cannot be wrong. It has workflows for approval and backoffice and payments. Zipwire Collect pairs WhatsApp and AI to collect documents from people and run ID checks using government-approved selfie tech. Zipwire Attest puts that information onchain, Ethereum. These apps all feed into the truly big idea to move invoice factoring onchain.
 
 ProofPack is an OSS npm package I created for helping people make selective-disclosure proofs. It's a verifiable data exchange format, too. Essentially, it's an attested Merkle tree structure and a JS and .NET SDK to help create, read and verify them. A bank could use it to let its customers prove a single line item from a bank statement, without revealing it all.
 
