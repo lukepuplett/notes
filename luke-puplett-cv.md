@@ -23,16 +23,14 @@ This CV is the super long director's cut. If you have a similarly long specifica
 Zipwire is a platform for recruiters. Zipwire Approve is a worker’s private journal - a WhatsApp bot and a Go CLI for techies - which is used to fill timesheets according to rules so they cannot be wrong. It has workflows for approvals and payouts. Zipwire Collect gathers and scans documents and evidence over the web or WhatsApp, runs ID checks using gov-approved selfie tech. Zipwire Attest can witness these facts on Ethereum.
 
 These apps all feed into the needs of a bigger idea to move invoice factoring onchain and totally automate work, backoffice cashflow and pay, so engineers get paid in minutes from their CLI.
-
 ProofPack is an OSS npm package I created to help folks make selective-disclosure proofs using a verifiable data exchange format. It’s an attested Merkle tree and a JS and .NET SDK to help create, read and verify them. Your bank could use it to let you prove a single line from a statement, without revealing it all.
 
 I started Zipwire during the pandemic and to be at home with my young kids while my wife became a headteacher but I discovered the factoring problem and quickly saw how my work on insurance markets combines with blockchains for a natural solution. There’s a paradox between the truth that most ideas fail because founders give in, and that at some point you actually need to give in.
-
 The timing is off; slow regulation, the bad reputation of crypto plus fragmentation and complexity. My solution hinges on companies broadly issuing employee wallets and using stablecoins to transact.
 
 > "The market may stay irrational longer than you can stay solvent."
 
-#### Engineering Achievements - [See detailed technicals](/me/zipwire-technicals.md)
+#### Engineering Achievements
 
 I learned Google Cloud, React (and SvelteKit), Docker, AI/LLMs, tool/function calling, MCP, even Hardhat and Rust but settled on C# and Golang. It’s a monolithic ASP.NET 6 MPA, Bootstrap, Sass and Knockout.js and some HTMX. I began on Azure using blobs and Cosmos, DevOps/Pipelines before moving it to GCP on Docker in Cloud Run, built on Cloud Build and uses GCS, Firestore and BigQuery.
 
@@ -97,9 +95,7 @@ Moved the team to a wiki and went desk to desk teaching non-technical folks Mark
 
 Built a PoC for BDD to specify APIs using SpecFlow/Cucumber which drove the app via the hypermedia API via my Surfdude client - seriously cool, pretty sure a world first.
 
-> You've been a massive influence for me professionally and I suspect you're unaware of the number of doors you've opened, and light bulb moments you've provided. This was both in the 2 weeks we initially worked at RA and on a more ongoing basis since you've come back into EQ. I'd like to say thank you and that I'm really, really grateful for all the ways you've helped me.
->
-> Technical Lead
+"You've been a massive influence for me professionally and I suspect you're unaware of the number of doors you've opened, and light bulb moments you've provided. This was both in the 2 weeks we initially worked at RA and on a more ongoing basis since you've come back into EQ. I'd like to say thank you and that I'm really, really grateful for all the ways you've helped me." - Technical Lead
 
 **February 2017 - February 2018**
 
@@ -109,27 +105,27 @@ Built a PoC for BDD to specify APIs using SpecFlow/Cucumber which drove the app 
 
 #### Context and Business Situation
 
-Within the owner of British Gas sits Centrica EM&T, its prestigious unit that buys, sells and hedges a vast portfolio of energy assets. I ran a small team of devs that worked closely with Quantitative Analytics to value and stress test their nonlinear derivatives portfolios using Python quant models. Our combined systems collated data from LNG cargoes, wind and gas turbines, FX and many other market feeds, then broke the problem into a DAG to run on thousands of compute cores on Azure overnight.
+Within the owner of British Gas sits Centrica EM&T, its prestigious unit that buys, sells and hedges a vast portfolio of energy assets. I ran a small team of devs that worked closely with Quantitative Analytics to value and stress test their nonlinear derivatives portfolios using Python quant models.
 
-Traders accessed our HPC grid via Excel add-in or an Angular web portal to which they submit and monitor jobs. The on-prem side comprised several Windows services and an Angular SPA backed by an RPC-over-HTTP API. The Azure PaaS side was highly-available, active-active across two environments providing four deployments over two Azure regions so jobs could be moved between them. We were such a large consumer of Azure Batch that I had the personal mobile number of the PM in Redmond since we often discovered regressions in Azure before anyone else.
+Our combined systems collated data from LNG cargoes, wind and gas turbines, FX and many other market feeds, then broke the problem into a DAG to run on thousands of compute cores on Azure overnight. We built and operated the harness, scheduling, data feeds and prep, business facing apps and monitoring, while the Quants built the models using NumPy, C++ and so on.
 
-It could be unreliable and we were often woken at 3am, so I rented a flat near the office. The problems were all downstream of ITIL. A hack culture has built up to get around change control friction from the British Gas business had imposed on what was a quant hedge fund needing to move by the hour! A compounding issue was that the quants whose model would crash on corrupt data were not on pager duty, so they had no incentive to fix their code (and their sleep). If you build it; you run it.
+Traders accessed our HPC grid via Excel add-in or a web portal to which they submitted and monitored jobs. The on-prem side comprised several Windows services and an Angular SPA backed by an JSON/HTTP API. The Azure PaaS side was highly-available, active-active across two environments providing four deployments over two Azure regions so jobs could be moved between. A huge consumer of Azure Batch, I had the personal mobile of the PM in Seattle since we often hit regressions in Azure before anyone else.
 
+We were often scratching our heads at CSV files at 3am, so I rented a flat near the office. The British Gas business had imposed heavy change control on essentially a fast moving quant hedge fund, so it was hard to iterate on reliability. The quants, whose models would crash on corrupt data, were not on pager duty so they had less incentive to write code that didn’t wake them up! If you build it, you run it.
 
 #### Engineering Achievements - [See detailed technicals](/me/centrica-technicals.md)
 
-I oversaw the development and launch of a clever trade version control system that enabled PnL changes to be "explained", like Git Blame for but derivatives trades - not my idea, but it was bloomin’ clever.
-Then I began breaking their monoliths and working with a Microsoft MVP on all the CICD automation using VSTS and Azure DevTest Labs, ARM templates, etc.
+I oversaw the development and launch of a trade version control system that enabled PnL changes to be "explained", like Git Blame for but derivatives trades - not my idea, but it was clever. Then I began breaking their monoliths and working with a Microsoft MVP on all the CICD automation using VSTS and Azure DevTest Labs, ARM templates, etc.
 
-Introduced Scrum and a huge Kanban board. The company was breaking away from British Gas, moving to Azure, trying to be ‘more Agile’. It took four weeks to get my PC setup with Visual Studio and 9 months to get some whiteboards. Code quality and engineering was a bit too rapid with much hinging around copying files into file shares and cronjobs. The firefighting ate into the time needed to engineer a way out.
+Introduced Scrum and a huge Kanban board. EM&T was breaking away from British Gas, moving to Azure, being ‘more Agile’. It took four weeks to get my PC setup with Visual Studio and 9 months to get some whiteboards. Code quality and engineering was a bit too rapid and the firefighting ate into the time needed to engineer a way out.
 
-I designed much of their MiFID2 reporting solution using Azure Functions, Web Apps, Queues and SQL Data Warehouse with a couple of architects from Microsoft. And for a short while I worked on a greenfield .NET Core 2.0 proper REST API to maintain portfolio stress testing/what-if analysis on Azure App Service and CosmosDB.
+I designed much of their MiFID2 reporting solution using Azure Functions, Web Apps, Queues and SQL Data Warehouse. And for a while I worked on a greenfield .NET Core 2.0 proper REST API to maintain portfolio stress testing/what-if analysis on Azure App Service and CosmosDB.
 
-Trained at Splunk's London HQ for an observability solution for the distributed HPC environment. The problem here is that Splunk, like any high-perf database, needs custom-spec co-lo servers, but big corp server provisioning tends to be outsourced and a standard VM.
+Trained at Splunk’s London HQ for an observability solution for the distributed HPC environment. Splunk, like any high-perf database, needs custom-spec co-lo servers, but outsourced server provisioning can only put out cookie-cutter VMs.
 
 **On Reflection**
 
-The culture was a high-pressure and quite political tradefloor where it was difficult to work deeply on reliable engineering, a common footgun in trading.
+The culture was a high-pressure and fairly political tradefloor where it could be difficult to apply yourself thickly on reliable engineering, a common footgun in trading.
 
 **April 2015 - October 2016**
 
