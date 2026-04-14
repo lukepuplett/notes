@@ -16,27 +16,29 @@ This CV is the super long director's cut. If you have a similarly long specifica
 
 ## Founder and Engineer at Zipwire
 
-*Automating Payments, Identity, Blockchain Finance*
+*Recruiter's Paradise - Automating Payments, Identity, Blockchain Finance*
 
 #### Context and Business Situation
 
-Zipwire is a platform for recruiters. Zipwire Approve is a worker’s private journal - a WhatsApp bot and a Go CLI for techies - which is used to fill timesheets according to rules so they cannot be wrong. It has workflows for approvals and payouts. Zipwire Collect gathers and scans documents and evidence over the web or WhatsApp, runs ID checks using gov-approved selfie tech. Zipwire Attest can witness these facts on Ethereum.
+Zipwire Approve is a worker’s private journal, a WhatsApp bot and a Go CLI for techies used to fill timesheets according to rules so they cannot be wrong, with workflows for approvals and payouts. Zipwire Collect gathers and scans documents and evidence over the web or WhatsApp, runs ID checks using gov-approved selfie tech. Zipwire Attest can witness these facts on Ethereum.
 
-These apps all feed into the needs of a bigger idea to move invoice factoring onchain and totally automate work, backoffice cashflow and pay, so engineers get paid in minutes from their CLI.
-ProofPack is an OSS npm package I created to help folks make selective-disclosure proofs using a verifiable data exchange format. It’s an attested Merkle tree and a JS and .NET SDK to help create, read and verify them. Your bank could use it to let you prove a single line from a statement, without revealing it all.
+This all feeds into the idea of putting invoice factoring onchain and automating agency backoffice cashflow and payouts so engineers get paid in minutes from their CLI.
 
-I started Zipwire during the pandemic and to be at home with my young kids while my wife became a headteacher but I discovered the factoring problem and quickly saw how my work on insurance markets combines with blockchains for a natural solution. There’s a paradox between the truth that most ideas fail because founders give in, and that at some point you actually need to give in.
-The timing is off; slow regulation, the bad reputation of crypto plus fragmentation and complexity. My solution hinges on companies broadly issuing employee wallets and using stablecoins to transact.
+ProofPack is an OSS NPM package, a JS and .NET SDK, I created for making and checking cryptographic selective-disclosure proofs. It’s a format I invented based around a JWT. Banks could use it to e.g. let customers download proofs of address or outgoings.
+
+I started Zipwire during the pandemic while my wife became a headteacher and I looked after our young kids. I discovered the factoring headache and saw how my work on real-time insurance markets combines with blockchains to neatly solve this.
+
+The timing is off; slow regulation, negative reputation of crypto, fragmentation and complexity. My solution hinges on several shifts that have not aligned yet.
 
 > "The market may stay irrational longer than you can stay solvent."
 
 #### Engineering Achievements
 
-I learned Google Cloud, React (and SvelteKit), Docker, AI/LLMs, tool/function calling, MCP, even Hardhat and Rust but settled on C# and Golang. It’s a monolithic ASP.NET 6 MPA, Bootstrap, Sass and Knockout.js and some HTMX. I began on Azure using blobs and Cosmos, DevOps/Pipelines before moving it to GCP on Docker in Cloud Run, built on Cloud Build and uses GCS, Firestore and BigQuery.
+I learned Google Cloud, React (and SvelteKit), Docker, AI/LLMs, tool/function calling, MCP, even Hardhat and Rust but settled on C# and Golang. It’s a ‘semi-monolithic’ ASP.NET 6 MPA using Bootstrap, Sass and Knockout.js + JSON APIs and some HTMX. I began on Azure using blobs and Cosmos, DevOps/Pipelines before moving it to GCP on Docker in Cloud Run, built on Cloud Build and uses GCS, Firestore and BigQuery.
 
-Zipwire’s fully-featured and way too much to cover here, as it integrates with various LLMs, Google Document AI, OpenAI, Stripe, Twilio, Yoti, FreeAgent, EAS and so on. Everything was built, designed or written by me alone. It uses a modular 'microservices in a monolith' architecture with an in-process event bus.
+Zipwire is fully-featured, way too much to cover. It consumes several LLMs, Google Document AI, OpenAI, Stripe, Twilio, Yoti, FreeAgent, EAS and so on. Everything was built, designed or written by me alone. It uses a modular, eventually consistent ‘microservices in a monolith’ architecture with an in-process bus.
 
-The aim is to design a DeFi auction house for invoices to solve cashflow problems, so I’ve been studying mechanism design, game theory, Myerson and Milgrom, lots of regs, rewrote half the FCA Handbook. In March 2025 alone I cranked out a 35,000 line Ethereum library, open source, here: [Evoq.Ethereum](https://github.com/luke-puplett/Evoq.Ethereum) with some AI help, but not masses! Proof generation and working with elliptic curve libs.
+The aim is to build a DeFi auction house for invoices so I’ve been studying ‘mechanism design’, game theory, Myerson and Milgrom, lots of financial regs, I even rewrote half the FCA Handbook. In March 2025 alone I cranked out a 35,000 line Ethereum library with only AI autocomplete. It’s on [GitHub](https://github.com/luke-puplett/Evoq.Ethereum)/Nuget.org as [Evoq.Ethereum](https://github.com/luke-puplett/Evoq.Ethereum). Hand built recursive binary encoders and using Elliptic Curve libs.
 
 #### Other
 
@@ -46,21 +48,21 @@ I also hacked together StyleShift using Go, JS and AI models, a Chrome extension
 
 ## Cloud Architect at Incited for Various Insurers
 
-*Big Data Applications and Azure Consultancy*
+*InsureTech - Big Data Applications and Azure Consultancy*
 
 #### Context and Business Situation
 
-Incited is a startup of experienced Azure devs and data scientists building systems for the UK's big insurers. We worked closely with clients on greenfield cloud-native data solutions around quote stream processing, fraud and realtime analytics.
+Incited is a startup of experienced Azure devs and data scientists solutioning for UK insurers. We worked closely with clients on cloud-native data pipelines, stream processing for fraud and realtime analytics.
 
-One client's system ingested up to 50mln long JSON quotes a day from e-commerce websites and looked for patterns in pricing, renewals, churn and deception. We built on Azure PaaS and handed over to the client with training and sometimes help hiring new data talent.
+One client ingested up to 50mln big JSON quotes a day from comparison portals and our systems looked for patterns in pricing, renewals, churn and fraud. We'd build on Azure PaaS and hand it over to the client with training and perhaps help hiring data talent.
 
 #### Engineering Achievements
 
-I was tasked with redesigning the on-prem, SOAP-based, real-time B2B marketplace that connects many brokers and insurers, Polaris imarket.
+I redesigned the on-prem, SOAP-based, real-time B2B marketplace that connects many brokers and insurers, 'Polaris imarket' for a cloud native, HA solution.
 
-I proposed all Azure PaaS, active-active regions, serverless bits and pieces, plus a redesigned stateless JSON API to be entirely hypermedia driven with webhooks. Designed for high-availability and durability of message data in the event of a regional outage, as well as end-to-end security and auth.
+All Azure PaaS I proposed active-active regions, serverless bits, plus a redesigned stateless JSON API to be hypermedia driven with webhooks. Designed for durability of message data in the event of a regional outage as well as end-to-end security.
 
-I began building components using Azure Event Hubs, Stream Analytics, Service Bus Queues and Functions to determine their suitability and failure modes. You would often find me submitting feedback to the Microsoft docs or engaging with their product teams and even jumping on calls with PMs in Redmond.
+I began testing components using Azure Event Hubs, Stream Analytics, Service Bus Queues and Functions measuring their scaling capacity and failure modes. I submitted feedback to the Microsoft docs, engaged their PMs and even jumped on the odd call to Redmond.
 
 **April 2018 - May 2019**
 
@@ -72,26 +74,25 @@ I began building components using Azure Event Hubs, Stream Analytics, Service Bu
 
 #### Context and Business Situation
 
-In 2018 the lead on the Retirement Account team invited me to return to the team I had worked with in 2015. The finance team had been sold to Canada Life and Equiniti had bought IT/ops, devs and product, severing product from business - I’d do the opposite.
-
-The 70-strong team had been told they were now working Agile but it was really a waterscrumfall project with a big relaunch months out. I was dropped into the Systems Analysts team to act as the main architect, mentor and provide tech leadership.
-
-The dev Tech Lead and I evangelised a better way using continuous tiny deployments to a production set of services with regular user feedback and instrumentation to guide development, alas, we didn’t win.
-The original microservices app was built fast on a "bet the company" basis and its new owner wanted drastic changes. The main Angular quoting app and its backend weren't designed for such change and a previous attempt to add a new product type had been abandoned.
-
-The Tech Lead had run with the things I started in 2016 and had put together a great team of 16 devs. We moved to Azure Service Fabric (like Kubernetes) and integrated the Ops team into Dev. I challenged inertia and advocated to break silos, map impacts and align incentives with the client's goals.
+In 2018 the lead on the Retirement Account team asked me to rejoin the team I’d worked with in 2015.
+The underwriting business had been sold to Canada Life and Equiniti had bought IT/ops, devs and product teams, sadly severing product from business. The 70-strong team were doing fake-agile ‘waterscrumfall’ with a big relaunch months out. I came in as the main architect within System Analysis, mentoring and providing tech leadership.
+The dev Tech Lead and I evangelised trunk-based dev; continuous tiny deployments to a set of live services with regular user feedback and instrumentation to guide us. We lost that pitch. The original microservices app was rapidly built on a "bet the company" basis and Canada Life wanted big changes.
+Since the main Angular quoting app and its backend weren’t designed to be evolved, we rebuilt it around new services using CQRS and event sourcing.
+The Tech Lead had run with the things I started in 2016 and had put together a great team of 16 devs. We moved to Azure Service Fabric (like Kubernetes) and integrated the Ops team into Dev. I challenged inertia and silos, tried to map impacts and align Equiniti’s incentives with Canada Life’s outcomes.
 
 #### Engineering Achievements - [See detailed technicals](/me/equinity-technicals.md)
 
-With a distant launch date and little hope of winning hearts and minds around production pushes, the Tech Lead and I instead solutioned a total replacement of the existing quoting service with a set of new, smaller, event-driven microservices using Rabbit MQ and a new Angular front-end. We built eventually consistent feature stacks - it was a nice design.
+With a distant launch date and little hope of winning hearts around production pushes, the Tech Lead and I instead solutioned a total replacement of the existing system with many small event-driven services using RabbitMQ and a new Angular front-end.
 
-I introduced backends-for-frontends to decouple microservices from UX demands, insulating against front-end flux and aiding the transition from service orchestration to event choreography.
+We built eventually-consistent feature stacks - a really sweet design.
 
-I evangelised and mentored 8 analysts and up to 16 developers on designing a real holy-grail, self-documenting HATEOAS application using RESTful APIs the likes of which I have never seen any company produce. I worked on a PoC for a hypermedia client that I've since rewritten and open-sourced as [Surfdude](https://github.com/luke-puplett/Surfdude) - it self-drives hypermedia APIs.
+I introduced backends-for-frontends to decouple microservices from UI, insulating against front/backend flux and aiding the transition to event choreography.
 
-And I designed a SignalR service to push events, including realtime nav to the browser. Introduced Application Insights for observability, though it wasn’t a great product, tbh.
+I mentored 8 analysts and up to 16 developers on designing a proper, self-documenting HATEOAS application using JSON APIs the likes of which I have never seen any company produce. I worked on a PoC for a hypermedia client that I’ve since rewritten and open-sourced as [Surfdude](https://github.com/luke-puplett/Surfdude) - it self-drives hypermedia APIs.
 
-Moved the team to a wiki and went desk to desk teaching non-technical folks Markdown so we could centralise stories, designs and link it all.
+And I designed a SignalR service to push events to the browser. Introduced Application Insights for observability and designed a tracing strategy. Tweaked Auth middleware.
+
+Moved the team to a wiki and ran ‘Learn Markdown’ workshops for non-techies so we could centralise stories, designs and link it all.
 
 Built a PoC for BDD to specify APIs using SpecFlow/Cucumber which drove the app via the hypermedia API via my Surfdude client - seriously cool, pretty sure a world first.
 
@@ -135,7 +136,7 @@ The culture was a high-pressure and fairly political tradefloor where it could b
 
 #### Context and Business Situation
 
-I was initially hired simply to write a SAML 2.0 SSO solution for a flexible new pension product to be used by tens of thousands of public users, but they were in dire need of delivery expertise having never built software like this. They'd been cargo cult software engineering for months, producing Gant charts and piles of Word docs and little code. No process. No source control. No UX. No stories. They had 6 manual testers but no buildable app; they needed help but didn't even know it.
+I was initially hired simply to write a SAML 2.0 SSO solution for a flexible new pension product to be used by tens of thousands of public users, but they were in dire need of delivery expertise having never built software like this. They'd been cargo cult software engineering for months, producing Gantt charts and piles of Word docs and little code. No process. No source control. No UX. No stories. They had 6 manual testers but no buildable app; they needed help but didn't even know it.
 
 #### Engineering Achievements - [See detailed technicals](/me/mgm-tra-technicals.md)
 
@@ -143,7 +144,7 @@ With the help of a couple of other good contractors we delivered a slick single-
 
 The big bang release was a crazy approach in this era so I bought the CEO The Lean Startup. I bought The Phoenix Project for the head of IT and their Head of Solutions Architecture. A Scrum book for the project manager. I tried to convince them of the power of working in small batches and decoupling deploy from release and a continually-deploying set of tested microservices. I tried so hard to explain that the APIs are the app and the BAs should be spec'ing the APIs. I was the only guy that really knew REST, microservices, CICD. It was tough and some developers came in and just left again.
 
-We used Angular on the front-end written mostly by a creative agency, Web API 2.0 on the back with 5 primary microservices. I was officially responsible for security and user-management parts, including encryption, registrations, SSO, AD authentication, IIS and Windows hardening. I built a custom token and API permission and roles system which they patented, and setup a NuGet server. I was eventually allowed to setup a CICD pipeline (!) which was a revelation to all of the product and tech team, though they still insisted on humans manually copying files to production.
+We used Angular on the front-end written mostly by a creative agency, Web API 2.0 on the back with 5 primary microservices. I was officially responsible for security and user-management parts, including encryption, registrations, SSO, AD authentication, IIS and Windows hardening. I built a custom token and API permission and roles system which they patented, and set up a NuGet server. I was eventually allowed to set up a CICD pipeline (!) which was a revelation to all of the product and tech team, though they still insisted on humans manually copying files to production.
 
 MSSQL with EF, MongoDB, and the app interfaced with an off-shelf pensions BO product via SOAP. The most interesting technical take-away was how APIs can be designed purely around GET and POST, and the natural emergence of a pattern we now call Backends for Frontends.
 
