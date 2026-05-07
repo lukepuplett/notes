@@ -211,10 +211,29 @@ func sanitizeFolderName(title string) string {
 	return sanitized
 }
 
+// findExistingImage checks if an image with the given hash already exists (any extension)
+func findExistingImage(hash string, imagesFolder string) string {
+	entries, err := os.ReadDir(imagesFolder)
+	if err != nil {
+		return ""
+	}
+
+	for _, entry := range entries {
+		if strings.HasPrefix(entry.Name(), hash) {
+			return entry.Name()
+		}
+	}
+	return ""
+}
+
 // downloadImageWithHash downloads an image from URL and saves it with MD5 hash filename
 func downloadImageWithHash(url string, imagesFolder string) (string, error) {
-	// Check if already downloaded
 	hash := hashURL(url)
+
+	// Check if already exists (regardless of extension)
+	if existing := findExistingImage(hash, imagesFolder); existing != "" {
+		return existing, nil
+	}
 
 	// Fetch the image
 	resp, err := http.Get(url)
@@ -237,11 +256,6 @@ func downloadImageWithHash(url string, imagesFolder string) (string, error) {
 	// Create filename using MD5 hash of URL
 	filename := fmt.Sprintf("%s%s", hash, extension)
 	filePath := filepath.Join(imagesFolder, filename)
-
-	// Skip if already exists (de-duplication)
-	if _, err := os.Stat(filePath); err == nil {
-		return filename, nil
-	}
 
 	// Save to file
 	file, err := os.Create(filePath)
