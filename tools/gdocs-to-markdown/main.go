@@ -18,15 +18,12 @@ import (
 )
 
 func main() {
-	// Read the JSON file
-	jsonData, err := ioutil.ReadFile("./journal.json")
-	if err != nil {
-		log.Fatalf("Failed to read file: %v", err)
-	}
+	// Read JSON from stdin or file
+	jsonData := readJSONInput()
 
 	// Unmarshal into a Document struct
 	var doc *docs.Document
-	err = json.Unmarshal(jsonData, &doc)
+	err := json.Unmarshal(jsonData, &doc)
 	if err != nil {
 		log.Fatalf("Failed to unmarshal JSON: %v", err)
 	}
@@ -120,6 +117,29 @@ func main() {
 	if len(imageMap) > 0 {
 		fmt.Printf("Images: %d downloaded (with MD5 hashing) to %s/\n", len(imageMap), imagesFolder)
 	}
+}
+
+// readJSONInput reads JSON from stdin or from journal.json file
+func readJSONInput() []byte {
+	// Check if stdin has data (not a terminal)
+	stat, _ := os.Stdin.Stat()
+	if (stat.Mode() & os.ModeCharDevice) == 0 {
+		// stdin is not a terminal, read from pipe
+		data, err := ioutil.ReadAll(os.Stdin)
+		if err != nil {
+			log.Fatalf("Failed to read from stdin: %v", err)
+		}
+		if len(data) > 0 {
+			return data
+		}
+	}
+
+	// Fall back to reading from file (backwards compatibility)
+	data, err := ioutil.ReadFile("./journal.json")
+	if err != nil {
+		log.Fatalf("Failed to read from stdin or file: provide piped JSON or create journal.json")
+	}
+	return data
 }
 
 // downloadImagesFromMap downloads images from an InlineObjects map

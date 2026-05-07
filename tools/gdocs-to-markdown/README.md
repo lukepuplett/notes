@@ -27,39 +27,56 @@ go mod download
 
 ## Usage
 
-### Step 1: Export Document with GWS
+### Quick Start (Recommended: Piping)
 
-Use the GWS CLI to fetch a Google Doc and save it as JSON:
+Convert directly from GWS to Markdown in one command:
 
 ```bash
-gws docs documents get --params '{"documentId": "YOUR_DOC_ID"}' > journal.json
+GOOGLE_WORKSPACE_CLI_LOG="" \
+  gws docs documents get --params '{"documentId": "YOUR_DOC_ID", "includeTabsContent": true}' 2>/dev/null \
+  | go run main.go
 ```
 
-You can find document IDs in Google Drive URLs:
-```
-https://docs.google.com/document/d/YOUR_DOC_ID/edit
-```
+**Why piping?**
+- No intermediate files
+- Works with shell scripts and pipelines
+- Cleaner, more Unix-idiomatic
 
-Or list your Google Docs:
+### Alternative: File-Based Workflow
+
+**Step 1: Export Document with GWS**
+
 ```bash
-gws drive files list --params '{"pageSize": 10, "q": "mimeType='\''application/vnd.google-apps.document'\''"}'
+gws docs documents get --params '{"documentId": "YOUR_DOC_ID", "includeTabsContent": true}' > journal.json
 ```
 
-### Step 2: Convert to Markdown
+**Step 2: Convert to Markdown**
 
 ```bash
 go run main.go
 ```
 
-This will:
-- Read `journal.json` from the current directory
-- Parse it using the Google Docs API SDK
-- **Create a folder** named after the document (e.g., `2026-journal/`)
-- **Download all images** to `<folder-name>/images/`
-- **Generate `README.md`** in the folder with local image references
-- Print the output to stdout
+This reads `journal.json` from the current directory.
 
-### Step 3: View the Result
+### Find Your Document ID
+
+```bash
+# From Google Drive URL
+https://docs.google.com/document/d/YOUR_DOC_ID/edit
+
+# Or list your documents
+gws drive files list --params '{"pageSize": 10, "q": "mimeType='\''application/vnd.google-apps.document'\''"}'
+```
+
+### What Gets Generated
+
+The tool creates:
+- **`<doc-name>/`** - Folder named after document
+- **`tab-1.md`, `tab-2.md`, etc.** - One file per tab (if multi-tab)
+- **`README.md`** - Single file for non-tabbed documents
+- **`images/`** - Folder with all downloaded images (MD5-hashed filenames)
+
+### View the Result
 
 ```bash
 code 2026-journal/        # Open folder in VS Code
@@ -219,8 +236,32 @@ type DocumentTab struct {
 }
 ```
 
+### Input Handling: stdin vs File
+
+The tool supports both piping and file input:
+
+```go
+func readJSONInput() []byte {
+    // Check if stdin has data (not a terminal)
+    stat, _ := os.Stdin.Stat()
+    if (stat.Mode() & os.ModeCharDevice) == 0 {
+        // stdin is not a terminal, read from pipe
+        return ioutil.ReadAll(os.Stdin)
+    }
+    
+    // Fall back to file for backwards compatibility
+    return ioutil.ReadFile("./journal.json")
+}
+```
+
+**Priority:**
+1. If data is piped to stdin → use stdin (Unix philosophy)
+2. Else if `journal.json` exists → use file (backwards compatible)
+3. Else → error
+
 ### Key Code Functions
 
+- `readJSONInput()` - Reads JSON from stdin or file (stdin preferred)
 - `main()` - Orchestrates tab detection, image download, markdown generation
 - `downloadImagesFromMap()` - Downloads images from any InlineObjects map
 - `generateMarkdownFromTab()` - Generates markdown from a single Tab
