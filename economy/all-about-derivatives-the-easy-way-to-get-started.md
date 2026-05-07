@@ -25,7 +25,7 @@
 
 ### Law of One Price
 - **Law of One Price**: Two things with identical payoffs must cost the same (to prevent arbitrage)
-- *Note: This rule was encountered at Centauri where a pricing model broke because it violated this arbitrage principle*
+- *Note: This rule was encountered at Centrica where a pricing model broke because it violated this arbitrage principle*
 
 ### Mathematical Complexity
 - The heavy lifting in derivatives math involves **Partial Differential Equations (PDEs)**
@@ -1167,7 +1167,7 @@ Where:
 
 If a commodity is expected to spoil or deteriorate during storage, this spoilage can be modeled as a **storage cost** using the proportional storage approach. 
 
-For example, **LNG (Liquefied Natural Gas) experiences boil-off**—natural evaporation of the cargo during storage and transport. This boil-off rate represents a real economic loss and can be incorporated as a proportional storage cost (u) in the forward pricing formula. This approach was used in options pricing models for LNG trading at Centauri (on their options pricing supercomputer), where the boil-off rate was a critical factor in pricing LNG forwards and derivatives.
+For example, **LNG (Liquefied Natural Gas) experiences boil-off**—natural evaporation of the cargo during storage and transport. This boil-off rate represents a real economic loss and can be incorporated as a proportional storage cost (u) in the forward pricing formula. This approach was used in options pricing models for LNG trading at Centrica (on their options pricing supercomputer), where the boil-off rate was a critical factor in pricing LNG forwards and derivatives.
 
 ---
 
