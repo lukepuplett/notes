@@ -27,6 +27,10 @@ go mod download
 
 ## Usage
 
+⚠️ **IMPORTANT: Always use `includeTabsContent: true`**
+
+Google Docs can have multiple tabs (sub-documents). Without this parameter, GWS only returns the first tab and you'll **silently lose all other content**. Always include it in your GWS command.
+
 ### Quick Start (Recommended: Piping)
 
 Convert directly from GWS to Markdown in one command:
@@ -117,8 +121,8 @@ cat 2026-journal/README.md   # View in terminal
 # 1. List your Google Docs
 gws drive files list --params '{"pageSize": 20, "q": "mimeType='\''application/vnd.google-apps.document'\''"}'
 
-# 2. Export your journal
-gws docs documents get --params '{"documentId": "1sAWs4ikiX0kix7BBYa3gWVWezWngNwQeSqubsjZQFtE"}' > journal.json
+# 2. Export your journal (with includeTabsContent to get ALL tabs)
+gws docs documents get --params '{"documentId": "1sAWs4ikiX0kix7BBYa3gWVWezWngNwQeSqubsjZQFtE", "includeTabsContent": true}' > journal.json
 
 # 3. Convert to Markdown (with images)
 go run main.go
@@ -129,7 +133,14 @@ go run main.go
 # ✓ Converted to Markdown
 # Document: 2026 - Journal
 # Output folder: 2026-journal/
-# Images: 5 downloaded to 2026-journal/images/
+# Markdown file: 2026-journal/2026-05.md
+# Markdown file: 2026-journal/2026-04.md
+# Markdown file: 2026-journal/2026-03.md
+# Markdown file: 2026-journal/2026-02.md
+# Markdown file: 2026-journal/2026-01.md
+# Markdown file: 2026-journal/hackerone-debt-and-run.md
+# Markdown file: 2026-journal/linkedin.md
+# Images: 146 downloaded to 2026-journal/images/
 
 # 4. View the result
 code 2026-journal/
