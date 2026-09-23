@@ -4,6 +4,14 @@ Merged from `Tz/src/.cursor/rules/dotnet-standards.mdc`, `always.mdc`, `Tz/AGENT
 
 ---
 
+## Design goal: lower cognitive load
+
+The point of these rules is to **reduce cognitive load** and **remove ambiguity** — fewer mental speed bumps when reading, navigating, and reasoning about code.
+
+Everything below should be read through that lens: expressive names, explicit `this.`, predictable layout, folder structure that “screams” the domain, tests that state circumstance and expectation in the name. When a rule feels picky, ask whether it buys clarity at a glance.
+
+---
+
 ## Preparation and approach
 
 - Read relevant `*.md` documentation before coding.
@@ -17,7 +25,7 @@ Merged from `Tz/src/.cursor/rules/dotnet-standards.mdc`, `always.mdc`, `Tz/AGENT
 ## General coding
 
 - Do **not** use `= null!;` — mark nullable, or use a good default/empty pattern.
-- Use `this.` when referencing class members.
+- Use **`this.`** when referencing **class members** (fields, properties, methods on `this` instance).
 - Wrap **all** `if` conditions in `{ }`, including single-line bodies.
 - Break long methods into smaller private methods; look for reuse among them.
 - Favor many small, single-purpose classes (SRP); sealed when no inheritance needed.
@@ -29,9 +37,23 @@ Merged from `Tz/src/.cursor/rules/dotnet-standards.mdc`, `always.mdc`, `Tz/AGENT
 - Use `async/await` consistently.
 - Prefer immutable properties when possible.
 - Null-check and validate inputs early.
-- Do **not** use `#region` — refactor into smaller classes instead.
+- Do **not** use **`#region`** (IDE collapsible regions) — see [Regions are a smell](#regions-are-a-smell).
+
+### `this.` on class members
+
+**Rule:** Write `this.field`, `this.Method()`, not bare `field` / `Method()` when referring to the instance.
+
+**Why:** In a method you always have locals, parameters, and class members in scope. Without `this.`, the eye must stop and classify each identifier: is that a parameter? a local? the field? Explicit `this.` marks “this belongs to the object” immediately — less ambiguity, lower cognitive load. Same idea when discussing or logging members: prefer names that disambiguate (e.g. `ChatOrchestratorResult.Ok` not bare `Ok`).
+
+### No `_` prefix on private fields
+
+**Rule:** Private fields use camelCase; **no** leading underscore.
+
+**Why:** `_field` plus optional bare `field` is a second visual dialect and often redundant once you standardize on `this.field`. Underscore prefixes look crufty here and do not add safety if `this.` is the disambiguator. Pick one clear pattern and stick to it.
 
 ### Member order (class)
+
+**Rule:**
 
 1. Fields and constants  
 2. Constructor  
@@ -41,6 +63,14 @@ Merged from `Tz/src/.cursor/rules/dotnet-standards.mdc`, `always.mdc`, `Tz/AGENT
 6. Group related members; separate groups with `//` on its own line  
 7. Place `return` on its own line with a blank line above  
 
+**Why:** Tidiness with a purpose — you know **where** to look, you see related state and behaviour **together**, and you can reason about the class in one vertical scan without hunting. Fixed order beats “whatever the last editor did.”
+
+### Regions are a smell
+
+**Rule:** Do not use `#region` / collapsible regions to organize a class.
+
+**Why:** Regions hide structure instead of fixing it. If a file is so large that folding blocks is the only way to cope, the class (or method) is doing too much — **refactor into smaller types** instead. `#region` is a sign to split, not to fold harder. (Same spirit as “no `#region` — refactor into small classes” in Tz rules.)
+
 ---
 
 ## Naming
@@ -49,7 +79,7 @@ Merged from `Tz/src/.cursor/rules/dotnet-standards.mdc`, `always.mdc`, `Tz/AGENT
 |------|------------|
 | Public types, methods, properties | PascalCase |
 | Private fields, parameters | camelCase |
-| Private fields | **No** leading underscore `_` |
+| Private fields | **No** leading underscore `_` (use `this.` instead) |
 | Interfaces | `I` prefix |
 | Implementations | `Impl` suffix |
 | DTOs | `Dto` suffix |
@@ -57,18 +87,29 @@ Merged from `Tz/src/.cursor/rules/dotnet-standards.mdc`, `always.mdc`, `Tz/AGENT
 
 When **logging or printing member names**, include the type for clarity (e.g. `ChatOrchestratorResult.Ok`, not `Ok`).
 
-### Test method names (examples)
+### Test method names
+
+**Rule:** Name tests so they state **subject**, **circumstances** (`when__…`), and **expected outcome** (`then__…`) — no need to open the test body to know what is being proved.
+
+**Why:** Failed test output should read like a spec sentence. Cognitive load drops when the name alone explains the scenario and expectation; debugging starts from the name, not from spelunking Arrange–Act–Assert.
+
+**Examples:**
 
 - `IAccount__HasSimilarName__when__luke_ashley_puplett_vs_puplett_l_a__then__true`
 - `AgeClassifer__when__now_plus_2__then__returns_B`
 
+Add assert messages too so the runner states which expectation broke.
+
 ---
 
-## Namespaces and test layout
+## Namespaces, folders, and “screaming architecture”
 
-- Unlike typical .NET layouts, **each namespace segment gets its own subfolder** (including tests).
-- **Bad:** extra single-name folder under a feature (`.../Proofs/AttestedMerkleProofBuilderTests.cs` nested wrong).
-- **Good:** namespace path matches folder path (`.../Attestations/Proofs/AttestedMerkleProofBuilderTests.cs`).
+**Rule:** Unlike many .NET repos, **each namespace segment is its own folder** (including tests). Folder path mirrors namespace path — no extra gratuitous nesting.
+
+**Why:** Layout **screams** what the system is: feature and boundary visible from the tree, not buried in a flat list of files. You navigate by domain, not by alphabet soup. Same mental model in tests as in production code.
+
+- **Bad:** single-name subfolder that hides the namespace (`.../Attestations/` → `Proofs/` → file one level too deep).
+- **Good:** `.../Attestations/Proofs/AttestedMerkleProofBuilderTests.cs` matches the namespace segments.
 - Put tests in files aligned with the class/system under test.
 
 ---
