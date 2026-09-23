@@ -1,29 +1,10 @@
-# TypeScript, JavaScript, and frontend
+# Frontend and TypeScript
 
-## Zipwire (`Tz`) — ASP.NET MPA
+This compendium **does not** capture Zipwire’s **current** legacy web UI stack (Bootstrap 4, Knockout, Gulp, Razor partials, etc.). Those are historical implementation details in `Tz` — see repo Cursor rules and `src/AGENTS.md` if you are editing that codebase.
 
-**Sources:** `typescript-usage.mdc`, `web-app-patterns.mdc`, `bootstrap-components.mdc`, `src/AGENTS.md`.
+**Durable Zipwire rules that are not stack-specific** live in [architecture-zipwire.md](./architecture-zipwire.md) (workplace API auth, sync vs events for UI correctness, CQRS).
 
-### When to use TypeScript
-
-- Complex UI only — viewmodels in **MVVM** with **KnockoutJS**.
-- Type-safe structures; not for every script.
-
-### When to use minimal JS
-
-- Simple interactions: data attributes, Bootstrap built-ins, basic event handlers.
-- Keep **inline JavaScript minimal**.
-
-### Bootstrap UI
-
-- Use **`_Bootstrap4*`** partial views with matching **model classes**.
-- Components handle validation state, responsive layout, accessibility.
-- Examples: `_Bootstrap4InputSet`, `_Bootstrap4ButtonAnchor`, `_Bootstrap4FormSubmitButton`, `_Bootstrap4TabListItemAnchor`, `_Bootstrap4Card`, `_Bootstrap4Alert`, `_Bootstrap4Run`, `_Bootstrap4HtmlTable`, `_Bootstrap4BusinessCard`.
-
-### Build
-
-- **Gulp 4:** TS (source maps), Sass (Bootstrap overrides), static copy, BrowserSync for dev.
-- Source: `ts/`, `sass/` → `wwwroot/`.
+Below: **greenfield / future** frontend standards (**zwinv**).
 
 ---
 

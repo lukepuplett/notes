@@ -1,12 +1,12 @@
 # Zipwire architecture rules
 
-From `Tz/src/AGENTS.md`, `guts-pattern.mdc`, `vertical-communication.mdc`, `web-app-patterns.mdc`, `SYNC_VS_EVENT_ORCHESTRATION.md`.
+From `Tz/src/AGENTS.md`, `guts-pattern.mdc`, `vertical-communication.mdc`, `web-app-patterns.mdc` (API/auth parts only), `SYNC_VS_EVENT_ORCHESTRATION.md`.
 
 ---
 
 ## Application shape
 
-- **Monolithic** ASP.NET MVC **multi-page application (MPA)**.
+- **Monolithic** server application with a **vertical-sliced** backend (and a legacy server-rendered UI in `Tz` — stack not documented here).
 - **Vertical slices** by feature area; each vertical = **two libraries**:
 
 ### Public library (e.g. `Evoq.Timesheets.Web.Payment`)
@@ -84,9 +84,7 @@ If tempted to create `OpContext` mid-method, break encapsulation, or add a query
 
 ---
 
-## Web stack (summary)
+## HTTP / UI correctness (stack-neutral)
 
-- Bootstrap 4, `_Bootstrap4*` partials; TypeScript + Knockout for complex UI; Gulp 4; minimal inline JS.
-- Composition root: `Evoq.Timesheets.AspNetCoreMvc`.
-
-See [typescript-and-frontend.md](./typescript-and-frontend.md).
+- If the client must show new or removed state on the **next** load or repaint, perform the underlying writes **synchronously** in the request (see sync vs event section above) — applies regardless of frontend framework.
+- Web composition root for the existing app: `Evoq.Timesheets.AspNetCoreMvc` (implementation detail; future UI may differ).

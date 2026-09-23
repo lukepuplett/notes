@@ -2,7 +2,7 @@
 
 Extracted **rules and guidelines** (not just links) from Cursor rules, AGENTS/CLAUDE files, and architecture docs on this machine. Sources are cited in each section; when sources disagree, both are noted.
 
-**Last full pass:** 2026-09-23
+**Last full pass:** 2026-09-23 (Zipwire legacy UI stack omitted — see note in [typescript-and-frontend.md](./typescript-and-frontend.md))
 
 ## Documents
 
@@ -11,7 +11,7 @@ Extracted **rules and guidelines** (not just links) from Cursor rules, AGENTS/CL
 | [csharp-dotnet.md](./csharp-dotnet.md) | C# / .NET style, DI, OpContext, params records, logging |
 | [architecture-zipwire.md](./architecture-zipwire.md) | Guts/Public, CQRS, events, sync vs async, services |
 | [data-access-and-storage.md](./data-access-and-storage.md) | Firestore/GCS, repos, validators, OpContext enforcement |
-| [typescript-and-frontend.md](./typescript-and-frontend.md) | Zipwire MPA (TS/Knockout/Bootstrap) + zwinv (Svelte/Bun) |
+| [typescript-and-frontend.md](./typescript-and-frontend.md) | Future frontend (zwinv: Svelte/Bun); not legacy Zipwire UI |
 | [testing.md](./testing.md) | .NET, zwcli, zwinv test rules and pitfalls |
 | [go.md](./go.md) | zwcli, Sentimentals (cards) |
 | [agent-and-tooling.md](./agent-and-tooling.md) | Claude Code global, Cursor, git, gcloud, agent behaviour |
@@ -29,9 +29,9 @@ Extracted **rules and guidelines** (not just links) from Cursor rules, AGENTS/CL
 | `src/.cursor/rules/data-access.mdc` | Storage/repos/OpContext |
 | `src/.cursor/rules/guts-pattern.mdc` | Public + Guts libraries |
 | `src/.cursor/rules/vertical-communication.mdc` | CQRS vs events (always apply) |
-| `src/.cursor/rules/web-app-patterns.mdc` | MVC, workplace API auth |
-| `src/.cursor/rules/bootstrap-components.mdc` | `_Bootstrap4*` partials |
-| `src/.cursor/rules/typescript-usage.mdc` | TS/Knockout in Zipwire |
+| `src/.cursor/rules/web-app-patterns.mdc` | Workplace API auth (in compendium); legacy MVC/UI omitted |
+| `src/.cursor/rules/bootstrap-components.mdc` | *Legacy Tz only — not summarized here* |
+| `src/.cursor/rules/typescript-usage.mdc` | *Legacy Tz only — not summarized here* |
 | `assets/CLAUDE.md` | Test verbosity / assert messages |
 | `docs/architecture/SYNC_VS_EVENT_ORCHESTRATION.md` | When to sync vs event |
 
